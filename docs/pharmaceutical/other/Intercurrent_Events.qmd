@@ -1,0 +1,73 @@
+---
+title: "Intercurrent Events"
+---
+
+## Definition {.unnumbered}
+
+Intercurrent Event (介入事件)： + 在临床试验期间，发生在治疗分配之后的事件，可能影响 治疗效果（treatment effect）的解读或测量。 + ICH E9 (R1) 定义：任何在试验期间发生的、可能影响或阻碍主要结局变量（endpoint）的解释的事件。
+
+### Common Types in Oncology/MM {.unnumbered}
+
+在 MM 临床试验中，典型的 intercurrent events 包括：
+
+1.  Treatment discontinuation（治疗中止）治疗停药
+    -   因 不良事件 (Adverse Events, AE)、毒性 (toxicity)、依从性差 等原因停药。
+2.  Initiation of new anti-myeloma therapy（启动新的骨髓瘤治疗）新增救援治疗
+    -   病人进展 (progression) 后接受 下一线治疗 (subsequent therapy)。
+3.  Death unrelated to disease progression（与疾病进展无关的死亡）非疾病相关死亡
+    -   如感染、心血管事件、其他合并症导致的死亡。
+4.  Stem cell transplantation（干细胞移植）
+    -   特别是自体干细胞移植 (ASCT)，在试验方案内或作为补救治疗。
+5.  Crossover（交叉用药）
+    -   患者在试验期间从对照组转到实验组（或反之）。
+6.  Withdrawal of consent（撤回知情同意）
+    -   患者中途退出试验，不再随访。
+
+## Relation to Estimand Framework {.unnumbered}
+
+Estimand 框架的关键就是 如何处理 intercurrent events。不同策略包括：
+
+-   Treatment Policy Strategy（治疗策略法）治疗策略法：不管发生什么事件，照原计划纳入分析（如 ITT）。
+-   Hypothetical Strategy（假设法）假设法：假设该事件没有发生，推断其结果。
+-   Composite Strategy（复合法）复合法：将该事件并入主要终点定义（例如 OS 包括所有原因死亡）。
+-   While-on-treatment Strategy（治疗期间法）治疗期间法：只分析事件发生前的数据。
+-   Principal Stratum Strategy（主要亚群法）主要亚群法：仅在不会发生该事件的患者亚群中估计效果。
+
+::: {.callout-note collapse="true" title="Examples"}
+| **Strategy (策略)** | **Population (研究人群)** | **Variable (终点)** | **Intercurrent Event (介入事件)** | **Estimand (估计量)** |
+|-------------|-------------|-------------|------------------|---------------|
+| **Treatment Policy 治疗策略法** | R/R MM 患者，接受试验药物或对照 | PFS | Initiation of new anti-myeloma therapy（启动后续治疗） | 在整个研究人群中，比较试验组与对照组的 PFS 分布，不论是否接受后续治疗 |
+| **Hypothetical 假设法** | NDMM 患者，接受 induction + ASCT | MRD negativity rate at 12 months | Treatment discontinuation due to AE（因毒性停药） | 在假设所有患者都能完成 12 个月治疗的条件下，比较 MRD negativity rate |
+| **Composite 复合法** | R/R MM 患者，至少接受过 3 线治疗 | ORR | Death prior to response assessment / Initiation of new therapy（评估前死亡/新治疗） | ORR 定义中包含死亡/新治疗作为 non-response，比较试验组与对照组的 ORR |
+| **While-on-treatment 治疗期间法** | MM 患者，接受实验药物 | Incidence of Grade ≥3 TEAE | Treatment discontinuation（治疗停药） | 仅统计在治疗期间发生的 Grade ≥3 AE，比较组间差异 |
+| **Principal Stratum 主要亚群法** | R/R MM 患者 | OS | Use of CAR-T therapy as subsequent line（后续 CAR-T） | 在不会接受 CAR-T 的亚群中，比较试验组与对照组的 OS 差异 |
+:::
+
+
+## Informative Censoring {-}
+
+### Common statistical methods {-}
+
++ Inverse Probability of Censoring Weighting (IPCW): 建模 dropout hazard，调整权重。
++ Joint Modeling: for both dropout hazard and PFS/OS
++ Pattern-Mixture Models/Selection Models 
+  - Pattern-mixture model：把 IA 前 vs IA 后退出的患者分层建模。
+  - Selection model：明确 dropout hazard 与 treatment arm/outcome 相关。
++ Multiple Imputation under MNAR
++ Rank-Preserving Structural Failure Time Model (RPSFTM)
++ Sensitivity Analyses: 设定不同的 “退出患者预后更差/相同/更好” 假设，检查结果稳健性。
+
+### Relative Regulatory Guidance {-}
+
++ ICH E9 (R1): Addendum on Estimands and Sensitivity Analyses
+  - 强调要在 estimand framework 中预先定义如何处理 intercurrent events 和 censoring。
++ FDA Guidance for Industry: Multiple Endpoints in Clinical Trials (2017)
+  - 讲到对不同 endpoints 的分析时要考虑 dropout、censoring 的偏倚。
++ FDA Guidance for Industry: Missing Data in Clinical Trials (2010)
+  - 虽然标题是 missing data，但实际上重点就是处理 informative censoring / informative dropout。
+  - 推荐使用 model-based approaches，避免仅依赖 LOCF（last observation carried forward）。
++ FDA Oncology Review Practices（reviewer often requests sensitivity analysis under different censoring assumptions）
+  - 特别是 OS/PFS 研究，FDA reviewer 会要求 sponsor 提供 “sensitivity to censoring assumptions” 的结果。
++ FDA Draft Guidance: Adjusting for Covariates in Randomized Clinical Trials (2023)
+  - 提到在存在 informative censoring 的情况下，建模方法可提供更准确估计。
+

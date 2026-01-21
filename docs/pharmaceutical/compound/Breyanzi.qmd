@@ -1,0 +1,21 @@
+---
+title: "Breyanzi"
+---
+
+### **药物简介（Drug Overview）**
+
+布瑞安齐（Breyanzi，通用名为Lisocabtagene maraleucel，简称Liso-cel）是一种嵌合抗原受体T细胞（Chimeric Antigen Receptor T-cell，简称CAR-T）疗法。它主要用于治疗某些类型的血液癌，包括复发或难治性的大B细胞淋巴瘤（Diffuse Large B-cell Lymphoma，DLBCL）。
+
+### **作用机制（Mechanism of Action）**
+
+Liso-cel的作用机制涉及收集患者自身的T细胞并在实验室中对其进行遗传改造，使之能够表达针对CD19的嵌合抗原受体。CD19是一种主要存在于B细胞表面的蛋白质。经过改造的T细胞被重新输回患者体内后，能够识别并攻击表达CD19的癌细胞。
+
+### **适应症（Indications）**
+
+布瑞安齐被批准用于治疗成人复发或难治性大B细胞淋巴瘤。这包括一些特定类型的DLBCL，例如转化性滤泡淋巴瘤（Transformed Follicular Lymphoma）和初级中枢神经系统淋巴瘤（Primary Central Nervous System Lymphoma）。
+
+### **副作用（Side Effects）**
+
+布瑞安齐的使用可能伴随着细胞因子释放综合征（Cytokine Release Syndrome, CRS）和神经毒性等严重副作用。患者在接受治疗过程中可能还会遇到感染风险增加、低血细胞计数等问题。治疗期间需要密切监控患者以管理这些潜在的副作用。
+
+作为一种创新的细胞治疗方法，布瑞安齐为特定血液癌患者提供了新的治疗选择。然而，其复杂的作用机制和可能的副作用要求其使用在有经验的医疗团队的指导下进行。

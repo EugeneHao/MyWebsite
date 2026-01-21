@@ -1,0 +1,11 @@
+- name: TESTRL
+  domain: TE
+  label: Rule for Start of Element
+
+- name: TEENRL
+  domain: TE
+  label: Rule for End of Element
+
+- name: TEDUR
+  domain: TE
+  label: Planned Duration of Element

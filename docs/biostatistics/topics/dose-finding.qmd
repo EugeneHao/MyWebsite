@@ -1,0 +1,61 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+search: true
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+## Dose-finding
+
+### Related Notebooks
+
+[Clinical Trial Design Notebook](../../books/clinical%20trial%20design/clinical-trial-design.qmd)
+
+### Literature Review
+
+::: panel-tabset
+### Model-assisted
+
+``` {.yaml code-preview="dose-finding/model-assisted.qmd"}
+```
+
+#### Other Papers
+
+-   (MC-Keyboard) [A Practical Phase I Trial Design for Targeted Therapies and Immunotherapies Integrating Multiple-Grade Toxicities](https://drive.google.com/file/d/1S1SYGJw3RyrcR3-QCsN3VsFxmzaQl9-D/view?usp=drive_link)
+-   (MT-Keyboard) [A Bayesian Model-assisted Interval Design to Account for Toxicity Grades and Types for Phase I Trials](https://www.tandfonline.com/doi/abs/10.1080/19466315.2024.2368802)
+-   (fBNF-mTPI) [Design considerations for phase I/II dose finding clinical trials in Immuno- oncology and cell therapy](https://drive.google.com/file/d/1T6pKCUuZPGqdKX8TydIiXVszPQ8oNS9U/view?usp=drive_link)
+-   (PKBOIN-12) [PKBOIN-12: A Bayesian Optimal Interval Phase I/II Design Incorporating Pharmacokinetics Outcomes to Find the Optimal Biological Dose](https://drive.google.com/file/d/10hJihSojLqTpfF553VIA4Ln2g9smaRHl/view?usp=drive_link)
+-   (BF-BOD12) [A robust Bayesian dose optimization design with backfill and randomization for phase I/II clinical trials](https://drive.google.com/file/d/1FHLDX3cQFnqmLO9ddrd0ytPbAKdODwzH/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1Tu-5ZppytWAJKx5m8nn38tYodhb0ptyS/view?usp=drive_link))
+-   (BF-BOIN-ET) [BF-BOIN-ET: A Backfill Bayesian Optimal Interval Design Using Efficacy and Toxicity Outcomes for Dose Optimization](https://drive.google.com/file/d/1HiumSugviBw8_8inIspaxiBr1O6ugdZw/view?usp=drive_link) ([supp](https://drive.google.com/file/d/139anN4ZiNoTnfUh6m5i1irJciJ3_hYVn/view?usp=drive_link))
+
+### Model-based
+
+``` {.yaml code-preview="dose-finding/model-based.qmd"}
+```
+
+#### Other Interesting Papers
+
+-   [A semi-mechanistic dose-finding design in oncology using pharmacokinetic/pharmacodynamic modeling](https://onlinelibrary.wiley.com/doi/full/10.1002/pst.2249?casa_token=0jbRnYk1pWMAAAAA%3A6XT8OkbqxCcO7cTJHZV0SW9z-6DaWeqw0RRh206N9e4raLghz3taDQsLy4xDyjgWSRy3UW6KoFjZvT58)
+-   [**Leveraging pharmacokinetic parameters as covariate in Bayesian logistic regression model to optimize dose selection in early phase oncology trial**](https://www.tandfonline.com/doi/full/10.1080/10543406.2024.2379357)
+-   (Joint TITE-CRM) [Joint TITE-CRM: A Design for Dose Finding Studies for Therapies with Late-Onset Safety and Activity Outcomes](https://drive.google.com/file/d/1U0XpGQw_wZXkeYrfn1QG4vGX12LJb-5L/view?usp=drive_link)
+-   (LO-TC) [Using Data Augmentation to Facilitate Conduct of Phase I–II Clinical Trials with Delayed Outcomes](https://drive.google.com/file/d/1SQ2yJDE8uQBZXuiVe_l8Zeqs_9n7DJpg/view?usp=drive_link)
+
+### Design Comparison
+
+``` {.yaml code-preview="dose-finding/comparison.qmd"}
+```
+
+### Seamless Phase 1-2
+
+-   [Shotgun](https://drive.google.com/file/d/1Q1VfT5w3utFhYBiF-6vSbp4ubcGvfMcH/view?usp=sharing)
+-   [Shotgun-2](https://drive.google.com/file/d/1P-mP03w5N8kR60jL5gCzj2fWbxP8k5DX/view?usp=drive_link)
+
+### Other Topics
+
+-   [Bayesian Methods for Quality Tolerance Limit (QTL) Monitoring](https://onlinelibrary.wiley.com/doi/epdf/10.1002/pst.2427)
+:::

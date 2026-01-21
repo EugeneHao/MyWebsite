@@ -1,0 +1,105 @@
+- name: BMS
+  path: company/BMS.html
+  country: USA
+  drug: |
+    [Opdivo](compound/Opdivo.qmd), [Eliquis](compound/Eliquis.qmd), [Reblozyl](compound/Reblozyl.qmd), [Revlimid](compound/Revlimid.qmd), [Yervoy](compound/Yervoy.qmd), 
+    [Iberdomide](compound/Iberdomide.qmd), [Mezigdomide](compound/Mezigdomide.qmd), [Alnuctamab](compound/Alnuctamab.qmd), [Abecma](compound/Abecma.qmd), 
+    [Onureg](compound/Onureg.qmd), [Inrebic](compound/Inrebic.qmd), [Krazati](compound/Krazati.qmd)
+- name: Pfizer
+  path: company/Pfizer.html
+  country: USA
+  drug: |
+    [Comirnaty](compound/Comirnaty.qmd), [Prevnar](compound/Prevnar.qmd), [Ibrance](compound/Ibrance.qmd), [Eliquis](compound/Eliquis.qmd), [Xeljanz](compound/Xeljanz.qmd), [Mylotarg](compound/Mylotarg.qmd)
+- name: Merck & Co.
+  path: company/Merck.html
+  country: USA
+  drug: |
+    [Keytruda](compound/Keytruda.qmd), [Januvia](compound/Januvia.qmd) [Gardasil](compound/Gardasil.qmd), [Lynparza](compound/Lynparza.qmd), [Pneumovax](compound/Pneumovax.qmd)
+- name: AbbVie
+  country: USA
+  drug: |
+    [Humira](compound/Humira.qmd), Skyrizi, Rinvoq, Imbruvica, Venclexta
+- name: J \& J
+  country: USA
+  drug: |
+    [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd), [Darzalex](compound/Darzalex.qmd), Imbruvica, [Xarelto](compound/Xarelto.qmd), [Carvykti](compound/Carvykti.qmd), [Tecvayli](compound/Tecvayli.qmd), [Darzalex](compound/Darzalex.qmd)
+- name: Roche
+  country: Switzerland
+  drug: |
+    Ocrevus, [Avastin](compound/Avastin.qmd), [Herceptin](compound/Herceptin.qmd), [Rituxan](compound/Rituxan.qmd), Hemlibra, [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Sirolimus](compound/Sirolimus.qmd), 
+    [Cotellic](compound/Cotellic.qmd)
+- name: Novartis
+  path: company/Novartis.html
+  country: Switzerland
+  drug: |
+      Cosentyx, Entresto, Gilenya, Lucentis, Zolgensma, [Mekinist](compound/Mekinist.qmd)
+- name: Sanofi
+  country: France
+  drug: |
+    Dupixent, Lantus, Aubagio, Toujeo, Praluent
+- name: GSK
+  country: UK
+  drug: |
+    Shingrix, Trelegy, Nucala, Zejula, Benlysta, [Tafinlar](compound/Tafinlar.qmd)
+- name: AstraZeneca
+  country: UK
+  drug: |
+    Tagrisso, Imfinzi, Farxiga, Symbicort, Crestor
+- name: Amgen
+  country: USA
+  drug: |
+    Enbrel, Prolia, Otezla, Repatha, Neulasta
+- name: Gilead
+  path: company/Gilead.html
+  country: USA
+  drug: |
+    Biktarvy, Truvada, Veklury, Descovy, Epclusa, [Yescarta](compound/Yescarta.qmd)
+- name: Bayer
+  country: Germany
+  drug: |
+    [Xarelto](compound/Xarelto.qmd), Eylea, Mirena, Nexavar, Kogenate
+- name: Teva
+  country: Israel
+  drug: |
+    Copaxone, Ajovy, Austedo, ProAir, Qvar
+- name: Takeda
+  country: Japan
+  drug: |
+    Entyvio, Ninlaro, Vyvanse, Dexilant, Trintellix
+- name: Eli Lilly
+  country: USA
+  drug: |
+    Trulicity, Humalog, Alimta, Taltz, Verzenio
+- name: Boehringer Ingelheim
+  country: Germany
+  drug: |
+    Spiriva, Jardiance, Pradaxa, Ofev, Trajenta
+- name: Biogen
+  country: USA
+  drug: |
+    Tecfidera, Spinraza, Tysabri, Vumerity, Avonex
+- name: Novo Nordisk
+  country: Denmark
+  drug: |
+    Victoza, Levemir, Ozempic, Tresiba, Saxenda
+- name: Allergan
+  country: USA
+  drug: |
+    Botox, Restasis, Juvederm, Linzess, Vraylar
+- name: Daiichi Sankyo
+  country: Japan
+  drug: |
+    Lixiana, Movantik, Welchol, Sevikar, Nexium
+- name: Regeneron
+  path: company/Regeneron.html
+  country: USA
+  drug: |
+    Eylea, Dupixent, Libtayo, Kevzara, Praluent
+- name: Astellas
+  country: Japan
+  drug: |
+    Xtandi, Prograf, Vesicare, Myrbetriq, Xospata
+- name: Otsuka
+  country: Japan
+  drug: |
+    Abilify, Rexulti, Samsca, Jinarc, Abilify Maintena

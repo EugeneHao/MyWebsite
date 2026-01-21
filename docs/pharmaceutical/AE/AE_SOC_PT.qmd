@@ -1,0 +1,349 @@
+---
+title: "Common AE list by SOC and PT"
+code-copy: hover
+search: true
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+## Blood and lymphatic system disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Anemia | 贫血 | 1–4 | High | No | Y | RBC transfusion, ESAs, iron supplementation |
+| Neutropenia | 中性粒细胞减少 | 1–4 | High | No | Y | G-CSF (filgrastim), dose adjustment |
+| Thrombocytopenia | 血小板减少 | 1–4 | High | No | Y | Platelet transfusion, TPO-RA, dose adjustment |
+| Leukopenia | 白细胞减少 | 1–4 | Moderate | No | Y | G-CSF, monitor counts |
+| Febrile neutropenia | 发热性中性粒细胞减少 | 3–4 | High | Yes (for some agents) | Y | Broad-spectrum antibiotics, G-CSF |
+| Pancytopenia | 全血细胞减少 | 3–4 | High | No | Y | Supportive transfusions, dose adjustment |
+| Lymphopenia | 淋巴细胞减少 | 1–4 | Moderate | No | Y | Monitor counts, infection prophylaxis |
+| Disseminated intravascular coagulation (DIC) | 弥散性血管内凝血 | 4–5 | High | No | Partial | Anticoagulation, supportive care |
+| Hemolytic anemia | 溶血性贫血 | 2–4 | High | No | Y | Steroids, immunosuppressants, transfusion |
+| Aplastic anemia | 再生障碍性贫血 | 3–4 | High | Yes (for some drugs e.g., chloramphenicol) | Partial | Immunosuppressive therapy, HSCT |
+| Bleeding tendency | 出血倾向 | 2–4 | High | No | Y | Platelet transfusion, antifibrinolytics |
+| Bone marrow failure | 骨髓功能衰竭 | 4–5 | High | Yes (some agents) | Partial | HSCT, supportive care |
+
+## Gastrointestinal disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Nausea | 恶心 | 1–2 | Moderate | No | Y | Antiemetics (ondansetron, metoclopramide) |
+| Vomiting | 呕吐 | 1–3 | High | No | Y | Antiemetics, IV fluids |
+| Diarrhea | 腹泻 | 1–4 | High | No | Y | Loperamide, hydration, dose adjustment |
+| Constipation | 便秘 | 1–3 | Moderate | No | Y | Laxatives, stool softeners, hydration |
+| Abdominal pain | 腹痛 | 1–3 | Moderate | No | Y | Analgesics, antispasmodics |
+| Dyspepsia | 消化不良 | 1–2 | Low | No | Y | PPIs, H2 blockers, diet modification |
+| Oral mucositis | 口腔黏膜炎 | 1–3 | High | No | Y | Mouth rinses, analgesics, cryotherapy |
+| Stomatitis | 口腔炎 | 1–3 | Moderate | No | Y | Topical corticosteroids, analgesic rinses |
+| Gastrointestinal bleeding | 胃肠道出血 | 2–4 | High | Yes (NSAIDs, anticoagulants) | Partial | Endoscopic therapy, PPI, transfusion |
+| Ileus | 肠梗阻 | 2–4 | High | No | Partial | Bowel rest, NG tube, surgery if severe |
+| Pancreatitis | 胰腺炎 | 3–4 | High | Yes (for some agents, e.g., asparaginase) | Partial | Supportive care, discontinue causative drug |
+| Colitis | 结肠炎 | 2–4 | High | Yes (immune checkpoint inhibitors) | Y | Corticosteroids, immunosuppressants |
+
+## Infections and infestations {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Pneumonia | 肺炎 | 2–4 | High | No | Y | Antibiotics, oxygen therapy, hospitalization if severe |
+| Upper respiratory tract infection (URTI) | 上呼吸道感染 | 1–2 | Low | No | Y | Symptomatic treatment, antivirals if needed |
+| Sepsis | 败血症 | 3–5 | High | Yes (e.g., some immunosuppressants) | Partial | IV antibiotics, fluids, ICU support |
+| COVID-19 infection | 新冠感染 | 2–5 | High | No | Y | Antivirals, supportive care, oxygen |
+| Influenza | 流感 | 1–3 | Moderate | No | Y | Antivirals (oseltamivir), supportive care |
+| Herpes zoster | 带状疱疹 | 2–3 | Moderate | No | Y | Antivirals (acyclovir, valacyclovir), analgesics |
+| Oral candidiasis | 口腔念珠菌病 | 1–2 | Low | No | Y | Topical or systemic antifungals |
+| Urinary tract infection (UTI) | 泌尿道感染 | 1–3 | Moderate | No | Y | Antibiotics, hydration |
+| Cytomegalovirus infection (CMV) | 巨细胞病毒感染 | 2–4 | High | No | Y | Ganciclovir, valganciclovir |
+| Tuberculosis (TB) | 结核病 | 2–4 | High | Yes (TNF inhibitors) | Y | Anti-TB therapy (RIPE regimen) |
+| Hepatitis B reactivation | 乙型肝炎再激活 | 3–4 | High | Yes (rituximab, some chemo) | Partial | Antivirals (entecavir, tenofovir), prophylaxis |
+| Fungal pneumonia (Aspergillus) | 真菌性肺炎（曲霉） | 3–4 | High | No | Partial | Antifungals (voriconazole), ICU care |
+
+## Nervous system disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Headache | 头痛 | 1–2 | Moderate | No | Y | Analgesics (acetaminophen, NSAIDs) |
+| Dizziness | 眩晕 | 1–2 | Moderate | No | Y | Symptomatic treatment, hydration |
+| Peripheral neuropathy | 周围神经病变 | 1–3 | High | No | Partial | Dose adjustment, duloxetine, gabapentin |
+| Paresthesia | 感觉异常 | 1–2 | Moderate | No | Y | Neuropathic pain meds, physical therapy |
+| Tremor | 震颤 | 1–2 | Moderate | No | Y | Beta-blockers, dose adjustment |
+| Seizure | 癫痫发作 | 3–4 | High | Yes (some drugs, e.g., bupropion, clozapine) | Y | Antiepileptics, discontinue causative agent |
+| Cognitive disorder | 认知障碍 | 2–3 | High | No | Partial | Cognitive rehab, supportive therapy |
+| Encephalopathy | 脑病 | 3–4 | High | Yes (e.g., if drug-induced hepatic encephalopathy) | Partial | Supportive care, treat underlying cause |
+| Stroke | 中风 | 3–5 | High | Yes (risk ↑ with some cancer therapies) | Partial | Antiplatelets, anticoagulants, rehab |
+| Ataxia | 共济失调 | 2–3 | High | No | Partial | Physical therapy, dose modification |
+| Somnolence | 嗜睡 | 1–2 | Moderate | No | Y | Dose adjustment, stimulants if needed |
+| Neuropathy, motor | 运动神经病变 | 2–3 | High | No | Partial | Physiotherapy, occupational therapy |
+
+## General disorders and administration site conditions {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Fatigue | 疲劳 | 1–3 | High | No | Partial | Rest, exercise, stimulants (modafinil) |
+| Pyrexia | 发热 | 1–2 | Moderate | No | Y | Antipyretics, hydration |
+| Asthenia | 乏力 | 1–3 | High | No | Partial | Supportive care, nutrition, dose adjustment |
+| Edema peripheral | 外周水肿 | 1–3 | Moderate | No | Y | Diuretics, compression stockings |
+| Chills | 寒战 | 1–2 | Low | No | Y | Antipyretics, antihistamines |
+| Infusion-related reaction (IRR) | 输注相关反应 | 2–3 | High | Yes (for monoclonal antibodies) | Y | Premedication (antihistamines, steroids), slow infusion |
+| Malaise | 全身不适 | 1–2 | Moderate | No | Y | Supportive care |
+| Injection site reaction | 注射部位反应 | 1–2 | Low | No | Y | Topical corticosteroids, cold compress |
+| Pain (general) | 疼痛（全身性） | 1–3 | High | No | Y | Analgesics (acetaminophen, opioids if severe) |
+| Oedema (generalized) | 全身性水肿 | 2–3 | High | No | Partial | Diuretics, albumin if hypoalbuminemia |
+| Sudden death | 猝死 | 5 | High | Yes (some agents, e.g., anthracyclines, CAR-T) | N | Supportive resuscitation only |
+| Multi-organ failure | 多器官功能衰竭 | 4–5 | High | Yes (severe immune therapies, sepsis) | N | ICU support, discontinuation of therapy |
+
+## Musculoskeletal and connective tissue disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Bone pain | 骨痛 | 1–3 | High | No | Y | Analgesics, bisphosphonates, radiotherapy |
+| Arthralgia | 关节痛 | 1–3 | High | No | Y | NSAIDs, corticosteroids, physiotherapy |
+| Myalgia | 肌痛 | 1–3 | Moderate | No | Y | NSAIDs, muscle relaxants |
+| Back pain | 背痛 | 1–3 | High | No | Y | Analgesics, physiotherapy |
+| Muscle spasms | 肌肉痉挛 | 1–2 | Moderate | No | Y | Muscle relaxants, hydration |
+| Musculoskeletal chest pain | 肌肉骨骼性胸痛 | 1–2 | Moderate | No | Y | Analgesics, exclude cardiac causes |
+| Osteonecrosis of jaw (ONJ) | 颌骨坏死 | 2–4 | High | Yes (bisphosphonates, denosumab) | Partial | Dental care, surgery if severe |
+| Pathological fracture | 病理性骨折 | 3–4 | High | No | Partial | Orthopedic surgery, analgesics |
+| Osteoporosis | 骨质疏松 | 2–3 | High | No | Y | Bisphosphonates, calcium, vitamin D |
+| Muscle weakness | 肌无力 | 1–3 | Moderate | No | Partial | Physiotherapy, dose adjustment |
+| Tendonitis | 肌腱炎 | 1–2 | Low | No | Y | Rest, NSAIDs, physiotherapy |
+| Joint swelling | 关节肿胀 | 1–2 | Moderate | No | Y | NSAIDs, corticosteroids |
+
+## Metabolism and nutrition disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Decreased appetite | 食欲下降 | 1–2 | Moderate | No | Y | Nutritional support, appetite stimulants |
+| Weight loss | 体重下降 | 1–3 | High | No | Partial | Nutritional supplements, dietitian consult |
+| Weight gain | 体重增加 | 1–2 | Moderate | No | Y | Diet modification, exercise |
+| Hyperglycemia | 高血糖 | 1–4 | High | Yes (steroids, PI3K inhibitors) | Y | Insulin, oral hypoglycemics |
+| Hypoglycemia | 低血糖 | 2–4 | High | No | Y | Glucose tablets/IV, adjust antidiabetic therapy |
+| Hypercalcemia | 高钙血症 | 2–4 | High | No | Y | IV bisphosphonates, hydration, calcitonin |
+| Hypocalcemia | 低钙血症 | 2–4 | High | No | Y | Calcium, vitamin D supplementation |
+| Hyponatremia | 低钠血症 | 2–4 | High | No | Partial | IV saline, fluid restriction, tolvaptan |
+| Hyperkalemia | 高钾血症 | 3–4 | High | Yes (RAAS inhibitors risk) | Partial | IV calcium, insulin/glucose, dialysis if severe |
+| Hypokalemia | 低钾血症 | 2–4 | High | No | Y | Oral/IV potassium replacement |
+| Dehydration | 脱水 | 1–3 | Moderate | No | Y | IV fluids, electrolyte correction |
+| Malnutrition | 营养不良 | 2–4 | High | No | Partial | Nutritional support, enteral/parenteral feeding |
+
+## Skin and subcutaneous tissue disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Rash | 皮疹 | 1–3 | Moderate | No | Y | Topical steroids, antihistamines |
+| Pruritus | 瘙痒 | 1–2 | Moderate | No | Y | Antihistamines, emollients |
+| Alopecia | 脱发 | 1–2 | Moderate | No | N | Wigs, scalp cooling (partial prevention) |
+| Dry skin (xerosis) | 皮肤干燥 | 1–2 | Low | No | Y | Moisturizers, urea creams |
+| Urticaria | 荨麻疹 | 1–3 | Moderate | No | Y | Antihistamines, corticosteroids |
+| Stevens–Johnson syndrome (SJS) | 斯蒂文斯–约翰逊综合征 | 4–5 | High | Yes (many drugs: anticonvulsants, antibiotics) | N | Hospitalization, IVIG, discontinue drug |
+| Toxic epidermal necrolysis (TEN) | 中毒性表皮坏死松解症 | 4–5 | High | Yes | N | ICU/burn unit care, supportive treatment |
+| Hand–foot syndrome (PPE) | 手足综合征 | 1–3 | Moderate | No | Y | Dose modification, emollients, pain control |
+| Photosensitivity reaction | 光敏反应 | 1–2 | Moderate | No | Y | Sun protection, corticosteroid creams |
+| Acneiform rash | 痤疮样皮疹 | 1–2 | Moderate | No | Y | Topical antibiotics, oral tetracyclines |
+| Erythema multiforme | 多形红斑 | 2–3 | High | No | Partial | Corticosteroids, antihistamines |
+| Skin ulceration | 皮肤溃疡 | 2–4 | High | No | Partial | Wound care, antibiotics if infected |
+
+## Respiratory, thoracic and mediastinal disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Dyspnea | 呼吸困难 | 1–4 | High | No | Partial | Oxygen, bronchodilators, treat underlying cause |
+| Cough | 咳嗽 | 1–2 | Moderate | No | Y | Antitussives, hydration |
+| Pulmonary embolism (PE) | 肺栓塞 | 3–4 | High | Yes (IMiDs, hormonal therapy) | Y | Anticoagulation, thrombolysis if severe |
+| Pleural effusion | 胸腔积液 | 2–4 | High | No | Partial | Thoracentesis, diuretics, pleurodesis |
+| Pneumonitis | 肺炎样反应/间质性肺炎 | 2–4 | High | Yes (immune checkpoint inhibitors, mTOR inhibitors) | Partial | Corticosteroids, discontinue drug |
+| Hemoptysis | 咯血 | 2–4 | High | Yes (VEGF inhibitors) | Partial | Supportive care, embolization, discontinue drug |
+| Respiratory failure | 呼吸衰竭 | 4–5 | High | No | N | Mechanical ventilation, ICU care |
+| Pulmonary fibrosis | 肺纤维化 | 3–4 | High | Yes (bleomycin, amiodarone) | N | Supportive care, antifibrotics (pirfenidone) |
+| Asthma exacerbation | 哮喘加重 | 2–4 | High | No | Y | Bronchodilators, corticosteroids |
+| Bronchitis | 支气管炎 | 1–2 | Moderate | No | Y | Symptomatic therapy, antibiotics if bacterial |
+| Pharyngolaryngeal pain | 咽喉疼痛 | 1–2 | Low | No | Y | Analgesics, lozenges |
+| Hypoxia | 低氧血症 | 2–4 | High | No | Partial | Oxygen therapy, treat underlying cause |
+
+## Cardiac disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Arrhythmia | 心律失常 | 2–4 | High | Yes (some TKIs, anthracyclines) | Partial | Antiarrhythmics, cardioversion, device therapy |
+| Atrial fibrillation | 心房颤动 | 2–4 | High | No | Y | Anticoagulation, rate/rhythm control |
+| Ventricular tachycardia | 室性心动过速 | 3–4 | High | Yes | Partial | ACLS protocol, antiarrhythmics, defibrillation |
+| Myocardial infarction | 心肌梗死 | 3–5 | High | Yes (VEGF inhibitors) | Partial | PCI, antiplatelets, anticoagulants |
+| Heart failure | 心力衰竭 | 2–4 | High | Yes (anthracyclines, HER2 therapies) | Partial | Diuretics, ACE inhibitors, beta-blockers |
+| Cardiomyopathy | 心肌病 | 2–4 | High | Yes (anthracyclines, trastuzumab) | Partial | Heart failure therapy, discontinue drug |
+| Pericardial effusion | 心包积液 | 2–4 | High | No | Partial | Pericardiocentesis, NSAIDs, colchicine |
+| Pericarditis | 心包炎 | 2–3 | Moderate | No | Y | NSAIDs, corticosteroids, colchicine |
+| Angina pectoris | 心绞痛 | 2–3 | High | No | Y | Nitrates, beta-blockers, calcium channel blockers |
+| Cardiac arrest | 心脏骤停 | 5 | High | Yes (some therapies, e.g., CAR-T cytokine storm) | N | CPR, ACLS protocol |
+| QT prolongation | QT间期延长 | 2–4 | High | Yes (many TKIs, antiarrhythmics) | Partial | ECG monitoring, dose adjustment, electrolyte correction |
+| Palpitations | 心悸 | 1–2 | Moderate | No | Y | Symptomatic management, beta-blockers if needed |
+
+## Renal and urinary disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Acute kidney injury (AKI) | 急性肾损伤 | 2–4 | High | Yes (cisplatin, amphotericin B) | Partial | IV fluids, dialysis if severe |
+| Chronic kidney disease (CKD) | 慢性肾病 | 2–4 | High | No | Partial | BP control, avoid nephrotoxins, dialysis if needed |
+| Proteinuria | 蛋白尿 | 1–4 | Moderate | Yes (VEGF inhibitors) | Partial | ACE inhibitors/ARBs, dose modification |
+| Hematuria | 血尿 | 1–3 | Moderate | No | Y | Treat underlying cause, urology evaluation |
+| Dysuria | 排尿困难 | 1–2 | Moderate | No | Y | Analgesics, antibiotics if infection |
+| Urinary retention | 尿潴留 | 2–3 | High | No | Partial | Catheterization, alpha-blockers |
+| Oliguria | 少尿 | 2–4 | High | No | Partial | Hydration, dialysis if severe |
+| Nephrotic syndrome | 肾病综合征 | 3–4 | High | No | Partial | Corticosteroids, immunosuppressants, diuretics |
+| Hydronephrosis | 肾积水 | 2–3 | High | No | Partial | Stenting, nephrostomy |
+| Urinary tract obstruction | 泌尿道梗阻 | 2–3 | High | No | Partial | Catheterization, surgery |
+| Urinary incontinence | 尿失禁 | 1–3 | Moderate | No | Partial | Bladder training, anticholinergics |
+| Renal failure | 肾衰竭 | 4–5 | High | Yes (cisplatin, methotrexate high-dose) | N | Dialysis, supportive care |
+
+## Hepatobiliary disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Elevated ALT | 丙氨酸氨基转移酶升高 | 1–4 | Moderate | No | Y | Monitor LFTs, dose adjustment, hepatoprotectants |
+| Elevated AST | 天冬氨酸氨基转移酶升高 | 1–4 | Moderate | No | Y | Monitor, dose adjustment |
+| Hyperbilirubinemia | 高胆红素血症 | 2–4 | High | Yes (irinotecan, atazanavir) | Partial | Discontinue causative drug, supportive care |
+| Hepatomegaly | 肝肿大 | 1–3 | Moderate | No | Partial | Treat underlying disease |
+| Hepatitis (drug-induced) | 药物性肝炎 | 2–4 | High | Yes (e.g., isoniazid, MTX) | Partial | Stop offending drug, corticosteroids if severe |
+| Cholestasis | 胆汁淤积 | 2–4 | High | Yes (anabolic steroids, chlorpromazine) | Partial | Ursodeoxycholic acid, supportive care |
+| Hepatic failure | 肝功能衰竭 | 4–5 | High | Yes (acetaminophen overdose, fulminant hepatitis) | N | ICU care, liver transplant |
+| Hepatic steatosis | 脂肪肝 | 1–2 | Low | No | Y | Lifestyle modification, treat metabolic syndrome |
+| Gallstones (cholelithiasis) | 胆结石 | 2–3 | Moderate | No | Y | Cholecystectomy if symptomatic |
+| Cholecystitis | 胆囊炎 | 2–3 | High | No | Y | Antibiotics, cholecystectomy |
+| Ascites | 腹水 | 2–4 | High | No | Partial | Diuretics, paracentesis |
+| Hepatic encephalopathy | 肝性脑病 | 3–4 | High | No | Partial | Lactulose, rifaximin, supportive care |
+
+## Immune system disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Hypersensitivity | 过敏反应 | 2–4 | High | Yes (e.g., penicillin, platinum drugs) | Y | Antihistamines, corticosteroids, discontinue drug |
+| Anaphylaxis | 过敏性休克 | 4–5 | High | Yes | N | Epinephrine, airway management, ICU care |
+| Cytokine release syndrome (CRS) | 细胞因子释放综合征 | 2–4 | High | Yes (CAR-T therapy, bispecifics) | Partial | Tocilizumab, corticosteroids, supportive care |
+| Immune reconstitution inflammatory syndrome (IRIS) | 免疫重建炎症综合征 | 2–4 | High | No | Partial | Corticosteroids, treat underlying infection |
+| Autoimmune hepatitis | 自身免疫性肝炎 | 2–4 | High | No | Partial | Corticosteroids, immunosuppressants |
+| Autoimmune thyroiditis | 自身免疫性甲状腺炎 | 2–3 | Moderate | No | Y | Levothyroxine if hypothyroid |
+| Systemic lupus erythematosus (SLE) | 系统性红斑狼疮 | 2–4 | High | No | Partial | Corticosteroids, hydroxychloroquine, immunosuppressants |
+| Rheumatoid arthritis (RA) | 类风湿关节炎 | 2–4 | High | No | Partial | DMARDs, biologics, NSAIDs |
+| Sarcoidosis | 结节病 | 2–3 | Moderate | No | Partial | Corticosteroids, immunosuppressants |
+| Graft versus host disease (GVHD) | 移植物抗宿主病 | 3–4 | High | Yes (HSCT-related) | Partial | Corticosteroids, immunosuppressants, supportive care |
+| Immune-mediated colitis | 免疫介导性结肠炎 | 2–4 | High | Yes (immune checkpoint inhibitors) | Partial | Corticosteroids, infliximab |
+| Hypogammaglobulinemia | 低丙种球蛋白血症 | 2–3 | Moderate | No | Y | IVIG replacement therapy |
+
+## Psychiatric disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Depression | 抑郁 | 2–4 | High | Yes (antidepressants ↑ suicide risk) | Partial | Antidepressants, psychotherapy |
+| Anxiety | 焦虑 | 1–3 | Moderate | No | Y | Anxiolytics, CBT, relaxation techniques |
+| Insomnia | 失眠 | 1–2 | Moderate | No | Y | Sleep hygiene, hypnotics, CBT-I |
+| Suicidal ideation | 自杀意念 | 3–4 | High | Yes (many psych meds) | N | Psychiatric emergency care, hospitalization |
+| Psychosis | 精神病性障碍 | 3–4 | High | Yes (antipsychotics ↑ mortality in elderly) | Partial | Antipsychotics, inpatient management |
+| Confusional state | 意识混乱 | 2–3 | High | No | Partial | Treat underlying cause, antipsychotics if needed |
+| Mania | 躁狂 | 2–4 | High | No | Partial | Mood stabilizers, antipsychotics |
+| Hallucination | 幻觉 | 2–3 | High | No | Partial | Antipsychotics |
+| Agitation | 激越 | 1–3 | Moderate | No | Y | Sedatives, behavioral therapy |
+| Delirium | 谵妄 | 2–4 | High | No | Partial | Identify/treat cause, antipsychotics |
+| Mood swings | 情绪波动 | 1–2 | Moderate | No | Y | Psychotherapy, mood stabilizers |
+| Cognitive disorder | 认知障碍 | 2–3 | High | No | Partial | Cognitive training, supportive care |
+
+## Eye disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Blurred vision | 视力模糊 | 1–3 | High | No | Partial | Corrective lenses, treat underlying cause |
+| Dry eye | 干眼症 | 1–2 | Moderate | No | Y | Artificial tears, cyclosporine eye drops |
+| Conjunctivitis | 结膜炎 | 1–2 | Moderate | No | Y | Lubricants, antibiotics if bacterial |
+| Keratitis | 角膜炎 | 2–3 | High | No | Partial | Antivirals/antibiotics, corticosteroid drops |
+| Cataract | 白内障 | 2–3 | High | No | Y | Cataract surgery |
+| Glaucoma | 青光眼 | 2–4 | High | No | Partial | Beta-blocker/PG analog eye drops, surgery if needed |
+| Diplopia | 复视 | 2–3 | High | No | Partial | Prism glasses, strabismus surgery |
+| Vision loss (partial) | 部分视力丧失 | 3–4 | High | Yes (some drugs, e.g., ethambutol) | Partial | Ophthalmology referral, discontinue drug |
+| Retinopathy | 视网膜病变 | 2–4 | High | Yes (e.g., hydroxychloroquine, VEGF inhibitors) | Partial | Anti-VEGF therapy, laser photocoagulation |
+| Photophobia | 畏光 | 1–2 | Moderate | No | Y | Sunglasses, lubricating drops |
+| Ocular pain | 眼痛 | 1–3 | Moderate | No | Y | Analgesics, treat underlying cause |
+| Optic neuropathy | 视神经病变 | 3–4 | High | Yes (linezolid, amiodarone) | N | Discontinue drug, supportive therapy |
+
+## Vascular disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Hypertension | 高血压 | 1–4 | High | Yes (VEGF inhibitors, TKIs) | Y | Antihypertensives (ACEI, ARB, CCB) |
+| Hypotension | 低血压 | 2–4 | High | No | Partial | IV fluids, vasopressors if severe |
+| Deep vein thrombosis (DVT) | 深静脉血栓 | 3–4 | High | Yes (IMiDs, OCs) | Y | Anticoagulation (LMWH, DOACs) |
+| Pulmonary embolism (PE) | 肺栓塞 | 3–4 | High | Yes (IMiDs, JAK inhibitors) | Partial | Anticoagulation, thrombolysis if severe |
+| Thrombophlebitis | 血栓性静脉炎 | 2–3 | Moderate | No | Y | NSAIDs, anticoagulation |
+| Hemorrhage | 出血 | 2–4 | High | Yes (anticoagulants, VEGF inhibitors) | Partial | Transfusion, hemostatic agents |
+| Aneurysm | 动脉瘤 | 3–5 | High | No | Partial | Surgical repair, BP control |
+| Ischemia (limb ischemia) | 缺血（肢体缺血） | 3–4 | High | No | Partial | Antiplatelets, revascularization |
+| Vasculitis | 血管炎 | 2–4 | High | No | Partial | Corticosteroids, immunosuppressants |
+| Flushing | 潮红 | 1–2 | Low | No | Y | Symptomatic management, avoid triggers |
+| Hypertensive crisis | 高血压危象 | 4 | High | Yes (VEGF inhibitors) | Partial | IV antihypertensives, ICU care |
+| Capillary leak syndrome | 毛细血管渗漏综合征 | 3–4 | High | Yes (IL-2, CAR-T) | Partial | IV fluids, corticosteroids, ICU support |
+
+## Reproductive system and breast disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Amenorrhea | 闭经 | 1–2 | Moderate | No | Partial | Hormonal therapy, fertility counseling |
+| Menorrhagia | 月经过多 | 2–3 | High | No | Y | Tranexamic acid, hormonal therapy |
+| Dysmenorrhea | 痛经 | 1–2 | Moderate | No | Y | NSAIDs, hormonal contraceptives |
+| Erectile dysfunction | 勃起功能障碍 | 2–3 | High | No | Y | PDE5 inhibitors (sildenafil), counseling |
+| Infertility | 不孕 | 2–3 | High | Yes (alkylating agents, radiation) | N | Fertility preservation, ART (IVF) |
+| Gynecomastia | 男性乳腺发育 | 1–2 | Moderate | No | Y | Tamoxifen, surgery if severe |
+| Breast pain (mastalgia) | 乳房疼痛 | 1–2 | Moderate | No | Y | Analgesics, supportive bra |
+| Vaginal dryness | 阴道干涩 | 1–2 | Moderate | No | Y | Lubricants, topical estrogen |
+| Vaginitis | 阴道炎 | 1–2 | Moderate | No | Y | Antifungal/antibiotic therapy |
+| Hot flashes | 潮热 | 1–2 | Moderate | No | Y | SSRIs, gabapentin, hormone therapy (if not contraindicated) |
+| Galactorrhea | 溢乳 | 1–2 | Low | No | Y | Dopamine agonists, evaluate prolactin |
+| Ovarian failure | 卵巢功能衰竭 | 2–3 | High | Yes (chemotherapy, radiation) | N | HRT, fertility counseling |
+
+## Endocrine disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Hypothyroidism | 甲状腺功能减退 | 2–3 | High | No | Y | Levothyroxine replacement |
+| Hyperthyroidism | 甲状腺功能亢进 | 2–4 | High | No | Partial | Antithyroid drugs, beta-blockers, radioiodine |
+| Adrenal insufficiency | 肾上腺功能不全 | 3–4 | High | Yes (immune checkpoint inhibitors) | Partial | Corticosteroid replacement (hydrocortisone) |
+| Cushing’s syndrome | 库欣综合征 | 2–4 | High | No | Partial | Reduce corticosteroid use, surgery if tumor |
+| Diabetes mellitus (new-onset) | 糖尿病（新发） | 2–4 | High | Yes (pancreatic cancer drugs, checkpoint inhibitors) | Y | Insulin, oral hypoglycemics, lifestyle change |
+| Hypopituitarism | 垂体功能减退 | 2–4 | High | No | Partial | Hormone replacement therapy |
+| SIADH (Syndrome of inappropriate ADH secretion) | 抗利尿激素分泌异常综合征 | 2–4 | High | No | Partial | Fluid restriction, tolvaptan |
+| Hyperparathyroidism | 甲状旁腺功能亢进 | 2–3 | Moderate | No | Partial | Surgery, calcimimetics |
+| Hypoparathyroidism | 甲状旁腺功能减退 | 2–3 | Moderate | No | Y | Calcium, vitamin D supplementation |
+| Pheochromocytoma | 嗜铬细胞瘤 | 3–4 | High | Yes (if untreated crisis) | Partial | Alpha-blockers, surgical removal |
+| Thyroiditis (immune-related) | 甲状腺炎（免疫相关） | 2–3 | Moderate | No | Partial | Corticosteroids, beta-blockers for symptoms |
+| Hyperprolactinemia | 高泌乳素血症 | 2–3 | Moderate | No | Y | Dopamine agonists (cabergoline, bromocriptine) |
+
+## Injury, poisoning and procedural complications {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Infusion site extravasation | 输液外渗 | 2–3 | High | Yes (vesicant chemotherapy) | Partial | Stop infusion, cold/warm compress, antidotes (dexrazoxane) |
+| Injection site reaction | 注射部位反应 | 1–2 | Low | No | Y | Topical steroids, antihistamines |
+| Surgical wound infection | 手术切口感染 | 2–3 | Moderate | No | Y | Antibiotics, wound care |
+| Postoperative hemorrhage | 术后出血 | 2–4 | High | No | Partial | Hemostasis, transfusion, reoperation |
+| Procedural pain | 操作相关疼痛 | 1–2 | Moderate | No | Y | Analgesics, local anesthesia |
+| Radiation injury | 放射损伤 | 2–4 | High | No | Partial | Supportive care, corticosteroids |
+| Drug toxicity (overdose) | 药物中毒（过量） | 3–5 | High | Yes (chemotherapy, opioids, APAP) | Partial | Antidotes (naloxone, NAC), supportive care |
+| Accidental overdose | 意外过量 | 2–4 | High | Yes (many drugs) | Partial | Antidotes, monitoring |
+| Fall | 跌倒 | 1–3 | Moderate | No | Y | Fall prevention, physiotherapy |
+| Fracture (traumatic) | 外伤性骨折 | 2–4 | High | No | Partial | Orthopedic fixation, rehabilitation |
+| Procedural complication (unspecified) | 操作并发症（未特指） | 2–4 | High | No | Partial | Supportive management depending on type |
+| Catheter related infection | 导管相关感染 | 2–4 | High | No | Y | Remove catheter, antibiotics |
+
+## Ear and labyrinth disorders {.unnumbered}
+
+| **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |
+|----|----|----|----|----|----|----|
+| Tinnitus | 耳鸣 | 1–2 | Moderate | No | N | Symptomatic care, sound therapy |
+| Vertigo | 眩晕 | 1–3 | High | No | Partial | Vestibular suppressants (meclizine), rehab |
+| Hearing loss (sensorineural) | 听力下降（感音性） | 2–4 | High | Yes (aminoglycosides, cisplatin) | N | Hearing aids, cochlear implant |
+| Deafness | 耳聋 | 3–4 | High | Yes (ototoxic drugs) | N | Assistive devices, rehabilitation |
+| Ear pain (otalgia) | 耳痛 | 1–2 | Moderate | No | Y | Analgesics, antibiotics if infection |
+| Ear infection (otitis media/externa) | 耳部感染（中耳炎/外耳炎） | 1–3 | Moderate | No | Y | Antibiotics, ear drops |
+| Balance disorder | 平衡障碍 | 2–3 | High | No | Partial | Vestibular rehab, supportive therapy |
+| Ear fullness | 耳闷感 | 1–2 | Low | No | Y | Decongestants, antihistamines |
+| Labyrinthitis | 迷路炎 | 2–3 | High | No | Partial | Corticosteroids, antivirals, vestibular suppressants |
+| Hyperacusis | 听觉过敏 | 1–2 | Moderate | No | N | Counseling, sound therapy |
+| Meniere’s disease | 美尼尔病 | 2–3 | High | No | Partial | Low-salt diet, diuretics, vestibular rehab |
+| Ear hemorrhage | 耳出血 | 1–2 | Moderate | No | Y | Local hemostasis, treat underlying cause |

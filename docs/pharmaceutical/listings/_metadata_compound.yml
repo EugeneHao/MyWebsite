@@ -1,0 +1,19 @@
+listing: 
+  type: table
+  sort-ui: [drug, compound, company]
+  fields: 
+    - drug
+    - compound
+    - company
+    - indication
+  field-links: 
+    - drug
+  field-display-names: 
+    drug: Drug
+    compound: Compound
+    company: Company
+    indication: Indication
+format:
+  html:
+    anchor-sections: false
+  

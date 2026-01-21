@@ -1,0 +1,56 @@
+---
+title: "server"
+search: true
+---
+
+```{.r}
+server <- function(input, output, session) {
+  
+  addResourcePath("www", ".")
+
+  # Preparation #### 
+  
+  ### initial all reactive values 
+  all_rv <- initialize_all_reactive_values()
+  all_method <- reactive(readxl::read_xls("data/method_list.xls"))
+
+  #---------------------------------------------------------------
+```
+
+```{.r}
+  # Data Section #### 
+  
+  # UI: Data Section Side Bar 
+  callModule(module = module_server_data_sidebar, id = "data_sidebar", all_rv$design_setting_list, all_rv)
+```
+
+> + [module_server_data_sidebar](main/module_data_sidebar.qmd#module_server_data_sidebar)
+
+```{.r}
+  ## Data Simulation ####
+  callModule(module = module_server_simulate_data, id = "simu_data", all_rv)
+  
+  ## Data Uploading #### 
+  callModule(module = module_server_upload_data, id = "upload_data", all_rv$design_setting_list)
+  
+  ## Data Generation and Visulization ####
+  callModule(module = module_server_generate_data, id = "generate_data", all_rv)
+  
+  #---------------------------------------------------------------
+  
+  # Simulation #### 
+  
+  ## Sidebar 
+  callModule(module = module_server_simu_sidebar, id = "simu_sidebar", all_rv, all_method)
+  
+  ## Main Panel - One Simulation Method 
+  callModule(module = module_server_simu_one_method, id = "simu_one_method", all_rv)
+  
+  #---------------------------------------------------------------
+  
+  # Guidance Section #### 
+  callModule(section_server_guidance, "guidance")
+  
+}
+
+```

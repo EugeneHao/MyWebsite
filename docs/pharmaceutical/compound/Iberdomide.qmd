@@ -1,0 +1,21 @@
+---
+title: "Iberdomide"
+---
+
+### **药物简介（Drug Overview）**
+
+伊伯多麦（Iberdomide）是一种实验性药物，属于小分子口服免疫调节剂（Immunomodulatory Agent）。它是正在研究中的新一代蛋白降解诱导剂（Protein Degradation Inducer），旨在治疗多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)）和其他类型的血液癌症。
+
+### **作用机制（Mechanism of Action）**
+
+伊伯多麦的作用机制主要是通过靶向和抑制三聚体蛋白（Cereblon, CRBN）复合物的一部分，从而调节蛋白降解。CRBN是泛素-蛋白酶体系统（Ubiquitin-Proteasome System）的关键成员，负责标记和分解多种蛋白质。伊伯多麦通过这种机制影响多种细胞信号通路，特别是那些在多发性骨髓瘤和其他癌症中起关键作用的通路。
+
+### **适应症（Indications）**
+
+作为一种处于临床研究阶段的药物，伊伯多麦目前主要用于多发性骨髓瘤的临床试验中。它可能也会用于其他类型的癌症治疗，尤其是那些对传统疗法无效或耐药性增强的病例。
+
+### **副作用（Side Effects）**
+
+由于伊伯多麦仍在临床试验阶段，其副作用和安全性资料相对有限。目前的研究显示，一些常见的副作用可能包括疲劳（Fatigue）、胃肠道不适（Gastrointestinal Distress）和血细胞计数异常（Hematological Abnormalities）。随着进一步研究的深入，将会有更多关于伊伯多麦副作用和安全性的详细信息。
+
+伊伯多麦在多发性骨髓瘤治疗领域展现了潜在的应用前景，但鉴于其目前还处于研究阶段，对于其最终的疗效和安全性还需等待更多的临床数据。

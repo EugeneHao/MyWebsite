@@ -1,0 +1,14 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+### Short Course
+
+-   [2025 RISW: Statistical Design and Analysis of Hybrid Controls](https://drive.google.com/file/d/1Tnxy9VEN1xX8j57fukx0niV-96hVbBUh/view?usp=drive_link)

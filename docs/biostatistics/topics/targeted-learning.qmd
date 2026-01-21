@@ -1,0 +1,15 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+### Short Course
+
+-   [2025 RISW: Targeted learning for randomized controlled trials and hybrid studies in the era of artificial intelligence and machine learning](https://drive.google.com/file/d/1Ozrp78LpPpuoogotRRorNRW9t-xb7PRu/view?usp=drive_link)
+-   [2025 RISW: Targeted Learning - Addressing challenges to efficient, unbiased estimation in a regulatory context](https://drive.google.com/file/d/1tAW0qjdqRuIZKp5RJDN6WFBB0Ao60pMy/view?usp=drive_link)

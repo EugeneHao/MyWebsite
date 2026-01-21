@@ -1,0 +1,21 @@
+
+- caption: "Multiple 95% Confidence Intervals"
+  image: "r_figures/multiple_confidence_interval.png"
+  link: "#r-plot-gallery"
+  
+- caption: "Iowa state unemployment rate animation plot"
+  image: "r_figures/map-animation.gif"
+  link: "#r-table-gallery"
+  
+- caption: "Student performance and registration status"
+  image: "r_table/student-performance.png"
+  link: "#r-table-gallery"
+  
+- caption: "Shiny Template for Navigation bar"
+  image: "r_shiny/navigation-bar-and-panel.png"
+  link: "#r-shiny-gallery"
+  
+- caption: "Shiny App of the mTPI design"
+  image: "r_shiny/mTPI.png"
+  link: "#r-shiny-gallery"
+

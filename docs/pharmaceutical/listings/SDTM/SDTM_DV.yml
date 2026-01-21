@@ -1,0 +1,43 @@
+- name: DVTERM
+  domain: DV
+  label: Reported Protocol Deviation Term
+
+- name: DVDECOD
+  domain: DV
+  label: Standardized Protocol Deviation Term
+
+- name: DVCAT
+  domain: DV
+  label: Category of Protocol Deviation
+
+- name: DVSCAT
+  domain: DV
+  label: Subcategory of Protocol Deviation
+
+- name: DVSTDTC
+  domain: DV
+  label: Start Date/Time of Protocol Deviation
+
+- name: DVENDTC
+  domain: DV
+  label: End Date/Time of Protocol Deviation
+
+- name: DVSTDY
+  domain: DV
+  label: Study Day of Protocol Deviation
+
+- name: DVGRPID
+  domain: DV
+  label: Group ID
+
+- name: DVREFID
+  domain: DV
+  label: Reference ID
+
+- name: DVSPID
+  domain: DV
+  label: Sponsor-Defined Identifier
+
+- name: DVEVAL
+  domain: DV
+  label: Evaluator

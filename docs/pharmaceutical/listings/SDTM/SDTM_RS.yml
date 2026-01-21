@@ -1,0 +1,59 @@
+- name: RSTEST
+  domain: RS
+  label: Disease Response Test Name
+
+- name: RSTESTCD
+  domain: RS
+  label: Disease Response Test Short Name
+
+- name: RSORRES
+  domain: RS
+  label: Result or Finding as Collected
+
+- name: RSSTRESC
+  domain: RS
+  label: Character Result/Finding in Standard Format
+
+- name: RSSTRESN
+  domain: RS
+  label: Numeric Result/Finding in Standard Units
+
+- name: RSSTAT
+  domain: RS
+  label: Completion Status
+
+- name: RSREASND
+  domain: RS
+  label: Reason Not Done
+
+- name: RSEVAL
+  domain: RS
+  label: Evaluator
+
+- name: RSDTC
+  domain: RS
+  label: Date/Time of Disease Response Assessment
+
+- name: RSSTDY
+  domain: RS
+  label: Study Day of Disease Response Assessment
+
+- name: RSCAT
+  domain: RS
+  label: Category for Disease Response
+
+- name: RSSCAT
+  domain: RS
+  label: Subcategory for Disease Response
+
+- name: RSGRPID
+  domain: RS
+  label: Group ID
+
+- name: RSREFID
+  domain: RS
+  label: Reference ID
+
+- name: RSSPID
+  domain: RS
+  label: Sponsor-Defined Identifier

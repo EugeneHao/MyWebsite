@@ -1,0 +1,14 @@
+---
+title: "Model-based Dose Finding Designs Literature Summary"
+format:
+  revealjs: 
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    touch: true
+    controls: true
+---
+
+## MTD selection designs
+
+### Hello

@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Rcpp – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/programming/R/Shiny.html" rel="next">
+<link href="../../../docs/programming/R/ggplot2.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../tutorial.css">
+<meta property="og:title" content="Rcpp – Hao Sun">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Rcpp – Hao Sun">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../docs/programming/index.html" aria-current="page"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/programming/index.html">Programming</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/R/index.html">R</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/R/Rcpp.html">Rcpp</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/R/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/dplyr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">dplyr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/ggplot2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ggplot2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/Rcpp.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Rcpp</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/Shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shiny</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/stringr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">stringr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/tidyr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">tidyr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/gtsummary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gtsummary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/rpact.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">rpact</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Softwares and Systems</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Softwares/Rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rstudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Softwares/Notion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Quarto</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Quarto/QuartoBasic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Basic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Softwares/MacOS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MacOS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/Projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/Projects/DB_Shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DB Shiny</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Projects/DB Shiny/ui.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">UI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Projects/DB Shiny/server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Server</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#my-notes" id="toc-my-notes" class="nav-link active" data-scroll-target="#my-notes">My Notes</a>
+  <ul class="collapse">
+  <li><a href="#rcpp-functions" id="toc-rcpp-functions" class="nav-link" data-scroll-target="#rcpp-functions">1. Rcpp functions</a></li>
+  <li><a href="#slice-matrices" id="toc-slice-matrices" class="nav-link" data-scroll-target="#slice-matrices">2. Slice Matrices</a></li>
+  </ul></li>
+  <li><a href="#notes-from-online-source" id="toc-notes-from-online-source" class="nav-link" data-scroll-target="#notes-from-online-source">Notes from Online Source</a>
+  <ul class="collapse">
+  <li><a href="#常用数据类型" id="toc-常用数据类型" class="nav-link" data-scroll-target="#常用数据类型">1. 常用数据类型</a></li>
+  <li><a href="#数学运算" id="toc-数学运算" class="nav-link" data-scroll-target="#数学运算">2. 数学运算</a></li>
+  <li><a href="#向量矩阵和域的创建" id="toc-向量矩阵和域的创建" class="nav-link" data-scroll-target="#向量矩阵和域的创建">3. 向量、矩阵和域的创建</a>
+  <ul class="collapse">
+  <li><a href="#basic-creattion" id="toc-basic-creattion" class="nav-link" data-scroll-target="#basic-creattion">3.1 Basic Creattion</a></li>
+  <li><a href="#function-creation" id="toc-function-creation" class="nav-link" data-scroll-target="#function-creation">3.2 Function Creation</a></li>
+  </ul></li>
+  <li><a href="#初始化元素访问属性和成员函数" id="toc-初始化元素访问属性和成员函数" class="nav-link" data-scroll-target="#初始化元素访问属性和成员函数">4. 初始化，元素访问，属性和成员函数</a>
+  <ul class="collapse">
+  <li><a href="#元素初始化-element-initialization" id="toc-元素初始化-element-initialization" class="nav-link" data-scroll-target="#元素初始化-element-initialization">4.1. 元素初始化 Element initialization</a></li>
+  <li><a href="#元素访问-element-access" id="toc-元素访问-element-access" class="nav-link" data-scroll-target="#元素访问-element-access">4.2. 元素访问 Element access</a></li>
+  <li><a href="#子矩阵访问-submatrix-view" id="toc-子矩阵访问-submatrix-view" class="nav-link" data-scroll-target="#子矩阵访问-submatrix-view">4.3. 子矩阵访问 Submatrix view</a></li>
+  <li><a href="#属性-attribute" id="toc-属性-attribute" class="nav-link" data-scroll-target="#属性-attribute">4.4 属性 Attribute</a></li>
+  <li><a href="#其他成员函数-other-member-function" id="toc-其他成员函数-other-member-function" class="nav-link" data-scroll-target="#其他成员函数-other-member-function">4.5. 其他成员函数 Other member function</a></li>
+  </ul></li>
+  <li><a href="#常用函数" id="toc-常用函数" class="nav-link" data-scroll-target="#常用函数">5. 常用函数</a>
+  <ul class="collapse">
+  <li><a href="#向量矩阵和立方体的一般函数" id="toc-向量矩阵和立方体的一般函数" class="nav-link" data-scroll-target="#向量矩阵和立方体的一般函数">5.1. 向量、矩阵和立方体的一般函数</a></li>
+  <li><a href="#其他一些数学函数" id="toc-其他一些数学函数" class="nav-link" data-scroll-target="#其他一些数学函数">5.2 其他一些数学函数</a></li>
+  <li><a href="#矩阵的分解因子化逆矩阵和线性方程的解" id="toc-矩阵的分解因子化逆矩阵和线性方程的解" class="nav-link" data-scroll-target="#矩阵的分解因子化逆矩阵和线性方程的解">5.3. 矩阵的分解、因子化、逆矩阵和线性方程的解</a></li>
+  <li><a href="#信号和图像处理" id="toc-信号和图像处理" class="nav-link" data-scroll-target="#信号和图像处理">5.4. 信号和图像处理</a></li>
+  <li><a href="#统计和聚类" id="toc-统计和聚类" class="nav-link" data-scroll-target="#统计和聚类">5.5. 统计和聚类</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/programming/index.html">Programming</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/R/index.html">R</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/R/Rcpp.html">Rcpp</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Rcpp</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>RcppArmadillo简明手册 <a href="http://arma.sourceforge.net/docs.html" class="uri">http://arma.sourceforge.net/docs.html</a></li>
+<li>Advanced R <a href="http://adv-r.had.co.nz/Rcpp.html" class="uri">http://adv-r.had.co.nz/Rcpp.html</a></li>
+</ul>
+</div>
+</div>
+<section id="my-notes" class="level1">
+<h1>My Notes</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>conv_to<span class="op">&lt;</span>arma<span class="op">::</span>vec<span class="op">&gt;::</span>from<span class="op">(</span>sum<span class="op">(</span>logit<span class="op">,</span> <span class="dv">1</span><span class="op">))</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">// multinomial sample (number, prob_vector, categ_num, save_pointer)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>rmultinom<span class="op">(</span><span class="dv">1</span><span class="op">,</span> oneprob<span class="op">.</span>begin<span class="op">(),</span> C<span class="op">+</span><span class="dv">1</span><span class="op">,</span> Ytemp<span class="op">.</span>colptr<span class="op">(</span>n<span class="op">-</span><span class="dv">1</span><span class="op">))</span>  <span class="co">//colptr: column pointer</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">// element-wise multiplication of two objects</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>A <span class="op">%</span> B     <span class="co">// = A * B in R (both are either vectors or matrice) </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">// cube: </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>cube a <span class="op">=</span> Rcpp<span class="op">::</span>as<span class="op">&lt;</span>arma<span class="op">::</span>cube<span class="op">&gt;(</span>a0<span class="op">);</span> </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>a<span class="op">.</span>slice<span class="op">(</span><span class="dv">0</span><span class="op">)</span>     <span class="co">// = a[,,1]</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>a<span class="op">.</span>row<span class="op">(</span><span class="dv">0</span><span class="op">)</span>       <span class="co">// = a[1,,]</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>a<span class="op">.</span>col<span class="op">(</span><span class="dv">0</span><span class="op">)</span>       <span class="co">// = a[,1,]</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>mat b <span class="op">=</span> a<span class="op">.</span>row<span class="op">(</span><span class="dv">0</span><span class="op">);</span> </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>mat c <span class="op">=</span> b<span class="op">.</span>row<span class="op">(</span><span class="dv">0</span><span class="op">).</span>t<span class="op">();</span>   <span class="co">// c = a[1,1,] returns a matrix with one column</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">// binomial distribution </span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>mu <span class="op">=</span> exp<span class="op">(</span>Z <span class="op">*</span> beta<span class="op">)/(</span><span class="dv">1</span><span class="op">+</span>exp<span class="op">(</span>Z <span class="op">*</span> beta<span class="op">));</span> </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> runif<span class="op">(</span>n<span class="op">);</span> </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> arma<span class="op">::</span>conv_to<span class="op">&lt;</span>arma<span class="op">::</span>vec<span class="op">&gt;::</span>from<span class="op">(</span>mu <span class="op">&gt;=</span> tmp<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="rcpp-functions" class="level2">
+<h2 class="anchored" data-anchor-id="rcpp-functions">1. Rcpp functions</h2>
+<ul>
+<li><code>sum</code></li>
+<li><code>cumsum</code></li>
+<li><code>.n_rows</code>, <code>.n_cols</code>, <code>.n_elem</code>, <code>.n_nonzero</code></li>
+<li>change size: <code>.set_size(n_rows, n_cols)</code></li>
+<li>reshape: <code>.reshape(n_rows, n_cols)</code></li>
+<li>insert <code>.insert_rows</code>, <code>.insert_cols</code></li>
+<li>remove <code>.shed_row</code>/<code>.shed_rows()</code>, <code>.shed_col</code>/<code>.shed_cols()</code></li>
+<li><code>.copy_size(A)</code></li>
+<li><code>.zeros(n_row, n_col)</code>, <code>.ones</code> set all elements zeros(can change size at the same time)</li>
+<li><code>runif</code>, <code>rnorm</code></li>
+<li>transpose <code>.t()</code></li>
+<li>inverse <code>.i()</code></li>
+<li><code>.min()</code>, <code>.max()</code></li>
+<li>return index of min/max <code>.index_min()</code>/<code>.index_max()</code></li>
+<li>compute Ax = b: <code>solve(A, b)</code></li>
+</ul>
+</section>
+<section id="slice-matrices" class="level2">
+<h2 class="anchored" data-anchor-id="slice-matrices">2. Slice Matrices</h2>
+<ul>
+<li><p>one row <code>a.row(k)</code>, one col <code>a.col(k)</code></p></li>
+<li><p>rows: <code>a.rows(k, j)</code>, cols <code>a.cols(k,j)</code></p></li>
+<li><p>A_{a:b,c:d}: <code>X.submat(a,c,b,d)</code></p></li>
+<li><p><span class="math inline">\(A_{k\times1}\times B_{1\times k}\)</span></p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Example</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span> <span class="op">&lt;-</span> <span class="ch">'</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>mat a <span class="op">=</span> Rcpp<span class="op">::</span>as<span class="op">&lt;</span>arma<span class="op">::</span>mat<span class="op">&gt;(</span>A<span class="op">);</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>vec b <span class="op">=</span> Rcpp<span class="op">::</span>as<span class="op">&lt;</span>arma<span class="op">::</span>vec<span class="op">&gt;(</span>B<span class="op">);</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>arma<span class="op">::</span>mat result <span class="op">=</span> arma<span class="op">::</span>zeros<span class="op">&lt;</span>arma<span class="op">::</span>mat<span class="op">&gt;(</span><span class="dv">3</span><span class="op">,</span><span class="dv">3</span><span class="op">);</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> b <span class="op">*</span> a<span class="op">.</span>row<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> Rcpp<span class="op">::</span>wrap<span class="op">(</span>result<span class="op">);</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ch">'</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>rcpp_try <span class="op">&lt;-</span> cxxfunction<span class="op">(</span>signature<span class="op">(</span>A <span class="op">=</span> <span class="st">"numeric"</span><span class="op">,</span> B <span class="op">=</span> <span class="st">"numeric"</span><span class="op">),</span><span class="cf">try</span><span class="op">,</span>plugin<span class="op">=</span><span class="st">"RcppArmadillo"</span><span class="op">,</span> verbose <span class="op">=</span> TRUE<span class="op">)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>rcpp_try<span class="op">(</span>A <span class="op">=</span> matrix<span class="op">(</span><span class="dv">1</span><span class="op">:</span><span class="dv">9</span><span class="op">,</span> <span class="dv">3</span><span class="op">),</span> B <span class="op">=</span> <span class="dv">1</span><span class="op">:</span><span class="dv">3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div></li>
+</ul>
+</section>
+</section>
+<section id="notes-from-online-source" class="level1">
+<h1>Notes from Online Source</h1>
+<section id="常用数据类型" class="level2">
+<h2 class="anchored" data-anchor-id="常用数据类型">1. 常用数据类型</h2>
+<ul>
+<li><code>Mat&lt;type&gt;</code>为模板类，其中<code>type</code>可以是：float, double, std::complex, std::complex, short, int, long, and unsigned versions of short, int, long等。为方便起见，Armadillo C++已经预定义了以下类型。</li>
+<li>在Armadillo中，矩阵是按照一列一列(column by column)存在内存中的(column-major ordering)。</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data Type</th>
+<th>Mathematics</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mat, cx_mat</code></td>
+<td>Matrix 矩阵</td>
+<td>Dense real/complex matrix class</td>
+</tr>
+<tr class="even">
+<td><code>vec, cx_vec</code></td>
+<td>Column Vector 列向量</td>
+<td>Dense real/complex column vector class</td>
+</tr>
+<tr class="odd">
+<td><code>rowvec, cx_rowvec</code></td>
+<td>Row Vector 行向量</td>
+<td>Dense real/complex row vector class</td>
+</tr>
+<tr class="even">
+<td><code>cube, cx_cube</code></td>
+<td>Cube 3维矩阵</td>
+<td>Dense real/complex cube class (“3D matrix”)</td>
+</tr>
+<tr class="odd">
+<td><code>field</code></td>
+<td>域</td>
+<td>Class for storing arbitrary objects in matrix-like or cube-like layouts</td>
+</tr>
+<tr class="even">
+<td><code>sp_mat, sp_cx_mat</code></td>
+<td>Matrix 矩阵</td>
+<td>Sparse real/complex matrix class</td>
+</tr>
+<tr class="odd">
+<td><code>umat, imat</code></td>
+<td>Matrix 矩阵</td>
+<td>Matrix with unsigned/integer elements</td>
+</tr>
+<tr class="even">
+<td><code>uvec, ivec</code></td>
+<td>Vector 向量</td>
+<td>Vector with unsigned/integer elements</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="数学运算" class="level2">
+<h2 class="anchored" data-anchor-id="数学运算">2. 数学运算</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>+</code></td>
+<td>Addition of two objects</td>
+</tr>
+<tr class="even">
+<td><code>-</code></td>
+<td>Subtraction of one object from another or negation of an object</td>
+</tr>
+<tr class="odd">
+<td><code>/</code></td>
+<td>Element-wise division of an object by another object or a scalar</td>
+</tr>
+<tr class="even">
+<td><code>*</code></td>
+<td>Matrix multiplication of two objects; not applicable to the Cube class unless multiplying a cube by a scalar</td>
+</tr>
+<tr class="odd">
+<td><code>%</code></td>
+<td>Schur product: element-wise multiplication of two objects</td>
+</tr>
+<tr class="even">
+<td><code>==</code></td>
+<td>Element-wise equality evaluation of two objects; generates a matrix of type umat with entries that indicate whether at a given position the two elements from the two objects are equal (1) or not equal (0)</td>
+</tr>
+<tr class="odd">
+<td><code>!=</code></td>
+<td>Element-wise non-equality evaluation of two objects</td>
+</tr>
+<tr class="even">
+<td><code>&lt;=</code></td>
+<td>As for <code>==</code>, but the check is for “greater than or equal to”</td>
+</tr>
+<tr class="odd">
+<td><code>&gt;=</code></td>
+<td>As for <code>==</code>, but the check is for “less than or equal to”</td>
+</tr>
+<tr class="even">
+<td><code>&lt;</code></td>
+<td>As for <code>==</code>, but the check is for “greater than”</td>
+</tr>
+<tr class="odd">
+<td><code>&gt;</code></td>
+<td>As for <code>==</code>, but the check is for “less than”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="向量矩阵和域的创建" class="level2">
+<h2 class="anchored" data-anchor-id="向量矩阵和域的创建">3. 向量、矩阵和域的创建</h2>
+<section id="basic-creattion" class="level3">
+<h3 class="anchored" data-anchor-id="basic-creattion">3.1 Basic Creattion</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">//Matrix: X</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>mat X<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">);</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>mat X<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">,</span> <span class="dt">fill_type</span><span class="op">);</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>mat X<span class="op">(</span>size<span class="op">(</span>Y<span class="op">));</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>mat X<span class="op">(</span>size<span class="op">(</span>Y<span class="op">),</span> <span class="dt">fill_type</span><span class="op">);</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>mat X<span class="op">(</span><span class="st">"1 0;2 0"</span><span class="op">);</span> \\create a matrix from a string<span class="op">.</span> <span class="op">(</span>first row is <span class="st">"1 0"</span><span class="op">,</span> second row is <span class="st">"2 0"</span><span class="op">)</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>cx_mat X<span class="op">(</span>mat<span class="op">,</span>mat<span class="op">);</span> \\<span class="cf">for</span> constructing a complex matrix out of two real matrices</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">//Vector: X</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>vec X<span class="op">(</span>n_elem<span class="op">);</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>vec X<span class="op">(</span>n_elem<span class="op">,</span> <span class="dt">fill_type</span><span class="op">);</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>vec X<span class="op">(</span>size<span class="op">(</span>Y<span class="op">));</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>vec X<span class="op">(</span>size<span class="op">(</span>Y<span class="op">),</span> <span class="dt">fill_type</span><span class="op">);</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>cx_vec X<span class="op">(</span>vec<span class="op">,</span>vec<span class="op">);</span> \\<span class="cf">for</span> constructing a complex vector out of two real vectors</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">//Cube or 3-D matrix: X</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>cube X<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">,</span> n_slices<span class="op">);</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>cube X<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">,</span> n_slices<span class="op">,</span> <span class="dt">fill_type</span><span class="op">);</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>cube X<span class="op">(</span>size<span class="op">(</span>Y<span class="op">));</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>cube X<span class="op">(</span>size<span class="op">(</span>Y<span class="op">),</span> <span class="dt">fill_type</span><span class="op">);</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>cx_cube X<span class="op">(</span>cube<span class="op">,</span> cube<span class="op">);</span>  \\<span class="cf">for</span> constructing a complex cube out of two real cubes</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">//Field: F</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>field<span class="op">&lt;</span><span class="dt">object_type</span><span class="op">&gt;</span> F<span class="op">(</span>n_elem<span class="op">)</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>field<span class="op">&lt;</span><span class="dt">object_type</span><span class="op">&gt;</span> F<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">)</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>field<span class="op">&lt;</span><span class="dt">object_type</span><span class="op">&gt;</span> F<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">,</span> n_slices<span class="op">)</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>field<span class="op">&lt;</span><span class="dt">object_type</span><span class="op">&gt;</span> F<span class="op">(</span>size<span class="op">(</span>X<span class="op">))</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co">//似乎object_type只能是mat或者cube,且不能存储复数类型，比如cx_mat.</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co">//An example of field</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>mat A<span class="op">(</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span>fill<span class="op">::</span>randu<span class="op">);</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>vec B<span class="op">(</span><span class="dv">5</span><span class="op">,</span>fill<span class="op">::</span>randn<span class="op">);</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>field <span class="op">&lt;</span>mat<span class="op">&gt;</span> F<span class="op">(</span><span class="dv">2</span><span class="op">,</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>F<span class="op">(</span><span class="dv">0</span><span class="op">)=</span>A<span class="op">;</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>F<span class="op">(</span><span class="dv">1</span><span class="op">)=</span>B<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Choice of <code>fill_type</code>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>fill_type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>fill::zeros</code></td>
+<td>set all elements to 0</td>
+</tr>
+<tr class="even">
+<td><code>fill::ones</code></td>
+<td>set all elements to 1</td>
+</tr>
+<tr class="odd">
+<td><code>fill::eye</code></td>
+<td>set the elements along the main diagonal to 1 and off-diagonal elements to 0</td>
+</tr>
+<tr class="even">
+<td><code>fill::randu</code></td>
+<td>set each element to a random value from a uniform distribution in the [0,1] interval</td>
+</tr>
+<tr class="odd">
+<td><code>fill::randn</code></td>
+<td>set each element to a random value from a normal/Gaussian distribution with zero mean and unit variance</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="function-creation" class="level3">
+<h3 class="anchored" data-anchor-id="function-creation">3.2 Function Creation</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>eye()</code></td>
+<td><code>matrix_type X = eye&lt;matrix_type&gt;(n_rows,n_cols)</code><br><code>matrix_type Y = eye&lt;matrix_type&gt;(size(X))</code></td>
+</tr>
+<tr class="even">
+<td><code>linspace()</code></td>
+<td><code>vector_type v = linspace&lt;vector_type&gt;(start,end,N)</code></td>
+</tr>
+<tr class="odd">
+<td><code>logspace()</code></td>
+<td><code>vector_type v = logspace&lt;vector_type&gt;(A, B, N)</code></td>
+</tr>
+<tr class="even">
+<td><code>regspace()</code></td>
+<td><code>vector_type v = regspace&lt;vector_type&gt;(start, delta, end)</code></td>
+</tr>
+<tr class="odd">
+<td><code>ones()</code></td>
+<td><code>vector_type v = ones&lt;vector_type&gt;(n_elem)</code><br><code>matrix_type X = ones&lt;matrix_type&gt;(n_rows,n_cols)</code><br><code>cube_type Q = ones&lt;cube_type&gt;(n_rows,n_cols,n_slices)</code><br><code>some_type R = ones&lt;some_type&gt;(size(Q))</code></td>
+</tr>
+<tr class="even">
+<td><code>randi()</code></td>
+<td><code>vector_type v = rand_type&lt;vector_type&gt;( n_elem, distr_param(a,b))</code></td>
+</tr>
+<tr class="odd">
+<td>or <code>randu()</code></td>
+<td><code>matrix_type X = rand_type&lt;matrix_type&gt;( n_rows, n_cols, distr_param(a,b))</code></td>
+</tr>
+<tr class="even">
+<td>or <code>randn()</code></td>
+<td><code>matrix_type Y = rand_type&lt;matrix_type&gt;(size(X),distr_param(a,b))</code></td>
+</tr>
+<tr class="odd">
+<td>or <code>randg()</code></td>
+<td><code>cube_type Q = rand_type&lt;cube_type&gt;( n_rows, n_cols, n_slices, distr_param(a,b))</code></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><code>rand_type</code>可以是<code>randi()</code>、<code>randu()</code>、<code>randn()</code>和<code>randg()</code>，分别代表a,b区间中的整数随机值，U[0,1]U[0,1]分布中的随机浮点值，从标准正态分布中抽取的随机值，从参数为a,b的Gamma分布中抽取的随机值。<code>distr_param(a,b)</code> 只适用于<code>randi()</code>和<code>randg()</code>。 e.g.</p>
+<pre><code>vec v=randu&lt;vec&gt;(5);1</code></pre></li>
+<li><p><code>regspace()</code>中<code>delta</code>默认是1或-1。</p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="初始化元素访问属性和成员函数" class="level2">
+<h2 class="anchored" data-anchor-id="初始化元素访问属性和成员函数">4. 初始化，元素访问，属性和成员函数</h2>
+<section id="元素初始化-element-initialization" class="level3">
+<h3 class="anchored" data-anchor-id="元素初始化-element-initialization">4.1. 元素初始化 Element initialization</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// C++</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>vec v <span class="op">=</span> <span class="op">{</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span> <span class="op">};</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>mat A <span class="op">=</span> <span class="op">{</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">5</span><span class="op">},</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>          <span class="op">{</span><span class="dv">2</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">6</span><span class="op">}</span> <span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="元素访问-element-access" class="level3">
+<h3 class="anchored" data-anchor-id="元素访问-element-access">4.2. 元素访问 Element access</h3>
+<p>无论是向量<code>vec</code>，矩阵<code>mat</code>，立方体<code>cube</code>，还是域<code>field</code>，每个维数均是从0开始</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>(n)</code></td>
+<td>访问 <code>vec</code> 和 <code>rowvec</code>，访问第 <code>n</code> 个元素。访问 <code>mat</code> 和 <code>field</code>，查找相应的行一列数组上的一个元素，从而构成一个大小为1的列向量。</td>
+</tr>
+<tr class="even">
+<td><code>(i,j)</code></td>
+<td>访问 <code>mat</code> 和一维 <code>field</code>，访问第 <code>(i,j)</code> 个元素。</td>
+</tr>
+<tr class="odd">
+<td><code>(i,j,k)</code></td>
+<td>访问 <code>cube</code> 和 3D <code>field</code>，访问第 <code>(i,j,k)</code> 个元素。</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="子矩阵访问-submatrix-view" class="level3">
+<h3 class="anchored" data-anchor-id="子矩阵访问-submatrix-view">4.3. 子矩阵访问 Submatrix view</h3>
+<section id="矩阵x的连续子集访问" class="level4">
+<h4 class="anchored" data-anchor-id="矩阵x的连续子集访问">矩阵X的连续子集访问</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>X.diag(k)</code></td>
+<td>访问矩阵X的对角线元素（k是可选的，主对角线为k=0，上对角线为k&gt;0，下对角线为k&lt;0）</td>
+</tr>
+<tr class="even">
+<td><code>X.row(i)</code></td>
+<td>访问矩阵X的第i行</td>
+</tr>
+<tr class="odd">
+<td><code>X.col(i)</code></td>
+<td>访问矩阵X的第i列</td>
+</tr>
+<tr class="even">
+<td><code>X.rows(a,b)</code></td>
+<td>访问矩阵X从第a行到第b行的子矩阵</td>
+</tr>
+<tr class="odd">
+<td><code>X.cols(c,d)</code></td>
+<td>访问矩阵X从第c列到第d列的子矩阵</td>
+</tr>
+<tr class="even">
+<td><code>X.submat(a,c,b,d)</code></td>
+<td>访问矩阵X从第a行到第b行和第c列到第d列的子矩阵</td>
+</tr>
+<tr class="odd">
+<td><code>X.submat(span(a,b),span(c,d))</code></td>
+<td>访问矩阵X从第a行到第b行和第c列到第d列的子矩阵</td>
+</tr>
+<tr class="even">
+<td><code>X(a,c, size(n_rows, n_cols))</code></td>
+<td>访问矩阵X从第a行和第c列开始大小为n_rows行n_cols列的子矩阵</td>
+</tr>
+<tr class="odd">
+<td><code>X(a,c, size(Y))</code></td>
+<td>访问矩阵X从a行c列开始大小和Y相同的子矩阵</td>
+</tr>
+<tr class="even">
+<td><code>X(span(a, b), sel_col)</code></td>
+<td>访问第sel_col列，从第a行到第b行的数据。返回向量或矩阵。</td>
+</tr>
+<tr class="odd">
+<td><code>X(sel_row, span(c,d))</code></td>
+<td>访问第sel_row行，从第c列到第d列的数据。返回向量或矩阵。</td>
+</tr>
+<tr class="even">
+<td><code>X.head_cols(number_of_cols)</code></td>
+<td>返回头几列</td>
+</tr>
+<tr class="odd">
+<td><code>X.head_rows(number_of_rows)</code></td>
+<td>返回头几行</td>
+</tr>
+<tr class="even">
+<td><code>X.tail_cols(number_of_cols)</code></td>
+<td>返回尾几列</td>
+</tr>
+<tr class="odd">
+<td><code>X.tail_rows(number_of_rows)</code></td>
+<td>返回尾几行</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>span(start,end)可以被span::all代替，意味着这一维上所有的元素。</li>
+<li>X.diag(k)可以改变第k个对角线的值。</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>mat X<span class="op">=</span>randn<span class="op">&lt;</span>mat<span class="op">&gt;(</span><span class="dv">4</span><span class="op">,</span><span class="dv">4</span><span class="op">);</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>vec v<span class="op">={</span><span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">};</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>X<span class="op">.</span>diag<span class="op">()=</span>v<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="向量v的连续子集访问" class="level4">
+<h4 class="anchored" data-anchor-id="向量v的连续子集访问">向量V的连续子集访问</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>V(span(a,b))</code></td>
+<td>访问向量V从第a个元素开始相邻的b个元素</td>
+</tr>
+<tr class="even">
+<td><code>V.subvec(a,b)</code></td>
+<td>访问向量V从第a个元素开始相邻的b个元素</td>
+</tr>
+<tr class="odd">
+<td><code>V.subvec(a,size(W))</code></td>
+<td>访问向量V从第a个元素开始，长度相当于W相同的子向量</td>
+</tr>
+<tr class="even">
+<td><code>V.head(n_elem)</code></td>
+<td>访问向量V头n个元素</td>
+</tr>
+<tr class="odd">
+<td><code>V.tail(n_elem)</code></td>
+<td>访问向量V尾n个元素</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="向量或矩阵x的间断子集访问" class="level4">
+<h4 class="anchored" data-anchor-id="向量或矩阵x的间断子集访问">向量或矩阵X的间断子集访问</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>X.elem(vector_of_indices)</code></td>
+<td>通过索引向量（按照列向量化以后）中的索引访问 <code>vector_of_indices</code> 的元素；返回向量</td>
+</tr>
+<tr class="even">
+<td><code>X(vector_of_indices)</code></td>
+<td>通过索引向量（按照列向量化以后）中的索引访问 <code>vector_of_indices</code> 的元素；返回向量</td>
+</tr>
+<tr class="odd">
+<td><code>X.cols(vector_of_column_indices)</code></td>
+<td>通过索引向量访问 <code>vector_of_column_indices</code> 的子集；返回矩阵</td>
+</tr>
+<tr class="even">
+<td><code>X.rows(vector_of_row_indices)</code></td>
+<td>通过索引向量访问 <code>vector_of_row_indices</code> 的子集；返回矩阵</td>
+</tr>
+<tr class="odd">
+<td><code>X.submat(vector_of_row_indices, vector_of_column_indices)</code></td>
+<td>通过索引向量访问 <code>vector_of_row_indices</code> 和列索引向量 <code>vector_of_column_indices</code> 的子集矩阵；返回矩阵</td>
+</tr>
+<tr class="even">
+<td><code>X(vector_of_row_indices, vector_of_column_indices)</code></td>
+<td>通过索引向量访问 <code>vector_of_row_indices</code> 和列索引向量 <code>vector_of_column_indices</code> 的子集矩阵；返回矩阵</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="立方体三维矩阵q-的切片-slice" class="level4">
+<h4 class="anchored" data-anchor-id="立方体三维矩阵q-的切片-slice">立方体（三维矩阵）Q 的切片 slice</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Q<span class="op">.</span>slice<span class="op">(</span>slice_number<span class="op">)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Q<span class="op">.</span>slices<span class="op">(</span>first_slice<span class="op">,</span> last_slice<span class="op">)</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>Q<span class="op">.</span>subcube<span class="op">(</span>first_row<span class="op">,</span> first_col<span class="op">,</span> first_slice<span class="op">,</span> last_row<span class="op">,</span> last_col<span class="op">,</span> last_slice<span class="op">)</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>Q<span class="op">(</span>span<span class="op">(</span>first_row<span class="op">,</span> last_row<span class="op">),</span> span<span class="op">(</span>first_col<span class="op">,</span> last_col<span class="op">),</span> span<span class="op">(</span>first_slice<span class="op">,</span> last_slice<span class="op">))</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>Q<span class="op">(</span>first_row<span class="op">,</span> first_col<span class="op">,</span> first_slice<span class="op">,</span> size<span class="op">(</span>n_rows<span class="op">,</span> n_cols<span class="op">,</span> n_slices<span class="op">))</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>Q<span class="op">(</span>first_row<span class="op">,</span> first_col<span class="op">,</span> first_slice<span class="op">,</span> size<span class="op">(</span>R<span class="op">))</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">// (R is a cube)</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>Q<span class="op">.</span>elem<span class="op">(</span>vector_of_indices<span class="op">)</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">// (间断的力量)</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>Q<span class="op">(</span>vector_of_indices<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="域f的子集访问" class="level4">
+<h4 class="anchored" data-anchor-id="域f的子集访问">域F的子集访问</h4>
+<section id="d-field" class="level5">
+<h5 class="anchored" data-anchor-id="d-field">2-D Field</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>row<span class="op">(</span>row_number<span class="op">)</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>col<span class="op">(</span>col_number<span class="op">)</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>rows<span class="op">(</span>first_row<span class="op">,</span> last_row<span class="op">)</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>cols<span class="op">(</span>first_col<span class="op">,</span> last_col<span class="op">)</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>subfield<span class="op">(</span>first_row<span class="op">,</span> first_col<span class="op">,</span> last_row<span class="op">,</span> last_col<span class="op">)</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>F<span class="op">(</span>span<span class="op">(</span>first_row<span class="op">,</span> last_row<span class="op">),</span> span<span class="op">(</span>first_col<span class="op">,</span> last_col<span class="op">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="d-field-1" class="level5">
+<h5 class="anchored" data-anchor-id="d-field-1">3-D Field</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>slice<span class="op">(</span>slice_number<span class="op">)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>slices<span class="op">(</span>first_slice<span class="op">,</span> last_slice<span class="op">)</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>F<span class="op">.</span>subfield<span class="op">(</span>first_row<span class="op">,</span> first_col<span class="op">,</span> first_slice<span class="op">,</span> last_row<span class="op">,</span> last_col<span class="op">,</span> last_slice<span class="op">)</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>F<span class="op">(</span>span<span class="op">(</span>first_row<span class="op">,</span> last_row<span class="op">),</span> span<span class="op">(</span>first_col<span class="op">,</span> last_col<span class="op">),</span> span<span class="op">(</span>first_slice<span class="op">,</span> last_slice<span class="op">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="属性-attribute" class="level3">
+<h3 class="anchored" data-anchor-id="属性-attribute">4.4 属性 Attribute</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>.n_rows</code></td>
+<td>行数；适用于Mat, Col, Row, Cube, field和SpMat</td>
+</tr>
+<tr class="even">
+<td><code>.n_cols</code></td>
+<td>列数；适用于Mat, Col, Row, Cube, field和SpMat</td>
+</tr>
+<tr class="odd">
+<td><code>.n_elem</code></td>
+<td>所有元素个数；适用于Mat, Col, Row, Cube, field和SpMat</td>
+</tr>
+<tr class="even">
+<td><code>.n_slices</code></td>
+<td>立方体Cube第三维的切数</td>
+</tr>
+<tr class="odd">
+<td><code>.n_nonzero</code></td>
+<td>非零元素个数；适用于SpMat</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>返回值是无符号整数(<code>uword</code>)</li>
+<li>返回值是read-only的；如果要改变大小（维数），用成员函数<code>.set_size()</code>, <code>.copy_size()</code>, <code>.zeros()</code>, <code>.ones()</code>, 或者<code>.reset()</code>。
+<ul>
+<li><p><code>.set_size()</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span>set_size<span class="op">(</span> n_elem <span class="op">)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span>set_size<span class="op">(</span> n_rows<span class="op">,</span> n_cols <span class="op">)</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span>set_size<span class="op">(</span> n_rows<span class="op">,</span> n_cols<span class="op">,</span> n_slices <span class="op">)</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span>set_size<span class="op">(</span> size<span class="op">(</span>X<span class="op">)</span> <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p><code>copy_size(A)</code> 把维数设置成和A一样</p></li>
+<li><p><code>.zeros()</code></p></li>
+<li><p><code>.ones()</code></p></li>
+<li><p><code>.reset()</code> 把维数设置成0，意味着无元素</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="其他成员函数-other-member-function" class="level3">
+<h3 class="anchored" data-anchor-id="其他成员函数-other-member-function">4.5. 其他成员函数 Other member function</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>.eye(n, n)</code> / <code>.eye(size(X))</code></td>
+<td>创建nxnxn单位阵列；适用于Mat和SpMat</td>
+</tr>
+<tr class="even">
+<td><code>.randu(n_elem)</code></td>
+<td>生成的值位于[0,1]均匀分布中的随机值</td>
+</tr>
+<tr class="odd">
+<td><code>.randu(n_rows,n_cols)</code></td>
+<td>生成矩阵的值位于[0,1]均匀分布中的随机值</td>
+</tr>
+<tr class="even">
+<td><code>.randu(n_rows,n_cols,n_slices)</code></td>
+<td>生成立方体的值位于[0,1]均匀分布中的随机值</td>
+</tr>
+<tr class="odd">
+<td><code>.randn()</code></td>
+<td>生成的值符合标准正态分布</td>
+</tr>
+<tr class="even">
+<td><code>.fill(value)</code></td>
+<td>填充Mat, Col, Row, Cube元素设置为value</td>
+</tr>
+<tr class="odd">
+<td><code>.replace(old_value, new_value)</code></td>
+<td>用于替换特定值：<code>A.replace(datum::nan, 0);</code> 适用于Mat, Col, Row, Cube</td>
+</tr>
+<tr class="even">
+<td><code>.transform(lambda_function)</code> (C++11 Only)</td>
+<td>利用lambda函数转换每一个元素的值；适用于Mat, Col, Row和Cube；对于矩阵，按照column-by-column来进行变换；对于立方体，按照slice-by-slice进行变换，每一个slice是一个矩阵。e.g.对比较复杂。</td>
+</tr>
+<tr class="odd">
+<td><code>.reshape(n_rows, n_cols)</code></td>
+<td>适用于矩阵；按照设定的维数重新布置的矩阵，转换时，先将旧的矩阵按列转换为长列向量，然后按照新维数重组，一列一列地设置新的矩阵。保持总体元素数量。</td>
+</tr>
+<tr class="even">
+<td><code>.reshape(n_rows,n_cols,n_slices)</code></td>
+<td>适用于立方体；与上类似</td>
+</tr>
+<tr class="odd">
+<td><code>.reshape(size(X))</code></td>
+<td>适用于矩阵和立方体；与上类似</td>
+</tr>
+<tr class="even">
+<td><code>.resize(n_elem)</code></td>
+<td>适用于向量;保留原有值并增补，增加部分填充0</td>
+</tr>
+<tr class="odd">
+<td><code>.resize(n_rows,n_cols)</code></td>
+<td>适用于矩阵；保留原有值增补，增加部分填充0</td>
+</tr>
+<tr class="even">
+<td><code>.resize(n_rows,n_cols,n_slices)</code></td>
+<td>适用于立方体；保留原有值增补，增加部分填充0</td>
+</tr>
+<tr class="odd">
+<td><code>.resize(size(X))</code></td>
+<td>适用于向量、矩阵和立方体</td>
+</tr>
+<tr class="even">
+<td><code>Y.set_imag(X)</code></td>
+<td>将复数矩阵Y的虚部设置成实数矩阵X</td>
+</tr>
+<tr class="odd">
+<td><code>Y.set_real(X)</code></td>
+<td>将复数矩阵Y的实部设置成实数矩阵X</td>
+</tr>
+<tr class="even">
+<td><code>.insert_rows()</code></td>
+<td>插入行</td>
+</tr>
+<tr class="odd">
+<td><code>.insert_cols()</code></td>
+<td>插入列</td>
+</tr>
+<tr class="even">
+<td><code>.insert_slices()</code></td>
+<td>插入切片</td>
+</tr>
+<tr class="odd">
+<td><code>.shed_row()</code> / <code>.shed_rows()</code></td>
+<td>移除行</td>
+</tr>
+<tr class="even">
+<td><code>.shed_col()</code> / <code>.shed_cols()</code></td>
+<td>移除列</td>
+</tr>
+<tr class="odd">
+<td><code>.shed_slice()</code> / <code>.shed_slices()</code></td>
+<td>移除切片</td>
+</tr>
+<tr class="even">
+<td><code>.swap_rows(row1, row2)</code></td>
+<td>交换行</td>
+</tr>
+<tr class="odd">
+<td><code>.swap_cols(col1, col2)</code></td>
+<td>交换列</td>
+</tr>
+<tr class="even">
+<td><code>.memptr()</code></td>
+<td>获取对对象的指针；适用于Mat, Col, Row和Cube</td>
+</tr>
+<tr class="odd">
+<td><code>.colptr(col_number)</code></td>
+<td>获取某一列的指针</td>
+</tr>
+<tr class="even">
+<td>iterators</td>
+<td>STL-style iterators and associated member functions</td>
+</tr>
+<tr class="odd">
+<td><code>.t()</code></td>
+<td>转置矩阵并共享数据，适用于 <code>mat</code> 和 <code>cx_mat</code></td>
+</tr>
+<tr class="even">
+<td><code>.st()</code></td>
+<td>转置矩阵（不共享数据），仅适用于 <code>cx_mat</code></td>
+</tr>
+<tr class="odd">
+<td><code>.i()</code></td>
+<td>选择性</td>
+</tr>
+<tr class="even">
+<td><code>.min()</code> / <code>.max()</code></td>
+<td>返回矩阵或向量的极值；如果是复数，则返回的极值</td>
+</tr>
+<tr class="odd">
+<td><code>.index_min()</code> / <code>.index_max()</code></td>
+<td>返回矩阵或向量极值的索引；返回的是一个元素的整数</td>
+</tr>
+<tr class="even">
+<td><code>.in_range()</code></td>
+<td>确保给定的矩阵或者向量是合法的</td>
+</tr>
+<tr class="odd">
+<td><code>.is_empty()</code></td>
+<td>确保是否为空</td>
+</tr>
+<tr class="even">
+<td><code>.is_square()</code></td>
+<td>确保是否是方阵</td>
+</tr>
+<tr class="odd">
+<td><code>.is_vec()</code></td>
+<td>确保一个维度是否是向量</td>
+</tr>
+<tr class="even">
+<td><code>.is_sorted()</code></td>
+<td>确保对象是否是被排序过的</td>
+</tr>
+<tr class="odd">
+<td><code>.is_finite()</code></td>
+<td>确保对象是否有限</td>
+</tr>
+<tr class="even">
+<td><code>.has_inf()</code></td>
+<td>确保是否含有inf值</td>
+</tr>
+<tr class="odd">
+<td><code>.has_nan()</code></td>
+<td>确保是否含有NaN</td>
+</tr>
+<tr class="even">
+<td><code>.print()</code></td>
+<td>打印此对象</td>
+</tr>
+<tr class="odd">
+<td><code>.save()</code> / <code>.load()</code></td>
+<td>向磁盘文件或流写入或读取对象</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><code>.transform(lambda_function)</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">// C++11 only example</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>mat A <span class="op">=</span> ones<span class="op">&lt;</span>mat<span class="op">&gt;(</span><span class="dv">4</span><span class="op">,</span><span class="dv">5</span><span class="op">);</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">// add 123 to every element</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>A<span class="op">.</span>transform<span class="op">(</span> <span class="op">[](</span><span class="dt">double</span> val<span class="op">)</span> <span class="op">{</span> <span class="cf">return</span> <span class="op">(</span>val <span class="op">+</span> <span class="fl">123.0</span><span class="op">);</span> <span class="op">}</span> <span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p><code>.reshape()</code>和<code>.resize()</code>的区别在于前者不会保存原对象的布局,而后者会保留原对象的布局，且后者更快。例如，如果新对象的维数大于原对象的维数，则新对象中原维数外的元素会被设置成0。 e.g.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>  mat A <span class="op">=</span> randu<span class="op">&lt;</span>mat<span class="op">&gt;(</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">);</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  A<span class="op">.</span>reshape<span class="op">(</span><span class="dv">4</span><span class="op">,</span><span class="dv">4</span><span class="op">);</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>             <span class="op">[,</span><span class="dv">1</span><span class="op">]</span>      <span class="op">[,</span><span class="dv">2</span><span class="op">]</span> <span class="op">[,</span><span class="dv">3</span><span class="op">]</span> <span class="op">[,</span><span class="dv">4</span><span class="op">]</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">1</span><span class="op">,]</span> <span class="fl">0.02567623</span> <span class="fl">0.8880936</span>    <span class="dv">0</span>    <span class="dv">0</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">2</span><span class="op">,]</span> <span class="fl">0.12546129</span> <span class="fl">0.6520889</span>    <span class="dv">0</span>    <span class="dv">0</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">3</span><span class="op">,]</span> <span class="fl">0.52724939</span> <span class="fl">0.0000000</span>    <span class="dv">0</span>    <span class="dv">0</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">4</span><span class="op">,]</span> <span class="fl">0.30407942</span> <span class="fl">0.0000000</span>    <span class="dv">0</span>    <span class="dv">0</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  mat A <span class="op">=</span> randu<span class="op">&lt;</span>mat<span class="op">&gt;(</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">);</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  A<span class="op">.</span>resize<span class="op">(</span><span class="dv">4</span><span class="op">,</span><span class="dv">4</span><span class="op">);</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>            <span class="op">[,</span><span class="dv">1</span><span class="op">]</span>      <span class="op">[,</span><span class="dv">2</span><span class="op">]</span>      <span class="op">[,</span><span class="dv">3</span><span class="op">]</span> <span class="op">[,</span><span class="dv">4</span><span class="op">]</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">1</span><span class="op">,]</span> <span class="fl">0.5451790</span> <span class="fl">0.2632051</span> <span class="fl">0.6375933</span>    <span class="dv">0</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">2</span><span class="op">,]</span> <span class="fl">0.3753245</span> <span class="fl">0.8050394</span> <span class="fl">0.1627499</span>    <span class="dv">0</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">3</span><span class="op">,]</span> <span class="fl">0.0000000</span> <span class="fl">0.0000000</span> <span class="fl">0.0000000</span>    <span class="dv">0</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="op">[</span><span class="dv">4</span><span class="op">,]</span> <span class="fl">0.0000000</span> <span class="fl">0.0000000</span> <span class="fl">0.0000000</span>    <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p><code>.memptr()</code> 可被用于和一些库交互，比如FFTW。</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>      mat A <span class="op">=</span> randu<span class="op">&lt;</span>mat<span class="op">&gt;(</span><span class="dv">5</span><span class="op">,</span><span class="dv">5</span><span class="op">);</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> mat B <span class="op">=</span> randu<span class="op">&lt;</span>mat<span class="op">&gt;(</span><span class="dv">5</span><span class="op">,</span><span class="dv">5</span><span class="op">);</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span><span class="op">*</span> A_mem <span class="op">=</span> A<span class="op">.</span>memptr<span class="op">();</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="at">const</span> <span class="dt">double</span><span class="op">*</span> B_mem <span class="op">=</span> B<span class="op">.</span>memptr<span class="op">();</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="常用函数" class="level2">
+<h2 class="anchored" data-anchor-id="常用函数">5. 常用函数</h2>
+<section id="向量矩阵和立方体的一般函数" class="level3">
+<h3 class="anchored" data-anchor-id="向量矩阵和立方体的一般函数">5.1. 向量、矩阵和立方体的一般函数</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>abs(X)</code></td>
+<td>求矩阵或向量的绝对值</td>
+</tr>
+<tr class="even">
+<td><code>accu(X)</code></td>
+<td>对矩阵或向量的元素进行累加(求和)</td>
+</tr>
+<tr class="odd">
+<td><code>all(X, dim)</code></td>
+<td>确定矩阵或向量是否所有元素都为非零值</td>
+</tr>
+<tr class="even">
+<td><code>any(X, dim)</code></td>
+<td>确定矩阵或向量是否至少有一个元素为非零值</td>
+</tr>
+<tr class="odd">
+<td><code>approx_equal(A, B, method, abs_tol, rel_tol)</code></td>
+<td>两个对象在给定的容忍度下是否近似相等，返回True（Bool值）；method可以是absdiff, reldiff或both</td>
+</tr>
+<tr class="even">
+<td><code>cond(A)</code></td>
+<td>求矩阵A的conditional number</td>
+</tr>
+<tr class="odd">
+<td><code>conj(X)</code></td>
+<td>求矩阵或向量的共轭矩阵</td>
+</tr>
+<tr class="even">
+<td><code>conv_to&lt;new_type&gt;::from(X)</code></td>
+<td>不同Armadillo数据类型之间的转换(e.g.&nbsp;mat 和 int); 不同大小的向量间的转换(e.g.&nbsp;cube 和 icube); std::vector 和 Armadillo向量或矩阵之间的转换; <code>mat 转换为 colvec</code>, <code>rowvec 或 std::vector</code></td>
+</tr>
+<tr class="odd">
+<td><code>cross(A, B)</code></td>
+<td>向量叉乘cross product</td>
+</tr>
+<tr class="even">
+<td><code>cumsum(X, dim)</code></td>
+<td>累积和函数；如果是矩阵，则返回行/列元素的累积和；如果是矩阵，且dim=0，则返回所有列的和，<code>dim=1</code>, 则返回所有行的和</td>
+</tr>
+<tr class="odd">
+<td><code>cumprod(X, dim)</code></td>
+<td>累积乘积；如果是矩阵，则返回行/列元素的累积乘积；如果是矩阵，且dim=0，则返回所有列的乘积，<code>dim=1</code>, 则返回所有行的乘积</td>
+</tr>
+<tr class="even">
+<td><code>det(A)</code></td>
+<td>计算方阵的行列式;对于大矩阵，<code>log_det()</code> 更加精确</td>
+</tr>
+<tr class="odd">
+<td><code>log_det(val,sign,A)</code></td>
+<td>Log determinant of square matrix A; the determinant is equal to exp(val)*sign</td>
+</tr>
+<tr class="even">
+<td><code>diagmat(X, k)</code></td>
+<td>生矩阵对角线，用n个相同的矩阵X的对角线元素作为新矩阵的k个对角线，其他元素设置为零</td>
+</tr>
+<tr class="odd">
+<td><code>diagvec(A, k)</code></td>
+<td>取矩阵A的对角线</td>
+</tr>
+<tr class="even">
+<td><code>dot(A, B)</code> / <code>cdot / norm_dot</code></td>
+<td>向量的点积dot product</td>
+</tr>
+<tr class="odd">
+<td><code>find(condition)</code></td>
+<td>返回向量或矩阵满足条件的元素的线性索引; e.g.&nbsp;<code>find(A&gt;B)</code> or <code>find(A&gt;0)</code></td>
+</tr>
+<tr class="even">
+<td><code>find_finite(X)</code></td>
+<td>返回向量中非NaN的元素的线性索引</td>
+</tr>
+<tr class="odd">
+<td><code>find_nonfinite(X)</code></td>
+<td>返回向量中NaN的元素的线性索引</td>
+</tr>
+<tr class="even">
+<td><code>find_unique(x,ascending_indices)</code></td>
+<td>返回数组中唯一元素的索引; ascending_indices是可选参数, 设为true (默认) 返回索引按升序排列, 设为false返回降序排列</td>
+</tr>
+<tr class="odd">
+<td><code>imag()</code> / <code>real()</code></td>
+<td>取复数矩阵或数组的虚部或实部</td>
+</tr>
+<tr class="even">
+<td><code>inplace_trans(x,method)</code> / <code>inplace_strans(x,method)</code></td>
+<td>in-place transpose, 直接对X进行转置, X的值改变了</td>
+</tr>
+<tr class="odd">
+<td><code>is_finite()</code></td>
+<td>检查是否所有元素都是有限的</td>
+</tr>
+<tr class="even">
+<td><code>join_rows(A,B)</code> / <code>join_horiz(A,B)</code></td>
+<td>横向拼接两个矩阵或两个向量</td>
+</tr>
+<tr class="odd">
+<td><code>join_cols(A,B)</code> / <code>join_vert(A,B)</code></td>
+<td>纵向拼接两个矩阵或两个向量</td>
+</tr>
+<tr class="even">
+<td><code>join_slices(cube_C,cube_D)</code></td>
+<td>拼接矩阵三维切片形成一个立方体, 即两个立方体的第一维和第二维的维数必须相等</td>
+</tr>
+<tr class="odd">
+<td><code>join_slices(mat_m,mat_N)</code></td>
+<td>拼接两个三维切片形成一个立方体, 即两个矩阵必须形状相同</td>
+</tr>
+<tr class="even">
+<td><code>join_slices(mat_m,cube_C)</code> / <code>join_slices(cube_C,mat_M)</code></td>
+<td>将一个矩阵加入一个立方体中</td>
+</tr>
+<tr class="odd">
+<td><code>kron(A,B)</code></td>
+<td>Kronecker tensor product</td>
+</tr>
+<tr class="even">
+<td><code>min(X,dim)</code> / <code>max(X,dim)</code></td>
+<td>沿对应维度找出一组向量的最大; 沿对应维度(dim)找出最大或最小的值;dim是可选参数, 默认返回一个列向量, 1表示沿着每一行的维度, 2表示返回每一个切片的最值</td>
+</tr>
+<tr class="odd">
+<td><code>min(A,B)</code> / <code>max(A,B)</code></td>
+<td>返回两个一维数组或者立方体, 按每一个元素比较A和B中同样维度的两个元素的最小值和最大值</td>
+</tr>
+<tr class="even">
+<td><code>nonzeros(X)</code></td>
+<td>返回一个列向量, 代表非零元素的线性索引</td>
+</tr>
+<tr class="odd">
+<td><code>norm(X,p)</code></td>
+<td>计算矩阵或向量的p-norm; p可以是关于矩阵的1范数,“inf”;“fro”;是特殊的: p可以是1,2,inf;“fro”指代Frobenius norm</td>
+</tr>
+<tr class="even">
+<td><code>normalise(V,p)</code> / <code>normalise(X,p,dim)</code></td>
+<td>标准化向量V或者矩阵X使其满足unit p-norm</td>
+</tr>
+<tr class="odd">
+<td><code>rank(X,tolerance)</code></td>
+<td>计算矩阵的秩; tolerance为可选参数</td>
+</tr>
+<tr class="even">
+<td><code>rcond(A)</code></td>
+<td>计算矩阵A的conditional number的倒数的估计值; 如果结果近似代表A是well-conditioned,如果接近0代表A是badly-conditioned</td>
+</tr>
+<tr class="odd">
+<td><code>repmat(A,num_copies_per_row,num_copies_per_col)</code></td>
+<td>把矩阵A按照水平和垂直进行复制并堆叠成新的矩阵</td>
+</tr>
+<tr class="even">
+<td><code>shuffle(V)</code> / <code>shuffle(X,dim)</code></td>
+<td>随机排列向量元素或矩阵指定的切片</td>
+</tr>
+<tr class="odd">
+<td><code>sort(V,sort_direction)</code> / <code>sort(X,sort_direction,dim)</code></td>
+<td>对向量进行排序, 或对矩阵的每个切片(或者维度)进行排序; sort_direction可以是ascend(默认) 或 descend</td>
+</tr>
+<tr class="even">
+<td><code>sort_index(X,sort_direction)</code></td>
+<td>反回对原数据排序后的索引元素的线性索引</td>
+</tr>
+<tr class="odd">
+<td><code>B=sqrtmat(A)</code> / <code>sqrtmat_sympd(A)</code></td>
+<td>计算矩阵的Complex square root; B=ecx_mat</td>
+</tr>
+<tr class="even">
+<td><code>sqrtmat_sympd(A)</code> / <code>sqrtmat_sympd(B, A)</code></td>
+<td>对称正定矩阵的Complex square root</td>
+</tr>
+<tr class="odd">
+<td><code>sum(X, dim)</code></td>
+<td>向量：返回所有元素的和；矩阵：返回每一列(dim=0)或每一行(dim=1)的和；立方体：返回每一维上(第三维度dim=2)的和</td>
+</tr>
+<tr class="even">
+<td><code>trace(X)</code></td>
+<td>计算矩阵的迹即对角线上的值的总和</td>
+</tr>
+<tr class="odd">
+<td><code>trans(A)</code> / <code>strans(A)</code></td>
+<td>转置矩阵；如果是复数矩阵，则产生共轭的转置矩阵，而后者是直接转置</td>
+</tr>
+<tr class="even">
+<td><code>unique(A)</code></td>
+<td>返回A的独一无二的元素，并且按照升序排列；如果A是矩阵，则返回一个列向量</td>
+</tr>
+<tr class="odd">
+<td><code>vectorise(X, dim)</code></td>
+<td>矩阵的向量化；如果dim=0,按照column-wise；如果dim=1,按照row-wise</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="其他一些数学函数" class="level3">
+<h3 class="anchored" data-anchor-id="其他一些数学函数">5.2 其他一些数学函数</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>exp(A)</code></td>
+<td>base-e exponential: e^x</td>
+</tr>
+<tr class="even">
+<td><code>exp2(A)</code></td>
+<td>base-2 exponential: 2^x</td>
+</tr>
+<tr class="odd">
+<td><code>exp10(A)</code></td>
+<td>base-10 exponential: 10^x</td>
+</tr>
+<tr class="even">
+<td><code>trunc_exp(A)</code></td>
+<td>base-e exponential, truncated to avoid infinity (only for float and double elements)</td>
+</tr>
+<tr class="odd">
+<td><code>log(A)</code></td>
+<td>natural log: log_e(x)</td>
+</tr>
+<tr class="even">
+<td><code>log2(A)</code></td>
+<td>base-2 log: log_2(x)</td>
+</tr>
+<tr class="odd">
+<td><code>log10(A)</code></td>
+<td>base-10 log: log_10(x)</td>
+</tr>
+<tr class="even">
+<td><code>trunc_log(A)</code></td>
+<td>natural log, truncated to avoid ±infinity (only for float and double elements)</td>
+</tr>
+<tr class="odd">
+<td><code>pow(A, p)</code></td>
+<td>raise to the power of p: x^p</td>
+</tr>
+<tr class="even">
+<td><code>square(A)</code></td>
+<td>square: x^2</td>
+</tr>
+<tr class="odd">
+<td><code>sqrt(A)</code></td>
+<td>square root: x—&gt;√x</td>
+</tr>
+<tr class="even">
+<td><code>floor(A)</code></td>
+<td>largest integral value that is not greater than the input value</td>
+</tr>
+<tr class="odd">
+<td><code>ceil(A)</code></td>
+<td>smallest integral value that is not less than the input value</td>
+</tr>
+<tr class="even">
+<td><code>round(A)</code></td>
+<td>round to nearest integer, with halfway cases rounded away from zero</td>
+</tr>
+<tr class="odd">
+<td><code>trunc(A)</code></td>
+<td>round to nearest integer, towards zero</td>
+</tr>
+<tr class="even">
+<td><code>erf(A)</code></td>
+<td>error function</td>
+</tr>
+<tr class="odd">
+<td><code>erfc(A)</code></td>
+<td>complementary error function</td>
+</tr>
+<tr class="even">
+<td><code>lgamma(A)</code></td>
+<td>natural log of the gamma function</td>
+</tr>
+<tr class="odd">
+<td><code>sign(A)</code></td>
+<td>signum function</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="矩阵的分解因子化逆矩阵和线性方程的解" class="level3">
+<h3 class="anchored" data-anchor-id="矩阵的分解因子化逆矩阵和线性方程的解">5.3. 矩阵的分解、因子化、逆矩阵和线性方程的解</h3>
+<section id="dense-matrix" class="level4">
+<h4 class="anchored" data-anchor-id="dense-matrix">Dense Matrix</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>chol</code></td>
+<td>Cholesky decomposition</td>
+</tr>
+<tr class="even">
+<td><code>eig_sym</code></td>
+<td>eigen decomposition of dense symmetric/hermitian matrix</td>
+</tr>
+<tr class="odd">
+<td><code>eig_gen</code></td>
+<td>eigen decomposition of dense general square matrix</td>
+</tr>
+<tr class="even">
+<td><code>eig_pair</code></td>
+<td>eigen decomposition for pair of general dense square matrices</td>
+</tr>
+<tr class="odd">
+<td><code>inv</code></td>
+<td>inverse of general square matrix</td>
+</tr>
+<tr class="even">
+<td><code>inv_sympd</code></td>
+<td>inverse of symmetric positive definite matrix</td>
+</tr>
+<tr class="odd">
+<td><code>lu</code></td>
+<td>lower-upper decomposition</td>
+</tr>
+<tr class="even">
+<td><code>null</code></td>
+<td>orthonormal basis of null space</td>
+</tr>
+<tr class="odd">
+<td><code>orth</code></td>
+<td>orthonormal basis of range space</td>
+</tr>
+<tr class="even">
+<td><code>pinv</code></td>
+<td>pseudo-inverse</td>
+</tr>
+<tr class="odd">
+<td><code>qr</code></td>
+<td>QR decomposition</td>
+</tr>
+<tr class="even">
+<td><code>qr_econ</code></td>
+<td>economical QR decomposition</td>
+</tr>
+<tr class="odd">
+<td><code>qz</code></td>
+<td>generalised Schur decomposition</td>
+</tr>
+<tr class="even">
+<td><code>schur</code></td>
+<td>Schur decomposition</td>
+</tr>
+<tr class="odd">
+<td><code>solve</code></td>
+<td>solve systems of linear equations</td>
+</tr>
+<tr class="even">
+<td><code>svd</code></td>
+<td>singular value decomposition</td>
+</tr>
+<tr class="odd">
+<td><code>svd_econ</code></td>
+<td>economical singular value decomposition</td>
+</tr>
+<tr class="even">
+<td><code>syl</code></td>
+<td>Sylvester equation solver</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sparse-matrix" class="level4">
+<h4 class="anchored" data-anchor-id="sparse-matrix">Sparse Matrix</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>eigs_sym</code></td>
+<td>limited number of eigenvalues &amp; eigenvectors of sparse symmetric real matrix</td>
+</tr>
+<tr class="even">
+<td><code>eigs_gen</code></td>
+<td>limited number of eigenvalues &amp; eigenvectors of sparse general square matrix</td>
+</tr>
+<tr class="odd">
+<td><code>spsolve</code></td>
+<td>solve sparse systems of linear equations</td>
+</tr>
+<tr class="even">
+<td><code>svds</code></td>
+<td>limited number of singular values &amp; singular vectors of sparse matrix</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="信号和图像处理" class="level3">
+<h3 class="anchored" data-anchor-id="信号和图像处理">5.4. 信号和图像处理</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>conv</code></td>
+<td>1D convolution</td>
+</tr>
+<tr class="even">
+<td><code>conv2</code></td>
+<td>2D convolution</td>
+</tr>
+<tr class="odd">
+<td><code>fft</code> / <code>ifft</code></td>
+<td>1D fast Fourier transform and its inverse</td>
+</tr>
+<tr class="even">
+<td><code>fft2</code> / <code>ifft2</code></td>
+<td>2D fast Fourier transform and its inverse</td>
+</tr>
+<tr class="odd">
+<td><code>interp1</code></td>
+<td>1D interpolation</td>
+</tr>
+<tr class="even">
+<td><code>polyfit</code></td>
+<td>find polynomial coefficients for data fitting</td>
+</tr>
+<tr class="odd">
+<td><code>polyval</code></td>
+<td>evaluate polynomial</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="统计和聚类" class="level3">
+<h3 class="anchored" data-anchor-id="统计和聚类">5.5. 统计和聚类</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mean(X, dim)</code></td>
+<td>平均值；适用于Vec, Mat, Cube</td>
+</tr>
+<tr class="even">
+<td><code>median(X, dim)</code></td>
+<td>中位数；适用于Vec, Mat</td>
+</tr>
+<tr class="odd">
+<td><code>stddev(X, norm_type, dim)</code></td>
+<td>标准差；norm_type可选参数为1，0代表除以N-1 (无偏估计), 1表示除以N; 适用于Vec, Mat</td>
+</tr>
+<tr class="even">
+<td><code>var(X, norm_type, dim)</code></td>
+<td>方差；适用于Vec, Mat</td>
+</tr>
+<tr class="odd">
+<td><code>range(X, dim)</code></td>
+<td>范围；适用于Vec, Mat</td>
+</tr>
+<tr class="even">
+<td><code>cov(X, Y, norm_type)</code> / <code>cov(X, norm_type)</code></td>
+<td>协方差；当两个输入X、Y时，生成的行表示样本，列表示变量，则cov(X,Y)的第(i,j)-th个元素等于X的第i个变量和Y的第j个变量的协方差; norm_type=0表示除以N-1, norm_type=1表示除以N</td>
+</tr>
+<tr class="odd">
+<td><code>cor(X, Y, norm_type)</code> / <code>cor(X, norm_type)</code></td>
+<td>相关系数；与协方差类似</td>
+</tr>
+<tr class="even">
+<td><code>hist</code> / <code>histc</code></td>
+<td>直方图</td>
+</tr>
+<tr class="odd">
+<td><code>princomp</code></td>
+<td>主成分分析</td>
+</tr>
+<tr class="even">
+<td><code>kmeans(means,data,k,seed_mode,n_iter,print_mode)</code></td>
+<td>K-means聚类，聚类解析成k个不相交的集合</td>
+</tr>
+<tr class="odd">
+<td><code>gmm_diag</code></td>
+<td>聚类；Gaussian Mixture Model (GMM)</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/programming/R/ggplot2.html" class="pagination-link" aria-label="ggplot2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ggplot2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/programming/R/Shiny.html" class="pagination-link" aria-label="Shiny">
+        <span class="nav-page-text">Shiny</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,237 @@
+---
+title: "Hypothesis Testing Notebook"
+---
+
+# Basic Statistical Methods
+
+### Clopper-Pearson Exact Method
+
+The formula for the Clopper-Pearson exact method uses the relationship between the Binomial distribution and Beta distribution to form the interval
+
+$$
+[Beta(\alpha/2; X, n - X + 1), Beta(1-\alpha/2; X + 1, n - X)]
+$$
+
+Given an observation, the lower $p$ and upper limits are given by
+
+$$
+\sum_{k = X}^n {n \choose k} p_L^k (1-p_L)^{n-k} = \alpha/2; \quad 
+\sum_{k = 0}^X {n \choose k} p_U^k (1-p_U)^{n-k} = \alpha/2. 
+$$
+
+# Hypostis testing {.unnumbered}
+
+### Binomial Non-inferiority Two-Sample Testing {.unnumbered}
+
+Let $\pi_c$ and $\pi_t$ denote the response rates for the control and experimental treatments, respectively. Higher response rate means better performance. Let $\delta = \pi_t - \pi_c$. We have
+
+$$
+H_0: \delta \leq \delta_0 \quad vs \quad H_1: \delta > \delta_0
+$$ where $\delta_0 < 0$ is called **non-inferiority margin**. In other word,
+
+$$
+H_0: \pi_t \leq \pi_c + \delta_0 \quad vs \quad H_1: \pi_t > \pi_c + \delta_0
+$$ The test statistic can be defined by
+
+$$
+T = \frac{\hat{\pi}_t - \hat{\pi}_c - \delta_0}{\sqrt{\frac{\tilde{\pi}_t(1-\tilde{\pi}_t)}{n_t} + \frac{\tilde{\pi}_c(1-\tilde{\pi}_c)}{n_c}}}
+$$ where $\tilde{\pi}_t$ and $\tilde{\pi}_c$ are the restricted maximum likelihood estimates (REML) of $\pi_t$ and $\pi_c$. From Miettinen and Nurminen (1985), $\tilde{\pi}_t$ and $\tilde{\pi}_c$ can be obtained by solving the third degree likelihood equation:
+
+$$
+\sum_{k=0}^3 L_k\tilde{\pi}_c^k = 0
+$$ with $\tilde{\pi}_t = \tilde{\pi}_c + \delta_0$,
+
+$$
+\begin{aligned}
+L_3 & = N = n_c + n_t \\
+L_2 & = (n_t + 2n_c)\delta_0 - N - x_c - x_t \\ 
+L_1 & = (n_c\delta_0 - N - 2x_c)\delta_0 + x_c + x_t \\ 
+L_0 &= x_c\delta_0(1-\delta_0)
+\end{aligned}
+$$
+
+### Cochran–Mantel–Haenszel statistics {.unnumbered}
+
+In statistics, the Cochran–Mantel–Haenszel test (CMH) is a test used in the analysis of stratified or matched categorical data. It allows an investigator to test the association between a binary predictor or treatment and a binary outcome such as case or control status while taking into account the stratification
+
+|               | Treatment | Control  | Row Total |
+|---------------|-----------|----------|-----------|
+| Event         | $x_{Aj}$  | $x_{Bj}$ | $x_{+j}$  |
+| No Event      | $y_{Aj}$  | $y_{Bj}$ | $y_{-j}$  |
+| Column Totals | $n_{Aj}$  | $n_{Bj}$ | $N_j$     |
+
+The risk ratio is $\widehat{RR} = \frac{x_{A}/x_+}{y_A/y_-}$ and the odds ratio = $\widehat{OR} = \frac{x_A/x_B}{y_A/y_B} = \frac{x_Ay_B}{x_By_A}$. The CMH estimate for a risk ratio is $$
+\widehat{RR}_{cmh} = \frac{\sum_{j = 1}^K x_{Aj}(y_{Aj}+y_{Bj})/N_j}{\sum_{j = 1}^K y_{Aj}(x_{Aj} + x_{Bj})/N_j}
+$$ The CMH odds-ratio estimate is $$
+\widehat{OR}_{cmh} = \frac{\sum_{j = 1}^K x_{Aj}y_{Bj}/N_j}{ \sum_{j = 1}^K x_{Bj}y_{Aj}/N_j} 
+$$
+
+The null hypothesis is that there is no association between the treatment and the outcome, i.e. $H_0: OR = 1$ and the alternative hypothesis is $H_1: OR\neq 1$.
+
+The test statistics is \begin{align}\label{CMHtest}
+\xi_{C M H}=\frac{\left[\sum_{j=1}^{K}\left(x_{Aj}-\frac{x_{+j} n_{Aj}}{N_{j}}\right)\right]^{2}}{\sum_{j=1}^{K} \frac{x_{+j} y_{-j} n_{Aj} n_{Bj}}{N_{j}^{2}\left(N_{j}-1\right)}} \sim \chi^2_1 
+\end{align}
+
+i.e. $\xi_{CMH} = [\sum_i (x_{Aj} - \mu_{Aj})]^2/\sum_i Var(x_{Aj})$ where $E(x_{Aj}) = \frac{x_{+j} n_{Aj}}{N_{j}}$ and $Var(x_{Aj}) = \frac{x_{+j} y_{-j} n_{Aj} n_{Bj}}{N_{j}^{2}\left(N_{j}-1\right)}$.
+
+### Miettinen & Nurminen Method {.unnumbered}
+
+Notation:
+
+```{=tex}
+\begin{itemize}
+\item $A$ and $B$: treatment group and control group
+\item $i$: treatment index, $i = A, B$
+\item $j$: strata index, $j = 1, \ldots, K$. 
+\item $n_{ij}$: number of patients in treatment $i$ strata $j$ 
+\item $N_j$: total number of patients in strata $j$, $N_j = n_{Aj}+n_{Bj}$
+\item $x_{+j}$: total number of events in stratum $j$, $x_{+j} = x_{Aj} + x_{Bj}$ 
+\item $x_{ij}$: number of events in treatment $i$ stratum $j$, $i = A,B$, $j = 1, \ldots. K$
+\item $r_{ij}$: observed event rate, $r_{ij} = x_{ij}/n_{ij}$
+\item $d_j$: observed rate difference in stratum $j$, $d_j = r_{Aj} - r_{Bj}$
+\item $\bar r_j$: pooled event rate, $\bar r_j = x_{+j}/N_j$ 
+\end{itemize}
+```
+|               | Treatment | Control  | Row Total |
+|---------------|-----------|----------|-----------|
+| Event         | $x_{Aj}$  | $x_{Bj}$ | $x_{+j}$  |
+| No Event      | $y_{Aj}$  | $y_{Bj}$ | $y_{-j}$  |
+| Column Totals | $n_{Aj}$  | $n_{Bj}$ | $N_j$     |
+
+The null hypothesis is a family of hypotheses: $H(\delta) = \pi_{Aj} - \pi_{Bj} = \delta$ for $j = 1, \ldots, K$ and the corresponding chi-square test statistics: $$
+\xi^{MN}(\delta) = \frac{\left[\sum_{j = 1}^K W_j(r_{Aj} - r_{Bj} - \delta) \right]^2}{\sum_{j=1}^K W_j^2 \widetilde{V}_{r_{Aj} - r_{Bj}}} \sim \chi_1^2
+$$ where $$
+\widetilde{V}_{r_{A j}-r_{B j}}=\left\{\frac{\widetilde{R}_{A j}\left(1-\widetilde{R}_{A j}\right)}{n_{A j}}+\frac{\widetilde{R}_{B j}\left(1-\widetilde{R}_{B j}\right)}{n_{B j}}\right\} \frac{N_{j}}{\left(N_{j}-1\right)}
+$$ is the variance of $d_j = r_{Aj} - r_{Bj}$ under $H(\delta)$, $\widetilde{R}_{Aj}$ and $\widetilde{R}_{Bj}$ are the contrained maximum likelihood estimates of $\pi_{Aj}$ and $\pi_{Bj}$ so that $\widetilde{R}_{Aj} - \widetilde{R}_{Bj} = \delta$ (see [\color{red} Miettinen & Nurminen](https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.4780040211?casa_token=Gz4WotTzoLIAAAAA:aXhQra4XO6plHXmbNSH32z_keRAdZDbFo1QylH7Vx_jdR4LI4q4eMliAMdV0zFvuzOMPEA-N2zo5K5Iv) Appendix 1), $W_j$ is the M&N weight for stratum $j$:
+
+$$
+\begin{align}
+W_{j}=\left[\frac{\widetilde{R}_{A}^{*}\left(1-\widetilde{R}_{A}^{*}\right)}{\widetilde{R}_{B}^{*}\left(1-\widetilde{R}_{B}^{*}\right)} / n_{A j}+1 / n_{B j}\right]^{-1}, \quad j=1, \ldots, K
+\end{align}
+$$ {#eq-MNweight}
+
+
+and $\widetilde{R}_A^*$ and $\widetilde{R}_B^*$ are the weighted averages of the contrained MLEs under $H(\delta)$,
+
+$$
+\widetilde{R}_i^* = \frac{\sum_{j=1}^K W_j\widetilde{R}_{ij}}{\sum_{j=1}^K W_j}, \quad i = A, B.
+$$ {#eq-wMLE}
+
+We reject $H(\delta)$ if and only if $\xi^{MN}(\delta) \geq \chi^2_{1, 1- \alpha}$. The $100(1-\alpha)\%$ confidence limits of $\delta$ can be obtained by solving $$
+\xi^{MN}(\widehat{\delta}_L) = \xi^{MN}(\widehat{\delta}_U) = \chi_{1, 1-\alpha}^2
+$$ We can also define $$
+Z(\delta) = \frac{\sum_{j=1}^K W_j(r_{Aj} - r_{Bj} - \delta)}{\sqrt{\sum_{j=1}^K W_j^2 \widetilde{V}_{r_{Aj} - r_{Bj}}}}
+$$ so that $Z(\widehat{\delta}_L) = z_{1-\alpha/2}$ and $Z(\widehat{\delta}_U) = - z_{1-\alpha/2}$.
+
+We can use the following steps to solve for the M&N weights:
+
+1. Start with the CMH weights, $W_j = (1/n_{Aj} + 1/n_{Bj})^{-1}$ for $j = 1, \ldots, K$.
+2. Compute the weighted averages of constrained MLEs, $\widetilde{R}_i^*$ using (@eq-wMLE)
+3. Update the M \& N weights, $W_j$ using (@eq-MNweight)
+4. Update the weighted averages of constrained MLEs, $\widetilde{R}_i^*$ using (@eq-wMLE)
+5. Iterate between (@eq-MNweight) and (@eq-wMLE) until convergence. 
+
+
+#### Implementation {.unnumbered}
+
+1. Find the point estimate $\hat\delta$
+2. Obtain the confidence limits, $(\hat\delta_L, \hat\delta_U)$ of $\delta$
+
+
+$\hat\delta$ can be obtained through $$
+\hat\delta = \frac{\sum_{j=1}^K W_j(r_{Aj} - r_{Bj})}{\sum_{j=1}^K W_j}
+$$
+
+Note that the weights $W_j$ depend on $\delta$. Alternatively, we have $X^2(\hat\delta) = 0$ so that we can find $\hat\delta$ that minimizes $\xi^{MN}(\delta)$. We can transform $\delta \in (-1, 1)$ to $\tan (\delta \pi/2) \in (-\infty, \infty)$. We start from $\delta_1 = \min\{r_{Aj}-r_{Bj}: j = 1,\ldots, K\}$ and $\delta_2 = \max\{r_{Aj}-r_{Bj}: j = 1,\ldots, K\}$ and use golden section search to find the value minimizing the objective function.
+
+After the first step, we have $\hat\delta_L \in (-1, \hat\delta)$ and $\hat\delta_U \in (\hat\delta, 1)$. By solving $\xi^{MN}(\delta) = \chi^2_{1, 1-\alpha/2}$, we can finish the second step.
+
+#### CMH Weights for M&N Method {.unnumbered}
+
+The M&N weights are 
+$$
+W_j^{MN}(\delta) \propto \left[\frac{\widetilde{R}_{A}^{*}\left(1-\widetilde{R}_{A}^{*}\right)}{\widetilde{R}_{B}^{*}\left(1-\widetilde{R}_{B}^{*}\right)} / n_{A j}+1 / n_{B j}\right]^{-1}
+$$ 
+and CMH weights are 
+$$
+W_j^{CMH} \propto \left[\frac{1}{n_{Aj}} + \frac{1}{n_{Bj}}  \right]^{-1}
+$$ 
+
+Two cases that two types of weights are identical:
+
+1. At the null hypothesis, $H(0): \pi_{Aj} - \pi_{Bj} = 0$ for $j = 1, \ldots, K$, i.e. $W_j^{MN}(0) = W_j^{CMH}$. Under $H(0)$, we have $\widetilde{R}_{Aj} = \widetilde{R}_{Bj} = \tilde{r}_j = x_{+j}/N_j$. Hence, by (@eq-wMLE), $\widetilde{R}_A^* = \widetilde{R}_B^*$. 
+2. The treatment sample size ratio is constant across strata, i.e. $n_{Aj}/n_{Bj} = \lambda$ for $j = 1,\ldots, K$. 
+
+
+
+#### Equivalence of M&N Tests and CMH Test When $\delta = 0$ {.unnumbered}
+
+The CMH test statistics is 
+
+$$
+\xi_{C M H}=\frac{\left[\sum_{j=1}^{K}\left(x_{Aj}-\frac{x_{+j} n_{Aj}}{N_{j}}\right)\right]^{2}}{\sum_{j=1}^{K} \frac{x_{+j} y_{-j} n_{Aj} n_{Bj}}{N_{j}^{2}\left(N_{j}-1\right)}} \sim \chi^2_1 
+$$ 
+
+Note that 
+
+$$
+x_{Aj}-\frac{x_{+j} n_{Aj}}{N_{j}} = \frac{n_{Aj}n_{Bj}}{N_j}(r_{Aj} - r_{Bj})
+$$ and 
+
+$$
+\begin{aligned}
+\frac{x_{+j} y_{-j} n_{Aj} n_{Bj}}{N_{j}^{2}\left(N_{j}-1\right)} & = \left(\frac{n_{Aj}n_{Bj}}{N_j}\right)^2\frac{x_{+j}y_{-j}}{N_j^2}\frac{n_{Aj}+n_{Bj}}{n_{Aj}n_{Bj}}\frac{N_j}{N_j-1}\\
+& = \left(\frac{n_{Aj}n_{Bj}}{N_j}\right)^2\left\{\bar r_j(1-\bar r_j)\left(\frac{1}{n_{Aj}}+\frac{1}{n_{Bj}}\right) \right\}\frac{N_j}{N_j-1}
+\end{aligned}
+$$ 
+
+The CMH test statistics can be modified as 
+
+$$
+\begin{aligned}
+\xi_{C M H} & =\frac{\left[\sum_{j=1}^{K}\left(x_{Aj}-\frac{x_{+j} n_{Aj}}{N_{j}}\right)\right]^{2}}{\sum_{j=1}^{K} \frac{x_{+j} y_{-j} n_{Aj} n_{Bj}}{N_{j}^{2}\left(N_{j}-1\right)}} \\
+& = \frac{\left[\sum_{j=1}^K W_j^{CMH}(r_{Aj} - r_{Bj})\right]^2}{\sum_{j=1}^K (W_j^{CMH})^2 V_{r_{Aj} - r_{Bj}}^{CMH}}
+\end{aligned}
+$$ 
+where 
+$$
+W_j^{CMH} = \frac{n_{Aj}n_{Bj}}{N_j} = \left[\frac{1}{n_{Aj}} + \frac{1}{n_{Bj}}\right]^{-1}
+$$ and 
+$$
+V_{r_{Aj} - r_{Bj}}^{CMH} = \left\{\bar r_j(1-\bar r_j)\left(\frac{1}{n_{Aj}}+\frac{1}{n_{Bj}}\right) \right\}\frac{N_j}{N_j-1}
+$$ 
+
+When $\delta = 0$, from the above discussion, under the null hypothesis $H(0): \pi_{Aj} = \pi_{Bj}$. The constrained MLEs have $\widetilde{R}_{Aj} = \widetilde{R}_{Bj}$. From (@eq-wMLE), we have $\widetilde{R}_A^* = \widetilde{R}_B^*$ so that (@eq-MNweight) becomes $$
+W_j^{MN} = \left[\frac{1}{n_{Aj}} + \frac{1}{n_{Bj}}\right]^2
+$$ and $$
+V_{r_{Aj} - r_{Bj}}^{MN} = \left\{\widetilde{R}_{Aj}(1-\widetilde{R}_{Aj})\left(\frac{1}{n_{Aj}}+\frac{1}{n_{Bj}}\right) \right\}\frac{N_j}{N_j-1}
+$$
+
+Note that $\widetilde{R}_{Aj} \neq \bar r_{j}$ when $\delta = 0$. From Appendix 1, we have $$
+L0 = 0, \space L1 = x_{+j}, \space L_2 = -N_j - x_{+j}, \space L_3 = N_j
+$$ so that $$
+\begin{aligned}
+p & = \pm \frac{\sqrt{N_j^2 + x_{+j}^2 - N_jx_{+j}}}{3N_j}\\
+q & = \frac{-(N_j+x_{+j})(2N_j-x_{+j})(N_j-2x_{+j})}{54N_j^3}
+\end{aligned}
+$$ Based on triple angle formula, $$
+\cos(3a) = 4\cos^3 a - 3\cos a = 4 \left(\frac{\widetilde{R}_{Bj} + \frac{L_2}{3L_3}}{2p}\right)^3 - 3\frac{\widetilde{R}_{Bj} + \frac{L_2}{3L_3}}{2p}
+$$ Solving this equation, we have $\widetilde{R}_{Bj} = \bar r_j$ (the other two solutions are 1 and 0).
+
+Because $W_j^{CMH} = W_j^{MN}$ and $V_{r_{Aj} - r_{Bj}}^{CMH} = V_{r_{Aj} - r_{Bj}}^{MN}$, we can say the two test statistics $\xi_{CMH} = \xi_{MN}$ under $\delta = 0$.
+
+#### Appendix 1 {.unnumbered}
+
+Miettinen and Nurminen provided a closed-form solution for the MLEs of $\widetilde{R}_{Aj}$ and $\widetilde{R}_{Bj}$ where $$
+\begin{aligned}
+\widetilde{R}_{Bj} &=2 p \cos (a)-L_{2} /\left(3 L_{3}\right) \\
+\widetilde{R}_{Aj} & = \widetilde{R}_{Bj} + \delta\\
+a &=(1 / 3)\left[\pi+\cos ^{-1}\left(q / p^{3}\right)\right] \\
+p &=\pm\left[L_{2}^{2} /\left(3 L_{3}\right)^{2}-L_{1} /\left(3 L_{3}\right)\right]^{1 / 2} \\
+q &=L_{2}^{3} /\left(3 L_{3}\right)^{3}-L_{1} L_{2} /\left(6 L_{3}^{2}\right)+L_{0} /\left(2 L_{3}\right) \\
+L_{3} &= N_j \\
+L_{2} & =\left(n_{Aj}+2 n_{Bj}\right)\delta- N_j- x_{+j}\\
+L_{1} & =\left[n_{Bj}\delta-n_{Bj}-n_{Aj}-2 x_{Bj}\right]\delta+x_{+j} \\
+L_{0} & =x_{Bj}\delta(1-\delta)
+\end{aligned}
+$$

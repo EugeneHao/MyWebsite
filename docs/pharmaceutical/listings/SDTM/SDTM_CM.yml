@@ -1,0 +1,100 @@
+- name: CMSEQ
+  domain: CM
+  label: Sequence Number 
+
+- name: CMREFID
+  domain: CM
+  label: Reference ID
+
+- name: CMSPID
+  domain: CM
+  label: Sponsor-Defined Identifier
+
+- name: CMTRT
+  domain: CM
+  label: Reported Name of Drug, Med, or Therapy
+
+- name: CMDECOD
+  domain: CM
+  label: Standardized Medication Name
+
+- name: CMCAT
+  domain: CM
+  label: Category for Medication
+
+- name: CMPRESP
+  domain: CM
+  label: CM Pre-Specified 
+
+- name: CMOCCUR
+  domain: CM
+  label: CM Occurance
+
+- name: CMINDC
+  domain: CM
+  label: Indication
+
+- name: CMDOSTXT
+  domain: CM
+  label: Dose Description
+
+- name: CMDOSU
+  domain: CM
+  label: Dose Units
+
+- name: CMDOSFRM
+  domain: CM
+  label: Dose Form
+
+- name: CMDOSFRQ
+  domain: CM
+  label: Dosing Frequency per Interval 
+
+- name: CMROUTE
+  domain: CM
+  label: Route of Administration (e.g. ORAL, INTRAVENOUS)
+
+- name: CMLOC
+  domain: CM
+  label: Location of Dose Adminstration 
+
+- name: CMLAT
+  domain: CM
+  label: Laterality (e.g. LEFT, RIGHT)
+
+- name: CMSTDTC
+  domain: CM
+  label: Start Date/Time of Medication
+
+- name: CMENDTC
+  domain: CM
+  label: End Date/Time of Medication
+
+- name: CMSTDY
+  domain: CM
+  label: Study Day of Start of Medication 
+
+- name: CMENDY
+  domain: CM
+  label: Study Day of End of Medication 
+
+- name: CMSTRF
+  domain: CM
+  label: Start Relative to Reference Period 
+
+- name: CMENRF
+  domain: CM
+  label: End Relative to Reference Period 
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  

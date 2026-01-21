@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Clinical Trial Design Notebook – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/books/survival analysis/Survival Analysis - Techniques for Censored and Truncated Data.html" rel="next">
+<link href="../../../docs/books/index.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Clinical Trial Design Notebook – Hao Sun">
+<meta property="og:description" content="">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Clinical Trial Design Notebook – Hao Sun">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../docs/statistics/index.html" aria-current="page"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/statistics/index.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../docs/books/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../docs/books/clinical trial design/clinical-trial-design.html">Clinial Trial Designs</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/statistics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Topics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/statistics/topics/Bayesian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/biostatistics/topics/dose-finding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biostatistics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/dose-finding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dose Finding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/dose-optimization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dose Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/dynamic-borrowing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic Borrowing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/hypothesis-testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hypothesis Testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/survival-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survival Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decision Making</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/multiple-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/targeted-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Targeted Learning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/estimand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estimand</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">Machine Learning</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/courses/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Courses</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/courses/STAT510/STAT510.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STAT510</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/courses/STAT544/STAT544.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STAT544</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/books/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notebooks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/books/clinical trial design/clinical-trial-design.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Clinial Trial Designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/books/survival analysis/Survival Analysis - Techniques for Censored and Truncated Data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survival Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/books/hypothesis testing/hypothesis-testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hypothesis Testing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mpti" id="toc-mpti" class="nav-link active" data-scroll-target="#mpti">mPTI</a></li>
+  <li><a href="#mtpi-2" id="toc-mtpi-2" class="nav-link" data-scroll-target="#mtpi-2">mTPI-2</a></li>
+  <li><a href="#boin" id="toc-boin" class="nav-link" data-scroll-target="#boin">BOIN</a></li>
+  <li><a href="#simons-two-stage-design" id="toc-simons-two-stage-design" class="nav-link" data-scroll-target="#simons-two-stage-design">Simon’s two-stage design</a></li>
+  <li><a href="#other-design-methods" id="toc-other-design-methods" class="nav-link" data-scroll-target="#other-design-methods">Other Design Methods</a>
+  <ul class="collapse">
+  <li><a href="#interesting-papers-for-reference" id="toc-interesting-papers-for-reference" class="nav-link" data-scroll-target="#interesting-papers-for-reference">Interesting Papers for Reference</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/statistics/index.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../docs/books/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../../../docs/books/clinical trial design/clinical-trial-design.html">Clinial Trial Designs</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Clinical Trial Design Notebook</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="mpti" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="mpti">mPTI</h2>
+<p><a href="https://drive.google.com/file/d/1PRatA1qEKi36Lv6GgxQMbn6cdnZBvLdl/view?usp=drive_link">mTPI</a> design is short for <strong>modified toxicity probability interval design</strong> .</p>
+<p>Suppose the probability of toxicity at dose <span class="math inline">\(d\)</span> is <span class="math inline">\(p_d\)</span> and <span class="math inline">\(n_d\)</span> is the number of patient treated at dose <span class="math inline">\(d\)</span>. The number of DLTs (dose limiting toxicity), <span class="math inline">\(x_d\)</span> has a binomial distribution <span class="math inline">\(x_d\mid p_d \sim Bin(n_d, p_d)\)</span>.</p>
+<p>Denote the target toxicity probability as <span class="math inline">\(p_T\)</span>. There are 3 possible decisions by comparing <span class="math inline">\(p_d\)</span> and <span class="math inline">\(p_T\)</span>:</p>
+<ul>
+<li><span class="math inline">\(M_E: p_d \in (0, p_T - \epsilon_1)\)</span>, escalate to the next level dose;</li>
+<li><span class="math inline">\(M_S: p_d \in (p_T - \epsilon_1, p_T + \epsilon_2)\)</span>, stay at the current dose;</li>
+<li><span class="math inline">\(M_D: p_d \in (p_T + \epsilon_2, 1)\)</span>, de-escalate to the lower level dose.</li>
+</ul>
+<p>The mTPI design assumes the prior of <span class="math inline">\(p_d\)</span> is a Beta distribution, <span class="math inline">\(p_d \sim Beta(\alpha, \beta)\)</span>. Usually <span class="math inline">\(\alpha = \beta = 1\)</span>. The dose-finding decision rule is given by <span class="math display">\[
+\mathcal{D}_{mTPI} = \arg\max_{i\in \{E, S, D\}} UPM(i, d)
+\]</span> where <span class="math inline">\(UPM(i, d) = Pr(p_d \in M_i \mid x_d)/Pr(p_d\in M_i)\)</span> is called the unit probability mass. In this case, <span class="math display">\[
+UPM(i, d) = \frac{IBeta(c_{i2}; x+1, n-x+1) - IBeta(c_{i1}; x+1, n-x+1)}{c_{i2} - c_{i1}}
+\]</span> where <span class="math inline">\(IBeta(q; a, b) = \frac{1}{B(a, b)}\int_0^q \theta^{a-1}(1-\theta)^{b-1}d\theta\)</span>.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_app</span>(<span class="st">"https://eugenehao.shinyapps.io/mtpi/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<iframe src="https://eugenehao.shinyapps.io/mtpi/?showcase=0" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="mtpi-2" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="mtpi-2">mTPI-2</h2>
+<p><a href="https://drive.google.com/file/d/1HDLxc92bMamF4bJis4PmgTZRsjIVP860/view?usp=drive_link">mTPI-2</a> design is an extension of mTPI by cutting the escalation interval and de-escalation interval into subintervals with the same length equal to <span class="math inline">\((\epsilon_1 + \epsilon_2)\)</span>. The equivalence interval (EI) is still <span class="math inline">\((p_T - \epsilon_1, p_T+ \epsilon_2)\)</span>. However, the set of intervals below EI (LI) are <span class="math inline">\(\{(p_T - 2\epsilon_1 - \epsilon_2, p_T - \epsilon_1), \ldots, (p_T - k\epsilon_1 - (k-1)\epsilon_2, 0) \}\)</span> and the set of intervals above EI (HI) are <span class="math inline">\((p_T + \epsilon_2, p_T + \epsilon_1 + 2\epsilon_2), \ldots, (p_T + l\epsilon_1 + (l+1)\epsilon_2, 1) \}\)</span>.</p>
+<p>Let <span class="math inline">\(A_i\)</span> denote the set of intervals under the decision <span class="math inline">\(i \in \{E, S, D\}\)</span>. The decision function of mTPI-2 design is given by <span class="math display">\[
+\mathcal{D}_{mTPI2} = \arg\max_{i\in \{E, S, D\}} \max_{j \in A_i} UPM(j, d)
+\]</span></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_app</span>(<span class="st">"https://eugenehao.shinyapps.io/mtpi-2/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<iframe src="https://eugenehao.shinyapps.io/mtpi-2/?showcase=0" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="boin" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="boin">BOIN</h2>
+<p><a href="https://drive.google.com/file/d/1PIdf_Yes_4huF1vhac1XHly9LrC1DIB4/view?usp=drive_link">BOIN</a> is short for Bayesian optimal interval design. Suppose we have <span class="math inline">\(J\)</span> prespecified doses. At the current dose level <span class="math inline">\(j\)</span>, <span class="math inline">\(n_j\)</span> patients are treated and <span class="math inline">\(m_j\)</span> of them have experienced a toxicity. Let <span class="math inline">\(\lambda_{1j}(n_j, \phi)\)</span> and <span class="math inline">\(\lambda_{2j}(n_j, \phi)\)</span> be the prespecified lower and upper boundaries of the interval with <span class="math inline">\(0 \leq \lambda_{1j}(n_j, \phi) \leq \lambda_2(n_j, \phi) \leq 1\)</span> where <span class="math inline">\(\phi\)</span> is the target toxicity level.</p>
+<p>The next cohort dose assignment will be decided by the following steps:</p>
+<ul>
+<li>if <span class="math inline">\(m_j/n_j \in [0, \lambda_{1j}]\)</span>: escalate to the next dose level <span class="math inline">\(j+1\)</span>;</li>
+<li>if <span class="math inline">\(m_j/n_j \in (\lambda_{1j}, \lambda_{2j})\)</span>: stay at the dose level <span class="math inline">\(j\)</span>;</li>
+<li>if <span class="math inline">\(m_j/n_j \in [\lambda_{2j}, 1]\)</span>: de-escalate to the dose level <span class="math inline">\(j-1\)</span>.</li>
+</ul>
+<section id="local-boin" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="local-boin">Local BOIN</h5>
+<p>Define the three point hypothesis as: <span class="math display">\[
+\begin{aligned}
+H_{0j}: p_j &amp; = \phi \\
+H_{1j}: p_j &amp; = \phi_1\\
+H_{2j}: p_j &amp; = \phi_2
+\end{aligned}
+\]</span></p>
+<p>The correct decisions under <span class="math inline">\(H_0\)</span>, <span class="math inline">\(H_1\)</span> and <span class="math inline">\(H_2\)</span> are retainment (R), escalation (E) and de-escalation (D). Suppose <span class="math inline">\(Bin(x; n, p)\)</span> as the CDF of a binomial distribution. The probability of making incorrect decision is given by</p>
+<p><span class="math display">\[
+\begin{aligned}
+\alpha(\lambda_1, \lambda_2) &amp;= Pr(H_0)Pr(\bar R\mid H_0) + Pr(H_1)Pr(\bar E\mid H_1) + Pr(H_2)Pr(\bar D\mid H_2) \\
+&amp; = \pi_0\left\{Bin(n\lambda_1; n, \phi) + 1 - Bin(n\lambda_2; n, \phi) \right\} + \pi_1(1 - Bin(n\lambda_1; n, \phi_1)) + \pi_2 Bin(n\lambda_2; n, \phi_2) \\
+&amp; = \alpha_1(\lambda_1) + \alpha_2(\lambda_2) + \pi_0 + \pi_1
+\end{aligned}
+\]</span> where <span class="math display">\[\begin{aligned}
+\alpha_1(\lambda_1) &amp; = \pi_0Bin(n\lambda_1; n, \phi) - \pi_1Bin(n\lambda_1; n, \phi) \\
+&amp; = \sum_{y=0}^{b_{j}} \pi_{1}\left(\begin{array}{c}n \\ y\end{array}\right) \phi_{1}^{y}\left(1-\phi_{1}\right)^{n-y}\left\{\frac{\pi_{0 }}{\pi_{1}}\left(\frac{\phi}{\phi_{1}}\right)^{y}\left(\frac{1-\phi}{1-\phi_{1}}\right)^{n-y}-1\right\}
+\end{aligned}
+\]</span> and <span class="math display">\[
+\alpha_2(\lambda_2) = \pi_2Bin(n\lambda_2; n, \phi_2) - \pi_0Bin(n\lambda_2; n, \phi).
+\]</span></p>
+<p><span class="math inline">\(\alpha_1(\lambda_1)\)</span> is minimized when <span class="math display">\[
+n\lambda_1 = \max\left\{y: \frac{\pi_{0 }}{\pi_{1}}\left(\frac{\phi}{\phi_{1}}\right)^{y}\left(\frac{1-\phi}{1-\phi_{1}}\right)^{n-y} \leq 1 \right\} = \max \left\{y: \frac{Pr(H_0\mid y)}{Pr(H_1\mid y)} \leq 1\right\}
+\]</span> which leads to the solution <span class="math display">\[
+\lambda_{1}=\frac{\log \left(\frac{1-\phi_{1}}{1-\phi}\right)+n_{j}^{-1} \log \left(\frac{\pi_{1}}{\pi_{0}}\right)}{\log \left(\frac{\phi\left(1-\phi_{1}\right)}{\phi_{1}(1-\phi)}\right)}.
+\]</span> Similarly, <span class="math display">\[
+n\lambda_2 = \max \left\{y: \frac{Pr(H_2\mid y)}{Pr(H_1\mid y)} \leq 1\right\}
+\]</span> with solution <span class="math display">\[
+\lambda_{2}=\frac{\log \left(\frac{1-\phi}{1-\phi_2}\right)+n_{j}^{-1} \log \left(\frac{\pi_0}{\pi_{2 }}\right)}{\log \left(\frac{\phi_2\left(1-\phi\right)}{\phi(1-\phi_2)}\right)}.
+\]</span></p>
+</section>
+<section id="global-boin" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="global-boin">Global BOIN</h5>
+<p>Define the three composite hypothesis as: <span class="math display">\[
+\begin{aligned}
+H_{0j} &amp;: \phi_1 &lt; p_j &lt; \phi_2 \\
+H_{1j} &amp;: 0 \leq p_j \leq \phi_1\\
+H_{2j} &amp;: \phi_2 \leq p_j \leq 1
+\end{aligned}
+\]</span> In this case, <span class="math display">\[\begin{aligned}
+Pr(\bar R\mid H_0) &amp; = \int f(p)Pr(\bar R\mid p, H_0)dp \\
+Pr(\bar E\mid H_1) &amp; = \int f(p)Pr(\bar E\mid p, H_1)dp \\
+Pr(\bar D\mid H_2) &amp; = \int f(p)Pr(\bar D\mid p, H_2)dp
+\end{aligned}\]</span> Therefore, <span class="math display">\[
+\alpha(\lambda_1, \lambda_2) = Pr(H_{0}) + Pr(H_{1}) + \underbrace{\sum_{y = 0}^{b_{1}}f(y)\{Pr(H_0\mid y) - Pr(H_1\mid y) \}}_{\alpha_{g1}(\lambda_1)} + \underbrace{\sum_{y=0}^{b_2 - 1}\{Pr(H_2\mid y) - Pr(H_0\mid y) \}}_{\alpha_{g2}(\lambda_2)}
+\]</span> where <span class="math inline">\(b_1 = \lfloor n\lambda_1\rfloor\)</span> and <span class="math inline">\(b_2 = \lfloor n\lambda_2 \rfloor\)</span>. Stilly, we can minimize <span class="math inline">\(\alpha_{g1}(\lambda_1)\)</span> and <span class="math inline">\(\alpha_{g2}(\lambda_2)\)</span> when <span class="math display">\[
+n\lambda_1 = \max \left\{y: \frac{Pr(H_0\mid y)}{Pr(H_1\mid y)} \leq 1\right\}, \quad
+n\lambda_2 = \max \left\{y: \frac{Pr(H_2\mid y)}{Pr(H_0\mid y)} \leq 1\right\}.
+\]</span></p>
+<p>Therefore, no matter we use local BOIN or global BOIN, the decision function can be defined as <span class="math display">\[
+\mathcal{D}_{BOIN} = \max_{i \in 0, 1, 2} Pr(H_i\mid y)
+\]</span></p>
+</section>
+</section>
+<section id="simons-two-stage-design" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="simons-two-stage-design">Simon’s two-stage design</h2>
+<p><a href="https://drive.google.com/file/d/1QkEYIioubjmphgipNpQ-oyJTW9a_cQZh/view?usp=drive_link">Simon’s two-stage design</a> is used to minimize the expected sample size when the true response is less than some pre-determined uninterested level <span class="math inline">\(\pi_0\)</span>.</p>
+<p>The null hypothesis is that <span class="math inline">\(H_0: \pi = \pi_0\)</span> and the alternative hypothesis is <span class="math inline">\(H_1: \pi = \pi_1\)</span> where <span class="math inline">\(\pi_1\)</span> is some desirable level that warrant further development. Suppose the Type I and Type II errors are <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>.</p>
+<p>Let <span class="math inline">\(n_1\)</span> patients be given treatment in the first stage. If <span class="math inline">\(r_1\)</span> or less respond or more than <span class="math inline">\(r\)</span> respond, stop stage 1. Otherwise, let <span class="math inline">\(n_2\)</span> patients be given treatment in the second stage. <span class="math inline">\(n = n_1 + n_2\)</span>.</p>
+<p>Suppose <span class="math inline">\(X_1 \sim Bin(n_1, \pi)\)</span> and <span class="math inline">\(X_2 \sim Bin(n_2, \pi)\)</span>. We declare the new drug a</p>
+<ul>
+<li>Failure if <span class="math inline">\(\xi_F = X_1 \leq r_1 \text{ OR } \{X_1 &gt; r_1 \text { AND } X_1 + X_2 \leq r \}\)</span></li>
+<li>Success if <span class="math inline">\(\xi_S = \{X_1 &gt; r_1 \text{ AND } X_1 + X_2 &gt; r \}\)</span></li>
+</ul>
+<p>Therefore, <span class="math display">\[
+P(\xi_F \mid \pi \leq \pi_0) \leq \alpha,  \quad P(\xi_S \mid \pi \geq \pi_1) \geq 1- \beta
+\]</span></p>
+<p>Moreover, we have <span class="math display">\[\begin{aligned}
+P(\xi_S \mid \pi) &amp; = \sum_{m_1 &gt; r_1, m_1 + m_2 &gt; r} b(m_1; n_1, \pi)b(m_2; n_2, \pi) \\
+P(\xi_F \mid \pi) &amp; = 1- P(\xi_S \mid \pi) \\
+&amp; = B(r_1; n_1, \pi) + \sum_{x = r_1 + 1}^{\min\{n_1, r\}}b(x; n_1, \pi)B(r-x; n_2, \pi)
+\end{aligned}\]</span></p>
+<p>The expected sample size <span class="math inline">\(EN(\pi_0)\)</span> is given by <span class="math display">\[
+n_1\left[P(X_1 \leq r_1\mid \pi = \pi_0) + P(X_1 &gt; r\mid \pi = \pi_0) \right] + nP(r_1 + 1 \leq X_1 \leq r \mid \pi = \pi_0)
+\]</span> The probability of early rejection in stage 1 is <span class="math display">\[
+PET(\pi_0) = P(X_1 \leq r_1 \mid \pi = \pi_0)
+\]</span></p>
+<p>There are several choices to select <span class="math inline">\((r_1, n_1, r, n)\)</span>:</p>
+<ul>
+<li><strong>Optimal design</strong>: the one has the smallest expected sample size when <span class="math inline">\(\pi = \pi_0\)</span>.</li>
+<li><strong>Minimax design</strong>: the one has the smallest total sample size for the whole trial when <span class="math inline">\(\pi = \pi_0\)</span>.</li>
+<li><strong>Admissible design</strong>: compromise the minimax and the optimal design. <span class="citation" data-cites="jung2004admissible">(<a href="#ref-jung2004admissible" role="doc-biblioref">Jung et al. 2004</a>)</span></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(clinfun)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ph2simon</span>(<span class="at">pu =</span> <span class="fl">0.2</span>, <span class="at">pa =</span> <span class="fl">0.4</span>, <span class="at">ep1 =</span> <span class="fl">0.1</span>, <span class="at">ep2 =</span> <span class="fl">0.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Simon 2-stage Phase II design 
+
+Unacceptable response rate:  0.2 
+Desirable response rate:  0.4 
+Error rates: alpha =  0.1 ; beta =  0.2 
+
+        r1 n1 r  n EN(p0) PET(p0)  qLo  qHi
+Minimax  2 14 7 24  19.52  0.4481 0.64 1.00
+Optimal  2 12 7 25  17.74  0.5583 0.00 0.64</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ph2mult)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.design</span>(<span class="at">type =</span> <span class="st">"admissible"</span>, <span class="at">p0 =</span> <span class="fl">0.15</span>, <span class="at">p1 =</span> <span class="fl">0.3</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">signif.level =</span> <span class="fl">0.05</span>, <span class="at">power.level =</span> <span class="fl">0.9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             r1 n1  r  n   EN.p0.   PET.p0.      error     power
+Optimal       5 30 17 82 45.05006 0.7105757 0.04609244 0.9007424
+Admissible    5 31 16 76 45.28032 0.6826597 0.04694758 0.9037415
+Admissible.1  6 36 15 70 45.86191 0.7099439 0.04654875 0.9000510
+Minimax       6 42 14 64 51.80052 0.5545216 0.04845876 0.9002785</code></pre>
+</div>
+</div>
+</section>
+<section id="other-design-methods" class="level2">
+<h2 class="anchored" data-anchor-id="other-design-methods">Other Design Methods</h2>
+<section id="interesting-papers-for-reference" class="level3">
+<h3 class="anchored" data-anchor-id="interesting-papers-for-reference">Interesting Papers for Reference</h3>
+<ol type="1">
+<li><a href="https://drive.google.com/file/d/1QpE2RpR5JgnBG7EY3Ys7jvXVgey9Hm9W/view?usp=drive_link">Adaptive phase I-II clinical trial designs identifying optimal biological doses for targeted agents and immunotherapies</a> <span class="citation" data-cites="zang2024adaptive">(<a href="#ref-zang2024adaptive" role="doc-biblioref">Zang et al. 2024</a>)</span>
+<ul>
+<li>Keywords: Immunotherapy, targeted agent, dose optimization, phase I–II trial, Bayesian adaptive design</li>
+</ul></li>
+</ol>
+<!-- -->
+<ol start="2" type="1">
+<li><a href="https://drive.google.com/file/d/1QtA558Fba2TB8jy3K-3jEVpj-QS_lU_L/view?usp=drive_link">A Multi-Arm Two-Stage (MATS) Design for Proof-of-Concept and Dose Optimization in Early-Phase Oncology Trials</a> <span class="citation" data-cites="jiang2023multi">(<a href="#ref-jiang2023multi" role="doc-biblioref">Jiang et al. 2023</a>)</span>
+<ul>
+<li>Keywords: Bayesian Hierarchical Model; Oncology; Project Optimus; Proof-of-Concept.</li>
+</ul></li>
+</ol>
+<!-- -->
+<ol start="3" type="1">
+<li><a href="https://drive.google.com/file/d/1QvHkovllCYF-5LytFxTWGDBZ9KX76u--/view?usp=drive_link">Adaptive Bayesian information borrowing methods for finding and optimizing subgroup-specific doses</a> <span class="citation" data-cites="zhang2024adaptive">(<a href="#ref-zhang2024adaptive" role="doc-biblioref">Zhang et al. 2024</a>)</span>
+<ul>
+<li>Keywords: Bayesian methods, dose optimization, heterogeneous effect, information borrowing, precision oncology</li>
+</ul></li>
+</ol>
+
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-jiang2023multi" class="csl-entry" role="listitem">
+Jiang, Zhenghao, Gu Mi, Ji Lin, Christelle Lorenzato, and Yuan Ji. 2023. <span>“A Multi-Arm Two-Stage (MATS) Design for Proof-of-Concept and Dose Optimization in Early-Phase Oncology Trials.”</span> <em>arXiv Preprint arXiv:2304.06164</em>.
+</div>
+<div id="ref-jung2004admissible" class="csl-entry" role="listitem">
+Jung, Sin-Ho, Taiyeong Lee, KyungMann Kim, and Stephen L George. 2004. <span>“Admissible Two-Stage Designs for Phase II Cancer Clinical Trials.”</span> <em>Statistics in Medicine</em> 23 (4): 561–69.
+</div>
+<div id="ref-zang2024adaptive" class="csl-entry" role="listitem">
+Zang, Yong, Beibei Guo, Yingjie Qiu, Hao Liu, Mateusz Opyrchal, and Xiongbin Lu. 2024. <span>“Adaptive Phase i–II Clinical Trial Designs Identifying Optimal Biological Doses for Targeted Agents and Immunotherapies.”</span> <em>Clinical Trials</em>, 17407745231220661.
+</div>
+<div id="ref-zhang2024adaptive" class="csl-entry" role="listitem">
+Zhang, Jingyi, Ruitao Lin, Xin Chen, and Fangrong Yan. 2024. <span>“Adaptive Bayesian Information Borrowing Methods for Finding and Optimizing Subgroup-Specific Doses.”</span> <em>Clinical Trials</em>, 17407745231212193.
+</div>
+</div></section></div></main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/books/index.html" class="pagination-link" aria-label="Notebooks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Notebooks</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/books/survival analysis/Survival Analysis - Techniques for Censored and Truncated Data.html" class="pagination-link" aria-label="Survival Analysis">
+        <span class="nav-page-text">Survival Analysis</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

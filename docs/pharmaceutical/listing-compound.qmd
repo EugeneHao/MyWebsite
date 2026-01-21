@@ -1,0 +1,20 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-compound
+  contents: 
+    - listings/compound.yml
+metadata-files: 
+  - listings/_metadata_compound.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### Compound
+
+###  {.unlisted}
+
+::: {#listing-compound .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

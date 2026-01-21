@@ -1,0 +1,35 @@
+- name: DDTERM
+  domain: DD
+  label: Reported Term for Death
+
+- name: DDDECOD
+  domain: DD
+  label: Dictionary-Derived Term for Death
+
+- name: DDDTC
+  domain: DD
+  label: Date/Time of Death
+
+- name: DDSTRESC
+  domain: DD
+  label: Result or Finding as Collected
+
+- name: DDCAT
+  domain: DD
+  label: Category for Death Details
+
+- name: DDSCAT
+  domain: DD
+  label: Subcategory for Death Details
+
+- name: DDGRPID
+  domain: DD
+  label: Group ID
+
+- name: DDREFID
+  domain: DD
+  label: Reference ID
+
+- name: DDSPID
+  domain: DD
+  label: Sponsor-Defined Identifier

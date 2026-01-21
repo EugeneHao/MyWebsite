@@ -1,0 +1,127 @@
+- name: LBSEQ
+  domain: LB
+  label: Sequence Number 
+
+- name: LBGRPID
+  domain: LB
+  label: Group ID
+
+- name: LBREFID
+  domain: LB
+  label: Specimen ID
+
+- name: LBSPID
+  domain: LB
+  label: Sponsor-Defined Identifier 
+
+- name: LBTESTCD
+  domain: LB
+  label: Lab Test or Examination Short Name (e.g. ALT, LDH)
+
+- name: LBTEST
+  domain: LB
+  label: Lab Test or Examination Name
+
+- name: LBCAT
+  domain: LB
+  label: Category for Lab Test (e.g. HEMATOLOGY, URINALYSIS, CHEMISTRY)
+
+- name: LBSCAT
+  domain: LB
+  label: Subcategory for Lab Test (e.g. COAGULATON, LIVER FUNCTION, ELECTOLYTES)
+
+- name: LBORRES
+  domain: LB
+  label: Result or Finding in Original Units 
+
+- name: LBORRESU
+  domain: LB
+  label: Original Units (e.g. g/L)
+
+- name: LBORNRLO
+  domain: LB
+  label: Reference Range Lower Limit in Orig Unit
+
+- name: LBORNRHI
+  domain: LB
+  label: Reference Range Upper Limit in Orig Unit
+
+- name: LBSTRESC
+  domain: LB
+  label: Character Result/Finding in Std Format 
+
+- name: LBSTRESN
+  domain: LB
+  label: Numeric Result/Finding in Standard Units 
+
+- name: LBSTRESU
+  domain: LB
+  label: Standard Units (for LBSTRESC or LBSTRESN)
+  
+- name: LBSTNRLO
+  domain: LB
+  label: Reference Range Lower Limit-Std Unit
+  
+- name: LBSTNRHI
+  domain: LB
+  label: Reference Range Upper Limit-Std Unit
+
+- name: LBSTNRC
+  domain: LB
+  label: Reference Range for Char Result-Std Unit
+  
+- name: LBNRIND
+  domain: LB
+  label: Reference Range Indicator
+  
+- name: LBSTAT
+  domain: LB
+  label: Completion Status 
+
+- name: LBREASND
+  domain: LB
+  label: Reason Test Not Done
+  
+- name: LBNAM
+  domain: LB
+  label: Vendor Name
+  
+- name: LBLOINC
+  domain: LB
+  label: LOINC Code 
+  
+- name: LBSPEC
+  domain: LB
+  label: Specimen Type (e.g. SERUM, PLASMA, URINE)
+  
+- name: LBMETHOD
+  domain: LB
+  label: Method of Test or Examination (e.g. EIA (Enzyme Immunoassay), ELECTROPHORESIS, DIPSTICK)
+  
+- name: LBLOBXFL
+  domain: LB
+  label: Last Observation Before Exposure Flag
+  
+- name: LBBLFL
+  domain: LB
+  label: Baseline Flag
+  
+- name: LBFAST
+  domain: LB
+  label: Fasting Status 
+  
+- name: LBDTC
+  domain: LB
+  label: Date/Time of Specimen
+  
+- name: LBDY
+  domain: LB
+  label: Study Day of Specimen Collection   
+  
+- name: LBEVLINT
+  domain: LB
+  label: Evaluation Interval 
+  
+  
+  
+  

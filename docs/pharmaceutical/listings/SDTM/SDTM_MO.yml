@@ -1,0 +1,63 @@
+- name: MOTEST
+  domain: MO
+  label: Morphology Test Name
+
+- name: MOTESTCD
+  domain: MO
+  label: Morphology Test Short Name
+
+- name: MOORRES
+  domain: MO
+  label: Result or Finding as Collected
+
+- name: MOSTRESC
+  domain: MO
+  label: Character Result/Finding in Standard Format
+
+- name: MOSTRESN
+  domain: MO
+  label: Numeric Result/Finding in Standard Units
+
+- name: MOSTAT
+  domain: MO
+  label: Completion Status
+
+- name: MOREASND
+  domain: MO
+  label: Reason Not Done
+
+- name: MODTC
+  domain: MO
+  label: Date/Time of Morphology Observation
+
+- name: MOSTDY
+  domain: MO
+  label: Study Day of Observation
+
+- name: MOCAT
+  domain: MO
+  label: Category for Morphology Observation
+
+- name: MOSCAT
+  domain: MO
+  label: Subcategory for Morphology Observation
+
+- name: MOMETHOD
+  domain: MO
+  label: Method of Morphology Observation
+
+- name: MOLOC
+  domain: MO
+  label: Location Used for Morphology Observation
+
+- name: MOGRPID
+  domain: MO
+  label: Group ID
+
+- name: MOREFID
+  domain: MO
+  label: Reference ID
+
+- name: MOSPID
+  domain: MO
+  label: Sponsor-Defined Identifier

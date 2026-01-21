@@ -1,0 +1,126 @@
+---
+title: "gtsummary"
+search: true
+---
+
+```{r warning = F, message = F}
+library(tidyverse)
+library(gtsummary)
+```
+
+## Links
+
++ [gtsummary](https://www.danieldsjoberg.com/gtsummary/index.html)
++ [gt](https://gt.rstudio.com/)
+
+## Basic Usage
+
+### Example 1 
+
+```{r}
+trial %>% tbl_summary(include = c(trt, age, grade))
+```
+
+> For continuous variable, present `median (Q1, Q3)`
+
+| Argument | Description |
+|:---|:---|
+| `label` | specify the variable labels printed in table |
+| `type` | specify the variable type (e.g. continuous, categorical, etc.) |
+| `statistic` | change the summary statistics presented |
+| `digits` | number of digits the summary statistics will be rounded to |
+| `missing` | whether to display a row with the number of missing observations |
+| `missing_text` | text label for the missing number row |
+| `missing_stat` | statistic(s) to show on the missing row |
+| `sort` | change the sorting of categorical levels by frequency |
+| `percent` | print column, row, or cell percentages |
+| `include` | list of variables to include in summary table |
+
+## Advanced Usage
+
+### Example 2: Modify **`tbl_summary()`** arguments 
+
+```{r}
+trial |>
+  tbl_summary(
+    by = trt,
+    include = c(age, grade),
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} / {N} ({p}%)"
+    ),
+    digits = all_continuous() ~ 2,
+    label = list(grade = "Tumor Grade"),
+    missing_text = "(Missing)"
+  )
+```
+
+| Function | Description |
+|:---|:---|
+| [`add_p()`](https://www.danieldsjoberg.com/gtsummary/reference/add_p.html) | add p-values to the output comparing values across groups |
+| [`add_overall()`](https://www.danieldsjoberg.com/gtsummary/reference/add_overall.html) | add a column with overall summary statistics |
+| [`add_n()`](https://www.danieldsjoberg.com/gtsummary/reference/add_n.html) | add a column with N (or N missing) for each variable |
+| [`add_difference()`](https://www.danieldsjoberg.com/gtsummary/reference/add_difference.html) | add column for difference between two group, confidence interval, and p-value |
+| [`add_stat_label()`](https://www.danieldsjoberg.com/gtsummary/reference/add_stat_label.html) | add label for the summary statistics shown in each row |
+| [`add_stat()`](https://www.danieldsjoberg.com/gtsummary/reference/add_stat.html) | generic function to add a column with user-defined values |
+| [`add_q()`](https://www.danieldsjoberg.com/gtsummary/reference/add_q.html) | add a column of q values to control for multiple comparisons |
+
+### Example 3: Modify Table 
+
+```{r}
+trial |>
+  tbl_summary(by = trt, includ = c(age, grade)) |>
+  add_p(pvalue_fun = label_style_pvalue(digits = 2)) |>
+  add_overall() |>
+  add_n() |>
+  modify_header(label ~ "**Variable**") |>
+  modify_spanning_header(c("stat_1", "stat_2") ~ "**Treatment Received**") |>
+  modify_footnote_header("Median (IQR) or Frequency (%)", columns = all_stat_cols()) |>
+  modify_caption("**Table 1. Patient Characteristics**") |>
+  bold_labels()
+```
+
+| Function | Description |
+|:---|:---|
+| [`modify_header()`](https://www.danieldsjoberg.com/gtsummary/reference/modify.html) | update column headers |
+| [`modify_footnote_header()`](https://www.danieldsjoberg.com/gtsummary/reference/modify_footnote2.html) | update column header footnote |
+| [`modify_footnote_body()`](https://www.danieldsjoberg.com/gtsummary/reference/modify_footnote2.html) | update table body footnote |
+| [`modify_spanning_header()`](https://www.danieldsjoberg.com/gtsummary/reference/modify.html) | update spanning headers |
+| [`modify_caption()`](https://www.danieldsjoberg.com/gtsummary/reference/modify_caption.html) | update table caption/title |
+| [`bold_labels()`](https://www.danieldsjoberg.com/gtsummary/reference/bold_italicize_labels_levels.html) | bold variable labels |
+| [`bold_levels()`](https://www.danieldsjoberg.com/gtsummary/reference/bold_italicize_labels_levels.html) | bold variable levels |
+| [`italicize_labels()`](https://www.danieldsjoberg.com/gtsummary/reference/bold_italicize_labels_levels.html) | italicize variable labels |
+| [`italicize_levels()`](https://www.danieldsjoberg.com/gtsummary/reference/bold_italicize_labels_levels.html) | italicize variable levels |
+| [`bold_p()`](https://www.danieldsjoberg.com/gtsummary/reference/bold_p.html) | bold significant p-values |
+
+### Example 4: Multi-line Continuous Summaries
+
+```{r}
+trial |>
+  tbl_summary(
+    by = trt,
+    include = age,
+    type = all_continuous() ~ "continuous2",
+    statistic = all_continuous() ~ c(
+      "{N_nonmiss}",
+      "{median} ({p25}, {p75})",
+      "{min}, {max}"
+    ),
+    missing = "no"
+  ) |>
+  add_p(pvalue_fun = label_style_pvalue(digits = 2))
+```
+
+> To update the continuous variables to summarize on multiple lines, update the summary type to `"continuous2"` (for summaries on two or more lines).
+
+
+### Example 5: Use `gt` functions to format table
+
+```{r}
+trial |>
+  tbl_summary(by = trt, include = c(age, grade), missing = "no") |>
+  add_n() |>
+  as_gt() |>
+  gt::tab_source_note(gt::md("*This data is simulated*"))
+```
+

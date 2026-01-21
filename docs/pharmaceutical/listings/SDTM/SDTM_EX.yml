@@ -1,0 +1,95 @@
+- name: EXSEQ
+  domain: EX
+  label: Sequence Number
+  
+- name: EXTRT
+  domain: EX
+  label: Name of Treatment
+  
+- name: EXCAT
+  domain: EX
+  label: Category of Treatment 
+  
+- name: EXDOSE
+  domain: EX
+  label: Dose
+  
+- name: EXDOSTXT
+  domain: EX
+  label: Dose Description
+  
+- name: EXDOSU
+  domain: EX
+  label: Dose Units
+  
+- name: EXDOSFRM
+  domain: EX
+  label: Dose Form 
+  
+- name: EXDOSFRQ
+  domain: EX
+  label: Dosing Frequency per Interval (e.g. Q2H, QD, BID)
+  
+- name: EXROUTE
+  domain: EX
+  label: Route of Administration (e.g. ORAL, INTRAVENOUS)
+  
+- name: EXFAST
+  domain: EX
+  label: Fasting Status 
+  
+- name: EXSTDTC
+  domain: EX
+  label: Start Date/Time of Treatment 
+  
+- name: EXENDTC
+  domain: EX
+  label: End Date/Time of Treatment 
+  
+- name: EXSTDY
+  domain: EX
+  label: Study Day of Start of Treatment 
+  
+- name: EXENDY
+  domain: EX
+  label: Study Day of End of Treatment 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  

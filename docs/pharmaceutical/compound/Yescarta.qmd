@@ -1,0 +1,27 @@
+---
+title: "Yescarta"
+---
+
+### **药物简介（Drug Overview）**
+
+耶斯卡塔（Yescarta，通用名为Axicabtagene ciloleucel，简称Axi-cel）是一种嵌合抗原受体T细胞（Chimeric Antigen Receptor T-cell，简称CAR-T）疗法。它主要用于治疗某些类型的血液癌，特别是复发或难治性的大B细胞淋巴瘤（Diffuse Large B-cell Lymphoma，DLBCL）。
+
+### **作用机制（Mechanism of Action）**
+
+Axi-cel的作用机制包括收集患者的T细胞，并在实验室中通过遗传工程改造这些细胞，使它们能够表达针对CD19的CAR。CD19是多数B细胞淋巴瘤细胞表面的一种蛋白。这些改造后的T细胞被重新输回患者体内，能够识别并杀灭表达CD19的癌细胞。
+
+### **适应症（Indications）**
+
+耶斯卡塔被批准用于治疗成人复发或难治性大B细胞淋巴瘤，包括：
+
+-   大B细胞淋巴瘤
+
+-   初级中枢神经系统淋巴瘤（Primary Central Nervous System Lymphoma）
+
+-   高危转移性弥漫大B细胞淋巴瘤等。
+
+### **副作用（Side Effects）**
+
+耶斯卡塔可能会导致包括细胞因子释放综合征（Cytokine Release Syndrome, CRS）在内的严重副作用。此外，患者可能会经历神经毒性、感染风险增加、低血细胞计数等不良反应。因此，在接受治疗的过程中，患者需要密切监测并及时处理这些潜在的副作用。
+
+作为一种先进的免疫细胞疗法，耶斯卡塔为某些难治性血液癌患者提供了新的治疗选择。然而，由于其复杂的作用机制和潜在的副作用，使用时应在有经验的医疗团队的指导和监控下进行。

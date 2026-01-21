@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Monoclonal Antibody Therapy (MAT) – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" rel="next">
+<link href="../../../docs/pharmaceutical/other/Immunotherapy.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Monoclonal Antibody Therapy (MAT) – Hao Sun">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Monoclonal Antibody Therapy (MAT) – Hao Sun">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Drug.html">Biotechnology</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/MAT.html">Monoclonal Antibody Therapy (MAT)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharmaceutical Content</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Company</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/BMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BMS</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Eliquis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eliquis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Opdivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opdivo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Reblozyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reblozyl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Revlimid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revlimid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Yervoy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yervoy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Onureg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onureg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Inrebic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inrebic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Iberdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iberdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mezigdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mezigdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Alnuctamab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alnuctamab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Abecma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abecma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Breyanzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breyanzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Krazati.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Krazati</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Merck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Keytruda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keytruda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Januvia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Januvia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Gardasil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gardasil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Pneumovax</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/J &amp; J.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">J &amp; J</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carvykti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carvykti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecvayli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecvayli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Darzalex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Darzalex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Remicade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remicade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Stelara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stelara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xarelto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xarelto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Bortezomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bortezomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Pfizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pfizer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mylotarg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mylotarg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Comirnaty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comirnaty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Prevnar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prevnar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ibrance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ibrance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xeljanz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xeljanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xalkori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xalkori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Sirolimus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sirolimus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Roche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roche</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecentriq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecentriq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Rituxan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rituxan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Herceptin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Herceptin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Avastin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avastin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Zelboraf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zelboraf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cotellic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cotellic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Abbvie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbvie</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Humira.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Humira</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/GSK.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tafinlar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tafinlar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Novartis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Novartis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mekinist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mekinist</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Incyte</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Jakafi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jakafi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vertex</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Kalydeco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kalydeco</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Regeneron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regeneron</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Gilead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gilead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">Amgen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carfilzomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carfilzomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Regulatory</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-compound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Compound</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Venclexta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Venclexta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bone Marrow</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Leukemia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leukemia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lymphoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/MDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Myelodysplastic Syndromes (MDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Myeloma (MM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Melanoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Melanoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/NSCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-Small Cell Lung Cancer (NSCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Thrombosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thrombosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDTM</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true">
+ <span class="menu-text">Wiki</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Drug Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ADC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody-Drug Conjugates (ADC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CAR-T</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunotherapy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/MAT.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Monoclonal Antibody Therapy (MAT)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
+ <span class="menu-text">Clinical Trial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adverse Event by SOC and PT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intercurrent Events</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Endpoint</span></span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/pharma_note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharma Note</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/Naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drug Naming Rules</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#单克隆抗体疗法" id="toc-单克隆抗体疗法" class="nav-link active" data-scroll-target="#单克隆抗体疗法"><strong>单克隆抗体疗法</strong></a>
+  <ul class="collapse">
+  <li><a href="#概念和重要性" id="toc-概念和重要性" class="nav-link" data-scroll-target="#概念和重要性"><strong>概念和重要性</strong></a></li>
+  <li><a href="#历史背景" id="toc-历史背景" class="nav-link" data-scroll-target="#历史背景"><strong>历史背景</strong></a></li>
+  <li><a href="#基本原理" id="toc-基本原理" class="nav-link" data-scroll-target="#基本原理"><strong>基本原理</strong></a></li>
+  </ul></li>
+  <li><a href="#单克隆抗体定义设计与作用机制" id="toc-单克隆抗体定义设计与作用机制" class="nav-link" data-scroll-target="#单克隆抗体定义设计与作用机制"><strong>单克隆抗体：定义、设计与作用机制</strong></a>
+  <ul class="collapse">
+  <li><a href="#定义和特性" id="toc-定义和特性" class="nav-link" data-scroll-target="#定义和特性"><strong>定义和特性</strong></a></li>
+  <li><a href="#设计和生产" id="toc-设计和生产" class="nav-link" data-scroll-target="#设计和生产"><strong>设计和生产</strong></a></li>
+  <li><a href="#作用机制" id="toc-作用机制" class="nav-link" data-scroll-target="#作用机制"><strong>作用机制</strong></a></li>
+  </ul></li>
+  <li><a href="#单克隆抗体的结合和治疗机制" id="toc-单克隆抗体的结合和治疗机制" class="nav-link" data-scroll-target="#单克隆抗体的结合和治疗机制"><strong>单克隆抗体的结合和治疗机制</strong></a>
+  <ul class="collapse">
+  <li><a href="#结合机制" id="toc-结合机制" class="nav-link" data-scroll-target="#结合机制"><strong>结合机制</strong></a></li>
+  <li><a href="#治疗机制" id="toc-治疗机制" class="nav-link" data-scroll-target="#治疗机制"><strong>治疗机制</strong></a></li>
+  </ul></li>
+  <li><a href="#不同类型的单克隆抗体" id="toc-不同类型的单克隆抗体" class="nav-link" data-scroll-target="#不同类型的单克隆抗体"><strong>不同类型的单克隆抗体</strong></a>
+  <ul class="collapse">
+  <li><a href="#裸抗体naked-antibodies" id="toc-裸抗体naked-antibodies" class="nav-link" data-scroll-target="#裸抗体naked-antibodies"><strong>裸抗体（Naked Antibodies）</strong></a></li>
+  <li><a href="#偶联抗体conjugated-antibodies" id="toc-偶联抗体conjugated-antibodies" class="nav-link" data-scroll-target="#偶联抗体conjugated-antibodies"><strong>偶联抗体（Conjugated Antibodies）</strong></a></li>
+  <li><a href="#双特异性抗体bispecific-antibodies" id="toc-双特异性抗体bispecific-antibodies" class="nav-link" data-scroll-target="#双特异性抗体bispecific-antibodies"><strong>双特异性抗体（Bispecific Antibodies）</strong></a></li>
+  </ul></li>
+  <li><a href="#单克隆抗体在临床应用中的应用" id="toc-单克隆抗体在临床应用中的应用" class="nav-link" data-scroll-target="#单克隆抗体在临床应用中的应用"><strong>单克隆抗体在临床应用中的应用</strong></a>
+  <ul class="collapse">
+  <li><a href="#在癌症治疗中的应用" id="toc-在癌症治疗中的应用" class="nav-link" data-scroll-target="#在癌症治疗中的应用"><strong>在癌症治疗中的应用</strong></a></li>
+  <li><a href="#在自身免疫病治疗中的应用" id="toc-在自身免疫病治疗中的应用" class="nav-link" data-scroll-target="#在自身免疫病治疗中的应用"><strong>在自身免疫病治疗中的应用</strong></a></li>
+  <li><a href="#在炎症性疾病治疗中的应用" id="toc-在炎症性疾病治疗中的应用" class="nav-link" data-scroll-target="#在炎症性疾病治疗中的应用"><strong>在炎症性疾病治疗中的应用</strong></a></li>
+  </ul></li>
+  <li><a href="#研究进展和技术进展" id="toc-研究进展和技术进展" class="nav-link" data-scroll-target="#研究进展和技术进展"><strong>研究进展和技术进展</strong></a>
+  <ul class="collapse">
+  <li><a href="#最新研究动态" id="toc-最新研究动态" class="nav-link" data-scroll-target="#最新研究动态"><strong>最新研究动态</strong></a></li>
+  <li><a href="#技术进展" id="toc-技术进展" class="nav-link" data-scroll-target="#技术进展"><strong>技术进展</strong></a></li>
+  </ul></li>
+  <li><a href="#当前面临的挑战" id="toc-当前面临的挑战" class="nav-link" data-scroll-target="#当前面临的挑战"><strong>当前面临的挑战</strong></a>
+  <ul class="collapse">
+  <li><a href="#成本问题" id="toc-成本问题" class="nav-link" data-scroll-target="#成本问题"><strong>成本问题</strong></a></li>
+  <li><a href="#安全性和耐药性" id="toc-安全性和耐药性" class="nav-link" data-scroll-target="#安全性和耐药性"><strong>安全性和耐药性</strong></a></li>
+  <li><a href="#其他挑战" id="toc-其他挑战" class="nav-link" data-scroll-target="#其他挑战"><strong>其他挑战</strong></a></li>
+  </ul></li>
+  <li><a href="#未来发展方向" id="toc-未来发展方向" class="nav-link" data-scroll-target="#未来发展方向"><strong>未来发展方向</strong></a>
+  <ul class="collapse">
+  <li><a href="#新靶点的发现" id="toc-新靶点的发现" class="nav-link" data-scroll-target="#新靶点的发现"><strong>新靶点的发现</strong></a></li>
+  <li><a href="#治疗策略的创新" id="toc-治疗策略的创新" class="nav-link" data-scroll-target="#治疗策略的创新"><strong>治疗策略的创新</strong></a></li>
+  <li><a href="#组合疗法" id="toc-组合疗法" class="nav-link" data-scroll-target="#组合疗法"><strong>组合疗法</strong></a></li>
+  </ul></li>
+  <li><a href="#预测趋势和影响" id="toc-预测趋势和影响" class="nav-link" data-scroll-target="#预测趋势和影响"><strong>预测趋势和影响</strong></a>
+  <ul class="collapse">
+  <li><a href="#精准医疗的加强" id="toc-精准医疗的加强" class="nav-link" data-scroll-target="#精准医疗的加强"><strong>精准医疗的加强</strong></a></li>
+  <li><a href="#生产技术的进步" id="toc-生产技术的进步" class="nav-link" data-scroll-target="#生产技术的进步"><strong>生产技术的进步</strong></a></li>
+  <li><a href="#疗法可及性的提高" id="toc-疗法可及性的提高" class="nav-link" data-scroll-target="#疗法可及性的提高"><strong>疗法可及性的提高</strong></a></li>
+  </ul></li>
+  <li><a href="#相关资料" id="toc-相关资料" class="nav-link" data-scroll-target="#相关资料">相关资料</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Drug.html">Biotechnology</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/MAT.html">Monoclonal Antibody Therapy (MAT)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Monoclonal Antibody Therapy (MAT)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="单克隆抗体疗法" class="level2">
+<h2 class="anchored" data-anchor-id="单克隆抗体疗法"><strong>单克隆抗体疗法</strong></h2>
+<section id="概念和重要性" class="level3">
+<h3 class="anchored" data-anchor-id="概念和重要性"><strong>概念和重要性</strong></h3>
+<p>单克隆抗体疗法（Monoclonal Antibody Therapy）是一种利用特制的抗体来识别并靶向人体中特定分子的治疗方法。这种抗体是单一克隆来源的，能够特异性地结合到疾病过程中的关键蛋白质，如肿瘤细胞表面的蛋白质或过度活跃的免疫分子。单克隆抗体的使用在现代医学中至关重要，因为它们可以精确地靶向病理过程，从而最小化对正常细胞的损害，并提供一种相对于传统治疗更为安全和有效的治疗选项。</p>
+</section>
+<section id="历史背景" class="level3">
+<h3 class="anchored" data-anchor-id="历史背景"><strong>历史背景</strong></h3>
+<p>单克隆抗体的概念可以追溯到1975年，乔治·科勒（Georges Köhler）和塞萨尔·米尔斯坦（César Milstein）开发出了一种方法，可以连续地从一种克隆细胞系中产生特定的抗体，这种方法被称为杂交瘤技术（Hybridoma Technology）。他们的这一成就为后来的单克隆抗体疗法奠定了基础，并因此获得了1984年的诺贝尔生理学或医学奖。</p>
+</section>
+<section id="基本原理" class="level3">
+<h3 class="anchored" data-anchor-id="基本原理"><strong>基本原理</strong></h3>
+<p>单克隆抗体疗法的基本原理是通过生物工程技术生产出能特异性结合到疾病相关抗原的抗体。这些抗体可以直接中和病原体，或者标记病变细胞以促进免疫系统对其的识别和摧毁。此外，单克隆抗体还可以用于阻断信号通路，抑制疾病进程，或者作为药物输送系统，直接将化疗药物或放射性物质运送到靶细胞。</p>
+</section>
+</section>
+<section id="单克隆抗体定义设计与作用机制" class="level2">
+<h2 class="anchored" data-anchor-id="单克隆抗体定义设计与作用机制"><strong>单克隆抗体：定义、设计与作用机制</strong></h2>
+<section id="定义和特性" class="level3">
+<h3 class="anchored" data-anchor-id="定义和特性"><strong>定义和特性</strong></h3>
+<p>单克隆抗体（Monoclonal Antibodies, mAbs）是实验室制造的分子，它们模仿免疫系统的抗体功能。每个mAb都是由一个单一的克隆B细胞系产生的，能够与特定的抗原结合。它们具有高度的特异性，这意味着每种mAb都是为了结合到一个特定的抗原而设计的。</p>
+</section>
+<section id="设计和生产" class="level3">
+<h3 class="anchored" data-anchor-id="设计和生产"><strong>设计和生产</strong></h3>
+<p>单克隆抗体的设计和生产涉及几个关键步骤：</p>
+<ol type="1">
+<li><p><strong>目标识别（Target Identification）</strong>：确定特定的抗原目标，通常是疾病过程中的关键蛋白质或细胞表面分子。</p></li>
+<li><p><strong>杂交瘤技术（Hybridoma Technology）</strong>：这是一种传统方法，通过将B细胞与骨髓瘤细胞融合，产生能够无限期生产所需抗体的细胞。</p></li>
+<li><p><strong>重组DNA技术（Recombinant DNA Technology）</strong>：现代方法使用基因工程来生产mAbs。这包括将编码抗体的基因插入到细胞中，例如CHO（Chinese Hamster Ovary）细胞，然后培养这些细胞以产生大量的抗体。</p></li>
+<li><p><strong>克隆和筛选（Cloning and Screening）</strong>：从大量细胞中识别和选择能够生产高亲和力抗体的克隆。</p></li>
+<li><p><strong>生产和纯化（Production and Purification）</strong>：上述克隆的扩增和培养，随后是抗体的提取和纯化。</p></li>
+</ol>
+</section>
+<section id="作用机制" class="level3">
+<h3 class="anchored" data-anchor-id="作用机制"><strong>作用机制</strong></h3>
+<p>单克隆抗体疗法的作用机制（Mechanisms of Action, MoA）主要包括：</p>
+<ol type="1">
+<li><p><strong>直接作用</strong>：mAbs可以直接中和病原体或阻断细胞信号，从而抑制疾病的发展。</p></li>
+<li><p><strong>标记作用</strong>：它们可以标记病变细胞，使免疫系统如巨噬细胞（Macrophages）更容易识别和清除这些细胞。</p></li>
+<li><p><strong>药物输送系统</strong>：mAbs也可以作为药物输送系统，将化疗药物、放射性同位素或毒素直接输送到癌细胞上。</p></li>
+<li><p><strong>免疫调节</strong>：通过调节免疫系统的活性，如免疫检查点抑制剂（Checkpoint Inhibitors）那样，mAbs可以增强对肿瘤细胞的免疫反应。</p></li>
+</ol>
+</section>
+</section>
+<section id="单克隆抗体的结合和治疗机制" class="level2">
+<h2 class="anchored" data-anchor-id="单克隆抗体的结合和治疗机制"><strong>单克隆抗体的结合和治疗机制</strong></h2>
+<section id="结合机制" class="level3">
+<h3 class="anchored" data-anchor-id="结合机制"><strong>结合机制</strong></h3>
+<p>单克隆抗体（Monoclonal Antibodies, mAbs）通过它们的变异区（Variable Regions）识别和结合到抗原的特定表位（Epitopes）。这种结合具有高度的亲和力和特异性，允许mAbs能够精确地靶向疾病相关的分子，如癌细胞表面的蛋白或过度活跃的免疫分子。</p>
+</section>
+<section id="治疗机制" class="level3">
+<h3 class="anchored" data-anchor-id="治疗机制"><strong>治疗机制</strong></h3>
+<p>单克隆抗体的治疗机制可能包括：</p>
+<ul>
+<li><p><strong>中和作用</strong>：直接中和病原体或抑制其活性。</p></li>
+<li><p><strong>免疫介导的细胞毒性</strong>：标记癌细胞，促进免疫细胞如自然杀伤细胞（Natural Killer Cells, NK Cells）和巨噬细胞（Macrophages）的介导毁灭。</p></li>
+<li><p><strong>阻断信号传导</strong>：阻断癌细胞生长和存活所依赖的信号通路。</p></li>
+</ul>
+</section>
+</section>
+<section id="不同类型的单克隆抗体" class="level2">
+<h2 class="anchored" data-anchor-id="不同类型的单克隆抗体"><strong>不同类型的单克隆抗体</strong></h2>
+<section id="裸抗体naked-antibodies" class="level3">
+<h3 class="anchored" data-anchor-id="裸抗体naked-antibodies"><strong>裸抗体（Naked Antibodies）</strong></h3>
+<p>这是最常见的单克隆抗体形式，不与任何药物或放射性物质结合。它们直接通过与抗原结合来发挥作用。例如，赫赛汀（Trastuzumab）用于治疗HER2阳性乳腺癌。</p>
+</section>
+<section id="偶联抗体conjugated-antibodies" class="level3">
+<h3 class="anchored" data-anchor-id="偶联抗体conjugated-antibodies"><strong>偶联抗体（Conjugated Antibodies）</strong></h3>
+<p>这些抗体被设计用来携带药物、毒素或放射性同位素。它们将这些治疗剂直接运送到癌细胞，最大化治疗效果并减少对正常细胞的损害。举例来说，阿达木单抗药物偶联物（Ado-trastuzumab emtansine）是一种将抗体和化疗药物结合的疗法，用于治疗某些类型的乳腺癌。</p>
+</section>
+<section id="双特异性抗体bispecific-antibodies" class="level3">
+<h3 class="anchored" data-anchor-id="双特异性抗体bispecific-antibodies"><strong>双特异性抗体（Bispecific Antibodies）</strong></h3>
+<p>这种抗体设计有两个不同的结合位点，能同时靶向两个不同的抗原。例如，双特异性T细胞引导抗体（BiTE, Bispecific T-cell Engager）能同时结合到癌细胞的特定抗原和T细胞的CD3受体，从而直接将免疫细胞带到癌细胞的近旁，促进其被杀死。</p>
+</section>
+</section>
+<section id="单克隆抗体在临床应用中的应用" class="level2">
+<h2 class="anchored" data-anchor-id="单克隆抗体在临床应用中的应用"><strong>单克隆抗体在临床应用中的应用</strong></h2>
+<section id="在癌症治疗中的应用" class="level3">
+<h3 class="anchored" data-anchor-id="在癌症治疗中的应用"><strong>在癌症治疗中的应用</strong></h3>
+<p>单克隆抗体可以被用来直接攻击癌细胞或者干扰它们的生长信号。在某些情况下，它们还被用于将毒素、药物或放射性物质直接输送到癌细胞，或者标记癌细胞以便于其他治疗（如放疗）的定位。</p>
+<ul>
+<li><p><strong>药物名</strong>：<a href="../../../docs/pharmaceutical/compound/Rituxan.html">Rituximab</a>（利妥昔单抗）</p>
+<ul>
+<li><strong>用途</strong>：用于治疗某些类型的非霍奇金淋巴瘤和慢性淋巴细胞性白血病。</li>
+</ul></li>
+<li><p><strong>药物名</strong>：<a href="../../../docs/pharmaceutical/compound/Herceptin.html">Trastuzumab</a>（曲妥珠单抗）</p>
+<ul>
+<li><strong>用途</strong>：用于治疗HER2阳性的乳腺癌和胃癌。</li>
+</ul></li>
+</ul>
+</section>
+<section id="在自身免疫病治疗中的应用" class="level3">
+<h3 class="anchored" data-anchor-id="在自身免疫病治疗中的应用"><strong>在自身免疫病治疗中的应用</strong></h3>
+<p>单克隆抗体可以调节过度活跃的免疫系统，从而用于治疗多种自身免疫性疾病。</p>
+<ul>
+<li><p><strong>药物名</strong>：<a href="../../../docs/pharmaceutical/compound/Humira.html">Adalimumab</a>（阿达木单抗）</p>
+<ul>
+<li><strong>用途</strong>：用于治疗类风湿性关节炎、克罗恩病和银屑病等炎症性疾病。</li>
+</ul></li>
+<li><p><strong>药物名</strong>：<a href="../../../docs/pharmaceutical/compound/Campath.html">Alemtuzumab</a>（阿来木单抗）</p>
+<ul>
+<li><strong>用途</strong>：用于治疗多发性硬化症。</li>
+</ul></li>
+</ul>
+</section>
+<section id="在炎症性疾病治疗中的应用" class="level3">
+<h3 class="anchored" data-anchor-id="在炎症性疾病治疗中的应用"><strong>在炎症性疾病治疗中的应用</strong></h3>
+<p>通过抑制炎症反应中关键的细胞因子或细胞表面分子，单克隆抗体能够减少炎症和组织损伤。</p>
+<ul>
+<li><p><strong>药物名</strong>：<a href="../../../docs/pharmaceutical/compound/Remicade.html">Infliximab</a>（英夫利昔单抗）</p>
+<ul>
+<li><strong>用途</strong>：用于治疗炎症性肠病，包括克罗恩病和溃疡性结肠炎。</li>
+</ul></li>
+<li><p><strong>药物名</strong>：<a href="../../../docs/pharmaceutical/compound/Stelara.html">Ustekinumab</a>（乌司他单抗）</p>
+<ul>
+<li><strong>用途</strong>：用于治疗中至重度的银屑病和银屑病性关节炎。</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="研究进展和技术进展" class="level2">
+<h2 class="anchored" data-anchor-id="研究进展和技术进展"><strong>研究进展和技术进展</strong></h2>
+<section id="最新研究动态" class="level3">
+<h3 class="anchored" data-anchor-id="最新研究动态"><strong>最新研究动态</strong></h3>
+<ul>
+<li><p><strong>多功能单克隆抗体</strong>：新一代单克隆抗体正在被设计成多功能药物，能同时靶向多个抗原或执行多种功能，如双特异性抗体（Bispecific Antibodies）。</p></li>
+<li><p><strong>改善药物输送</strong>：通过改良偶联技术，研究者正在开发更有效的方法将药物、毒素或放射性物质直接输送到肿瘤或病变组织。</p></li>
+<li><p><strong>个性化医疗</strong>：基于患者特定的遗传和分子特征，开发个性化的单克隆抗体，从而提供更加精准的治疗方案。</p></li>
+</ul>
+</section>
+<section id="技术进展" class="level3">
+<h3 class="anchored" data-anchor-id="技术进展"><strong>技术进展</strong></h3>
+<ul>
+<li><p><strong>细胞培养技术</strong>：细胞培养技术的改进增加了单克隆抗体的生产效率和降低了成本。</p></li>
+<li><p><strong>基因编辑</strong>：CRISPR-Cas9等基因编辑工具被用来优化抗体的亲和力和特异性。</p></li>
+<li><p><strong>预测模型</strong>：计算生物学和人工智能正在用于预测单克隆抗体的疗效和可能的副作用。</p></li>
+</ul>
+</section>
+</section>
+<section id="当前面临的挑战" class="level2">
+<h2 class="anchored" data-anchor-id="当前面临的挑战"><strong>当前面临的挑战</strong></h2>
+<section id="成本问题" class="level3">
+<h3 class="anchored" data-anchor-id="成本问题"><strong>成本问题</strong></h3>
+<ul>
+<li><p><strong>高昂的研发费用</strong>：从研发到临床试验再到市场，单克隆抗体的研发成本极高。</p></li>
+<li><p><strong>生产成本</strong>：高级的生产设施和复杂的生产过程也导致了高昂的成本。</p></li>
+</ul>
+</section>
+<section id="安全性和耐药性" class="level3">
+<h3 class="anchored" data-anchor-id="安全性和耐药性"><strong>安全性和耐药性</strong></h3>
+<ul>
+<li><p><strong>免疫相关副作用</strong>：如免疫检查点抑制剂可能导致的自身免疫性副作用。</p></li>
+<li><p><strong>耐药性</strong>：癌细胞可能通过多种机制，如基因突变或细胞信号通路的改变来发展出对单克隆抗体的耐药性。</p></li>
+</ul>
+</section>
+<section id="其他挑战" class="level3">
+<h3 class="anchored" data-anchor-id="其他挑战"><strong>其他挑战</strong></h3>
+<ul>
+<li><p><strong>全球可及性</strong>：在全球范围内使单克隆抗体疗法普及仍然是一个挑战。</p></li>
+<li><p><strong>制药公司的投资回报</strong>：高风险的研发投资需要在市场上获得相应的回报，这可能会影响定价策略和药物的普及。</p></li>
+</ul>
+</section>
+</section>
+<section id="未来发展方向" class="level2">
+<h2 class="anchored" data-anchor-id="未来发展方向"><strong>未来发展方向</strong></h2>
+<section id="新靶点的发现" class="level3">
+<h3 class="anchored" data-anchor-id="新靶点的发现"><strong>新靶点的发现</strong></h3>
+<ul>
+<li><p><strong>深入分子病理学</strong>：随着对癌症和其他疾病分子机制更深入的了解，新的疾病标志物和治疗靶点将被鉴定出来。</p></li>
+<li><p><strong>非传统靶点</strong>：研究将不仅限于细胞表面分子，还将扩展到细胞内部的靶点，例如调节蛋白质降解的分子。</p></li>
+</ul>
+</section>
+<section id="治疗策略的创新" class="level3">
+<h3 class="anchored" data-anchor-id="治疗策略的创新"><strong>治疗策略的创新</strong></h3>
+<ul>
+<li><p><strong>多靶点治疗</strong>：同时靶向多个疾病标志物的复合单克隆抗体或双特异性抗体可能会更常见。</p></li>
+<li><p><strong>智能抗体</strong>：开发能够在特定条件下激活的“智能”单克隆抗体，以提高治疗的选择性和安全性。</p></li>
+</ul>
+</section>
+<section id="组合疗法" class="level3">
+<h3 class="anchored" data-anchor-id="组合疗法"><strong>组合疗法</strong></h3>
+<ul>
+<li><p><strong>与其他治疗方法结合</strong>：单克隆抗体可能会与化疗、放疗或其他靶向治疗联合使用，以增强疗效。</p></li>
+<li><p><strong>个性化组合治疗</strong>：根据个体的遗传和分子特征定制治疗方案，组合使用不同的单克隆抗体。</p></li>
+</ul>
+</section>
+</section>
+<section id="预测趋势和影响" class="level2">
+<h2 class="anchored" data-anchor-id="预测趋势和影响"><strong>预测趋势和影响</strong></h2>
+<section id="精准医疗的加强" class="level3">
+<h3 class="anchored" data-anchor-id="精准医疗的加强"><strong>精准医疗的加强</strong></h3>
+<ul>
+<li><strong>个性化医疗</strong>：随着基因组学和蛋白质组学的发展，单克隆抗体将在精准医疗中扮演更加重要的角色。</li>
+</ul>
+</section>
+<section id="生产技术的进步" class="level3">
+<h3 class="anchored" data-anchor-id="生产技术的进步"><strong>生产技术的进步</strong></h3>
+<ul>
+<li><strong>生物技术的创新</strong>：新的生物技术，如基因编辑和合成生物学，可能会使单克隆抗体的生产更加高效和成本效益。</li>
+</ul>
+</section>
+<section id="疗法可及性的提高" class="level3">
+<h3 class="anchored" data-anchor-id="疗法可及性的提高"><strong>疗法可及性的提高</strong></h3>
+<ul>
+<li><p><strong>成本降低</strong>：随着生产技术的进步和市场竞争的加剧，单克隆抗体的价格可能会下降，使得更多患者能够接受治疗。</p></li>
+<li><p><strong>全球市场的扩展</strong>：随着全球对单克隆抗体疗法需求的增加，这些疗法可能会在更广泛的地区得到应用。</p></li>
+</ul>
+</section>
+</section>
+<section id="相关资料" class="level2">
+<h2 class="anchored" data-anchor-id="相关资料">相关资料</h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/HZDogWyad3NxRmwQP_Eenw">2024值得关注的抗体</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="pagination-link" aria-label="Immunotherapy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Immunotherapy</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="pagination-link" aria-label="Adverse Event by SOC and PT">
+        <span class="nav-page-text">Adverse Event by SOC and PT</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

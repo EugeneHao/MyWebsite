@@ -1,0 +1,47 @@
+- name: DSTERM
+  domain: DS
+  label: Reported Term for Disposition Event
+
+- name: DSDECOD
+  domain: DS
+  label: Standardized Disposition Term
+
+- name: DSCAT
+  domain: DS
+  label: Category for Disposition Event
+
+- name: DSSCAT
+  domain: DS
+  label: Subcategory for Disposition Event
+
+- name: DSSTDTC
+  domain: DS
+  label: Start Date/Time of Disposition Event
+
+- name: DSENDTC
+  domain: DS
+  label: End Date/Time of Disposition Event
+
+- name: DSSTDY
+  domain: DS
+  label: Study Day of Disposition Event
+
+- name: DSOUT
+  domain: DS
+  label: Outcome of Disposition Event
+
+- name: DSREASND
+  domain: DS
+  label: Reason for Disposition Event
+
+- name: DSGRPID
+  domain: DS
+  label: Group ID
+
+- name: DSREFID
+  domain: DS
+  label: Reference ID
+
+- name: DSSPID
+  domain: DS
+  label: Sponsor-Defined Identifier

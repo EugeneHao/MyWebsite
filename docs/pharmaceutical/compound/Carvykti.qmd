@@ -1,0 +1,21 @@
+---
+title: "Carvykti"
+---
+
+### **药物简介（Drug Overview）**
+
+卡威克提（Carvykti，通用名为Ciltacabtagene autoleucel，简称Cilta-cel）是一种嵌合抗原受体T细胞（Chimeric Antigen Receptor T-cell，简称CAR-T）疗法。它是专为治疗多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)）设计的细胞治疗产品。
+
+### **作用机制（Mechanism of Action）**
+
+Cilta-cel的作用机制涉及改造患者自身的T细胞。这些T细胞经实验室处理后，被编程以表达针对B细胞成熟抗原（BCMA）的双特异性嵌合抗原受体。BCMA是多数多发性骨髓瘤细胞表面的蛋白。这些改造的T细胞被重新输回患者体内，能够识别并杀灭表达BCMA的癌细胞。
+
+### **适应症（Indications）**
+
+卡威克提被批准用于治疗在接受四种或更多先前疗法后仍有进展的复发或难治性多发性骨髓瘤患者。
+
+### **副作用（Side Effects）**
+
+卡威克提可能导致一些严重的副作用，与其他CAR-T疗法相似，这包括细胞因子释放综合征（Cytokine Release Syndrome, CRS）、神经毒性、感染风险增加、低血细胞计数等。治疗期间需要密切监控患者以管理这些潜在的副作用。
+
+作为一种新兴的治疗方法，卡威克提在多发性骨髓瘤的治疗领域展现了巨大的潜力。但是，由于其复杂的作用机制和潜在的副作用，其使用需要在有经验的医疗团队的监督下进行。

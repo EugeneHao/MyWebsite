@@ -1,0 +1,47 @@
+- name: SUBJID
+  domain: ALL
+  label: Subject Identifier
+  
+- name: STUDYID
+  domain: ALL
+  label: Study Identifier 
+  
+- name: USUBJID
+  domain: ALL
+  label: Unique Subject Identifier 
+  
+- name: EPOCH
+  domain: ALL
+  label: Epoch
+  
+- name: ARMCD
+  domain: ALL
+  label: Planned Arm Code  
+  
+- name: ARM
+  domain: ALL
+  label: Description of Planned Arm   
+  
+- name: ACTARMCD
+  domain: ALL
+  label: Actual Arm Code
+
+- name: ACTARM
+  domain: ALL
+  label: Description of Atual Arm 
+  
+- name: VISITNUM
+  domain: ALL
+  label: Visit Number 
+
+- name: VISIT
+  domain: ALL
+  label: Visit Name
+
+- name: ELEMENT
+  domain: ALL
+  label: Description of Element
+  
+- name: ETCD
+  domain: ALL
+  label: Element Code

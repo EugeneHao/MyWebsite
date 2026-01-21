@@ -1,0 +1,12 @@
+---
+title: Mind Map
+subtitle: This mind map outlines the development of my website.
+categories:
+  - Thought
+author: Hao Sun
+date: "01/17/2024"
+image: "mindmap.png"
+image-alt: "Fireworks with a silhouette of an audience"
+---
+
+![Mind Map](mindmap.png)

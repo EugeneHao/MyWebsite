@@ -1,0 +1,166 @@
+- name: AEACN
+  domain: AE
+  label: Action Taken with Study Treatment
+  
+- name: AEREL
+  domain: AE
+  label: Causality 
+  
+- name: AEGRPID
+  domain: AE
+  label: Group ID
+  
+- name: AEREFID
+  domain: AE
+  label: Reference ID 
+  
+- name: AESPID
+  domain: AE
+  label: Sponsor-Defined Identifier 
+  
+- name: AELNKID
+  domain: AE
+  label: Link ID  
+  
+- name: AETERM
+  domain: AE
+  label: Reported Term for the Adverse Event  
+  
+- name: AELLT
+  domain: AE
+  label: Lowest Lever Term 
+  
+- name: AEDECOD
+  domain: AE
+  label: Dictionary-Derived Term
+  
+- name: AEHLT
+  domain: AE
+  label: High Level Term
+  
+- name: AEHLGT
+  domain: AE
+  label: High Level Group Term
+  
+- name: AEBODSYS
+  domain: AE
+  label: Body Systerm or Organ Class
+  
+- name: AESOC
+  domain: AE
+  label: Primary System Organ Class
+  
+- name: AESER
+  domain: AE
+  label: Serious Event 
+  
+- name: AEOUT
+  domain: AE
+  label: Outcome of Adverse Event 
+  
+- name: AESCONG
+  domain: AE
+  label: Congenital Anomaly or Birth Defect 
+  
+- name: AESDISAB
+  domain: AE
+  label: Persistor Signif Disability/Incapacity 
+  
+- name: AESDTH
+  domain: AE
+  label: Results in Death
+  
+- name: AESHOSP
+  domain: AE
+  label: Requires or Prolongs Hospitalization
+  
+- name: AESLIFE
+  domain: AE
+  label: Is Life Threatening 
+  
+- name: AESMIE
+  domain: AE
+  label: Other Medically Important Serious Event 
+  
+- name: AECONTRT
+  domain: AE
+  label: Concomitant or Additional Treatment Given 
+  
+- name: AETOXGR
+  domain: AE
+  label: Standard Toxicity Grade 
+  
+- name: AESTDTC
+  domain: AE
+  label: Start Date/Time of Adverse Event 
+  
+- name: AEENDTC
+  domain: AE
+  label: End Date/Time of Adverse Event 
+  
+- name: AESTRF
+  domain: AE
+  label: Start Relative to Reference Period
+  
+- name: AEENRF
+  domain: AE
+  label: End Relative to Reference Period
+  
+- name: AESEQ
+  domain: AE
+  label: Sequence Number 
+  
+- name: AELLTCD
+  domain: AE
+  label: Lowest Level Term Code
+  
+- name: AEPTCD
+  domain: AE
+  label: Preferred Term Code  
+  
+- name: AEHLTCD
+  domain: AE
+  label: High Level Term Code
+  
+- name: AEHLGTCD
+  domain: AE
+  label: High Level Group Term Code
+  
+- name: AEBDSYCD
+  domain: AE
+  label: Body System or Organ Class Code
+  
+- name: AESOCCD
+  domain: AE
+  label: Primary System Organ Code Class   
+  
+- name: AESTDY
+  domain: AE
+  label: Study Day of Start of Adverse Event
+  
+- name: AEENDY
+  domain: AE
+  label: Study Day of ENd of Adverse Event
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

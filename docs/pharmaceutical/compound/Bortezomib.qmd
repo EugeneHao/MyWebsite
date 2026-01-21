@@ -1,0 +1,85 @@
+---
+title: "Bortezomib"
+---
+
+# **Bortezomib（硼替佐米）**
+
+## **药物简介（Drug Overview）**
+
+Bortezomib（硼替佐米，商品名 **Velcade**）是一种**蛋白酶体抑制剂（Proteasome Inhibitor）**，首个获批用于临床的同类药物。它通过抑制**26S 蛋白酶体（26S proteasome）**，阻断异常或损伤蛋白的降解，从而导致细胞周期停滞与凋亡。
+
+-   **公司（Company）**：最早由 **Millennium Pharmaceuticals（现为武田制药 Takeda Pharmaceuticals 的子公司）** 与 **强生 Janssen（合作商业化）** 开发。
+
+-   **上市时间（Approval）**：2003 年首次获 FDA 批准，用于治疗复发性/难治性多发性骨髓瘤（relapsed/refractory [multiple myeloma](../disease/multiple_myeloma.qmd)）。
+
+------------------------------------------------------------------------
+
+## **作用机制（Mechanism of Action）**
+
+-   **核心机制（Core mechanism）**：Bortezomib 可可逆性抑制 26S 蛋白酶体中 **chymotrypsin-like 活性位点**，导致蛋白降解受阻。
+
+-   **结果（Result）**：未降解蛋白在肿瘤细胞内积累，引发应激反应、抑制 NF-κB 信号通路、诱导细胞凋亡（apoptosis）。
+
+-   **特异性（Selectivity）**：骨髓瘤细胞对蛋白酶体抑制依赖性更高，因此对 Bortezomib 更敏感。
+
+------------------------------------------------------------------------
+
+## **适应症（Indications）**
+
+Bortezomib 已在全球多个地区获批，主要用于：
+
+-   **多发性骨髓瘤（Multiple Myeloma, MM）**：包括一线和复发/难治性患者。
+
+-   **套细胞淋巴瘤（Mantle Cell Lymphoma, MCL）**：适用于复发或难治性患者。
+
+------------------------------------------------------------------------
+
+## **副作用（Side Effects）**
+
+常见不良反应：
+
+-   **外周神经病变（Peripheral Neuropathy）**：表现为麻木、刺痛、疼痛。
+
+-   **血液学毒性（Hematologic Toxicities）**：血小板减少（Thrombocytopenia）、中性粒细胞减少（Neutropenia）、贫血（Anemia）。
+
+-   **胃肠道反应（Gastrointestinal Events）**：恶心、腹泻、呕吐。
+
+-   **感染风险增加（Infection risk）**。
+
+------------------------------------------------------------------------
+
+## **疗法与治疗方案（Therapies / Treatment Regimens）**
+
+Bortezomib 是多发性骨髓瘤联合治疗的核心药物之一，常作为基础方案中的关键组成部分：
+
+### **一线治疗（Frontline Therapy）**
+
+-   **VRd（三药方案）**：Bortezomib + Lenalidomide + Dexamethasone
+
+    -   移植适合（transplant-eligible）和不适合（ineligible）患者均常用。
+
+-   **D-VMP（四药方案）**：Daratumumab + Bortezomib + Melphalan + Prednisone
+
+    -   特别适用于移植不适合的老年患者。
+
+### **复发/难治性治疗（Relapsed / Refractory Therapy）**
+
+-   **DVd（三药方案）**：Daratumumab + Bortezomib + Dexamethasone
+
+    -   CASTOR 研究证实显著改善无进展生存期（PFS）。
+
+-   **PdV（Pomalidomide + Dexamethasone + Bortezomib）**：在部分 RRMM 患者中也有应用。
+
+### **套细胞淋巴瘤（MCL）**
+
+-   单药 Bortezomib 或与 R-CHOP 等化疗方案联合，用于复发/难治患者。
+
+------------------------------------------------------------------------
+
+## **总结（Summary）**
+
+-   **Bortezomib（Velcade）**：首个上市的蛋白酶体抑制剂，由 **Takeda / Millennium 与 Janssen** 共同开发。
+
+-   **核心地位**：作为 MM 治疗 backbone drug，Bortezomib 在一线与复发治疗中均占据核心位置，常与 **IMiD 类药物（Lenalidomide, Pomalidomide）**、**抗CD38 单抗（Daratumumab, Isatuximab）**、**糖皮质激素（Dexamethasone）** 联合使用。
+
+-   **临床影响**：自2003年获批以来，Bortezomib 极大改善了 MM 患者的预后，是现代骨髓瘤治疗的里程碑药物。

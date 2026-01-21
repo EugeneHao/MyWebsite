@@ -1,0 +1,59 @@
+- name: PPTEST
+  domain: PP
+  label: Pharmacokinetic Parameter Name
+
+- name: PPTESTCD
+  domain: PP
+  label: Pharmacokinetic Parameter Short Name
+
+- name: PPORRES
+  domain: PP
+  label: Result or Finding as Collected
+
+- name: PPSTRESC
+  domain: PP
+  label: Character Result/Finding in Standard Format
+
+- name: PPSTRESN
+  domain: PP
+  label: Numeric Result/Finding in Standard Units
+
+- name: PPSTRESU
+  domain: PP
+  label: Standard Units
+
+- name: PPCAT
+  domain: PP
+  label: Category for Pharmacokinetic Parameter
+
+- name: PPSCST
+  domain: PP
+  label: Subcategory for Pharmacokinetic Parameter
+
+- name: PPSTAT
+  domain: PP
+  label: Completion Status
+
+- name: PPREASND
+  domain: PP
+  label: Reason Not Done
+
+- name: PPDTC
+  domain: PP
+  label: Date/Time of Parameter Collection
+
+- name: PPSTDY
+  domain: PP
+  label: Study Day of Parameter Collection
+
+- name: PPGRPID
+  domain: PP
+  label: Group ID
+
+- name: PPREFID
+  domain: PP
+  label: Reference ID
+
+- name: PPSPID
+  domain: PP
+  label: Sponsor-Defined Identifier

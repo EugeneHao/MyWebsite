@@ -1,0 +1,59 @@
+- name: PETEST
+  domain: PE
+  label: Physical Examination Test Name
+
+- name: PETESTCD
+  domain: PE
+  label: Physical Examination Test Short Name
+
+- name: PEORRES
+  domain: PE
+  label: Result or Finding as Collected
+
+- name: PESTRESC
+  domain: PE
+  label: Character Result/Finding in Standard Format
+
+- name: PESTAT
+  domain: PE
+  label: Completion Status
+
+- name: PEREASND
+  domain: PE
+  label: Reason Not Done
+
+- name: PEDTC
+  domain: PE
+  label: Date/Time of Physical Examination
+
+- name: PESTDY
+  domain: PE
+  label: Study Day of Physical Examination
+
+- name: PECAT
+  domain: PE
+  label: Category for Physical Examination
+
+- name: PESCAT
+  domain: PE
+  label: Subcategory for Physical Examination
+
+- name: PEMETHOD
+  domain: PE
+  label: Method of Physical Examination
+
+- name: PELOC
+  domain: PE
+  label: Location of Physical Examination Finding
+
+- name: PEGRPID
+  domain: PE
+  label: Group ID
+
+- name: PEREFID
+  domain: PE
+  label: Reference ID
+
+- name: PESPID
+  domain: PE
+  label: Sponsor-Defined Identifier

@@ -1,0 +1,559 @@
+- drug: Opdivo
+  compound: Nivolumab
+  path: compound/Opdivo.html
+  company: BMS
+  indication: |
+    Cancer treatment, including [Melanoma](disease/Melanoma.qmd), lung cancer, and more.
+- drug: Eliquis
+  compound: Apixaban
+  path: compound/Eliquis.html
+  company: BMS, Pfizer
+  indication: Prevent blood clots, stroke in atrial fibrillation, deep vein thrombosis.
+- drug: Reblozyl
+  compound: Luspatercept
+  path: compound/Reblozyl.html
+  company: BMS, Acceleron Pharma
+  indication: |
+    Treat anemia in adults with beta thalassemia or [myelodysplastic syndromes](disease/MDS.qmd).
+- drug: Revlimid
+  compound: Lenalidomide
+  path: compound/Revlimid.html
+  company: BMS
+  indication: |
+    [Multiple myeloma](disease/multiple_myeloma.qmd), [myelodysplastic syndromes](disease/MDS.qmd), [mantle cell lymphoma](disease/Lymphoma.qmd#mantle-cell-lymphoma).
+- drug: Yervoy
+  compound: Ipilimumab
+  path: compound/Yervoy.html
+  company: BMS
+  indication: | 
+    [Melanoma](disease/Melanoma.qmd), renal cell carcinoma, metastatic colorectal cancer.
+  
+- drug: Comirnaty
+  compound: BNT162b2 (mRNA-based vaccine)
+  path: compound/Comirnaty.html
+  company: Pfizer, BioNTech
+  indication: COVID-19 vaccination.
+- drug: Prevnar
+  compound: Pneumococcal vaccine
+  path: compound/Prevnar.html
+  company: Pfizer
+  indication: Pneumococcal infections prevention.
+- drug: Ibrance
+  compound: Palbociclib
+  path: compound/Ibrance.html
+  company: Pfizer
+  indication: Breast cancer treatment.
+- drug: Xeljanz
+  compound: Tofacitinib
+  path: compound/Xeljanz.html
+  company: Pfizer
+  indication: Rheumatoid arthritis, psoriatic arthritis, and ulcerative colitis treatment.
+
+- drug: Keytruda
+  compound: Pembrolizumab
+  path: compound/Keytruda.html
+  company: Merck & Co.
+  indication: | 
+    Various types of cancer, including [Melanoma](disease/Melanoma.qmd) and lung cancer.
+- drug: Januvia
+  compound: Sitagliptin
+  path: compound/Januvia.html
+  company: Merck & Co.
+  indication: | 
+    [Type 2 diabetes](disease/T2DM.qmd). 
+- drug: Gardasil
+  compound: Human Papillomavirus Vaccine
+  company: Merck & Co. 
+  indication: | 
+    Prevention of HPV-related diseases, including cervical cancer.
+- drug: Lynparza
+  compound: Olaparib
+  company: AstraZeneca, Merck & Co.
+  indication: Treatment of ovarian, breast, prostate, and pancreatic cancers.
+- drug: Pneumovax
+  compound: Pneumococcal Polysaccharide Vaccine
+  company: Merck & Co.
+  indication: Prevention of pneumococcal infections.
+
+- drug: Humira
+  compound: Adalimumab
+  path: compound/Humira.html
+  company: AbbVie
+  indication: Treats autoimmune diseases like rheumatoid arthritis, psoriatic arthritis, and Crohn`s disease.
+- drug: Skyrizi
+  compound: Risankizumab
+  company: AbbVie
+  indication: Treatment of moderate to severe plaque psoriasis.
+- drug: Rinvoq
+  compound: Upadacitinib
+  company: AbbVie
+  indication: Rheumatoid arthritis, psoriatic arthritis, and ankylosing spondylitis.
+- drug: Imbruvica
+  compound: Ibrutinib
+  company: Pharmacyclics(AbbVie), J\& J
+  indication: |
+    Treats certain types of cancer, such as [mantle cell lymphoma](disease/Lymphoma.qmd#mantle-cell-lymphoma) and [chronic lymphocytic leukemia](disease/Leukemia.qmd#chronic-lymphocytic-leukemia).
+- drug: Venclexta
+  compound: Venetoclax
+  path: compound/Venclexta.html
+  company: AbbVie, Roche
+  indication: |
+    Used in the treatment of [chronic lymphocytic leukemia](disease/Leukemia.qmd#chronic-lymphocytic-leukemia) and [small lymphocytic lymphoma](disease/Lymphoma.qmd#small-lymphocytic-lymphoma).
+
+- drug: Stelara
+  compound: Ustekinumab
+  company: J\& J
+  indication: Treats plaque psoriasis, Crohn’s disease, and ulcerative colitis.
+
+- drug: Remicade
+  compound: Infliximab
+  path: compound/Remicade.html
+  company: J\& J
+  indication: |
+    Used for Crohn's disease, ulcerative colitis, rheumatoid arthritis, and other autoimmune diseases.
+- drug: Darzalex
+  compound: Daratumumab
+  path: compound/Darzalex.html
+  company: J\& J
+  indication: Treats [multiple myeloma](disease/multiple_myeloma.qmd).
+- drug: Xarelto
+  compound: Rivaroxaban
+  path: compound/Xarelto.html
+  company: Bayer, J\& J
+  indication: |
+    Prevents blood clots in people with atrial fibrillation, deep vein thrombosis, and pulmonary embolism.
+
+- drug: Yescarta
+  compound: Axicabtagene Ciloleucel
+  path: compound/Yescarta.html
+  company: Kite Pharma (a Gilead Company)
+  indication: Treats certain types of large B-cell lymphoma, including those that are refractory or have relapsed after at least two other kinds of treatment.
+
+- drug: Ocrevus
+  compound: Ocrelizumab
+  company: Roche
+  indication: Treats multiple sclerosis.
+- drug: Avastin
+  compound: Bevacizumab
+  path: compound/Avastin.html
+  company: Roche
+  indication: Used for various types of cancers including colorectal, lung, and kidney cancer.
+- drug: Herceptin
+  compound: Trastuzumab
+  company: Roche
+  indication: Treats HER2-positive breast cancer and stomach cancer.
+- drug: Rituxan
+  compound: Rituximab
+  company: Roche
+  indication: |
+    Treats [non-Hodgkin's lymphoma](disease/Lymphoma.qmd), [chronic lymphocytic leukemia](disease/Leukemia.qmd#chronic-lymphocytic-leukemia) and rheumatoid arthritis.
+- drug: Hemlibra
+  compound: Emicizumab
+  company: Roche
+  indication: Prevents bleeding in people with hemophilia A.
+
+- drug: Cosentyx
+  compound: Secukinumab
+  company: Novartis
+  indication: Used to treat plaque psoriasis, ankylosing spondylitis, and psoriatic arthritis.
+- drug: Entresto
+  compound: Sacubitril/Valsartan
+  company: Novartis
+  indication: Used for treating heart failure.
+- drug: Gilenya
+  compound: Fingolimod
+  company: Novartis
+  indication: Treats multiple sclerosis.
+- drug: Lucentis
+  compound: Ranibizumab
+  company: Novartis
+  indication: Used for age-related macular degeneration and other eye conditions.
+- drug: Zolgensma
+  compound: Onasemnogene abeparvovec
+  company: Novartis
+  indication: Gene therapy for spinal muscular atrophy.
+
+- drug: Dupixent
+  compound: Dupilumab
+  company: Sanofi, Regeneron
+  indication: Treats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.
+- drug: Lantus
+  compound: Insulin glargine
+  company: Sanofi
+  indication: Long-acting insulin used for diabetes mellitus.
+- drug: Aubagio
+  compound: Teriflunomide
+  company: Sanofi
+  indication: Treats relapsing forms of multiple sclerosis.
+- drug: Toujeo
+  compound: Insulin glargine
+  company: Sanofi
+  indication: Long-acting insulin for managing blood sugar levels in diabetes.
+- drug: Praluent
+  compound: Alirocumab
+  company: Sanofi, Regeneron
+  indication: Used in lowering LDL cholesterol.
+
+- drug: Shingrix
+  compound: Recombinant Zoster Vaccine
+  company: GSK
+  indication: Prevents shingles (herpes zoster) in adults.
+- drug: Trelegy
+  compound: Fluticasone furoate/Umeclidinium/Vilanterol
+  company: GSK
+  indication: Used for chronic obstructive pulmonary disease (COPD).
+- drug: Nucala
+  compound: Mepolizumab
+  company: GSK
+  indication: Treats severe eosinophilic asthma and EGPA.
+- drug: Zejula
+  compound: Niraparib
+  company: GSK
+  indication: Used for ovarian, fallopian tube, or peritoneal cancer.
+- drug: Benlysta
+  compound: Belimumab
+  company: GSK
+  indication: Treats systemic lupus erythematosus (SLE).
+
+- drug: Tagrisso
+  compound: Osimertinib
+  company: AstraZeneca
+  indication: Treats non-small cell lung cancer with specific mutations.
+- drug: Imfinzi
+  compound: Durvalumab
+  company: AstraZeneca
+  indication: Used for urothelial carcinoma and non-small cell lung cancer.
+- drug: Farxiga
+  compound: Dapagliflozin
+  company: AstraZeneca
+  indication: Treats [Type 2 diabetes](disease/T2DM.qmd) and heart failure.
+- drug: Symbicort
+  compound: Budesonide/Formoterol
+  company: AstraZeneca
+  indication: Used for asthma and chronic obstructive pulmonary disease (COPD).
+- drug: Crestor
+  compound: Rosuvastatin
+  company: AstraZeneca
+  indication: Lowers high cholesterol and triglyceride levels.
+
+- drug: Enbrel
+  compound: Etanercept
+  company: Amgen
+  indication: Treats rheumatoid arthritis, psoriatic arthritis, and plaque psoriasis.
+- drug: Prolia
+  compound: Denosumab
+  company: Amgen
+  indication: Used for osteoporosis in postmenopausal women and men at high risk of fracture.
+- drug: Otezla
+  compound: Apremilast
+  company: Amgen
+  indication: Treats plaque psoriasis and psoriatic arthritis.
+- drug: Repatha
+  compound: Evolocumab
+  company: Amgen
+  indication: Lowers LDL cholesterol levels.
+- drug: Neulasta
+  compound: Pegfilgrastim
+  company: Amgen
+  indication: Helps reduce the risk of infection in cancer patients undergoing chemotherapy.
+
+- drug: Biktarvy
+  compound: Bictegravir, Emtricitabine, Tenofovir Alafenamide
+  company: Gilead
+  indication: Treats HIV-1 infection.
+- drug: Truvada
+  compound: Emtricitabine, Tenofovir Disoproxil Fumarate
+  company: Gilead
+  indication: Used for HIV-1 prevention and treatment.
+- drug: Veklury
+  compound: Remdesivir
+  company: Gilead
+  indication: Treats COVID-19 in hospitalized patients.
+- drug: Descovy
+  compound: Emtricitabine, Tenofovir Alafenamide
+  company: Gilead 
+  indication: HIV-1 pre-exposure prophylaxis (PrEP) and treatment.
+- drug: Epclusa
+  compound: Sofosbuvir, Velpatasvir
+  company: Gilead
+  indication: Treats chronic hepatitis C virus (HCV) infection.
+
+- drug: Eylea
+  compound: Aflibercept
+  company: Bayer and Regeneron Pharmaceuticals
+  indication: Treats age-related macular degeneration and other eye conditions.
+- drug: Mirena
+  compound: Levonorgestrel-releasing intrauterine system
+  company: Bayer
+  indication: Birth control and treatment of heavy menstrual bleeding.
+- drug: Nexavar
+  compound: Sorafenib
+  company: Bayer
+  indication: Treats liver, kidney, and thyroid cancer.
+- drug: Kogenate
+  compound: Recombinant Factor VIII
+  company: Bayer
+  indication: Treats hemophilia A.
+
+- drug: Copaxone
+  compound: Glatiramer Acetate
+  company: Teva
+  indication: Treats multiple sclerosis.
+- drug: Ajovy
+  compound: Fremanezumab
+  company: Teva
+  indication: Preventive treatment of migraine.
+- drug: Austedo
+  compound: Deutetrabenazine
+  company: Teva
+  indication: Treats chorea associated with Huntington’s disease and tardive dyskinesia.
+- drug: ProAir
+  compound: Albuterol Sulfate
+  company: Teva
+  indication: Treats or prevents bronchospasm.
+- drug: Qvar
+  compound: Beclomethasone Dipropionate
+  company: Teva
+  indication: Treats asthma.
+
+- drug: Entyvio
+  compound: Vedolizumab
+  company: Takeda
+  indication: Treats ulcerative colitis and Crohn’s disease.
+- drug: Ninlaro
+  compound: Ixazomib
+  company: Takeda
+  indication: Treats [multiple myeloma](disease/multiple_myeloma.qmd).
+- drug: Vyvanse
+  compound: Lisdexamfetamine
+  company: Takeda
+  indication: Treats ADHD and binge eating disorder.
+- drug: Dexilant
+  compound: Dexlansoprazole
+  company: Takeda
+  indication: Treats gastroesophageal reflux disease (GERD).
+- drug: Trintellix
+  compound: Vortioxetine
+  company: Takeda
+  indication: Treats major depressive disorder.
+
+- drug: Trulicity
+  compound: Dulaglutide
+  company: Eli Lilly
+  indication: Treats [Type 2 diabetes](disease/T2DM.qmd).
+- drug: Humalog
+  compound: Insulin lispro
+  company: Eli Lilly
+  indication: Rapid-acting insulin for diabetes.
+- drug: Alimta
+  compound: Pemetrexed
+  company: Eli Lilly
+  indication: Treats non-small cell lung cancer and mesothelioma.
+- drug: Taltz
+  compound: Ixekizumab
+  company: Eli Lilly
+  indication: Treats plaque psoriasis and psoriatic arthritis.
+- drug: Verzenio
+  compound: Abemaciclib
+  company: Eli Lilly
+  indication: Treats HR-positive, HER2-negative breast cancer.
+
+- drug: Spiriva
+  compound: Tiotropium bromide
+  company: Boehringer Ingelheim
+  indication: Treats COPD and asthma.
+- drug: Jardiance
+  compound: Empagliflozin
+  company: Boehringer Ingelheim
+  indication: Treats [Type 2 diabetes](disease/T2DM.qmd) and heart failure.
+- drug: Pradaxa
+  compound: Dabigatran
+  company: Boehringer Ingelheim
+  indication: Prevents blood clots and strokes.
+- drug: Ofev
+  compound: Nintedanib
+  company: Boehringer Ingelheim
+  indication: Treats idiopathic pulmonary fibrosis.
+- drug: Trajenta
+  compound: Linagliptin
+  company: Boehringer Ingelheim
+  indication: Treats [Type 2 diabetes](disease/T2DM.qmd).
+
+- drug: Tecfidera
+  compound: Dimethyl fumarate
+  company: Biogen
+  indication: Treats multiple sclerosis.
+- drug: Spinraza
+  compound: Nusinersen
+  company: Biogen
+  indication: Treats spinal muscular atrophy.
+- drug: Tysabri
+  compound: Natalizumab
+  company: Biogen
+  indication: |
+    Treats multiple sclerosis and Crohn's disease.
+- drug: Vumerity
+  compound: Diroximel fumarate
+  company: Biogen
+  indication: Treats multiple sclerosis.
+- drug: Avonex
+  compound: Interferon beta-1a
+  company: Biogen
+  indication: Treats multiple sclerosis.
+  
+- drug: Victoza
+  compound: Liraglutide
+  company: Novo Nordisk
+  indication: Treats [Type 2 diabetes](disease/T2DM.qmd).
+- drug: Levemir
+  compound: Insulin detemir
+  company: Novo Nordisk
+  indication: Long-acting insulin for diabetes.
+- drug: Ozempic
+  compound: Semaglutide
+  company: Novo Nordisk
+  indication: Treats [Type 2 diabetes](disease/T2DM.qmd).
+- drug: Tresiba
+  compound: Insulin degludec
+  company: Novo Nordisk
+  indication: Long-acting insulin for diabetes.
+- drug: Saxenda
+  compound: Liraglutide
+  company: Novo Nordisk
+  indication: Weight management.
+
+- drug: Botox
+  compound: Botulinum toxin
+  company: Allergan
+  indication: Treats wrinkles, muscle spasms, and certain medical conditions.
+- drug: Restasis
+  compound: Cyclosporine
+  company: Allergan
+  indication: Increases tear production in dry eye disease.
+- drug: Juvederm
+  compound: Hyaluronic acid
+  company: Allergan
+  indication: Dermal filler for facial wrinkles.
+- drug: Linzess
+  compound: Linaclotide
+  company: Allergan
+  indication: Treats irritable bowel syndrome with constipation.
+- drug: Vraylar
+  compound: Cariprazine
+  company: Allergan
+  indication: Treats schizophrenia and bipolar disorder.
+
+- drug: Lixiana
+  compound: Edoxaban
+  company: Daiichi Sankyo
+  indication: Prevents blood clots and stroke.
+- drug: Movantik
+  compound: Naloxegol
+  company: Daiichi Sankyo
+  indication: Treats opioid-induced constipation.
+- drug: Welchol
+  compound: Colesevelam
+  company: Daiichi Sankyo
+  indication: Lowers cholesterol and improves glycemic control.
+- drug: Sevikar
+  compound: Olmesartan medoxomil/Amlodipine
+  company: Daiichi Sankyo
+  indication: Treats high blood pressure.
+- drug: Nexium
+  compound: Esomeprazole
+  company: Daiichi Sankyo
+  indication: Treats gastroesophageal reflux disease (GERD).
+
+- drug: Eylea
+  compound: Aflibercept
+  company: Regeneron
+  indication: Treats age-related macular degeneration and other eye conditions.
+- drug: Dupixent
+  compound: Dupilumab
+  company: Regeneron
+  indication: Treats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.
+- drug: Libtayo
+  compound: Cemiplimab
+  company: Regeneron
+  indication: Treats cutaneous squamous cell carcinoma.
+- drug: Kevzara
+  compound: Sarilumab
+  company: Regeneron
+  indication: Treats rheumatoid arthritis.
+- drug: Praluent
+  compound: Alirocumab
+  company: Regeneron
+  indication: Lowers LDL cholesterol.
+
+- drug: Xtandi
+  compound: Enzalutamide
+  company: Astellas
+  indication: Treats prostate cancer.
+- drug: Prograf
+  compound: Tacrolimus
+  company: Astellas
+  indication: Prevents organ transplant rejection.
+- drug: Vesicare
+  compound: Solifenacin
+  company: Astellas
+  indication: Treats overactive bladder.
+- drug: Myrbetriq
+  compound: Mirabegron
+  company: Astellas
+  indication: Treats overactive bladder.
+- drug: Xospata
+  compound: Gilteritinib
+  company: Astellas
+  indication: |
+    Treats [acute myeloid leukemia](disease/Leukemia.qmd#acute-myeloid-leukemia).
+
+- drug: Abilify
+  compound: Aripiprazole
+  company: Otsuka
+  indication: Treats schizophrenia, bipolar disorder, and major depressive disorder.
+- drug: Rexulti
+  compound: Brexpiprazole
+  company: Otsuka
+  indication: Treats schizophrenia and adjunctive therapy for major depressive disorder.
+- drug: Samsca
+  compound: Tolvaptan
+  company: Otsuka
+  indication: Treats hyponatremia.
+- drug: Jinarc
+  compound: Tolvaptan
+  company: Otsuka
+  indication: Treats polycystic kidney disease.
+- drug: Abilify Maintena
+  compound: Aripiprazole
+  company: Otsuka
+  indication: Long-acting injectable for schizophrenia.
+
+- drug: Tecentriq
+  compound: Atezolizumab
+  path: compound/Tecentriq.html
+  company: Genentech (a subsidiary of Roche)
+  indication: Used for treating urothelial carcinoma, non-small cell lung cancer, triple-negative breast cancer, and more.
+
+- drug: Breyanzi
+  compound: Lisocabtagene Maraleucel
+  path: compound/Breyanzi.html
+  company: BMS
+  indication: Treats relapsed or refractory large B-cell lymphoma, including diffuse large B-cell lymphoma, after two or more lines of systemic therapy.
+
+- drug: Abecma
+  compound: Idecabtagene Vicleucel
+  path: compound/Abecma.html
+  company: BMS and bluebird bio
+  indication: Treats relapsed or refractory multiple myeloma in adults who have received at least four prior therapies, including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody.
+
+- drug: Tecvayli
+  compound: Teclistamab
+  path: compound/Tecvayli.html
+  company: Janssen Pharmaceuticals (Johnson & Johnson)
+  indication: Treats adult patients with relapsed or refractory multiple myeloma.
+
+- drug: Carvykti
+  compound: Ciltacabtagene Autoleucel
+  path: compound/Carvykti.html
+  company: Janssen Pharmaceuticals (Johnson & Johnson)
+  indication: Approved for the treatment of adult patients with relapsed or refractory multiple myeloma.

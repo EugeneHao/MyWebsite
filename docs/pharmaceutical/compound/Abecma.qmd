@@ -1,0 +1,21 @@
+---
+title: "Abecma"
+---
+
+### **药物简介（Drug Overview）**
+
+阿贝克马（Abecma，通用名为Ideceltagene vicleucel，简称Ide-cel）是一种细胞疗法产品，属于嵌合抗原受体T细胞疗法（Chimeric Antigen Receptor T-Cell Therapy，简称CAR-T疗法）。它是首款被批准用于多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)）的CAR-T疗法。
+
+### **作用机制（Mechanism of Action）**
+
+Ide-cel通过改造患者自身的T细胞来实现其疗效。这些T细胞经过实验室修改后，表达了针对称为BCMA（B细胞成熟抗原）的特定癌细胞表面蛋白的嵌合抗原受体。当这些改造后的T细胞被重新输回患者体内时，它们能够识别并杀死表达BCMA的癌细胞。
+
+### **适应症（Indications）**
+
+阿贝克马被批准用于治疗经四种或更多先前疗法治疗后疾病仍有进展的复发或难治性多发性骨髓瘤患者。
+
+### **副作用（Side Effects）**
+
+与其他CAR-T疗法一样，阿贝克马可能会导致一些严重的副作用。最常见的包括细胞因子释放综合征（Cytokine Release Syndrome, CRS）、神经毒性、感染风险增加、低血细胞计数等。因此，在接受治疗的过程中，患者需要密切监测并及时处理这些潜在的副作用。
+
+阿贝克马作为一种新型治疗方式，在多发性骨髓瘤治疗领域提供了新的希望。然而，由于其复杂的作用机制和潜在的副作用，它的使用应在专业医疗机构和经验丰富的医疗团队指导下进行。

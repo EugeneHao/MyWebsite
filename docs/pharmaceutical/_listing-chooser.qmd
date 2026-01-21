@@ -1,0 +1,127 @@
+::: column-page-inset-right
+
+<style type="text/css">
+.nav-tabs {
+  margin-top: 0.5rem;
+  border-bottom: none;
+}
+
+.callout {
+  margin-top: 0;
+}
+
+.nav-tabs .nav-link {
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 10px;
+  width: 147px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+
+.nav-tabs .nav-link, 
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+  border: 1px solid  rgb(222, 226, 230);
+  border-radius: 10px;
+  color: rgb(80,146,221);
+}
+.nav-tabs .nav-link:hover {
+   border-color: rgb(80,146,221);
+   border-width: 1px;
+} 
+
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+  border-color: rgb(80,146,221);
+  border-width: 2px;
+}
+
+
+.nav-tabs .nav-link i {
+  display: block;
+  font-size: 3rem;
+  color: rgb(80,146,221);
+  margin-bottom: 5px;
+}
+
+.quarto-listing {
+  margin-top: 2em;
+}
+
+.quarto-listing .listing-name,
+.quarto-listing .listing-author {
+  white-space: nowrap;
+}
+
+.quarto-listing .listing-actions-group h3 {
+  margin-top: 0;
+}
+
+ 
+</style>
+
+<ul id="index-chooser" class="nav nav-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-company.html">
+      <i class="bi bi-buildings"></i>Company
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-regulatory.html">
+      <i class="bi bi-journal-bookmark"></i>Regulatory
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-compound.html">
+      <i class="bi bi-capsule"></i>Compound
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-disease.html">
+      <i class="bi bi-hospital"></i>Disease
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-target.html">
+      <i class="bi bi-bullseye"></i>Target
+    </a>
+  </li>  
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-SDTM.html">
+      <i class="bi bi-database-add"></i>SDTM
+    </a>
+  </li>  
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="listing-other.html">
+      <i class="bi bi-wikipedia"></i>Other
+    </a>
+  </li>  
+</ul>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  // get file name
+  const filename = window.location.pathname.split("/").slice(-1)[0];
+
+  // latch active
+  const toolLinks = window.document.querySelectorAll("#index-chooser a");
+  for (const tool of toolLinks) {
+    if (filename && filename !== "index.html") {
+      if (tool.href.endsWith(filename)) {
+        tool.classList.add("active");
+      } 
+    } else {
+      if (tool.href.endsWith("listing-filters.html")) {
+        tool.classList.add("active");
+      }
+    }
+  }
+  
+  // move heading into table
+  document.querySelector(".listing-actions-group").prepend(document.querySelector("h3.unlisted"));
+});
+
+</script>
+:::

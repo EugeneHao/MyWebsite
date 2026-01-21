@@ -1,0 +1,59 @@
+- name: SSTEST
+  domain: SS
+  label: Subject Status Test Name
+
+- name: SSTESTCD
+  domain: SS
+  label: Subject Status Test Short Name
+
+- name: SSORRES
+  domain: SS
+  label: Result or Finding as Collected
+
+- name: SSSTRESC
+  domain: SS
+  label: Character Result/Finding in Standard Format
+
+- name: SSSTRESN
+  domain: SS
+  label: Numeric Result/Finding in Standard Units
+
+- name: SSDTC
+  domain: SS
+  label: Date/Time of Status Assessment
+
+- name: SSSTDY
+  domain: SS
+  label: Study Day of Status Assessment
+
+- name: SSCAT
+  domain: SS
+  label: Category for Subject Status
+
+- name: SSSCAT
+  domain: SS
+  label: Subcategory for Subject Status
+
+- name: SSSTAT
+  domain: SS
+  label: Completion Status
+
+- name: SSREASND
+  domain: SS
+  label: Reason Not Done
+
+- name: SSEVAL
+  domain: SS
+  label: Evaluator
+
+- name: SSGRPID
+  domain: SS
+  label: Group ID
+
+- name: SSREFID
+  domain: SS
+  label: Reference ID
+
+- name: SSSPID
+  domain: SS
+  label: Sponsor-Defined Identifier

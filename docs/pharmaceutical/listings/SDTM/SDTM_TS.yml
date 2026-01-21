@@ -1,0 +1,35 @@
+- name: TSSEQ
+  domain: TS
+  label: Sequence Number
+
+- name: TSGRPID
+  domain: TS
+  label: Group ID
+
+- name: TSPARMCD
+  domain: TS
+  label: Trial Summary Parameter Short Name (e.g. AGEMIN, AGEMAX)
+
+- name: TSPARM
+  domain: TS
+  label: Trial Summary Parameter (e.g. Planned Maximum Age of Subjects)
+
+- name: TSVAL
+  domain: TS
+  label: Parameter Value
+
+- name: TSVALNF
+  domain: TS
+  label: Parameter Null Flavor
+
+- name: TSVALCD
+  domain: TS
+  label: Parameter Value Code
+
+- name: TSVCDREF
+  domain: TS
+  label: Name of the Reference Terminology (e.g. CDISC, SNOMED, ISO 8601)
+
+- name: TSVCDVER
+  domain: TS
+  label: Version of the Reference Terminology

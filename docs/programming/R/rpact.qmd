@@ -1,0 +1,214 @@
+---
+title: "rpact"
+search: true
+---
+
+```{r warning = F, message = F}
+knitr::opts_chunk$set(
+  dev = "png",          
+  dpi = 300,
+  fig.width = 7,
+  fig.height = 5
+)
+
+library(tidyverse)
+library(rpact)
+library(PWEXP)
+
+```
+
+## Links {-}
+
++ [rpact website](https://www.rpact.org/#r-generics)
++ [rpact start guide](https://manual.rpact.org/pdf/rpact_v4_2.1_quick_start_guide.pdf)
++ [Step-by-step rpact tutorial](https://www.rpact.org/vignettes/getting-started/rpact_step-by-step_tutorial/)
+
+## Start {-}
+
+```{r}
+# create an inverse normal design with default parameters
+design <- getDesignInverseNormal()
+
+design %>% summary()
+```
+
+
+```{r}
+# display the design characteristics
+design %>% getDesignCharacteristics()
+```
+
+```{r}
+# plot the design with default type 1 (Boundary Plot)
+design %>% plot()
+```
+## Example: PFS simulation using protocol assumptions {-}
+
+This is an example for simulating the PFS events to get the predicted projection time and confidence internval based on the protocol assumption, considering actual enrollment and drop out rate per month. 
+
+```{r}
+ii <- 1:100
+
+mon.enr.6 <- rep(40, 20)
+start_date <- as.Date("2022-08-01")
+
+get.followup.sap <- function(ii){
+    set.seed(92480+ii)
+    dat.sap.sim <- 
+      simdata(group=c('trt','ctrl'), 
+              allocation = c(1, 1), 
+              n_rand = mon.enr.6, ## real enrollment
+              event_lambda = c(log(2)/20*0.75,
+                               log(2)/20),
+              drop_rate = 0.008,  ## monthly rate
+              total_sample = 800,
+              add_column = c('followT','event', 'followT_abs','censor'))
+    enr2 <- dat.sap.sim %>% 
+      filter(event == 1) %>% 
+      arrange(followT_abs) 
+    return(enr2 %>% select(followT_abs) %>% 
+             slice(c(344, 458)))
+}
+ 
+suppressMessages(
+  sim.res.sap <- map_dfc(.x = ii, .f = get.followup.sap)
+)
+
+sim.res.sap.df <- as.data.frame(sim.res.sap)
+
+```
+
+```{r}
+# interim analysis 
+x344 <- quantile((as.numeric(sim.res.sap.df[1, ])), 
+                 probs = c(0.025, 0.5, 0.975))
+x344
+start_date + x344*30.4375
+```
+
+```{r}
+# final analysis 
+x458 <- quantile((as.numeric(sim.res.sap.df[2, ])), 
+                 probs = c(0.025, 0.5, 0.975))
+x458
+start_date+ x458*30.4375
+```
+
+## Example: event prediction based on the actual data {-}
+
+#### Simulate PFS data {-}
+
+Suppuse the actual follow up time is 36 months. 
+
+```{r}
+set.seed(12345)
+
+mon.enr.6 <- rep(40, 20)
+
+data <- dat.sap.sim <- 
+      simdata(group=c('trt','ctrl'), 
+              allocation = c(1, 1), 
+              n_rand = mon.enr.6, ## real enrollment
+              event_lambda = c(log(2)/25*0.5,
+                               log(2)/25),
+              drop_rate = 0.0065,  ## monthly rate
+              total_sample = 800,
+              add_column = c('followT','event', 'followT_abs','censor')) %>% 
+  mutate(drop = as.numeric((followT_abs <= 36) & (censor == 1))) %>% 
+  mutate(censor = as.numeric(drop == 1 | followT_abs > 36)) %>% 
+  mutate(followT_abs = pmin(36, followT_abs), 
+         followT = pmin(followT, 36 - randT)) %>% 
+  mutate(event = 1 - censor)
+```
+
+```{r}
+head(data)
+```
+
+```{r}
+table(data$event)
+
+table(data$drop)
+```
+
+
+```{r}
+fit_b1 <- pwexp.fit(data$followT, data$event, nbreak = 1)  
+fit_b1
+```
+
+```{r}
+plot_survival(data$followT, data$drop,  
+              ylab='Survival function of drop-out', 
+              main='Fitted Model with 95% CI')
+```
+
+
+```{r warning = F, message = F}
+invisible(capture.output(
+  fit_b1_boot <- boot.pwexp.fit(fit_b1, nsim = 100, seed = 0102)
+))
+
+invisible(capture.output(
+  fit_censor_boot1 <- boot.pwexp.fit(data$followT, 
+                                   data$drop, nbreak = 1, 
+                                   nsim = 100, seed=0102)
+))
+
+cut_indicator = 1- data$event
+cut_indicator[data$drop==1]=0;
+
+anat=(as.Date("2025-08-01") -
+        as.Date("2022-08-01"))/30.4375
+
+predicted_boot11 <- predict(fit_b1_boot, 
+                            cut_indicator=cut_indicator,
+                            analysis_time=anat,
+                            censor_model_boot=fit_censor_boot1,
+                            future_rand=NULL,seed=0102,
+                            output = "summary" )
+```
+
+```{r}
+plot.new()
+pred_time11 <- plot_event(predicted_boot11, xyswitch=T, 
+                          eval_at = c(344,458), alpha = 0.05)
+pred_time11
+```
+
+```{r}
+sumDt11 =as.data.frame(pred_time11); 
+sumDt11$time =start_date + as.data.frame(pred_time11)$time*30.4375
+sumDt11$`2.5% time` = start_date + as.data.frame(pred_time11)$`2.5% time`*30.4375; 
+sumDt11$`97.5% time` = start_date + as.data.frame(pred_time11)$`97.5% time`*30.4375;
+
+sumDt11
+```
+
+#### Event curve plot {-}
+
+```{r}
+accrualTime <- 
+  getAccrualTime(accrualTime = 0:(20-1), 
+                 accrualIntensity = rep(40, 20), 
+                 maxNumberOfSubjects = 800)
+
+y <- getEventProbabilities(time = 1:80, 
+                           lambda2 = log(2)/20, 
+                           accrualTime = accrualTime,
+                           hazardRatio = 0.5, 
+                           allocationRatioPlanned = 1s)
+plot_obj <- rpact:::plot.EventProbabilities(y, plot = FALSE)
+yValues <- plot_obj$data$yValues
+
+plot_event(data$followT_abs, data$event, ylim = c(0, 500), 
+           xlim = c(0, 80), col = "blue", main = "Event Curve", cex.axis = 0.65)
+plot_event(predicted_boot11)
+
+lines(x = 1:80, y = yValues[1:80], col = "grey30", lwd = 2)
+
+legend("topleft", c("Actual", "CI", "Planned"), col = c("blue", "red", "grey30"),
+       lwd = 2, cex = 0.65)
+
+```
+

@@ -1,0 +1,25 @@
+---
+title: "Notebooks"
+subtitle: This section contains the my notebooks related to statistics, machine learning, and clincial trials. 
+page-layout: article
+anchor-sections: false
+---
+
+::: {#books-links .column-screen-inset-right style="max-width: 850px;"}
+## Statistics
+
+### Survival Analysis
+
+-   [Survival Analysis - Techniques for Censored and Truncated Data](survival%20analysis/Survival%20Analysis%20-%20Techniques%20for%20Censored%20and%20Truncated%20Data.qmd)
+
+## Biostatistics
+
+### Clinical Trial 
+
+- [Notebook of Clinial Trial Designs](clinical%20trial%20design/clinical-trial-design.qmd)
+
+### Hypothesis Testing
+
+- [Notebook of Hypothesis Testing](hypothesis%20testing/hypothesis-testing.qmd)
+
+:::

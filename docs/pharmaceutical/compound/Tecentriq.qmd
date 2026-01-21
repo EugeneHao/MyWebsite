@@ -1,0 +1,33 @@
+---
+title: "Tecentriq"
+---
+
+关于德沙替尼（Tecentriq，通用名：阿替利珠单抗 Atezolizumab），以下是其详细介绍，包括治疗原理和适应症的详细信息：
+
+### **药物简介（Drug Overview）**
+
+德沙替尼（Tecentriq，通用名为阿替利珠单抗 Atezolizumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）。它用于治疗多种类型的癌症，包括非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC）、三阴性乳腺癌（Triple-Negative Breast Cancer, TNBC）和泌尿系统癌症等。
+
+### **治疗原理（Treatment Mechanism）**
+
+阿替利珠单抗的作用机制是靶向PD-L1（程序性死亡配体-1，Programmed Death-Ligand 1），一种在一些癌细胞以及免疫系统细胞表面表达的蛋白。通过阻断PD-L1与其受体PD-1的结合，阿替利珠单抗能够激活T细胞，增强免疫系统对癌细胞的攻击能力。
+
+### **适应症（Indications）**
+
+德沙替尼被批准用于治疗以下疾病：
+
+1.  非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC，非小细胞肺癌）
+
+2.  三阴性乳腺癌（Triple-Negative Breast Cancer, TNBC，三阴性乳腺癌）
+
+3.  泌尿上皮癌（Urothelial Carcinoma，泌尿上皮癌）
+
+4.  肝细胞癌（Hepatocellular Carcinoma, HCC，肝细胞癌）
+
+5.  广泛型小细胞肺癌（Extensive-Stage Small Cell Lung Cancer, SCLC，广泛期小细胞肺癌）
+
+### **副作用（Side Effects）**
+
+德沙替尼的常见副作用包括疲劳、食欲减退、恶心、腹泻、皮疹和发热。较为严重的副作用可能包括肺炎、肝脏问题、内分泌问题和肾脏问题。由于德沙替尼是一种免疫疗法，它可能导致免疫系统过度活跃并攻击正常组织和器官。
+
+德沙替尼作为一种免疫治疗药物，在多种癌症的治疗中展现了显著的疗效。然而，考虑到其潜在的副作用，使用时应在医疗专业人员的指导下进行。

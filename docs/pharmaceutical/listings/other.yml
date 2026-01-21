@@ -1,0 +1,36 @@
+- name: ADC
+  path: other/ADC.html
+  belong: Technology
+  description: |
+    Antibody-Drug Conjugates (ADCs) are targeted cancer therapies that combine antibodies with cytotoxic drugs.
+
+- name: CAR-T
+  path: other/CAR-T.html
+  belong: Technology
+  description: |
+    Chimeric Antigen Receptor T-cell Therapy (CAR-T) is a revolutionary cancer treatment that genetically engineers T-cells to fight cancer.
+
+- name: Biomarker
+  path: other/Biomarker.html
+  belong: Clinical Trial
+  description: |
+    Biomarkers are biological molecules used as indicators of a biological state or condition, crucial in disease diagnosis and therapy assessment.
+
+- name: Immunotherapy
+  path: other/Immunotherapy.html
+  belong: Technology
+  description: |
+    Immunotherapy is a treatment modality that harnesses the body's immune system to detect and combat diseases, particularly cancer.
+
+- name: MAT
+  path: other/MAT.html
+  belong: Technology
+  description: |
+    Monoclonal Antibody Therapy (MAT) involves the use of monoclonal antibodies to specifically target and treat various diseases, including cancer and autoimmune disorders.
+
+- name: PFS
+  path: other/PFS.html
+  belong: Endpoint
+  description: |
+    Progression-Free Survival (PFS) is a measure of the time patients remain in remission without their disease progressing after treatment.
+  

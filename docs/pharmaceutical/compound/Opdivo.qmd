@@ -1,0 +1,25 @@
+---
+title: "Opdivo"
+---
+
+## 药物简介（Drug Overview）
+
+尼伏单抗（Nivolumab, 商业名称为Opdivo）是一种免疫检查点抑制剂（Immune Checkpoint Inhibitor），属于单克隆抗体（Monoclonal Antibody）。它主要用于某些类型的癌症治疗，通过调节人体的免疫系统来攻击癌细胞。
+
+## 作用机制（Mechanism of Action）
+
+尼伏单抗的作用机制是通过靶向并阻断称为程序性死亡-1（Programmed Death-1, PD-1）的蛋白质。PD-1是免疫细胞表面的一个抑制性受体，癌细胞通过与PD-1结合来逃避免疫系统的攻击。尼伏单抗通过阻断PD-1与其配体（Ligands）的结合，增强免疫系统对癌细胞的攻击能力。
+
+## 适应症（Indications）
+
+尼伏单抗被批准用于治疗多种癌症类型，包括但不限于：
+
+-   高级非小细胞肺癌（Advanced Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）
+-   复发性或转移性黑色素瘤（Recurrent or Metastatic [Melanoma](../disease/Melanoma.qmd)）
+-   肾细胞癌（Renal Cell Carcinoma, RCC）
+-   经典霍奇金淋巴瘤（Classical Hodgkin Lymphoma, cHL）
+-   头颈部鳞状细胞癌（Head and Neck Squamous Cell Carcinoma, HNSCC）
+
+## 副作用（Side Effects）
+
+尼伏单抗的常见副作用包括疲劳（Fatigue）、皮疹（Rash）、腹泻（Diarrhea）、关节痛（Arthralgia）和瘙痒（Pruritus）。严重副作用可能包括免疫相关的不良反应，如肝炎（Hepatitis）、结肠炎（Colitis）、肺炎（Pneumonitis）和甲状腺功能异常（Thyroid Dysfunction）。在使用时应密切监测这些副作用，并在必要时进行适当的管理和治疗。

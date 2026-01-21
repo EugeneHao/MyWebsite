@@ -1,0 +1,101 @@
+---
+title: "Carfilzomib"
+---
+
+# **Carfilzomib（卡非佐米，Kyprolis）**
+
+## **药物简介（Drug Overview）**
+
+Carfilzomib（卡非佐米，商品名 **Kyprolis**）是一种**第二代蛋白酶体抑制剂（Second-generation Proteasome Inhibitor）**，结构上属于环氧酰胺类（Epoxyketone class）。
+
+-   **公司（Company）**：由 **Onyx Pharmaceuticals**（后被 **Amgen 安进**收购）开发，目前由 Amgen 全球商业化。
+
+-   **批准时间（Approval）**：2012 年首次获 FDA 批准，用于复发/难治性多发性骨髓瘤（Relapsed/Refractory Multiple Myeloma, RRMM）。
+
+------------------------------------------------------------------------
+
+## **作用机制（Mechanism of Action）**
+
+-   Carfilzomib **不可逆性（irreversible）**抑制 20S 蛋白酶体的 **chymotrypsin-like 活性位点**。
+
+-   这种抑制阻断异常蛋白降解，导致蛋白在细胞内堆积，引发内质网应激（ER stress）、抑制 NF-κB 信号通路，最终诱导肿瘤细胞凋亡。
+
+-   相较 Bortezomib（可逆性抑制剂），Carfilzomib 的不可逆结合使其抗骨髓瘤细胞活性更强，同时外周神经病变发生率较低，但心脏毒性风险更高。
+
+------------------------------------------------------------------------
+
+## **适应症（Indications）**
+
+Carfilzomib 获批用于：
+
+-   **复发或难治性多发性骨髓瘤（Relapsed/Refractory MM, RRMM）**
+
+    -   单药（monotherapy）或
+
+    -   联合 **Dexamethasone**、**Lenalidomide（来那度胺）**、**Daratumumab（达雷妥尤单抗）**、**Isatuximab（异基妥昔单抗）** 等药物使用。
+
+-   一些指南也推荐其作为\*\*早期复发（second line）\*\*的核心 backbone 药物。
+
+------------------------------------------------------------------------
+
+## **副作用（Side Effects）**
+
+常见不良反应：
+
+-   **心脏毒性（Cardiac toxicity）**：心力衰竭（Heart failure）、心肌缺血（Ischemia）、高血压（Hypertension）
+
+-   **呼吸道并发症（Respiratory events）**：呼吸困难（Dyspnea）
+
+-   **血液学毒性（Hematologic toxicities）**：贫血（Anemia）、血小板减少（Thrombocytopenia）、中性粒细胞减少（Neutropenia）
+
+-   **疲劳（Fatigue）、发热（Pyrexia）、感染（Infections）**
+
+------------------------------------------------------------------------
+
+## **疗法与治疗方案（Therapies / Treatment Regimens）**
+
+Carfilzomib 在复发/难治性 MM 中被广泛应用，常作为 backbone 进入三药或四药组合：
+
+### **二线及以上（Relapsed / Refractory）**
+
+-   **Kd** = Carfilzomib + Dexamethasone
+
+-   **KRd** = Carfilzomib + Lenalidomide + Dexamethasone
+
+-   **D-Kd** = Daratumumab + Carfilzomib + Dexamethasone
+
+-   **Isa-Kd** = Isatuximab + Carfilzomib + Dexamethasone
+
+### **关键临床试验**
+
+-   **ASPIRE**：KRd vs Rd，KRd 显著延长 PFS 与 OS。
+
+-   **ENDEAVOR**：Kd vs Vd，Kd 组显著改善 PFS 和 OS。
+
+-   **CANDOR**：D-Kd vs Kd，联合 Daratumumab 进一步提升疗效。
+
+-   **IKEMA**：Isa-Kd vs Kd，联合 Isatuximab 同样优于 Kd。
+
+------------------------------------------------------------------------
+
+## **年销售额（Annual Sales）**
+
+-   根据 Amgen 财报：
+
+    -   **2022 年全球销售额约 11.4 亿美元**
+
+    -   **2023 年销售额约 10.6 亿美元**，同比下降约 7%
+
+-   下滑原因主要包括市场竞争（如 [Daratumumab](../compound/Darzalex.qmd)、BCMA 靶向疗法崛起）和部分市场进入专利期。
+
+-   目前 Kyprolis 的全球年销售额大致维持在 **10–12 亿美元区间**。
+
+------------------------------------------------------------------------
+
+## **总结（Summary）**
+
+-   **Carfilzomib（Kyprolis）**：由 Amgen 商业化的二代蛋白酶体抑制剂，在复发/难治性 MM 治疗中发挥核心作用。
+
+-   **核心价值**：与 Dexamethasone、Lenalidomide 或抗 CD38 单抗（Daratumumab、Isatuximab）联合，是二线及以上患者的主要选择。
+
+-   **市场表现**：年销售额约 10–12 亿美元，但随着新一代 BCMA 靶向疗法和 CELMoDs 的出现，未来市场份额可能逐渐被侵蚀。

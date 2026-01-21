@@ -1,0 +1,369 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "docs/download/_download.json"
+    - "docs/download/_prerelease.json"
+    - "_redirects"
+
+website:
+  title: "Hao Sun"
+  image: "BMS.png"
+  favicon: "favicon.ico"
+  open-graph: true
+  twitter-card: true
+  page-navigation: true
+  bread-crumbs: true
+  reader-mode: true
+  page-footer:
+    right:
+      - icon: twitter
+        href: https://twitter.com/eugenesun14
+        aria-label: Quarto Twitter
+      - icon: github
+        href: https://github.com/EugeneHao
+        aria-label: Quarto GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hao-sun-13207/
+        aria-label: Quarto Linkedin        
+  navbar:
+    background: light
+    logo: BMS.png
+    logo-alt: "BMS logo."
+    title: false
+    collapse-below: lg
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Statistics"
+        href: docs/statistics/index.qmd
+      - text: "Programming"
+        href: docs/programming/index.qmd   
+      - text: "Visualization"
+        href: docs/visualization/index.qmd
+      - text: "Pharmaceutical"
+        href: docs/pharmaceutical/index.qmd
+      - text: "Blog"
+        href: docs/blog/index.qmd
+
+    tools:
+      - icon: twitter
+        href: https://twitter.com/eugenesun14
+        text: Quarto Twitter
+      - icon: github
+        href: https://github.com/EugeneHao
+        text: Quarto GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hao-sun-13207/
+        text: Quarto Linkedin        
+        
+  sidebar:
+    - id: statistics
+      collapse-level: 1
+      contents:
+        - section: "Statistics"
+          href: docs/statistics/index.qmd
+          contents: 
+          - section: "Topics"
+            contents: 
+            - text: Statistics
+              href: docs/statistics/topics/Bayesian.qmd   
+            - text: Biostatistics 
+              href: docs/biostatistics/topics/dose-finding.qmd
+              contents:
+              - text: Dose Finding 
+                href: docs/biostatistics/topics/dose-finding.qmd
+              - text: Dose Optimization 
+                href: docs/biostatistics/topics/dose-optimization.qmd
+              - text: Dynamic Borrowing 
+                href: docs/biostatistics/topics/dynamic-borrowing.qmd
+              - text: Hypothesis Testing 
+                href: docs/biostatistics/topics/hypothesis-testing.qmd
+              - text: Survival Analysis
+                href: docs/biostatistics/topics/survival-analysis.qmd
+              - text: Decision Making 
+                href: docs/biostatistics/topics/decision-making.qmd
+              - text: Multiple Comparison
+                href: docs/biostatistics/topics/multiple-comparison.qmd
+              - text: Targeted Learning
+                href: docs/biostatistics/topics/targeted-learning.qmd
+              - text: Estimand
+                href: docs/biostatistics/topics/estimand.qmd
+            - text: Machine Learning 
+          - section: "Courses"
+            href: docs/courses/index.qmd
+            contents:
+            - text: "STAT510"
+              href: docs/courses/STAT510/STAT510.qmd
+            - text: "STAT544"
+              href: docs/courses/STAT544/STAT544.qmd
+          - section: "Notebooks"
+            href: docs/books/index.qmd
+            contents: 
+            - text: "Clinial Trial Designs"
+              href: docs/books/clinical trial design/clinical-trial-design.qmd
+            - text: "Survival Analysis"
+              href: docs/books/survival analysis/Survival Analysis - Techniques for Censored and Truncated Data.qmd
+            - text: "Hypothesis Testing"
+              href: docs/books/hypothesis testing/hypothesis-testing.qmd
+    - id: programming
+      collapse-level: 1
+      contents:
+        - section: "Programming"
+          href: docs/programming/index.qmd
+          contents:
+          - section: "R"
+            href: docs/programming/R/index.qmd
+            contents:
+              - docs/programming/R/dplyr.qmd
+              - docs/programming/R/ggplot2.qmd
+              - docs/programming/R/Rcpp.qmd
+              - docs/programming/R/Shiny.qmd
+              - docs/programming/R/stringr.qmd
+              - docs/programming/R/tidyr.qmd
+              - docs/programming/R/gtsummary.qmd
+              - docs/programming/R/rpact.qmd
+          - section: "Softwares and Systems"
+            contents:
+            - docs/programming/Softwares/Rstudio.qmd
+            - docs/programming/Softwares/Notion.qmd
+            - section: "Quarto"
+              contents:
+                - docs/programming/Quarto/QuartoBasic.qmd
+            - docs/programming/Softwares/MacOS.qmd
+          - section: "Projects"
+            href: docs/programming/Projects/index.qmd
+            contents:
+            - section: "DB Shiny" 
+              href: docs/programming/Projects/DB_Shiny.qmd
+              contents: 
+                - text: UI
+                  href: docs/programming/Projects/DB Shiny/ui.qmd
+                - text: Server
+                  href: docs/programming/Projects/DB Shiny/server.qmd
+                  
+    - id: pharmaceutical
+      collapse-level: 1 
+      contents:
+        - "---"
+        - section: Pharmaceutical Content 
+          href: docs/pharmaceutical/listing-company.qmd
+          contents: 
+          - section: Company
+            href: docs/pharmaceutical/listing-company.qmd
+            contents:
+            - section: BMS
+              href: docs/pharmaceutical/company/BMS.qmd
+              contents:
+              - text: Eliquis
+                href: docs/pharmaceutical/compound/Eliquis.qmd
+              - text: Opdivo
+                href: docs/pharmaceutical/compound/Opdivo.qmd
+              - text: Reblozyl
+                href: docs/pharmaceutical/compound/Reblozyl.qmd
+              - text: Revlimid
+                href: docs/pharmaceutical/compound/Revlimid.qmd        
+              - text: Yervoy
+                href: docs/pharmaceutical/compound/Yervoy.qmd 
+              - text: Onureg
+                href: docs/pharmaceutical/compound/Onureg.qmd 
+              - text: Inrebic
+                href: docs/pharmaceutical/compound/Inrebic.qmd 
+              - text: Iberdomide
+                href: docs/pharmaceutical/compound/Iberdomide.qmd
+              - text: Mezigdomide
+                href: docs/pharmaceutical/compound/Mezigdomide.qmd
+              - text: Alnuctamab
+                href: docs/pharmaceutical/compound/Alnuctamab.qmd
+              - text: Abecma
+                href: docs/pharmaceutical/compound/Abecma.qmd 
+              - text: Breyanzi
+                href: docs/pharmaceutical/compound/Breyanzi.qmd  
+              - text: Krazati
+                href: docs/pharmaceutical/compound/Krazati.qmd                 
+            - section: Merck
+              href: docs/pharmaceutical/company/Merck.qmd
+              contents:                  
+              - text: Keytruda
+                href: docs/pharmaceutical/compound/Keytruda.qmd
+              - text: Januvia
+                href: docs/pharmaceutical/compound/Januvia.qmd  
+              - text: Gardasil
+                href: docs/pharmaceutical/compound/Gardasil.qmd  
+              - text: Lynparza
+                href: docs/pharmaceutical/compound/Lynparza.qmd 
+              - text: Pneumovax
+                herf: docs/pharmaceutical/compound/Pneumovax.qmd 
+            - section: J & J
+              href: docs/pharmaceutical/company/J & J.qmd
+              contents:        
+              - text: Carvykti
+                href: docs/pharmaceutical/compound/Carvykti.qmd   
+              - text: Tecvayli
+                href: docs/pharmaceutical/compound/Tecvayli.qmd   
+              - text: Darzalex
+                href: docs/pharmaceutical/compound/Darzalex.qmd
+              - text: Remicade
+                href: docs/pharmaceutical/compound/Remicade.qmd
+              - text: Stelara
+                href: docs/pharmaceutical/compound/Stelara.qmd
+              - text: Xarelto
+                href: docs/pharmaceutical/compound/Xarelto.qmd
+              - text: Bortezomib
+                href: docs/pharmaceutical/compound/Bortezomib.qmd 
+            - section: Pfizer
+              href: docs/pharmaceutical/company/Pfizer.qmd
+              contents:        
+              - text: Mylotarg
+                href: docs/pharmaceutical/compound/Mylotarg.qmd   
+              - text: Comirnaty
+                href: docs/pharmaceutical/compound/Comirnaty.qmd  
+              - text: Prevnar
+                href: docs/pharmaceutical/compound/Prevnar.qmd
+              - text: Ibrance
+                href: docs/pharmaceutical/compound/Ibrance.qmd
+              - text: Xeljanz
+                href: docs/pharmaceutical/compound/Xeljanz.qmd
+              - text: Xalkori
+                href: docs/pharmaceutical/compound/Xalkori.qmd
+              - text: Sirolimus
+                href: docs/pharmaceutical/compound/Sirolimus.qmd
+            - section: Roche
+              href: docs/pharmaceutical/company/Roche.qmd
+              contents:        
+              - text: Tecentriq
+                href: docs/pharmaceutical/compound/Tecentriq.qmd   
+              - text: Rituxan
+                href: docs/pharmaceutical/compound/Rituxan.qmd   
+              - text: Herceptin
+                href: docs/pharmaceutical/compound/Herceptin.qmd
+              - text: Avastin
+                href: docs/pharmaceutical/compound/Avastin.qmd
+              - text: Zelboraf
+                href: docs/pharmaceutical/compound/Zelboraf.qmd
+              - text: Cotellic
+                href: docs/pharmaceutical/compound/Cotellic.qmd
+            - section: Abbvie
+              href: docs/pharmaceutical/company/Abbvie.qmd
+              contents:        
+              - text: Humira
+                href: docs/pharmaceutical/compound/Humira.qmd  
+            - section: GSK
+              href: docs/pharmaceutical/company/GSK.qmd
+              contents:        
+              - text: Tafinlar
+                href: docs/pharmaceutical/compound/Tafinlar.qmd  
+            - section: Novartis
+              href: docs/pharmaceutical/company/Novartis.qmd
+              contents: 
+              - text: Mekinist
+                href: docs/pharmaceutical/compound/Mekinist.qmd  
+            - section: Incyte
+              contents: 
+              - text: Jakafi
+                href: docs/pharmaceutical/compound/Jakafi.qmd  
+            - section: Vertex
+              contents: 
+              - text: Kalydeco
+                href: docs/pharmaceutical/compound/Kalydeco.qmd  
+            - text: Regeneron
+              href: docs/pharmaceutical/company/Regeneron.qmd
+            - text: Gilead
+              href: docs/pharmaceutical/company/Gilead.qmd
+            - section: Amgen 
+              contents: 
+              - text: Carfilzomib
+                href: docs/pharmaceutical/compound/Carfilzomib.qmd
+          - section: Regulatory
+            href: docs/pharmaceutical/listing-regulatory.qmd
+          - section: Compound
+            href: docs/pharmaceutical/listing-compound.qmd
+            contents: 
+              - text: Venclexta
+                href: docs/pharmaceutical/compound/Venclexta.qmd
+          - section: Disease
+            href: docs/pharmaceutical/listing-disease.qmd
+            contents:
+            - section: Bone Marrow
+              contents: 
+              - text: Leukemia
+                href: docs/pharmaceutical/disease/Leukemia.qmd
+              - text: Lymphoma
+                href: docs/pharmaceutical/disease/Lymphoma.qmd
+              - text: Myelodysplastic Syndromes (MDS)
+                href: docs/pharmaceutical/disease/MDS.qmd
+              - text: Multiple Myeloma (MM)
+                href: docs/pharmaceutical/disease/multiple_myeloma.qmd
+            - text: Melanoma
+              href: docs/pharmaceutical/disease/Melanoma.qmd
+            - text: Non-Small Cell Lung Cancer (NSCLC)
+              href: docs/pharmaceutical/disease/NSCLC.qmd
+            - text: Type 2 Diabete Mellitus (T2DM)
+              href: docs/pharmaceutical/disease/T2DM.qmd
+            - text: Thrombosis
+              href: docs/pharmaceutical/disease/Thrombosis.qmd
+          - text: Target
+            href: docs/pharmaceutical/listing-target.qmd
+          - text: SDTM
+            href: docs/pharmaceutical/listing-SDTM.qmd    
+        - "---"
+        - section: Other
+          href: docs/pharmaceutical/listing-other.qmd  
+          contents: 
+          - section: Wiki
+            contents: 
+            - section: Biotechnology
+              contents: 
+              - text: General Drug Introduction
+                href: docs/pharmaceutical/other/Drug.qmd
+              - text: Antibody-Drug Conjugates (ADC)
+                href: docs/pharmaceutical/other/ADC.qmd
+              - text: CAR-T
+                href: docs/pharmaceutical/other/CAR-T.qmd
+              - text: Immunotherapy
+                href: docs/pharmaceutical/other/Immunotherapy.qmd  
+              - text: Monoclonal Antibody Therapy (MAT)
+                href: docs/pharmaceutical/other/MAT.qmd  
+            - section: Clinical Trial
+              contents: 
+              - text: Adverse Event by SOC and PT
+                href: docs/pharmaceutical/AE/AE_SOC_PT.qmd
+              - text: Biomarker
+                href: docs/pharmaceutical/other/Biomarker.qmd
+              - text: Intercurrent Events 
+                href: docs/pharmaceutical/other/Intercurrent_Events.qmd
+            - section: Endpoint
+              content: 
+              - text: Progression-Free Survival (PFS)
+                href: docs/pharmaceutical/other/PFS.qmd  
+          - text: Pharma Note
+            href: docs/pharmaceutical/wiki/pharma_note.qmd
+          - text: Drug Naming Rules
+            href: docs/pharmaceutical/wiki/Naming.qmd
+          
+format:
+  html:
+    toc: true
+    theme:
+      light: [cosmo, theme.scss]
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css
+    include-after-body: js.html
+    grid:
+      sidebar-width: 250px
+      body-width: 1100px
+      margin-width: 300px
+
+
+filters:
+  - filters/tools-tabset.lua
+
+
+freeze: true
+
+editor: visual
+
+profile:
+  group: 
+    - [prerelease,rc]

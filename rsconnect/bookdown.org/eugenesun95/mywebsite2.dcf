@@ -1,0 +1,14 @@
+name: mywebsite2
+title: MyWebsite
+username: eugenesun95
+account: eugenesun95
+server: bookdown.org
+hostUrl: https://bookdown.org/__api__
+appId: 13571
+bundleId:
+url: https://bookdown.org/eugenesun95/mywebsite2/
+version: 1
+quarto_version: 1.6.39
+quarto_engines: markdown, knitr
+asMultiple: FALSE
+asStatic: FALSE

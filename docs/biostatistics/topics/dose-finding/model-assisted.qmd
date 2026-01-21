@@ -1,0 +1,80 @@
+---
+title: "Model-assisted Dose Finding Designs Literature Summary"
+format:
+  revealjs: 
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    touch: true
+    controls: true
+---
+
+## MTD-finding designs
+
+::::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   BOIN ([paper](https://drive.google.com/file/d/1PIdf_Yes_4huF1vhac1XHly9LrC1DIB4/view?usp=drive_link))
+-   gBOIN ([paper](https://drive.google.com/file/d/1IeF3pjngmbPDiGfKDerOE5omx1mHg3xf/view?usp=drive_link))
+-   iBOIN ([paper](https://drive.google.com/file/d/11BWCHZmN5xkecUq7I1lEY5eR7qV5q5LV/view?usp=drive_link), [supp](https://drive.google.com/file/d/116BlkhU5y7hXhcvNKHz7psiyvm5w_PBy/view?usp=drive_link))
+-   mTPI ([paper](https://drive.google.com/file/d/1PRatA1qEKi36Lv6GgxQMbn6cdnZBvLdl/view?usp=drive_link))
+-   mTPI-2 ([paper](https://drive.google.com/file/d/1HDLxc92bMamF4bJis4PmgTZRsjIVP860/view?usp=drive_link))
+-   R-TPI ([paper](https://drive.google.com/file/d/1QCpgWak1WRWaKjYT7TJkiplpMyqgnGwz/view?usp=drive_link))
+:::
+
+::: {style="flex: 50%;"}
+-   POD-TPI([paper](https://drive.google.com/file/d/1QUgvOJAEcKpC3BaixEKc82Yr61wDlkmC/view?usp=drive_link))
+-   BF-BOIN ([paper](https://drive.google.com/file/d/1PpDL1lCG8GGTeplXtEkqlcJqmzX6Kqc2/view?usp=drive_link), [supp](https://drive.google.com/file/d/1Pt-RKggZPiKdAjFQyFCSruD5cyPLslTR/view?usp=drive_link))
+-   TITE-BOIN ([paper](https://drive.google.com/file/d/1JTkW5fEhhHM3ywxGbRkLFRBCw9ZlHxO2/view?usp=drive_link), [supp](https://drive.google.com/file/d/1JI8Ljo52-kny40zcZYTZSU66p-X66Ufa/view?usp=drive_link))
+-   TITE-gBOIN ([paper](https://drive.google.com/file/d/1Kj6PmWTHMHi96TZy55xxUvRPTlBWaLia/view?usp=drive_link), [supp](https://drive.google.com/file/d/1JYZqYqBgnF250LerPYdCuiFiTQs1ruEL/view?usp=drive_link))
+-   TITE-keyboard ([paper](https://drive.google.com/file/d/1Jtsqu8jsYYcNpJgMIstM4AX2iaA2QG3c/view?usp=drive_link), [supp](https://drive.google.com/file/d/1KDkF8M5ddu0G5or1bx8h7yvqlqqLBZ0Z/view?usp=drive_link))
+:::
+:::::
+
+## OBD-finding designs (Part 1)
+
+::::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+BOIN-based:
+
+-   BOIN12 ([paper](https://drive.google.com/file/d/1GxLhPk-YGA8XPVVOHvz21X7XugZy4k0f/view?usp=drive_link), [supp](https://drive.google.com/file/d/1Q0m0kV6yNBca5XIr7D4h74h8Uv-dF0Gj/view?usp=drive_link))
+-   BOIN-ET ([paper](https://drive.google.com/file/d/1GwlU27kq8il6yYH_uD7yAr3qRCdy8cTI/view?usp=drive_link))
+-   STEIN ([paper](https://drive.google.com/file/d/1HepLJX7m5MGAfAasjXOVsrHlsVNq7XI3/view?usp=drive_link))
+-   UBI ([paper](https://drive.google.com/file/d/1Hkz5cK1hzPbS9A1iBwubjuDAhtMd4PfH/view?usp=drive_link))
+-   U-BOIN ([paper](https://drive.google.com/file/d/1PavZpuxG3TJzEBecuSwXmTdtLxxWiwbl/view?usp=drive_link), [supp](https://drive.google.com/file/d/1Pb5SRCHzU3znQbS4RxrkfMy2RB8xLoAa/view?usp=drive_link))
+:::
+
+::: {style="flex: 50%;"}
+not BOIN-based:
+
+-   PRINTE ([paper](https://drive.google.com/file/d/1HPC_FyG32Hv_UZ_lhP7CaoaJW7ONPZQB/view?usp=drive_link), [supp](https://drive.google.com/file/d/1G1ed8FbUwMVU_IintXkcWfIbJDYjIDHX/view?usp=drive_link))
+-   TEPI ([paper](https://drive.google.com/file/d/1HupUPsFksKcb-xQChf98qmjWPBRzgQVO/view?usp=drive_link), [supp](https://drive.google.com/file/d/1Hnt3-mzYYTwaIm3XR-IAyMLRKrG3we21/view?usp=drive_link))
+-   TEPI-2 ([paper](https://drive.google.com/file/d/1Hkz5cK1hzPbS9A1iBwubjuDAhtMd4PfH/view?usp=drive_link))
+-   uTPI ([paper](https://drive.google.com/file/d/1Hv7k7_sbzp51iFPdkYnEvkMSW7JeA4te/view?usp=drive_link), [supp](https://drive.google.com/file/d/1HvvqlfAyBToFcztHq1Zo-px5CpW2HM88/view?usp=drive_link))
+:::
+:::::
+
+## OBD-finding designs (Part 2)
+
+:::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   gBOIN-ET ([paper](https://drive.google.com/file/d/1IbuLOZ3R3qJyatuWpFmoVoSLo9tiCWNm/view?usp=drive_link), [supp](https://drive.google.com/file/d/1IdgOkiLzQupWukoCETr2_R4PksdKjQxM/view?usp=drive_link))
+-   iBOIN-ET ([paper](https://drive.google.com/file/d/1TwcQ7w31h3KyUgc8KbJcaTHWmbZ3PO2c/view?usp=drive_link), [supp](https://drive.google.com/file/d/1Txb2RkzN07IWxYlThIGFDrSxyg4DCTNn/view?usp=drive_link))
+-   TITE-BOIN12 ([paper](https://drive.google.com/file/d/1F-PJqds4L3SGoBt9xsQ9GxEFrI-j5WQB/view?usp=drive_link), [supp](https://drive.google.com/file/d/1Exc0aMYKWL1J8liUWBLxJCn3JeO1KmN4/view?usp=drive_link))
+-   TITE-BOIN-ET ([paper](https://drive.google.com/file/d/1KaPw0iDjiqZmQBC1NnSy_esfuIun70s7/view?usp=drive_link), [supp](https://drive.google.com/file/d/1JF1ThHP_TWSa9p-EXPjMBoMD7IMCqMwI/view?usp=drive_link))
+-   TITE-gBOIN-ET ([paper](https://drive.google.com/file/d/1KbnsiefDG38jWoAz_EBm_WcjUnf7i5Nv/view?usp=drive_link), [supp](https://drive.google.com/file/d/1JlwdNYv840yPITTd8x_lESdfF_4jUKjA/view?usp=drive_link))
+-   TITE-STEIN ([paper](https://drive.google.com/file/d/1IJbmxn-UKQtFSzeiIbgxT5sLx5AIYdqW/view?usp=drive_link), [supp](https://drive.google.com/file/d/1JiEaMEcNywD2LDpFRv-0UejDA4IPsr_O/view?usp=drive_link))
+:::
+::::
+
+## Combo Designs
+
+:::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   DOD-Combo ([paper](https://drive.google.com/file/d/1075_gSPzIfBdTMCZdUNzPHbftJPfve67/view?usp=drive_link))
+-   Comb i3+3 ([paper](https://drive.google.com/file/d/1-IGYbO1MIcRSMSfNx0fEB5Kusl0xnCbC/view?usp=drive_link))
+-   BOIN-ETC ([paper](https://drive.google.com/file/d/1-WKpTcweagE7H4m1imwNTPjopQo070Wk/view?usp=drive_link))
+-   Comb-BOIN12 ([paper](https://drive.google.com/file/d/1-r6IEy7eU3BsjWZqqwhCt_4f7YF71dQT/view?usp=drive_link))
+-   uTPI-comb ([paper](https://drive.google.com/file/d/1ANjyQ6gF7dn9oQYg5TUmCJ61V4Z-5t-6/view?usp=drive_link))
+-   JointITITE-BLRM ([paper](https://drive.google.com/file/d/1zIKimay0sXJqQhVm-5LPHDdJeP5N_QKj/view?usp=drive_link))
+:::
+::::

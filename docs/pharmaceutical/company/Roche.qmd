@@ -1,0 +1,17 @@
+---
+title: "Roche"
+---
+
+## Introduction
+
+### Financial Statement
+
+-   [Roche Quarter Report](https://www.roche.com/investors/reports)
+
+| Year | Q1 | Q2 | Q3 | Q4 |
+|---------------|---------------|---------------|---------------|---------------|
+| 2021 | [2021 Q1](https://www.roche.com/investors/updates/inv-update-2021-04-21) | [2021 Q2](https://www.roche.com/investors/updates/inv-update-2021-07-22) | [2021 Q3](https://www.roche.com/investors/updates/inv-update-2021-10-20) | [2021 Q4](https://www.roche.com/investors/updates/inv-update-2022-02-03) |
+| 2022 | [2022 Q1](https://www.roche.com/investors/updates/inv-update-2022-04-25) | [2022 Q2](https://www.roche.com/investors/updates/inv-update-2022-07-21) | [2022 Q3](https://www.roche.com/investors/updates/inv-update-2022-10-18) | [2022 Q4](https://www.roche.com/investors/updates/inv-update-2023-02-02) |
+| 2023 | [2023 Q1](https://www.roche.com/investors/updates/inv-update-2023-04-26) | [2023 Q2](https://www.roche.com/investors/updates/inv-update-2023-07-27) | [2023 Q3](https://www.roche.com/investors/updates/inv-update-2023-10-19) | [2023 Q4](https://www.roche.com/investors/updates/inv-update-2024-02-01) |
+| 2024 | [2024 Q1](https://www.roche.com/investors/updates/inv-update-2024-04-24) | [2024 Q2](https://www.roche.com/investors/updates/inv-update-2024-07-25) | [2024 Q3](https://www.roche.com/investors/updates/inv-update-2024-10-23) |  |
+|  |  |  |  |  |

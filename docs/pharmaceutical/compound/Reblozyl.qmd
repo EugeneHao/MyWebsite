@@ -1,0 +1,22 @@
+---
+title: "Reblozyl"
+---
+
+## 药物简介（Drug Overview）
+
+路卢帕特罗格（Luspatercept，商业名称为Reblozyl）是一种用于治疗特定类型贫血（Anemia）的重组融合蛋白（Recombinant Fusion Protein）。它主要用于治疗因骨髓疾病引起的贫血，尤其是在其他治疗方法无效或不适用的情况下。
+
+## 作用机制（Mechanism of Action）
+
+路卢帕特罗格的作用机制在于调节红细胞生成。它通过与多种转化生长因子β（Transforming Growth Factor-beta, TGF-β）超家族配体结合，抑制SMAD2/3信号传导，从而促进红细胞的成熟和产生。
+
+## 适应症（Indications）
+
+路卢帕特罗格被批准用于以下情况：
+
+-   成人患者的骨髓增生异常综合征（[Myelodysplastic Syndromes, MDS](../disease/MDS.qmd)）相关贫血，特别是对促红细胞生成素（Erythropoiesis-Stimulating Agents, ESAs）治疗无效的患者。
+-   β地中海贫血（Beta Thalassemia）患者，用于减少输血需求。
+
+## 副作用（Side Effects）
+
+路卢帕特罗格的常见副作用包括疲劳（Fatigue）、头痛（Headache）、肌肉疼痛（Myalgia）、关节痛（Arthralgia）和恶心（Nausea）。在使用时需要注意监测患者的血液参数和健康状况，以及及时处理任何不良反应。

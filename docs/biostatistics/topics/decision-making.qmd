@@ -1,0 +1,14 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+### Short Course
+
+-   [2025 RISW: Quantitative Decision Making for Staging Up to Phase 3 Clinical Development](https://drive.google.com/file/d/1AlOFkjYscMtNPIjWg5p6VU66qNAj8OBF/view?usp=drive_link)

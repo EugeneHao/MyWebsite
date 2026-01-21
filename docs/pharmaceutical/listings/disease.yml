@@ -1,0 +1,347 @@
+- name: Anemia
+  chinese: 贫血
+  body part: Blood
+  drugs: |
+    [Reblozyl](compound/Reblozyl.qmd)
+
+- name: Diabetes
+  chinese: 糖尿病
+  body part: Pancreas, Blood
+  drugs: |
+    [Januvia](compound/Januvia.qmd), Lantus, Toujeo, Farxiga
+
+- name: Multiple Sclerosis
+  chinese: 多发性硬化
+  body part: Nervous System
+  drugs: Ocrevus, Gilenya, Aubagio
+
+- name: Arthritis
+  chinese: 关节炎
+  body part: Joints
+  drugs: | 
+    [Humira](compound/Humira.qmd), [Xeljanz](compound/Xeljanz.qmd), Rinvoq
+
+- name: Hemophilia
+  chinese: 血友病
+  body part: Blood
+  drugs: Hemlibra
+
+- name: Macular Degeneration
+  chinese: 黄斑变性
+  body part: Eyes
+  drugs: Lucentis
+
+- name: Cholesterol Management
+  chinese: 胆固醇管理
+  body part: Blood
+  drugs: Praluent, Crestor
+
+- name: Eczema
+  chinese: 湿疹
+  body part: Skin
+  drugs: Dupixent
+
+- name: Asthma
+  chinese: 哮喘
+  body part: Lungs
+  drugs: Dupixent, Symbicort
+
+- name: Lupus
+  chinese: 狼疮
+  body part: Various
+  drugs: Benlysta
+
+- name: Ovarian Cancer
+  chinese: 卵巢癌
+  body part: Ovaries
+  drugs: |
+    [Lynparza](compound/Lynparza.qmd), Zejula
+
+- name: Prostate Cancer
+  chinese: 前列腺癌
+  body part: Prostate
+  drugs: |
+    [Lynparza](compound/Lynparza.qmd)
+
+- name: Pancreatic Cancer
+  chinese: 胰腺癌
+  body part: Pancreas
+  drugs: |
+    [Lynparza](compound/Lynparza.qmd)
+
+- name: Rheumatoid Arthritis
+  chinese: 类风湿关节炎
+  body part: Joints
+  drugs: | 
+    [Xeljanz](compound/Xeljanz.qmd), [Rituxan](compound/Rituxan.qmd), Rinvoq, [Humira](compound/Humira.qmd), [Remicade](compound/Remicade.qmd)
+
+- name: Psoriatic Arthritis
+  chinese: 银屑病关节炎
+  body part: Joints, Skin
+  drugs: |
+    [Xeljanz](compound/Xeljanz.qmd), Cosentyx, Skyrizi, Rinvoq
+
+- name: Ulcerative Colitis
+  chinese: 溃疡性结肠炎
+  body part: Colon
+  drugs: |
+    [Xeljanz](compound/Xeljanz.qmd), [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd), Rinvoq
+
+- name: Myeloma
+  chinese: 骨髓瘤
+  body part: Bone Marrow
+  drugs: |
+    [Revlimid](compound/Revlimid.qmd), Darzalex
+
+- name: Myelodysplastic Syndromes (MDS)
+  path: disease/MDS.html
+  chinese: 骨髓增生异常综合征
+  body part: Bone Marrow
+  drugs: |
+    [Revlimid](compound/Revlimid.qmd), [Reblozyl](compound/Reblozyl.qmd)
+
+- name: Chronic Lymphocytic Leukemia (CLL)
+  path: disease/Leukemia.html#chronic-lymphocytic-leukemia
+  chinese: 慢性淋巴细胞白血病
+  body part: Blood
+  drugs: |
+    [Venclexta](compound/Venclexta.qmd), [Rituxan](compound/Rituxan.qmd), Imbruvica
+
+- name: Lymphoma
+  path: disease/Lymphoma.html
+  chinese: 淋巴瘤
+  body part: Lymphatic System
+  drugs: |
+    [Rituxan](compound/Rituxan/qmd), Imbruvica
+
+- name: Mantle Cell Lymphoma (MCL)
+  path: disease/Lymphoma.html#mantle-cell-lymphoma
+  chinese: 套细胞淋巴瘤
+  body part: Lymphatic System
+  drugs: |
+    [Revlimid](compound/Revlimid.qmd), Imbruvica
+
+- name: Colorectal Cancer
+  chinese: 结直肠癌
+  body part: Colon, Rectum
+  drugs: |
+    [Avastin](compound/Avastin.qmd) [Yervoy](compound/Yervoy.qmd)
+
+- name: Kidney Cancer
+  chinese: 肾癌
+  body part: Kidney
+  drugs: |
+    [Avastin](compound/Avastin.qmd)
+
+- name: Type 2 Diabetes Mellitus (T2DM)
+  path: disease/T2DM.html
+  chinese: 2型糖尿病
+  body part: Pancreas
+  drugs: |
+    [Januvia](compound/Januvia.qmd), Farxiga, Lantus, Toujeo
+
+- name: Spinal Muscular Atrophy
+  chinese: 脊髓性肌萎缩
+  body part: Spinal Cord
+  drugs: Zolgensma
+
+- name: Chronic Kidney Disease
+  chinese: 慢性肾脏病
+  body part: Kidneys
+  drugs: Auryxia
+
+- name: Leukemia
+  path: disease/Leukemia.html
+  chinese: 白血病
+  body part: Blood
+  drugs: |
+    [Venclexta](compound/Venclexta.qmd), [Rituxan](compound/Rituxan.qmd)
+
+- name: Melanoma
+  chinese: 黑色素瘤
+  path: disease/Melanoma.html
+  body part: Skin
+  drugs: |
+    [Opdivo](compound/Opdivo.qmd), [Yervoy](compound/Yervoy.qmd), [Keytruda](compound/Keytruda.qmd), [Tafinlar](compound/Tafinlar.qmd),
+    [Zelboraf](compound/Zelboraf.qmd), [Mekinist](compound/Mekinist.qmd), [Cotellic](compound/Cotellic.qmd)
+
+- name: Non-Hodgkin’s Lymphoma
+  path: disease/Lymphoma.html
+  chinese: 非霍奇金淋巴瘤
+  body part: Lymphatic System
+  drugs: |
+    [Rituxan](compound/Rituxan.qmd)
+
+- name: Eosinophilic Asthma
+  chinese: 嗜酸性哮喘
+  body part: Lungs
+  drugs: Nucala
+
+- name: Hepatitis
+  chinese: 乙肝
+  body part: Liver
+  drugs: Harvoni
+
+- name: HIV/AIDS
+  chinese: 艾滋病毒/获得性免疫缺陷综合征
+  body part: Immune System
+  drugs: Truvada
+
+- name: Allergic Asthma
+  chinese: 过敏性哮喘
+  body part: Lungs
+  drugs: Dupixent
+
+- name: Age-Related Macular Degeneration
+  chinese: 老年性黄斑变性
+  body part: Eyes
+  drugs: Lucentis
+
+- name: Atrial Fibrillation
+  chinese: 心房颤动
+  body part: Heart
+  drugs: |
+    [Eliquis](compound/Eliquis.qmd)
+
+- name: Beta Thalassemia
+  chinese: 贝塔地中海贫血
+  body part: Blood
+  drugs: |
+    [Reblozyl](compound/Reblozyl.qmd)
+
+- name: Small Lymphocytic Lymphoma
+  path: disease/Lymphoma.html#small-lymphocytic-lymphoma
+  chinese: 小淋巴细胞性淋巴瘤
+  body part: Lymphatic System
+  drugs: | 
+    [Venclexta](compound/Venclexta.qmd)
+
+- name: Renal Cell Carcinoma
+  chinese: 肾细胞癌
+  body part: Kidney
+  drugs: |
+    [Yervoy](compound/Yervoy.qmd)
+
+- name: Metastatic Colorectal Cancer
+  chinese: 转移性结直肠癌
+  body part: Colon, Rectum
+  drugs: |
+    [Yervoy](compound/Yervoy.qmd)
+
+- name: Urothelial Carcinoma
+  chinese: 尿路上皮癌
+  body part: Urinary Tract
+  drugs: Imfinzi
+
+- name: Non-Small Cell Lung Cancer (NSCLC)
+  path: disease/NSCLC.html
+  chinese: 非小细胞肺癌
+  body part: Lungs
+  drugs: |
+    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), Tagrisso, Imfinzi
+
+- name: Breast Cancer
+  chinese: 乳腺癌
+  body part: Breast
+  drugs: |
+    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd)
+
+- name: Stomach Cancer
+  chinese: 胃癌
+  body part: Stomach
+  drugs: |
+    [Herceptin](compound/Herceptin.qmd)
+
+- name: Multiple Myeloma
+  path: disease/multiple_myeloma.html
+  chinese: 多发性骨髓瘤
+  body part: Bone Marrow
+  drugs: |
+    [Revlimid](compound/Revlimid.qmd), [Darzalex](compound/Darzalex.qmd), [Carvykti](compound/Carvykti.qmd), [Abecma](compound/Abecma.qmd), [Tecvayli](compound/Tecvayli.qmd), [Mezigdomide](compound/Mezigdomide.qmd), [Iberdomide](compound/Iberdomide.qmd), 
+- name: Plaque Psoriasis
+  chinese: 牛皮癣
+  body part: Skin
+  drugs: |
+    Skyrizi, [Stelara](compound/Stelara.qmd), Cosentyx
+
+- name: Ankylosing Spondylitis
+  chinese: 强直性脊柱炎
+  body part: Spine, Joints
+  drugs: Cosentyx, Rinvoq
+
+- name: Crohn’s Disease
+  chinese: 克罗恩病
+  body part: Digestive System
+  drugs: |
+    [Humira](compound/Humira.qmd), [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd)
+
+- name: Chronic Rhinosinusitis with Nasal Polyposis
+  chinese: 鼻息肉伴发的慢性鼻窦炎
+  body part: Nasal Passages
+  drugs: Dupixent
+
+- name: Heart Failure
+  chinese: 心力衰竭
+  body part: Heart
+  drugs: Entresto
+
+- name: Psoriatic Arthritis
+  chinese: 牛皮癣性关节炎
+  body part: Joints, Skin
+  drugs: Cosentyx, Skyrizi, Rinvoq
+
+- name: Pneumococcal Infections
+  chinese: 肺炎球菌感染
+  body part: Respiratory System
+  drugs: |
+    Prevnar, [Pneumovax](compound/Pneumovax.qmd)
+
+- name: COVID-19
+  chinese: 新型冠状病毒肺炎
+  body part: Respiratory System
+  drugs: Comirnaty
+
+- name: Human Papillomavirus (HPV) Related Diseases
+  chinese: 人类乳头瘤病毒相关疾病
+  body part: Various
+  drugs: |
+    [Gardasil](compound/Gardasil.qmd)
+
+- name: Shingles (Herpes Zoster)
+  chinese: 带状疱疹
+  body part: Skin, Nerves
+  drugs: Shingrix
+
+- name: Chronic Obstructive Pulmonary Disease (COPD)
+  chinese: 慢性阻塞性肺病
+  body part: Lungs
+  drugs: Trelegy, Symbicort
+
+- name: Severe Eosinophilic Asthma
+  chinese: 重症嗜酸性哮喘
+  body part: Lungs
+  drugs: Nucala
+
+- name: Ovarian, Fallopian Tube, or Peritoneal Cancer
+  chinese: 卵巢、输卵管或腹膜癌
+  body part: Reproductive System
+  drugs: Zejula
+
+- name: Systemic Lupus Erythematosus (SLE)
+  chinese: 系统性红斑狼疮
+  body part: Various
+  drugs: Benlysta
+
+- name: Deep Vein Thrombosis (DVT)
+  chinese: 深静脉血栓
+  path: disease/Thrombosis.html
+  body part: Veins
+  drugs: |
+    [Eliquis](compound/Eliquis.qmd), [Xarelto](compound/Xarelto.qmd)
+
+- name: Pulmonary Embolism (PE)
+  chinese: 肺栓塞
+  body part: Lungs
+  drugs: |
+    [Eliquis](compound/Eliquis.qmd), [Xarelto](compound/Xarelto.qmd)
+

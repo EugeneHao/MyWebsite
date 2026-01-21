@@ -1,0 +1,14 @@
+---
+title: "Courses"
+subtitle: This section contains the statistical materials from my PhD courses. 
+page-layout: article
+anchor-sections: false
+search: true
+listing:
+  id: courses-links
+  template: ../../ejs/links.ejs
+  contents: courses.yml
+---
+
+::: {#courses-links .column-screen-inset-right style="max-width: 850px;"}
+:::

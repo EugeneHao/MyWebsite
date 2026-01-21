@@ -1,0 +1,35 @@
+- name: SVSEQ
+  domain: SV
+  label: Sequence Number
+
+- name: SVPRESP
+  domain: SV
+  label: Pre-Specified
+
+- name: SVOCCUR
+  domain: SV
+  label: Occurrence
+
+- name: SVSTDTC
+  domain: SV
+  label: Start Date/Time of Visit
+
+- name: SVENDTC
+  domain: SV
+  label: End Date/Time of Visit
+
+- name: SVSTDY
+  domain: SV
+  label: Study Day of Start of Visit
+
+- name: SVENDY
+  domain: SV
+  label: Study Day of End of Visit
+
+- name: SVEPCHGI
+  domain: SV
+  label: Epi/Pandemic Change Indicator
+
+- name: SVCNTMOD
+  domain: SV
+  label: Contact Mode

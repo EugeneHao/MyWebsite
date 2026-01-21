@@ -1,0 +1,215 @@
+
+- category: R plot gallery 
+  description: |
+    A collection of figures produced using R
+  tiles:
+  - title: 
+    subtitle: Boxplot with regression
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/boxplot.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Boxplot%20with%20regression.R
+    thumbnail: r_figures/boxplot.png
+  - title: 
+    subtitle: Simple line chart 
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/line_chart_simple.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/simple%20line%20chart.R
+    thumbnail: r_figures/line_chart_simple.png
+  - title: 
+    subtitle: Multiple confidence intervals
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/multiple_confidence_interval.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Multiple%20Confidence%20Intervals.R
+    thumbnail: r_figures/multiple_confidence_interval.png
+  - title: 
+    subtitle: Line chart with scatter plot 
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/line_chart_multiple.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Line%20chart%20with%20scatter%20plot.R
+    thumbnail: r_figures/line_chart_multiple.png
+  - title: 
+    subtitle: Beeswarm plot
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/beeswarm.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Beeswarm%20plot.R
+    thumbnail: r_figures/beeswarm.png
+  - title: 
+    subtitle: Pirate plot
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/pirate_plot.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Pirate%20plot.R
+    thumbnail: r_figures/pirate_plot.png
+  - title: 
+    subtitle: Barplot example 1
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/barplot-example1.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Barplot%20example%201.R
+    thumbnail: r_figures/barplot-example1.png
+  - title: 
+    subtitle: Barplot example 2
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/barplot-example2.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Barplot%20example%202.R
+    thumbnail: r_figures/barplot-example2.png
+  - title: 
+    subtitle: Barplot example 3
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/barplot-example3.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Barplot%20example%203.R
+    thumbnail: r_figures/barplot-example3.png
+  - title: 
+    subtitle: Multi-label example 1
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/multi-labels-example1.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Multi-label%20example%201.R
+    thumbnail: r_figures/multi-labels-example1.png
+  - title: 
+    subtitle: Multi-label example 2
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/multi-labels-example2.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Multi-label%20example%202.R
+    thumbnail: r_figures/multi-labels-example2.png
+  - title: 
+    subtitle: Calendar
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/calendar.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Calendar.R
+    thumbnail: r_figures/calendar.png
+  - title: 
+    subtitle: Correlation plot example 1
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/correlation-example1.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Correlation%20plot%20example%201.R
+    thumbnail: r_figures/correlation-example1.png
+  - title: 
+    subtitle: Correlation plot example 2
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/correlation-example2.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Correlation%20plot%20example%202.R
+    thumbnail: r_figures/correlation-example2.png
+  - title: 
+    subtitle: Survival plot example 1
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/survival-example1.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Survival%20example%201.R
+    thumbnail: r_figures/survival-example1.png
+  - title: 
+    subtitle: Survival plot example 2
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/survival-example2.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Survival%20example%202.R
+    thumbnail: r_figures/survival-example2.png
+  - title: 
+    subtitle: Hazard ratio
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/hazard-ratio.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Hazard%20ratio.R
+    thumbnail: r_figures/hazard-ratio.png
+  - title: 
+    subtitle: Heatmap
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/Heatmap.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/heatmap.R
+    thumbnail: r_figures/Heatmap.png
+  - title: 
+    subtitle: Compare two group means 
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/compare-two-group-means.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Compare%20two%20group%20means.R
+    thumbnail: r_figures/compare-two-group-means.png
+  - title: 
+    subtitle: Boxplot with p-values
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/boxplot_with_p-values.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Boxplot%20with%20p-values.R
+    thumbnail: r_figures/boxplot_with_p-values.png 
+  - title: 
+    subtitle: Missing data in time series
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/missing-data-in-time-series.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Missing%20data%20in%20time%20series.R
+    thumbnail: r_figures/missing-data-in-time-series.png
+  - title: 
+    subtitle: Impute missing data in time series
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/impute-missing-data-in-time-series.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Impute%20missing%20data%20in%20time%20series.R
+    thumbnail: r_figures/impute-missing-data-in-time-series.png    
+  - title: 
+    subtitle: Sankey diagram 
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/sankey-diagram.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Sankey%20diagram.R
+    thumbnail: r_figures/sankey-diagram.png
+  - title: 
+    subtitle: Iowa state map with filled colors
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/map-example-1.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Map%20example%201.R
+    thumbnail: r_figures/map-example-1.png
+  - title: 
+    subtitle: Iowa stat map with HUC8 watersheds
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/map-example-2.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Map%20example%202.R
+    thumbnail: r_figures/map-example-2.png
+  - title: 
+    subtitle: California state map with clustered counties
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/map-example-3.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Map%20example%203.R
+    thumbnail: r_figures/map-example-2.png
+  - title: 
+    subtitle: Iowa state map with patterns
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/map-example-4.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Map%20example%204.R
+    thumbnail: r_figures/map-example-4.png 
+  - title: 
+    subtitle: Iowa state unemployment rate animation plot
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/map-animation.gif
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Map%20animation.R
+    thumbnail: r_figures/map-animation.gif
+  - title: 
+    subtitle: Dumbbell chart
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/dumbbell-chart.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Dumbbell%20chart.R
+    thumbnail: r_figures/dumbbell-chart.png
+  - title: 
+    subtitle: Encircle points
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/encircle-points.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Encircle%20points.R
+    thumbnail: r_figures/encircle-points.png
+  - title: 
+    subtitle: Radar plots
+    href: https://raw.githubusercontent.com/EugeneHao/Rplot_code/main/figures/radar.png
+    code: https://github.com/EugeneHao/Rplot_code/blob/main/codes/Radar.R
+    thumbnail: r_figures/radar.png
+    
+- category: R table gallery 
+  description: |
+    A collection of tables produced using R
+  tiles:
+    - title: 
+      subtitle: Student performance
+      href: https://raw.githubusercontent.com/EugeneHao/Rtable_code/main/figures/student-performance.png
+      code: https://github.com/EugeneHao/Rtable_code/blob/main/Student%20Performance%20and%20Registration%20Status.R
+      thumbnail: r_table/student-performance.png
+    - title: 
+      subtitle: Summary n/N (%) by treament arm
+      href: https://raw.githubusercontent.com/EugeneHao/Rtable_code/main/figures/summarize_nNprop_by_arm.png
+      code: https://github.com/EugeneHao/Rtable_code/blob/main/codes/summarize_nNprop_by_arm.R
+      thumbnail: r_table/summarize_nNprop_by_arm.png
+    - title: 
+      subtitle: Summary events with grouped category
+      href: https://raw.githubusercontent.com/EugeneHao/Rtable_code/main/figures/check_events_censoring_by_group.png
+      code: https://github.com/EugeneHao/Rtable_code/blob/main/codes/check_events_censoring_by_group.R
+      thumbnail: r_table/check_events_censoring_by_group.png
+    - title: 
+      subtitle: Subject Counts for Multiple Labels by Subgroup Combinations
+      href: https://raw.githubusercontent.com/EugeneHao/Rtable_code/main/figures/count_by_group.png
+      code: https://github.com/EugeneHao/Rtable_code/blob/main/codes/count_by_group.R
+      thumbnail: r_table/count_by_group.png
+    - title: 
+      subtitle: Filter Data with Duplicate Variables 
+      href: https://raw.githubusercontent.com/EugeneHao/Rtable_code/main/figures/filter_duplicate.png
+      code: https://github.com/EugeneHao/Rtable_code/blob/main/codes/filter_duplicate.R
+      thumbnail: r_table/filter_duplicate.png
+
+- category: R shiny gallery 
+  description: |
+    R Shiny examples. 
+  tiles:
+    - title: 
+      subtitle: Navigation bar and tablet panel
+      href: https://eugenehao.shinyapps.io/ch1ep1/
+      code: https://github.com/EugeneHao/Rshiny_code/blob/main/navigation%20bar%20and%20tablet%20panel.R
+      thumbnail: r_shiny/navigation-bar-and-panel.png
+    - title: 
+      subtitle: Add and delete inputs
+      href: https://eugenehao.shinyapps.io/ch1ep2/
+      code: https://github.com/EugeneHao/Rshiny_code/blob/main/navigation%20bar%20and%20tablet%20panel.R
+      thumbnail: r_shiny/add-and-delete-inputs.png
+    - title: 
+      subtitle: Insert and remove tables 
+      href: https://eugenehao.shinyapps.io/ch3ep1/
+      code: https://github.com/EugeneHao/Rshiny_code/blob/main/insert%20and%20remove%20tables.R
+      thumbnail: r_shiny/insert-and-remove-tables.png
+    - title: 
+      subtitle: mTPI design 
+      href: https://eugenehao.shinyapps.io/mtpi/
+      code: https://github.com/EugeneHao/Rshiny_code/blob/main/mTPI_app.R
+      thumbnail: r_shiny/mTPI.png  

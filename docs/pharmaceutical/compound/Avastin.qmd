@@ -1,0 +1,29 @@
+---
+title: "Avastin"
+---
+
+### **药物简介（Drug Overview）**
+
+艾瓦斯汀（Avastin，通用名为贝伐珠单抗 Bevacizumab）是一种靶向疗法药物，属于单克隆抗体（Monoclonal Antibody）。它被广泛用于治疗多种类型的癌症，包括结直肠癌、非小细胞肺癌、肾细胞癌、卵巢癌和子宫颈癌等。
+
+### **药物原理（Drug Mechanism）**
+
+贝伐珠单抗的作用机制是靶向血管内皮生长因子（Vascular Endothelial Growth Factor, VEGF）。VEGF在肿瘤的血管生成（Angiogenesis）过程中起关键作用。通过阻断VEGF的活动，艾瓦斯汀能够抑制肿瘤的血管形成，从而减缓肿瘤的生长和扩散。
+
+### **适应症（Indications）**
+
+艾瓦斯汀被批准用于治疗以下疾病：
+
+1.  转移性结直肠癌（Metastatic Colorectal Cancer）：与化疗药物联合使用。
+
+2.  非小细胞肺癌（Non-Small Cell Lung Cancer）：用于未接受过化疗的晚期或转移性患者。
+
+3.  肾细胞癌（Renal Cell Carcinoma）：与特定的化疗药物联合使用。
+
+4.  晚期卵巢癌（Advanced Ovarian Cancer）：用作一线治疗或复发后的治疗。
+
+5.  晚期子宫颈癌（Advanced Cervical Cancer）：与化疗联合使用。
+
+### **副作用（Side Effects）**
+
+艾瓦斯汀的常见副作用包括高血压、疲劳、出血、白细胞减少和消化道穿孔等。它还可能引起严重的副作用，如动脉血栓形成和伤口愈合问题。

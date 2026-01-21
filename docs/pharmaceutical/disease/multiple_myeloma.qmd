@@ -1,0 +1,1052 @@
+---
+title: "Multiple Myeloma"
+---
+
+多发性骨髓瘤（Multiple Myeloma，MM）是一种发生在血液中的癌症，特别影响称为浆细胞（plasma cells）的白细胞（white blood cells）。浆细胞在健康人体中帮助抵抗感染（fight infections），但在多发性骨髓瘤中，这些恶性浆细胞（malignant plasma cells, 恶性浆细胞）异常增生（abnormal proliferation）并积聚在骨髓（bone marrow）中，影响正常血细胞（blood cells）的产生，并可能导致骨损伤（bone damage）\*\*和其他严重健康问题
+
+
+## 背景
+
+### 骨骼的主要功能（Key functions of bones）
+
+1.	维持身体形态（Contribute to body’s shape and form）
+2.	支撑身体（Support the body）
+3.	保护重要器官（Protect vital organs）
+4.	实现身体运动（Enable body movement）
+5.	储存脂肪、成长因子和重要矿物质（Store fat, growth factors, and minerals）
+6.	作为大多数血细胞生成的场所（Act as site of most blood cell formation）
+
+### 骨代谢（Bone metabolism） 和 骨重塑（Bone remodeling） 
+
+1. 骨代谢的本质
+	+ 成年人骨代谢主要包括 骨重塑（remodeling） 和 修复（repair）。
+	+ 骨骼不是静态的结构，而是持续更新的组织。
+2. 骨重塑（Bone remodeling, 骨重塑）
+	+ 骨重塑是旧骨组织被新骨组织不断替换的过程。
+	+ 每周大约有 5% 的骨质量（bone mass）被更新。
+	+ 涉及两个关键过程：
+	  - 骨吸收（Bone resorption）：由破骨细胞（Osteoclasts）完成，分解旧骨。
+	  - 骨形成（Bone deposition）：由成骨细胞（Osteoblasts）完成，沉积新骨。
+3.	生理平衡
+	+ 在健康成年人中，骨吸收和骨形成的速率基本相等，维持骨量和骨强度的稳定。
+	+ 成骨细胞与破骨细胞之间通过 生长因子（Growth factors） 等信号分子相互调控。
+
+### 骨组织 (Bone Tissue) 与骨髓结构 (Bone Marrow)
+
+1.	红骨髓（Red Bone Marrow）
+  - 主要功能：造血（Hematopoiesis）。
+  - 是血细胞（包括红细胞、白细胞和血小板）的主要生成部位。
+  -	在儿童中普遍存在；随着年龄增长，一部分逐渐被黄骨髓取代。
+2.	黄骨髓（Yellow Bone Marrow）
+  - 主要由脂肪细胞（fat cells）构成。
+  - 在特定条件下（如严重失血）可以重新转化为红骨髓以恢复造血功能。
+3.	致密骨（Compact Bone）
+  - 坚硬、致密，构成骨骼的主要外层。
+  -	提供结构支撑与强度。
+4.	松质骨（Spongy Bone）
+  - 内部呈网格状，含有大量骨髓腔隙。
+  - 有助于减轻骨骼重量并为骨髓提供空间。
+
+### 造血 (Hematopoiesis)
+
+1.	造血的本质
+  -	所有血细胞（红细胞、白细胞、血小板）都起源于同一种 多能造血干细胞。
+  -	这些干细胞主要位于 红骨髓（Red bone marrow）。
+2.	多能造血干细胞（Pluripotent Hematopoietic Stem Cells）特点
+  - 未分化（Undifferentiated, 未分化）：属于前体干细胞。
+  - 分化潜能（Differentiation potential）：能够分化为所有血细胞类型。
+  - 自我更新（Self-renewal）：能够通过分裂保持自身数量。
+  - 调控依赖（Regulated by factors）：其自我更新和分化受到多种因子（如生长因子 growth factors 和细胞因子 cytokines）的调节。
+
+#### 造血分化过程
+
+1.	血干细胞（Blood Stem Cell）
+  -	起源细胞，能够分化为所有血细胞类型。
+2.	主要分化方向
+  - 红细胞（Red Blood Cells）：运输氧气和营养物质。
+  -	血小板（Platelets）：参与血液凝固，防止出血。
+  -	白细胞（White Blood Cells）：包括多种免疫细胞，如：
+    - 粒细胞（Granulocytes）：抵御感染。
+    - 自然杀伤细胞（Natural Killer Cell）：直接杀伤病毒感染细胞和肿瘤细胞。
+    - B 细胞（B Cell）：可进一步分化为*浆细胞（Plasma Cell）*，产生抗体。
+    - T 细胞（T Cell）：参与细胞免疫反应。
+3.	多发性骨髓瘤的异常
+  - 在 MM 中，B 细胞异常分化，导致浆细胞过度增殖。
+  -	过多的浆细胞不仅破坏骨髓微环境，还抑制正常血细胞的生成 → 造成贫血、免疫功能低下和出血倾向。
+
+### 浆细胞与抗体功能（Plasma Cells and Antibodies）
+
+浆细胞来源于淋巴系干细胞（Lymphoid Stem Cells）。血液干细胞首先分化为淋巴系干细胞，随后进一步形成淋巴母细胞（Lymphoid Blast），再分化为 B 淋巴细胞（B Lymphocytes）、T 淋巴细胞（T Lymphocytes）和自然杀伤细胞（Natural Killer Cells）。其中 B 淋巴细胞能够进一步分化为浆细胞（Plasma Cells）。
+
++ 浆细胞的主要功能是产生抗体（Antibodies，也称免疫球蛋白 Immunoglobulins），用于识别和攻击特定病原体，如细菌或病毒。  
++ 抗体分子由两条重链（Heavy Chains，分为 A、D、G、E 或 M 类，决定抗体类型）和两条轻链（Light Chains）组成，整体呈 Y 形结构。  
++ 在正常情况下，浆细胞会产生多种不同类型的抗体，以维持免疫防御。  
++ 在多发性骨髓瘤中，恶性浆细胞会大量复制同一种抗体，称为 **M 蛋白（M protein）**。  
++ 这些异常单克隆抗体不仅缺乏正常免疫功能，还可能沉积在肾脏等器官中，引发器官损伤。  
+
+### 浆细胞肿瘤（Plasma Cell Neoplasms）
+
+浆细胞肿瘤是一类疾病，特点是体内产生异常浆细胞（称为骨髓瘤细胞 Myeloma Cells），这些细胞可以在骨骼或软组织中形成肿瘤。主要包括以下几种情况：
+
++ 不明意义单克隆免疫球蛋白病（Monoclonal Gammopathy of Undetermined Significance, MGUS）：骨髓中异常浆细胞比例 <10%。MGUS 通常无症状，但在少部分患者中可进展为更严重的疾病，如淀粉样变（Amyloidosis）、多发性骨髓瘤（Multiple Myeloma）、淋巴瘤（Lymphoma）或慢性淋巴细胞白血病（Chronic Lymphocytic Leukemia）。  
++ 浆细胞瘤（Plasmacytoma）：在未受累部位的骨髓中异常浆细胞比例 <10%，表现为骨或软组织的单一肿瘤。  
++ 多发性骨髓瘤（Multiple Myeloma, MM）：表现为多处骨骼中的肿瘤，是浆细胞肿瘤中最常见和最严重的类型。  
+
+## 发病机制（Pathogenesis）
+
++ multiple myeloma 通常起源于一种癌前阶段，即不明意义单克隆免疫球蛋白病（Monoclonal Gammopathy of Undetermined Significance, MGUS）。大约一半 MGUS 病例与免疫球蛋白重链（IgH）基因易位相关，另一部分则表现为染色体三倍体（Chromosomal Hyperdiploidy）。这些遗传学事件促进浆细胞（Plasma cells）的克隆性扩增，产生过量的单克隆免疫球蛋白，即 M 蛋白（M protein）。  
++ 次级遗传事件（Secondary genetic events）进一步推动 MGUS 以约 1%/年的速率进展为 multiple myeloma。  
++ Myeloma cells 在骨髓中异常增殖，挤占正常造血细胞（Hematopoietic cells）的空间，导致红细胞、白细胞和血小板生成不足。  
++ 恶性浆细胞侵入骨组织，在全身多处形成肿瘤，并通过诱导血管生成（Angiogenesis）及细胞因子（如 IL-6）的旁分泌环路维持增殖。  
++ 骨代谢失衡：破骨细胞（Osteoclasts）活性异常增强，骨吸收（Bone resorption）超过骨形成（Bone formation），导致溶骨性病灶（Lytic bone lesions）。  
++ 过量 M protein 和游离轻链（Free light chains）在血液循环中积聚，并沉积于肾脏等器官，引起肾功能损伤。  
++ 临床上表现为典型的四大特征：贫血（Anemia）、高钙血症（Hypercalcemia）、溶骨性病变（Lytic bone lesions）、肾功能不全（Renal impairment）。  
+
+## 遗传学机制（Genetics）
+
++ multiple myeloma 的发生和进展与细胞遗传学异常密切相关，这些异常为肿瘤细胞提供了增殖优势。  
++ 根据 "two-hit genetic model of malignancy"，早期克隆性遗传事件驱动 MGUS 阶段，而次级遗传事件促进其向恶性转化。  
+
++ 在 MGUS 中，约一半病例携带免疫球蛋白重链（IgH）基因易位（Translocation），涉及常见的染色体异常：  
+  + t(11;14)(q13;q32) → CCND1  
+  + t(4;14)(p16;q32) → FGFR3 和 MMSET  
+  + t(14;16)(q32;q23) → C-MAF  
+  + t(6;14)(p21;q32) → CCND3  
+  + t(14;20)(q32;q11) → MAFB  
++ 另有约 50% 的 MGUS 表现为染色体数目异常增加（Hyperdiploidy），主要表现为奇数号染色体拷贝增加。  
+
++ 随着 MGUS 向 multiple myeloma 进展，常见的次级遗传学事件包括：  
+  + 染色体 13 的缺失（Deletion of chromosome 13），在多达 50% 的病例中出现。  
+  + RAS 突变（RAS mutations）。  
+  + p53 突变（p53 mutations）。  
+  + p16 甲基化（p16 methylation）。  
+  + MYC 基因异常（MYC abnormalities）。  
+  + 17p 缺失（Del(17p)）。  
+  + 其他次级染色体易位（Secondary translocations）。  
+  
+## 流行病学与趋势（Prevalence and Trends）
+
++ multiple myeloma 的终身风险约为 0.9%。  
++ 种族和性别是主要危险因素：在非裔人群中的发病率超过白人和西班牙裔的两倍，男性的发病率高于女性。  
++ 2017–2021 年间，不同人群的年发病率：  
+  + Non-Hispanic White: 8.1 per 100,000 men；5.1 per 100,000 women  
+  + Non-Hispanic Black: 17.1 per 100,000 men；13.0 per 100,000 women  
+  + Hispanic: 7.9 per 100,000 men；5.8 per 100,000 women  
+
++ multiple myeloma 多发生于老年人群，诊断时的中位年龄为 69 岁，死亡时的中位年龄为 76 岁。  
++ 预后与疾病分期相关：  
+  + Localized myeloma：5 年生存率约 80.3%。  
+  + Distant myeloma：5 年生存率下降至约 60.4%。  
+
+## 临床表现与症状（Signs and Symptoms）
+
++ 骨髓和骨骼损伤：progressive bone damage 是 multiple myeloma 的主要特征。近三分之二的患者以骨痛（Bone pain）为首发症状，常见于脊柱、骨盆、胸骨、肩胛骨及四肢长骨。骨质破坏导致溶骨性病灶（Lytic bone lesions），并增加骨折风险。部分患者会发生脊髓压迫（Spinal cord compression），表现为剧烈背痛、麻木及肌无力。  
++ 骨质疏松（Osteoporosis）在患者中常见，进一步增加病理性骨折的风险。  
+
++ 造血功能障碍：骨髓被大量 myeloma cells 占据后，正常造血受抑制，导致细胞减少症（Cytopenias）。  
+  + 贫血（Anemia）：引起疲劳、乏力、头晕。  
+  + 白细胞减少（Leukopenia）：降低免疫防御力，增加感染风险。  
+  + 血小板减少（Thrombocytopenia）：导致易出血、皮肤瘀斑。  
+
++ 高钙血症（Hypercalcemia）：由于骨吸收增加，血钙水平升高，临床表现包括食欲减退、恶心、呕吐、便秘、多尿、口渴、意识混乱、乏力及昏迷。约 25–30% 的患者在诊断时即存在高钙血症，这是肾功能衰竭（Renal failure）的主要原因之一。  
+
++ 免疫功能异常：恶性浆细胞产生大量单克隆免疫球蛋白（M protein），但抑制了正常抗体的生成。结果表现为：  
+  + 感染易感性增加（Increased susceptibility to infections）。  
+  + 反复呼吸道感染和泌尿道感染常见。  
+
++ 器官损伤：  
+  + 肾损伤（Renal impairment）：M protein 和 free light chains 在肾脏沉积，导致肾小管损伤和肾衰竭。  
+  + 血液黏稠度增加（Poor circulation）：M protein 过多导致血流缓慢，引起头晕、意识障碍、中风样表现，以及肾脏血流不足。  
+
+## Diagnosis
+
+### 检测与诊断（Multiple Myeloma Testing）
+
++ 病史采集和体格检查（Medical history and physical examination）：评估症状、体征及家族史，判断整体健康状况，并结合实验室检测结果进一步分析。  
++ 实验室检查（Laboratory tests）：包括血液学检测、血清学检测以及尿液分析（Urinalysis），用于评估 M protein、轻链和其他相关指标。  
++ 细胞遗传学检测（Cytogenetics testing）：检测染色体异常和基因改变，帮助确定预后风险。  
++ 骨髓穿刺与活检（Bone marrow aspiration and biopsy）：评估骨髓中 plasma cells 的比例和形态学特征，是确诊的重要手段。  
++ 荧光原位杂交（Plasma cell FISH, Fluorescence in situ hybridization）：用于检测特定基因易位或缺失。  
+
++ 影像学检查：  
+  + CT 或 FDG-PET/CT：评估骨骼损伤及病灶分布。  
+  + 全身 MRI（Whole-body MRI）：检测隐匿性骨病变和软组织受累。  
++ 其他检测：  
+  + 血清黏度（Serum viscosity）：评估高黏滞综合征。  
+  + 组织活检（Tissue biopsy）：用于怀疑孤立性浆细胞瘤（Plasmacytoma）的患者。  
+  + 超声心动图（Echocardiogram）：评估心脏功能，特别是在怀疑淀粉样变性（Amyloidosis）时。  
+
+### CRAB Criteria for Diagnosis
+
+临床上，多发性骨髓瘤的诊断常参考 **CRAB 标准**，这是四个关键临床特征的首字母缩写：
+
+-   **C = Calcium elevation（高钙血症 / Hypercalcemia）**
+
+    -   血清钙（serum calcium）升高 \> 11 mg/dL 或 \> 0.25 mmol/L 超过正常上限。
+
+-   **R = Renal dysfunction（肾功能受损 / Renal insufficiency）**
+
+    -   血清肌酐（serum creatinine）升高 \> 2 mg/dL，或肾小球滤过率（eGFR）下降 \< 40 mL/min。
+
+-   **A = Anemia（贫血 / Anemia）**
+
+    -   血红蛋白（hemoglobin）低于正常下限 ≥ 2 g/dL，或低于 10 g/dL。
+
+-   **B = Bone lesions（骨损伤 / Bone lesions）**
+
+    -   影像学（X-ray, MRI, CT, PET-CT）显示一个或多个溶骨性病灶（lytic lesions）。
+
+> ⚠️ 说明：CRAB 标准常作为 **治疗起点（indication for therapy）** 的依据，因为它反映了器官损害（end-organ damage）的存在。
+
+### Laboratory Tests
+
++ **血液学检测（Hematology tests）**  
+  + 血常规（Complete blood count, CBC）：评估红细胞（Red blood cells）、白细胞（White blood cells）和血小板（Platelets）。贫血（Anemia）是 multiple myeloma 最常见的细胞减少症。  
+
++ **血液化学检测（Blood chemistry panel）**  
+  + 血尿素氮和肌酐（BUN and Creatinine）：反映肾功能。  
+  + 白蛋白（Albumin）：在晚期 multiple myeloma 患者中常降低。  
+  + 钙（Calcium）：常升高，提示骨破坏和高钙血症（Hypercalcemia）。  
+  + 其他指标：乳酸脱氢酶（LDH）、β2 微球蛋白（Beta-2 microglobulin），均为常用预后因子。  
+
++ **定量免疫球蛋白（Serum quantitative immunoglobulins）**  
+  + 正常情况下，浆细胞可产生 IgA、IgD、IgE、IgG、IgM 五类免疫球蛋白。  
+  + 在 multiple myeloma 中，恶性浆细胞通常只产生单一类型免疫球蛋白，即 M 蛋白（M protein）。  
+
++ **血液和尿液电泳（Blood and urine electrophoresis）**  
+  + 血清蛋白电泳（SPEP, Serum protein electrophoresis）：检测血清中免疫球蛋白含量。  
+  + 血清免疫固定电泳（SIFE, Serum immunofixation electrophoresis）：确定抗体类别（如 IgG）。  
+  + 尿蛋白电泳（UPEP, Urine protein electrophoresis）和尿免疫固定电泳（UIFE, Urine immunofixation electrophoresis）：通常在 24 小时尿液样本中进行，用于检测 Bence Jones 蛋白（轻链）。  
+
++ **游离轻链检测（Free light chain assay）**  
+  + 定量检测血液中游离轻链的水平。  
+  + 在 SPEP 未能发现 M 蛋白时，尤其适用于识别特殊亚型 multiple myeloma。  
+
++ **血清黏度（Serum viscosity test）**  
+  + 在怀疑高黏滞综合征时使用，反映血液黏稠度。  
+
++ **浆细胞标记指数（Plasma cell labeling index）**  
+  + 评估浆细胞群体中处于分裂状态的比例，反映细胞增殖速度。  
+
+### 活检（Biopsies）
+
++ 骨髓穿刺与活检（Bone marrow aspiration and biopsy）：常在髂后嵴进行，局部麻醉后插入针头抽取少量液体骨髓，同时取骨和骨髓小块进行检查。通过显微镜评估细胞形态、数量及排列，并在检测到 multiple myeloma 时定量恶性细胞比例。  
+
++ 骨髓分析（Bone marrow analysis）：  
+  + 免疫组织化学（Immunohistochemistry）：利用抗体检测特定细胞表面分子，区分 myeloma cells 与其他细胞。  
+  + 流式细胞术（Flow cytometry）：通过免疫表型（Immunophenotyping）识别浆细胞的特定表面标记。
+  + 细胞遗传学（Cytogenetic analysis）：评估骨髓细胞和 myeloma cells 的染色体数目异常和易位/缺失。  
+  + 荧光原位杂交（Fluorescence in situ hybridization, FISH）：利用荧光探针检测染色体异常。  
+  + 淀粉样变性评估（Evaluation of light chain amyloidosis）：检测异常折叠轻链沉积形成的淀粉样蛋白。  
+
++ 活检结果不仅用于确诊 multiple myeloma，还能提供预后信息，并指导治疗方案选择。  
+
+### Imaging Tests
+
++ 影像学检查用于观察骨髓瘤对骨骼和器官的损害程度，方法包括超声（Ultrasound）、X 线（X-ray）、磁共振（MRI）、CT 及 PET 扫描。  
+
++ 骨调查（Bone survey）：常规 X 线用于检测骨质破坏，帮助评估哪些骨骼受累以及损伤范围。  
++ CT（Computed tomography）：通过 X 线生成横断面影像，提供更精细的骨结构及器官切片信息，有助于评估骨损害的范围。  
++ MRI（Magnetic resonance imaging）：利用磁场和射频波成像，适用于显示骨骼、脊髓及骨髓受累情况，对隐匿性骨损害敏感。  
++ PET/CT（Positron emission tomography combined with CT）：通过注射放射性示踪剂定位肿瘤细胞，可检测常规 X 线未能发现的浆细胞瘤（Plasmacytomas）。  
+
++ 这些影像学工具不仅有助于确诊 multiple myeloma，还能监测病情进展和疗效反应。  
+
+### 诊断标准（Establishing the Diagnosis）
+
+multiple myeloma 的诊断依赖病史、体格检查、实验室检测、骨髓活检及影像学结果的综合判断。根据 American Cancer Society 的标准：  
+
++ 符合以下任一条件即可确诊：  
+  + 骨髓瘤瘤块（Plasma cell tumor），通过活检（Biopsy）证实。  
+  + 骨髓中 plasma cells ≥10%，并伴随以下至少一项：  
+    + 高钙血症（High blood calcium）  
+    + 肾功能不全（Poor kidney function）  
+    + 贫血（Anemia）  
+    + 影像学发现骨质破坏（Holes in bones from tumor growth）  
+    + 单一类型轻链（Light chain）水平较另一类型高 100 倍  
+    + 骨髓中 plasma cells ≥60%  
+
++ Smoldering myeloma（惰性骨髓瘤）：属于早期恶性阶段，无明显症状或器官损伤。  
+  + 血常规、血钙和肾功能多为正常  
+  + 不伴随骨破坏或器官损伤  
+  + 无淀粉样变性（Amyloidosis）迹象  
+
+## Other Disease Information
+
+### IMWG Frailty Score
+
+这是 International Myeloma Working Group（IMWG） 在 2015 年开发的一项评估工具，目的是量化多发性骨髓瘤患者整体的“身体脆弱性”，帮助医生在制定治疗方案时权衡疗效与风险。其目标是合理区分不同体质老年患者，以便调整治疗强度与方式
+
+该 frailty score 是基于三个维度的简单加权评分模型：
+
+1.  年龄（Age）
+
+2.  日常生活活动能力（Activities of Daily Living, ADL）
+
+3.  工具性日常生活能力（Instrumental ADL, IADL）
+
+4.  合并症指数（Comorbidities via **Charlson Comorbidity Index**, CCI）
+
+    ::: {.callout-note collapse="true" title="Charlson Comorbidity Index"}
+    Charlson Comorbidity Index 是一种 合并症评估工具（comorbidity assessment tool），由 Charlson 等人在 1987 年提出，用于通过量化患者的合并疾病情况，预测 10 年死亡风险（10-year mortality risk）。
+
+    CCI 包含 19 种合并症（comorbid conditions），每种疾病赋予不同权重（1, 2, 3, 或 6 分），然后累加得出总分。
+
+    1 分（1 point）
+
+    ```         
+    - 心肌梗死（Myocardial infarction）
+    - 充血性心力衰竭（Congestive heart failure）
+    - 外周血管疾病（Peripheral vascular disease）
+    - 脑血管疾病（Cerebrovascular disease）
+    - 痴呆（Dementia）
+    - 慢性肺病（Chronic pulmonary disease, e.g. COPD）
+    - 结缔组织病（Connective tissue disease, e.g. rheumatoid arthritis）
+    - 消化性溃疡病（Peptic ulcer disease）
+    - 轻度肝病（Mild liver disease）
+    - 糖尿病（Diabetes mellitus, uncomplicated）
+    ```
+
+    2 分（2 points）
+
+    ```         
+    - 糖尿病伴终末器官损害（Diabetes with end-organ damage）
+    - 偏瘫（Hemiplegia or paraplegia）
+    - 肾功能不全（Moderate or severe renal disease）
+    - 肿瘤（Any solid tumor, without metastasis）
+    - 白血病（Leukemia）
+    - 恶性淋巴瘤（Lymphoma）
+    ```
+
+    3 分（3 points）
+
+    ```         
+    - 中度或重度肝病（Moderate or severe liver disease）
+    ```
+
+    6 分（6 points）
+
+    ```         
+    - 转移性实体瘤（Metastatic solid tumor）
+    - 获得性免疫缺陷综合征（AIDS/HIV）
+    ```
+
+    评分与解释（Scoring & Interpretation）
+
+    ```         
+    - 总分（Total Score） = 各合并症得分累加
+    - 分值越高 → 死亡风险越高，预后越差
+    ```
+
+    👉 原始研究中，Charlson 等人为每个得分对应了一个 10 年死亡率估计值：
+
+    ```         
+    - 0 分：~12%
+    - 1–2 分：~26%
+    - 3–4 分：~52%
+    - ≥5 分：~85%
+    ```
+    :::
+
+打分标准（Scoring System）
+
+| **评分要素 (Factor)** | **分值 (Score)** |
+|----|----|
+| **年龄 Age** | ≤75 岁 = 0 分；76–80 岁 = 1 分；\>80 岁 = 2 分 |
+| **日常生活活动能力（ADL）** | ≥4 分 = 0 分；\<4 分 = 1 分 |
+| **工具性日常生活活动能力（IADL）** | ≥5 分 = 0 分；\<5 分 = 1 分 |
+| **Charlson 合并症指数（CCI）** | 0 = 0 分；≥1 = 1 分 |
+
+通过上述指标的累加得分，IMWG 衰弱评分可将 MM 患者分为三个体质类别：
+
+-   Fit（适合）
+-   Intermediate-fit（中等体能）
+-   Frail（衰弱）
+
+| **总分 (Total Score)** | **分组 (Category)** | **含义 (Interpretation)** |
+|------------------|------------------------|-----------------------------|
+| 0 | **Fit（健康）** | 体能良好，可耐受强度治疗 |
+| 1 | **Intermediate-fit（中等体能）** | 适度衰弱，需要权衡治疗强度 |
+| ≥2 | **Frail（衰弱）** | 脆弱患者，更高毒性风险，需减量或温和治疗 |
+
+这三个分组在统计分析中具有显著差异：
+
+-   3年整体生存率（3-year OS）：Fit \~84%，Intermediate \~76%，Frail \~57%
+-   ≥3 级非血液毒性不良事件发生率（Grade ≥3 non-hematologic AEs）（1年内）：Fit \~22.2%，Intermediate \~26.4%，Frail \~34.0%
+-   12个月治疗中断率（Treatment discontinuation）：Fit \~16.5%，Intermediate \~20.8%，Frail \~31.2%
+
+这说明 IMWG frailty score 在预测患者 预后（OS） 和 治疗耐受性／毒性风险 方面具有临床价值。
+
+### Common Baseline Requirement {.unnumbered}
+
+| **指标** | **单位** | **正常参考范围** | **MM 患者常见情况** | **临床试验常见入组标准** |
+|--------------|--------------|--------------|----------------|---------------|
+| **Corrected Serum Calcium** | mmol/L | 2.1 – 2.6 | 常见 **高钙血症 \> 2.75**（CRAB 特征之一） | 一般要求 ≤ 3.0，严重高钙需处理后再入组 |
+| **Hemoglobin** | g/L | 男 135–175女 120–160 | 常见 **\< 100 g/L**，贫血 | 一般要求 ≥ 80–90 |
+| **Platelets** | ×10⁹/L | 150–400 | 可见降低，有时 \< 100 | ≥ 75–100 |
+| **Neutrophils (ANC)** | ×10⁹/L | 1.5–8.0 | 骨髓受累可低于 1.5 | ≥ 1.0–1.5 |
+| **Serum Creatinine** | µmol/L | 男 62–115女 53–97 | 肾损伤常见 \> 177 (≈2 mg/dL) | CrCl ≥ 30–50 mL/min 或 Scr ≤ 177 |
+| **% Plasma Cell (BM)** | \% | \< 5 | 诊断标准之一：≥10% | 多数要求 ≥10 才确诊，可作为疾病负荷基线 |
+| **Albumin** | g/dL | 3.5 – 5.0 | 常见 \< 3.5 | ISS 分期 cut-off：3.5 |
+| **β2-Microglobulin** | mg/L | ≤ 2.5 | \> 3.5（ISS II/III 分期） | 仅描述预后分层，无硬性入组限制 |
+| **LDH** | U/L | \~100 – 250 | 升高提示疾病侵袭性强 | R-ISS 分期指标 |
+| **Cytogenetic Abnormality** | — | 正常核型 | 高危异常包括 del(17p)、t(4;14)、t(14;16) | R-ISS 高危分层 |
+
+-   **Calcium ≥2.75 mmol/L (11 mg/dL)**、**Hb \<100 g/L**、**Cr \>177 µmol/L**、**≥10% plasma cells** 等属于 IMWG 诊断和 CRAB 特征的一部分。
+-   **入组标准**更多是安全性考虑（避免严重贫血、中性粒细胞过低、血小板过低或肾功能严重受损）。
+-   **β2-微球蛋白和白蛋白**主要用于 **ISS 分期**，不作为硬性入组门槛，但非常重要的基线指标。
+
+### ISS（International Staging System, 国际分期系统，2005 年提出）
+
+ISS 仅基于两个血清学指标：
+
+-   β2-microglobulin (β2M, β2 微球蛋白)
+    -   一种小分子蛋白，存在于多数有核细胞表面，尤其是淋巴细胞。
+    -   主要经 肾脏清除。
+    -   在 MM 中：
+        -   反映 肿瘤负荷（浆细胞分泌越多，β2M 越高）。
+        -   也受肾功能影响（肾功能差时水平会升高）。
+    -   正常值：≤ 2.5 mg/L。
+    -   预后(prognosis) 意义：越高，疾病负荷越大，预后越差。
+-   Albumin (ALB, 白蛋白)
+    -   由肝脏合成的主要血浆蛋白。
+    -   在 MM 中：
+        -   不是直接反映肿瘤负荷，而是间接反映 IL-6 水平（一种促炎细胞因子，会抑制白蛋白合成，同时促进浆细胞增殖）。
+    -   ALB 越低，提示疾病更活跃、预后更差。
+    -   正常值：3.5 – 5.0 g/dL。
+    -   预后意义：低于 3.5 g/dL 时，提示疾病风险较高。
+
+| **分期**    | **判定标准**                      | **临床意义** |
+|-------------|-----------------------------------|--------------|
+| **ISS I**   | β2M \< 3.5 mg/L 且 ALB ≥ 3.5 g/dL | 预后最好     |
+| **ISS II**  | 介于 I 和 III 之间                | 中等         |
+| **ISS III** | β2M ≥ 5.5 mg/L                    | 预后最差     |
+
+📌 局限性：只考虑了肿瘤负荷指标（β2M、白蛋白），未包含遗传学和 LDH 等高危因素。
+
+### R-ISS（Revised ISS，修订版国际分期系统，2015 年提出）
+
+R-ISS 在 ISS 的基础上，加入了 LDH 和细胞遗传学（FISH 检测的高危异常）：
+
+-   高危染色体异常包括：t(4;14)、t(14;16)、del(17p)。
+-   LDH (Lactate Dehydrogenase, 乳酸脱氢酶)
+    -   正常范围：大约 100–250 U/L（不同实验室略有差异）。
+        -   为什么重要：
+            -   当细胞受到损伤或快速增殖时，LDH 会释放到血液中 → 水平升高。
+            -   在血液肿瘤（包括多发性骨髓瘤）中，LDH 升高通常提示：
+                -   肿瘤生长更快、代谢更活跃
+                -   预后更差
+                -   在 MM 中的应用：
+                    -   在 R-ISS 分期里，LDH 被纳入预后评估：
+                    -   如果 LDH 升高（超过实验室正常上限），就说明疾病更具侵袭性。
+                    -   例如：ISS III + 高 LDH → 自动分到 R-ISS III（高危）。
+
+| **分期**      | **判定标准**                                | **临床意义** |
+|---------------|---------------------------------------------|--------------|
+| **R-ISS I**   | ISS I 且 LDH 正常 且 无高危染色体异常       | 预后最好     |
+| **R-ISS II**  | 不符合 I 或 III 的情况                      | 中等         |
+| **R-ISS III** | ISS III 且 (LDH 升高 或 存在高危染色体异常) | 预后最差     |
+
+📌 与 ISS 相比，R-ISS 更好地识别出一部分 ISS II 的高危患者，分层能力更强。
+
+### Type of Heavy Chain and Light Chain {.unnumbered}
+
+抗体（免疫球蛋白, Ig）是由 两条重链 (heavy chains) 和 两条轻链 (light chains) 组成的。
+
+-   重链类型决定了抗体的种类(class): IgG, IgA, IgM, IgD, IgE
+    -   最常见的是 IgG 型 (约 50–60%)
+    -   其次是 IgA 型 (约 20–30%)
+    -   其他类型（IgM、IgD、IgE）比较罕见
+-   每个抗体分子除了重链，还会有一对轻链，分为：κ (kappa), λ (lambda)
+    -   浆细胞可能只分泌一种轻链 → 出现 游离轻链 (Free Light Chain, FLC) 增高
+    -   如果病人只有轻链，没有完整的免疫球蛋白，就叫 轻链型 MM (Light chain MM, \~15–20%)
+
+合在一起，就能定义多发性骨髓瘤的亚型，例如 IgG κ型 MM、IgA λ型 MM、轻链 κ型 MM。
+
+临床意义: + 诊断：通过 血清/尿蛋白电泳 (SPEP/UPEP) + 免疫固定电泳 (IFE) 来鉴定是哪种 Ig 类型（IgG/IgA 等 + κ/λ）。 + 监测疾病：随访时监测 M 蛋白水平 或 FLC 比值 (κ/λ)，用来判断疗效和复发。 + 预后：不同类型预后略有差异，比如 IgA 型通常病情进展比 IgG 型更快。
+
+在多发性骨髓瘤 (MM) 中的抗体 - 异常克隆浆细胞 会不受控制地增殖，只分泌一种 单一类型的抗体或轻链，叫做 单克隆蛋白（M 蛋白，Monoclonal protein）。 - 这个 M 蛋白 失去了正常抗体的免疫功能，反而会： - 没有正常免疫作用（不能有效对抗病原体） - 在血液或尿液中积聚，导致 血液粘稠、肾脏损伤 - 取代正常免疫球蛋白的合成 → 免疫力下降 → 容易感染
+
+### Extramedullary Plasmacytomas (EMPs，骨髓外浆细胞瘤)
+
++ 浆细胞瘤（Plasmacytoma）：由单克隆浆细胞（monoclonal plasma cells）构成的肿瘤。
++ 骨髓外浆细胞瘤（Extramedullary Plasmacytoma, EMP）：指浆细胞瘤发生在骨髓以外的组织或器官（outside the bone marrow），不依附于骨或骨髓。
+  - Extraosseous EMP（真正的骨髓外浆细胞瘤）：浆细胞瘤完全位于 骨髓和骨之外的软组织/器官，没有与骨病灶相连。
+  - Paraosseous EMP（邻骨性浆细胞瘤）：浆细胞瘤起源于 骨髓内，但肿瘤突破骨皮质向外生长，形成在骨外可见的肿块。
+
+
+也可按是否伴随 MM 来分
+
+1.	孤立性骨髓外浆细胞瘤（Solitary EMP）
+  - 单一部位肿瘤，没有全身性多发性骨髓瘤（MM）的证据
+	- 占浆细胞肿瘤的 3–5% 左右
+2.	继发性 EMP（Secondary EMP in MM）
+	- 发生在多发性骨髓瘤患者中，作为疾病进展的一部分
+	- 与预后不良相关
+
+## 治疗
+
+Multiple Myeloma目前尚无法根治，治疗目标为缓解症状、延缓进展、延长生存（control symptoms, delay progression, prolong survival）。主要治疗方式：
+
+-   化疗 (Chemotherapy)
+
+-   靶向治疗 (Targeted Therapy)
+
+    ::: {.callout-note collapse="true" title="Targets for MM"}
+    ✅ 已经确立并应用在临床的靶点 （这些靶点已经有获批药物，并成为 MM 治疗标准的一部分）
+
+    -   蛋白酶体（Proteasome） → Bortezomib, Carfilzomib, Ixazomib
+    -   Cereblon（CRBN）/ IMiD 通路 → Thalidomide, Lenalidomide, Pomalidomide, Iberdomide/Mezigdomide（新一代 CELMoDs）
+    -   CD38 → Daratumumab, Isatuximab • SLAMF7（CS1） → Elotuzumab
+
+    🚀 新一代免疫靶点（已获批或处于临床后期）
+
+    -   BCMA（B-cell Maturation Antigen, B细胞成熟抗原）
+        -   CAR-T：Abecma, Carvykti
+        -   双抗：Teclistamab, Elranatamab
+        -   ADC：Belantamab Mafodotin（部分市场退出，但研究继续）
+    -   GPRC5D → Talquetamab（双抗），多款 CAR-T 在研
+    -   FcRH5 → Cevostamab（双抗，研发中）
+
+    🔬 仍在探索中的次要或联合靶点
+
+    -   VEGF/VEGFR → Bevacizumab（骨髓瘤中单药疗效有限，多用于探索性研究）
+    -   RAS/MAPK 通路、BCL-2（如 Venetoclax 在 t(11;14) 亚群） → 针对分子亚型的精准治疗方向
+    :::
+
+-   生物疗法 (Biological Therapy)
+
+-   放疗 (Radiotherapy)
+
+-   干细胞移植 (Stem Cell Transplant)
+
+### 一线治疗（Frontline / Newly Diagnosed）
+
+-   移植适合（Transplant-eligible）患者
+    -   三药方案 VRd（[Bortezomib](../compound/Bortezomib.qmd) + [Lenalidomide](../compound/Revlimid.qmd) + Dexamethasone）
+    -   四药方案 (Dara-VRd, [Daratumumab](../compound/Darzalex.qmd) 达雷妥尤单抗 + VRd），或 Isa-VRd（Isatuximab 异基妥昔单抗 + VRd），用于提升深度缓解（深度：MRD-neg 等）
+-   移植不适合（Transplant-ineligible）患者
+    -   常用方案如 D-Rd（Daratumumab + Lenalidomide + Dexamethasone）或 D-VMP（Daratumumab + Bortezomib + Melphalan + Prednisone）
+
+### 二线治疗（Relapsed / Refractory MM, Second Line）
+
+-   DVd = Daratumumab + Bortezomib + Dexamethasone
+    -   关键证据：CASTOR III期研究显示，与 Vd 相比，PFS 显著延长、ORR 更高；后续更新报告 OS 获益趋势/结果支持DVd作为复发后标准方案之一。指南将 DVd 列为复发早期优选/Category 1 方案之一
+-   其他常用三药：
+    -   D-Rd（Daratumumab + Lenalidomide + Dex）
+    -   D-Kd（Daratumumab + [Carfilzomib](../compound/Carfilzomib.qmd) + Dex）
+    -   Kd（Carfilzomib + Dex）等；选择依据**既往用药史（特别是是否对来那度胺耐药）**与患者合并症。
+-   对于早复发/高危复发患者，可酌情评估 CAR-T（如 Cilta-cel、Ide-cel）或转入临床试验通道
+
+### 三线治疗（Third Line）
+
+常见的方案包括：
+
+-   Daratumumab + Pomalidomide + Dex（D-Pd）
+-   或继续使用 Daratumumab + Rd
+-   同样，CAR-T 或 BCMA 导向治疗（如 Belantamab Mafodotin）也可考虑，具体取决于先前治疗史
+
+### 四线及之后治疗（Fourth Line and Beyond）
+
+-   BCMA (B-cell maturation antigen) 定向疗法（后期可选方案）：
+-   已批准的双特异性抗体（bispecifics）：Teclistamab（Tecvayli）、Talquetamab（Talvey）、Elranatamab（Elrexfio）
+-   CAR-T 细胞疗法：如 Idecabtagene vicleucel（Abecma）、Ciltacabtagene autoleucel（Carvykti），适用于至少一线或多线治疗失败后的患者
+-   抗 BCMA ADC（抗体–药物偶联）：例如 Belantamab Mafodotin 已在 NHS 英格兰获批使用，用于四线或以上患者
+
+> BCMA的作用:
+>
+> -   主要表达在 B 细胞晚期分化阶段（浆细胞、部分浆细胞前体）。
+> -   作用是帮助 B 细胞成熟为浆细胞，维持其 长期存活。
+> -   与配体 BAFF（B-cell activating factor） 和 APRIL 结合后，促进 浆细胞存活、抗体分泌。
+
+### Therapy for Previously Treated Multiple Myeloma
+
++ **适用情况**
+  - 患者在同种异体或自体 stem cell transplantation 后复发 (relapsed disease)  
+  - 患者在初始同种异体或自体 stem cell transplantation 后出现原发进展 (primary progressive disease)  
+  - 不适合进行 stem cell transplantation 的患者，在初始治疗 (primary therapy) 后出现疾病进展或复发  
+
+#### 早期复发 (Early Relapse, 1–3 次既往治疗)
++ 可重复初始诱导治疗 (primary induction therapy)，若复发发生在治疗后 >6 个月  
+
+#### Bortezomib 耐药的推荐方案 (Bortezomib-Refractory Disease)
+
++ Daratumumab + lenalidomide + dexamethasone  
++ Daratumumab + carfilzomib + dexamethasone  
++ Carfilzomib + lenalidomide + dexamethasone  
++ Carfilzomib + pomalidomide + dexamethasone  
++ Isatuximab-irfc + carfilzomib + dexamethasone  
+
+
+#### Lenalidomide 耐药的推荐方案 (Lenalidomide-Refractory Disease)
+
++ Daratumumab + carfilzomib + dexamethasone  
++ Daratumumab + bortezomib + dexamethasone  
++ Isatuximab-irfc + carfilzomib + dexamethasone  
++ Pomalidomide + bortezomib + dexamethasone  
++ Selinexor + bortezomib + dexamethasone  
+
+
+#### 其他推荐方案：早期复发 (Other Recommended Regimens for Early Relapses, 1–3 次既往治疗)
+
++ Bortezomib + cyclophosphamide + dexamethasone  
++ Bortezomib + lenalidomide + dexamethasone  
++ Carfilzomib（每周两次给药, twice weekly）+ dexamethasone  
++ Elotuzumab + lenalidomide + dexamethasone  
++ Carfilzomib + cyclophosphamide + dexamethasone  
++ Cyclophosphamide + lenalidomide + dexamethasone  
++ Daratumumab + cyclophosphamide + bortezomib + dexamethasone  
++ Elotuzumab + bortezomib + dexamethasone  
++ Ixazomib + lenalidomide + dexamethasone  
++ Ixazomib + cyclophosphamide + dexamethasone  
+
+#### 晚期复发 (Late Relapses, >3 次既往治疗)
+
++ **在 ≥4 次既往治疗后（包括抗 CD38 单抗 (anti-CD38 mAb)、蛋白酶体抑制剂 (PI)、免疫调节剂 (IMiD)）：**  
+  - Ciltacabtagene autoleucel  
+  - Idecabtagene vicleucel  
+  - Elranatamab-bcmm  
+  - Talquetamab-tgvs  
+  - Teclistamab-cqyv  
+
++ **其他推荐方案：**  
+  - Bendamustine  
+  - Bendamustine + bortezomib + dexamethasone  
+  - Bendamustine + carfilzomib + dexamethasone  
+  - Bendamustine + lenalidomide + dexamethasone  
+  - 大剂量或分次 cyclophosphamide (high-dose or fractionated cyclophosphamide)  
+
+#### 其他说明
+
++ **Bortezomib** 推荐使用皮下注射 (subcutaneous)，而不是静脉注射 (intravenous)  
++ **CAR T 细胞治疗 (CAR T-cell therapy)**：适用于 lenalidomide 耐药患者，若：  
+  - 1 次既往治疗后，包含 IMiD + PI（ciltacabtagene autoleucel）  
+  - 2 次既往治疗后，包含 IMiD + 抗 CD38 单抗 + PI（idecabtagene vicleucel）  
+
++ **其他复发时可选方案：**  
+  - Daratumumab + pomalidomide + dexamethasone  
+  - Isatuximab-irfc + pomalidomide + dexamethasone  
+  - Pomalidomide + cyclophosphamide + dexamethasone  
+  - Selinexor + dexamethasone（用于晚期复发，且对 ≥2 种 PI、≥2 种 IMiD 和抗 CD38 单抗均耐药）  
+
+### 维持治疗 (Maintenance Therapy)
+
++ 定义：在 multiple myeloma 患者经过初始治疗后，对于已获得缓解或疾病未进展的患者给予的进一步治疗，目标是延长生存 (prolong survival)。
+
++ 首选药物 (Preferred Agents)  
+  - Lenalidomide
+
++ 移植患者 (Transplant) 可选方案：  
+  - Bortezomib  
+  - Bortezomib + Lenalidomide  
+  - Carfilzomib + Lenalidomide  
+  - Daratumumab ± Lenalidomide  
+  - Ixazomib  
+
++ 非移植患者 (Non-Transplant) 可选方案：  
+  - Bortezomib  
+  - Bortezomib + Lenalidomide 或 Ixazomib  
+
+#### 临床试验证据 (Clinical Trials)
+
++ **Lenalidomide**
+  - 国际 III 期随机试验 (614例)：自体移植后使用 Lenalidomide 维持治疗的患者，中位无进展生存 (PFS) 为41个月，对照组 (安慰剂) 为23个月。  
+  - III 期随机试验 (459例)：在 MPL (Melphalan, Prednisone, Lenalidomide) 初始治疗后，Lenalidomide 维持治疗使 PFS 提高 66%。  
+
+> Lenalidomide 维持治疗患者发生继发性肿瘤 (secondary cancers) 的风险增加，尤其是移植后。
+
++ **Bortezomib**
+  - III 期随机试验：单药 Bortezomib 维持治疗耐受性良好；在 Bortezomib 联合方案 (如 Bortezomib + Dexamethasone，Bortezomib + Thalidomide + Dexamethasone 等) 后维持治疗，反应率进一步提高。  
+  - III 期随机试验：自体移植后使用 Bortezomib 维持，近完全缓解 (CR) 和完全缓解 (CR) 的比例更高，耐受性良好，且未增加周围神经病变 (peripheral neuropathy)。
+
+## 药物
+
+用于治疗多发性骨髓瘤的一些常用药物包括：
+
+-   免疫调节剂：如雷莫尼敏 ([Revlimid](../compound/Revlimid.qmd) (Lenalidomide)) 和硫利达嗪 ([Thalidomide](../compound/Thalidomide.qmd))
+
+    > 免疫调节剂（IMiDs）通过增强 T 细胞和自然杀伤细胞的活性来攻击肿瘤，同时抑制骨髓瘤细胞的生长因子信号。它们还能抑制肿瘤微环境中新生血管的形成。常见副作用包括血细胞减少、血栓风险和疲劳。
+
+-   CELMoD（Cereblon E3 Ligase Modulator，新一代免疫调节剂）：如[Iberdomide](../compound/Iberdomide.qmd), [Mezigdomide](../compound/Mezigdomide.qmd)
+
+    > CELMoDs 通过更强效地结合并调节 cereblon 蛋白，从而促进 Ikaros 和 Aiolos 的降解，抑制骨髓瘤细胞增殖，并增强 T 细胞和NK细胞活性。它们在 IMiDs 失效后的患者中仍然有效，是下一代骨髓瘤免疫调节治疗的核心。常见副作用包括中性粒细胞减少和感染风险。
+
+-   Proteasome Inhibitor (蛋白酶体抑制剂)：如波特莫德 ([Bortezomib](../compound/Bortezomib.qmd)) 和卡菲佐米 ([Carfilzomib](../compound/Carfilzomib.qmd))
+
+    > 蛋白酶体抑制剂通过阻断细胞内蛋白降解通道（26S 蛋白酶体），导致异常蛋白堆积，从而触发骨髓瘤细胞凋亡。它们尤其能克服骨髓瘤细胞对常规治疗的耐药性。典型副作用包括外周神经病变和胃肠道症状。
+
+-   皮质类固醇：如地塞米松 (Dexamethasone)
+
+    > 类固醇不仅具有抗炎和免疫抑制作用，还能直接诱导骨髓瘤细胞凋亡。它们通常作为联合疗法的一部分来增强疗效。长期使用可能带来高血糖、感染风险和骨质疏松等问题。
+
+-   CAR-T细胞疗法：如 [Abecma](../compound/Abecma.qmd) 和 [Carvykti](../compound/Carvykti.qmd)
+
+    > CAR-T 疗法是一种个体化免疫疗法，将患者自身的 T 细胞在体外进行基因修饰，使其表达嵌合抗原受体（CAR），从而识别并杀伤骨髓瘤细胞。目前多针对 **BCMA**（B细胞成熟抗原）。该疗法可以带来深度缓解，但副作用包括细胞因子释放综合征（CRS）和神经毒性。
+
+-   单克隆抗体：这些药物通过靶向肿瘤细胞上的特定分子来发挥作用。例如，达雷妥珠单抗（[Darzalex](../compound/Darzalex.qmd) (Daratumumab)）靶向CD38，一个在多发性骨髓瘤细胞表面常见的分子。
+
+    > 单抗通过结合肿瘤相关抗原，引导免疫系统（如补体依赖细胞毒作用和抗体依赖细胞毒作用）清除骨髓瘤细胞。它们常与 IMiDs 或 PIs 联用。主要不良事件包括输注反应和感染风险。
+
+### 蛋白酶体抑制剂（Proteasome Inhibitors）
+
++ multiple myeloma 细胞主要位于骨髓（Bone marrow），通过与骨髓基质细胞结合，诱导细胞因子（IL-6, IGF-1, GDF15）的分泌，促进细胞增殖和存活，同时抵抗化疗药物作用。  
+
++ 蛋白酶体（26S proteasome）是细胞内负责降解泛素化蛋白（Ubiquitinated proteins）的关键结构。在 myeloma cells 中，蛋白酶体可降解抑癌蛋白（如 p53），促进肿瘤细胞生存。  
++ 蛋白酶体抑制剂通过阻断这一通路，使异常蛋白累积，导致肿瘤细胞凋亡。  
+
+**主要药物：**  
+
++ **Bortezomib**：首个获批用于 multiple myeloma 的蛋白酶体抑制剂，可静脉或皮下注射。疗效显著，但常见不良反应包括耐药及剂量限制性毒性——外周神经病变（Peripheral neuropathy）。  
++ **Carfilzomib**：同样抑制 26S proteasome，但结合位点不同。用于复发/难治性 multiple myeloma（RRMM），静脉给药。不良反应发生率低于 bortezomib，尤其是外周神经病变（约 11%）。  
++ **Ixazomib**：首个口服蛋白酶体抑制剂，常与来那度胺（Lenalidomide）和地塞米松（Dexamethasone）联合使用。适用于经治患者，外周神经病变发生率约 31%。  
+
+**外周神经病变风险（Peripheral neuropathy）：**  
+
++ Bortezomib 静脉给药：约 39% 患者出现。  
++ Bortezomib 皮下注射：约 20% 患者出现。  
++ Carfilzomib：约 11% 患者出现。  
++ Ixazomib：约 31% 患者出现。  
+
+### 免疫调节剂（Immunomodulatory Drugs, IMiDs）
+
++ IMiDs 是一类通过调节患者免疫系统而发挥抗肿瘤作用的药物，主要代表包括 Thalidomide、Lenalidomide 和 Pomalidomide。  
+
+**Thalidomide**  
+
++ 机制：增强免疫反应，抑制肿瘤坏死因子 α（TNF-α）、白细胞介素（Interleukins）、干扰素（Interferons），并抑制 VEGF 和 bFGF，减少肿瘤血管生成。  
++ 常见不良反应：外周神经病变（Peripheral neuropathy）、疲劳、低钙血症、白细胞/中性粒细胞减少、便秘、水肿、皮疹、呼吸困难、肌无力。  
++ 特殊注意：可导致深静脉血栓（Deep vein thrombosis）及严重胎儿畸形或死亡。育龄期女性必须严格避孕，患者需签署知情同意并接受风险管理。  
+
+**Lenalidomide**  
+
++ 机制：Thalidomide 的衍生物，神经毒性更低，抗癌活性增强。  
++ 常见不良反应：中性粒细胞减少、红细胞减少、疲劳、便秘、腹泻、肌肉痉挛。  
+
+**Pomalidomide**  
+
++ 机制：同样是 Thalidomide 衍生物，通过结构改造显著增强对 T 细胞的刺激作用（>1000 倍）。  
++ 常见不良反应：上呼吸道感染、疲劳、白细胞和红细胞减少、便秘、恶心、腹泻、呼吸困难、背痛。  
+
+**风险管理**  
+
++ IMiDs 类药物均有导致深静脉血栓（DVT）和严重出生缺陷的风险。  
++ 治疗期间需合并抗凝预防，并严格执行避孕和患者监控计划。  
+
+### Corticosteroids（糖皮质激素）
+
+Corticosteroids，尤其是 **glucocorticosteroids**，由肾上腺分泌，在 multiple myeloma 的治疗中常与 **proteasome inhibitors (PI)**、**chemotherapy** 或 **IMiDs** 联合使用，能够增强其他药物的抗肿瘤作用。
+
++ **Glucocorticosteroid 的功能**  
+  + 调节糖类、蛋白质和脂肪的代谢  
+  + 抑制炎症、过敏反应和部分正常免疫反应  
+
++ **Dexamethasone（地塞米松）**  
+  + 抑制白细胞向炎症部位迁移  
+  + 减少肿瘤周围水肿  
+  + 缓解疼痛  
+
++ **常见的不良反应（Adverse Reactions）**  
+  + 感染、伤口愈合延迟、皮疹  
+  + 血压升高、水肿、胃肠穿孔、恶心、呕吐、胃灼热  
+  + 体重增加、高血糖、骨质疏松、青光眼、白内障  
+  + 情绪波动、抑郁、失眠、过敏反应  
+
++ **其他常用药物**  
+  + **Prednisone（泼尼松）**  
+  + **Prednisolone（泼尼松龙）**  
+  + **Methylprednisolone（甲泼尼龙）**
+  
+### Chemotherapeutics（化疗药物）
+
+在 multiple myeloma 的治疗中，化疗药物主要通过抑制 DNA 复制和干扰肿瘤细胞增殖来发挥作用，常与 **dexamethasone**、**proteasome inhibitors** 或 **IMiDs** 联合使用。  
+
++ **Doxorubicin（阿霉素）**  
+  + 嵌入 DNA 双螺旋碱基对之间，抑制拓扑异构酶 II  
+  + 生成氧自由基（oxygen free radicals）  
+  + 属于 **anthracycline antibiotic**，需静脉给药  
+  + **毒性反应**：  
+    + 心肌损伤（Myocardial damage）  
+    + 手足综合征（Hand-Foot syndrome）  
+
++ **Etoposide（依托泊苷）与 Cisplatin（顺铂）**  
+  + Etoposide 抑制拓扑异构酶 II，阻断 DNA 复制  
+  + 常与多药联合使用（例如 DT-PACE, VTD-PACE, DCEP）  
+  + **常见不良反应**：  
+    + Cisplatin：肾功能损伤、周围神经病变、恶心、呕吐、耳毒性、骨髓抑制  
+    + Etoposide：粒细胞减少（Low neutrophil count）  
+    
+### Stem Cell Transplantation（干细胞移植）
+
+Hematopoietic stem cells（造血干细胞）主要存在于骨髓中，也可在外周血和脐带血中找到。干细胞移植的目的是恢复因治疗而受损的造血功能。
+
++ **主要类型**  
+  + **Autologous transplant（自体移植）**：患者接受自己的干细胞  
+  + **Syngeneic transplant（同基因移植）**：来自同卵双胞胎的干细胞  
+  + **Allogeneic transplant（异体移植）**：来自 HLA 匹配的供体（可能是亲属或非亲属）  
+
++ **移植流程**  
+  + **HLA 匹配（HLA antigens）**：匹配度越高，移植物被接受的几率越大  
+  + **Apheresis（单采术）**：通过静脉或中心静脉导管采集干细胞，经分离后保存  
+  + **冷冻保存（Cryopreservation）**：干细胞在移植前冷冻储存，移植时静脉输注回患者体内  
+
++ **关键步骤**  
+  + **Purging（清除）**：自体移植中需清除癌细胞，降低复发风险（但也可能损失部分健康干细胞）  
+  + **Engraftment（植入）**：移植干细胞迁移到骨髓，开始生成新的血细胞  
+    + 自体移植通常数月内恢复  
+    + 异体移植则可能需要长达两年  
+
++ **并发症处理**  
+  + 移植过程中常用抗生素和输血支持，以减少感染和并发症风险  
+  
+### Monoclonal Antibodies（单克隆抗体）
+
+单克隆抗体（mAbs）自 1990s 以来已广泛用于 B-cell lymphoma 等肿瘤治疗，在 multiple myeloma（MM）中也成为重要的靶向治疗手段。
+
++ **已获批的 monoclonal antibodies（RRMM）**  
+  + **Elotuzumab**：靶向 SLAMF7，增强 NK 细胞介导的杀伤  
+    - 常与 lenalidomide + dexamethasone 或 pomalidomide + dexamethasone 联合使用  
+    - **Adverse reactions**: fatigue, diarrhea, fever, constipation, cough, hyperglycemia  
+  + **Daratumumab**：靶向 CD38，诱导肿瘤细胞凋亡  
+    - 可单药或与 bortezomib、lenalidomide、thalidomide、carfilzomib、pomalidomide 等联合  
+    - **Adverse reactions**: infusion reactions, cytopenias, diarrhea, nausea/vomiting, fatigue, peripheral neuropathy, upper respiratory infections  
+  + **Isatuximab**：同样靶向 CD38  
+    - 常与 pomalidomide + dexamethasone 联合（NCCN 推荐为 RRMM 首选方案之一）  
+    - **Adverse reactions**: neutropenia, infusion-related reactions, pneumonia, bronchitis, hypertension, cough, fatigue  
+
++ **已获批的 bispecific monoclonal antibodies（双特异抗体）**  
+  + **Teclistamab**（BiTE，靶向 BCMA × CD3）  
+    - 诱导 T 细胞杀伤 myeloma cells  
+    - **Adverse reactions**: cytokine release syndrome (CRS), injection site reactions, fatigue, pneumonia, diarrhea  
+  + **Elranatamab**（BiTE，靶向 BCMA × CD3）  
+    - 作用机制类似 Teclistamab  
+    - **Adverse reactions**: CRS, musculoskeletal pain, fatigue, rash, cough, diarrhea  
+  + **Talquetamab**（BiTE，靶向 GPRC5D × CD3）  
+    - 特异性靶向 GPRC5D，诱导 T 细胞介导的细胞死亡  
+    - **Adverse reactions**: CRS, altered taste, dry mouth, difficulty swallowing, skin/nail disorders, weight loss, fatigue  
+
+### CAR T-Cell Therapy（CAR-T 细胞疗法）
+
+CAR T-cell therapy 是近年来 multiple myeloma（MM）治疗中的重要突破，主要靶向 **BCMA（B-cell maturation antigen）**。
+
++ **已批准疗法**  
+  + **Idecabtagene vicleucel (ide-cel)**：适用于 RRMM，需 ≥2 线既往治疗后  
+  + **Ciltacabtagene autoleucel (cilta-cel)**：适用于 RRMM，需 ≥1 线既往治疗后  
+
++ **特点**  
+  + 仅用于 **autologous therapy（自体疗法）**  
+  + 输注前需进行 **lymphodepleting chemotherapy**（如 cyclophosphamide + fludarabine）  
+  + 属于一次性个体化细胞疗法  
+
++ **安全性与风险**  
+  + 盒装警告（Boxed warnings）：  
+    - Cytokine release syndrome (CRS)  
+    - Neurologic toxicities  
+    - Hemophagocytic lymphohistiocytosis/macrophage activation syndrome (HLH/MAS)  
+    - Prolonged cytopenias  
+    - Secondary hematologic malignancies  
+  + 仅在 **REMS（Risk Evaluation and Mitigation Strategy）项目**下可用  
+
+### Other Recently Approved Therapies（近期获批疗法）
+
+除了传统化疗、IMiDs、PIs、mAbs 和 CAR-T 等，部分新药也在 multiple myeloma 的治疗中显示出疗效。
+
++ **Selinexor**  
+  + FDA 于 2019 年批准，与 bortezomib 和 dexamethasone 联合使用  
+  + 口服核输出抑制剂（nuclear export inhibitor），可可逆性阻断 exportin 1 (XPO1)，抑制肿瘤抑制蛋白（TSPs）、生长调控因子及致癌蛋白 mRNAs 的核输出  
+  + **Adverse reactions**:  
+    - 细胞减少（白细胞、血小板、淋巴细胞、红细胞、中性粒细胞）  
+    - 发热、疲劳、恶心、呕吐、腹泻、食欲下降、体重减轻  
+    - 外周神经病变、低钠血症、便秘、呼吸困难、上呼吸道感染  
+
++ **Venetoclax**  
+  + 小分子抑制剂，作用于 **BCL-2**，阻断其与促凋亡蛋白结合，从而激活细胞内源性凋亡通路  
+  + FDA 已批准用于 **CLL（慢性淋巴细胞白血病）**、**SLL（小淋巴细胞淋巴瘤）** 和 **AML（急性髓性白血病）**，并在 multiple myeloma 中研究应用  
+  + **Adverse reactions**:  
+    - 恶心、呕吐、腹泻  
+    - 血小板减少、中性粒细胞减少、红细胞减少、白细胞减少、淋巴细胞减少  
+
+### 支持治疗（Supportive care）
+
++ 概述：multiple myeloma 常并发骨病（bone disease）、贫血（anemia）、血栓（blood clots）、高钙血症（hypercalcemia）、肾功能不全（kidney dysfunction）、感染（infection）；需在抗肿瘤治疗同时并行支持治疗。
+
++ 骨病（Bone disease）
+  + 发生率约 80–85%；表现为骨量减少/溶骨性病灶（osteopenia/osteolytic lesions）。
+  + 双磷酸盐（bisphosphonates：pamidronate、zoledronic acid）：
+    + 预防进一步骨破坏；减轻骨痛、减少镇痛药使用；
+    + 纠正/预防高钙血症；降低病理性骨折与放疗需求；改善生活质量（QoL）。
+  + 地舒单抗（denosumab）：
+    + 肾功能不全患者的优选替代方案；每 4 周皮下注射（SC）。
+    + 常见不良反应（AEs）：腹泻（diarrhea）、恶心（nausea）、红细胞减少（low RBC）、背痛（back pain）。
+  + 介入/外科（interventional/surgery）：
+    + 椎体成形术（vertebroplasty）：椎体内注射骨水泥（bone cement）以增强稳定性；
+    + 椎体后凸成形术（kyphoplasty）：球囊扩张后注射骨水泥。
+
++ 其他并发症处理（Management of other complications）
+  + 贫血（anemia）：输血（blood transfusion）、促红素（erythropoietin）。
+  + 高钙血症（hypercalcemia）：等渗盐水强化补液（aggressive hydration with saline）、双磷酸盐、激素（steroids）、降钙素（calcitonin）。
+  + 肾功能不全（renal insufficiency）：补液（hydration）、血浆置换（plasmapheresis，用于高黏滞）、血液/腹膜透析（hemodialysis/peritoneal dialysis）、避免 NSAIDs。
+  + 感染（infection）：抗菌药物（antibiotics）；预防性疫苗（pneumococcal、influenza、shingles、COVID-19）。
+  + 血栓（blood clots）：阿司匹林（aspirin）或抗凝药（anticoagulants）。
+  
+## Responses 疗效反应标准
+
++ **Stringent complete response (sCR)**
+  + 符合完全缓解 (CR) 标准
+  + free light chain (FLC) 比值正常
+  + 骨髓活检免疫组化检测无克隆性浆细胞
+
++ **Complete response (CR)**
+  + 血清和尿液免疫固定检测 (immunofixation) 阴性
+  + 软组织浆细胞瘤消失
+  + 骨髓浆细胞 < 5%
+  + 若仅依靠血清 FLC 检测疾病：FLC 比值在 0.26–1.65 正常范围内
+
++ **Very good partial response (VGPR)**
+  + 血清/尿液 M 蛋白可被免疫固定检测到，但电泳检测不到
+  + 血清 M 蛋白下降 ≥90%，且尿液 M 蛋白 <100 mg/24h
+  + 若仅依靠血清 FLC 检测疾病：FLC 差值下降 >90%
+
++ **Partial response (PR)**
+  + 血清 M 蛋白下降 ≥50%，尿液 M 蛋白下降 ≥90% 或 <200 mg/24h
+  + 若血清/尿液 M 蛋白不可测：FLC 差值下降 ≥50%
+  + 若 serum free light assay 也不可测：骨髓浆细胞减少 ≥50%，且基线浆细胞 ≥30%
+  + 若基线存在软组织浆细胞瘤：体积减少 ≥50%
+
++ **Minimal response (MR)**
+  + 血清 M 蛋白下降 25–49%，尿液 M 蛋白下降 50–89%
+  + 若基线存在软组织浆细胞瘤：体积减少 25–49%
+
++ **Stable disease (SD)**
+  + 不符合 CR、VGPR、PR、MR 或 PD 标准
+  + 不推荐作为反应评价指标，更适合用于 PFS 或 TTP
+
++ **MRD-negative (微小残留病灶阴性)**
+  + **Sustained MRD-negative**: 骨髓 MRD 阴性 (NGF 或 NGS)，间隔 ≥1 年复查仍阴性，可随访至 5 年
+  + **Flow MRD-negative**: NGF 检测骨髓无克隆性浆细胞，敏感度 ≥1/10^5
+  + **Sequencing MRD-negative**: NGS 检测无克隆性浆细胞（少于 2 个相同序列），敏感度 ≥1/10^5
+  + **Imaging plus MRD-negative**:
+    + FDG PET/CT 显示无异常摄取
+    + 或 SUV 低于纵隔血池/正常组织水平  
+  
+## Disease Progression
+
++ **Progressive Disease**
+  - 基于以下任一标准：
+    * 血清 M-component 增加 ≥25%（绝对增加 ≥0.5 g/dL）；如果基线 M ≥5 g/dL，增加 ≥1 g/dL 即可定义复发
+    * 尿液 M-component 增加 ≥25%（绝对增加 ≥200 mg/24h）
+    * 若血清和尿液 M-protein 不可测：involved/uninvolved FLC 差值绝对增加 >10 mg/dL
+    * 若血清/尿液 M-protein 和 FLC 水平均不可测：骨髓浆细胞比例 ≥10%
+    * 出现新的骨损害或软组织浆细胞瘤，或已有病灶体积明显增加
+    * 外周血浆细胞增加 ≥50%（且 ≥200 cells/µL），若这是唯一可测疾病
+
++ **Clinical Relapse**
+  - 满足以下任一条件：
+    * 出现直接的疾病进展/器官功能损害迹象（高钙血症、肾衰、贫血、溶骨性骨损害）
+    * 新发软组织浆细胞瘤或骨病灶
+    * 已有病灶体积增加 ≥50% 且至少直径 ≥1 cm
+    * 高钙血症（>11 mg/dL）
+    * 血红蛋白下降 ≥2 g/dL，且非治疗或其他非 myeloma 原因
+    * 血清肌酐升高 ≥2 mg/dL，且归因于 myeloma
+    * 与血清副蛋白相关的高黏滞综合征
+
++ **Relapse from Complete Response (CR)**
+  - 满足以下任一条件：
+    * 血清或尿液 M-protein 复现（免疫固定或电泳检测）
+    * 骨髓浆细胞比例 ≥5%
+    * 出现任何其他进展迹象（新发浆细胞瘤、溶骨性骨损害、高钙血症）
+
++ **Relapse from MRD Negative**
+  - 满足以下任一条件：
+    * 失去 MRD 阴性状态（NGF/NGS 证据，或影像学复发）
+    * 血清或尿液 M-protein 复现
+    * 骨髓克隆浆细胞比例 ≥5%
+    * 出现其他疾病进展迹象（如新发浆细胞瘤、溶骨性骨损害、高钙血症）
+    
+    
+## Treatment Strategy for different patients
+
++ 确定不同患者的治疗方法：原发性浆细胞瘤 (primary plasmacytoma)、无症状 myeloma (asymptomatic myeloma)、以及活动性 myeloma (active myeloma)  
++ 说明维持治疗 (maintenance therapy) 和挽救治疗 (salvage therapy) 的目的，并明确常用药物
+
+### Solitary Plasmacytoma (孤立性浆细胞瘤)
++ 随访监测 (Follow-Up Monitoring)  
+  + 血液和尿液检测、影像学检查  
+  + 疾病敏感性通过 M 蛋白 (M-protein) 的定期监测确认  
+  + 至少每年做一次影像学检查  
+
+### Asymptomatic Myeloma
++ 特点：无症状、无器官损伤  
++ 高危标准 (High Risk)：若满足以下≥2项  
+  + 骨髓浆细胞 >20%  
+  + 血清游离轻链 (serum free light chain) 比值 >20  
+  + M 蛋白 >2 g/dL  
++ 监测建议 (Monitoring)  
+  + CBC + 血小板计数  
+  + 血清肌酐、白蛋白、校正钙  
+  + 定量免疫球蛋白、SPEP、SIFE  
+  + FLC 检测（必要时）  
+  + 24小时尿蛋白，UPEP、UIFE  
+  + 骨髓穿刺 + FISH/SNP array/NGS 或 多参数流式  
+  + 影像学（CT、MRI、FDG PET/CT），每年或按需  
++ NCCN 建议  
+  + 高危患者：强烈推荐参加临床试验  
+  + 无法试验：每 3 个月随访  
+  + 少部分高危患者可用 Lenalidomide  
+  + 低危患者：临床试验或每 3-6 个月随访  
+
+### Active Myeloma（Primary Therapy）
++ 有症状/活动性患者接受初始治疗 (primary therapy)  
++ 后续可进入大剂量化疗 (high-dose chemotherapy) + 干细胞移植 (SCT)  
++ 进入 SCT 前需评估肝、肾、肺、心功能  
+
+### Active Myeloma（Preferred Agents）
++ 移植适用患者 (Transplant candidates)  
+  + Bortezomib/Lenalidomide/Dexamethasone  
+  + Carfilzomib/Lenalidomide/Dexamethasone  
+  + Ixazomib/Lenalidomide/Dexamethasone（部分患者）  
++ 非移植患者 (Non-transplant candidates)  
+  + Bortezomib/Lenalidomide/Dexamethasone  
+  + Daratumumab/Lenalidomide/Dexamethasone  
++ 治疗方式  
+  + 周期性给药，持续多个周期  
+  + 同时进行支持治疗 (supportive care)  
+  + 监测疗效和不良反应  
+
+### Active Myeloma（SCT）
++ 自体移植 (Autologous SCT)  
+  + 一线或难治/复发时均可带来生存获益  
++ 双次移植 (Tandem SCT)  
+  + 适用于首次移植未达 CR/VGPR 患者  
+  + 可带来 2–3 年以上缓解  
++ 异基因移植 (Allogeneic SCT)  
+  + 可能避免肿瘤细胞再输注  
+  + 移植物抗肿瘤效应 (graft-versus-tumor) 可能带来额外获益  
+    
+## 与Myeloma的关系
+
+MM和Myeloma这两个术语经常被交替使用，但它们之间存在细微的差别：
+
+-   多发性骨髓瘤 (Multiple Myeloma, MM)：这是一种血液癌症，主要影响造血骨髓内的浆细胞。"多发性"意味着疾病影响骨髓的多个部位。MM通常导致一系列并发症，如骨损伤、高钙血症、肾功能受损、贫血等。
+-   骨髓瘤 (Myeloma)：这个术语在临床上通常也指多发性骨髓瘤。然而，从字面上讲，"骨髓瘤"这个词可以被解释为任何形式的骨髓肿瘤，包括但不限于多发性骨髓瘤。在某些情况下，它可能被用来描述更广泛的相关病变，如孤立性骨髓瘤（Solitary Myeloma，也称为骨髓瘤性斑块）或浆细胞病（Plasmacytoma），后者通常指单个而不是多个浆细胞肿瘤。
+
+## 与AML的区别
+
+多发性骨髓瘤（Multiple Myeloma, MM）和急性髓系白血病（Acute Myeloid Leukemia, AML）是两种不同的血液病，它们在细胞起源、发病机制、临床表现和治疗方法上有显著差异。
+
+-   多发性骨髓瘤（MM）
+    -   细胞起源：影响浆细胞，这是一种成熟的白细胞，主要功能是产生抗体。
+    -   特点：浆细胞在骨髓中异常增生，可能导致骨破坏、高钙血症、贫血、肾脏损伤等。
+    -   症状：骨痛、贫血、肾功能受损、高钙血症、感染易发。
+    -   治疗：主要包括化疗、靶向治疗、生物治疗、放疗和干细胞移植。
+-   急性髓系白血病（AML）
+    -   细胞起源：影响骨髓中的幼稚髓系细胞，这些细胞本应发育成为各种成熟的白血细胞。
+    -   特点：这些幼稚细胞在骨髓中快速增生并积聚，影响正常血细胞的产生。
+    -   症状：贫血、出血倾向、感染易发、疲劳、发热。
+    -   治疗：主要是强烈的化疗，有时候需要干细胞移植。
+
+主要区别
+
+-   发病细胞类型：MM涉及浆细胞，而AML涉及幼稚的骨髓细胞。
+-   症状和表现：两者的症状有重叠，但MM更注重骨痛和肾损伤，而AML的特征是出血倾向和感染。
+-   治疗方法：虽然两者都可能使用化疗和干细胞移植，但AML的治疗通常更加激进。
+-   发病机制和进展：AML通常进展更快，需要紧急治疗，而MM的进展相对较慢。

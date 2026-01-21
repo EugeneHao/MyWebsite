@@ -1,0 +1,19 @@
+{
+  "hash": "92e13f4f01a0298ab42199409993164a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Topics\"\nformat: html\ncode-copy: hover\neditor_options:\n  markdown:\n    wrap: sentence\n    canonical: true\nsearch: true\n---\n```{=html}\n<ul id=\"choose-your-tool\" class=\"nav nav-tabs\" role=\"tablist\">\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"bayesian.html\">\n      <img src=\"../images/Bayesian.png\">Bayesian Statistics\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"causal-inference.html\">\n      <img src=\"../images/causal-inference.png\">Causal Inference\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"clinical-trial.html\">\n      <img src=\"../images/clinical-trial.png\">Clinical Trial\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"linear-model.html\">\n      <img src=\"../images/linear-model.png\">Linear Model\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"machine-learning.html\">\n      <img src=\"../images/machine-learning.png\">Machine Learning\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"multivariate-analysis.html\">\n      <img src=\"../images/multivariate-analysis.png\">Multivariate Analysis\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"probability-theory.html\">\n      <img src=\"../images/probability-theory.png\">Probability Theory\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"spatial.html\">\n      <img src=\"../images/spatial.png\">Spatial Statistics\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"survey-sampling.html\">\n      <img src=\"../images/survey-sampling.png\">Survey Sampling\n    </a>\n  </li>\n  <li class=\"nav-item\" role=\"presentation\">\n    <a class=\"nav-link\" href=\"survival-analysis.html\">\n      <img src=\"../images/survival-analysis.png\">Survival Analysis\n    </a>\n  </li>\n</ul>\n\n<br><br>\n\n<script type=\"text/javascript\">\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  // get file name\n  const filename = window.location.pathname.split(\"/\").slice(-1)[0];\n  \n  // latch active\n  const toolLinks = window.document.querySelectorAll(\"#choose-your-tool a\");\n  for (const tool of toolLinks) {\n    if (tool.href.endsWith(filename)) {\n      tool.classList.add(\"active\");\n      break;\n    }\n  }\n  \n   // save in local storage\n  window.localStorage.setItem(\"tutorialTool\", filename);\n});\n\n</script>\n```\n\n\n\n# Clinical Trial Designs\n\n## Early Phase Dose Finding Designs\n\n::: panel-tabset\n### Model-assisted\n\n``` {.yaml code-preview=\"clinical-trial/model-assisted.qmd\"}\n```\n\n### Model-based\n\n``` {.yaml code-preview=\"clinical-trial/model-based.qmd\"}\n```\n:::\n\n\n```{ojs}\nx\n```\n\n::: {.cell}\n\n```{.r .cell-code}\nx = c(1,2,3,4)\nojs_define(x)\n```\n:::\n\n\n# Dose Optimization\n\n# Dynamic Borrowing\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script type=\"ojs-define\">\n{\"contents\":[{\"name\":\"x\",\"value\":[1,2,3,4]}]}\n</script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

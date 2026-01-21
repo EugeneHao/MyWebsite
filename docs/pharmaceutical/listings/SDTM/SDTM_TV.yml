@@ -1,0 +1,7 @@
+- name: TVSTRL
+  domain: TV
+  label: Visit Start Rule
+
+- name: TVENRL
+  domain: TV
+  label: Visit End Rule

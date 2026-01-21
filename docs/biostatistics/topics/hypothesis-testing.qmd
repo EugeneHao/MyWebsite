@@ -1,0 +1,14 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+## Hypothesis Testing
+
+[Notebook of Hypothesis Testing](../../books/hypothesis%20testing/hypothesis-testing.qmd)

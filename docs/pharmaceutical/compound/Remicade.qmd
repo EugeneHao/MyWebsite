@@ -1,0 +1,31 @@
+---
+title: "Remicade"
+---
+
+### **药物简介（Drug Overview）**
+
+瑞美斯（Remicade，通用名为英夫利昔单抗 Infliximab）是一种单克隆抗体（Monoclonal Antibody），属于肿瘤坏死因子抑制剂（Tumor Necrosis Factor Inhibitor, TNF Inhibitor）。它用于治疗多种炎症性疾病，包括某些自身免疫疾病。
+
+### **药物原理（Drug Mechanism）**
+
+英夫利昔单抗的作用机制是通过靶向并中和肿瘤坏死因子α（Tumor Necrosis Factor Alpha, TNF-α）。TNF-α是一种关键的炎症和免疫反应介质，过度活跃时可导致炎症性疾病。英夫利昔单抗通过阻断TNF-α的作用，从而减轻炎症，缓解症状并减慢疾病进展。
+
+### **适应症（Indications）**
+
+瑞美斯被批准用于治疗以下疾病：
+
+1.  类风湿性关节炎（Rheumatoid Arthritis）：用于治疗中度至重度活动性类风湿性关节炎。
+
+2.  克罗恩病（Crohn's Disease）：用于治疗中度至重度活动性克罗恩病。
+
+3.  溃疡性结肠炎（Ulcerative Colitis）：用于治疗中度至重度活动性溃疡性结肠炎。
+
+4.  脊柱关节炎（Ankylosing Spondylitis）：用于治疗活动性脊柱关节炎。
+
+5.  银屑病性关节炎（Psoriatic Arthritis）：用于治疗银屑病性关节炎。
+
+6.  斑块型银屑病（Plaque Psoriasis）：用于治疗中度至重度斑块型银屑病。
+
+### **副作用（Side Effects）**
+
+瑞美斯的常见副作用包括感染风险增加（例如上呼吸道感染和尿路感染）、注射反应、头痛和恶心。更严重的副作用可能包括严重感染（如结核）、恶性肿瘤和心血管事件。

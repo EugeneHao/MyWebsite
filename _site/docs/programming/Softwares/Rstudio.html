@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Rstudio – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/programming/Softwares/Notion.html" rel="next">
+<link href="../../../docs/programming/R/rpact.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../tutorial.css">
+<meta property="og:title" content="Rstudio – Hao Sun">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Rstudio – Hao Sun">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../docs/programming/index.html" aria-current="page"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/programming/index.html">Programming</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/Softwares/Rstudio.html">Softwares and Systems</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/Softwares/Rstudio.html">Rstudio</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/R/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/dplyr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">dplyr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/ggplot2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ggplot2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/Rcpp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rcpp</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/Shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shiny</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/stringr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">stringr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/tidyr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">tidyr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/gtsummary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gtsummary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/R/rpact.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">rpact</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Softwares and Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Softwares/Rstudio.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Rstudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Softwares/Notion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Quarto</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Quarto/QuartoBasic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Basic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Softwares/MacOS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MacOS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/Projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/programming/Projects/DB_Shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DB Shiny</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Projects/DB Shiny/ui.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">UI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/programming/Projects/DB Shiny/server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Server</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#quick-notes" id="toc-quick-notes" class="nav-link active" data-scroll-target="#quick-notes">Quick Notes</a></li>
+  <li><a href="#shortcuts" id="toc-shortcuts" class="nav-link" data-scroll-target="#shortcuts">Shortcuts</a>
+  <ul class="collapse">
+  <li><a href="#console" id="toc-console" class="nav-link" data-scroll-target="#console">Console</a></li>
+  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
+  <li><a href="#editing-console-and-source" id="toc-editing-console-and-source" class="nav-link" data-scroll-target="#editing-console-and-source">Editing (Console and Source)</a></li>
+  <li><a href="#completions-console-and-source" id="toc-completions-console-and-source" class="nav-link" data-scroll-target="#completions-console-and-source">Completions (Console and Source)</a></li>
+  <li><a href="#views" id="toc-views" class="nav-link" data-scroll-target="#views">Views</a></li>
+  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help">Help</a></li>
+  <li><a href="#build" id="toc-build" class="nav-link" data-scroll-target="#build">Build</a></li>
+  <li><a href="#debug" id="toc-debug" class="nav-link" data-scroll-target="#debug">Debug</a></li>
+  <li><a href="#plots" id="toc-plots" class="nav-link" data-scroll-target="#plots">Plots</a></li>
+  <li><a href="#gitsvn" id="toc-gitsvn" class="nav-link" data-scroll-target="#gitsvn">Git/SVN</a></li>
+  <li><a href="#session" id="toc-session" class="nav-link" data-scroll-target="#session">Session</a></li>
+  <li><a href="#terminal" id="toc-terminal" class="nav-link" data-scroll-target="#terminal">Terminal</a></li>
+  <li><a href="#main-menu-server" id="toc-main-menu-server" class="nav-link" data-scroll-target="#main-menu-server">Main Menu (Server)</a></li>
+  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility">Accessibility</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/programming/index.html">Programming</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/Softwares/Rstudio.html">Softwares and Systems</a></li><li class="breadcrumb-item"><a href="../../../docs/programming/Softwares/Rstudio.html">Rstudio</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Rstudio</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="quick-notes" class="level1">
+<h1>Quick Notes</h1>
+<ol type="1">
+<li>跳到最顶/底部: <code>Fn</code> + <code>Cmd</code> + <code>Left</code>/<code>Right</code></li>
+</ol>
+</section>
+<section id="shortcuts" class="level1">
+<h1>Shortcuts</h1>
+<section id="console" class="level2">
+<h2 class="anchored" data-anchor-id="console">Console</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 54%">
+<col style="width: 23%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Move cursor to Console</td>
+<td><code>Ctrl+2</code></td>
+<td><code>Ctrl+2</code></td>
+</tr>
+<tr class="even">
+<td>Clear console</td>
+<td><code>Ctrl+L</code></td>
+<td><code>Ctrl+L</code></td>
+</tr>
+<tr class="odd">
+<td>Move cursor to beginning of line</td>
+<td><code>Home</code></td>
+<td><code>Cmd+Left</code></td>
+</tr>
+<tr class="even">
+<td>Move cursor to end of line</td>
+<td><code>End</code></td>
+<td><code>Cmd+Right</code></td>
+</tr>
+<tr class="odd">
+<td>Navigate command history</td>
+<td><code>Up/Down</code></td>
+<td><code>Up/Down</code></td>
+</tr>
+<tr class="even">
+<td>Popup command history</td>
+<td><code>Ctrl+Up</code></td>
+<td><code>Cmd+Up</code></td>
+</tr>
+<tr class="odd">
+<td>Interrupt currently executing command</td>
+<td><code>Esc</code></td>
+<td><code>Esc</code></td>
+</tr>
+<tr class="even">
+<td>Change working directory</td>
+<td><code>Ctrl+Shift+H</code></td>
+<td><code>Ctrl+Shift+H</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="source" class="level2">
+<h2 class="anchored" data-anchor-id="source">Source</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 33%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Go to File/Function</td>
+<td><code>Ctrl+.</code></td>
+<td><code>Ctrl+.</code></td>
+</tr>
+<tr class="even">
+<td>Move cursor to Source Editor</td>
+<td><code>Ctrl+1</code></td>
+<td><code>Ctrl+1</code></td>
+</tr>
+<tr class="odd">
+<td>Toggle document outline</td>
+<td><code>Ctrl+Shift+O</code></td>
+<td><code>Cmd+Shift+O</code></td>
+</tr>
+<tr class="even">
+<td>Toggle Visual Editor</td>
+<td><code>Ctrl+Shift+F4</code></td>
+<td><code>Cmd+Shift+F4</code></td>
+</tr>
+<tr class="odd">
+<td>New document (except on Chrome/Windows)</td>
+<td><code>Ctrl+Shift+N</code></td>
+<td><code>Cmd+Shift+N</code></td>
+</tr>
+<tr class="even">
+<td>New document (Chrome only)</td>
+<td><code>Ctrl+Alt+Shift+N</code></td>
+<td><code>Cmd+Shift+Alt+N</code></td>
+</tr>
+<tr class="odd">
+<td>Open document</td>
+<td><code>Ctrl+O</code></td>
+<td><code>Cmd+O</code></td>
+</tr>
+<tr class="even">
+<td>Save active document</td>
+<td><code>Ctrl+S</code></td>
+<td><code>Cmd+S</code></td>
+</tr>
+<tr class="odd">
+<td>Save all documents</td>
+<td><code>Ctrl+Alt+S</code></td>
+<td><code>Cmd+Option+S</code></td>
+</tr>
+<tr class="even">
+<td>Close active document (except on Chrome)</td>
+<td><code>Ctrl+W</code></td>
+<td><code>Cmd+W</code></td>
+</tr>
+<tr class="odd">
+<td>Close active document (Chrome only)</td>
+<td><code>Ctrl+Alt+W</code></td>
+<td><code>Cmd+Option+W</code></td>
+</tr>
+<tr class="even">
+<td>Close all open documents</td>
+<td><code>Ctrl+Shift+W</code></td>
+<td><code>Cmd+Shift+W</code></td>
+</tr>
+<tr class="odd">
+<td>Close other documents</td>
+<td><code>Ctrl+Shift+Alt+W</code></td>
+<td><code>Cmd+Option+Shift+W</code></td>
+</tr>
+<tr class="even">
+<td>Preview HTML (Markdown and HTML)</td>
+<td><code>Ctrl+Shift+K</code></td>
+<td><code>Cmd+Shift+K</code></td>
+</tr>
+<tr class="odd">
+<td>Knit Document (knitr)</td>
+<td><code>Ctrl+Shift+K</code></td>
+<td><code>Cmd+Shift+K</code></td>
+</tr>
+<tr class="even">
+<td>Compile Notebook</td>
+<td><code>Ctrl+Shift+K</code></td>
+<td><code>Cmd+Shift+K</code></td>
+</tr>
+<tr class="odd">
+<td>Compile PDF (TeX and Sweave)</td>
+<td><code>Ctrl+Shift+K</code></td>
+<td><code>Cmd+Shift+K</code></td>
+</tr>
+<tr class="even">
+<td>Insert chunk (Sweave and Knitr)</td>
+<td><code>Ctrl+Alt+I</code></td>
+<td><code>Cmd+Option+I</code></td>
+</tr>
+<tr class="odd">
+<td>Insert code section</td>
+<td><code>Ctrl+Shift+R</code></td>
+<td><code>Cmd+Shift+R</code></td>
+</tr>
+<tr class="even">
+<td>Run current line/selection</td>
+<td><code>Ctrl+Enter</code></td>
+<td><code>Cmd+Return</code></td>
+</tr>
+<tr class="odd">
+<td>Run current line/selection (retain cursor position)</td>
+<td><code>Alt+Enter</code></td>
+<td><code>Option+Return</code></td>
+</tr>
+<tr class="even">
+<td>Re-run previous region</td>
+<td><code>Ctrl+Alt+P</code></td>
+<td><code>Cmd+Alt+P</code></td>
+</tr>
+<tr class="odd">
+<td>Run current document</td>
+<td><code>Ctrl+Alt+R</code></td>
+<td><code>Cmd+Option+R</code></td>
+</tr>
+<tr class="even">
+<td>Run from document beginning to current line</td>
+<td><code>Ctrl+Alt+B</code></td>
+<td><code>Cmd+Option+B</code></td>
+</tr>
+<tr class="odd">
+<td>Run from current line to document end</td>
+<td><code>Ctrl+Alt+E</code></td>
+<td><code>Cmd+Option+E</code></td>
+</tr>
+<tr class="even">
+<td>Run the current function definition</td>
+<td><code>Ctrl+Alt+F</code></td>
+<td><code>Cmd+Option+F</code></td>
+</tr>
+<tr class="odd">
+<td>Run the current code section</td>
+<td><code>Ctrl+Alt+T</code></td>
+<td><code>Cmd+Option+T</code></td>
+</tr>
+<tr class="even">
+<td>Run previous Sweave/Rmd code</td>
+<td><code>Ctrl+Shift+Alt+P</code></td>
+<td><code>Cmd+Shift+Option+P</code></td>
+</tr>
+<tr class="odd">
+<td>Run the current Sweave/Rmd chunk</td>
+<td><code>Ctrl+Alt+C</code></td>
+<td><code>Cmd+Option+C</code></td>
+</tr>
+<tr class="even">
+<td>Run the next Sweave/Rmd chunk</td>
+<td><code>Ctrl+Alt+N</code></td>
+<td><code>Cmd+Option+N</code></td>
+</tr>
+<tr class="odd">
+<td>Source a file</td>
+<td><code>Ctrl+Alt+G</code></td>
+<td><code>Ctrl+Option+G</code></td>
+</tr>
+<tr class="even">
+<td>Source the current document</td>
+<td><code>Ctrl+Shift+S</code></td>
+<td><code>Cmd+Shift+S</code></td>
+</tr>
+<tr class="odd">
+<td>Source the current document (with echo)</td>
+<td><code>Ctrl+Shift+Enter</code></td>
+<td><code>Cmd+Shift+Return</code></td>
+</tr>
+<tr class="even">
+<td>Send current line/selection to terminal</td>
+<td><code>Ctrl+Alt+Enter</code></td>
+<td><code>Cmd+Option+Return</code></td>
+</tr>
+<tr class="odd">
+<td>Fold Selected</td>
+<td><code>Alt+L</code></td>
+<td><code>Cmd+Option+L</code></td>
+</tr>
+<tr class="even">
+<td>Unfold Selected</td>
+<td><code>Shift+Alt+L</code></td>
+<td><code>Cmd+Shift+Option+L</code></td>
+</tr>
+<tr class="odd">
+<td>Fold All</td>
+<td><code>Alt+O</code></td>
+<td><code>Cmd+Option+O</code></td>
+</tr>
+<tr class="even">
+<td>Unfold All</td>
+<td><code>Shift+Alt+O</code></td>
+<td><code>Cmd+Shift+Option+O</code></td>
+</tr>
+<tr class="odd">
+<td>Go to line</td>
+<td><code>Shift+Alt+G</code></td>
+<td><code>Cmd+Shift+Option+G</code></td>
+</tr>
+<tr class="even">
+<td>Jump to</td>
+<td><code>Shift+Alt+J</code></td>
+<td><code>Cmd+Shift+Option+J</code></td>
+</tr>
+<tr class="odd">
+<td>Expand selection</td>
+<td><code>Ctrl+Shift+Up</code></td>
+<td><code>Ctrl+Option+Shift+Up</code></td>
+</tr>
+<tr class="even">
+<td>Shrink selection</td>
+<td><code>Ctrl+Shift+Down</code></td>
+<td><code>Ctrl+Option+Shift+Down</code></td>
+</tr>
+<tr class="odd">
+<td>Next section</td>
+<td><code>Ctrl+PgDn</code></td>
+<td><code>Cmd+PgDn</code></td>
+</tr>
+<tr class="even">
+<td>Previous section</td>
+<td><code>Ctrl+PgUp</code></td>
+<td><code>Cmd+PgUp</code></td>
+</tr>
+<tr class="odd">
+<td>Split into lines</td>
+<td><code>Ctrl+Alt+A</code></td>
+<td><code>Ctrl+Option+A</code></td>
+</tr>
+<tr class="even">
+<td>Edit lines from start</td>
+<td><code>Ctrl+Alt+Shift+A</code></td>
+<td><code>Ctrl+Shift+Option+A</code></td>
+</tr>
+<tr class="odd">
+<td>Switch to tab</td>
+<td><code>Ctrl+Shift+.</code></td>
+<td><code>Ctrl+Shift+.</code></td>
+</tr>
+<tr class="even">
+<td>Previous tab</td>
+<td><code>Ctrl+F11</code></td>
+<td><code>Ctrl+F11</code></td>
+</tr>
+<tr class="odd">
+<td>Previous tab (desktop)</td>
+<td><code>Ctrl+Shift+Tab</code></td>
+<td><code>Ctrl+Shift+Tab</code></td>
+</tr>
+<tr class="even">
+<td>Next tab</td>
+<td><code>Ctrl+F12</code></td>
+<td><code>Ctrl+F12</code></td>
+</tr>
+<tr class="odd">
+<td>Next tab (desktop)</td>
+<td><code>Ctrl+Tab</code></td>
+<td><code>Ctrl+Tab</code></td>
+</tr>
+<tr class="even">
+<td>First tab</td>
+<td><code>Ctrl+Shift+F11</code></td>
+<td><code>Ctrl+Shift+F11</code></td>
+</tr>
+<tr class="odd">
+<td>Last tab</td>
+<td><code>Ctrl+Shift+F12</code></td>
+<td><code>Ctrl+Shift+F12</code></td>
+</tr>
+<tr class="even">
+<td>Navigate back</td>
+<td><code>Ctrl+F9</code></td>
+<td><code>Cmd+F9</code></td>
+</tr>
+<tr class="odd">
+<td>Navigate forward</td>
+<td><code>Ctrl+F10</code></td>
+<td><code>Cmd+F10</code></td>
+</tr>
+<tr class="even">
+<td>Extract function from selection</td>
+<td><code>Ctrl+Alt+X</code></td>
+<td><code>Cmd+Option+X</code></td>
+</tr>
+<tr class="odd">
+<td>Extract variable from selection</td>
+<td><code>Ctrl+Alt+V</code></td>
+<td><code>Cmd+Option+V</code></td>
+</tr>
+<tr class="even">
+<td>Reindent lines</td>
+<td><code>Ctrl+I</code></td>
+<td><code>Cmd+I</code></td>
+</tr>
+<tr class="odd">
+<td>Comment/uncomment current line/selection</td>
+<td><code>Ctrl+Shift+C</code></td>
+<td><code>Cmd+Shift+C</code></td>
+</tr>
+<tr class="even">
+<td>Reflow Comment</td>
+<td><code>Ctrl+Shift+/</code></td>
+<td><code>Cmd+Shift+/</code></td>
+</tr>
+<tr class="odd">
+<td>Reformat Selection</td>
+<td><code>Ctrl+Shift+A</code></td>
+<td><code>Cmd+Shift+A</code></td>
+</tr>
+<tr class="even">
+<td>Show Diagnostics</td>
+<td><code>Ctrl+Shift+Alt+D</code></td>
+<td><code>Cmd+Shift+Option+D</code></td>
+</tr>
+<tr class="odd">
+<td>Transpose Letters</td>
+<td>No shortcut</td>
+<td><code>Ctrl+T</code></td>
+</tr>
+<tr class="even">
+<td>Move Lines Up/Down</td>
+<td><code>Alt+Up/Down</code></td>
+<td><code>Option+Up/Down</code></td>
+</tr>
+<tr class="odd">
+<td>Copy Lines Up/Down</td>
+<td><code>Shift+Alt+Up/Down</code></td>
+<td><code>Cmd+Option+Up/Down</code></td>
+</tr>
+<tr class="even">
+<td>Jump to Matching Brace/Paren</td>
+<td><code>Ctrl+P</code></td>
+<td><code>Ctrl+P</code></td>
+</tr>
+<tr class="odd">
+<td>Expand to Matching Brace/Paren</td>
+<td><code>Ctrl+Shift+Alt+E</code></td>
+<td><code>Ctrl+Shift+E</code></td>
+</tr>
+<tr class="even">
+<td>Add Cursor Above Current Cursor</td>
+<td><code>Ctrl+Alt+Up</code></td>
+<td><code>Ctrl+Option+Up</code></td>
+</tr>
+<tr class="odd">
+<td>Add Cursor Below Current Cursor</td>
+<td><code>Ctrl+Alt+Down</code></td>
+<td><code>Ctrl+Option+Down</code></td>
+</tr>
+<tr class="even">
+<td>Move Active Cursor Up</td>
+<td><code>Ctrl+Alt+Shift+Up</code></td>
+<td><code>Ctrl+Option+Shift+Up</code></td>
+</tr>
+<tr class="odd">
+<td>Move Active Cursor Down</td>
+<td><code>Ctrl+Alt+Shift+Down</code></td>
+<td><code>Ctrl+Option+Shift+Down</code></td>
+</tr>
+<tr class="even">
+<td>Find and Replace</td>
+<td><code>Ctrl+F</code></td>
+<td><code>Cmd+F</code></td>
+</tr>
+<tr class="odd">
+<td>Find Next</td>
+<td>Win: <code>F3</code>, Linux: <code>Ctrl+G</code></td>
+<td><code>Cmd+G</code></td>
+</tr>
+<tr class="even">
+<td>Find Previous</td>
+<td>Win: <code>Shift+F3</code>, Linux: <code>Ctrl+Shift+G</code></td>
+<td><code>Cmd+Shift+G</code></td>
+</tr>
+<tr class="odd">
+<td>Use Selection for Find</td>
+<td><code>Ctrl+F3</code></td>
+<td><code>Cmd+E</code></td>
+</tr>
+<tr class="even">
+<td>Replace and Find</td>
+<td><code>Ctrl+Shift+J</code></td>
+<td><code>Cmd+Shift+J</code></td>
+</tr>
+<tr class="odd">
+<td>Find in Files</td>
+<td><code>Ctrl+Shift+F</code></td>
+<td><code>Cmd+Shift+F</code></td>
+</tr>
+<tr class="even">
+<td>Check Spelling</td>
+<td><code>F7</code></td>
+<td><code>F7</code></td>
+</tr>
+<tr class="odd">
+<td>Rename Symbol in Scope</td>
+<td><code>Ctrl+Alt+Shift+M</code></td>
+<td><code>Cmd+Option+Shift+M</code></td>
+</tr>
+<tr class="even">
+<td>Insert Roxygen Skeleton</td>
+<td><code>Ctrl+Alt+Shift+R</code></td>
+<td><code>Cmd+Option+Shift+R</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="editing-console-and-source" class="level2">
+<h2 class="anchored" data-anchor-id="editing-console-and-source">Editing (Console and Source)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 34%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Undo</td>
+<td><code>Ctrl+Z</code></td>
+<td><code>Cmd+Z</code></td>
+</tr>
+<tr class="even">
+<td>Redo</td>
+<td><code>Ctrl+Shift+Z</code></td>
+<td><code>Cmd+Shift+Z</code></td>
+</tr>
+<tr class="odd">
+<td>Cut</td>
+<td><code>Ctrl+X</code></td>
+<td><code>Cmd+X</code></td>
+</tr>
+<tr class="even">
+<td>Copy</td>
+<td><code>Ctrl+C</code></td>
+<td><code>Cmd+C</code></td>
+</tr>
+<tr class="odd">
+<td>Paste</td>
+<td><code>Ctrl+V</code></td>
+<td><code>Cmd+V</code></td>
+</tr>
+<tr class="even">
+<td>Select All</td>
+<td><code>Ctrl+A</code></td>
+<td><code>Cmd+A</code></td>
+</tr>
+<tr class="odd">
+<td>Jump to Word</td>
+<td><code>Ctrl+Left/Right</code></td>
+<td><code>Option+Left/Right</code></td>
+</tr>
+<tr class="even">
+<td>Jump to Start/End</td>
+<td><code>Ctrl+Home/End</code> or <code>Ctrl+Up/Down</code></td>
+<td><code>Cmd+Home/End</code> or <code>Cmd+Up/Down</code></td>
+</tr>
+<tr class="odd">
+<td>Delete Line</td>
+<td><code>Ctrl+D</code></td>
+<td><code>Cmd+D</code></td>
+</tr>
+<tr class="even">
+<td>Select</td>
+<td><code>Shift+[Arrow]</code></td>
+<td><code>Shift+[Arrow]</code></td>
+</tr>
+<tr class="odd">
+<td>Select Word</td>
+<td><code>Ctrl+Shift+Left/Right</code></td>
+<td><code>Option+Shift+Left/Right</code></td>
+</tr>
+<tr class="even">
+<td>Select to Line Start</td>
+<td><code>Alt+Shift+Left</code></td>
+<td><code>Cmd+Shift+Left</code></td>
+</tr>
+<tr class="odd">
+<td>Select to Line End</td>
+<td><code>Alt+Shift+Right</code></td>
+<td><code>Cmd+Shift+Right</code></td>
+</tr>
+<tr class="even">
+<td>Select Page Up/Down</td>
+<td><code>Shift+PageUp/PageDown</code></td>
+<td><code>Shift+PageUp/Down</code></td>
+</tr>
+<tr class="odd">
+<td>Select to Start/End</td>
+<td><code>Ctrl+Shift+Home/End</code> or <code>Shift+Alt+Up/Down</code></td>
+<td><code>Cmd+Shift+Up/Down</code></td>
+</tr>
+<tr class="even">
+<td>Delete Word Left</td>
+<td><code>Ctrl+Backspace</code></td>
+<td><code>Option+Backspace</code> or <code>Ctrl+Option+Backspace</code></td>
+</tr>
+<tr class="odd">
+<td>Delete Word Right</td>
+<td>No shortcut</td>
+<td><code>Option+Delete</code></td>
+</tr>
+<tr class="even">
+<td>Delete to Line End</td>
+<td>No shortcut</td>
+<td><code>Ctrl+K</code></td>
+</tr>
+<tr class="odd">
+<td>Delete to Line Start</td>
+<td>No shortcut</td>
+<td><code>Option+Backspace</code></td>
+</tr>
+<tr class="even">
+<td>Indent</td>
+<td><code>Tab</code> (at beginning of line)</td>
+<td><code>Tab</code> (at beginning of line)</td>
+</tr>
+<tr class="odd">
+<td>Outdent</td>
+<td><code>Shift+Tab</code></td>
+<td><code>Shift+Tab</code></td>
+</tr>
+<tr class="even">
+<td>Yank line up to cursor</td>
+<td><code>Ctrl+U</code></td>
+<td><code>Ctrl+U</code></td>
+</tr>
+<tr class="odd">
+<td>Yank line after cursor</td>
+<td><code>Ctrl+K</code></td>
+<td><code>Ctrl+K</code></td>
+</tr>
+<tr class="even">
+<td>Insert currently yanked text</td>
+<td><code>Ctrl+Y</code></td>
+<td><code>Ctrl+Y</code></td>
+</tr>
+<tr class="odd">
+<td>Insert assignment operator</td>
+<td><code>Alt+-</code></td>
+<td><code>Option+-</code></td>
+</tr>
+<tr class="even">
+<td>Insert pipe operator</td>
+<td><code>Ctrl+Shift+M</code></td>
+<td><code>Cmd+Shift+M</code></td>
+</tr>
+<tr class="odd">
+<td>Show help for function at cursor</td>
+<td><code>F1</code></td>
+<td><code>F1</code></td>
+</tr>
+<tr class="even">
+<td>Show source code for function at cursor</td>
+<td><code>F2</code></td>
+<td><code>F2</code></td>
+</tr>
+<tr class="odd">
+<td>Find usages for symbol at cursor (C++)</td>
+<td><code>Ctrl+Alt+U</code></td>
+<td><code>Cmd+Option+U</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="completions-console-and-source" class="level2">
+<h2 class="anchored" data-anchor-id="completions-console-and-source">Completions (Console and Source)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Attempt completion</td>
+<td><code>Tab</code> or <code>Ctrl+Space</code></td>
+<td><code>Tab</code> or <code>Cmd+Space</code></td>
+</tr>
+<tr class="even">
+<td>Navigate candidates</td>
+<td><code>Up/Down</code></td>
+<td><code>Up/Down</code></td>
+</tr>
+<tr class="odd">
+<td>Accept selected candidate</td>
+<td><code>Enter</code>, <code>Tab</code>, or <code>Right</code></td>
+<td><code>Enter</code>, <code>Tab</code>, or <code>Right</code></td>
+</tr>
+<tr class="even">
+<td>Dismiss completion popup</td>
+<td><code>Esc</code></td>
+<td><code>Esc</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="views" class="level2">
+<h2 class="anchored" data-anchor-id="views">Views</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Move focus to Source Editor</td>
+<td><code>Ctrl+1</code></td>
+<td><code>Ctrl+1</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Source Editor</td>
+<td><code>Ctrl+Shift+1</code></td>
+<td><code>Ctrl+Shift+1</code></td>
+</tr>
+<tr class="odd">
+<td>Add Source Column</td>
+<td><code>Ctrl+F7</code></td>
+<td><code>Cmd+F7</code></td>
+</tr>
+<tr class="even">
+<td>Move focus to Console</td>
+<td><code>Ctrl+2</code></td>
+<td><code>Ctrl+2</code></td>
+</tr>
+<tr class="odd">
+<td>Zoom Console</td>
+<td><code>Ctrl+Shift+2</code></td>
+<td><code>Ctrl+Shift+2</code></td>
+</tr>
+<tr class="even">
+<td>Move focus to Help</td>
+<td><code>Ctrl+3</code></td>
+<td><code>Ctrl+3</code></td>
+</tr>
+<tr class="odd">
+<td>Zoom Help</td>
+<td><code>Ctrl+Shift+3</code></td>
+<td><code>Ctrl+Shift+3</code></td>
+</tr>
+<tr class="even">
+<td>Move focus to Terminal</td>
+<td><code>Alt+Shift+M</code></td>
+<td><code>Shift+Option+M</code></td>
+</tr>
+<tr class="odd">
+<td>Show History</td>
+<td><code>Ctrl+4</code></td>
+<td><code>Ctrl+4</code></td>
+</tr>
+<tr class="even">
+<td>Zoom History</td>
+<td><code>Ctrl+Shift+4</code></td>
+<td><code>Ctrl+Shift+4</code></td>
+</tr>
+<tr class="odd">
+<td>Show Files</td>
+<td><code>Ctrl+5</code></td>
+<td><code>Ctrl+5</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Files</td>
+<td><code>Ctrl+Shift+5</code></td>
+<td><code>Ctrl+Shift+5</code></td>
+</tr>
+<tr class="odd">
+<td>Show Plots</td>
+<td><code>Ctrl+6</code></td>
+<td><code>Ctrl+6</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Plots</td>
+<td><code>Ctrl+Shift+6</code></td>
+<td><code>Ctrl+Shift+6</code></td>
+</tr>
+<tr class="odd">
+<td>Show Packages</td>
+<td><code>Ctrl+7</code></td>
+<td><code>Ctrl+7</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Packages</td>
+<td><code>Ctrl+Shift+7</code></td>
+<td><code>Ctrl+Shift+7</code></td>
+</tr>
+<tr class="odd">
+<td>Show Environment</td>
+<td><code>Ctrl+8</code></td>
+<td><code>Ctrl+8</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Environment</td>
+<td><code>Ctrl+Shift+8</code></td>
+<td><code>Ctrl+Shift+8</code></td>
+</tr>
+<tr class="odd">
+<td>Show Viewer</td>
+<td><code>Ctrl+9</code></td>
+<td><code>Ctrl+9</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Viewer</td>
+<td><code>Ctrl+Shift+9</code></td>
+<td><code>Ctrl+Shift+9</code></td>
+</tr>
+<tr class="odd">
+<td>Show Git/SVN</td>
+<td><code>Ctrl+F1</code></td>
+<td><code>Cmd+F1</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Git/SVN</td>
+<td><code>Ctrl+Shift+F1</code></td>
+<td><code>Ctrl+Shift+F1</code></td>
+</tr>
+<tr class="odd">
+<td>Show Build</td>
+<td><code>Ctrl+F2</code></td>
+<td><code>Cmd+F2</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Build</td>
+<td><code>Ctrl+Shift+F2</code></td>
+<td><code>Ctrl+Shift+F2</code></td>
+</tr>
+<tr class="odd">
+<td>Show Connections</td>
+<td><code>Ctrl+F5</code></td>
+<td>No shortcut</td>
+</tr>
+<tr class="even">
+<td>Zoom Connections</td>
+<td><code>Ctrl+Shift+F5</code></td>
+<td><code>Ctrl+Shift+F5</code></td>
+</tr>
+<tr class="odd">
+<td>Show Find in Files Results</td>
+<td><code>Ctrl+F6</code></td>
+<td><code>Cmd+F6</code></td>
+</tr>
+<tr class="even">
+<td>Zoom Tutorial</td>
+<td><code>Ctrl+Shift+F6</code></td>
+<td><code>Ctrl+Shift+F6</code></td>
+</tr>
+<tr class="odd">
+<td>Sync Editor &amp; PDF Preview</td>
+<td><code>Ctrl+F8</code></td>
+<td><code>Cmd+F8</code></td>
+</tr>
+<tr class="even">
+<td>Global Options</td>
+<td>No shortcut</td>
+<td><code>Cmd+,</code> [comma] (Chrome, Desktop), <code>Option+Cmd+,</code> [comma] (Safari, Firefox)</td>
+</tr>
+<tr class="odd">
+<td>Project Options</td>
+<td>No shortcut</td>
+<td><code>Shift+Cmd+,</code> [comma]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="help" class="level2">
+<h2 class="anchored" data-anchor-id="help">Help</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 43%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Show Keyboard Shortcut Reference</td>
+<td><code>Alt+Shift+K</code></td>
+<td><code>Option+Shift+K</code></td>
+</tr>
+<tr class="even">
+<td>Search R Help</td>
+<td><code>Ctrl+Alt+F1</code></td>
+<td><code>Ctrl+Option+F1</code></td>
+</tr>
+<tr class="odd">
+<td>Find in Help Topic</td>
+<td><code>Ctrl+F</code></td>
+<td><code>Cmd+F</code></td>
+</tr>
+<tr class="even">
+<td>Previous Help Topic</td>
+<td><code>Shift+Alt+F2</code></td>
+<td><code>Shift+Option+F2</code></td>
+</tr>
+<tr class="odd">
+<td>Next Help Topic</td>
+<td><code>Shift+Alt+F3</code></td>
+<td><code>Shift+Options+F3</code></td>
+</tr>
+<tr class="even">
+<td>Show Command Palette</td>
+<td><code>Ctrl+Shift+P</code>, <code>Ctrl+Alt+Shift+P</code> (Firefox)</td>
+<td><code>Cmd+Shift+P</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="build" class="level2">
+<h2 class="anchored" data-anchor-id="build">Build</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Build and Reload</td>
+<td><code>Ctrl+Shift+B</code></td>
+<td><code>Cmd+Shift+B</code></td>
+</tr>
+<tr class="even">
+<td>Load All (devtools)</td>
+<td><code>Ctrl+Shift+L</code></td>
+<td><code>Cmd+Shift+L</code></td>
+</tr>
+<tr class="odd">
+<td>Test Package (Desktop)</td>
+<td><code>Ctrl+Shift+T</code></td>
+<td><code>Cmd+Shift+T</code></td>
+</tr>
+<tr class="even">
+<td>Test Package (Web)</td>
+<td><code>Ctrl+Alt+F7</code></td>
+<td><code>Cmd+Option+F7</code></td>
+</tr>
+<tr class="odd">
+<td>Check Package</td>
+<td><code>Ctrl+Shift+E</code></td>
+<td><code>Cmd+Shift+E</code></td>
+</tr>
+<tr class="even">
+<td>Document Package</td>
+<td><code>Ctrl+Shift+D</code></td>
+<td><code>Cmd+Shift+D</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="debug" class="level2">
+<h2 class="anchored" data-anchor-id="debug">Debug</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Toggle Breakpoint</td>
+<td><code>Shift+F9</code></td>
+<td><code>Shift+F9</code></td>
+</tr>
+<tr class="even">
+<td>Execute Next Line</td>
+<td><code>F10</code></td>
+<td><code>F10</code></td>
+</tr>
+<tr class="odd">
+<td>Step Into Function</td>
+<td><code>Shift+F4</code></td>
+<td><code>Shift+F4</code></td>
+</tr>
+<tr class="even">
+<td>Finish Function/Loop</td>
+<td><code>Shift+F7</code></td>
+<td><code>Shift+F7</code></td>
+</tr>
+<tr class="odd">
+<td>Continue</td>
+<td><code>Shift+F5</code></td>
+<td><code>Shift+F5</code></td>
+</tr>
+<tr class="even">
+<td>Stop Debugging</td>
+<td><code>Shift+F8</code></td>
+<td><code>Shift+F8</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="plots" class="level2">
+<h2 class="anchored" data-anchor-id="plots">Plots</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Previous plot</td>
+<td><code>Ctrl+Alt+F11</code></td>
+<td><code>Cmd+Option+F11</code></td>
+</tr>
+<tr class="even">
+<td>Next plot</td>
+<td><code>Ctrl+Alt+F12</code></td>
+<td><code>Cmd+Option+F12</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gitsvn" class="level2">
+<h2 class="anchored" data-anchor-id="gitsvn">Git/SVN</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 52%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Diff active source document</td>
+<td><code>Ctrl+Alt+D</code></td>
+<td><code>Ctrl+Option+D</code></td>
+</tr>
+<tr class="even">
+<td>Commit changes</td>
+<td><code>Ctrl+Alt+M</code></td>
+<td><code>Ctrl+Option+M</code></td>
+</tr>
+<tr class="odd">
+<td>Scroll diff view</td>
+<td><code>Ctrl+Up/Down</code></td>
+<td><code>Ctrl+Up/Down</code></td>
+</tr>
+<tr class="even">
+<td>Stage/Unstage (Git)</td>
+<td><code>Spacebar</code></td>
+<td><code>Spacebar</code></td>
+</tr>
+<tr class="odd">
+<td>Stage/Unstage and move to next (Git)</td>
+<td><code>Enter</code></td>
+<td><code>Return</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="session" class="level2">
+<h2 class="anchored" data-anchor-id="session">Session</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Quit Session (desktop only)</td>
+<td><code>Ctrl+Q</code></td>
+<td><code>Cmd+Q</code></td>
+</tr>
+<tr class="even">
+<td>Restart R Session</td>
+<td><code>Ctrl+Shift+F10</code></td>
+<td><code>Cmd+Shift+F10</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="terminal" class="level2">
+<h2 class="anchored" data-anchor-id="terminal">Terminal</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>New Terminal</td>
+<td><code>Alt+Shift+R</code></td>
+<td><code>Shift+Option+R</code></td>
+</tr>
+<tr class="even">
+<td>Move Focus to Terminal</td>
+<td><code>Alt+Shift+M</code></td>
+<td><code>Shift+Option+M</code></td>
+</tr>
+<tr class="odd">
+<td>Previous Terminal</td>
+<td><code>Alt+Shift+F11</code></td>
+<td><code>Shift+Option+F11</code></td>
+</tr>
+<tr class="even">
+<td>Next Terminal</td>
+<td><code>Alt+Shift+F12</code></td>
+<td><code>Shift+Option+F12</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="main-menu-server" class="level2">
+<h2 class="anchored" data-anchor-id="main-menu-server">Main Menu (Server)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>File Menu</td>
+<td><code>Alt+Shift+F</code></td>
+<td><code>Ctrl+Option+F</code></td>
+</tr>
+<tr class="even">
+<td>Edit Menu</td>
+<td><code>Alt+Shift+E</code></td>
+<td><code>Ctrl+Option+I</code></td>
+</tr>
+<tr class="odd">
+<td>Code Menu</td>
+<td><code>Alt+Shift+C</code></td>
+<td><code>Ctrl+Option+C</code></td>
+</tr>
+<tr class="even">
+<td>View Menu</td>
+<td><code>Alt+Shift+V</code></td>
+<td><code>Ctrl+Option+V</code></td>
+</tr>
+<tr class="odd">
+<td>Plots Menu</td>
+<td><code>Alt+Shift+P</code></td>
+<td><code>Ctrl+Option+P</code></td>
+</tr>
+<tr class="even">
+<td>Session Menu</td>
+<td><code>Alt+Shift+S</code></td>
+<td><code>Ctrl+Option+S</code></td>
+</tr>
+<tr class="odd">
+<td>Build Menu</td>
+<td><code>Alt+Shift+B</code></td>
+<td><code>Ctrl+Option+B</code></td>
+</tr>
+<tr class="even">
+<td>Debug Menu</td>
+<td><code>Alt+Shift+U</code></td>
+<td><code>Ctrl+Option+U</code></td>
+</tr>
+<tr class="odd">
+<td>Profile Menu</td>
+<td><code>Alt+Shift+I</code></td>
+<td><code>Ctrl+Option+O</code></td>
+</tr>
+<tr class="even">
+<td>Tools Menu</td>
+<td><code>Alt+Shift+T</code></td>
+<td><code>Ctrl+Option+T</code></td>
+</tr>
+<tr class="odd">
+<td>Help Menu</td>
+<td><code>Alt+Shift+H</code></td>
+<td><code>Ctrl+Option+H</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="accessibility" class="level2">
+<h2 class="anchored" data-anchor-id="accessibility">Accessibility</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 26%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Windows &amp; Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Toggle Screen Reader Support</td>
+<td><code>Alt+Shift+/</code></td>
+<td><code>Ctrl+Option+/</code></td>
+</tr>
+<tr class="even">
+<td>Toggle Tab Key Always Moves Focus</td>
+<td><code>Ctrl+Alt+Shift+T</code></td>
+<td><code>Ctrl+Option+Shift+T</code></td>
+</tr>
+<tr class="odd">
+<td>Speak Text Editor Location</td>
+<td><code>Ctrl+Alt+Shift+B</code></td>
+<td><code>Ctrl+Option+Shift+B</code></td>
+</tr>
+<tr class="even">
+<td>Focus Main Toolbar</td>
+<td><code>Alt+Shift+Y</code></td>
+<td><code>Ctrl+Option+Y</code></td>
+</tr>
+<tr class="odd">
+<td>Focus Console Output</td>
+<td><code>Alt+Shift+2</code></td>
+<td><code>Ctrl+Option+2</code></td>
+</tr>
+<tr class="even">
+<td>Focus Next Pane</td>
+<td><code>F6</code></td>
+<td><code>F6</code></td>
+</tr>
+<tr class="odd">
+<td>Focus Previous Pane</td>
+<td><code>Shift+F6</code></td>
+<td><code>Shift+F6</code></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/programming/R/rpact.html" class="pagination-link" aria-label="rpact">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">rpact</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/programming/Softwares/Notion.html" class="pagination-link" aria-label="Notion">
+        <span class="nav-page-text">Notion</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

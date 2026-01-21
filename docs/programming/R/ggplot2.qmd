@@ -1,0 +1,103 @@
+---
+title: "ggplot2"
+search: true
+---
+
+```{r echo = FALSE, message=FALSE}
+require(ggplot2)
+require(dplyr)
+```
+
+-   `guides`:
+    -   `fill`, `col` and `linetype`: change the legend for fill, col and linetype, respectively
+    -   `xxx = guide_legend(title = NULL)`: remove legend title (i.e. xxx = col)
+    -   `xxx = guide_legend(nrow=4, byrow=TRUE)`; put the legends into 4 rows
+-   `theme`:
+    -   `legend.position='none'`: hide legend
+    -   `legend.position='bottom'`: put legend at the bottom
+    -   `axis.title.x = element_blank()`: remove x axis name (or use `xlab()`)
+    -   `axis.text.x = element_text(angle = 45)`: adjust x axis text angle
+    -   `axis.text.x = element_blank()`: remove labels on x axis
+    -   `axis.text.x = element_text(color = c("red"))`: change label colors on x axis
+    -   `plot.title = element_text(hjust = 0.5)`: **center title**
+    -   `text=element_text(size=15)`: **change font size**
+        -   use `base_size = 15` in `theme_xx()`
+        -   use `family = "xxx"` to change font family
+-   `scale_color_manual`: modify legends
+    -   `values`: change color
+    -   `labels`: change legends labels
+    -   `name`: change legend title
+-   `scale_x_continuous`: change breaks and range of x axis
+    -   `break`: set breaks
+    -   `limits`: set range
+-   `stat_function`: add function curve
+
+```{r eval = F}
+stat_function(color = 'blue', fun=dunif, args=list(0,1),size=1.2)
+```
+
+-   `geom_segment`: segment plot
+
+```{r eval=F}
+ggplot(d2,
+      aes(x = lower,  #横向线段
+          xend  = upper,
+          y     = county,
+          yend  = county))+
+    geom_segment(lwd=1, alpha=0.5) +
+    labs(x='mean', y="county", title='95% Credible Intervals') +
+    scale_color_brewer(palette='Set1') +
+    scale_y_reverse() +
+    theme_bw()
+```
+
+::: callout-note
+Remark: change segment line type, color and width:
+
+-   `scale_linetype_manual(values=c("twodash", "dotted"))` with choices ("solid", "twodash", "dotted", "longdash", "dotdash", "dashed", "blank")\
+-   `scale_color_manual(values=c('#999999','#E69F00'))`\
+-   `scale_size_manual(values=c(1, 1.5))`\
+:::
+
+-   `ggpubr::ggarrange(p1, p2, ..., ncol = )`: plot multiple ggplots in one figure
+-   Or `gridExtra::grid.arrange(..., ncol = )`
+-   Or `require(cowplot)`
+
+```{r eval = F}
+myplots = vector("list", n) 
+myplot[[i]]<- ggplot(...) 
+plot_grid(plotlist=myplots)
+```
+
+-   Or `require(grid)`
+
+```{r eval = F}
+grid.newpage()  #新建图表版面
+pushViewport(viewport(layout = grid.layout(2,2))) #将版面分成2*2矩阵
+vplayout <- function(x,y){viewport(layout.pos.row = x, layout.pos.col = y)}  
+print(chart3, vp = vplayout(1,1:2))   #将（1,1)和(1,2)的位置画图chart3
+print(chart2, vp = vplayout(2,1))     #将(2,1)的位置画图chart2          
+print(chart1 , vp = vplayout(2,2))    #将（2,2)的位置画图chart1
+```
+
+-   `scale_y_log10()`: tale log of y axis
+-   `geom_hline()`, `geom_vline()`, `geom_abline`
+
+```{r eval = F}
+geom_hline(yintercept=25, color="orange", size=1) +
+geom_vline(xintercept=3, color="orange", size=1
+```
+
+-   `geom_errorbar()`: boxplot or scatterplot add confidence interval
+
+```{r eval = F}
+geom_errorbar(aes(ymin = mean_gain-1.96*sd_gain, 
+                  ymax = mean_gain+1.96*sd_gain, colour = Diet), data = ChickError)
+```
+
+-   `forcats::fct_inorder`: **Reorder factor levels by first appearance, frequency, or numeric order**
+
+```{r}
+a = factor(rep(c("Roads", "Canals", "Early railways", "Railways"), each = 3))
+a %>% forcats::fct_inorder() %>% levels()
+```

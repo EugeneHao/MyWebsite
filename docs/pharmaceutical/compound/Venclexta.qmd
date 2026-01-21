@@ -1,0 +1,20 @@
+---
+title: "Venclexta"
+---
+
+## 药物简介（Drug Overview）
+威奈托克拉克斯（Venetoclax，商业名称为Venclexta）是一种口服药物，属于B细胞淋巴瘤-2（B-cell Lymphoma-2, BCL-2）抑制剂。它主要用于治疗某些类型的慢性淋巴细胞白血病（Chronic Lymphocytic Leukemia, CLL）和小淋巴细胞性淋巴瘤（Small Lymphocytic Lymphoma, SLL）。
+
+## 作用机制（Mechanism of Action）
+威奈托克拉克斯的作用机制是通过靶向并抑制BCL-2蛋白。BCL-2是一种在许多癌细胞中过度表达的蛋白质，它有助于癌细胞的生存和抗凋亡（防止细胞死亡）。通过抑制BCL-2，威奈托克拉克斯可以促进癌细胞的凋亡，并限制癌症的增长。
+
+## 适应症（Indications）
+威奈托克拉克斯被批准用于以下情况：
+
++ 治疗慢性淋巴细胞白血病和小淋巴细胞性淋巴瘤，特别是在其他治疗方案无效或不适用的患者。
++ 与其他药物联合使用，用于某些患者的一线治疗或复发/难治性病例的治疗。
+
+## 副作用（Side Effects）
+
+威奈托克拉克斯的常见副作用包括贫血（Anemia）、中性粒细胞减少症（Neutropenia）、腹泻（Diarrhea）和恶心（Nausea）。在治疗初期，患者可能会经历肿瘤溶解综合征（Tumor Lysis Syndrome, TLS），这是一种由于癌细胞大量死亡而导致的严重情况，需要密切监控和预防。
+

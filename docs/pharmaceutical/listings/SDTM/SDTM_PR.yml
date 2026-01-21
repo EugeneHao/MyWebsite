@@ -1,0 +1,59 @@
+- name: PRTRT
+  domain: PR
+  label: Reported Name of Procedure
+
+- name: PRDECOD
+  domain: PR
+  label: Standardized Procedure Name
+
+- name: PRCAT
+  domain: PR
+  label: Category for Procedure
+
+- name: PRSCAT
+  domain: PR
+  label: Subcategory for Procedure
+
+- name: PRSTDTC
+  domain: PR
+  label: Start Date/Time of Procedure
+
+- name: PRENDTC
+  domain: PR
+  label: End Date/Time of Procedure
+
+- name: PRSTDY
+  domain: PR
+  label: Study Day of Procedure Start
+
+- name: PRENDY
+  domain: PR
+  label: Study Day of Procedure End
+
+- name: PRLOC
+  domain: PR
+  label: Location of Procedure
+
+- name: PRMETHOD
+  domain: PR
+  label: Method of Procedure
+
+- name: PRSTAT
+  domain: PR
+  label: Completion Status
+
+- name: PRREASND
+  domain: PR
+  label: Reason Not Done
+
+- name: PRGRPID
+  domain: PR
+  label: Group ID
+
+- name: PRREFID
+  domain: PR
+  label: Reference ID
+
+- name: PRSPID
+  domain: PR
+  label: Sponsor-Defined Identifier

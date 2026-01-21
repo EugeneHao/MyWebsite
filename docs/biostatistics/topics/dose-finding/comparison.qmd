@@ -1,0 +1,109 @@
+---
+title: "Literatures for Design Comparision"
+format:
+  revealjs: 
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    touch: true
+    controls: true
+---
+
+## 
+
+#### [Improving early phase oncology clinical trial design: The case for finding the optimal biological dose](https://drive.google.com/file/d/1HLDgzTmYXX91iGPezj4si8JbAlKTX0xy/view?usp=sharing)
+
+-   BOIN
+-   BOIN12
+
+## 
+
+#### [An overview of the BOIN design and its current extensions for novel early-phase oncology trials](https://drive.google.com/file/d/1HUinepc2zKNZpqythslKsXPV-83BgJJT/view?usp=sharing)
+
+::::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   BOIN
+-   MT-BOIN
+-   gBOIN
+-   TITE-BOIN
+-   TITE-gBOIN
+-   BOIN-ET
+-   BOIN12
+:::
+
+::: {style="flex: 50%;"}
+-   U-BOIN
+-   gBOIN-ET
+-   TITE-BOIN-ET
+-   TITE-BOIN12
+-   Combination BOIN
+:::
+:::::
+
+## 
+
+#### [Optimal biological dose selection in dose-finding trials with model-assisted designs based on efficacy and toxicity: a simulation study](https://drive.google.com/file/d/1M9URksouzGDXbZMKPPWgYEyX38_Xb4IP/view?usp=sharing)
+
+-   BOIN-ET
+-   STEIN
+-   TEPI
+
+## 
+
+#### [Comparison Between Simultaneous and Sequential Utilization of Safety and Efficacy for Optimal Dose Determination in Bayesian Model-Assisted Designs](https://drive.google.com/file/d/1M9R1BpatSSFDWjoQaPnF4bvOUa-XEF_5/view?usp=sharing)
+
+::::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   BOIN-ET
+-   BOIN12
+-   TITE-BOIN-ET
+-   TITE-BOIN12
+:::
+
+::: {style="flex: 50%;"}
+-   BOIN + BOP2
+-   TIET-BOIN + BOP2
+-   BOIN + TOP
+-   TITE-BOIN + TOP
+:::
+:::::
+
+## 
+
+#### [Comparative review of novel model-assisted designs for phase I/II clinical trials](https://drive.google.com/file/d/1S3_wGnVTQj0VCgdcrjTVt0xppBzpJrc4/view?usp=drive_link)
+
+::::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   BOIN-ET
+-   BOIN12
+-   STEIN
+-   uTPI
+:::
+
+::: {style="flex: 50%;"}
+-   TEPI
+-   PRINTE
+-   Joint i3+3
+-   EffTox
+:::
+:::::
+
+
+## 
+
+#### [Statistical operating characteristics of current early phase dose finding designs with toxicity and efficacy in oncology](https://drive.google.com/file/d/107zZin2nIwu_9HfshnHoCA7ybre26tN5/view?usp=drive_link)
+
+::::: {style="display: flex;"}
+::: {style="flex: 50%;"}
+-   BOIN-ET
+-   BOIN12
+-   STEIN
+-   uTPI
+:::
+
+::: {style="flex: 50%;"}
+-   TEPI-2
+-   PRINTE
+-   UBI
+:::
+:::::

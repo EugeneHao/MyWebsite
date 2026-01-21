@@ -1,0 +1,90 @@
+---
+title: "Drug Naming Rules"
+---
+
+### 药物命名规则
+
+1.  **-mab**: 单克隆抗体（Monoclonal Antibodies）。例如：Adalimumab（阿达木单抗）。
+
+2.  **-nib**: 酪氨酸激酶抑制剂（Tyrosine Kinase Inhibitors）。例如：Imatinib（伊马替尼）。
+
+3.  **-xaban**: 口服Xa因子抑制剂（Oral Factor Xa Inhibitors）。例如：Apixaban（阿哌沙班）。
+
+4.  **-pril**: 血管紧张素转化酶抑制剂（Angiotensin-Converting Enzyme Inhibitors）。例如：Lisinopril（利西普利）。
+
+5.  **-sartan**: 血管紧张素II受体拮抗剂（Angiotensin II Receptor Blockers）。例如：Losartan（洛沙坦）。
+
+6.  **-statin**: HMG-CoA还原酶抑制剂（Statins, used for lowering cholesterol）。例如：Atorvastatin（阿托伐他汀）。
+
+7.  **-lukast**: 白三烯受体拮抗剂（Leukotriene Receptor Antagonists）。例如：Montelukast（蒙特鲁卡斯特）。
+
+8.  **-gliptin**: 二肽基肽酶-4抑制剂（Dipeptidyl Peptidase-4 Inhibitors）。例如：Sitagliptin（西格列汀）。
+
+9.  **-gliflozin**: 钠-葡萄糖共转运蛋白2抑制剂（Sodium-Glucose Co-Transporter 2 Inhibitors）。例如：Empagliflozin（恩格列净）。
+
+10. **-cillin**: 青霉素类抗生素（Penicillins）。例如：Amoxicillin（阿莫西林）。
+
+11. **-azole**: 抗真菌药（Antifungals）。例如：Fluconazole（氟康唑）。
+
+12. **-dipine**: 钙通道阻断剂（Calcium Channel Blockers）。例如：Amlodipine（氨氯地平）。
+
+13. **-triptan**: 5-HT1受体激动剂（Serotonin Receptor Agonists, used for migraines）。例如：Sumatriptan（舒马曲坦）。
+
+14. **-olol**: β-受体阻滞剂（Beta Blockers）。例如：Metoprolol（美托洛尔）。
+
+15. **-oxacin**: 喹诺酮类抗菌药（Quinolone Antibiotics）。例如：Ciprofloxacin（环丙沙星）。
+
+16. **-cycline**: 四环素类抗生素（Tetracycline Antibiotics）。例如：Doxycycline（多西环素）。
+
+17. **-thiazide**: 噻嗪类利尿剂（Thiazide Diuretics）。例如：Hydrochlorothiazide（氢氯噻嗪）。
+
+18. **-prazole**: 质子泵抑制剂（Proton Pump Inhibitors）。例如：Omeprazole（奥美拉唑）。
+
+19. **-navir**: 蛋白酶抑制剂（Protease Inhibitors, used in HIV/AIDS treatment）。例如：Ritonavir（利托那韦）。
+
+20. **-terol**: β2肾上腺素受体激动剂（Beta 2 Adrenergic Agonists）。例如：Salbutamol（沙丁胺醇）。
+
+21. **-vir**: 抗病毒药（Antivirals）。例如：Acyclovir（阿昔洛韦）。
+
+22. **-ase**: 酶类药物（Enzymes）。例如：Alteplase（阿替普酶），用于溶解血栓。
+
+23. **-cept**: 融合蛋白（Fusion Proteins）。例如：Etanercept（依那西普），用于治疗类风湿性关节炎。
+
+24. **-ibine**: 抗肿瘤药，酪氨酸激酶抑制剂（Tyrosine Kinase Inhibitors）。例如：Lapatinib（拉帕替尼），用于治疗乳腺癌。
+
+25. **-gliptin**: 二肽基肽酶-4（DPP-4）抑制剂，用于2型糖尿病治疗。例如：Sitagliptin（西格列汀）。
+
+26. **-fil**: 磷酸二酯酶抑制剂（Phosphodiesterase Inhibitors），常用于治疗勃起功能障碍。例如：Sildenafil（西地那非）。
+
+27. **-uride**: 核苷类似物（Nucleoside Analogs），常用于抗病毒治疗。例如：Zidovudine（齐多夫定），用于HIV治疗。
+
+28. **-stigmine**: 胆碱酯酶抑制剂（Cholinesterase Inhibitors），常用于治疗阿尔茨海默症。例如：Donepezil（多奈哌齐）。
+
+29. **-mustine**: 烷化剂（Alkylating Agents），用于化疗。例如：Carmustine（卡莫司汀）。
+
+30. **-parin**: 低分子量肝素（Low Molecular Weight Heparins）。例如：Enoxaparin（依诺肝素），用于防止血栓。
+
+31. **-tide**: 肽类药物（Peptides），通常用于治疗糖尿病和肥胖。例如：Exenatide（艾塞那肽）。
+
+32. **-sartan**: 血管紧张素II受体拮抗剂（Angiotensin II Receptor Blockers）。例如：Losartan（洛沙坦）。
+
+33. **-statin**: HMG-CoA还原酶抑制剂（Cholesterol Lowering Agents）。例如：Atorvastatin（阿托伐他汀）。
+
+34. **-lukast**: 白三烯受体拮抗剂（Leukotriene Receptor Antagonists）。例如：Montelukast（蒙特卢卡斯特）。
+
+35. **-grel**: ADP受体拮抗剂（Antiplatelet Agents）。例如：Clopidogrel（氯吡格雷）。
+
+36. **-parin**: 抗凝血药（Anticoagulants）。例如：Heparin（肝素）。
+
+37. **-tidine**: 组胺H2受体拮抗剂（Histamine H2 Antagonists）。例如：Ranitidine（雷尼替丁）。
+
+38. **-zepam / -zolam**: 苯二氮卓类（Benzodiazepines）。例如：Diazepam（地西泮）、Alprazolam（阿普唑仑）。
+
+39. **-afil**: 磷酸二酯酶5抑制剂（Phosphodiesterase Type 5 Inhibitors）。例如：Sildenafil（西地那非）。
+
+40. **-limus**: 免疫抑制剂（Immunosuppressants）。例如：Tacrolimus（他克莫司）。
+
+41. **-mustine**: 烷化剂（Alkylating Agents）。例如：Carmustine（卡莫司汀）。
+
+42. **-domide**: 免疫调节剂 (Immunomodulating agents)，特别是 Cereblon 结合的 IMiD / CELMoD 类药物。
+

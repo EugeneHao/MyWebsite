@@ -1,0 +1,67 @@
+- name: MBTEST
+  domain: MB
+  label: Microbiology Test Name
+
+- name: MBTESTCD
+  domain: MB
+  label: Microbiology Test Short Name
+
+- name: MBORRES
+  domain: MB
+  label: Result or Finding as Collected
+
+- name: MBSTRESC
+  domain: MB
+  label: Character Result/Finding in Standard Format
+
+- name: MBSTRESN
+  domain: MB
+  label: Numeric Result/Finding in Standard Units
+
+- name: MBSTAT
+  domain: MB
+  label: Completion Status
+
+- name: MBREASND
+  domain: MB
+  label: Reason Not Done
+
+- name: MBCAT
+  domain: MB
+  label: Category for Microbiology Specimen
+
+- name: MBSCAT
+  domain: MB
+  label: Subcategory for Microbiology Specimen
+
+- name: MBSPEC
+  domain: MB
+  label: Specimen Material Type
+
+- name: MBSPCCND
+  domain: MB
+  label: Specimen Condition
+
+- name: MBDTC
+  domain: MB
+  label: Date/Time of Specimen Collection
+
+- name: MBSTDY
+  domain: MB
+  label: Study Day of Specimen Collection
+
+- name: MBMETHOD
+  domain: MB
+  label: Method of Test or Examination
+
+- name: MBGRPID
+  domain: MB
+  label: Group ID
+
+- name: MBREFID
+  domain: MB
+  label: Reference ID
+
+- name: MBSPID
+  domain: MB
+  label: Sponsor-Defined Identifier

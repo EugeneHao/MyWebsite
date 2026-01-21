@@ -1,0 +1,23 @@
+---
+title: "Campath"
+---
+
+### **药物简介（Drug Overview）**
+
+坎帕斯（Campath，通用名为亚历单抗 Alemtuzumab）是一种单克隆抗体（Monoclonal Antibody），原本用于治疗某些类型的癌症，如慢性淋巴细胞白血病（Chronic Lymphocytic Leukemia, CLL）。此外，它也被用于治疗多发性硬化症（Multiple Sclerosis, MS）。
+
+### **药物原理（Drug Mechanism）**
+
+亚历单抗的作用机制是靶向CD52，这是一种在大多数B和T淋巴细胞表面表达的分子。通过结合到CD52，亚历单抗能够诱导这些细胞的凋亡，从而减少白血病细胞或在多发性硬化症中减轻免疫系统的异常活动。
+
+### **适应症（Indications）**
+
+坎帕斯被批准用于治疗以下疾病：
+
+1.  B细胞慢性淋巴细胞白血病（B-cell Chronic Lymphocytic Leukemia, B-CLL）：用于未接受前期治疗或治疗后复发的患者。
+
+2.  多发性硬化症（Multiple Sclerosis, MS）：作为降低复发率和延缓残疾进展的治疗选项。
+
+### **副作用（Side Effects）**
+
+坎帕斯的常见副作用包括感染风险增加、低血细胞计数、发热、恶心和皮疹。由于其强大的免疫抑制作用，可能增加严重感染（包括机会性感染）和肿瘤的风险。治疗过程中需密切监控患者的免疫状态和血细胞计数。

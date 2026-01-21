@@ -1,0 +1,114 @@
+---
+title: Top 100 Best-selling Drugs in 2023
+description: |
+  This blog collects top 100 best-selling drugs globally in 2023
+categories:
+  - Pharmaceutical 
+author: Hao Sun
+date: "04/28/2024"
+image: "firework.jpeg"
+image-alt: "Fireworks with a silhouette of an audience"
+---
+
+|     | 药品 | 公司 | 主要适应症 | 2023年 | 增幅 |
+|--|--------------|-------|----------------|---|---:|
+| 1   | Keytruda（帕博利珠单抗）       | 默沙东        | 黑色素痛、NSCLC、膀脱癌、头颈癌等 | 250.11 | 19.5%  |
+| 2   | Humira（阿达木单抗）           | 艾伯维        | 白身免疫疾病                      | 144.04 | <span style="color:green;"> -32.2% |
+| 3   | Ozempic（司美格書肽）          | 诺和诺德      | 2型糖尿病、心血管风险             | 139.17 | <span style="color:red;"> 66.0%  |
+| 4   | Eliquis（阿喉沙班）            | BMS/辉瑞      | 抗凝血                            | 122.06 | 4.0%   |
+| 5   | Biktarvy (B/F/TAF)             | 吉利德        | HIV-1感染                         | 118.50 | 14.0%  |
+| 6   | Dupixent（度普利尤单抗）       | 赛诺非/冉生元 | 特异性皮炎、哮喘等                | 115.88 | <span style="color:red;"> 34.0%  |
+| 7   | Comirnaty                      | 辉瑞/BioNtech | COVID-19                          | 112.20 | <span style="color:green;"> -70.0% |
+| 8   | Stelara（乌司奴单抗）          | 強生          | 自身免疫疾病                      | 108.58 | 11.7%  |
+| 9   | Jardiance（恩格列净）          | BI/礼来       | 2型糖尿病                         | 107.50 | <span style="color:red;"> 31.0%  |
+| 10  | Opdivo（纳武利尤单抗）         | BMS/小野      | 黑色素瘤、非小细胞肺癌、头硕癌等  | 100.35 | 8.0%   |
+| 11  | Darzalex（达雷妥尤单抗）       | 强生          | 多发性骨髓瘤、AL淀粉样变性        | 97.44  | 22.2%  |
+| 12  | Eylea/Eylea HD（阿柏西普）     | 再生元/拜耳   | 湿性AMD、糖尿病黄斑水肿等         | 93.81  | -3.0%  |
+| 13  | Trikafta/Kaftrio (ELX/TEZ/IVA) | Vertex        | 囊性纤维化                        | 89.45  | 16.4%  |
+| 14  | Gardasil/Gardasil 9            | 默沙东        | 宫颈癌疫苗                        | 88.86  | <span style="color:red;"> 28.8%  |
+| 15  | Skyrizi（利生奇珠单抗）        | 艾伯维        | 自身免疫疾病                      | 77.63  | <span style="color:red;"> 50.3%  |
+| 16  | Trulicity（度拉糖肽）          | 礼来          | 2型糖尿病                         | 71.33  | -4.0%  |
+| 17  | Ocrevus（奥瑞珠单抗）          | 罗氏          | 多发性硬化症                      | 71.32  | 13.0%  |
+| 18  | Imbruvica（伊布替尼）          | 艾伯维/强生   | WM, CLL/SLL, MCL, GVHD            | 68.60  | -17.9% |
+| 19  | Xarelto（利伐沙班）            | 拜耳/强生     | 抗凝血                            | 67.91  | -6.1%  |
+| 20  | Spikevax                       | Moderna       | COVID-19                          | 66.71  | <span style="color:green;"> -64.0% |
+| 21  | Prevnar family（肺炎球菌疫苗） | 辉瑞          | 肺炎疫苗                          | 64.40  | 3.0%   |
+| 22  | Revlimid（来那度胺）           | BMS           | MM、骨髓增生异常综合征、MCL、FL   | 60.97  | <span style="color:green;"> -39.0% |
+| 23  | Entresto（沙库巴曲缬沙坦）     | 诺华          | 心衰                              | 60.35  | <span style="color:red;"> 31.0%  |
+| 24  | Farxiga（达格列净）            | 阿斯利康      | 2型糖尿病、1型糖尿病、心衰        | 59.63  | <span style="color:red;"> 36.0%  |
+| 25  | Tagrisso（奥希替尼）           | 阿斯利康      | T790M突变NSCLC                    | 57.99  | 7.0%   |
+| 26  | Entyvio（维得利珠单抗）        | 武田          | 溃疡性结肠炎、克罗恩病、结肠袋炎  | 54.14  | 4.8%   |
+| 27  | Mounjaro（替尔泊肽）           | 礼来          | 2型糖尿病、肥胖                   | 51.63  | nm     |
+| 28  | Xtandi（恩扎卢胺）             | Astellas      | 前列腺癌                          | 50.67  | 4.3%   |
+| 29  | Cosentyx（司库奇尤单抗）       | 诺华          | 自身免疫疾病                      | 49.80  | 5.0%   |
+| 30  | Ibrance（哌柏西利）            | 辉瑞          | 乳腺癌                            | 47.53  | -6.0%  |
+| 31  | Hemlibra（艾美赛珠单抗）       | 罗氏          | 血友病                            | 46.35  | 16.0%  |
+| 32  | Wegovy（司美格鲁肽）           | 诺和诺德      | 肥胖                              | 45.57  | <span style="color:red;"> 420.0% |
+| 33  | Enbrel（依那西普）             | 安进/辉瑞     | 自身免疫疾病                      | 45.27  | -11.6% |
+| 34  | Jakafi（芦可替尼）             | Incyte/诺华   | 骨髓纤维化、白癜风等              | 43.14  | 8.7%   |
+| 35  | Shingrix                       | GSK           | 带状疱疹                          | 42.86  | 17.0%  |
+| 36  | Imfinzi（度伐利尤单抗）        | 阿斯利康      | 尿路上皮癌、NSCLC、SCLC           | 42.37  | <span style="color:red;"> 52.0%  |
+| 37  | Perjeta（帕妥珠单抗）                          | 罗氏      | HER2+乳腺癌                              | 42.11 | 1.0%   |
+| 38  | Tecentriq（阿替利珠单抗）                      | 罗氏      | 尿路上皮癌、NSCLC、三阴乳腺癌            | 42.09 | 9.0%   |
+| 39  | Invega Trinza/Trevicta（帕利哌酮缓释）         | 强生      | 精神分裂症                               | 41.15 | -0.6%  |
+| 40  | Prolia（地舒单抗）                             | 安进      | 骨质疏松症                               | 40.48 | 12.0%  |
+| 41  | Rinvoq（乌帕替尼）                             | 艾伯维    | 类风湿关节炎、特异性皮炎、银屑病关节炎等 | 39.69 | <span style="color:red;"> 57.4%  |
+| 42  | Xolair（奥马珠单抗）                           | 诺华/罗氏 | 哮喘/COPD、荨麻疹                        | 38.95 | 5.8%   |
+| 43  | Verzenio（阿贝西利）                           | 礼来      | 乳腺癌                                   | 38.63 | <span style="color:red;"> 56.0%  |
+| 44  | Ofev（尼达尼布）                               | BI        | 特发性肺纤维化                           | 38.00 | 12.8%  |
+| 45  | Orencia（阿巴西普）                            | BMS       | 成人类风湿关节炎、幼年特发性关节炎等     | 36.01 | 4.0%   |
+| 46  | Pomalyst（泊马度胺）                           | BMS       | 多发性骨髓瘤                             | 34.41 | -2.0%  |
+| 47  | Januvia/Janumet（西格列门/西格列汀＋二甲双胍） | 默沙东    | 2型糖尿病                                | 33.66 | <span style="color:green;"> -25.4% |
+| 48  | Vyndaqel（氯苯唑酸）                           | 辉瑞      | 转甲状腺素蛋白淀粉样变性心肌病等         | 33.21 |  <span style="color:red;"> 36.0%  |
+| 49  | Tremfya（古塞奇尤单抗）                        | 強生      | 自身免疫疾病                             | 31.47 | 17.9%  |
+| 50  | Soliris（依库珠单抗）                          | 阿斯利康  | 阵发性夜间蛋白尿、非典型溶血尿毒综合征等 | 31.45 | -16.0% |
+| 51  | Vyvanse（赖右苯丙胺）                          | 武田              | 注意力缺陷多动障碍；暴饮暴食               | 31.20 | -2.4%  |
+| 52  | Botox（A型肉毒毒素）                           | 艾伯维            | 膀胱过度活动症、肌肉痉挛、斜视等           | 29.91 | 10.0%  |
+| 53  | Ultomiris (ravulizumab)                        | 阿斯利康          | 非典型溶血尿毒综合征、重症肌无力、阵发性康 | 29.65 | <span style="color:red;"> 51.0%  |
+| 54  | Actemra/ RoActemra（托珠单抗）                 | 罗氏              | 类风湿性关节炎、细胞因子突释综合征等       | 29.40 | 5.0%   |
+| 55  | Influenza vaccines                             | 赛诺菲            | 流感疫苗                                   | 28.95 | -5.5%  |
+| 56  | Lynparza（奥拉帕利）                           | 阿斯利康          | 乳腺癌、卵巢癌、胰腺癌、前列腺癌等         | 28.11 | 7.0%   |
+| 57  | Taltz（依奇珠单抗）                            | 礼来              | 斑块状银屑病                               | 27.60 | 11.0%  |
+| 58  | Vraylar（卡利拉嗪）                            | 艾伯维            | 精神分裂症、抑郁等                         | 27.59 | <span style="color:red;"> 35.4%  |
+| 59  | Trelegy Ellipta（氟替卡松＋乌美溴铵+维兰特罗） | GSK               | COPD                                       | 27.39 | <span style="color:red;"> 29.0%  |
+| 60  | Rybelsus（司美格鲁肽片）                       | 诺和诺德          | 2型糖尿病                                  | 27.26 | <span style="color:red;"> 71.0%  |
+| 61  | Botox Cosmetic（A型肉毒毒素）                  | 艾伯维            | 面部痉挛、肌张力障碍、鱼尾纹等             | 26.82 | 2.6%   |
+| 62  | Vabysmo（法瑞西单抗）                          | 罗氏              | 湿性年龄相关性黄斑水肿等                   | 26.34 | <span style="color:red;"> 324.0% |
+| 63  | Enhertu（德曲妥珠单抗）                        | 第一三共/阿斯利康 | HER2阳性乳腺癌、HER2低表达乳腺癌等         | 25.66 | <span style="color:red;"> 104.8% |
+| 64  | Calquence（阿卡替尼）           | 阿斯利康    | 套细胞淋巴癌、CLL/SLL、DLBCL           | 25.14 | 22.0% |
+| 65  | Erleada（阿帕他胺）             | 强生        | 前列腺癌                               | 23.87 | <span style="color:red;"> 26.9% |
+| 66  | ProQuad                         | 默沙东      | 麻疹、水痘、腮腺炎疫苗                 | 23.68 | 5.7%  |
+| 67  | Symbicort（福莫特罗＋布地奈德） | 阿斯利康    | 哮喘、COPD                             | 23.62 | -7.0% |
+| 68  | Polio/Pertussis/Hib vaccines    | 赛诺菲      | 脊髓灰质炎疫苗                         | 23.48 | -0.1% |
+| 69  | Venclexta（维奈克拉）           | 艾伯维      | CLL, AML                               | 22.88 | 13.9% |
+| 70  | Revolade/Promacta（艾曲波帕）   | 诺华        | 免疫性血小板減少症、重症再生障碍性贫血 | 22.69 | 10.0% |
+| 71  | Dovato（多替拉韦＋拉米夫定）    | GSK         | HIV感染                                | 22.63 | <span style="color:red;"> 33.0% |
+| 72  | Cimzia（培塞利珠单抗）          | UCB         | 克罗恩病、类风湿关节炎等               | 22.63 | 3.0%  |
+| 73  | Yervoy（伊匹木单抗）            | BMS         | 黑色素瘤、肾细胞癌、结直肠癌           | 22.38 | 5.0%  |
+| 74  | Simponi（戈利木单抗）           | 强生/默沙东 | 自身免疫性疾病                         | 21.97 | 0.6%  |
+| 75  | Kadcyla（恩美曲妥珠单抗）       | 罗氏        | HER2+乳腺癌                            | 21.97 | 4.0%  |
+| 76  | Otezla（阿普斯特）       | 安进        | 斑块状银屑病、银屑病关节炎等           | 21.88 | -4.0%  |
+| 77  | Veklury（瑞德西韦）      | 吉利德      | COVID-19                               | 21.84 | <span style="color:green;"> -22.0% |
+| 78  | Kesimpta（奥法妥木单抗） | 诺华        | 慢性淋巴细胞白血病、多发性硬化症       | 21.71 | <span style="color:red;"> 99.0%  |
+| 79  | Xgeva（地舒单抗）        | 安进        | 实体瘤骨转移、骨细胞癌                 | 21.12 | 5.0%   |
+| 80  | Kisqali（瑞波西利）      | 诺华        | HR阳性乳腺癌                           | 20.80 | <span style="color:red;"> 75.0%  |
+| 81  | Genvoya (E/C/F/TAF)      | 吉利德      | HIV-1感染                              | 20.60 | -14.3% |
+| 82  | Nucala（美泊利珠单抗）   | GSK         | 嗜酸性粒细胞性哮喘、支气管哮喘等       | 20.58 | 18.0%  |
+| 83  | Lenvima（仑伐替尼）      | 卫材/默沙东 | 分化型甲状腺癌、肝细胞癌、子官内膜癌等 | 20.11 | 8.4%   |
+| 84  | NovoRapid（门冬胰岛素）  | 诺和诺德    | 糖尿病                                 | 20.03 | -9.0%  |
+| 85  | Descovy（达可挥）        | 吉利德      | HIV-1感染                              | 19.85 | 6.0%   |
+| 86  | Opsumit（马西替坦）      | 強生        | 肺动脉高压                             | 19.73 | 10.6%  |
+| 87  | Sprycel（达沙替尼）      | BMS         | CML                                    | 19.30 | -11.0% |
+| 88  | Tafinlar + Mekinist      | 诺华        | 黑色素瘤                               | 19.22 | 11.0%  |
+| 89  | Triumeq（阿巴卡韦＋多替拉韦+拉米夫定）              | GSK         | HIV-1感染                                | 19.18 | -14.0% |
+| 90  | Tysabri（那他珠单抗）                               | 渤健        | 多发性硬化症                             | 18.77 | -7.6%  |
+| 91  | Prezista + Prezcobix/Rezolsta + Symtuza (D/C/F/TAF) | 强生        | HIV-1感染                                | 18.54 | -4.6%  |
+| 92  | Trajenta/Jentadueto（利格列汀）                     | BI          | 2型糖尿病                                | 18.50 | 4.4%   |
+| 93  | Tasigna（尼洛替尼）                                 | 诺华        | CML                                      | 18.48 | -3.0%  |
+| 94  | Bridion（舒更葡糖钠）                               | 默沙东      | 逆转神经肌肉传导阻滞                     | 18.42 | 9.3%   |
+| 95  | Remicade（英夫利昔单抗）                            | 强生/默沙东 | 自身免疫疾病                             | 18.39 | <span style="color:green;"> -21.5% |
+| 96  | Herceptin（曲妥珠单抗）                             | 罗氏        | HER2+乳腺癌、胃癌                        | 18.17 | -16.0% |
+| 97  | Avastin（贝伐珠单抗）                               | 罗氏        | 结直肠癌、乳腺癌、肺癌、卵巢癌等         | 17.58 | -19.0% |
+| 98  | Spinraza（诺西那生）                                | 渤健        | 脊髓性肌萎缩症                           | 17.41 | -2.9%  |
+| 99  | Xeljanz（托法替布）                                 | 辉瑞        | 类风湿性关节症、幼年特发性关节炎、强直性 | 17.03 | -4.0%  |
+| 100 | Alecensa（阿来替尼）                                | 罗氏        | 非小细胞肺癌、间变性大细胞淋巴瘤等       | 16.79 | 1.0%   |

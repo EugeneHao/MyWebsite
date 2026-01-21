@@ -1,0 +1,113 @@
+---
+title: "Statistics"
+subtitle: "This section contains all the statistical materials from my PhD courses, statistical books, conferences, etc. There are multiple statistical topics included in this section, such as generalized linear model, machine learning, survival analysis, Bayesian method, etc. "
+format:
+  html:
+    include-after-body: 
+      text: |
+        <script type="text/javascript">
+        window['quarto-download-release'] = true;
+        window['quarto-download-prerelease'] = true;
+        window['quarto-download-nonews'] = true;
+        window["quarto-prerelease-mode"] = '{{< meta prerelease-mode >}}';
+        </script>      
+page-layout: full
+toc: false
+anchor-sections: false
+editor: source
+search: true
+---
+
+::: {.grid .step .column-page-right}
+
+:::
+
+::: {.grid .step .column-page-right}
+::: {.g-col-lg-3 .g-col-12}
+## Statistical Topics
+
+:::
+
+::: {.tool .g-col-lg-9 .g-col-12}
+
+
+<a href="topics/Bayesian.html" role="button" class="btn btn-outline-light">
+![](images/Bayesian.png){width="77" fig-alt="VS Code logo."}Bayesian Statistics
+</a>
+
+<a href="topics/causal-inference.html" role="button" class="btn btn-outline-light">
+![](images/causal-inference.png){width="77" fig-alt="VS Code logo."}Causal Inference
+</a>
+
+<a href="topics/linear-model.html" role="button" class="btn btn-outline-light">
+![](images/linear-model.png){width="77" fig-alt="VS Code logo."}Linear Model
+</a>
+
+<a href="topics/machine-learning.html" role="button" class="btn btn-outline-light">
+![](images/machine-learning.png){width="77" fig-alt="VS Code logo."}Machine Learning
+</a>
+
+<a href="topics/multivaraite-analysis.html" role="button" class="btn btn-outline-light">
+![](images/multivariate-analysis.png){width="77" fig-alt="VS Code logo."}Multivariate Analysis
+</a>
+
+<a href="topics/probability-theory.html" role="button" class="btn btn-outline-light">
+![](images/probability-theory.png){width="77" fig-alt="VS Code logo."}Probability Theory
+</a>
+
+<a href="topics/spatial.html" role="button" class="btn btn-outline-light">
+![](images/spatial.png){width="77" fig-alt="VS Code logo."}Spatial Statistics
+</a>
+
+<a href="topics/survey-sampling.html" role="button" class="btn btn-outline-light">
+![](images/survey-sampling.png){width="77" fig-alt="VS Code logo."}Survey Sampling
+</a>
+
+:::
+:::
+
+::: {.grid .step .column-page-right}
+::: {.g-col-lg-3 .g-col-12}
+## Biostatistical Topics
+
+:::
+
+::: {.tool .g-col-lg-9 .g-col-12}
+<a href="../biostatistics/topics/dose-finding.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/dose-finding.png){width="77" fig-alt="VS Code logo."}Dose Finding
+</a>
+
+<a href="../biostatistics/topics/dose-optimization.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/dose-optimization.png){width="77" fig-alt="VS Code logo."}Dose Optimization
+</a>
+
+<a href="../biostatistics/topics/dynamic-borrowing.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/dynamic-borrowing.png){width="77" fig-alt="VS Code logo."}Dynamic Borrowing
+</a>
+
+<a href="../biostatistics/topics/hypothesis-testing.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/hypothesis-testing.png){width="77" fig-alt="VS Code logo."}Hypothesis Testing
+</a>
+
+<a href="../biostatistics/topics/survival-analysis.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/survival-analysis.png){width="77" fig-alt="VS Code logo."}Survival Analysis
+</a>
+
+<a href="../biostatistics/topics/decision-making.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/decision-making.png){width="77" fig-alt="VS Code logo."}Decision Making
+</a>
+
+<a href="../biostatistics/topics/multiple-comparison.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/multiple-comparison.png){width="77" fig-alt="VS Code logo."}Multiple Comparison
+</a>
+
+<a href="../biostatistics/topics/targeted-learning.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/targeted-learning.png){width="77" fig-alt="VS Code logo."}Targeted Learning
+</a>
+
+<a href="../biostatistics/topics/estimand.html" role="button" class="btn btn-outline-light">
+![](../biostatistics/images/estimand.png){width="77" fig-alt="VS Code logo."}Estimand
+</a>
+:::
+
+:::

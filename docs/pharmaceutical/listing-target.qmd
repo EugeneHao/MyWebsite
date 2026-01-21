@@ -1,0 +1,20 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-target
+  contents: 
+    - listings/target.yml
+metadata-files: 
+  - listings/_metadata_target.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### Target
+
+###  {.unlisted}
+
+::: {#listing-target .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

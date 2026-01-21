@@ -1,0 +1,11 @@
+- name: TAETORD
+  domain: TA
+  label: Planned Order of Element within Arm
+
+- name: TABRANCH
+  domain: TA
+  label: Branch (e.g. randomization to DRUG X)
+
+- name: TATRANS
+  domain: TA
+  label: Transition Rule (e.g. Responders go to washout)

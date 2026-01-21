@@ -1,0 +1,21 @@
+---
+bibliography: cite.bib
+bibliographystyle: apa
+---
+
+### Interesting Papers for Reference
+
+1.  [Adaptive phase I-II clinical trial designs identifying optimal biological doses for targeted agents and immunotherapies](https://drive.google.com/file/d/1QpE2RpR5JgnBG7EY3Ys7jvXVgey9Hm9W/view?usp=drive_link) [@zang2024adaptive]
+    -   Keywords: Immunotherapy, targeted agent, dose optimization, phase I–II trial, Bayesian adaptive design
+
+```{=html}
+<!-- -->
+```
+2.  [A Multi-Arm Two-Stage (MATS) Design for Proof-of-Concept and Dose Optimization in Early-Phase Oncology Trials](https://drive.google.com/file/d/1QtA558Fba2TB8jy3K-3jEVpj-QS_lU_L/view?usp=drive_link) [@jiang2023multi]
+    -   Keywords: Bayesian Hierarchical Model; Oncology; Project Optimus; Proof-of-Concept.
+
+```{=html}
+<!-- -->
+```
+3.  [Adaptive Bayesian information borrowing methods for finding and optimizing subgroup-specific doses](https://drive.google.com/file/d/1QvHkovllCYF-5LytFxTWGDBZ9KX76u--/view?usp=drive_link) [@zhang2024adaptive]
+    -   Keywords: Bayesian methods, dose optimization, heterogeneous effect, information borrowing, precision oncology

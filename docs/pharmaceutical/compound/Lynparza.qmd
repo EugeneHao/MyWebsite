@@ -1,0 +1,25 @@
+---
+title: "Lynparza"
+---
+
+### **药物简介（Drug Overview）**
+
+林帕扎（Lynparza，通用名为奥拉帕尼 Olaparib）是一种口服靶向疗法药物，属于PARP抑制剂。它主要用于治疗BRCA基因突变相关的某些类型癌症，如卵巢癌、乳腺癌和前列腺癌。
+
+### **药物原理（Drug Mechanism）**
+
+奥拉帕尼的作用机制是通过抑制聚腺苷酸核糖聚合酶（Poly(ADP-Ribose) Polymerase，简称PARP）。PARP是细胞内修复DNA损伤的关键酶之一。在BRCA基因突变的癌细胞中，DNA损伤的修复机制已经受损。通过进一步抑制PARP，奥拉帕尼加剧了这些癌细胞的DNA损伤，导致它们无法生存和繁殖。
+
+### **适应症（Indications）**
+
+林帕扎被批准用于治疗以下疾病：
+
+1.  BRCA突变阳性的高级别浆液性卵巢癌（High-Grade Serous Ovarian Cancer）：作为维持治疗，用于化疗后的患者。
+
+2.  BRCA突变阳性的乳腺癌（Breast Cancer）：用于已接受化疗的患者。
+
+3.  前列腺癌（Prostate Cancer）：对于含有某些遗传突变的晚期或转移性病例。
+
+### **副作用（Side Effects）**
+
+林帕扎的常见副作用包括恶心、疲劳、呕吐、贫血和呼吸道感染。较为严重的副作用可能包括骨髓抑制、肺炎和血小板减少症。

@@ -1,0 +1,16 @@
+listing: 
+  type: table
+  sort-ui: [Abbr]
+  fields: 
+    - Abbr
+    - Full
+    - Description
+  field-links: 
+    - Abbr
+  field-display-names: 
+    Abbr: Abbreviation
+    Full: Full Name
+format:
+  html:
+    anchor-sections: false
+  

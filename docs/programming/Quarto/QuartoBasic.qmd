@@ -1,0 +1,532 @@
+---
+title: "Quarto Basic"
+subtitle: This is for how to use Quarto to write notes 
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+search: true
+---
+
+It is a good start to learn how to use `quarto` document.
+In general, the usage of `quarto` is very similar to `markdown`.
+For more details, see <https://quarto.org/docs/guide/>.
+
+## Markdown Basic
+
+### Syntax
+
+| Syntax                 | Output               | Syntax                         | Output                       |
+|------------------------|----------------------|--------------------------------|------------------------------|
+| `*italics*`            | *italics*            | `**bold**`                     | **bold**                     |
+| `***bold italics***`   | ***bold italics***   | `~~strikethrough~~`            | ~~strikethrough~~            |
+| `superscript^2^`       | superscript^2^       | `subscript_2`                  | subscript_2                  |
+| `<https://quarto.org>` | <https://quarto.org> | `[Quarto](https://quarto.org)` | [Quarto](https://quarto.org) |
+
+### List
+
++---------------------------------+---------------------------------+
+| Markdown Syntax                 | Output                          |
++=================================+=================================+
+| ``` markdown                    | -   unordered list              |
+| * unordered list                |     -   sub-item 1              |
+|     + sub-item 1                |     -   sub-item 2              |
+|     + sub-item 2                |         -   sub-sub-item 1      |
+|         - sub-sub-item 1        |                                 |
+| ```                             |                                 |
++---------------------------------+---------------------------------+
+| ``` markdown                    | -   item 2                      |
+| *   item 2                      |                                 |
+|                                 |     Continued (indent 4 spaces) |
+|     Continued (indent 4 spaces) |                                 |
+| ```                             |                                 |
++---------------------------------+---------------------------------+
+| ``` markdown                    | 1.  ordered list                |
+| 1. ordered list                 | 2.  item 2                      |
+| 2. item 2                       |     i)  sub-item 1              |
+|     i) sub-item 1               |         A.  sub-sub-item 1      |
+|          A.  sub-sub-item 1     |                                 |
+| ```                             |                                 |
++---------------------------------+---------------------------------+
+| ``` markdown                    | (1) A list whose numbering      |
+| (@)  A list whose numbering     |                                 |
+|                                 | continues after                 |
+| continues after                 |                                 |
+|                                 | (2) an interruption             |
+| (@)  an interruption            |                                 |
+| ```                             |                                 |
++---------------------------------+---------------------------------+
+| ``` markdown                    | <div>                           |
+| ::: {}                          |                                 |
+| 1. A list                       | 1.  A list                      |
+| :::                             |                                 |
+|                                 | </div>                          |
+| ::: {}                          |                                 |
+| 1. Followed by another list     | <div>                           |
+| :::                             |                                 |
+| ```                             | 1.  Followed by another list    |
+|                                 |                                 |
+|                                 | </div>                          |
++---------------------------------+---------------------------------+
+| ``` markdown                    | term                            |
+| term                            |                                 |
+| : definition                    | :   definition                  |
+| ```                             |                                 |
++---------------------------------+---------------------------------+
+
+## Code
+
+::: callout-note
+To present the code without running it, you can either add " \`\`\`\` markdown " before the code and " `\`\`\`\` " after the code.
+Or you can use " \`\`\`{{markdown}} "
+:::
+
+### R
+
+```{r filename = "R"}
+1 + 1
+```
+
+### Python
+
+To install python packages under a specific version:
+
+``` {.bash filename="Terminal"}
+python3.12 -m pip install pandas
+```
+
+Need to load `reticulate` package before running python code:
+
+```{r message = FALSE, echo = FALSE}
+require(reticulate)
+```
+
+```{python filename = "Python"}
+1 + 1
+```
+
+## Hyperlink
+
+### Table
+
+In order for a table to be cross-referenceable, its label must start with the `tbl-` prefix.
+
+```{python}
+#| label: tbl-planets-2
+#| tbl-cap: Planets
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = [["Sun",696000,1989100000],
+         ["Earth",6371,5973.6],
+         ["Moon",1737,73.5],
+         ["Mars",3390,641.85]]
+Markdown(tabulate(
+  table, 
+  headers=["Planet","R (km)", "mass (x 10^29 kg)"]
+))
+```
+
+Refer this table as @tbl-planets-2
+
+### Figure
+
+In order for a figure to be cross-referenceable, its label must start with the `fig-` prefix.
+
+### Equation
+
+Suppose we have an equation
+
+$$
+E = mc^2
+$$ {#eq-1}
+
+After the second `$$` add `{#eq-1}` as label.
+To refer this equation, use `@eq-1` (@eq-1).
+
+### Section
+
+To reference a section, add a `#sec-` identifier to any heading.
+For example
+
+```{{markdown}}
+## Introduction {#sec-introduction}
+```
+
+### Code
+
+To create a reference-able code block, add a `#lst-` identifier along with a `lst-cap` attribute.
+For example:
+
+``` {#lst-customers .r lst-cap="Customers Query"}
+1 + 1
+```
+
+### Theorem
+
+Theorems are commonly used in articles and books in mathematics.
+To include a reference-able theorem, create a div with a `#thm-` label (or one of other theorem-type labels described below).
+
+Refer the code as @lst-customers
+
+Then we query the customers database (@lst-customers).
+
+## Panel
+
+```{{markdown}}
+::: panel-tabset
+#### Jupyter
+
+#### Knitr
+
+#### SAS
+
+#### Other
+
+:::
+```
+
+::: panel-tabset
+#### Jupyter
+
+```{{python}}
+#| label: fig-charts
+#| fig-cap: "Charts"
+#| fig-subcap: 
+#|   - "First"
+#|   - "Second"
+#| layout-ncol: 2
+
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+
+plt.plot([8,65,23,90])
+plt.show()
+```
+
+#### Knitr
+
+```{{r}}
+#| label: fig-charts
+#| fig-cap: "Charts"
+#| fig-subcap: 
+#|   - "mpg"
+#|   - "HP"
+#| layout-ncol: 2
+
+plot(mtcars$cyl, mtcars$mpg)
+hist(mtcars$hp)
+```
+
+#### SAS
+
+#### Other
+:::
+
+## Table
+
+### Table Example 1
+
+```{{markdown}}
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+```
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+
+### Table Example 2
+
+```{{quarto}}        
+::: {#tbl-panel layout-ncol="2"}
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: First Table {#tbl-first}
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: Second Table {#tbl-second}
+
+Main Caption
+:::
+
+See @tbl-panel for details, especially @tbl-second.
+```
+
+::: {#tbl-panel layout-ncol="2"}
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: First Table {#tbl-first}
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: Second Table {#tbl-second}
+
+Main Caption
+:::
+
+See @tbl-panel for details, especially @tbl-second.
+
+### Table Example 3
+
+```{python filename = "Python"}
+#| label: tbl-planets
+#| tbl-cap: Astronomical object
+
+from IPython.display import Markdown
+from tabulate import tabulate
+table = [["Sun","696,000",1.989e30],
+         ["Earth","6,371",5.972e24],
+         ["Moon","1,737",7.34e22],
+         ["Mars","3,390",6.39e23]]
+Markdown(tabulate(
+  table, 
+  headers=["Astronomical object","R (km)", "mass (kg)"]
+))
+```
+
+### Grid Tables
+
+Grid tables are a more advanced type of markdown tables that allow arbitrary block elements (multiple paragraphs, code blocks, lists, etc.).
+For example:
+
+``` markdown
++-----------+-----------+--------------------+
+| Fruit     | Price     | Advantages         |
++===========+===========+====================+
+| Bananas   | $1.34     | - built-in wrapper |
+|           |           | - bright color     |
++-----------+-----------+--------------------+
+| Oranges   | $2.10     | - cures scurvy     |
+|           |           | - tasty            |
++-----------+-----------+--------------------+
+
+: Sample grid table.
+```
+
+Which looks like this when rendered to HTML:
+
++---------+--------+----------------------+
+| Fruit   | Price  | Advantages           |
++=========+========+======================+
+| Bananas | \$1.34 | -   built-in wrapper |
+|         |        | -   bright color     |
++---------+--------+----------------------+
+| Oranges | \$2.10 | -   cures scurvy     |
+|         |        | -   tasty            |
++---------+--------+----------------------+
+
+: Sample grid table.
+
+The row of `=`s separates the header from the table body, and can be omitted for a headerless table.
+Cells that span multiple columns or rows are not supported.
+
+Alignments can be specified as with pipe tables, by putting colons at the boundaries of the separator line after the header:
+
+``` markdown
++---------+--------+------------------+
+| Right   | Left   | Centered         |
++========:+:=======+:================:+
+| Bananas | $1.34  | built-in wrapper |
++---------+--------+------------------+
+```
+
+Which looks like this when rendered to HTML:
+
+|   Right | Left   |     Centered     |
+|--------:|:-------|:----------------:|
+| Bananas | \$1.34 | built-in wrapper |
+
+For headerless tables, the colons go on the top line instead:
+
+``` markdown
++----------:+:----------+:--------:+
+| Right     | Left      | Centered |
++-----------+-----------+----------+
+```
+
+Which looks like this when rendered to HTML:
+
+|       |      |          |
+|------:|:-----|:--------:|
+| Right | Left | Centered |
+
+## Figure
+
+To insert figure, you can use
+
+``` markdown
+![Elephant](elephant.png)
+```
+
+Examples to change width:
+
+``` markdown
+![Elephant](elephant.png){width=300}
+![Elephant](elephant.png){width=80%}
+![Elephant](elephant.png){width=4in}
+```
+
+To link a figure online, we can use
+
+``` markdown
+[![Elephant](elephant.png)](https://en.wikipedia.org/wiki/Elephant)
+```
+
+Additional functions:
+
+| Code        | Functions                               | Example                                 |
+|-------------|-----------------------------------------|-----------------------------------------|
+| `fig-align` | figure alignment                        | `{fig-align="left"}`                    |
+| `fig-alt`   | alternative text                        | `{fig-alt="A drawing of an elephant."}` |
+| `#fig-xxx`  | cross references (use`@` for reference) | `{#fig-elephant}`                       |
+
+::: callout-note
+For figures produced by executable code cells, include a `label` with a `fig-` prefix to make them cross-referenceable.
+
+For example:
+
+```{{python}}
+#| label: fig-line-plot
+#| fig-cap: "A line plot "
+
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+```
+:::
+
+```{python echo = FALSE}
+#| label: fig-line-plot
+#| fig-cap: "A line plot "
+
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+```
+
+For a demonstration of a line plot, see @fig-line-plot.
+
+#### Example of subfigures:
+
+```{{markdown}}
+::: {#fig-elephants layout-ncol=2 layout-nrow=2}
+
+![Surus](surus.png){#fig-surus}
+
+![Hanno](hanno.png){#fig-hanno}
+
+Famous Elephants
+:::
+```
+
+## Diagram
+
+### Diagram Example 1
+
+```{{mermaid}}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+## Divs and Spans
+
+You can add classes, attributes, and other identifiers to regions of content using Divs and Spans.
+For example, here we add the "border" class to a region of content using a div (`:::`):
+
+``` markdown
+::: {.border}
+This content can be styled with a border
+:::
+```
+
+::: border
+This content can be styled with a border
+:::
+
+Once rendered to HTML, Quarto will translate the markdown into:
+
+``` html
+<div class="border">
+  <p>This content can be styled with a border</p>
+</div>
+```
+
+## Callout Types
+
+There are five different types of callouts available.
+
+-   `note`: `callout-note`
+-   `warning`: `callout-warning`
+-   `important`: `callout-important`
+-   `tip`: `callout-tip`
+-   `caution`: `callout-caution`
+
+The color and icon will be different depending upon the type that you select.
+Here are what the various types look like in HTML output:
+
+::: callout-note
+Note that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and `important`.
+:::
+
+::: callout-warning
+Callouts provide a simple way to attract attention, for example, to this warning.
+:::
+
+::: callout-important
+## This is Important
+
+Danger, callouts will really improve your writing.
+:::
+
+::: callout-tip
+## Tip With Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'collapsed' caution callout that can be expanded by the user.
+You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+Code for this section: `{.callout-caution collapse="true"}`
+:::

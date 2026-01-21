@@ -1,0 +1,23 @@
+---
+title: "Tafinlar"
+---
+
+### **药物简介（Drug Overview）**
+
+塔菲纳（Tafinlar，通用名为达布拉非尼 Dabrafenib）是一种口服靶向疗法药物，属于BRAF激酶抑制剂。它主要用于治疗含有BRAF V600E或V600K突变的黑色素瘤（[Melanoma](../disease/Melanoma.qmd)）和非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC）。
+
+### **药物原理（Drug Mechanism）**
+
+达布拉非尼的作用机制是通过靶向并抑制突变的BRAF蛋白。在某些癌症患者中，BRAF基因发生V600E或V600K突变，导致BRAF蛋白过度活化，促进癌细胞生长和扩散。达布拉非尼能够特异性抑制这种突变的BRAF激酶，从而阻断肿瘤生长的信号通路。
+
+### **适应症（Indications）**
+
+塔菲纳被批准用于治疗以下疾病：
+
+1.  BRAF V600E或V600K突变阳性的不可切除或转移性黑色素瘤。
+
+2.  BRAF V600E突变阳性的转移性非小细胞肺癌。
+
+### **副作用（Side Effects）**
+
+塔菲纳的常见副作用包括关节痛、头痛、疲劳、发热和皮疹。较为严重的副作用可能包括皮肤癌、心脏问题和眼部疾病等。使用期间需要密切监控患者的健康状况。

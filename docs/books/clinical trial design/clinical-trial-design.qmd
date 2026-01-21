@@ -1,0 +1,160 @@
+---
+title: "Clinical Trial Design Notebook"
+bibliography: cite.bib
+bibliographystyle: apa
+---
+
+## mPTI {.unnumbered}
+
+[mTPI](https://drive.google.com/file/d/1PRatA1qEKi36Lv6GgxQMbn6cdnZBvLdl/view?usp=drive_link) design is short for **modified toxicity probability interval design** .
+
+Suppose the probability of toxicity at dose $d$ is $p_d$ and $n_d$ is the number of patient treated at dose $d$. The number of DLTs (dose limiting toxicity), $x_d$ has a binomial distribution $x_d\mid p_d \sim Bin(n_d, p_d)$.
+
+Denote the target toxicity probability as $p_T$. There are 3 possible decisions by comparing $p_d$ and $p_T$:
+
+-   $M_E: p_d \in (0, p_T - \epsilon_1)$, escalate to the next level dose;
+-   $M_S: p_d \in (p_T - \epsilon_1, p_T + \epsilon_2)$, stay at the current dose;
+-   $M_D: p_d \in (p_T + \epsilon_2, 1)$, de-escalate to the lower level dose.
+
+The mTPI design assumes the prior of $p_d$ is a Beta distribution, $p_d \sim Beta(\alpha, \beta)$. Usually $\alpha = \beta = 1$. The dose-finding decision rule is given by $$
+\mathcal{D}_{mTPI} = \arg\max_{i\in \{E, S, D\}} UPM(i, d) 
+$$ where $UPM(i, d) = Pr(p_d \in M_i \mid x_d)/Pr(p_d\in M_i)$ is called the unit probability mass. In this case, $$
+UPM(i, d) = \frac{IBeta(c_{i2}; x+1, n-x+1) - IBeta(c_{i1}; x+1, n-x+1)}{c_{i2} - c_{i1}}
+$$ where $IBeta(q; a, b) = \frac{1}{B(a, b)}\int_0^q \theta^{a-1}(1-\theta)^{b-1}d\theta$.
+
+::: {.callout-caution collapse="true"}
+```{r, out.width="100%"}
+knitr::include_app("https://eugenehao.shinyapps.io/mtpi/")
+```
+:::
+
+## mTPI-2 {.unnumbered}
+
+[mTPI-2](https://drive.google.com/file/d/1HDLxc92bMamF4bJis4PmgTZRsjIVP860/view?usp=drive_link) design is an extension of mTPI by cutting the escalation interval and de-escalation interval into subintervals with the same length equal to $(\epsilon_1 + \epsilon_2)$. The equivalence interval (EI) is still $(p_T - \epsilon_1, p_T+ \epsilon_2)$. However, the set of intervals below EI (LI) are $\{(p_T - 2\epsilon_1 - \epsilon_2, p_T - \epsilon_1), \ldots, (p_T - k\epsilon_1 - (k-1)\epsilon_2, 0) \}$ and the set of intervals above EI (HI) are $(p_T + \epsilon_2, p_T + \epsilon_1 + 2\epsilon_2), \ldots, (p_T + l\epsilon_1 + (l+1)\epsilon_2, 1) \}$.
+
+Let $A_i$ denote the set of intervals under the decision $i \in \{E, S, D\}$. The decision function of mTPI-2 design is given by $$
+\mathcal{D}_{mTPI2} = \arg\max_{i\in \{E, S, D\}} \max_{j \in A_i} UPM(j, d) 
+$$
+
+::: {.callout-caution collapse="true"}
+```{r, out.width="100%"}
+knitr::include_app("https://eugenehao.shinyapps.io/mtpi-2/")
+```
+:::
+
+## BOIN {.unnumbered}
+
+[BOIN](https://drive.google.com/file/d/1PIdf_Yes_4huF1vhac1XHly9LrC1DIB4/view?usp=drive_link) is short for Bayesian optimal interval design. Suppose we have $J$ prespecified doses. At the current dose level $j$, $n_j$ patients are treated and $m_j$ of them have experienced a toxicity. Let $\lambda_{1j}(n_j, \phi)$ and $\lambda_{2j}(n_j, \phi)$ be the prespecified lower and upper boundaries of the interval with $0 \leq \lambda_{1j}(n_j, \phi) \leq \lambda_2(n_j, \phi) \leq 1$ where $\phi$ is the target toxicity level.
+
+The next cohort dose assignment will be decided by the following steps:
+
+-   if $m_j/n_j \in [0, \lambda_{1j}]$: escalate to the next dose level $j+1$;
+-   if $m_j/n_j \in (\lambda_{1j}, \lambda_{2j})$: stay at the dose level $j$;
+-   if $m_j/n_j \in [\lambda_{2j}, 1]$: de-escalate to the dose level $j-1$.
+
+##### Local BOIN {.unnumbered}
+
+Define the three point hypothesis as: $$
+\begin{aligned}
+H_{0j}: p_j & = \phi \\ 
+H_{1j}: p_j & = \phi_1\\
+H_{2j}: p_j & = \phi_2
+\end{aligned}
+$$
+
+The correct decisions under $H_0$, $H_1$ and $H_2$ are retainment (R), escalation (E) and de-escalation (D). Suppose $Bin(x; n, p)$ as the CDF of a binomial distribution. The probability of making incorrect decision is given by
+
+$$
+\begin{aligned}
+\alpha(\lambda_1, \lambda_2) &= Pr(H_0)Pr(\bar R\mid H_0) + Pr(H_1)Pr(\bar E\mid H_1) + Pr(H_2)Pr(\bar D\mid H_2) \\
+& = \pi_0\left\{Bin(n\lambda_1; n, \phi) + 1 - Bin(n\lambda_2; n, \phi) \right\} + \pi_1(1 - Bin(n\lambda_1; n, \phi_1)) + \pi_2 Bin(n\lambda_2; n, \phi_2) \\
+& = \alpha_1(\lambda_1) + \alpha_2(\lambda_2) + \pi_0 + \pi_1
+\end{aligned}
+$$ where $$\begin{aligned}
+\alpha_1(\lambda_1) & = \pi_0Bin(n\lambda_1; n, \phi) - \pi_1Bin(n\lambda_1; n, \phi) \\
+& = \sum_{y=0}^{b_{j}} \pi_{1}\left(\begin{array}{c}n \\ y\end{array}\right) \phi_{1}^{y}\left(1-\phi_{1}\right)^{n-y}\left\{\frac{\pi_{0 }}{\pi_{1}}\left(\frac{\phi}{\phi_{1}}\right)^{y}\left(\frac{1-\phi}{1-\phi_{1}}\right)^{n-y}-1\right\}
+\end{aligned}
+$$ and $$
+\alpha_2(\lambda_2) = \pi_2Bin(n\lambda_2; n, \phi_2) - \pi_0Bin(n\lambda_2; n, \phi). 
+$$
+
+$\alpha_1(\lambda_1)$ is minimized when $$
+n\lambda_1 = \max\left\{y: \frac{\pi_{0 }}{\pi_{1}}\left(\frac{\phi}{\phi_{1}}\right)^{y}\left(\frac{1-\phi}{1-\phi_{1}}\right)^{n-y} \leq 1 \right\} = \max \left\{y: \frac{Pr(H_0\mid y)}{Pr(H_1\mid y)} \leq 1\right\}
+$$ which leads to the solution $$
+\lambda_{1}=\frac{\log \left(\frac{1-\phi_{1}}{1-\phi}\right)+n_{j}^{-1} \log \left(\frac{\pi_{1}}{\pi_{0}}\right)}{\log \left(\frac{\phi\left(1-\phi_{1}\right)}{\phi_{1}(1-\phi)}\right)}. 
+$$ Similarly, $$
+n\lambda_2 = \max \left\{y: \frac{Pr(H_2\mid y)}{Pr(H_1\mid y)} \leq 1\right\}
+$$ with solution $$
+\lambda_{2}=\frac{\log \left(\frac{1-\phi}{1-\phi_2}\right)+n_{j}^{-1} \log \left(\frac{\pi_0}{\pi_{2 }}\right)}{\log \left(\frac{\phi_2\left(1-\phi\right)}{\phi(1-\phi_2)}\right)}. 
+$$
+
+##### Global BOIN {.unnumbered}
+
+Define the three composite hypothesis as: $$
+\begin{aligned}
+H_{0j} &: \phi_1 < p_j < \phi_2 \\ 
+H_{1j} &: 0 \leq p_j \leq \phi_1\\
+H_{2j} &: \phi_2 \leq p_j \leq 1
+\end{aligned}
+$$ In this case, $$\begin{aligned}
+Pr(\bar R\mid H_0) & = \int f(p)Pr(\bar R\mid p, H_0)dp \\
+Pr(\bar E\mid H_1) & = \int f(p)Pr(\bar E\mid p, H_1)dp \\
+Pr(\bar D\mid H_2) & = \int f(p)Pr(\bar D\mid p, H_2)dp
+\end{aligned}$$ Therefore, $$
+\alpha(\lambda_1, \lambda_2) = Pr(H_{0}) + Pr(H_{1}) + \underbrace{\sum_{y = 0}^{b_{1}}f(y)\{Pr(H_0\mid y) - Pr(H_1\mid y) \}}_{\alpha_{g1}(\lambda_1)} + \underbrace{\sum_{y=0}^{b_2 - 1}\{Pr(H_2\mid y) - Pr(H_0\mid y) \}}_{\alpha_{g2}(\lambda_2)}
+$$ where $b_1 = \lfloor n\lambda_1\rfloor$ and $b_2 = \lfloor n\lambda_2 \rfloor$. Stilly, we can minimize $\alpha_{g1}(\lambda_1)$ and $\alpha_{g2}(\lambda_2)$ when $$
+n\lambda_1 = \max \left\{y: \frac{Pr(H_0\mid y)}{Pr(H_1\mid y)} \leq 1\right\}, \quad
+n\lambda_2 = \max \left\{y: \frac{Pr(H_2\mid y)}{Pr(H_0\mid y)} \leq 1\right\}.
+$$
+
+Therefore, no matter we use local BOIN or global BOIN, the decision function can be defined as $$
+\mathcal{D}_{BOIN} = \max_{i \in 0, 1, 2} Pr(H_i\mid y)
+$$
+
+## Simon's two-stage design {.unnumbered}
+
+[Simon's two-stage design](https://drive.google.com/file/d/1QkEYIioubjmphgipNpQ-oyJTW9a_cQZh/view?usp=drive_link) is used to minimize the expected sample size when the true response is less than some pre-determined uninterested level $\pi_0$.
+
+The null hypothesis is that $H_0: \pi = \pi_0$ and the alternative hypothesis is $H_1: \pi = \pi_1$ where $\pi_1$ is some desirable level that warrant further development. Suppose the Type I and Type II errors are $\alpha$ and $\beta$.
+
+Let $n_1$ patients be given treatment in the first stage. If $r_1$ or less respond or more than $r$ respond, stop stage 1. Otherwise, let $n_2$ patients be given treatment in the second stage. $n = n_1 + n_2$.
+
+Suppose $X_1 \sim Bin(n_1, \pi)$ and $X_2 \sim Bin(n_2, \pi)$. We declare the new drug a
+
+-   Failure if $\xi_F = X_1 \leq r_1 \text{ OR } \{X_1 > r_1 \text { AND } X_1 + X_2 \leq r \}$
+-   Success if $\xi_S = \{X_1 > r_1 \text{ AND } X_1 + X_2 > r \}$
+
+Therefore, $$
+P(\xi_F \mid \pi \leq \pi_0) \leq \alpha,  \quad P(\xi_S \mid \pi \geq \pi_1) \geq 1- \beta
+$$
+
+Moreover, we have $$\begin{aligned}
+P(\xi_S \mid \pi) & = \sum_{m_1 > r_1, m_1 + m_2 > r} b(m_1; n_1, \pi)b(m_2; n_2, \pi) \\
+P(\xi_F \mid \pi) & = 1- P(\xi_S \mid \pi) \\
+& = B(r_1; n_1, \pi) + \sum_{x = r_1 + 1}^{\min\{n_1, r\}}b(x; n_1, \pi)B(r-x; n_2, \pi)
+\end{aligned}$$
+
+The expected sample size $EN(\pi_0)$ is given by $$
+n_1\left[P(X_1 \leq r_1\mid \pi = \pi_0) + P(X_1 > r\mid \pi = \pi_0) \right] + nP(r_1 + 1 \leq X_1 \leq r \mid \pi = \pi_0)
+$$ The probability of early rejection in stage 1 is $$
+PET(\pi_0) = P(X_1 \leq r_1 \mid \pi = \pi_0)
+$$
+
+There are several choices to select $(r_1, n_1, r, n)$:
+
+-   **Optimal design**: the one has the smallest expected sample size when $\pi = \pi_0$.
+-   **Minimax design**: the one has the smallest total sample size for the whole trial when $\pi = \pi_0$.
+-   **Admissible design**: compromise the minimax and the optimal design. [@jung2004admissible]
+
+```{r}
+library(clinfun)
+ph2simon(pu = 0.2, pa = 0.4, ep1 = 0.1, ep2 = 0.2)
+
+library(ph2mult)
+binom.design(type = "admissible", p0 = 0.15, p1 = 0.3, 
+             signif.level = 0.05, power.level = 0.9)
+```
+
+## Other Design Methods
+
+{{< include clinical_trial_interest_paper.qmd >}}

@@ -1,0 +1,85 @@
+- name: RFSTDTC
+  domain: DM
+  label: Subject Reference Start Date/Time
+  
+- name: RFENDTC
+  domain: DM
+  label: Subject Reference End Date/Time
+  
+- name: RFXSTDTC
+  domain: DM
+  label: Date/Time of First Study Treatment  
+  
+- name: RFXENDTC
+  domain: DM
+  label: Date/Time of Last Study Treatment  
+  
+- name: RFICDTC
+  domain: DM
+  label: Date/Time of Informed Consent 
+  
+- name: RFPENDTC
+  domain: DM
+  label: Date/Time of End of Participation   
+  
+- name: DTHDTC
+  domain: DM
+  label: Date/Time of Death  
+  
+- name: DTHFL
+  domain: DM
+  label: Subject Death Flag  
+  
+- name: SITEID
+  domain: DM
+  label: Study Site Identifier   
+  
+- name: BRTHDTC
+  domain: DM
+  label: Date/Time of Birth   
+  
+- name: AGE
+  domain: DM
+  label: Age  
+  
+- name: AGEU
+  domain: DM
+  label: Age Units 
+  
+- name: SEX
+  domain: DM
+  label: Sex  
+  
+- name: RACE
+  domain: DM
+  label: Race  
+  
+- name: ETHNIC
+  domain: DM
+  label: Ethnicity   
+  
+- name: COUNTRY
+  domain: DM
+  label: Country
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  

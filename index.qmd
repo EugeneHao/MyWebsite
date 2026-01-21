@@ -1,0 +1,46 @@
+---
+pagetitle: "Hao Sun"
+page-layout: custom
+section-divs: false
+toc: false
+css: index.css
+editor: source
+description: | 
+  An open source technical publishing system for creating beautiful articles, websites, blogs, books, slides, and more. Supports Python, R, Julia, and JavaScript.
+hide-description: true
+image: quarto-dark-bg.jpeg
+---
+
+
+::: {.hero-banner}
+
+
+::: {.content-block}
+
+::: {.hero-text}
+## Welcome to Hao Sun's Website!^[®]{.trademark}^ {.mt-1}
+
+Hi! Welcome to my personal webpage. I am a biostatistician in the department of Global Biometric Sciences at [Bristol Myers Squibb](https://www.bms.com/). 
+
+I received my PhD in [Statistics](https://www.stat.iastate.edu/ "ISU Statistics Department") at [Iowa State University](http://www.iastate.edu/ "Iowa State University") in 2022, and a Bachelors of Statistics from [University of Science and Technology of China](https://en.ustc.edu.cn/). My research topics includes survey modeling, small area estimation, clinical trial designs, dynamic borrowing, and graphical model. 
+
+
+:::
+
+
+:::
+
+
+:::
+
+
+::: {.hello-quarto .alt-background}
+::: {.content-block}
+
+
+:::
+:::
+
+
+
+

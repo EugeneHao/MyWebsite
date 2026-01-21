@@ -1,0 +1,19 @@
+- name: SESTDTC
+  domain: SE
+  label: Start Date/Time of Element
+
+- name: SEENDTC
+  domain: SE
+  label: End Date/Time of Element 
+
+- name: SESTDY
+  domain: SE
+  label: Study Day of Start of Visit
+
+- name: SEENDY
+  domain: SE
+  label: Study Day of End of Visit
+
+- name: TAETORD
+  domain: SE
+  label: Planned Order of Element within Arm

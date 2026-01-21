@@ -1,0 +1,15 @@
+  
+- title: Intermidiate Courses
+  subtitle: 500 Level Courses
+  links:
+    - text: STAT510
+      href: STAT510/STAT510.qmd
+    - text: STAT544
+      href: STAT544/STAT544.qmd
+
+- title: Advanced Courses
+  subtitle: 600 Level Courses 
+  links:
+    - text: STAT644
+      href: STAT644/STAT644.qmd  
+

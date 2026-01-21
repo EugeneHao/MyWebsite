@@ -1,0 +1,75 @@
+- name: PCTEST
+  domain: PC
+  label: Pharmacokinetic Test Name
+
+- name: PCTESTCD
+  domain: PC
+  label: Pharmacokinetic Test Short Name
+
+- name: PCORRES
+  domain: PC
+  label: Result or Finding as Collected
+
+- name: PCSTRESC
+  domain: PC
+  label: Character Result/Finding in Standard Format
+
+- name: PCSTRESN
+  domain: PC
+  label: Numeric Result/Finding in Standard Units
+
+- name: PCSTRESU
+  domain: PC
+  label: Standard Units
+
+- name: PCSPEC
+  domain: PC
+  label: Specimen Material Type
+
+- name: PCMETHOD
+  domain: PC
+  label: Method of Test or Examination
+
+- name: PCDTC
+  domain: PC
+  label: Date/Time of Specimen Collection
+
+- name: PCENDTC
+  domain: PC
+  label: End Date/Time of Collection
+
+- name: PCSTDY
+  domain: PC
+  label: Study Day of Specimen Collection
+
+- name: PCLLOQ
+  domain: PC
+  label: Lower Limit of Quantification
+
+- name: PCSTAT
+  domain: PC
+  label: Completion Status
+
+- name: PCREASND
+  domain: PC
+  label: Reason Not Done
+
+- name: PCCAT
+  domain: PC
+  label: Category for Pharmacokinetic Concentration
+
+- name: PCSCAT
+  domain: PC
+  label: Subcategory for Pharmacokinetic Concentration
+
+- name: PCGRPID
+  domain: PC
+  label: Group ID
+
+- name: PCREFID
+  domain: PC
+  label: Reference ID
+
+- name: PCSPID
+  domain: PC
+  label: Sponsor-Defined Identifier

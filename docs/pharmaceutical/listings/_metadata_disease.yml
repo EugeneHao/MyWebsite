@@ -1,0 +1,19 @@
+listing: 
+  type: table
+  sort-ui: [name, chinese, body part]
+  fields: 
+    - name
+    - chinese
+    - body part
+    - drugs
+  field-links: 
+    - name
+  field-display-names: 
+    name: Name
+    chinese: 中文
+    body part: Body Part
+    drugs: Drugs
+format:
+  html:
+    anchor-sections: false
+  

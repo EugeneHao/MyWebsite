@@ -1,0 +1,563 @@
+---
+title: "Rcpp"
+search: true
+---
+
+::: callout-important
+-   RcppArmadillo简明手册 <http://arma.sourceforge.net/docs.html>
+-   Advanced R <http://adv-r.had.co.nz/Rcpp.html>
+:::
+
+# My Notes
+
+```{r engine='Rcpp', eval = FALSE}
+arma::conv_to<arma::vec>::from(sum(logit, 1)) 
+
+// multinomial sample (number, prob_vector, categ_num, save_pointer)
+rmultinom(1, oneprob.begin(), C+1, Ytemp.colptr(n-1))  //colptr: column pointer
+
+// element-wise multiplication of two objects
+A % B     // = A * B in R (both are either vectors or matrice) 
+
+// cube: 
+arma::cube a = Rcpp::as<arma::cube>(a0); 
+a.slice(0)     // = a[,,1]
+a.row(0)       // = a[1,,]
+a.col(0)       // = a[,1,]
+
+arma::mat b = a.row(0); 
+arma::mat c = b.row(0).t();   // c = a[1,1,] returns a matrix with one column
+
+// binomial distribution 
+mu = exp(Z * beta)/(1+exp(Z * beta)); 
+tmp = runif(n); 
+result = arma::conv_to<arma::vec>::from(mu >= tmp);
+
+```
+
+## 1. Rcpp functions
+
+-   `sum`
+-   `cumsum`
+-   `.n_rows`, `.n_cols`, `.n_elem`, `.n_nonzero`
+-   change size: `.set_size(n_rows, n_cols)`
+-   reshape: `.reshape(n_rows, n_cols)`
+-   insert `.insert_rows`, `.insert_cols`
+-   remove `.shed_row`/`.shed_rows()`, `.shed_col`/`.shed_cols()`
+-   `.copy_size(A)`
+-   `.zeros(n_row, n_col)`, `.ones` set all elements zeros(can change size at the same time)
+-   `runif`, `rnorm`
+-   transpose `.t()`
+-   inverse `.i()`
+-   `.min()`, `.max()`
+-   return index of min/max `.index_min()`/`.index_max()`
+-   compute Ax = b: `solve(A, b)`
+
+## 2. Slice Matrices
+
+-   one row `a.row(k)`, one col `a.col(k)`
+
+-   rows: `a.rows(k, j)`, cols `a.cols(k,j)`
+
+-   A\_{a:b,c:d}: `X.submat(a,c,b,d)`
+
+-   $A_{k\times1}\times B_{1\times k}$
+
+    ```{r engine='Rcpp', eval = FALSE, filename = "Example"}
+    try <- '
+    arma::mat a = Rcpp::as<arma::mat>(A);
+    arma::vec b = Rcpp::as<arma::vec>(B);
+    arma::mat result = arma::zeros<arma::mat>(3,3);
+    result = b * a.row(1);
+    return Rcpp::wrap(result);
+    '
+
+    rcpp_try <- cxxfunction(signature(A = "numeric", B = "numeric"),try,plugin="RcppArmadillo", verbose = TRUE)
+
+    rcpp_try(A = matrix(1:9, 3), B = 1:3)
+
+    ```
+
+# Notes from Online Source
+
+## 1. 常用数据类型
+
+-   `Mat<type>`为模板类，其中`type`可以是：float, double, std::complex, std::complex, short, int, long, and unsigned versions of short, int, long等。为方便起见，Armadillo C++已经预定义了以下类型。
+-   在Armadillo中，矩阵是按照一列一列(column by column)存在内存中的(column-major ordering)。
+
+| Data Type           | Mathematics          | Details                                                                 |
+|-----------------|-----------------|-------------------------------------|
+| `mat, cx_mat`       | Matrix 矩阵          | Dense real/complex matrix class                                         |
+| `vec, cx_vec`       | Column Vector 列向量 | Dense real/complex column vector class                                  |
+| `rowvec, cx_rowvec` | Row Vector 行向量    | Dense real/complex row vector class                                     |
+| `cube, cx_cube`     | Cube 3维矩阵         | Dense real/complex cube class ("3D matrix")                             |
+| `field`             | 域                   | Class for storing arbitrary objects in matrix-like or cube-like layouts |
+| `sp_mat, sp_cx_mat` | Matrix 矩阵          | Sparse real/complex matrix class                                        |
+| `umat, imat`        | Matrix 矩阵          | Matrix with unsigned/integer elements                                   |
+| `uvec, ivec`        | Vector 向量          | Vector with unsigned/integer elements                                   |
+
+## 2. 数学运算
+
+| Operator | Description                                                                                                                                                                                                  |
+|---------------------|---------------------------------------------------|
+| `+`      | Addition of two objects                                                                                                                                                                                      |
+| `-`      | Subtraction of one object from another or negation of an object                                                                                                                                              |
+| `/`      | Element-wise division of an object by another object or a scalar                                                                                                                                             |
+| `*`      | Matrix multiplication of two objects; not applicable to the Cube class unless multiplying a cube by a scalar                                                                                                 |
+| `%`      | Schur product: element-wise multiplication of two objects                                                                                                                                                    |
+| `==`     | Element-wise equality evaluation of two objects; generates a matrix of type umat with entries that indicate whether at a given position the two elements from the two objects are equal (1) or not equal (0) |
+| `!=`     | Element-wise non-equality evaluation of two objects                                                                                                                                                          |
+| `<=`     | As for `==`, but the check is for "greater than or equal to"                                                                                                                                                 |
+| `>=`     | As for `==`, but the check is for "less than or equal to"                                                                                                                                                    |
+| `<`      | As for `==`, but the check is for "greater than"                                                                                                                                                             |
+| `>`      | As for `==`, but the check is for "less than"                                                                                                                                                                |
+
+## 3. 向量、矩阵和域的创建
+
+### 3.1 Basic Creattion
+
+```{r engine='Rcpp', eval = FALSE}
+//Matrix: X
+mat X(n_rows, n_cols);
+mat X(n_rows, n_cols, fill_type);
+mat X(size(Y));
+mat X(size(Y), fill_type);
+mat X("1 0;2 0"); \\create a matrix from a string. (first row is "1 0", second row is "2 0")
+cx_mat X(mat,mat); \\for constructing a complex matrix out of two real matrices
+
+//Vector: X
+vec X(n_elem);
+vec X(n_elem, fill_type);
+vec X(size(Y));
+vec X(size(Y), fill_type);
+cx_vec X(vec,vec); \\for constructing a complex vector out of two real vectors
+
+//Cube or 3-D matrix: X
+cube X(n_rows, n_cols, n_slices);
+cube X(n_rows, n_cols, n_slices, fill_type);
+cube X(size(Y));
+cube X(size(Y), fill_type);
+cx_cube X(cube, cube);  \\for constructing a complex cube out of two real cubes
+
+//Field: F
+field<object_type> F(n_elem)
+field<object_type> F(n_rows, n_cols)
+field<object_type> F(n_rows, n_cols, n_slices)
+field<object_type> F(size(X))
+//似乎object_type只能是mat或者cube,且不能存储复数类型，比如cx_mat.
+
+//An example of field
+mat A(3,4,fill::randu);
+vec B(5,fill::randn);
+field <mat> F(2,1);
+F(0)=A;
+F(1)=B;
+```
+
+Choice of `fill_type`:
+
+| fill_type     | Description                                                                                             |
+|---------------------|---------------------------------------------------|
+| `fill::zeros` | set all elements to 0                                                                                   |
+| `fill::ones`  | set all elements to 1                                                                                   |
+| `fill::eye`   | set the elements along the main diagonal to 1 and off-diagonal elements to 0                            |
+| `fill::randu` | set each element to a random value from a uniform distribution in the \[0,1\] interval                  |
+| `fill::randn` | set each element to a random value from a normal/Gaussian distribution with zero mean and unit variance |
+
+### 3.2 Function Creation
+
+| Function     | Usage                                                                                                                                                                                                    |
+|--------------------|----------------------------------------------------|
+| `eye()`      | `matrix_type X = eye<matrix_type>(n_rows,n_cols)`<br>`matrix_type Y = eye<matrix_type>(size(X))`                                                                                                         |
+| `linspace()` | `vector_type v = linspace<vector_type>(start,end,N)`                                                                                                                                                     |
+| `logspace()` | `vector_type v = logspace<vector_type>(A, B, N)`                                                                                                                                                         |
+| `regspace()` | `vector_type v = regspace<vector_type>(start, delta, end)`                                                                                                                                               |
+| `ones()`     | `vector_type v = ones<vector_type>(n_elem)`<br>`matrix_type X = ones<matrix_type>(n_rows,n_cols)`<br>`cube_type Q = ones<cube_type>(n_rows,n_cols,n_slices)`<br>`some_type R = ones<some_type>(size(Q))` |
+| `randi()`    | `vector_type v = rand_type<vector_type>( n_elem, distr_param(a,b))`                                                                                                                                      |
+| or `randu()` | `matrix_type X = rand_type<matrix_type>( n_rows, n_cols, distr_param(a,b))`                                                                                                                              |
+| or `randn()` | `matrix_type Y = rand_type<matrix_type>(size(X),distr_param(a,b))`                                                                                                                                       |
+| or `randg()` | `cube_type Q = rand_type<cube_type>( n_rows, n_cols, n_slices, distr_param(a,b))`                                                                                                                        |
+
+::: callout-note
+-   `rand_type`可以是`randi()`、`randu()`、`randn()`和`randg()`，分别代表a,b区间中的整数随机值，U\[0,1\]U\[0,1\]分布中的随机浮点值，从标准正态分布中抽取的随机值，从参数为a,b的Gamma分布中抽取的随机值。`distr_param(a,b)` 只适用于`randi()`和`randg()`。 e.g.
+
+    ```         
+    vec v=randu<vec>(5);1
+    ```
+
+-   `regspace()`中`delta`默认是1或-1。
+:::
+
+## 4. 初始化，元素访问，属性和成员函数
+
+### 4.1. 元素初始化 Element initialization
+
+```{r engine='Rcpp', eval = FALSE}
+// C++
+vec v = { 1, 2, 3 };
+mat A = { {1, 3, 5},
+          {2, 4, 6} };
+```
+
+### 4.2. 元素访问 Element access
+
+无论是向量`vec`，矩阵`mat`，立方体`cube`，还是域`field`，每个维数均是从0开始
+
+| Element Access | Description                                                                                                                       |
+|---------------------|---------------------------------------------------|
+| `(n)`          | 访问 `vec` 和 `rowvec`，访问第 `n` 个元素。访问 `mat` 和 `field`，查找相应的行一列数组上的一个元素，从而构成一个大小为1的列向量。 |
+| `(i,j)`        | 访问 `mat` 和一维 `field`，访问第 `(i,j)` 个元素。                                                                                |
+| `(i,j,k)`      | 访问 `cube` 和 3D `field`，访问第 `(i,j,k)` 个元素。                                                                              |
+
+### 4.3. 子矩阵访问 Submatrix view
+
+#### 矩阵X的连续子集访问
+
+| Method                          | Description                                                                       |
+|------------------|------------------------------------------------------|
+| `X.diag(k)`                     | 访问矩阵X的对角线元素（k是可选的，主对角线为k=0，上对角线为k\>0，下对角线为k\<0） |
+| `X.row(i)`                      | 访问矩阵X的第i行                                                                  |
+| `X.col(i)`                      | 访问矩阵X的第i列                                                                  |
+| `X.rows(a,b)`                   | 访问矩阵X从第a行到第b行的子矩阵                                                   |
+| `X.cols(c,d)`                   | 访问矩阵X从第c列到第d列的子矩阵                                                   |
+| `X.submat(a,c,b,d)`             | 访问矩阵X从第a行到第b行和第c列到第d列的子矩阵                                     |
+| `X.submat(span(a,b),span(c,d))` | 访问矩阵X从第a行到第b行和第c列到第d列的子矩阵                                     |
+| `X(a,c, size(n_rows, n_cols))`  | 访问矩阵X从第a行和第c列开始大小为n_rows行n_cols列的子矩阵                         |
+| `X(a,c, size(Y))`               | 访问矩阵X从a行c列开始大小和Y相同的子矩阵                                          |
+| `X(span(a, b), sel_col)`        | 访问第sel_col列，从第a行到第b行的数据。返回向量或矩阵。                           |
+| `X(sel_row, span(c,d))`         | 访问第sel_row行，从第c列到第d列的数据。返回向量或矩阵。                           |
+| `X.head_cols(number_of_cols)`   | 返回头几列                                                                        |
+| `X.head_rows(number_of_rows)`   | 返回头几行                                                                        |
+| `X.tail_cols(number_of_cols)`   | 返回尾几列                                                                        |
+| `X.tail_rows(number_of_rows)`   | 返回尾几行                                                                        |
+
+::: callout-note
+1.  span(start,end)可以被span::all代替，意味着这一维上所有的元素。
+2.  X.diag(k)可以改变第k个对角线的值。
+
+```{r engine='Rcpp', eval = FALSE}
+mat X=randn<mat>(4,4);
+vec v={1,2,3,4};
+X.diag()=v;
+```
+:::
+
+#### 向量V的连续子集访问
+
+| Function              | Description                                       |
+|---------------------|---------------------------------------------------|
+| `V(span(a,b))`        | 访问向量V从第a个元素开始相邻的b个元素             |
+| `V.subvec(a,b)`       | 访问向量V从第a个元素开始相邻的b个元素             |
+| `V.subvec(a,size(W))` | 访问向量V从第a个元素开始，长度相当于W相同的子向量 |
+| `V.head(n_elem)`      | 访问向量V头n个元素                                |
+| `V.tail(n_elem)`      | 访问向量V尾n个元素                                |
+
+#### 向量或矩阵X的间断子集访问
+
+| Method                                                      | Description                                                                                           |
+|-----------------------|-------------------------------------------------|
+| `X.elem(vector_of_indices)`                                 | 通过索引向量（按照列向量化以后）中的索引访问 `vector_of_indices` 的元素；返回向量                     |
+| `X(vector_of_indices)`                                      | 通过索引向量（按照列向量化以后）中的索引访问 `vector_of_indices` 的元素；返回向量                     |
+| `X.cols(vector_of_column_indices)`                          | 通过索引向量访问 `vector_of_column_indices` 的子集；返回矩阵                                          |
+| `X.rows(vector_of_row_indices)`                             | 通过索引向量访问 `vector_of_row_indices` 的子集；返回矩阵                                             |
+| `X.submat(vector_of_row_indices, vector_of_column_indices)` | 通过索引向量访问 `vector_of_row_indices` 和列索引向量 `vector_of_column_indices` 的子集矩阵；返回矩阵 |
+| `X(vector_of_row_indices, vector_of_column_indices)`        | 通过索引向量访问 `vector_of_row_indices` 和列索引向量 `vector_of_column_indices` 的子集矩阵；返回矩阵 |
+
+#### 立方体（三维矩阵）Q 的切片 slice
+
+```{r engine='Rcpp', eval = FALSE}
+Q.slice(slice_number)
+Q.slices(first_slice, last_slice)
+Q.subcube(first_row, first_col, first_slice, last_row, last_col, last_slice)
+Q(span(first_row, last_row), span(first_col, last_col), span(first_slice, last_slice))
+Q(first_row, first_col, first_slice, size(n_rows, n_cols, n_slices))
+Q(first_row, first_col, first_slice, size(R))
+
+// (R is a cube)
+Q.elem(vector_of_indices)
+
+// (间断的力量)
+Q(vector_of_indices)
+```
+
+#### 域F的子集访问
+
+##### 2-D Field
+
+```{r engine='Rcpp', eval = FALSE}
+F.row(row_number)
+F.col(col_number)
+F.rows(first_row, last_row)
+F.cols(first_col, last_col)
+F.subfield(first_row, first_col, last_row, last_col)
+F(span(first_row, last_row), span(first_col, last_col))
+```
+
+##### 3-D Field
+
+```{r engine='Rcpp', eval = FALSE}
+F.slice(slice_number)
+F.slices(first_slice, last_slice)
+F.subfield(first_row, first_col, first_slice, last_row, last_col, last_slice)
+F(span(first_row, last_row), span(first_col, last_col), span(first_slice, last_slice))
+```
+
+### 4.4 属性 Attribute
+
+| Attribute    | Description                                           |
+|--------------|-------------------------------------------------------|
+| `.n_rows`    | 行数；适用于Mat, Col, Row, Cube, field和SpMat         |
+| `.n_cols`    | 列数；适用于Mat, Col, Row, Cube, field和SpMat         |
+| `.n_elem`    | 所有元素个数；适用于Mat, Col, Row, Cube, field和SpMat |
+| `.n_slices`  | 立方体Cube第三维的切数                                |
+| `.n_nonzero` | 非零元素个数；适用于SpMat                             |
+
+::: {.callout-note collapse="true"}
+-   返回值是无符号整数(`uword`)
+-   返回值是read-only的；如果要改变大小（维数），用成员函数`.set_size()`, `.copy_size()`, `.zeros()`, `.ones()`, 或者`.reset()`。
+    -   `.set_size()`
+
+        ```{r engine='Rcpp', eval = FALSE}
+          .set_size( n_elem )
+          .set_size( n_rows, n_cols )
+          .set_size( n_rows, n_cols, n_slices )
+          .set_size( size(X) )
+        ```
+
+    -   `copy_size(A)` 把维数设置成和A一样
+
+    -   `.zeros()`
+
+    -   `.ones()`
+
+    -   `.reset()` 把维数设置成0，意味着无元素
+:::
+
+### 4.5. 其他成员函数 Other member function
+
+| Function                                   | Description                                                                                                                                                                            |
+|---------------------|---------------------------------------------------|
+| `.eye(n, n)` / `.eye(size(X))`             | 创建nxnxn单位阵列；适用于Mat和SpMat                                                                                                                                                    |
+| `.randu(n_elem)`                           | 生成的值位于\[0,1\]均匀分布中的随机值                                                                                                                                                  |
+| `.randu(n_rows,n_cols)`                    | 生成矩阵的值位于\[0,1\]均匀分布中的随机值                                                                                                                                              |
+| `.randu(n_rows,n_cols,n_slices)`           | 生成立方体的值位于\[0,1\]均匀分布中的随机值                                                                                                                                            |
+| `.randn()`                                 | 生成的值符合标准正态分布                                                                                                                                                               |
+| `.fill(value)`                             | 填充Mat, Col, Row, Cube元素设置为value                                                                                                                                                 |
+| `.replace(old_value, new_value)`           | 用于替换特定值：`A.replace(datum::nan, 0);` 适用于Mat, Col, Row, Cube                                                                                                                  |
+| `.transform(lambda_function)` (C++11 Only) | 利用lambda函数转换每一个元素的值；适用于Mat, Col, Row和Cube；对于矩阵，按照column-by-column来进行变换；对于立方体，按照slice-by-slice进行变换，每一个slice是一个矩阵。e.g.对比较复杂。 |
+| `.reshape(n_rows, n_cols)`                 | 适用于矩阵；按照设定的维数重新布置的矩阵，转换时，先将旧的矩阵按列转换为长列向量，然后按照新维数重组，一列一列地设置新的矩阵。保持总体元素数量。                                       |
+| `.reshape(n_rows,n_cols,n_slices)`         | 适用于立方体；与上类似                                                                                                                                                                 |
+| `.reshape(size(X))`                        | 适用于矩阵和立方体；与上类似                                                                                                                                                           |
+| `.resize(n_elem)`                          | 适用于向量;保留原有值并增补，增加部分填充0                                                                                                                                             |
+| `.resize(n_rows,n_cols)`                   | 适用于矩阵；保留原有值增补，增加部分填充0                                                                                                                                              |
+| `.resize(n_rows,n_cols,n_slices)`          | 适用于立方体；保留原有值增补，增加部分填充0                                                                                                                                            |
+| `.resize(size(X))`                         | 适用于向量、矩阵和立方体                                                                                                                                                               |
+| `Y.set_imag(X)`                            | 将复数矩阵Y的虚部设置成实数矩阵X                                                                                                                                                       |
+| `Y.set_real(X)`                            | 将复数矩阵Y的实部设置成实数矩阵X                                                                                                                                                       |
+| `.insert_rows()`                           | 插入行                                                                                                                                                                                 |
+| `.insert_cols()`                           | 插入列                                                                                                                                                                                 |
+| `.insert_slices()`                         | 插入切片                                                                                                                                                                               |
+| `.shed_row()` / `.shed_rows()`             | 移除行                                                                                                                                                                                 |
+| `.shed_col()` / `.shed_cols()`             | 移除列                                                                                                                                                                                 |
+| `.shed_slice()` / `.shed_slices()`         | 移除切片                                                                                                                                                                               |
+| `.swap_rows(row1, row2)`                   | 交换行                                                                                                                                                                                 |
+| `.swap_cols(col1, col2)`                   | 交换列                                                                                                                                                                                 |
+| `.memptr()`                                | 获取对对象的指针；适用于Mat, Col, Row和Cube                                                                                                                                            |
+| `.colptr(col_number)`                      | 获取某一列的指针                                                                                                                                                                       |
+| iterators                                  | STL-style iterators and associated member functions                                                                                                                                    |
+| `.t()`                                     | 转置矩阵并共享数据，适用于 `mat` 和 `cx_mat`                                                                                                                                           |
+| `.st()`                                    | 转置矩阵（不共享数据），仅适用于 `cx_mat`                                                                                                                                              |
+| `.i()`                                     | 选择性                                                                                                                                                                                 |
+| `.min()` / `.max()`                        | 返回矩阵或向量的极值；如果是复数，则返回的极值                                                                                                                                         |
+| `.index_min()` / `.index_max()`            | 返回矩阵或向量极值的索引；返回的是一个元素的整数                                                                                                                                       |
+| `.in_range()`                              | 确保给定的矩阵或者向量是合法的                                                                                                                                                         |
+| `.is_empty()`                              | 确保是否为空                                                                                                                                                                           |
+| `.is_square()`                             | 确保是否是方阵                                                                                                                                                                         |
+| `.is_vec()`                                | 确保一个维度是否是向量                                                                                                                                                                 |
+| `.is_sorted()`                             | 确保对象是否是被排序过的                                                                                                                                                               |
+| `.is_finite()`                             | 确保对象是否有限                                                                                                                                                                       |
+| `.has_inf()`                               | 确保是否含有inf值                                                                                                                                                                      |
+| `.has_nan()`                               | 确保是否含有NaN                                                                                                                                                                        |
+| `.print()`                                 | 打印此对象                                                                                                                                                                             |
+| `.save()` / `.load()`                      | 向磁盘文件或流写入或读取对象                                                                                                                                                           |
+
+::: {.callout-note collapse="true"}
+-   `.transform(lambda_function)`
+
+    ```{r engine='Rcpp', eval = FALSE}
+    // C++11 only example
+    mat A = ones<mat>(4,5);
+    // add 123 to every element
+    A.transform( [](double val) { return (val + 123.0); } );
+    ```
+
+-   `.reshape()`和`.resize()`的区别在于前者不会保存原对象的布局,而后者会保留原对象的布局，且后者更快。例如，如果新对象的维数大于原对象的维数，则新对象中原维数外的元素会被设置成0。 e.g.
+
+    ```{r engine='Rcpp', eval = FALSE}
+      mat A = randu<mat>(2,3);
+      A.reshape(4,4);
+                 [,1]      [,2] [,3] [,4]
+      [1,] 0.02567623 0.8880936    0    0
+      [2,] 0.12546129 0.6520889    0    0
+      [3,] 0.52724939 0.0000000    0    0
+      [4,] 0.30407942 0.0000000    0    0
+      
+      
+      mat A = randu<mat>(2,3);
+      A.resize(4,4);
+                [,1]      [,2]      [,3] [,4]
+      [1,] 0.5451790 0.2632051 0.6375933    0
+      [2,] 0.3753245 0.8050394 0.1627499    0
+      [3,] 0.0000000 0.0000000 0.0000000    0
+      [4,] 0.0000000 0.0000000 0.0000000    0
+    ```
+
+-   `.memptr()` 可被用于和一些库交互，比如FFTW。
+
+    ```{r engine='Rcpp', eval = FALSE}
+          mat A = randu<mat>(5,5);
+    const mat B = randu<mat>(5,5);
+        double* A_mem = A.memptr();
+    const double* B_mem = B.memptr();
+    ```
+:::
+
+## 5. 常用函数
+
+### 5.1. 向量、矩阵和立方体的一般函数
+
+| Function                                                  | Description                                                                                                                                                                              |
+|------------------|------------------------------------------------------|
+| `abs(X)`                                                  | 求矩阵或向量的绝对值                                                                                                                                                                     |
+| `accu(X)`                                                 | 对矩阵或向量的元素进行累加(求和)                                                                                                                                                         |
+| `all(X, dim)`                                             | 确定矩阵或向量是否所有元素都为非零值                                                                                                                                                     |
+| `any(X, dim)`                                             | 确定矩阵或向量是否至少有一个元素为非零值                                                                                                                                                 |
+| `approx_equal(A, B, method, abs_tol, rel_tol)`            | 两个对象在给定的容忍度下是否近似相等，返回True（Bool值）；method可以是absdiff, reldiff或both                                                                                             |
+| `cond(A)`                                                 | 求矩阵A的conditional number                                                                                                                                                              |
+| `conj(X)`                                                 | 求矩阵或向量的共轭矩阵                                                                                                                                                                   |
+| `conv_to<new_type>::from(X)`                              | 不同Armadillo数据类型之间的转换(e.g. mat 和 int); 不同大小的向量间的转换(e.g. cube 和 icube); std::vector 和 Armadillo向量或矩阵之间的转换; `mat 转换为 colvec`, `rowvec 或 std::vector` |
+| `cross(A, B)`                                             | 向量叉乘cross product                                                                                                                                                                    |
+| `cumsum(X, dim)`                                          | 累积和函数；如果是矩阵，则返回行/列元素的累积和；如果是矩阵，且dim=0，则返回所有列的和，`dim=1`, 则返回所有行的和                                                                        |
+| `cumprod(X, dim)`                                         | 累积乘积；如果是矩阵，则返回行/列元素的累积乘积；如果是矩阵，且dim=0，则返回所有列的乘积，`dim=1`, 则返回所有行的乘积                                                                    |
+| `det(A)`                                                  | 计算方阵的行列式;对于大矩阵，`log_det()` 更加精确                                                                                                                                        |
+| `log_det(val,sign,A)`                                     | Log determinant of square matrix A; the determinant is equal to exp(val)\*sign                                                                                                           |
+| `diagmat(X, k)`                                           | 生矩阵对角线，用n个相同的矩阵X的对角线元素作为新矩阵的k个对角线，其他元素设置为零                                                                                                        |
+| `diagvec(A, k)`                                           | 取矩阵A的对角线                                                                                                                                                                          |
+| `dot(A, B)` / `cdot / norm_dot`                           | 向量的点积dot product                                                                                                                                                                    |
+| `find(condition)`                                         | 返回向量或矩阵满足条件的元素的线性索引; e.g. `find(A>B)` or `find(A>0)`                                                                                                                  |
+| `find_finite(X)`                                          | 返回向量中非NaN的元素的线性索引                                                                                                                                                          |
+| `find_nonfinite(X)`                                       | 返回向量中NaN的元素的线性索引                                                                                                                                                            |
+| `find_unique(x,ascending_indices)`                        | 返回数组中唯一元素的索引; ascending_indices是可选参数, 设为true (默认) 返回索引按升序排列, 设为false返回降序排列                                                                         |
+| `imag()` / `real()`                                       | 取复数矩阵或数组的虚部或实部                                                                                                                                                             |
+| `inplace_trans(x,method)` / `inplace_strans(x,method)`    | in-place transpose, 直接对X进行转置, X的值改变了                                                                                                                                         |
+| `is_finite()`                                             | 检查是否所有元素都是有限的                                                                                                                                                               |
+| `join_rows(A,B)` / `join_horiz(A,B)`                      | 横向拼接两个矩阵或两个向量                                                                                                                                                               |
+| `join_cols(A,B)` / `join_vert(A,B)`                       | 纵向拼接两个矩阵或两个向量                                                                                                                                                               |
+| `join_slices(cube_C,cube_D)`                              | 拼接矩阵三维切片形成一个立方体, 即两个立方体的第一维和第二维的维数必须相等                                                                                                               |
+| `join_slices(mat_m,mat_N)`                                | 拼接两个三维切片形成一个立方体, 即两个矩阵必须形状相同                                                                                                                                   |
+| `join_slices(mat_m,cube_C)` / `join_slices(cube_C,mat_M)` | 将一个矩阵加入一个立方体中                                                                                                                                                               |
+| `kron(A,B)`                                               | Kronecker tensor product                                                                                                                                                                 |
+| `min(X,dim)` / `max(X,dim)`                               | 沿对应维度找出一组向量的最大; 沿对应维度(dim)找出最大或最小的值;dim是可选参数, 默认返回一个列向量, 1表示沿着每一行的维度, 2表示返回每一个切片的最值                                      |
+| `min(A,B)` / `max(A,B)`                                   | 返回两个一维数组或者立方体, 按每一个元素比较A和B中同样维度的两个元素的最小值和最大值                                                                                                     |
+| `nonzeros(X)`                                             | 返回一个列向量, 代表非零元素的线性索引                                                                                                                                                   |
+| `norm(X,p)`                                               | 计算矩阵或向量的p-norm; p可以是关于矩阵的1范数,"inf";"fro";是特殊的: p可以是1,2,inf;"fro"指代Frobenius norm                                                                              |
+| `normalise(V,p)` / `normalise(X,p,dim)`                   | 标准化向量V或者矩阵X使其满足unit p-norm                                                                                                                                                  |
+| `rank(X,tolerance)`                                       | 计算矩阵的秩; tolerance为可选参数                                                                                                                                                        |
+| `rcond(A)`                                                | 计算矩阵A的conditional number的倒数的估计值; 如果结果近似代表A是well-conditioned,如果接近0代表A是badly-conditioned                                                                       |
+| `repmat(A,num_copies_per_row,num_copies_per_col)`         | 把矩阵A按照水平和垂直进行复制并堆叠成新的矩阵                                                                                                                                            |
+| `shuffle(V)` / `shuffle(X,dim)`                           | 随机排列向量元素或矩阵指定的切片                                                                                                                                                         |
+| `sort(V,sort_direction)` / `sort(X,sort_direction,dim)`   | 对向量进行排序, 或对矩阵的每个切片(或者维度)进行排序; sort_direction可以是ascend(默认) 或 descend                                                                                        |
+| `sort_index(X,sort_direction)`                            | 反回对原数据排序后的索引元素的线性索引                                                                                                                                                   |
+| `B=sqrtmat(A)` / `sqrtmat_sympd(A)`                       | 计算矩阵的Complex square root; B=ecx_mat                                                                                                                                                 |
+| `sqrtmat_sympd(A)` / `sqrtmat_sympd(B, A)`                | 对称正定矩阵的Complex square root                                                                                                                                                        |
+| `sum(X, dim)`                                             | 向量：返回所有元素的和；矩阵：返回每一列(dim=0)或每一行(dim=1)的和；立方体：返回每一维上(第三维度dim=2)的和                                                                              |
+| `trace(X)`                                                | 计算矩阵的迹即对角线上的值的总和                                                                                                                                                         |
+| `trans(A)` / `strans(A)`                                  | 转置矩阵；如果是复数矩阵，则产生共轭的转置矩阵，而后者是直接转置                                                                                                                         |
+| `unique(A)`                                               | 返回A的独一无二的元素，并且按照升序排列；如果A是矩阵，则返回一个列向量                                                                                                                   |
+| `vectorise(X, dim)`                                       | 矩阵的向量化；如果dim=0,按照column-wise；如果dim=1,按照row-wise                                                                                                                          |
+
+### 5.2 其他一些数学函数
+
+| Function       | Description                                                                          |
+|---------------------|---------------------------------------------------|
+| `exp(A)`       | base-e exponential: e\^x                                                             |
+| `exp2(A)`      | base-2 exponential: 2\^x                                                             |
+| `exp10(A)`     | base-10 exponential: 10\^x                                                           |
+| `trunc_exp(A)` | base-e exponential, truncated to avoid infinity (only for float and double elements) |
+| `log(A)`       | natural log: log_e(x)                                                                |
+| `log2(A)`      | base-2 log: log_2(x)                                                                 |
+| `log10(A)`     | base-10 log: log_10(x)                                                               |
+| `trunc_log(A)` | natural log, truncated to avoid ±infinity (only for float and double elements)       |
+| `pow(A, p)`    | raise to the power of p: x\^p                                                        |
+| `square(A)`    | square: x\^2                                                                         |
+| `sqrt(A)`      | square root: x---\>√x                                                                |
+| `floor(A)`     | largest integral value that is not greater than the input value                      |
+| `ceil(A)`      | smallest integral value that is not less than the input value                        |
+| `round(A)`     | round to nearest integer, with halfway cases rounded away from zero                  |
+| `trunc(A)`     | round to nearest integer, towards zero                                               |
+| `erf(A)`       | error function                                                                       |
+| `erfc(A)`      | complementary error function                                                         |
+| `lgamma(A)`    | natural log of the gamma function                                                    |
+| `sign(A)`      | signum function                                                                      |
+
+### 5.3. 矩阵的分解、因子化、逆矩阵和线性方程的解
+
+#### Dense Matrix
+
+| Function    | Description                                                   |
+|---------------------|---------------------------------------------------|
+| `chol`      | Cholesky decomposition                                        |
+| `eig_sym`   | eigen decomposition of dense symmetric/hermitian matrix       |
+| `eig_gen`   | eigen decomposition of dense general square matrix            |
+| `eig_pair`  | eigen decomposition for pair of general dense square matrices |
+| `inv`       | inverse of general square matrix                              |
+| `inv_sympd` | inverse of symmetric positive definite matrix                 |
+| `lu`        | lower-upper decomposition                                     |
+| `null`      | orthonormal basis of null space                               |
+| `orth`      | orthonormal basis of range space                              |
+| `pinv`      | pseudo-inverse                                                |
+| `qr`        | QR decomposition                                              |
+| `qr_econ`   | economical QR decomposition                                   |
+| `qz`        | generalised Schur decomposition                               |
+| `schur`     | Schur decomposition                                           |
+| `solve`     | solve systems of linear equations                             |
+| `svd`       | singular value decomposition                                  |
+| `svd_econ`  | economical singular value decomposition                       |
+| `syl`       | Sylvester equation solver                                     |
+
+#### Sparse Matrix
+
+| Function   | Description                                                                  |
+|---------------------|---------------------------------------------------|
+| `eigs_sym` | limited number of eigenvalues & eigenvectors of sparse symmetric real matrix |
+| `eigs_gen` | limited number of eigenvalues & eigenvectors of sparse general square matrix |
+| `spsolve`  | solve sparse systems of linear equations                                     |
+| `svds`     | limited number of singular values & singular vectors of sparse matrix        |
+
+### 5.4. 信号和图像处理
+
+| Function         | Description                                   |
+|------------------|-----------------------------------------------|
+| `conv`           | 1D convolution                                |
+| `conv2`          | 2D convolution                                |
+| `fft` / `ifft`   | 1D fast Fourier transform and its inverse     |
+| `fft2` / `ifft2` | 2D fast Fourier transform and its inverse     |
+| `interp1`        | 1D interpolation                              |
+| `polyfit`        | find polynomial coefficients for data fitting |
+| `polyval`        | evaluate polynomial                           |
+
+### 5.5. 统计和聚类
+
+| Function                                           | Description                                                                                                                                                              |
+|-------------------------------|----------------------------------------|
+| `mean(X, dim)`                                     | 平均值；适用于Vec, Mat, Cube                                                                                                                                             |
+| `median(X, dim)`                                   | 中位数；适用于Vec, Mat                                                                                                                                                   |
+| `stddev(X, norm_type, dim)`                        | 标准差；norm_type可选参数为1，0代表除以N-1 (无偏估计), 1表示除以N; 适用于Vec, Mat                                                                                        |
+| `var(X, norm_type, dim)`                           | 方差；适用于Vec, Mat                                                                                                                                                     |
+| `range(X, dim)`                                    | 范围；适用于Vec, Mat                                                                                                                                                     |
+| `cov(X, Y, norm_type)` / `cov(X, norm_type)`       | 协方差；当两个输入X、Y时，生成的行表示样本，列表示变量，则cov(X,Y)的第(i,j)-th个元素等于X的第i个变量和Y的第j个变量的协方差; norm_type=0表示除以N-1, norm_type=1表示除以N |
+| `cor(X, Y, norm_type)` / `cor(X, norm_type)`       | 相关系数；与协方差类似                                                                                                                                                   |
+| `hist` / `histc`                                   | 直方图                                                                                                                                                                   |
+| `princomp`                                         | 主成分分析                                                                                                                                                               |
+| `kmeans(means,data,k,seed_mode,n_iter,print_mode)` | K-means聚类，聚类解析成k个不相交的集合                                                                                                                                   |
+| `gmm_diag`                                         | 聚类；Gaussian Mixture Model (GMM)                                                                                                                                       |

@@ -1,0 +1,18 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-regulatory
+  contents: 
+    - listings/regulatory.yml
+metadata-files: 
+  - listings/_metadata_regulatory.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### Regulatory {.unlisted}
+
+::: {#listing-regulatory .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

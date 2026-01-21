@@ -1,0 +1,27 @@
+---
+title: "Stelara"
+---
+
+### **药物简介（Drug Overview）**
+
+史泰乐（Stelara，通用名为乌斯妥昔单抗 Ustekinumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），用于治疗中重度银屑病（Psoriasis）及其他炎症性疾病。它通过抑制特定的细胞因子，减轻炎症反应。
+
+### **药物原理（Drug Mechanism）**
+
+乌斯妥昔单抗的作用机制是靶向并抑制白细胞介素12（Interleukin-12，IL-12）和白细胞介素23（Interleukin-23，IL-23），这两种细胞因子在炎症和自身免疫过程中起关键作用。通过抑制这些细胞因子，史泰乐能够减轻炎症，控制皮肤病变和其他炎症性疾病的症状。
+
+### **适应症（Indications）**
+
+史泰乐被批准用于治疗以下疾病：
+
+1.  中重度斑块型银屑病（Moderate to Severe Plaque Psoriasis）：适用于需要全身治疗或光疗的成人和青少年患者。
+
+2.  活动性银屑病性关节炎（Active Psoriatic Arthritis）：适用于成人患者。
+
+3.  中度至重度活动性克罗恩病（Moderate to Severe Active Crohn's Disease）：用于成人患者。
+
+4.  中度至重度溃疡性结肠炎（Moderate to Severe Ulcerative Colitis）：适用于成人患者。
+
+### **副作用（Side Effects）**
+
+史泰乐的常见副作用包括上呼吸道感染、头痛和疲劳。使用史泰乐可能会增加感染的风险，包括结核和其他细菌、真菌或病毒感染。在接种活疫苗期间应避免使用史泰乐。

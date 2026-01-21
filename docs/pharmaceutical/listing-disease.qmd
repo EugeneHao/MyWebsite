@@ -1,0 +1,20 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-disease
+  contents: 
+    - listings/disease.yml
+metadata-files: 
+  - listings/_metadata_disease.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### Disease 
+
+### {.unlisted}
+
+::: {#listing-diseases .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>STAT510 – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/courses/STAT544/STAT544.html" rel="next">
+<link href="../../../docs/courses/index.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="STAT510 – Hao Sun">
+<meta property="og:description" content="">
+<meta property="og:image" content="fig/c10fig1.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="STAT510 – Hao Sun">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="fig/c10fig1.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../docs/statistics/index.html" aria-current="page"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/statistics/index.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../docs/courses/index.html">Courses</a></li><li class="breadcrumb-item"><a href="../../../docs/courses/STAT510/STAT510.html">STAT510</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/statistics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Topics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/statistics/topics/Bayesian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/biostatistics/topics/dose-finding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biostatistics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/dose-finding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dose Finding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/dose-optimization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dose Optimization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/dynamic-borrowing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic Borrowing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/hypothesis-testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hypothesis Testing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/survival-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survival Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decision Making</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/multiple-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/targeted-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Targeted Learning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/biostatistics/topics/estimand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estimand</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">Machine Learning</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/courses/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Courses</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/courses/STAT510/STAT510.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">STAT510</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/courses/STAT544/STAT544.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STAT544</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/books/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notebooks</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/books/clinical trial design/clinical-trial-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clinial Trial Designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/books/survival analysis/Survival Analysis - Techniques for Censored and Truncated Data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survival Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/books/hypothesis testing/hypothesis-testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hypothesis Testing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link active" data-scroll-target="#preliminaries">1. Preliminaries</a></li>
+  <li><a href="#review-of-linear-models" id="toc-review-of-linear-models" class="nav-link" data-scroll-target="#review-of-linear-models">2. Review of Linear Models</a></li>
+  <li><a href="#the-f-test-for-comparing-reduced-vs.-full-models" id="toc-the-f-test-for-comparing-reduced-vs.-full-models" class="nav-link" data-scroll-target="#the-f-test-for-comparing-reduced-vs.-full-models">3. The F test for Comparing Reduced vs.&nbsp;Full Models</a></li>
+  <li><a href="#analysis-of-two-factor-experiments-based-on-cell-means-models" id="toc-analysis-of-two-factor-experiments-based-on-cell-means-models" class="nav-link" data-scroll-target="#analysis-of-two-factor-experiments-based-on-cell-means-models">4. Analysis of Two-Factor Experiments Based on Cell Means Models</a></li>
+  <li><a href="#analysis-of-two-factor-experiments-based-on-additive-models" id="toc-analysis-of-two-factor-experiments-based-on-additive-models" class="nav-link" data-scroll-target="#analysis-of-two-factor-experiments-based-on-additive-models">5. Analysis of Two-Factor Experiments Based on Additive Models</a></li>
+  <li><a href="#analysis-of-variance-anova" id="toc-analysis-of-variance-anova" class="nav-link" data-scroll-target="#analysis-of-variance-anova">6. Analysis of Variance (ANOVA)</a></li>
+  <li><a href="#anova-for-balanced-two-factor-experiments" id="toc-anova-for-balanced-two-factor-experiments" class="nav-link" data-scroll-target="#anova-for-balanced-two-factor-experiments">7. ANOVA for Balanced Two-Factor Experiments</a></li>
+  <li><a href="#anova-for-unbalanced-two-factor-experiments" id="toc-anova-for-unbalanced-two-factor-experiments" class="nav-link" data-scroll-target="#anova-for-unbalanced-two-factor-experiments">8. ANOVA for Unbalanced Two-Factor Experiments</a></li>
+  <li><a href="#orthogonal-linear-combinations-contrasts-and-additional-partitioning-of-anova-sums-of-squares" id="toc-orthogonal-linear-combinations-contrasts-and-additional-partitioning-of-anova-sums-of-squares" class="nav-link" data-scroll-target="#orthogonal-linear-combinations-contrasts-and-additional-partitioning-of-anova-sums-of-squares">9. Orthogonal Linear Combinations, Contrasts and Additional Partitioning of ANOVA Sums of Squares</a></li>
+  <li><a href="#the-aitken-model" id="toc-the-aitken-model" class="nav-link" data-scroll-target="#the-aitken-model">10. The Aitken Model</a></li>
+  <li><a href="#linear-mixed-effects-models" id="toc-linear-mixed-effects-models" class="nav-link" data-scroll-target="#linear-mixed-effects-models">11. Linear Mixed-Effects Models</a></li>
+  <li><a href="#the-anova-approach-to-the-analysis-of-linear-mixed-effects-models" id="toc-the-anova-approach-to-the-analysis-of-linear-mixed-effects-models" class="nav-link" data-scroll-target="#the-anova-approach-to-the-analysis-of-linear-mixed-effects-models">12. The ANOVA Approach to the Analysis of Linear Mixed-Effects Models</a></li>
+  <li><a href="#the-cochran-satterthwaite-approximation-for-linear-combination-of-mean-squares" id="toc-the-cochran-satterthwaite-approximation-for-linear-combination-of-mean-squares" class="nav-link" data-scroll-target="#the-cochran-satterthwaite-approximation-for-linear-combination-of-mean-squares">13. The Cochran-Satterthwaite Approximation for Linear Combination of Mean Squares</a></li>
+  <li><a href="#linear-mixed-effects-models-for-data-from-split-plot-experiments" id="toc-linear-mixed-effects-models-for-data-from-split-plot-experiments" class="nav-link" data-scroll-target="#linear-mixed-effects-models-for-data-from-split-plot-experiments">14. Linear Mixed-Effects Models for Data from Split-Plot Experiments</a></li>
+  <li><a href="#anova-for-balanced-split-plot-experiments" id="toc-anova-for-balanced-split-plot-experiments" class="nav-link" data-scroll-target="#anova-for-balanced-split-plot-experiments">15. ANOVA for Balanced Split-Plot Experiments</a>
+  <ul class="collapse">
+  <li><a href="#inference-for-whole-plot" id="toc-inference-for-whole-plot" class="nav-link" data-scroll-target="#inference-for-whole-plot">15.1. Inference for Whole-Plot</a></li>
+  </ul></li>
+  <li><a href="#sas-analysis-of-split-plot-experiments" id="toc-sas-analysis-of-split-plot-experiments" class="nav-link" data-scroll-target="#sas-analysis-of-split-plot-experiments">16. SAS Analysis of Split-Plot Experiments</a></li>
+  <li><a href="#r-analysis-of-split-plot-experiments" id="toc-r-analysis-of-split-plot-experiments" class="nav-link" data-scroll-target="#r-analysis-of-split-plot-experiments">17. R Analysis of Split-Plot Experiments</a></li>
+  <li><a href="#more-example-split-plot-experiments" id="toc-more-example-split-plot-experiments" class="nav-link" data-scroll-target="#more-example-split-plot-experiments">18. More Example Split-Plot Experiments</a></li>
+  <li><a href="#maximum-likelihood-estimation-for-the-general-linear-model" id="toc-maximum-likelihood-estimation-for-the-general-linear-model" class="nav-link" data-scroll-target="#maximum-likelihood-estimation-for-the-general-linear-model">19. Maximum Likelihood Estimation for the General Linear Model</a></li>
+  <li><a href="#reml-estimation-of-variance-components" id="toc-reml-estimation-of-variance-components" class="nav-link" data-scroll-target="#reml-estimation-of-variance-components">20. REML Estimation of Variance Components</a></li>
+  <li><a href="#blup-of-random-effects-in-normal-linear-mixed-effects-model" id="toc-blup-of-random-effects-in-normal-linear-mixed-effects-model" class="nav-link" data-scroll-target="#blup-of-random-effects-in-normal-linear-mixed-effects-model">21. BLUP of Random Effects in Normal Linear Mixed Effects Model</a></li>
+  <li><a href="#additional-topics-related-to-likelihood" id="toc-additional-topics-related-to-likelihood" class="nav-link" data-scroll-target="#additional-topics-related-to-likelihood">22. Additional Topics Related to Likelihood</a></li>
+  <li><a href="#repeated-measures" id="toc-repeated-measures" class="nav-link" data-scroll-target="#repeated-measures">23. Repeated Measures</a></li>
+  <li><a href="#r-code-for-the-repeated-measures" id="toc-r-code-for-the-repeated-measures" class="nav-link" data-scroll-target="#r-code-for-the-repeated-measures">24. R Code for the Repeated Measures</a></li>
+  <li><a href="#sas-code-for-the-repeated-measures" id="toc-sas-code-for-the-repeated-measures" class="nav-link" data-scroll-target="#sas-code-for-the-repeated-measures">25. SAS Code for the Repeated Measures</a></li>
+  <li><a href="#a-generalized-linear-model-for-bernoulli-response-data" id="toc-a-generalized-linear-model-for-bernoulli-response-data" class="nav-link" data-scroll-target="#a-generalized-linear-model-for-bernoulli-response-data">26. A Generalized Linear Model for Bernoulli Response Data</a></li>
+  <li><a href="#a-generalized-linear-model-for-binomial-response-data" id="toc-a-generalized-linear-model-for-binomial-response-data" class="nav-link" data-scroll-target="#a-generalized-linear-model-for-binomial-response-data">27. A Generalized Linear Model for Binomial Response Data</a></li>
+  <li><a href="#a-generalized-linear-model-for-poison-response-data" id="toc-a-generalized-linear-model-for-poison-response-data" class="nav-link" data-scroll-target="#a-generalized-linear-model-for-poison-response-data">29. A Generalized Linear Model for Poison Response Data</a></li>
+  <li><a href="#generalized-linear-mixef-effects-model" id="toc-generalized-linear-mixef-effects-model" class="nav-link" data-scroll-target="#generalized-linear-mixef-effects-model">29. Generalized Linear Mixef-Effects Model</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/statistics/index.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../docs/courses/index.html">Courses</a></li><li class="breadcrumb-item"><a href="../../../docs/courses/STAT510/STAT510.html">STAT510</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">STAT510</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="preliminaries" class="level2">
+<h2 class="anchored" data-anchor-id="preliminaries">1. Preliminaries</h2>
+<ul>
+<li><p><strong>Idempotent</strong>: A matrix <span class="math inline">\(A\)</span> is idempotent if <span class="math inline">\(AA = A\)</span></p>
+<ul>
+<li>The rank of an idempotent matrix is equal to its trace, i.e.&nbsp;<span class="math inline">\(rank(A) = trace(A)\)</span></li>
+</ul></li>
+<li><p><strong>Generalized Inverse</strong>: <span class="math inline">\(G\)</span> is a generalized inverse of <span class="math inline">\(A\)</span> if <span class="math inline">\(AGA = A\)</span></p></li>
+<li><p>Quadratic form, positive definite, non-negative definite</p>
+<ul>
+<li><span class="math inline">\(A\)</span> is PD <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(A^{-1}\)</span> exists</li>
+</ul></li>
+<li><p>linear transformation</p></li>
+<li><p>multivariate normal distribution</p>
+<ul>
+<li><p>if <span class="math inline">\(y \sim N(\mu, \Sigma)\)</span>, then <span class="math inline">\(y \stackrel{d}{=} Az + \mu\)</span> where <span class="math inline">\(z\sim N(0, I_{n\times n})\)</span> and <span class="math inline">\(A\)</span> is an <span class="math inline">\(m\times n\)</span> matrix of rank <span class="math inline">\(n\)</span> such that <span class="math inline">\(AA' = \Sigma\)</span></p></li>
+<li><p>if <span class="math inline">\(y\sim N(\mu, I_{n\times n})\)</span>, then <span class="math inline">\(w = y'y \sim \chi_n^2(\mu'\mu/2)\)</span></p></li>
+<li><p>Suppose <span class="math inline">\(\Sigma\)</span> is an <span class="math inline">\(n\times n\)</span> positive definite matrix, <span class="math inline">\(A\)</span> is an <span class="math inline">\(n\times n\)</span> symmetric matrix of rank <span class="math inline">\(m\)</span> such that <span class="math inline">\(A\Sigma\)</span> is <em>idempotent</em> (<span class="math inline">\(A\Sigma A\Sigma = A\Sigma\)</span>). Then <span class="math display">\[
+y \sim N(\mu, \Sigma) \Rightarrow y'Ay\sim \chi_m^2(\mu'A\mu/2)
+\]</span></p></li>
+<li><p>If <span class="math inline">\(w\sim \chi_m^2(\theta)\)</span> then <span class="math inline">\(E(w) = m + 2\theta\)</span> and <span class="math inline">\(Var(w) = 2m + 8\theta\)</span></p></li>
+</ul></li>
+<li><p><strong>Non-central t distribution</strong>: <span class="math inline">\(y\sim N(\delta, 1)\)</span>, <span class="math inline">\(w \sim \chi_m^2\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(w\)</span> are independent then <span class="math inline">\(\frac{y}{\sqrt{w/m}}\)</span> has a non-central <span class="math inline">\(t\)</span> distribution with <span class="math inline">\(m\)</span> degrees of freedom and non-centrality parameter <span class="math inline">\(\delta\)</span></p></li>
+<li><p><strong>Non-central F distribution</strong>: <span class="math inline">\(w_1 \sim \chi_{m_1}^2(\theta)\)</span> and <span class="math inline">\(w_2\sim \chi_{m_2}^2\)</span>. <span class="math inline">\(w_1\)</span> and <span class="math inline">\(w_2\)</span> are independent then <span class="math inline">\(\frac{w_1/m_1}{w_2/m_2}\)</span> has a non-central F distribution with <span class="math inline">\(m_1\)</span> numerator degrees of freedom, <span class="math inline">\(m_2\)</span> denominator degrees of freedom and non-centrality parameter <span class="math inline">\(\theta\)</span>: <span class="math inline">\(\frac{w_1/m_1}{w_2/m_2} \sim F_{m_1, m_2}(\theta)\)</span>.</p>
+<ul>
+<li>if <span class="math inline">\(u\sim t_m(\delta)\)</span>, then <span class="math inline">\(u^2 \sim F_{1, m}(\delta^2/2)\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="review-of-linear-models" class="level2">
+<h2 class="anchored" data-anchor-id="review-of-linear-models">2. Review of Linear Models</h2>
+<ul>
+<li><p><strong>General Linear Model (GLM)</strong>: suppose <span class="math inline">\(y = X\beta + \epsilon\)</span> with <span class="math inline">\(E(\epsilon) = 0\)</span></p>
+<ul>
+<li>distribution of <span class="math inline">\(y\)</span> is left unspecified</li>
+<li><span class="math inline">\(E(y) \in \mathcal{C}(X)\)</span></li>
+</ul></li>
+<li><p><strong>Ordinary Least Squares Estimator (OLSE)</strong>: <span class="math inline">\(\hat y = P_X X = X(X'X)^-X'y\)</span></p></li>
+<li><p><strong>Orthogonal projection matrix</strong> <span class="math inline">\(P_X\)</span>:</p>
+<ul>
+<li><span class="math inline">\(P_X\)</span> is symmetric, idempotent,</li>
+<li><span class="math inline">\(P_XX = X\)</span> and <span class="math inline">\(X'P_X = P_X\)</span></li>
+<li><span class="math inline">\(rank(X)= rank(P_X) = tr(P_X)\)</span></li>
+<li>other properties:
+<ul>
+<li><span class="math inline">\(X'XA = X'XB \Leftrightarrow XA = XB\)</span></li>
+<li><span class="math inline">\(\forall (X'X)^- \Rightarrow X(X'X)^-X'X = X\)</span>, <span class="math inline">\(X'X(X'X)^-X' = X'\)</span></li>
+<li><span class="math inline">\(A' = A\)</span>, <span class="math inline">\(AGA = A \Rightarrow\)</span> <span class="math inline">\(AG'A = A\)</span></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Estimable</strong>: if <span class="math inline">\(C\)</span> is any <span class="math inline">\(q\times p\)</span> matrix, the linear function of <span class="math inline">\(\beta\)</span> given by <span class="math inline">\(C\beta\)</span> is estimable <em>if and only if</em> <span class="math inline">\(C = AX\)</span> for some matrix <span class="math inline">\(q\times n\)</span> matrix A</p>
+<ul>
+<li>OLSE of an estimable linear function <span class="math inline">\(C\beta\)</span> is <span class="math inline">\(C(X'X)^-X'y\)</span></li>
+</ul></li>
+<li><p><strong>Normal equation</strong>: <span class="math inline">\(X'Xb = X'y\)</span></p>
+<ul>
+<li>The OLSE of estimable <span class="math inline">\(C\beta\)</span> is <span class="math inline">\(C\hat\beta\)</span> where <span class="math inline">\(\hat\beta\)</span> is any solution for <span class="math inline">\(b\)</span> in the normal equations</li>
+<li><span class="math inline">\(\hat\beta = (X'X)^-X'y\)</span> is always a solution to the Normal Equations for any <span class="math inline">\((X'X)^-\)</span></li>
+<li>if <span class="math inline">\(C\beta\)</span> is estimable, then <span class="math inline">\(C\hat\beta\)</span> is the same for all solution <span class="math inline">\(\hat\beta\)</span> to the Normal equations and <span class="math inline">\(C\hat\beta = AP_Xy\)</span> where <span class="math inline">\(C = AX\)</span></li>
+</ul></li>
+<li><p><strong>Gauss-Markov Model(GMM)</strong>: suppose <span class="math inline">\(y = X\beta + \epsilon\)</span> with <span class="math inline">\(E(\epsilon) = 0\)</span> and <span class="math inline">\(Var(\epsilon) = \sigma^2I\)</span></p></li>
+<li><p><strong>Gauss-Markov Theorem</strong>: the OLSE of an estimable function <span class="math inline">\(C\beta\)</span> is the <em>BLUE</em> of <span class="math inline">\(C\beta\)</span></p>
+<ul>
+<li>an unbiased estimator of <span class="math inline">\(\sigma^2\)</span> under GMM is given by <span class="math inline">\(\hat\sigma^2 = \frac{y'(I-P_X)y}{n-r}\)</span></li>
+</ul></li>
+<li><p><strong>Gauss-Markov Model with Normal Errors (GMMNE)</strong>: suppose <span class="math inline">\(y=X\beta+\epsilon\)</span> with <span class="math inline">\(\epsilon\sim N(0, \sigma^2I)\)</span></p>
+<ul>
+<li>GMMNE is useful for drawing statistical inferences regrading estimable <span class="math inline">\(C\beta\)</span></li>
+<li>assume: 1. GMMNE 2. <span class="math inline">\(C\beta\)</span> is estimable 3. rand(C) = q and <span class="math inline">\(d\)</span> is a known <span class="math inline">\(q\times 1\)</span> vector. Then <span class="math inline">\(H_0: C\beta = d\)</span> is a <em>testable hypothesis</em></li>
+</ul></li>
+<li><p><span class="math inline">\(C\hat\beta\sim N(C\beta, \sigma^2C(X'X)^-C')\)</span> and <span class="math inline">\(\hat\sigma^2\sim \frac{\sigma^2}{n-r}\chi_{n-r}^2\)</span> are independent</p></li>
+<li><p>The F test statistic <span class="math display">\[
+\begin{aligned}
+F &amp; = (C\hat\beta-d)'[\widehat{Var}(C\hat\beta)]^{-1}(C\hat\beta - d)/q \\
+  &amp; = \frac{(C\hat\beta-d)'[C(X'X)^-C']^{-1}(C\hat\beta-d)/q}{\hat\sigma^2} \\
+  &amp; \sim F_{q, n-r}(\frac{(C\beta-d)'[C(X'X)^{-}C']^{-1}(C\beta-d)}{2\sigma^2})
+\end{aligned}
+\]</span> Under the null hypothesis <span class="math inline">\(H_0: C\beta = d\)</span>, the non-negative non-centrality parameter is 0.</p></li>
+<li><p>The t test statistic <span class="math display">\[
+\begin{aligned}
+t &amp;= \frac{c'\hat\beta-d}{\sqrt{\widehat{Var}(c'\beta)}} = \frac{c'\hat\beta-d}{\sqrt{\hat\sigma^2c'(X'X)^-c}} \\
+  &amp; \sim t_{n-r}(\frac{c'\beta-d}{\sqrt{\sigma^2c'(X'X)^-c}})
+\end{aligned}
+\]</span> Under the null hypothesis <span class="math inline">\(H_0: C\beta = d\)</span>, the non-negative non-centrality parameter is 0.</p></li>
+</ul>
+</section>
+<section id="the-f-test-for-comparing-reduced-vs.-full-models" class="level2">
+<h2 class="anchored" data-anchor-id="the-f-test-for-comparing-reduced-vs.-full-models">3. The F test for Comparing Reduced vs.&nbsp;Full Models</h2>
+<ul>
+<li><p>Assume GMMNE and suppose <span class="math inline">\(\mathcal{C}(X_0) \subset \mathcal{C}(X)\)</span>. We wish to test <span class="math inline">\(H_0: E(y)\in C(X_0)\)</span> vs.&nbsp;<span class="math inline">\(H_A: E(y)\in C(X)\backslash C(X_0)\)</span></p>
+<ul>
+<li>For the general case, consider the test statistics</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+F &amp; = \frac{y'(P_X-P_{X_0})y/[rank(X) - rank(X_0)]}{y'(I-P_X)y/[n-rank(X)]} \\
+  &amp; \sim F_{rank(X)-rank(X_0), n-rank(X)}\left(\frac{\beta
+X'(P_X-P_{X_0})X\beta}{2\sigma^2}\right)
+\end{aligned}
+\]</span></p>
+<ul>
+<li><p>Because <span class="math inline">\((\frac{P_X-P_{X_0}}{\sigma^2})(\sigma^2I) = P_X - P_X\)</span> is idempotent and <span class="math inline">\(rank(P_X - P_{X_0}) = rank(P_X)-rank(P_{X_0})\)</span>, <span class="math display">\[
+y'(\frac{P_X-P_{X_0}}{\sigma^2})y \sim \chi_{rank(X)-rank(X_0)}^2(\frac{1}{2}\beta'X'(\frac{P_X-P_{X_0}}{\sigma^2})X\beta)
+\]</span></p></li>
+<li><p><span class="math inline">\(y'(\frac{I-P_X}{\sigma^2})y \sim \chi_{n-rank(X)}^2\)</span></p></li>
+<li><p><span class="math inline">\(y'(\frac{P_X-P_{X_0}}{\sigma^2})y\)</span> is independent of <span class="math inline">\(y'(\frac{I-P_X}{\sigma^2})y\)</span> because <span class="math inline">\((\frac{P_X-P_{X_0}}{\sigma^2})(\sigma^2I)(\frac{I-P_X}{\sigma^2}) = 0\)</span></p></li>
+<li><p>If <span class="math inline">\(H_0\)</span> is true, then <span class="math inline">\((P_X-P_{X_0})X\beta = 0\)</span></p></li>
+<li><p><span class="math inline">\(\beta'X(P_X-P_{X_0})X\beta = \|(P_X-P_{X_0})X\beta\|^2 = \|X\beta-P_{X_0}X\beta\|^2 = \|E(y) - P_{X_0}E(y)\|^2\)</span></p></li>
+<li><p><span class="math inline">\(y'(P_X-P_{X_0})y = y'(I-P_{X_0})y - y'(I-P_X)y = SSE_{REDUCED} - SSE_{FULL}\)</span></p></li>
+<li><p>Thus, <span class="math inline">\(F = \frac{(SSE_{REDUCED} - SSE_{FULL})/(DFE_{REDUCED} - DEF_{FULL})}{SSE_{FULL}/DFE_{FULL}}\)</span></p></li>
+<li><p>Equivalence of <span class="math inline">\(F\)</span> test: this reduced vs.&nbsp;full model F test is equivalent to the F test for testing <span class="math inline">\(H_0: C\beta = d\)</span> vs.&nbsp;<span class="math inline">\(H_A: C\beta \neq d\)</span>.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="analysis-of-two-factor-experiments-based-on-cell-means-models" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-two-factor-experiments-based-on-cell-means-models">4. Analysis of Two-Factor Experiments Based on Cell Means Models</h2>
+<ul>
+<li><strong>treatment</strong>: a combination of one level from each factor forms a treatment</li>
+<li><strong>full-factorial treatment design</strong>: each possible combination of one level from each possible combination of one level from each factor is applied to at least one experimental unit</li>
+<li><strong>completely randomized design (CRD)</strong>: all possible balanced assignments to the treatment groups are equally likely</li>
+<li><strong>cell mean model</strong>: for <span class="math inline">\(i = 1, 2\)</span>, <span class="math inline">\(j = 1,2,3\)</span> and <span class="math inline">\(k = 1,2\)</span>, suppose <span class="math inline">\(y_{ijk} = \mu_{ij} + \epsilon_{ijk}\)</span>
+<ul>
+<li><span class="math inline">\(Y = X_{n\times p}\beta + \epsilon\)</span></li>
+<li>each cell mean is estimable</li>
+<li><span class="math inline">\(\beta\)</span> is estimable when <span class="math inline">\(rank(X) = p\)</span></li>
+<li><span class="math inline">\(\bar \mu_{.j} = \frac{1}{2}\sum_{i=1}^2 \mu_{ij}\)</span>, <span class="math inline">\(\bar \mu_{i.} = \frac{1}{3}\sum_{j=1}^3 \mu_{ij}\)</span> <span class="math inline">\(\bar\mu_{..} = \frac{1}{6}\sum_{i=1}^2\sum_{j=1}^3 \mu_{ij}\)</span></li>
+<li><strong>Least square means</strong>: for example, the LSMEAN for <span class="math inline">\(i = 1\)</span> is <span class="math inline">\(c'\hat\beta\)</span> with <span class="math inline">\(c' = [1/3, 1/3, 1/3, 0, 0, 0]\)</span> and <span class="math inline">\(\hat\beta = [\bar y_{11.}, \bar y_{12.}, \bar y_{13.}, \bar y_{21.}, \bar y_{22.}, \bar y_{23.}]'\)</span>. The standard error for an LSMEAN is given by <span class="math inline">\(\sqrt{\widehat{Var}(c'\hat\beta)} = \sqrt{\hat\sigma^2c'(X'X)^-c}\)</span>.</li>
+</ul></li>
+<li><strong>simple effect</strong>: the difference between cell means that differ in level for only one factor
+<ul>
+<li>for example, <span class="math inline">\(\mu_{11} - \mu_{21}\)</span></li>
+</ul></li>
+<li><strong>main effect</strong>: the difference between marginal means associated with two levels of a factor
+<ul>
+<li>for example: <span class="math inline">\(\bar \mu_{1.} - \bar \mu_{2.}\)</span></li>
+<li>no main effect for <span class="math inline">\(j\)</span>: <span class="math inline">\(\bar \mu_{.1} = \bar \mu_{.2} = \bar \mu_{.3}\)</span></li>
+</ul></li>
+<li><strong>Interaction effect</strong>: the linear combination <span class="math inline">\(\mu_{ij} - \mu_{ij^*} - \mu_{i^*j}+\mu_{i^*j^*}\)</span> for <span class="math inline">\(i \neq i^*\)</span> and <span class="math inline">\(j \neq j^*\)</span>
+<ul>
+<li>when there are no interactions between factors, the simple effects of either factor are the same across all levels of the other factor.</li>
+</ul></li>
+<li>Test for non-zero effects: we can test whether simple effects, main effects or interaction effects are zero vs.&nbsp;non-zero using tests of the form <span class="math inline">\(H_0: C\beta = 0\)</span> vs.&nbsp;<span class="math inline">\(H_A: C\beta \neq = 0\)</span></li>
+<li>An alternative parameterization of the cell mean model is <span class="math inline">\(y_{ijk} = \mu + \alpha_i + \beta_j + \gamma_{ij} + \epsilon_{ijk}\)</span>.
+<ul>
+<li>for example, <span class="math inline">\(\mu_{11} = \mu + \alpha_1 + \beta_{1} + \gamma_{11}\)</span>, <span class="math inline">\(\bar \mu_{1.} = \mu + \alpha_1 + \bar \beta_. + \bar \gamma_{1.}\)</span></li>
+<li>simple effect <span class="math inline">\(\mu_{11} - \mu_{12} = \alpha_1 - \alpha_2 + \gamma_{11} - \gamma_{21}\)</span>.</li>
+<li>main effect <span class="math inline">\(\bar \mu_{1.} - \bar \mu_{2.} = \alpha_1 - \alpha_2 + \bar\gamma_{1.} - \bar\gamma_{2.}\)</span></li>
+<li>interaction effect <span class="math inline">\(\mu_{11}-\mu_{13}-\mu_{21}+\mu_{23} = \gamma_{11}-\gamma_{13}-\gamma_{21} + \gamma_{23}\)</span></li>
+<li>The <code>lm</code> function in R uses a full-rank model matrix with <span class="math inline">\(\beta = [\mu, \alpha_2, \beta_2, \beta_3, \gamma_{22}, \gamma_{23} ]'\)</span>
+<ul>
+<li><span class="math inline">\(\mu = \mu_{11}\)</span> , <span class="math inline">\(\alpha = \mu_{21} - \mu_{11}\)</span>, <span class="math inline">\(\beta_2 = \mu_{12} - \mu_{11}\)</span>, <span class="math inline">\(\beta_3 = \mu_{13} - \mu_{11}\)</span></li>
+<li><span class="math inline">\(\gamma_{22} = \mu_{11}+\mu_{22}-\mu_{21}-\mu_{12}\)</span>, <span class="math inline">\(\gamma_{23} = \mu_{11}+\mu_{23} - \mu_{13} - \mu_{21}\)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="analysis-of-two-factor-experiments-based-on-additive-models" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-two-factor-experiments-based-on-additive-models">5. Analysis of Two-Factor Experiments Based on Additive Models</h2>
+<ul>
+<li><strong>additive model</strong>: <span class="math inline">\(y_{ijk} + \mu + \alpha_i + \beta_{j} + \epsilon_{ijk} \quad(i = 1,2; j = 1,2,3; k = 1,2)\)</span>, factors do not interact
+<ul>
+<li>simple effect = main effect for additive model</li>
+<li>test for main effects: <span class="math inline">\(\alpha_1 = \alpha_2\)</span>, <span class="math inline">\(\beta_1 = \beta_2 = \beta_3\)</span>, no main effect for first level <span class="math inline">\(\Leftrightarrow \alpha_2 = 0\)</span>, no main effect for second effect <span class="math inline">\(\Leftrightarrow \beta_2 = \beta_3 = 0\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="analysis-of-variance-anova" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-variance-anova">6. Analysis of Variance (ANOVA)</h2>
+<ul>
+<li><p>Notation: <span class="math inline">\(y = X\beta + \epsilon\)</span>, <span class="math inline">\(\epsilon \sim N(0, \sigma^2)\)</span>. Let <span class="math inline">\(X_1 = 1\)</span>, <span class="math inline">\(X_m = X\)</span> and <span class="math inline">\(X_{m+1} = I\)</span>. Suppose <span class="math inline">\(C(X_1)\subset C(X_2) \cdots \subset C(X_{m-1}) \subset C(X_m)\)</span>. Let <span class="math inline">\(P_j = P_{X_j}\)</span> and <span class="math inline">\(r_j = rank(X_j), \forall j = 1, \ldots, m+1\)</span></p>
+<ul>
+<li><strong>Total sum of squares</strong>: <span class="math inline">\(SSTo = \sum_{i=1}^n (y_i - \bar y_.)^2 = y'(I-P_1)y = \sum_{j=1}^m y'(P_{j+1} - P_j)y\)</span></li>
+<li><span class="math inline">\(SSE = y'(I- P_X)y\)</span></li>
+<li>Sum of squares: <span class="math inline">\(SS(2|1) = y'(P_2 - P_1)y, \ldots, SS(m|m-1) = y'(P_{m+1} - P_m)y\)</span></li>
+<li><span class="math inline">\(rank(P_{j+1} - P_{j}) = tr(P_{j+1}) - tr(P_j) = r_{j+1} - r_j\)</span></li>
+<li>zero cross-products: <span class="math inline">\((P_{j+1} - P_j)(P_{l+1} - P_{l}) = 0\)</span></li>
+<li>because <span class="math inline">\((\frac{P_{j+1} - P_j}{\sigma^2})(\sigma^2I)\)</span> is idempotent, <span class="math inline">\(\frac{y'(P_{j+1}-P_j)y}{\sigma^2} \sim \chi_{r_{j+1}-r_j}^2\left(\frac{\beta'X'(P_{j+1}-P_j)X\beta}{2\sigma^2} \right)\)</span> for all <span class="math inline">\(j = 1, \ldots, m\)</span></li>
+<li><strong>Mean squares</strong>: <span class="math inline">\(MS(j+1\mid j) = \frac{SS(j+1\mid j)}{r_{j+1}-r_j}\)</span></li>
+</ul></li>
+<li><p><strong>ANOVA F statistics</strong>: <span class="math display">\[
+F_j = \frac{MS(j+1\mid j)}{MSE} = \frac{y'(P_{j+1} - P_j)y)/(r_{j+1} - r_j)}{y'(I-P_X)y/(n-r)} \sim F_{r_{j+1} - r_j, n-r}\left( \frac{\beta'X'(P_{j+1} - P_{j})X\beta}{2\sigma^2}\right)
+\]</span></p>
+<ul>
+<li><span class="math inline">\(F_j\)</span> can be used to test $H_{0j}: = 0 $ vs.&nbsp;<span class="math inline">\(H_{Aj}: \frac{\beta'X'(P_{j+1} - P_{j})X\beta}{2\sigma^2} \neq 0\)</span></li>
+<li><span class="math inline">\(\frac{\beta'X'(P_{j+1} - P_{j})X\beta}{2\sigma^2}\)</span> <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\((P_{j+1}-P_j)X\beta = 0\)</span> <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(P_j E(y) = P_{j+1}E(y)\)</span> <span class="math inline">\(\Leftrightarrow\)</span> <span class="math inline">\(P_{j+1}E(y) \in C(X_j)\)</span></li>
+<li><span class="math inline">\(C^*_j = P_{j+1} - P_j\)</span> is not full rank so <span class="math inline">\((P_{j+1}-P_j)X\beta = 0\)</span> is not a testable hypothesis. We can write <span class="math inline">\(H_{0j}\)</span> as a testable hypothesis by replacing <span class="math inline">\(C^*_j\)</span> with any matrix <span class="math inline">\(C_j\)</span> whose <span class="math inline">\(q = r_{j+1} - r_j\)</span> rows form a basis for the row space of <span class="math inline">\(C^*_j\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="anova-for-balanced-two-factor-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="anova-for-balanced-two-factor-experiments">7. ANOVA for Balanced Two-Factor Experiments</h2>
+<ul>
+<li><p>a sequence of progressively more complex models:</p>
+<ul>
+<li><span class="math inline">\(E(y_{ijk}) = \mu\)</span></li>
+<li><span class="math inline">\(E(y_{ijk}) = \mu + \alpha_i\)</span></li>
+<li><span class="math inline">\(E(y_{ijk}) = \mu + \alpha_i + \beta_j\)</span></li>
+<li><span class="math inline">\(E(y_{ijk}) = \mu + \alpha_i + \beta_j + \gamma_{ij}\)</span></li>
+</ul></li>
+<li><p>R code:</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>o <span class="ot">=</span> <span class="fu">lm</span>(y <span class="sc">~</span> diet <span class="sc">+</span> drug <span class="sc">+</span> diet<span class="sc">:</span>drug, <span class="at">data =</span> data1)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(o)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="anova-for-unbalanced-two-factor-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="anova-for-unbalanced-two-factor-experiments">8. ANOVA for Unbalanced Two-Factor Experiments</h2>
+<ul>
+<li><p>when data are unbalanced, the type 1 ANOVA test for two-way interactions is the same as the test for two-way interactions discussed previously. However, the type 1 ANOVA tests for individual factors are not the tests for main effects discussed previously. Furthermore, the type 1 results for individual factors depend on the order that the factors appear in the type 1 ANOVA table.</p></li>
+<li><p>The test for main effects is based on LSMEANS (equal weighted), but Type 1 ANOVA test does not compute LSMEANS</p></li>
+<li><p>Different types of Sums of Squares</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Type I</th>
+<th>Type II</th>
+<th>Type III</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>SS(A|1)</td>
+<td>SS(A|1, B)</td>
+<td>SS(A|1, B, AB)</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>SS(B|1, A)</td>
+<td>SS(B|1, A)</td>
+<td>SS(B|1, A, AB)</td>
+</tr>
+<tr class="odd">
+<td>AB</td>
+<td>SS(AB|1, A, B)</td>
+<td>SS(AB|1, A, B)</td>
+<td>SS(AB|1, A, B)</td>
+</tr>
+<tr class="even">
+<td>Error</td>
+<td>SSE</td>
+<td>SSE</td>
+<td>SSE</td>
+</tr>
+<tr class="odd">
+<td>C. Total</td>
+<td>SSTotal</td>
+<td>?</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>For balanced data, Type I = Type II = Type III, The ANOVA F tests in the ANOVA table can be used to test for factor main effects and interaction</li>
+<li>For unbalanced data, Type I sums of squares always add to the total sum of squares, Type II and Type III sums of squares do not add to anything special when data are unbalanced. <em>The ANOVA F tests in the Type III ANOVA table can be used to test for factor main effects and interaction.</em></li>
+</ul></li>
+<li><p>How to fit the reduced model <span class="math inline">\(A|1,B, AB\)</span>? Code like <code>lm(y~b+a:b)</code> or <code>model y = b a*b</code> does not fit the reduced model with no <code>a</code> main effect. Note <span class="math inline">\(\bar \mu_{1.} = \bar \mu_{2.} \Leftrightarrow \mu_{22} = \mu_{11} + \mu_{12} - \mu_{21}\)</span>. So we can replace <span class="math inline">\(\mu_{22}\)</span> by three cell means.</p></li>
+<li><p>Alternative Computation of Sums of Squares: Let <span class="math inline">\(SS = y'(P_{X_{reduced+term}} - P_{X_{reduced}})y\)</span> represent any Type I, II or III sum of squares. Let <span class="math inline">\(q = rank(X_{reduced+term}) - rand(X_{reduced})\)</span> be the degrees of freedom associated with <span class="math inline">\(SS\)</span>. Let <span class="math inline">\(C\)</span> be any <span class="math inline">\(q\times p\)</span> matrix whose rows are a basis for the row space of <span class="math inline">\((P_{X_{reduced+term}} - P_{X_{reduced}})X\)</span>. Then the ANOVA F statistic <span class="math display">\[
+\frac{SS/q}{MSE} = \frac{\hat\beta'C'[C(X'X)^-C']^{-1}C\hat\beta/q}{\hat\sigma^2}
+\]</span> Thus, any <span class="math inline">\(SS\)</span> can be computed as <span class="math inline">\(\hat\beta'C'[C(X'X)^-C']^{-1}C\hat\beta\)</span> for an appropriate matrix <span class="math inline">\(C\)</span>.</p></li>
+</ul>
+</section>
+<section id="orthogonal-linear-combinations-contrasts-and-additional-partitioning-of-anova-sums-of-squares" class="level2">
+<h2 class="anchored" data-anchor-id="orthogonal-linear-combinations-contrasts-and-additional-partitioning-of-anova-sums-of-squares">9. Orthogonal Linear Combinations, Contrasts and Additional Partitioning of ANOVA Sums of Squares</h2>
+<ul>
+<li><p>Orthogonal: Under the model <span class="math inline">\(y = X\beta + \epsilon, \epsilon \sim N(0, \sigma^2 I)\)</span>, two estimable linear combinations <span class="math inline">\(c_1'\beta\)</span> and <span class="math inline">\(c_2'\beta\)</span> are <em>orthogonal</em> if and only if their BLUEs <span class="math inline">\(c_1'\hat\beta\)</span> and <span class="math inline">\(c_2'\hat\beta\)</span> are uncorrelated.</p>
+<ul>
+<li><span class="math inline">\(cov(c_1'\hat\beta, c_2\hat\beta) = \sigma^2 c_1'(X'X)^- c_2\)</span>. Thus, estimable linear combinations <span class="math inline">\(c_1'\beta\)</span> and <span class="math inline">\(c_2'\beta\)</span> are orthogonal if and only if <span class="math inline">\(c_1'(X'X)^-c_2 = 0\)</span>.</li>
+</ul></li>
+<li><p><strong>Contrast</strong>: A linear combinations <span class="math inline">\(c'\beta\)</span> is a <em>contrast</em> if and only if <span class="math inline">\(c'1 = 0.\)</span></p></li>
+<li><p><strong>Orthogonal Contrast:</strong> Two estimable contrasts <span class="math inline">\(c'_1\beta\)</span> and <span class="math inline">\(c_2'\beta\)</span> are orthogonal are called <em>orthogonal contrasts</em>.</p></li>
+</ul>
+<p>Suppose <span class="math inline">\(c_1'\beta, \ldots, c_q'\beta\)</span> are pairwise orthogonal linear combinations. Let <span class="math inline">\(C' = [c_1, \ldots, c_q].\)</span> When <span class="math inline">\(C\)</span> has rank <span class="math inline">\(q\)</span>, <span class="math inline">\(\hat\beta'C'[C(X'X)^-C']^{-1}C\hat\beta = \sum_{i=1}^q (c_k'\hat\beta)^2/c_k'(X'X)^-c_k\)</span>.</p>
+<p><img src="fig/c10fig1.png" class="img-fluid"></p>
+<ul>
+<li>SAS code:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{sas}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">    class diet drug;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">    model weightgain=diet drug diet*drug;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="in">    lsmeans diet*drug / slice=diet;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="in">    estimate ’drug 1 - drug 2 for diet 1’  drug 1 -1 0 diet*drug 1 -1 0 0 0 0 / cl;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="in">    estimate ’drug 1 - drug 3 for diet 1’  drug 1 0 -1 diet*drug 1 0 -1 0 0 0;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="in">    estimate ’drug 2 - drug 3 for diet 1’  drug 0 1 -1 diet*drug 0 1 -1 0 0 0;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="in">    estimate ’drug 1 - drug 2 for diet 2’  drug 1 -1 0 diet*drug 0 0 0 1 -1 0;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="in">    estimate ’drug 1 - drug 3 for diet 2’  drug 1 0 -1 diet*drug 0 0 0 1 0 -1;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="in">    estimate ’drug 2 - drug 3 for diet 2’  drug 0 1 -1 diet*drug 0 0 0 0 1 -1;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="in">run;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Comments on the analysis
+<ul>
+<li>Note that the main analysis focuses on pairwise comparisons of drugs within each diet.</li>
+<li>This involves a set of six contrasts, but the contrasts are not pairwise orthogonal within either diet.</li>
+<li>The sums of squares for these contrasts do not add up to any ANOVA sums of squares, but they are the contrasts that best address the researchers’ questions.</li>
+<li>If we want to control the probability of one or more type I errors, we could use Bonferroni’s method. In this case, the adjustment for multiple testing would not change the conclusions.</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-aitken-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-aitken-model">10. The Aitken Model</h2>
+<ul>
+<li><strong>Orthogonal Matrices:</strong> A square matrix <span class="math inline">\(P\)</span> is said to be <em>orthogonal</em> if and only if <span class="math inline">\(P'P = I\)</span></li>
+<li><strong>Spectral Decomposition Theorem:</strong> An <span class="math inline">\(n\times n\)</span> symmetric matrix <span class="math inline">\(H\)</span> may be decomposed as <span class="math inline">\(H = P\Lambda P' = \sum_{i=1}^n \lambda_i p_ip_i'\)</span>
+<ul>
+<li><span class="math inline">\(P\)</span> is an <span class="math inline">\(n\times n\)</span> orthogonal matrix whose columns <span class="math inline">\(p_1,\ldots, p_n\)</span> are the orthonormal eigenvectors of <span class="math inline">\(H\)</span></li>
+<li><span class="math inline">\(\Lambda = \text{diag}(\lambda_1, \ldots, \lambda_n)\)</span> is a diagonal matrix whose diagonal entries are the eigenvalues of <span class="math inline">\(H\)</span></li>
+</ul></li>
+<li><strong>Symmetric Square Root Matrix:</strong> <span class="math inline">\(H\)</span> is an <span class="math inline">\(n\times n\)</span> symmetric, NND matrix. Then there exists a symmetric, NND matrix <span class="math inline">\(B\)</span> such that <span class="math inline">\(BB = H\)</span> where <span class="math inline">\(B = P\Lambda^{1/2}P'\)</span>.</li>
+<li><strong>Aitken Model:</strong> <span class="math inline">\(y = X\beta + \epsilon\)</span>, <span class="math inline">\(E(\epsilon) = 0\)</span>, <span class="math inline">\(Var(\epsilon) = \sigma^2 V\)</span> where <span class="math inline">\(V\)</span> is a known positive definite variance matrix.
+<ul>
+<li><span class="math inline">\(V^{-1/2}y = V^{-1/2}X\beta + V^{-1/2}\epsilon\)</span></li>
+<li>With <span class="math inline">\(z = V^{-1/2}y\)</span>, <span class="math inline">\(W = V^{-1/2}X\)</span> and <span class="math inline">\(\delta = V^{-1/2}\epsilon\)</span>, we have <span class="math inline">\(z = W\beta + \delta\)</span>, <span class="math inline">\(E(\delta) = 0\)</span> and <span class="math inline">\(Var(\delta) = \sigma^2I\)</span>, which is a Gauss-Markov Model.</li>
+<li><span class="math inline">\(\hat z = V^{-1/2}X(X'V^{-1}X)^-X'V^{-1}y\)</span> so that <span class="math inline">\(\hat y = X(X'V^{-1}X)^-X'V^{-1}y\)</span>.</li>
+<li>If <span class="math inline">\(C\beta\)</span> is estimable, we know the BLUE is the OLS estimator. <span class="math inline">\(C(W'W)^-W'z = C(X'V^{-1}X)^-X'V^{-1}y \equiv C\hat\beta_{V}\)</span> is called a <em>Generalized Least Squares (GLS) estimator</em>.</li>
+<li><span class="math inline">\(\hat\beta_V = (X'V^{-1}X)^-X'V^{-1}y\)</span> is a solution to the Aitken Equations: <span class="math inline">\(X'V^{-1}X\beta = X'V^{-1}y\)</span>. When <span class="math inline">\(V\)</span> is diagonal, <span class="math inline">\(\hat\beta_V\)</span> is called <em>weighted least squares estimator</em>.</li>
+<li>An unbiased estimator of <span class="math inline">\(\sigma^2\)</span> is <span class="math display">\[
+\frac{z'(I-P_W)z}{n - rank(W)} = \frac{\|(I- V^{-1/2}X(X'V^{-1}X)^-X'V^{-1/2})V^{-1/2}y\|^2}{n - rank(V^{-1/2}X)} = \frac{\|V^{-1/2}(y - X\hat\beta_V)\|^2}{n - r}
+\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="linear-mixed-effects-models" class="level2">
+<h2 class="anchored" data-anchor-id="linear-mixed-effects-models">11. Linear Mixed-Effects Models</h2>
+<ul>
+<li><dl>
+<dt>Mixed-effects model</dt>
+<dd>
+<p><span class="math inline">\(y = X\beta + Zu + e\)</span></p>
+</dd>
+</dl>
+<ul>
+<li>the elements of <span class="math inline">\(\beta\)</span> are considered to be non-random and are called <em>fixed effects</em>.</li>
+<li>the elements of <span class="math inline">\(u\)</span> are random variables and are called <em>random effects</em>.</li>
+<li>We assume that <span class="math inline">\(E(e) = 0, Var(e) = R, E(u) = 0, Var(u) = G, Cov(u, e) = 0\)</span></li>
+<li><span class="math inline">\(E(y) = X\beta\)</span>, <span class="math inline">\(Var(y) = ZGZ' + R \equiv \Sigma\)</span>, <span class="math inline">\(E(y\mid u) = X\beta + Zu\)</span></li>
+</ul></li>
+</ul>
+<p>When there are <span class="math inline">\(m\)</span> random factors, we can partition <span class="math inline">\(Z\)</span> and <span class="math inline">\(u\)</span> as <span class="math inline">\(Z = [Z_1, \ldots, Z_m]\)</span> and <span class="math inline">\(u = [u_1', \ldots, u_m']'\)</span> so that <span class="math inline">\(Zu = \sum_{j = 1}^m Z_ju_j\)</span>.</p>
+<ul>
+<li>We often assume that all random effects are mutually independent and random effects associated with <span class="math inline">\(j\)</span>th random factor have variance <span class="math inline">\(\sigma_j^2\)</span>. Then, <span class="math inline">\(Var(y) = ZGZ' + R = \sum_{j=1}^R \sigma_j^2 Z_jZ_j' + \sigma_e^2I\)</span>.</li>
+<li>The unknown variance parameters <span class="math inline">\(\sigma_j^2, \sigma_e^2\)</span> are called <em>variance components</em>.</li>
+</ul>
+<p>Experimental Design Terminology</p>
+<ul>
+<li><strong>Experiment</strong>: An investigation in which the investigator applies some treatments to experimental units and then observes the effect of the treatments on the experimental units by measuring one or more response variables.</li>
+<li><strong>Treatment</strong>: a condition or set of conditions applied to experimental units in an experiment.</li>
+<li><strong>Experimental Unit</strong>: the physical entity to which a treatment is randomly assigned and independently applied.</li>
+<li><strong>Response Variable</strong>: a characteristic of an experimental unit that is measured after treatment and analyzed to assess the effects of treatments on experimental units.</li>
+<li><strong>Observational Unit</strong>: the unit on which a response variable is measured.</li>
+<li><strong>Completely Randomized Design (CRD)</strong> – experimental design in which, for given number of experiment units per treatment, all possible assignments of treatments to experimental units are equally likely.</li>
+<li><strong>Block</strong> – a group of experimental units that, <strong>prior to treatment</strong>, are expected to be more like one another (with respect to one or more response variables) than experimental units in general.</li>
+<li><strong>Randomized Complete Block Design (RCBD)</strong> – experimental design in which separate and completely randomized treatment assignments are made for each of multiple blocks in such a way that all treatments have at least one experimental unit in each block.</li>
+</ul>
+<p>Whenever an experiment involves multiple observations per experimental unit, it is important to include a random effect for each experimental unit.</p>
+<p>Without a random effect for each experimental unit, a one-to-one correspondence between observations and experimental units is assumed.</p>
+</section>
+<section id="the-anova-approach-to-the-analysis-of-linear-mixed-effects-models" class="level2">
+<h2 class="anchored" data-anchor-id="the-anova-approach-to-the-analysis-of-linear-mixed-effects-models">12. The ANOVA Approach to the Analysis of Linear Mixed-Effects Models</h2>
+<p>Suppose <span class="math inline">\(y_{ij} = \mu + \tau_i + u_{ij} + e_{ijk}\)</span> , <span class="math inline">\(i = 1, \ldots, t; j = 1, \ldots, n; k = 1, \ldots, m\)</span> . <span class="math inline">\(\beta = (\mu, \tau_1, \ldots, \tau_t)'\)</span>, <span class="math inline">\(u = (u_{11}, u_{12}, \ldots, u_{tn})'\)</span>, <span class="math inline">\(e = (e_{111}, e_{112}, \ldots, e_{tnm})'\)</span>.</p>
+<p><span class="math display">\[ \begin{bmatrix}u \\ e \end{bmatrix} \sim N(\mathbf{0}, \begin{bmatrix} \sigma_u^2I &amp; \mathbf{0} \\ \mathbf{0} &amp; \sigma_e^2I \end{bmatrix}) \]</span></p>
+<ul>
+<li>This is the standard model for a CRD with <span class="math inline">\(t\)</span> treatments, <span class="math inline">\(n\)</span> experimental units per treatment and <span class="math inline">\(m\)</span> observations per experimental unit.</li>
+<li>We can write this model as <span class="math inline">\(\mathbf{y} = \mathbf{X\beta} + \mathbf{Zu} + \mathbf{e}\)</span> where <span class="math inline">\(X = [\mathbf{1}*{tnm\times 1}, I*{t\times t} \otimes 1_{nm \times 1}]\)</span> and <span class="math inline">\(Z =[I_{tn\times tn} \otimes 1_{m\times 1}]\)</span>.</li>
+<li>Let <span class="math inline">\(X_1 = \mathbf{1}*{tnm\times 1}\)</span>, <span class="math inline">\(X_2 = X\)</span> and <span class="math inline">\(X_3 = Z\)</span>. Note that <span class="math inline">\(\mathcal{C}(X_1) \subset \mathcal{C}(X_2) \subset \mathcal{C}(X_3)\)</span>. Let <span class="math inline">\(P_j = P*{X_j}\)</span> for <span class="math inline">\(j = 1, 2, 3\)</span>.</li>
+</ul>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="fig/c12fig1.png" class="img-fluid"></td>
+<td><img src="fig/c12fig2.png" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="fig/c12fig3.png" class="img-fluid"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Suppose <span class="math inline">\(w_1, \ldots, w_k \stackrel{ind}{\sim} (\mu_w, \sigma_w^2)\)</span>, then <span class="math inline">\(E\{\sum_{i = 1}^k (w_i - \bar w_.)^2\} = (k-1)\sigma_w^2.\)</span></p></li>
+<li><p>Expected value of <span class="math inline">\(MS_{trt}\)</span>:</p>
+<p><span class="math display">\[ \begin{aligned}E\left(M S_{t r t}\right) &amp;=\frac{n m}{t-1} \sum_{i=1}^{t} E\left(\bar{y}_{i . .}-\bar{y}_{\ldots} .\right)^{2} \\&amp;=\frac{n m}{t-1} \sum_{i=1}^{t} E\left(\mu+\tau_{i}+\bar{u}_{i} .+\bar{e}_{i . .}-\mu-\bar{\tau} .-\bar{u} . .-\bar{e}_{. .}\right)^{2} \\&amp;=\frac{n m}{t-1} \sum_{i=1}^{t} E\left(\tau_{i}-\bar{\tau} .+\bar{u}_{i}-\bar{u} . .+\bar{e}_{i . .}-\bar{e}_{. . .}\right)^{2} \\&amp;=\frac{n m}{t-1} \sum_{i=1}^{t}\left[\left(\tau_{i}-\bar{\tau} .\right)^{2}+E\left(\bar{u}_{i .}-\bar{u} . .\right)^{2}+E\left(\bar{e}_{i . .}-\bar{e}_{i . .}\right)^{2}\right] \\&amp;= \frac{n m}{t-1}\left[\sum_{i=1}^{t}\left(\tau_{i}-\bar{\tau} .\right)^{2}+E\left\{\sum_{i=1}^{t}\left(\bar{u}_{i .}-\bar{u} . .\right)^{2}\right\} + E\left\{\sum_{i=1}^{t}\left(\bar{e}_{i . .}-\bar{e} \ldots\right)^{2}\right\}\right]\\ &amp; = \frac{nm}{t-1}\sum_{i = 1}^t (\tau_i - \bar\tau_.)^2 + m\sigma_u^2 + \sigma_e^2. \end{aligned}  \]</span></p>
+<p>where ${u}<em>{1.},</em> , {u}{t.} N(0, u^2/n) $ and $*{e}{1..}, , {e}_{t..} N(0, _e^2/(nm)) $ so that <span class="math inline">\(E\left\{\sum_{i=1}^{t}\left(\bar{u}_{i .}-\bar{u} . .\right)^{2}\right\} = (t-1)\frac{\sigma_u^2}{n}\)</span> and <span class="math inline">\(E\left\{\sum_{i=1}^{t}\left(\bar{e}_{i . .}-\bar{e} \ldots\right)^{2}\right\} = (t-1)\frac{\sigma_e^2}{nm}\)</span></p></li>
+<li><p>Furthermore, it can be shown that <span class="math display">\[
+\begin{aligned}\frac{\mathbf{y}^{\prime}\left(\mathbf{P}_{2}-\mathbf{P}_{1}\right) \mathbf{y}}{\sigma_{e}^{2}+m \sigma_{u}^{2}} &amp; \sim \chi_{t-1}^{2}\left(\frac{n m}{2\left(\sigma_{e}^{2}+m \sigma_{u}^{2}\right)} \sum_{i=1}^{t}\left(\tau_{i}-\bar{\tau} .\right)^{2}\right) \\ \frac{\mathbf{y}^{\prime}\left(\mathbf{P}_{3}-\mathbf{P}_{2}\right) \mathbf{y}}{\sigma_{e}^{2}+m \sigma_{u}^{2}} &amp; \sim \chi_{t n-t}^{2} \\\frac{\mathbf{y}^{\prime}\left(\mathbf{I}-\mathbf{P}_{3}\right) \mathbf{y}}{\sigma_{e}^{2}} &amp; \sim \chi_{\operatorname{tnm}-t n}^{2}\end{aligned}
+\]</span></p></li>
+<li><p>We can use <span class="math inline">\(F_1\)</span> to test <span class="math inline">\(H_0: \tau_1 = \cdots = \tau_t\)</span>. and <span class="math inline">\(F_2\)</span> to test <span class="math inline">\(H_0: \sigma_u^2 = 0\)</span> <span class="math display">\[
+\begin{aligned}F_{1} &amp;=\frac{M S_{t r t}}{M S_{x u(t r t)}}=\frac{\mathbf{y}^{\prime}\left(\mathbf{P}_{2}-\mathbf{P}_{1}\right) \mathbf{y} /(t-1)}{\mathbf{y}^{\prime}\left(\mathbf{P}_{3}-\mathbf{P}_{2}\right) \mathbf{y} /(t n-t)} \\&amp;=\frac{\left[\frac{y^{\prime}\left(\mathbf{P}_{2}-\mathbf{P}_{1}\right) \mathbf{y}}{\sigma_{e}^{2}+m \sigma_{u}^{2}}\right] /(t-1)}{\left[\frac{y^{\prime}\left(\mathbf{P}_{3}-\mathbf{P}_{2}\right) y}{\sigma_{e}^{2}+m \sigma_{u}^{2}}\right] /(t n-t)} \\&amp; \sim F_{t-1, t n-t}\left(\frac{n m}{2\left(\sigma_{e}^{2}+m \sigma_{u}^{2}\right)} \sum_{i=1}^{t}\left(\tau_{i}-\bar{\tau}_{.}\right)^{2}\right)\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}F_{2} &amp;=\frac{M S_{x u(t r t)}}{M S_{o u(x u, t r t)}}=\frac{\mathbf{y}^{\prime}\left(\mathbf{P}_{3}-\mathbf{P}_{2}\right) \mathbf{y} /(t n-t)}{\mathbf{y}^{\prime}\left(\mathbf{I}-\mathbf{P}_{3}\right) \mathbf{y} /(\operatorname{tnm}-t n)} \\&amp;=\left(\frac{\sigma_{e}^{2}+m \sigma_{u}^{2}}{\sigma_{e}^{2}}\right) \frac{\left[\frac{\mathbf{y}^{\prime}\left(\mathbf{P}_{3}-\mathbf{P}_{2}\right) \mathbf{y}}{\sigma_{e}^{2}+m \sigma_{u}^{2}}\right] /(t n-t)}{\left[\frac{\mathbf{y}^{\prime}\left(\mathbf{I}-\mathbf{P}_{3}\right) \mathbf{y}}{\sigma_{e}^{2}}\right] /(t n m-t n)} \\&amp; \sim\left(\frac{\sigma_{e}^{2}+m \sigma_{u}^{2}}{\sigma_{e}^{2}}\right) F_{t n-t, t n m-t n} .\end{aligned}
+\]</span></p></li>
+<li><p><span class="math inline">\((MS_{xu(trt)} - MS_{ou(xu, trt)})/m\)</span> is an unbiased estimator of <span class="math inline">\(\sigma_u^2.\)</span> However, it can take negative values.</p></li>
+<li><p>In this case, <span class="math inline">\(\Sigma = \sigma_u^2 I_{tn\times tn} \otimes \mathbf{11}'*{m\times m} + \sigma_e^2 I*{tnm \times tnm}\)</span> and <span class="math inline">\(\hat\beta_\Sigma = (X'\Sigma^{-1}X)^{-1}X'\Sigma^{-1}y = (X'X)^-X'y = \hat\beta\)</span>, i.e.&nbsp;the GLS estimator is equal to the OLS estimator for any estimable <span class="math inline">\(C\beta\)</span>.</p>
+<ul>
+<li><p><span class="math inline">\(C\beta\)</span> can be written as <span class="math inline">\(A[\bar{y}_{1..}, \ldots, \bar y_{t..}]'\)</span>. <span class="math inline">\(Var(\bar y_{i..}) = Var(\bar u_{i.}) + Var(\bar e_{i..}) = \frac{1}{n}(\sigma_u^2 + \sigma_e^2/m)\)</span> which implies the variance of the BLUE of <span class="math inline">\(C\beta\)</span> is <span class="math inline">\(\sigma^2AA'/n\)</span> where <span class="math inline">\(\sigma^2 = \sigma_u^2 + \sigma_e^2/m\)</span>.</p></li>
+<li><p>We need to estimate <span class="math inline">\(\sigma^2\)</span> which can equivalently be estimated by <span class="math inline">\(MS_{xu(trt)}/m\)</span> or by the MSE in an analysis of the experimental unit means.</p></li>
+<li><p>For example, <span class="math inline">\(\widehat{Var}(\bar y_{1..} - \bar y_{2..}) = \frac{2MS_{xu(trt)}}{nm}\)</span> and a <span class="math inline">\(100(1-\alpha)\%\)</span> confidence interval for <span class="math inline">\(\tau_1 - \tau_2\)</span> is <span class="math inline">\(\bar y_{1..} - \bar y_{2..} \pm t_{t(n-1), (1-\alpha)/2}\sqrt{\frac{2MS_{xu(trt)}}{nm}}\)</span>.</p></li>
+<li><p>A test of <span class="math inline">\(H_0: \tau_1 = \tau_2\)</span> is based on</p>
+<p><span class="math display">\[ t = \frac{\bar y_{1..} - \bar y_{2..}}{\sqrt{\frac{2MS_{xu(trt)}}{nm}}} \sim t_{t(n-1)}\left(\frac{\tau_1 - \tau_2}{\frac{2(\sigma_e^2 + m\sigma_u^2)}{nm}}\right).
+\]</span></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="the-cochran-satterthwaite-approximation-for-linear-combination-of-mean-squares" class="level2">
+<h2 class="anchored" data-anchor-id="the-cochran-satterthwaite-approximation-for-linear-combination-of-mean-squares">13. The Cochran-Satterthwaite Approximation for Linear Combination of Mean Squares</h2>
+<p>Suppose <span class="math inline">\(M_1, \ldots, M_k\)</span> are independent mean squares and that <span class="math inline">\(d_iM_i/E(M_i)\sim \chi_{d_i}^2\)</span> for <span class="math inline">\(i = 1,\ldots, k\)</span> . That is, <span class="math inline">\(M_i \sim \frac{E(M_i)}{d_i} \chi_{d_i}^2\)</span>. Consider <span class="math inline">\(M = a_1M_1 + \ldots + a_kM_k.\)</span> The <strong>Cochran-Satterthwaite approximation</strong> works by assuming that <span class="math inline">\(M\)</span> is approximately distributed as a scaled <span class="math inline">\(\chi^2\)</span>, <span class="math inline">\(\frac{dM}{E(M)} \sim \chi_d^2 \Leftrightarrow M \sim \frac{E(M)}{d} \chi_d^2\)</span>.</p>
+<ul>
+<li>If <span class="math inline">\(M \sim \frac{E(M)}{d} \chi_d^2\)</span>, then <span class="math inline">\(Var(M) \approx (\frac{E(M)}{d})^2Var(\chi_d^2) \approx \frac{2M^2}{d}\)</span></li>
+<li>Note that <span class="math inline">\(Var(M) = \sum_{i=1}^k 2a_i^2[E(M_i)]^2/d_i \approx 2\sum_{i=1}^k a_i^2M_i^2/d_i\)</span></li>
+</ul>
+<p>Therefore, <span class="math display">\[
+\begin{aligned}d = \frac{M^2}{\sum_{i=1}^k a_i^2M_i^2/d_i} = \frac{(\sum_{i=1}^k a_iM_i)^2}{\sum_{i=1}^k a_i^2 M_i^2/d_i}\end{aligned}
+\]</span></p>
+</section>
+<section id="linear-mixed-effects-models-for-data-from-split-plot-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="linear-mixed-effects-models-for-data-from-split-plot-experiments">14. Linear Mixed-Effects Models for Data from Split-Plot Experiments</h2>
+<p>An example Split-Plot Experiment</p>
+<p><img src="fig/c14fig1.png" style="zoom:60%;"></p>
+<ul>
+<li>this experiment has two factors: genotype and fertilizer</li>
+<li>genotype is caller the <em>whole-plot</em> <em>factor</em> because its levels are randomly assigned to whole plots</li>
+<li>fertilizer is called the <em>split-plot</em> <em>factor</em> because its levels are randomly assigned to split plots within each whole plot</li>
+<li>we have two different sizes of experimental units: whole plots are the <em>whole-plot experimental units</em> and split-plots are the <em>split-plot experimental units</em></li>
+</ul>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="fig/c14fig2.png" class="img-fluid"></td>
+<td><img src="fig/c14fig3.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<p>Why Use a Split-Plot Design?</p>
+<ul>
+<li>Split-plot designs usually arise because <strong>logistical constraints</strong> make a CRD or RCBD impractical.</li>
+<li>For example, it may be easier to change from one fertilizer level to another as a tractor drives through a field, while it may be <strong>more difficult to change from planting one genotype to planting another</strong>.</li>
+<li>In the engineering literature, split-plot designs are sometimes called <strong>designs with hard-to-change factors</strong>.</li>
+</ul>
+<p>Another split-plot experimental design:</p>
+<p><img src="fig/c14fig4.png" style="zoom:60%;"></p>
+<ul>
+<li>Diet is the whole-plot treatment factor.</li>
+<li>Litters are the whole-plot experiment units.</li>
+<li>Drug is the split-plot treatment factor.</li>
+<li>Mice are the split-plot experiment units.</li>
+</ul>
+</section>
+<section id="anova-for-balanced-split-plot-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="anova-for-balanced-split-plot-experiments">15. ANOVA for Balanced Split-Plot Experiments</h2>
+<p><img src="fig/c14fig1.png" style="zoom:60%;"></p>
+<p>Model: <span class="math inline">\(y_{ijk} = \mu_{ij} + b_k + w_{ik} + e_{ijk}\)</span>, Genotype <span class="math inline">\(i = 1, 2, 3\)</span>, Fertilizer <span class="math inline">\(j = 1,2, 3,4\)</span>, Block <span class="math inline">\(k = 1, 2, 3, 4\)</span>.</p>
+<ul>
+<li>Because the experiment is balanced, the GLS estimator is equal to the OLS estimator for any estimable <span class="math inline">\(C\beta\)</span>: <span class="math inline">\(C\hat\beta_\Sigma = C\hat \beta\)</span>.</li>
+</ul>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><img src="fig/c15fig2.png" class="img-fluid"></td>
+<td><img src="fig/c15fig3.png" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td><img src="fig/c15fig4.png" class="img-fluid"></td>
+<td><img src="fig/c15fig5.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>there are no terms in our model corresponding to <span class="math inline">\(Block\times Fert\)</span>.</p></li>
+<li><p><span class="math inline">\(E(MS_{Blocks\times Fert}) = E(MS_{Blocks\times Geno\times Fert}) = \sigma_e^2\)</span>.</p>
+<p><span class="math display">\[\begin{aligned}&amp;E\left(M S_{\text {Geno }}\right)=\frac{s b}{w-1} \sum_{i=1}^{w} E\left(\bar{y}_{i . .}-\bar{y} \ldots\right)^{2} \\&amp;\quad=\frac{s b}{w-1} \sum_{i=1}^{w} E\left(\bar{\mu}_{i}-\bar{\mu} . .+\bar{w}_{i}-\bar{w} . .+\bar{e}_{i .}-\bar{e} \ldots\right)^{2} \\&amp;=s b\left\{\frac{\sum_{i=1}^{w}\left(\bar{\mu}_{i}-\bar{\mu} . .\right)^{2}}{w-1}+E\left[\frac{\sum_{i=1}^{w}\left(\bar{w}_{i}-\bar{w} . .\right)^{2}}{w-1}\right]+E\left[\frac{\sum_{i=1}^{w}\left(\bar{e}_{i . .}-\bar{e}_{\ldots} . .\right)^{2}}{w-1}\right]\right\} \\&amp;=s b \frac{\sum_{i=1}^{w}\left(\bar{\mu}_{i}-\bar{\mu} . .\right)^{2}}{w-1}+s b \frac{\sigma_{w}^{2}}{b}+s b \frac{\sigma_{e}^{2}}{s b} \\&amp;=s b \frac{\sum_{i=1}^{w}\left(\bar{\mu}_{i}-\bar{\mu} .\right)^{2}}{w-1}+s \sigma_{w}^{2}+\sigma_{e}^{2}\end{aligned}\]</span></p>
+<p><span class="math display">\[\begin{aligned}&amp;E\left(M S_{\text {Block } \times \text { Geno }}\right)=\frac{s}{(w-1)(b-1)} \sum_{i=1}^{w} \sum_{k=1}^{b} E\left(\bar{y}_{i \cdot k}-\bar{y}_{i . .}-\bar{y}_{\cdot \cdot k}+\bar{y} \ldots\right)^{2} \\&amp;=\frac{s}{(w-1)(b-1)} \sum_{i=1}^{w} \sum_{k=1}^{b} E\left(w_{i k}-\bar{w}_{i .}-\bar{w}_{\cdot k}+\bar{w}_{. .}+\bar{e}_{i \cdot k}-\bar{e}_{i . .}-\bar{e}_{. . k}+\bar{e}_{\ldots}\right)^{2} \\&amp;=\frac{s}{(w-1)(b-1)} E\left[\sum_{i=1}^{w} \sum_{k=1}^{b}\left(w_{i k}-\bar{w}_{i} .\right)^{2}-2 \sum_{i=1}^{w} \sum_{k=1}^{b}\left(w_{i k}-\bar{w}_{i}\right)\left(\bar{w}_{\cdot k}-\bar{w} . .\right)\right. \\&amp;\left.+\sum_{i=1}^{w} \sum_{k=1}^{b}\left(\bar{w}_{\cdot k}-\bar{w} . .\right)^{2}+e^{2} \text { sum }\right] \\&amp;=\frac{s}{(w-1)(b-1)} E\left[\sum_{i=1}^{w} \sum_{k=1}^{b}\left(w_{i k}-\bar{w}_{i} .\right)^{2}-w \sum_{k=1}^{b}\left(\bar{w}_{\cdot k}-\bar{w} . .\right)^{2}+e^{2} \mathrm{sum}\right] \\&amp;=\frac{s}{(w-1)(b-1)}\left[w(b-1) \sigma_{w}^{2}-w(b-1) \sigma_{w}^{2} / w+E\left(e^{2} \text { sum }\right)\right]\\ &amp; = s\sigma_w^2 + \sigma_e^2\end{aligned}\]</span></p>
+<p>where</p>
+<p><span class="math display">\[ \begin{aligned}E\left(e^{2} \mathrm{sum}\right) &amp;=E\left[\sum_{i=1}^{w} \sum_{k=1}^{b}\left(\bar{e}_{i \cdot k}-\bar{e}_{i .}-\bar{e}_{. . k}+\bar{e} \ldots\right)^{2}\right] \\&amp;=\frac{(w-1)(b-1)}{s} \sigma_{e}^{2}\end{aligned}\]</span></p></li>
+</ul>
+<section id="inference-for-whole-plot" class="level3">
+<h3 class="anchored" data-anchor-id="inference-for-whole-plot">15.1. Inference for Whole-Plot</h3>
+<ul>
+<li><p><strong>Test for whole-plot factor main effects:</strong></p>
+<p><span class="math display">\[ H_0: \bar \mu_{1.} = \ldots = \bar\mu_{w.} \Leftrightarrow H_0: \frac{sb}{w-1}\sum_{i=1}^w (\bar \mu_{i.} - \bar \mu_{..})^2 = 0 \]</span></p>
+<p>We compare <span class="math inline">\(\frac{MS_{Geno}}{MS_{Block\times Geno}}\)</span> to a central F-test with <span class="math inline">\(w- 1\)</span> and <span class="math inline">\((w-1)(b-1)\)</span> degrees of freedom.</p></li>
+<li><p><strong>Comparison for whole-plot marginal means:</strong></p>
+<p><span class="math display">\[ H_0: \bar \mu_{1.} = \bar \mu_{2.} \]</span></p>
+<p>Note that <span class="math display">\[
+\begin{aligned}\operatorname{Var}\left(\bar{y}_{1 . .}-\bar{y}_{2 . .}\right) &amp;=\operatorname{Var}\left(\bar{\mu}_{1.}-\bar{\mu}_{2 .}+\bar{w}_{1.}-\bar{w}_{2 .}+\bar{e}_{1 . .}-\bar{e}_{2 \cdot .}\right) \\&amp;=\frac{2 \sigma_{w}^{2}}{b}+\frac{2 \sigma_{e}^{2}}{s b} \\&amp;=\frac{2}{s b}\left(s \sigma_{w}^{2}+\sigma_{e}^{2}\right)=\frac{2}{s b} E\left(M S_{B l o c k \times \text { Geno }}\right) \end{aligned}
+\]</span></p>
+<p>so that <span class="math inline">\(\widehat{\operatorname{Var}}\left(\bar{y}_{1..}-\bar{y}_{2..}\right)=\frac{2}{s b} M S_{B l o c k \times G e n o}\)</span>. We can use <span class="math display">\[
+t=\frac{\bar{y}_{1..}-\bar{y}_{2 ..}-\left(\bar{\mu}_{1.}-\bar{\mu}_{2.}\right)}{\sqrt{\frac{2}{s b} M S_{\text {Block } \times \text { Geno }}}} \sim t_{(w-1)(b-1)}
+\]</span></p>
+<p>to test <span class="math inline">\(H_0\)</span>.</p></li>
+<li><p><strong>Multiple test for whole-plot marginal means:</strong> <span class="math display">\[
+H_{0}: \boldsymbol{C}\left[\begin{array}{c}\bar{\mu}_{1.} \\\vdots \\\bar{\mu}_{w.}\end{array}\right]=\mathbf{0},
+\]</span></p></li>
+</ul>
+<p>we can use an F statistics with <span class="math inline">\(q\)</span> and <span class="math inline">\((w-1)(b-1)\)</span> degrees of freedom: <span class="math display">\[
+F=\frac{\left(\boldsymbol{C}\left[\begin{array}{c}\bar{y}_{1..} \\\vdots \\\bar{y}_{w..}\end{array}\right]\right)^{\prime}\left[\frac{M S_{\text {Block } \times \text{Gen}}}{s b} \boldsymbol{C} \boldsymbol{C}^{\prime}\right]^{-1}\left(\boldsymbol{C}\left[\begin{array}{c}\bar{y}_{1..} \\\vdots \\\bar{y}_{w..}\end{array}\right]\right)}{q}
+\]</span></p>
+</section>
+</section>
+<section id="sas-analysis-of-split-plot-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="sas-analysis-of-split-plot-experiments">16. SAS Analysis of Split-Plot Experiments</h2>
+<section id="read-data" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="read-data">16.1 Read Data</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{SAS}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in">proc import datafile=’C:\\Data\\FieldSplitPlotData.txt’</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in">  dbms=TAB replace out=Field;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="in">run;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="in">proc print data=Field (obs=14);</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="in">run;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="fit-linear-mixed-effects-model" class="level4">
+<h4 class="anchored" data-anchor-id="fit-linear-mixed-effects-model">16.2 Fit Linear Mixed-Effects Model</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{SAS}</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed data=Field;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="in"> class block geno fert;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="in"> model y=geno fert geno*fert / ddfm=satterthwaite;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="in"> random block block*geno;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="example-estimate-stateements" class="level4">
+<h4 class="anchored" data-anchor-id="example-estimate-stateements">16.3 Example Estimate Stateements</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{SAS}</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="in">estimate ’geno 1’</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="in">  intercept 4 geno 4 0 0 fert 1 1 1 1</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="in">  geno*fert 1 1 1 1 0 0 0 0 0 0 0 0 / divisor=4 cl;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="in">estimate ’geno 1 - geno 2’</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="in">  geno 4 -4 0</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="in">  geno*fert 1 1 1 1 -1 -1 -1 -1 0 0 0 0 / divisor=4 cl;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="in">estimate ’geno 1 - geno 2 with no fertilizer’</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="in">  geno 1 -1 0 geno*fert 1 0 0 0 -1 0 0 0 0 0 0 0 / cl;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="in">run;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="refit-model-with-fixed-block-effects" class="level4">
+<h4 class="anchored" data-anchor-id="refit-model-with-fixed-block-effects">16.4 Refit model with Fixed Block Effects</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{SAS}</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed data=Field;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="in">  class block geno fert;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">  model y=block geno fert geno*fert / ddfm=satterthwaite;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="in">random block*geno;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="r-analysis-of-split-plot-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="r-analysis-of-split-plot-experiments">17. R Analysis of Split-Plot Experiments</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>fd <span class="ot">=</span> <span class="fu">read.delim</span>(<span class="st">"&lt;https://dnett.github.io/S510/FieldSplitPlotData.txt&gt;"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> fd<span class="sc">$</span>y</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>b <span class="ot">=</span> <span class="fu">factor</span>(fd<span class="sc">$</span>block)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>g <span class="ot">=</span> <span class="fu">factor</span>(fd<span class="sc">$</span>geno)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>f <span class="ot">=</span> <span class="fu">factor</span>(fd<span class="sc">$</span>fert<span class="sc">/</span><span class="dv">50</span> <span class="sc">+</span> <span class="dv">1</span>) </span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>o <span class="ot">=</span> <span class="fu">lmer</span>(y <span class="sc">~</span> g <span class="sc">+</span> f <span class="sc">+</span> g<span class="sc">:</span>f <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>b) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>b<span class="sc">:</span>g))</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(o) </span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(o)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ls_means</span>(o)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>betahat<span class="ot">=</span><span class="fu">fixef</span>(o)</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>betahat</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="co">#Coefficients for geno 1 marginal mean</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>C1 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="at">nrow =</span> <span class="dv">1</span>)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co">#Coefficients for geno 1 - geno 2 marginal mean</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>C2 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">0</span>), <span class="at">nrow =</span> <span class="dv">1</span>)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="co">#Coefficients for geno 1 - geno 2 with no fertilizer</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>C3 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="at">nrow =</span> <span class="dv">1</span>)</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>C <span class="ot">=</span> <span class="fu">rbind</span>(C1, C2, C3)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="fu">contest</span>(o, <span class="at">L =</span> C, <span class="at">joint =</span> F, <span class="at">confint =</span> T)</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>a <span class="ot">=</span> <span class="fu">anova</span>(<span class="fu">lm</span>(y ˜ b <span class="sc">+</span> g <span class="sc">+</span> b<span class="sc">:</span>g <span class="sc">+</span> f <span class="sc">+</span> g<span class="sc">:</span>f))</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>a</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>MSbg <span class="ot">=</span> a[<span class="dv">4</span>,<span class="dv">3</span>]</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>MSe <span class="ot">=</span> a[<span class="dv">6</span>,<span class="dv">3</span>]</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="co"># an unbiased estimator of variance for the whole-plot random effects</span></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>(MSbg <span class="sc">-</span> MSe) <span class="sc">/</span> <span class="dv">4</span> </span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>MSg <span class="ot">=</span> a[<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="co"># The correct F statistic for testing for genotype main effects</span></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>MSg <span class="sc">/</span> MSbg</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>d <span class="ot">=</span> <span class="fu">aggregate</span>(y, <span class="at">by =</span> <span class="fu">list</span>(b, g), <span class="at">FUN =</span> mean)</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(<span class="fu">lm</span>(wpaverage ˜ block <span class="sc">+</span> geno, <span class="at">data =</span> d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="more-example-split-plot-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="more-example-split-plot-experiments">18. More Example Split-Plot Experiments</h2>
+<section id="example-1" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example-1">Example 1:</h5>
+<p>Researchers were interested in studying how soil moisture level affects the ability of plants to respond to a virus infection. A total of 30 pots were assigned to three watering levels (1 = low, 2 = medium, 3 = high) using a balanced and completely randomized design. Each of the 30 pots contained four seedlings. Two randomly selected seedlings within each pot were injected with a virus. The remaining two seedlings in each pot were “mock infected” by injection with a harmless substance. Two weeks after treatment, each seedling was individually weighed, and these weights served as the response variable for subsequent analysis.</p>
+<p><img src="fig/c18fig1.png" style="zoom:60%;"></p>
+<ul>
+<li><p>Notation:</p>
+<ul>
+<li><span class="math inline">\(i = 1, 2, 3\)</span>: watering levels</li>
+<li><span class="math inline">\(j = 1, \ldots, 10\)</span>: pots within each watering levels</li>
+<li><span class="math inline">\(k = 1, 2\)</span> : infections (control, virus)</li>
+<li><span class="math inline">\(l = 1, 2\)</span>: seedlings within watering level, pot, and infection</li>
+</ul></li>
+<li><p>Model: <span class="math display">\[
+y_{ijkl} = \mu_{ik} + p_{ij} + e_{ijkl}
+\]</span> where <span class="math inline">\(p_{ij} \sim N(0, \sigma_p^2)\)</span>, <span class="math inline">\(e_{ijkl} \sim N(0, \sigma_e^2)\)</span>.</p></li>
+<li><p>ANOVA Table:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Source</th>
+<th style="text-align: center;">DF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">wl</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">pot(wl)</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">inf</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">wl<span class="math inline">\(\times\)</span> inf</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">error</td>
+<td style="text-align: center;">87</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">c.total</td>
+<td style="text-align: center;">119</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>SAS Code</p></li>
+</ul>
+<pre class="sas"><code>  proc mixed; 
+    class wl pot inf; 
+    model y = wl inf wl*inf / ddfm = satterth; 
+    random pot(wl); 
+  run; </code></pre>
+</section>
+<section id="example-2" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example-2">Example 2:</h5>
+<p>Researchers were interested in studying how soil moisture level affects the ability of plants to respond to a virus infection. A total of 30 trays were assigned to three watering levels (1 = low, 2 = medium, 3 = high) using a balanced and completely randomized design. Each of the 30 trays contained two pots. Each of the 60 pots contained two seedlings. The two seedlings in one randomly selected pot in each tray were injected with a virus. The two seedlings in the other pot on a given tray were “mock infected” by injection with a harmless substance. Two weeks after treatment, each seedling was individually weighed, and these weights served as the response variable for subsequent analysis.</p>
+<p><img src="fig/c18fig2.png" style="zoom:60%;"></p>
+<ul>
+<li><p>Notation:</p>
+<ul>
+<li><span class="math inline">\(i = 1, 2, 3\)</span>: watering levels</li>
+<li><span class="math inline">\(j = 1, \ldots, 10\)</span>: trays within each watering level</li>
+<li><span class="math inline">\(k = 1, 2\)</span> : infections (control, virus)</li>
+<li><span class="math inline">\(l = 1, 2\)</span>: seedlings within watering level, pot, and infection</li>
+</ul></li>
+<li><p>Model: <span class="math display">\[
+y_{ijkl} = \mu_{ik} + t_{ij} +  p_{ijk} + e_{ijkl}
+\]</span> where <span class="math inline">\(t_{ij} \sim N(0, \sigma_t^2)\)</span>, <span class="math inline">\(p_{ijk} \sim N(0, \sigma_p^2)\)</span>, <span class="math inline">\(e_{ijkl} \sim N(0, \sigma_e^2)\)</span>.</p></li>
+<li><p>ANOVA Table</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Source</th>
+<th style="text-align: center;">DF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">wl</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">tray(wl)</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">inf</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">wl<span class="math inline">\(\times\)</span> inf</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">inf<span class="math inline">\(\times\)</span>tray(wl)</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">error</td>
+<td style="text-align: center;">60</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">c.total</td>
+<td style="text-align: center;">119</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>SAS Code</p></li>
+</ul>
+<pre class="sas"><code>  proc mixed; 
+    class wl tray inf; 
+    model y = wl inf wl*inf/ ddfm = satterth; 
+    random tray(wl) inf*tray(wl); 
+  run; </code></pre>
+</section>
+<section id="example-3" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example-3">Example 3:</h5>
+<p>Researchers were interested in studying how soil moisture level affects the ability of plants to respond to a virus infection. A total of 30 trays were assigned to three watering levels (1 = low, 2 = medium, 3 = high) using a balanced and completely randomized design. Each of the 30 trays contained two pots. Each of the 60 pots contained two seedlings. In each pot, one of the two seedlings was randomly selected and injected with a virus; the other seedling in the pot was “mock infected” by injection with a harmless substance. Two weeks after treatment, each seedling was individually weighed, and these weights served as the response variable for subsequent analysis.</p>
+<p><img src="fig/c18fig3.png" style="zoom:60%;"> * Notation:</p>
+<ul>
+<li><p><span class="math inline">\(i = 1, 2, 3\)</span>: watering levels</p></li>
+<li><p><span class="math inline">\(j = 1, \ldots, 10\)</span>: trays within each watering level</p></li>
+<li><p><span class="math inline">\(k = 1, 2\)</span> : pots within watering levels and trays</p></li>
+<li><p><span class="math inline">\(l = 1, 2\)</span>: infections (control, virus)</p></li>
+<li><p>Model <span class="math display">\[
+y_{ijkl} = \mu_{ik} + t_{ij} +  p_{ijk} + e_{ijkl}
+\]</span></p></li>
+<li><p>ANOVA Table</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Source</th>
+<th style="text-align: center;">DF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">wl</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">tray(wl)</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">pot(wl tray)</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">inf</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">wl<span class="math inline">\(\times\)</span>inf</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">error</td>
+<td style="text-align: center;">57</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">c.total</td>
+<td style="text-align: center;">119</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>SAS Code</p></li>
+</ul>
+<pre class="sas"><code>  proc mixed; 
+    class wl tray pot inf; 
+    model y = wl inf wl*inf / ddfm = satterth;
+    random tray(wl) pot(wl tray); 
+  run; </code></pre>
+</section>
+<section id="example-4" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example-4">Example 4:</h5>
+<p>Researchers were interested in determining which combination of cake recipe and frosting recipe would yield the best tasting frosted cake. Two cake recipes (labeled CR1 and CR2) and two frosting recipes (labeled FR1 and FR2) were considered. The two cake recipes were randomly assigned to four bakers with two bakers for each cake recipe. Each baker prepared and baked a cake according to the recipe he or she was assigned. While cakes were baking and cooling, each baker prepared one batch of frosting using each of the frosting recipes. Half of each cake was randomly selected and covered with frosting prepared using FR1. The other half of each cake was covered with frosting prepared using FR2.</p>
+<p>Two pieces of frosted cake from each half of each cake were scored for taste, with higher scores indicating better tasting frosted cake. The following diagram shows the four cakes baked by the four bakers as large rectangles. The dashed line on each rectangle shows the dividing point that separates FR1 frosting from FR2 frosting. The numbered squares within each rectangle show the pieces of frosted cake that were scored for taste.</p>
+<p><img src="fig/c18fig4.png" style="zoom:60%;"></p>
+<ul>
+<li><p>Notation:</p>
+<ul>
+<li><span class="math inline">\(i = 1, 2\)</span>: cake recipes</li>
+<li><span class="math inline">\(j = 1, 2\)</span>: bakers within each cake recipe</li>
+<li><span class="math inline">\(k = 1, 2\)</span> : frosting recipes</li>
+<li><span class="math inline">\(l = 1, 2\)</span>: pieces of cake within each half cake</li>
+</ul></li>
+<li><p>Model <span class="math display">\[
+y_{ijkl} = \mu_{ik} + b_{ij} + h_{ijk} + e_{ijkl}
+\]</span> where <span class="math inline">\(b_{11}, b_{12}, b_{21}, b_{22} \sim N(0, \sigma_{b}^2)\)</span>, <span class="math inline">\(h_{111}, \ldots, h_{222} \sim N(0, \sigma_h^2)\)</span>, <span class="math inline">\(e_{ijkl} \sim N(0, \sigma_e^2)\)</span>.</p></li>
+<li><p>SAS Code</p></li>
+</ul>
+<pre class="sas"><code>  proc mixed;
+    class cr baker fr;
+    model y=cr fr cr*fr / ddfm=satterth;
+    random baker(cr) fr*baker(cr);
+  run;</code></pre>
+<ul>
+<li><p>ANOVA Table</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Source</th>
+<th>DF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">cr</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">baker(cr) = whole plot error</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">fr</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">cr<span class="math inline">\(\times\)</span>fr</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">fr<span class="math inline">\(\times\)</span>baker(fr)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">error = piece(cr, baker, fr)</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">c.total</td>
+<td>15</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</section>
+<section id="example-5" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example-5">Example 5:</h5>
+<p>In the context of the frosted cake example (Example 4), a statistician is asked to analyze the data. The statistician asks, “How was the score for each piece of cake determined?”</p>
+<blockquote class="blockquote">
+<p><strong>Answer</strong>: Two pieces of frosted cake from each half of each cake were cut and delivered to eight trained judges for evaluation. Each judge tasted and separately assigned a score to two pieces of frosted cake. In the following diagram, the numbers 1 through 8 indicate the pieces of cake scored by judges 1 through 8, respectively.</p>
+</blockquote>
+<p><img src="fig/c18fig5.png" style="zoom:60%;"></p>
+<ul>
+<li><p>Notation:</p>
+<ul>
+<li><span class="math inline">\(i = 1, 2\)</span>: cake recipes</li>
+<li><span class="math inline">\(j = 1, 2\)</span>: bakers within each cake recipe</li>
+<li><span class="math inline">\(k = 1, 2\)</span> : frosting recipes</li>
+<li><span class="math inline">\(l = 1, 2\)</span>: pieces of cake within each half cake</li>
+</ul></li>
+<li><p>Model <span class="math display">\[
+y_{ijkl} = \mu_{ik} + b_{ij} + h_{ijk} + t_l + e_{ijkl}
+\]</span> where <span class="math inline">\(b_{11}, b_{12}, b_{21}, b_{22} \sim N(0, \sigma_{b}^2)\)</span>, <span class="math inline">\(h_{111}, \ldots, h_{222} \sim N(0, \sigma_h^2)\)</span>, <span class="math inline">\(t_1, \ldots, t_8 \sim N(0, \sigma_t^2)\)</span>, <span class="math inline">\(e_{ijkl} \sim N(0, \sigma_e^2)\)</span>.</p></li>
+<li><p>SAS Code</p>
+<pre class="sas"><code>proc mixed;
+  class cr baker fr judge;
+  model y=cr fr cr*fr / ddfm=satterth;
+  random baker(cr) fr*baker(cr) judge;
+  lsmeans cr fr cr*fr;
+  estimate ...
+run;</code></pre></li>
+<li><p>R Code</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>o <span class="ot">=</span> <span class="fu">lmer</span>(y ˜ cr <span class="sc">+</span> fr <span class="sc">+</span> cr<span class="sc">:</span>fr <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> baker) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> baker<span class="sc">:</span>fr) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> judge))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># cr %in% 1:2, fr %in% 1:2, baker %in% 1:4, judge %in% 1:8</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(o)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ls_means</span>(o)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">contest</span>(...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>ANOVA Table</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Source</th>
+<th style="text-align: center;">DF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">cr</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">baker(cr)</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">fr</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">cr<span class="math inline">\(\times\)</span>fr</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">fr<span class="math inline">\(\times\)</span>baker(fr)</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">judge</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">error</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">c.total</td>
+<td style="text-align: center;">15</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</section>
+<section id="example-6" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example-6">Example 6:</h5>
+<p>Researchers are interested in determining ways to deter deer from eating ornamental plants. An experiment was conducted in eight fields. Within each field, four 15 meter x 15 meter squares of land were studied. Within each field, researchers used the the following procedure:</p>
+<ul>
+<li>Two of the four squares were randomly selected to be planted with plant type 1. The other two squares were planted with plant type 2.</li>
+<li>One of the two squares planted with plant type 1 was randomly selected, and a fence was placed around the selected square. The other plant type 1 square was not surrounded by a fence.</li>
+<li>One of the two squares planted with plant type 2 was randomly selected, and a fence was placed around the selected square. The other plant type 2 square was not surrounded by a fence.</li>
+<li>Each of the four squares was divided into two rectangles of equal size. One rectangle within each square was randomly selected, and the plants growing in that rectangle were treated with a chemical. The other rectangle in each square was not treated with a chemical.</li>
+<li>At the conclusion of the study, the amount of living plant biomass was measured for each rectangle.</li>
+</ul>
+<p><img src="fig/c18fig6.png" style="zoom:60%;"></p>
+<ul>
+<li><p>Notation</p>
+<ul>
+<li><span class="math inline">\(i = 1, 2\)</span>: plant types</li>
+<li><span class="math inline">\(j = 1, 2\)</span>: fences (yes, no)</li>
+<li><span class="math inline">\(k = 1, 2\)</span> : chemicals (yes, no)</li>
+<li><span class="math inline">\(l = 1, \ldots, 8\)</span>: fields</li>
+</ul></li>
+<li><p>Model <span class="math display">\[
+y_{ijkl} = \mu_{ijk} + f_l + s_{ijl} + e_{ijkl}
+\]</span> where <span class="math inline">\(f_l \sim N(0, \sigma_f^2)\)</span>, <span class="math inline">\(s_{ijl} \sim N(0, \sigma_s^2)\)</span>, <span class="math inline">\(e_{ijkl} \sim N(0, \sigma_e^2)\)</span>.</p></li>
+<li><p>ANOVA Table</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 23%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>DF</th>
+<th style="text-align: center;">EMS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>field</td>
+<td>7</td>
+<td style="text-align: center;"><span class="math inline">\(8\sigma_f^2 + 2\sigma_s^2 + \sigma_e^2\)</span></td>
+</tr>
+<tr class="even">
+<td>type</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>fence</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>ptype<span class="math inline">\(\times\)</span>fence</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>field<span class="math inline">\(\times\)</span>ptype+field<span class="math inline">\(\times\)</span>fence+field<span class="math inline">\(\times\)</span>ptype<span class="math inline">\(\times\)</span>fence (whole plot error)</td>
+<td>21</td>
+<td style="text-align: center;"><span class="math inline">\(2\sigma_s^2 + \sigma_e^2\)</span></td>
+</tr>
+<tr class="even">
+<td>chem</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>ptype<span class="math inline">\(\times\)</span>chem</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>fence<span class="math inline">\(\times\)</span>chem</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>ptype<span class="math inline">\(\times\)</span>fence<span class="math inline">\(\times\)</span>chem</td>
+<td>1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>error = field<span class="math inline">\(\times\)</span>chem+field<span class="math inline">\(\times\)</span>ptype<span class="math inline">\(\times\)</span>chem+field<span class="math inline">\(\times\)</span>fence<span class="math inline">\(\times\)</span>chem+field<span class="math inline">\(\times\)</span>ptype<span class="math inline">\(\times\)</span>fence<span class="math inline">\(\times\)</span>chem (split-plot error)</td>
+<td>28</td>
+<td style="text-align: center;"><span class="math inline">\(\sigma_e^2\)</span></td>
+</tr>
+<tr class="odd">
+<td>c.total</td>
+<td>63</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table></li>
+<li><p>SAS Code</p>
+<pre class="sas"><code>proc mixed;
+  class field ptype fence chem;
+  model y=ptype|fence|chem/ddfm=satterth;random field field*ptype*fence;
+run;</code></pre></li>
+</ul>
+<blockquote class="blockquote">
+<p>Comment:</p>
+<ol type="1">
+<li>If a term like <code>pot(tray)</code> is specified, it should be the case that pots within each tray are replicates that are not treated differently within a tray</li>
+<li>For example, <code>pot(tray)</code> is correct for Example 3 but not for Example 2</li>
+<li>When levels of a factor B are different for each level of a factor A, we say that B is nested within A. In SAS, this is indicated by <code>B(A)</code>. If C is nested within B, and B is nested within A, this is indicated by <code>C(A B)</code> in SAS. See <code>nesting.sas</code> for an example</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="maximum-likelihood-estimation-for-the-general-linear-model" class="level2">
+<h2 class="anchored" data-anchor-id="maximum-likelihood-estimation-for-the-general-linear-model">19. Maximum Likelihood Estimation for the General Linear Model</h2>
+<ul>
+<li><p><strong>Likelihood function</strong>: <span class="math inline">\(L(\theta\mid y) = f(y\mid \theta)\)</span> is a real-valued function of <span class="math inline">\(\theta\)</span> for a given value of <span class="math inline">\(y\)</span>.</p></li>
+<li><p><strong>Maximum likelihood estimatior</strong>: <span class="math inline">\(\hat\theta = \arg\max_{\theta} L(\theta\mid y)\)</span></p></li>
+<li><p><strong>Score function</strong>: <span class="math inline">\(\frac{\partial \ell(\theta\mid y)}{\partial \theta}\)</span></p></li>
+<li><p><strong>Score equation</strong>: <span class="math inline">\(\frac{\partial \ell(\theta\mid y)}{\partial \theta} = 0\)</span></p>
+<ul>
+<li>Example: <span class="math display">\[
+\begin{bmatrix} \hat\beta \\ n^{-1}(y-X\hat\beta)'(y-X\hat\beta)\end{bmatrix} \text{ is an MLE of }\theta = \begin{bmatrix} \beta \\ \theta \end{bmatrix}
+\]</span> However, the MLE of <span class="math inline">\(\sigma^2\)</span> is not an unbiased estimator, <span class="math inline">\(E(SSE/n) = \frac{n-r}{n}\sigma^2\)</span></li>
+</ul></li>
+<li><p><strong>Profiled Log Likelihood</strong>: example <span class="math inline">\(\ell^*(\gamma\mid y) = \ell(\begin{bmatrix} \hat\beta_{\Sigma} \\\ \gamma \end{bmatrix} \mid y)\)</span> where we suppose <span class="math inline">\(y = X\beta + \epsilon\)</span>, <span class="math inline">\(\epsilon \sim N(0, \Sigma)\)</span>, <span class="math inline">\(\Sigma = \sigma^2\begin{bmatrix} 1 &amp; \rho &amp; \rho^2 \\ \rho &amp; 1 &amp; \rho \\\ \rho^2 &amp; rho &amp; 1 \end{bmatrix}\)</span>, <span class="math inline">\(\gamma = \begin{bmatrix} \sigma^2 \\ \rho \end{bmatrix}\)</span>, <span class="math inline">\(\sigma^2 &gt; 0\)</span>, and <span class="math inline">\(\rho \in (-1, 1)\)</span>.</p>
+<blockquote class="blockquote">
+<p>We can use numerical methods to find <span class="math inline">\(\hat\gamma\)</span> , a maximizer of <span class="math inline">\(\ell^*(\gamma\mid y)\)</span>.</p>
+</blockquote></li>
+</ul>
+<section id="example" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="example">Example</h5>
+<p>Researchers were interested in comparing the dry weight of maize seedlings from two different genotypes. For each genotype, nine seeds were planted in each of four trays. The eight trays in total were randomly positioned in a growth chamber. Three weeks after the emergence of the first seedling, emerged seedlings were harvested from each tray and individually weighed after drying to obtain one dry weight for each seedling. Although nine seeds were planted in each tray, fewer than nine seedlings emerged in many of the trays.</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><img src="fig/c19fig1.png" class="img-fluid"></td>
+<td><img src="fig/c19fig2.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<p>Let <span class="math inline">\(y_{ijk}\)</span> be the dry weight of the <span class="math inline">\(k\)</span>th seedling in the <span class="math inline">\(j\)</span>th tray for genotype <span class="math inline">\(i\)</span>. Suppose <span class="math display">\[
+y_{ijk} = \mu_i + t_{ij} + e_{ijk}
+\]</span> where <span class="math inline">\(\mu_1\)</span> and <span class="math inline">\(\mu_2\)</span> are unknown constants, <span class="math inline">\(t_{ij} \sim N(0, \sigma_t^2)\)</span>, <span class="math inline">\(e_{ijk} \sim N(0, \sigma_e^2)\)</span>, and all random terms are independent.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="in">library(nlme)</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="in">lme(SeedlingWeight ̃Genotype,random= ̃1|Tray,method="ML", data=d)</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="in">Linear mixed-effects model fit by maximum likelihood</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="in">  Data: d</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="in">  Log-likelihood: -126.3709   # l(thetahat|y)</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="in">  Fixed: SeedlingWeight  ̃ Genotype </span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="in">(Intercept)   Genotype2</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="in">  15.301832   -3.567017</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="in">Random effects:</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="in"> Formula:  ̃1 | Tray</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="in">        (Intercept) Residual</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="in">StdDev:    2.932294  1.88247     # sigma_that, sigma_ehat</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="in">Number of Observations: 56</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="in">Number of Groups: 8</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(lme4)</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a><span class="in">lmer(SeedlingWeight ̃Genotype+(1|Tray),REML=F,data=d)</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a><span class="in">Linear mixed model fit by maximum likelihood [’lmerMod’]</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="in">Formula: SeedlingWeight  ̃ Genotype + (1 | Tray)</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a><span class="in">   Data: d</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a><span class="in">      AIC       BIC    logLik  deviance </span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a><span class="in"> 260.7418  268.8432 -126.3709  252.7418</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a><span class="in">Random effects:</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a><span class="in"> Groups   Name        Std.Dev.</span></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a><span class="in"> Tray   (Intercept)   2.932</span></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a><span class="in"> Residual             1.882</span></span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a><span class="in">Number of obs: 56, groups: Tray, 8</span></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a><span class="in">Fixed Effects:</span></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a><span class="in">(Intercept)    Genotype2</span></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a><span class="in">     15.302       -3.567</span></span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="reml-estimation-of-variance-components" class="level2">
+<h2 class="anchored" data-anchor-id="reml-estimation-of-variance-components">20. REML Estimation of Variance Components</h2>
+<p>Consider the GLM: <span class="math display">\[
+y = X\beta + \epsilon, \text{ where } \epsilon \sim N(0, \Sigma)
+\]</span> and <span class="math inline">\(\Sigma\)</span> is an <span class="math inline">\(n\times n\)</span> positive definite variance matrix which depends on an unknown parameter vector <span class="math inline">\(\gamma\)</span>.</p>
+<p><strong>Residual/Restricted Maximum Likelihood (REML)</strong>: an approach that produces unbiased estimators for these special cases and produces less biased estimates than ML in general.</p>
+<section id="reml-method" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="reml-method">REML Method</h5>
+<ol type="1">
+<li><p>Find <span class="math inline">\(n - \text{rank}(X) = n - r\)</span> linearly independent vectors <span class="math inline">\(a_1, \ldots, a_{n-r}\)</span> such that <span class="math inline">\(a_i'X = 0'\)</span> for all <span class="math inline">\(i = 1, \ldots, n-r\)</span>.</p></li>
+<li><p>Find the MLE of <span class="math inline">\(\gamma\)</span> using <span class="math inline">\(w_1 \equiv a_1'y, \ldots, w_{n-r} \equiv a_{n-r}'y\)</span> as data. <span class="math display">\[
+A = [a_1, \ldots, a_{n-r}] \quad w = \begin{bmatrix} w_1 \\ \vdots \\ w_{n-r}  \end{bmatrix} = \begin{bmatrix} a_1'y \\ \vdots \\ a_{n-r}'y  \end{bmatrix} = A'y
+\]</span></p>
+<ul>
+<li><p>If <span class="math inline">\(a'X = 0'\)</span>, <span class="math inline">\(a'y\)</span> is known as <strong>error contrast</strong>. Thus, <span class="math inline">\(w_1, \ldots, w_{n-r}\)</span> comprise a set of <span class="math inline">\(n-r\)</span> error constrasts</p></li>
+<li><p>There exist <span class="math inline">\(n-r\)</span> linearly independent rows of <span class="math inline">\(I - P_X\)</span> to get <span class="math inline">\(a_1, \ldots, a_{n-r}\)</span>.</p></li>
+<li><p>The error constrasts <span class="math inline">\(w_1, \ldots, w_{n-r}\)</span> will be a subset of the elements of the residual vector <span class="math inline">\((I-P_X)y = y - \hat y\)</span></p></li>
+</ul></li>
+</ol>
+<p>Note that <span class="math inline">\(w = A'y = A'\epsilon \sim N(0, A'\Sigma A)\)</span> and the distribution of <span class="math inline">\(w\)</span> depends only on <span class="math inline">\(\gamma\)</span>.</p>
+<p>The log likelihood function in this case is <span class="math display">\[
+\ell(\gamma\mid w) = -\frac{1}{2}\log |A'\Sigma A| - \frac{1}{2}w'(A'\Sigma A)^{-1}w - \frac{n-r}{2}\log(2\pi)
+\]</span></p>
+</section>
+</section>
+<section id="blup-of-random-effects-in-normal-linear-mixed-effects-model" class="level2">
+<h2 class="anchored" data-anchor-id="blup-of-random-effects-in-normal-linear-mixed-effects-model">21. BLUP of Random Effects in Normal Linear Mixed Effects Model</h2>
+<p>Consider a linear mixed-effects model <span class="math display">\[
+y = X\beta + Zu + \epsilon, \text{ where } \begin{bmatrix} u \\ e \end{bmatrix} \sim N(\begin{bmatrix} 0 \\ 0 \end{bmatrix}, \begin{bmatrix} G &amp; 0 \\ 0 &amp; R \end{bmatrix}).
+\]</span> Given data <span class="math inline">\(y\)</span>, what is our best guess for <span class="math inline">\(u\)</span>?</p>
+<p>In 611, we can show the BLUP of <span class="math inline">\(u\)</span> is <span class="math inline">\(GZ'\Sigma^{-1}(y - X\hat\beta_{\Sigma})\)</span> which can be viewed as an approximation of <span class="math inline">\(E(u\mid y) = GZ'\Sigma^{-1}(y - X\beta)\)</span>.</p>
+<p>Suppose <span class="math display">\[
+\begin{bmatrix} w_1 \\ w_2 \end{bmatrix} \sim N(\begin{bmatrix} \mu_1 \\ \mu_2 \end{bmatrix}, \begin{bmatrix} \Sigma_{11} &amp; \Sigma_{12} \\ \Sigma_{21} &amp; \Sigma_{22} \end{bmatrix}),
+\]</span> the conditional distribution of <span class="math inline">\(w_2\)</span> given <span class="math inline">\(w_1\)</span> is <span class="math inline">\(\left(\mathbf{w}_{2} \mid \mathbf{w}_{1}\right) \sim N\left(\mathbf{\mu}_{2}+\mathbf{\Sigma}_{21} \mathbf{\Sigma}_{11}^{-1}\left(\mathbf{w}_{1}-\mathbf{\mu}_{1}\right), \mathbf{\Sigma}_{22}-\mathbf{\Sigma}_{21} \mathbf{\Sigma}_{11}^{-1} \mathbf{\Sigma}_{12}\right)\)</span>.</p>
+<p>Based on the model, we have <span class="math display">\[
+\begin{gathered}
+{\left[\begin{array}{l}
+\mathbf{y} \\
+\mathbf{u}
+\end{array}\right] \sim N\left(\left[\begin{array}{c}
+\mathbf{X} \mathbf{\beta} \\
+\mathbf{0}
+\end{array}\right],\left[\begin{array}{cc}
+\mathbf{Z} &amp; \mathbf{I} \\
+\mathbf{I} &amp; \mathbf{0}
+\end{array}\right]\left[\begin{array}{cc}
+\mathbf{G} &amp; \mathbf{0} \\
+\mathbf{0} &amp; \mathbf{R}
+\end{array}\right]\left[\begin{array}{ll}
+\mathbf{Z}^{\prime} &amp; \mathbf{I} \\
+\mathbf{I} &amp; \mathbf{0}
+\end{array}\right]\right)} \\
+\stackrel{d}{=} N\left(\left[\begin{array}{c}
+\mathbf{X} \mathbf{\beta} \\
+\mathbf{0}
+\end{array}\right],\left[\begin{array}{cc}
+\mathbf{Z} \mathbf{G} \mathbf{Z}^{\prime}+\mathbf{R} &amp; \mathbf{Z} \mathbf{G} \\
+\mathbf{G} \mathbf{Z}^{\prime} &amp; \mathbf{G}
+\end{array}\right]\right) .
+\end{gathered}
+\]</span> Therefore, <span class="math inline">\(E(u\mid y) = GZ'\Sigma^{-1}(y - X\beta)\)</span>. To get the BLUP of <span class="math inline">\(u\)</span>, we replace <span class="math inline">\(\beta\)</span> by <span class="math inline">\(\hat\beta_{\Sigma} = X(X'\Sigma^{-1}X)^-X'\Sigma^{-1}y\)</span>.</p>
+<p>For a usual case in which <span class="math inline">\(G\)</span> and <span class="math inline">\(\Sigma = ZGZ' + R\)</span> are unknown, we replace the matrices by estimates and approximate the BLUP of <span class="math inline">\(u\)</span> by <span class="math inline">\(\hat GZ'\hat\Sigma^{-1}(y - X\hat\beta_{\Sigma})\)</span>. This approximation to the BLUP is called EBLUP.</p>
+</section>
+<section id="additional-topics-related-to-likelihood" class="level2">
+<h2 class="anchored" data-anchor-id="additional-topics-related-to-likelihood">22. Additional Topics Related to Likelihood</h2>
+<ul>
+<li><p><strong>Akaike’s Information Criteria</strong>: <span class="math inline">\(AIC = -2\ell(\hat\theta) + 2k\)</span>.</p></li>
+<li><p><strong>Schwarz’s Bayesian Information Criterion</strong>: <span class="math inline">\(BIC = -2\ell(\hat\theta) + k\ln n\)</span></p>
+<blockquote class="blockquote">
+<p>If REML likelihoods are used, compared models must have the same model for the response mean. Different models for the mean would yield different error contrasts and different datasets for computation of maximized REML likelihoods.</p>
+</blockquote></li>
+<li><p><strong>Asymptotic normality of</strong> <span class="math inline">\(\hat\theta\)</span>: for sufficiently large <span class="math inline">\(n\)</span>, <span class="math inline">\(\hat\theta \stackrel{\cdot}{\sim} N(\theta, I^{-1}(\theta))\)</span> where <span class="math inline">\(I(\theta) = \left[-E\{\frac{\partial^2 \ell(\theta)}{\partial \theta_i \partial \theta_j} \} \right]\)</span> is called <strong>Fisher Information matrix</strong>.</p>
+<ul>
+<li>This implies <span class="math inline">\((\hat\theta - \theta)'[\widehat{Var}(\hat\theta)]^{-1}(\hat\theta - \theta) \stackrel{\cdot}{\sim}(\hat\theta - \theta) \stackrel{d}{\rightarrow} z'z \sim \chi_k^2\)</span>.</li>
+</ul></li>
+<li><p><strong>Wald Tests</strong>: Suppose for large <span class="math inline">\(n\)</span> that <span class="math inline">\(\hat\theta \stackrel{\cdot}{\sim} N(\theta, \widehat{Var}(\hat\theta))\)</span>, then a confidence interval for <span class="math inline">\(c'\theta\)</span> that has confidence level approximately equal to <span class="math inline">\(1 - \alpha\)</span> is <span class="math inline">\(c'\hat\theta \pm z_{1-\alpha/2}\sqrt{c'\widehat{Var}(\hat\theta)c}\)</span>. Likewise, if <span class="math inline">\(C\)</span> is a <span class="math inline">\(q \times k\)</span> matrix of rank <span class="math inline">\(q\)</span>, a test of <span class="math inline">\(H_0: C\theta = d\)</span> can be based on the test statistic <span class="math display">\[
+(C\hat\theta - d)'[C\widehat{Var}(\hat\theta)C']^{-1}(C\hat\theta - d) \sim \chi_q^2
+\]</span></p></li>
+<li><p><strong>Multivarite Delta Method</strong>: Suppose a <span class="math inline">\(g\)</span> is a function from <span class="math inline">\(R^k\)</span> to <span class="math inline">\(R^m\)</span>, i.e.&nbsp;<span class="math inline">\(g = [g_1(\theta), \ldots, g_m(\theta)]'\)</span>. Let <span class="math inline">\(D \equiv \frac{\partial g}{\partial \theta}\)</span> be the derivative matrix. By Taylor’s theorem, <span class="math inline">\(g(\hat\theta) \approx g(\theta) + D'(\hat\theta - \theta)\)</span> which implies <span class="math inline">\(E(g(\hat\theta)) \approx g(\theta) + D'E(\hat\theta - \theta) = g(\theta)\)</span> and <span class="math inline">\(Var(g(\hat\theta)) \approx Var[g(\theta) + D'(\hat\theta - \theta)] = D'Var(\hat\theta)D\)</span>. Therefore, <span class="math inline">\(g(\hat\theta) \stackrel{\cdot}{\sim} N(g(\theta), D'Var(\hat\theta) D)\)</span>.</p></li>
+<li><p><strong>Likelihood Ratio</strong>: Define <span class="math inline">\(\Lambda\)</span> as <span class="math inline">\(\frac{\text{Reduced Model Maximial likelihood}}{\text{Full Model Maximized Likelihood}}\)</span>. <span class="math inline">\(-2\ln(\Lambda)\)</span> is known as the likelihood ratio test statisti and <span class="math inline">\(-2\ln(\Lambda) \sim \chi_{k_f - k_r}^2\)</span> under the null hypothesis.</p></li>
+<li><p><strong>Profile Likelihood Confidence</strong>: <span class="math inline">\(\{\theta_1: \ell(\theta_1, \hat\theta_2(\theta_1)) \geq \ell(\hat\theta) - \frac{1}{2} \chi_{k_1, 1-\alpha}^2\}\)</span>. <img src="fig/c22fig1.png" style="zoom:40%;"></p></li>
+</ul>
+</section>
+<section id="repeated-measures" class="level2">
+<h2 class="anchored" data-anchor-id="repeated-measures">23. Repeated Measures</h2>
+<p>In an exercise therapy study, subjects were assigned to one of three weightlifting programs</p>
+<ul>
+<li><span class="math inline">\(i=1\)</span>: The number of repetitions of weightlifting was increased as subjects became stronger.</li>
+<li><span class="math inline">\(i=2\)</span>: The amount of weight was increased as subjects became stronger.</li>
+<li><span class="math inline">\(i=3\)</span>: Subjects did not participate in weightlifting.</li>
+<li>Measurements of strength (<span class="math inline">\(y\)</span>) were taken on days 2, 4, 6, 8, 10, 12, and 14 for each subject.</li>
+</ul>
+<p>Let <span class="math inline">\(y_{ijk}\)</span> be the strength measurement for program <span class="math inline">\(i\)</span>, subject <span class="math inline">\(j\)</span>, and time point <span class="math inline">\(k\)</span>. Suppose <span class="math display">\[
+y_{ijk} = \mu + \alpha_i + s_{ij} + \tau_k + \gamma_{ik} + e_{ijk}
+\]</span> where <span class="math inline">\(i = 1, 2, 3\)</span>, <span class="math inline">\(k = 1,\ldots, 7\)</span>, <span class="math inline">\(s_{ij} \sim N(0, \sigma_s^2\)</span>), <span class="math inline">\(e_{ijk} \sim N(0, \sigma_e^2)\)</span>. <span class="math inline">\(E(y_{ijk}) = \mu + \alpha_i + \tau_k + \gamma_{ik}\)</span> and <span class="math inline">\(Var(y_{ijk}) = \sigma_s^2 + \sigma_e^2\)</span>. The covariance between any two different observations from the same subject is <span class="math inline">\(cov(y_{ijk}, y_{ijl}) = Var(s_{ij}) = \sigma_s^2\)</span>.</p>
+<p>For the set of observations taken on a single subject, we have <span class="math inline">\(var(\mathbf{y}_{ij}) = \sigma_e^2I_{7\times 7} + \sigma_s^2 11'_{7\times 7}\)</span>. This is known as <strong>compound symmetric</strong> covariance structure.</p>
+<p>Using <span class="math inline">\(n_i\)</span> to denote the number of subjects in the <span class="math inline">\(i\)</span>th program, we can write this model in the form <span class="math display">\[
+y = X\beta + Zu + e
+\]</span> Let <span class="math inline">\(y_{ij} = [y_{ij1}, \ldots, y_{ij7}]'\)</span> and <span class="math inline">\(e_{ij} = [e_{ij1}, \ldots, e_{ij7}]'\)</span> for all <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>. In this case, <span class="math inline">\(G = Var(u) = \sigma_s^2 I_{n.\times n.}\)</span>, <span class="math inline">\(R = Var(e) = \sigma_e^2 I_{(7n.) \times (7n.)}\)</span>, <span class="math inline">\(\Sigma = ZGZ' + R\)</span> is a block diagional matrix with one block of the form <span class="math inline">\(\sigma_e^2I_{7\times 7} + \sigma_s^2 11'_{7\times 7}\)</span> for each subject.</p>
+</section>
+<section id="r-code-for-the-repeated-measures" class="level2">
+<h2 class="anchored" data-anchor-id="r-code-for-the-repeated-measures">24. R Code for the Repeated Measures</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Read the data</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>d<span class="ot">=</span><span class="fu">read.delim</span>(<span class="st">"http://dnett.github.io/S510/RepeatedMeasures.txt"</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Create Factors</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>d<span class="sc">$</span>Program<span class="ot">=</span><span class="fu">as.factor</span>(d<span class="sc">$</span>Program)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>d<span class="sc">$</span>Subj<span class="ot">=</span><span class="fu">as.factor</span>(d<span class="sc">$</span>Subj)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>d<span class="sc">$</span>Timef<span class="ot">=</span><span class="fu">as.factor</span>(d<span class="sc">$</span>Time)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Load the nlme package</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nlme)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># compound symmetry</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="fu">lme</span>(Strength <span class="sc">~</span> Program <span class="sc">*</span> Timef, <span class="at">data =</span> d,<span class="at">random =</span> <span class="sc">~</span><span class="dv">1</span><span class="sc">|</span>Subj)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed-effects model fit by REML
+  Data: d 
+  Log-restricted-likelihood: -710.4101
+  Fixed: Strength ~ Program * Timef 
+     (Intercept)         Program2         Program3           Timef4 
+    79.687500000      1.360119048      0.062500000      0.875000000 
+          Timef6           Timef8          Timef10          Timef12 
+     1.125000000      1.312500000      1.562500000      1.437500000 
+         Timef14  Program2:Timef4  Program3:Timef4  Program2:Timef6 
+     1.437500000     -0.255952381     -0.675000000     -0.267857143 
+ Program3:Timef6  Program2:Timef8  Program3:Timef8 Program2:Timef10 
+    -0.875000000      0.163690476     -1.012500000      0.008928571 
+Program3:Timef10 Program2:Timef12 Program3:Timef12 Program2:Timef14 
+    -1.512500000      0.229166667     -1.587500000      0.610119048 
+Program3:Timef14 
+    -1.587500000 
+
+Random effects:
+ Formula: ~1 | Subj
+        (Intercept) Residual
+StdDev:    3.098924 1.094017
+
+Number of Observations: 399
+Number of Groups: 57 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gls</span>(Strength <span class="sc">~</span> Program <span class="sc">*</span> Timef, <span class="at">data =</span> d,</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">correlation =</span> <span class="fu">corCompSymm</span>(<span class="at">form =</span> <span class="sc">~</span><span class="dv">1</span><span class="sc">|</span>Subj))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Generalized least squares fit by REML
+  Model: Strength ~ Program * Timef 
+  Data: d 
+  Log-restricted-likelihood: -710.4101
+
+Coefficients:
+     (Intercept)         Program2         Program3           Timef4 
+    79.687500000      1.360119048      0.062500000      0.875000000 
+          Timef6           Timef8          Timef10          Timef12 
+     1.125000000      1.312500000      1.562500000      1.437500000 
+         Timef14  Program2:Timef4  Program3:Timef4  Program2:Timef6 
+     1.437500000     -0.255952381     -0.675000000     -0.267857143 
+ Program3:Timef6  Program2:Timef8  Program3:Timef8 Program2:Timef10 
+    -0.875000000      0.163690476     -1.012500000      0.008928571 
+Program3:Timef10 Program2:Timef12 Program3:Timef12 Program2:Timef14 
+    -1.512500000      0.229166667     -1.587500000      0.610119048 
+Program3:Timef14 
+    -1.587500000 
+
+Correlation Structure: Compound symmetry
+ Formula: ~1 | Subj 
+ Parameter estimate(s):
+      Rho 
+0.8891805 
+Degrees of freedom: 399 total; 378 residual
+Residual standard error: 3.286366 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AR(1)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gls</span>(Strength <span class="sc">~</span> Program <span class="sc">*</span> Timef, <span class="at">data =</span> d,</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">correlation =</span> <span class="fu">corAR1</span>(<span class="at">form =</span> <span class="sc">~</span><span class="dv">1</span><span class="sc">|</span>Subj))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Generalized least squares fit by REML
+  Model: Strength ~ Program * Timef 
+  Data: d 
+  Log-restricted-likelihood: -633.4018
+
+Coefficients:
+     (Intercept)         Program2         Program3           Timef4 
+    79.687500000      1.360119048      0.062500000      0.875000000 
+          Timef6           Timef8          Timef10          Timef12 
+     1.125000000      1.312500000      1.562500000      1.437500000 
+         Timef14  Program2:Timef4  Program3:Timef4  Program2:Timef6 
+     1.437500000     -0.255952381     -0.675000000     -0.267857143 
+ Program3:Timef6  Program2:Timef8  Program3:Timef8 Program2:Timef10 
+    -0.875000000      0.163690476     -1.012500000      0.008928571 
+Program3:Timef10 Program2:Timef12 Program3:Timef12 Program2:Timef14 
+    -1.512500000      0.229166667     -1.587500000      0.610119048 
+Program3:Timef14 
+    -1.587500000 
+
+Correlation Structure: AR(1)
+ Formula: ~1 | Subj 
+ Parameter estimate(s):
+      Phi 
+0.9517769 
+Degrees of freedom: 399 total; 378 residual
+Residual standard error: 3.280242 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># general structure</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gls</span>(Strength <span class="sc">~</span> Program <span class="sc">*</span> Timef, <span class="at">data =</span> d,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">correlation =</span> <span class="fu">corSymm</span>(<span class="at">form =</span> <span class="sc">~</span><span class="dv">1</span><span class="sc">|</span>Subj),</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">weight =</span> <span class="fu">varIdent</span>(<span class="at">form =</span> <span class="sc">~</span><span class="dv">1</span><span class="sc">|</span>Timef))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Generalized least squares fit by REML
+  Model: Strength ~ Program * Timef 
+  Data: d 
+  Log-restricted-likelihood: -617.4479
+
+Coefficients:
+     (Intercept)         Program2         Program3           Timef4 
+    79.687500000      1.360119048      0.062500000      0.875000000 
+          Timef6           Timef8          Timef10          Timef12 
+     1.125000000      1.312500000      1.562500000      1.437500000 
+         Timef14  Program2:Timef4  Program3:Timef4  Program2:Timef6 
+     1.437500000     -0.255952381     -0.675000000     -0.267857143 
+ Program3:Timef6  Program2:Timef8  Program3:Timef8 Program2:Timef10 
+    -0.875000000      0.163690476     -1.012500000      0.008928571 
+Program3:Timef10 Program2:Timef12 Program3:Timef12 Program2:Timef14 
+    -1.512500000      0.229166667     -1.587500000      0.610119048 
+Program3:Timef14 
+    -1.587500000 
+
+Correlation Structure: General
+ Formula: ~1 | Subj 
+ Parameter estimate(s):
+ Correlation: 
+  1     2     3     4     5     6    
+2 0.960                              
+3 0.925 0.940                        
+4 0.872 0.877 0.956                  
+5 0.842 0.860 0.937 0.960            
+6 0.809 0.827 0.898 0.909 0.951      
+7 0.797 0.792 0.876 0.887 0.917 0.953
+Variance function:
+ Structure: Different standard deviations per stratum
+ Formula: ~1 | Timef 
+ Parameter estimates:
+       2        4        6        8       10       12       14 
+1.000000 1.038704 1.104341 1.071325 1.173692 1.157120 1.203157 
+Degrees of freedom: 399 total; 378 residual
+Residual standard error: 2.963166 </code></pre>
+</div>
+</div>
+</section>
+<section id="sas-code-for-the-repeated-measures" class="level2">
+<h2 class="anchored" data-anchor-id="sas-code-for-the-repeated-measures">25. SAS Code for the Repeated Measures</h2>
+<div class="sourceCode" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{SAS}</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="in">/* Compound Structure */ </span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed;</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="in">    class program subj time;</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="in">    model strength = program time program * time;</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="in">    random subj(program) ;</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="in">run;</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="in">/* alternative code for compound structure */</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed;</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="in">    class program subj time;</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="in">    model strength program time program * time;</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a><span class="in">    repeated time / subject = subj type = cs;   /* cs */</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="in">run; </span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="in"> </span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a><span class="in">/* AR(1)  */</span></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed;</span></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="in">    class program subj time;</span></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="in">    model strength program time program * time;</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a><span class="in">    repeated time / subject = subj type = ar(1);  </span></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="in">run; </span></span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a><span class="in">/* General Positive Definite Structure */</span></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a><span class="in">proc mixed;</span></span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a><span class="in">    class program subj time;</span></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a><span class="in">    model strength program time program * time;</span></span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a><span class="in">    repeated time / subject = subj type = un;</span></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="in">run; </span></span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>AIC and BIC for repeated measures in SAS:</p>
+<ul>
+<li><span class="math inline">\(AIC = -2\ell(\hat\theta) + 2k\)</span></li>
+<li><span class="math inline">\(BIC = -2\ell(\hat\theta) + k\ln(n)\)</span></li>
+<li>k = number of variance parameters</li>
+<li>n = total number of independent subjects</li>
+</ul>
+</section>
+<section id="a-generalized-linear-model-for-bernoulli-response-data" class="level2">
+<h2 class="anchored" data-anchor-id="a-generalized-linear-model-for-bernoulli-response-data">26. A Generalized Linear Model for Bernoulli Response Data</h2>
+<p>Example: for each <span class="math inline">\(i = 1, \ldots, n\)</span>, <span class="math inline">\(y_i \sim \text{Bernoulli}(\pi_i)\)</span>, <span class="math inline">\(\pi = \frac{\exp(x_i'\beta)}{1 + \exp(x_i'\beta)}\)</span> and <span class="math inline">\(y_1, \ldots, y_n\)</span> are independent. This model is called a <strong>logistic regression model</strong>.</p>
+<p>The function <span class="math inline">\(g(\pi) = \log(\frac{\pi}{1-\pi})\)</span> is called <em>logit function</em>. <span class="math inline">\(\log(\frac{\pi}{1-\pi})\)</span> is called <em>log(odds)</em>.</p>
+<p>Note that <span class="math inline">\(g(\pi) = x_i'\beta\)</span>. In GLM terminology, the logit is called the <em>link function</em>. However, for GLMs, it is not necessary that the mean of <span class="math inline">\(y_i\)</span> be a linear function of <span class="math inline">\(\beta\)</span>. Here are some other link functions for logistic regression:</p>
+<ul>
+<li>probit: <span class="math inline">\(\Phi^{-1}(\pi) = x'\beta\)</span></li>
+<li>complementary log-log (cloglog in R): <span class="math inline">\(\log(-\log(1-\pi)) = x'\beta\)</span></li>
+</ul>
+<p>For GLMs, <strong>Fisher’s Scoring Method</strong> is typically used to obtain an MLE for <span class="math inline">\(\beta\)</span>, denote as <span class="math inline">\(\hat\beta\)</span>. Fisher’s Scoring Method is a variation of the <em>Newton-Raphson algorithm</em> in which the Hessianm atrix (matrix of second partial derivatives) is replaced by its expected value (-Fisher Information matrix).</p>
+<p>For sufficiently large samples, <span class="math inline">\(\hat\beta\)</span> is approximately normal with mean <span class="math inline">\(\beta\)</span> and a variance-covariance matrix that can be approximated by the estimated inverse of the Fisher information matrix, i.e.&nbsp;<span class="math inline">\(\hat\beta \sim N(\beta, I^{-1}(\beta))\)</span>.</p>
+<p>The <strong>Odds ratio</strong>: <span class="math inline">\(\frac{\tilde{\pi}}{1-\tilde{\pi}}/\frac{\pi}{1-\pi} = \exp(\beta_j)\)</span>. This can be explained as: A one unit increase in the jth explanatory variable (with all other explanatory variables held constant) is associated with a multiplicative change in the odds of success by the factor <span class="math inline">\(\exp(\beta_j)\)</span>.</p>
+<p>If <span class="math inline">\((L_j, U_j)\)</span> is a <span class="math inline">\(100(1-\alpha)\%\)</span> confidence interval for <span class="math inline">\(\beta_j\)</span>. then <span class="math inline">\((\exp(L_j), \exp(U_j))\)</span> is a <span class="math inline">\(100(1-\alpha)\%\)</span> confidence interval for <span class="math inline">\(\exp(\beta_j)\)</span>. Also, a <span class="math inline">\(100(1-\alpha)\%\)</span> CI for <span class="math inline">\(\pi\)</span> is <span class="math inline">\(\left(\frac{1}{1+\exp(-L_j)},\frac{1}{1+\exp(-U_j)}\right)\)</span>.</p>
+</section>
+<section id="a-generalized-linear-model-for-binomial-response-data" class="level2">
+<h2 class="anchored" data-anchor-id="a-generalized-linear-model-for-binomial-response-data">27. A Generalized Linear Model for Binomial Response Data</h2>
+<p>For all <span class="math inline">\(i = 1, \ldots, n\)</span>, <span class="math inline">\(y_i\sim \text{Binomial}(m_i, \pi_i)\)</span>, where <span class="math inline">\(m_i\)</span> is known number of trials for observation <span class="math inline">\(i\)</span>, <span class="math inline">\(\pi_i = \frac{\exp(x_i'\beta)}{1+\exp(x_i'\beta)}\)</span>, and <span class="math inline">\(y_1, \ldots, y_n\)</span> are independent. The Binomial log likelihood is <span class="math display">\[
+\ell(\beta\mid y) = \sum_{i = 1}^n [y_ix_i'\beta - m_i\log(1 + \exp(-x_i'\beta))] + \text{constant}
+\]</span> We can compare the fit of a logitstic regression model known as <strong>saturated model</strong>. The MLE of <span class="math inline">\(\pi_i\)</span> under the logistic regression model is <span class="math inline">\(\hat\pi_i = \frac{\exp(x_i'\hat\beta)}{1 + \exp(x_i'\hat\beta)}\)</span>, and the MLE of <span class="math inline">\(\pi_i\)</span> under saturated model is <span class="math inline">\(y_i/m_i\)</span>. Then the <em>likelihood ratio statistic</em> for testing the logistic regression model as the reduced model VS. the saturated model as the full model is <span class="math display">\[
+2 \sum_{i=1}^{n}\left[y_{i} \log \left(\frac{y_{i} / m_{i}}{\hat{\pi}_{i}}\right)+\left(m_{i}-y_{i}\right) \log \left(\frac{1-y_{i} / m_{i}}{1-\hat{\pi}_{i}}\right)\right]
+\]</span> which is called the <strong>Deviance Statistics</strong>, the <strong>Residual Deviance</strong> or just the <strong>Deviance</strong>.</p>
+<p><strong>A Lack-of-fit Test</strong>: when <span class="math inline">\(n\)</span> is large, and/or <span class="math inline">\(m_1, \ldots m_n\)</span>, are each suitablely large, the Deviance Statistic is approximately <span class="math inline">\(\chi_{n-p}^2\)</span> if the logistic regression model is correct.</p>
+<p><strong>Deviance Residual</strong>: <span class="math display">\[
+d_{i} \equiv \operatorname{sign}\left(y_{i} / m_{i}-\hat{\pi}_{i}\right) \sqrt{2\left[y_{i} \log \left(\frac{y_{i}}{m_{i} \hat{\pi}_{i}}\right)+\left(m_{i}-y_{i}\right) \log \left(\frac{m_{i}-y_{i}}{m_{i}-m_{i} \hat{\pi}_{i}}\right)\right]}
+\]</span> The residual deviance statistic is the sum of the squared deviance residuals <span class="math inline">\((\sum_{i = 1}^n d_i^2)\)</span>.</p>
+<p><strong>Pearson’s Chi-Square Statistic</strong>: Another lack of fit statistic that is approximately <span class="math inline">\(\chi_{n-p}^2\)</span> under the null is Pearson’s Chi-Square Statistic: <span class="math display">\[
+\begin{aligned}
+X^{2} = \sum_{i=1}^{n}\left(\frac{y_{i}-\widehat{E}\left(y_{i}\right)}{\sqrt{\widehat{\operatorname{Var}}\left(y_{i}\right)}}\right)^{2} = \sum_{i=1}^{n}\left(\frac{y_{i}-m_{i} \hat{\pi}_{i}}{\sqrt{m_{i} \hat{\pi}_{i}\left(1-\hat{\pi}_{i}\right)}}\right)^{2} .
+\end{aligned}
+\]</span> The term <span class="math inline">\(r_i = \frac{y_{i}-m_{i} \hat{\pi}_{i}}{\sqrt{m_{i} \hat{\pi}_{i}\left(1-\hat{\pi}_{i}\right)}}\)</span> is known as <em>Pearson residual</em>.</p>
+<p><strong>Residual Diagnostics</strong>: For large <span class="math inline">\(m_i\)</span> values, both <span class="math inline">\(d_i\)</span> and <span class="math inline">\(r_i\)</span> should be approximately distributed as <u>standard normal random</u> <u>variables</u> if the logistic regression model is correct.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="in">o=g1m(cbind(tumor, total-tumor)~dose, </span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="in">      family=binomial(link=logit), data=d)</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="in">summary(o)</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Overdispersion</strong>: in the GLM framework, its often the case that <span class="math inline">\(Var(y_i)\)</span> is the function of <span class="math inline">\(E(y_i)\)</span>. That is the case for logistic regression where <span class="math inline">\(Var(y_i) = m_i\pi(1-\pi_i) = m_i\pi_i - (m_i\pi_i)^2/m_i = E(y_i) - [E(y_i)]^2/m_i\)</span>. If the variability of our response is greater than we should expect based on our estimates of the mean, we say that there is <strong>overdispersion</strong>.</p>
+<p><strong>Quasi-likelihood Inference</strong>: in the binomial case, we make all the same assumptions as before except that we assume <span class="math inline">\(Var(y_i) = \phi m_i\pi_i(1-\pi_i)\)</span> for some unknown dispersion parameter <span class="math inline">\(\phi &gt; 1\)</span>. The dispersion parameter can be estimated by <span class="math inline">\(\hat\phi = \sum_{i=1}^n d_i^2/(n-p)\)</span> or <span class="math inline">\(\hat\phi = \sum_{i=1}^n r_i^2/(n-p)\)</span>.</p>
+<ul>
+<li>The estimated variance of <span class="math inline">\(\hat\beta\)</span> is multiplied by <span class="math inline">\(\hat\phi\)</span>.</li>
+<li>For Wald type inferences, the standard normal null distribution is replaced by <span class="math inline">\(t\)</span> with <span class="math inline">\(n - p\)</span> degrees of freedom.</li>
+<li>Any test statistic <span class="math inline">\(T\)</span> that was assumed <span class="math inline">\(\chi_q^2\)</span> under <span class="math inline">\(H_0\)</span> is replaced with <span class="math inline">\(T/(q\hat\phi)\)</span> and compared to an <span class="math inline">\(F\)</span> distribution with <span class="math inline">\(q\)</span> and <span class="math inline">\(n-p\)</span> degrees of freedom.</li>
+</ul>
+<div class="sourceCode" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="in">oq=g1m(cbind(tumor, total-tumor)~dosef, </span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="in">       family=quasibinomial(link=logit),data=d)</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="in">summary(oq)</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="a-generalized-linear-model-for-poison-response-data" class="level2">
+<h2 class="anchored" data-anchor-id="a-generalized-linear-model-for-poison-response-data">29. A Generalized Linear Model for Poison Response Data</h2>
+<p>For all <span class="math inline">\(i = 1, \ldots, n\)</span>, <span class="math inline">\(y_i \sim \text{Possion}(\lambda_i)\)</span>, <span class="math inline">\(\log(\lambda_i) = x_i'\beta\)</span>. The Poisson log likelihood is <span class="math display">\[
+\ell(\beta\mid y) = \sum_{i=1}^n \left[y_ix_i'\beta - exp(x_i'\beta) - \log(y_i!) \right]
+\]</span> The <span class="math inline">\(\ell(\beta\mid y)\)</span> can be maximized using <em>Fisher’s scoring method</em> to obtain the MLE.</p>
+<p>Let <span class="math inline">\(\lambda = \exp(x'\beta)\)</span> and <span class="math inline">\(\tilde{\lambda} = exp(\tilde{x}'\beta)\)</span> where <span class="math inline">\(\tilde{x} = [x_1, \ldots, x_{j-1}, x_{j} + 1, x_{j+1}, \ldots, x_p ]'\)</span>, we have <span class="math inline">\(\tilde{\lambda}/\lambda = \exp(\beta_j)\)</span>. This means that all other explanatory variables held constant, the mean response at <span class="math inline">\(x_j + 1\)</span> is <span class="math inline">\(\exp(\beta_j)\)</span> times the mean response at <span class="math inline">\(x_j\)</span>.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="in">o = glm(y ~ x, family = poisson(link = "log"))</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="in">summary(o) </span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="in"># likelihood ratio test </span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="in">anova(o, test = "Chisq")</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Lack of Fit</strong>: Under saturated model, <span class="math inline">\(\lambda_i = y_i\)</span>. Then the likelihood ratio statistic for testing the Poisson GLM as the reduced model vs.&nbsp;the saturated model as the full model is <span class="math display">\[
+2 \sum_{i = 1}^n \left[y_i\log\left(\frac{y_i}{\hat\lambda_i}\right) - (y_i - \hat\lambda_i)   \right]
+\]</span></p>
+</section>
+<section id="generalized-linear-mixef-effects-model" class="level2">
+<h2 class="anchored" data-anchor-id="generalized-linear-mixef-effects-model">29. Generalized Linear Mixef-Effects Model</h2>
+<p>Example: Consider the experiment designed to evaluate the effectiveness of an anti-fungal chemical on plants. A total of 60 plant leaves were randomly assigned to treatment with 0, 5, 10, 15, 20, or 25 units of the anti-fungal chemical, with 10 plant leaves for each amount of anti-fungal chemical. All leaves were infected with a fungus. Following a two-week period, the leaves were studied under a microscope, and the number of infected cells was counted and recorded for each leaf.</p>
+<p>Let <span class="math inline">\(\ell_i \sim N(0, \sigma_\ell^2)\)</span> denote a random effect for the <span class="math inline">\(i\)</span>th leaf. Suppose <span class="math inline">\(\log(\lambda_i) = \beta_0 + \beta_1x_i + \ell_i\)</span> and <span class="math inline">\(y_i\mid \lambda_i \sim \text{Poisson}(\lambda_i)\)</span>. Finally, suppose <span class="math inline">\(\ell_1, \ldots, \ell_n\)</span> are independent and that <span class="math inline">\(y_1, \ldots, y_n\)</span> are conditionally independent given <span class="math inline">\(\lambda_1, \ldots, \lambda_n\)</span>.</p>
+<p><strong>Lognormal distribution</strong>: if <span class="math inline">\(\log(v) \sim N(\mu, \sigma^2 )\)</span>, then <span class="math inline">\(v\)</span> is said to have a lognormal distribution. The mean and variance of a lognormal distribution are <span class="math inline">\(E(v) = \exp(\mu + \sigma^2/2)\)</span>, <span class="math inline">\(Var(v) = \exp(2\mu + 2\sigma^2) - \exp(2\mu + \sigma^2)\)</span>.</p>
+<p>Suppose <span class="math inline">\(\log(v) \sim N(\mu, \sigma^2)\)</span> and <span class="math inline">\(u\mid v \sim \text{Poisson}(v)\)</span>. Then <span class="math inline">\(E(u) = E(v) = \exp(\mu + \sigma^2/2)\)</span>, <span class="math display">\[
+\begin{aligned}
+\operatorname{Var}(u) &amp;=E(\operatorname{Var}(u \mid v))+\operatorname{Var}(E(u \mid v))=E(v)+\operatorname{Var}(v) \\
+&amp;=\exp \left(\mu+\sigma^{2} / 2\right)+\exp \left(2 \mu+2 \sigma^{2}\right)-\exp \left(2 \mu+\sigma^{2}\right) \\
+&amp;=\exp \left(\mu+\sigma^{2} / 2\right)+\left(\exp \left(\sigma^{2}\right)-1\right) \exp \left(2 \mu+\sigma^{2}\right) \\
+&amp;=E(u)+\left(\exp \left(\sigma^{2}\right)-1\right)[E(u)]^{2}
+\end{aligned}
+\]</span></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/courses/index.html" class="pagination-link" aria-label="Courses">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Courses</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/courses/STAT544/STAT544.html" class="pagination-link" aria-label="STAT544">
+        <span class="nav-page-text">STAT544</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

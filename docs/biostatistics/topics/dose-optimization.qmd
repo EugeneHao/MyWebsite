@@ -1,0 +1,76 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+search: true
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+## Dose Optimization
+
+### Design Methods
+
+Phase II designs:
+
+-   [BOP2](https://drive.google.com/file/d/1LkFvOkr-zRUHhmL8nIEFNAk0HUcPEeDC/view?usp=sharing)
+    -   [BOP2 with TITE endpoint](https://drive.google.com/file/d/1Lo3KzQ-ymH46fv5CSZENqd22iFG8_ea9/view?usp=sharing)
+    -   [BOP2 Online Shiny App](https://biostatistics.mdanderson.org/shinyapps/BOP2/)
+    -   [BOIN+BOP2](https://drive.google.com/file/d/1LgxH8zg0PAkIo59pA1tls2GstneV1mUn/view?usp=sharing)
+-   [BOP2-DC](https://drive.google.com/file/d/1R1XbcTZdkaKDrYsotXtfKkD6VvztN6wp/view?usp=drive_link)
+-   [Two-arm BOP2](https://drive.google.com/file/d/1IrCTbOng6dPK-Y5ZksloOwVm7hq5Vtgd/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1AasLP8KMEd5qiYkwvkIUBybA9hkp3Zf-/view?usp=drive_link), code available)
+-   [BOP2-Comb](https://drive.google.com/file/d/1fosghJPUs_YsOqR34Kl5K0QoAZR_S5Gy/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1s-Iz4StNWDtyaQS-OEV_eFQnW9EhQ8vA/view?usp=drive_link))
+-   [BOP2-FE](https://drive.google.com/file/d/1aNNBkxdwR_u6cCXwFzVh3wjJQr9b17FI/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1mo35GuFIQHg1zf71nQuush3kljZFoGqn/view?usp=drive_link))
+-   [TOP](https://drive.google.com/file/d/1Lvpk4cD_rR3pgylPVlCGF70kPzfhAy7N/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1Qefh-QXKu72kJSEIqjcOxmCDxW1-j95l/view?usp=drive_link))
+-   [DODII](https://drive.google.com/file/d/114GCgeHBrMBdyKmIh3akBtrh-aVt9-gi/view?usp=drive_link)
+-   [M-DODII](https://drive.google.com/file/d/1BU3Efra4hLvPIxE3Ga4DThyqK8H1osxq/view?usp=drive_link)
+
+Phase I/II designs:
+
+-   Toxicity + Efficacy:
+    -   [MERIT](https://drive.google.com/file/d/1M8qt57JMW8D_rShQfjy174V7_5dEhkOd/view?usp=drive_link)
+-   Toxicity + Efficacy + PK/PD:
+    -   [DROID](https://drive.google.com/file/d/1IOWNUyEdyP5P0x6F9dtzbQQN1cRpAoyn/view?usp=drive_link) ([supplementary](https://drive.google.com/file/d/1I_gDnYyDGdocLJEXJ3PtZfOOxbRCQYlO/view?usp=drive_link))
+    -   [BOIN-PK](https://drive.google.com/file/d/1LO4MyejI4E4wkOyCY6xP9FnyT6hciyIo/view?usp=drive_link)
+    -   [CRM-PK](https://drive.google.com/file/d/10gh8CHZ8h5F0ODNKBTD9UoNiz6-KxSYP/view?usp=drive_link)
+    -   [PEDOOP](https://drive.google.com/file/d/10wgJ97xMlOd8EAmzk9YnGwxKwrFuzmdR/view?usp=drive_link)
+-   Multi-Categorical + Multi Grade Outcomes:
+    -   [A Generalized Phase I/II Dose Optimization Trial Design With Multi-Categorical and Multi-Graded Outcomes](https://drive.google.com/file/d/12xVLpnxHEEVT4qWbJcpmKo5O3xwWp4bn/view?usp=drive_link) ([supplementary](https://drive.google.com/file/d/12wY1_nsOn4e6MRCxjBJ870VDkI2la185/view?usp=drive_link))
+-   Dynamic Borrowing:
+    -   (BOIN-MEM) [BOIN-MEM: A Two-Stage Design for Dose Optimization With Information Borrowing Across Dose Levels and Stages in Oncology Phase I/II Trials](https://drive.google.com/file/d/1j4P4rnVpIYPVkKw28Ax8GdM-zvpO5SWt/view?usp=drive_link) ([supp](https://drive.google.com/open?id=1-NgPtn3-84AxXkFNUc8yjUeODDd7axwi&usp=drive_copy))
+
+Phase II/III designs:
+
+-   [Seamless Phase 2-3 design](https://drive.google.com/file/d/1M6-Y2VzQG--yqzkR8ol9Y4buA1qJa0DF/view?usp=sharing)
+
+### Summary Papers
+
+-   [Statistical and Practical Considerations in Planning and Conduct of Dose Optimization Trials](https://drive.google.com/file/d/1MYE-JAvGAT7_ehLV3AomUnowkQHAY9Jw/view?usp=sharing)
+-   [Dose optimization during drug development: whether and when to optimize](https://drive.google.com/file/d/1LxyUrXgrRN_zsY8y3WT_izfkvFLnd0v9/view?usp=sharing)
+
+### Unclassified papers
+
+-   (U-MET) [U-MET: Utility-Based Dose Optimization Approach for Multiple-Dose Randomized Trial Designs](https://www.tandfonline.com/doi/full/10.1080/19466315.2024.2365630)
+-   (Comb-BOIN12) [Comb-BOIN12: A Utility-Based Bayesian Optimal Interval Design for Dose Optimization in Cancer Drug-Combination Trials](https://drive.google.com/file/d/1-r6IEy7eU3BsjWZqqwhCt_4f7YF71dQT/view?usp=drive_link)
+-   (gBOIN-ETI) [A generalized Bayesian optimal interval design for dose optimization in immunotherapy](https://drive.google.com/file/d/1-OnJGt8k3CVG9urlsLjufaLQCC5RRKgr/view?usp=drive_link)
+-   [Practical Bayesian guidelines for phase IIB clinical trials (Thall and Simon 1994)](https://drive.google.com/open?id=1R5SYudDdvwvIYY40KQSAsXyExLm3O2v_&usp=drive_copy)
+-   [Dose Optimization for Novel Oncology Agents: Design Options and Strategies](https://drive.google.com/file/d/1S2mEMzMKZ7XwTC9TyIRKboz_7LymJLp0/view?usp=drive_link)
+-   [A generalized phase 1-2-3 design integrating dose optimization with confirmatory treatment comparison](https://drive.google.com/file/d/1R77nnXBnymH7MbcYfGxaU7cYgrqXhoeR/view?usp=drive_link)
+-   [Statistical and practical considerations in planning and conduct of dose-optimization trials](https://drive.google.com/file/d/1R9dV91-cJZMYK6jqMJUtUcIXXNnAA05E/view?usp=drive_link)
+-   [Seamless phase 2:3 design for trials with multiple co-primary endpoints using Bayesian predictive power](https://drive.google.com/file/d/1RIWL5-rG1RQhYVfzn2LDR6yI8fzxmOYb/view?usp=drive_link)
+-   [Design Strategy and Consideration for Oncology Dose-Optimization: An Industry Perspective](https://www.tandfonline.com/doi/full/10.1080/19466315.2024.2332650?src=)
+-   [Design and sample size determination for multiple-dose randomized phase II trials for dose optimization](https://drive.google.com/file/d/1S235AlUgB4aZ-ajpEpnKxmxLSbeW4Mzu/view?usp=drive_link)
+-   (FDA) [Dosage Optimization: A Regulatory Perspective for Developing Oncology Drugs](https://ascpt.onlinelibrary.wiley.com/doi/abs/10.1002/cpt.3373)
+-   (PKIDS) [PKIDS: A Bayesian pharmacokinetics integrated phase I–II design to optimize dose-schedule regimes](https://drive.google.com/file/d/1U6h6whOZFH4swilD2eeS_7XqESKlKeAK/view?usp=drive_link) ([supplementary](https://drive.google.com/file/d/1U7MaHWHY71T30sn30WCVH_qYSPVpDboz/view?usp=drive_link))
+-   [BARD: A seamless two-stage dose optimization design integrating backfill and adaptive randomization](https://scholar.google.com/scholar_url?url=https://arxiv.org/pdf/2409.15663&hl=en&sa=X&d=17336194736665027217&ei=-Lz4ZrfWBqSs6rQPppqOiAU&scisig=AFWwaearvE9sV_MYmKRRBjBzKqYE&oi=scholaralrt&hist=128ryoEAAAAJ:1946389114698661995:AFWwaeYjyPslZggSKBnTImj2-5DP&html=&pos=0&folt=cit)
+-   (COOP) [A Bayesian latent-subgroup platform design for dose optimization](https://drive.google.com/file/d/1-fyF7R-5-ZnHoZwhzDE4_fdZ3SXw_ty5/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1qBcKsNBaIQBlY0Rioj853XkwFiSBN8XH/view?usp=drive_link), code available)
+-   (ROMI) [ROMI: a randomized two-stage basket trial design to optimize doses for multiple indications](https://drive.google.com/file/d/1dakKm8MC9XduBWUF5kSshNSQuwnTcIk-/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1P9ppaxDUo0uFt6U_yE4iFPHYJZZJwpg6/view?usp=drive_link), code available)
+-   (COCA) [COCA: a randomized Bayesian design integrating dose optimization and component contribution assessment for combination therapies](https://drive.google.com/file/d/1tiKnclRxrm75LIybqfkMPKzO0EtuKna9/view?usp=drive_link) ([R package](https://github.com/xiaohanchi/COCA))
+-   (DEMO) [DEMO: DOSE EXPLORATION, MONITORING, AND OPTIMIZATION USING BIOLOGICAL AND CLINICAL OUTCOMES](https://drive.google.com/file/d/1WeD4at8ZWewBxl2D5l6NkHy39zkRI67x/view?usp=drive_link)
+
+## Short Courses
+
+-   [2025 RISW Dose Optimization Short Course](https://drive.google.com/file/d/1UpBv58M2T3ALnB1UanKbyHUD2VlPXhS-/view?usp=drive_link)

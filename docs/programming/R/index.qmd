@@ -1,0 +1,63 @@
+---
+title: "R"
+subtitle: "Notes for R software"
+format:
+  html:
+    include-after-body: 
+      text: |
+        <script type="text/javascript">
+        window['quarto-download-release'] = true;
+        window['quarto-download-prerelease'] = true;
+        window['quarto-download-nonews'] = true;
+        window["quarto-prerelease-mode"] = '{{< meta prerelease-mode >}}';
+        </script>      
+page-layout: full
+toc: false
+anchor-sections: false
+editor: source
+search: true
+---
+
+
+::: {.grid .step .column-page-right}
+::: {.g-col-lg-3 .g-col-12}
+## R packges
+
+:::
+
+::: {.tool .g-col-lg-9 .g-col-12}
+
+
+<a href="dplyr.html" role="button" class="btn btn-outline-light">
+![](images/dplyr.png){width="77" fig-alt="VS Code logo."}dplyr
+</a>
+
+<a href="ggplot2.html" role="button" class="btn btn-outline-light">
+![](images/ggplot2.png){width="77" fig-alt="VS Code logo."}ggplot2
+</a>
+
+<a href="Rcpp.html" role="button" class="btn btn-outline-light">
+![](images/Rcpp.png){width="77" fig-alt="VS Code logo."}Rcpp
+</a>
+
+<a href="Shiny.html" role="button" class="btn btn-outline-light">
+![](images/Shiny.jpg){width="77" fig-alt="VS Code logo."}Shiny
+</a>
+
+<a href="stringr.html" role="button" class="btn btn-outline-light">
+![](images/stringr.png){width="77" fig-alt="VS Code logo."}stringr
+</a>
+
+<a href="tidyr.html" role="button" class="btn btn-outline-light">
+![](images/tidyr.jpg){width="77" fig-alt="VS Code logo."}tidyr
+</a>
+
+<a href="gtsummary.html" role="button" class="btn btn-outline-light">
+![](images/gtsummary.png){width="77" fig-alt="VS Code logo."}gtsummary
+</a>
+
+<a href="rpact.html" role="button" class="btn btn-outline-light">
+![](images/rpact.png){width="77" fig-alt="VS Code logo."}rpact
+</a>
+:::
+:::

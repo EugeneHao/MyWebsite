@@ -1,0 +1,57 @@
+- name: IEREFID
+  domain: IE
+  label: Reference ID
+
+- name: IETESTCD
+  domain: IE
+  label: Inclusion/Exclusion Criterion Short Name 
+  
+- name: IETEST
+  domain: IE
+  label: Inclusion/Exclusion Criterion 
+
+- name: IECAT
+  domain: IE
+  label: Inclusion/Exclusion Category 
+
+- name: IEORRES
+  domain: IE
+  label: I/E Criterion Original Result 
+
+- name: IESTRESC
+  domain: IE
+  label: I/E Criterion Result in Std Format 
+
+- name: IESEQ
+  domain: IE
+  label: Sequence Number 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  

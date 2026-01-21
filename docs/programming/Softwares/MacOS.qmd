@@ -1,0 +1,90 @@
+---
+title: "MacOS"
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+search: true
+---
+
+## Shortcuts
+
+### Common
+
+-   `cmd + H`: 最小化
+-   `Fn + delete`: delete
+-   `ctrl + cmd + F`: 全屏/取消全屏
+-   \`cmd + \`\` : 在同一个软件不同窗口切换
+-   `cmd + W` : close window
+-   `cmd+option+space` :显示访达
+-   `ctrl + 🔝`: 打开调度中心
+-   `ctrl+ <-` : 向左切换桌面
+-   `cmd + shift + V`: 打开paste
+-   `cmd + M`: 最小化
+-   `cmd + option + M`: 最小化所有窗口（同一个软件）
+-   `ctrl + 1, 2, 3`: 切换桌面1，2，3，。。。
+-   `fn + up/down` : page up and page down
+-   `option + shift + <- / ->` : 选词
+-   `option + tab` : 切换光标到不同的位置
+-   `option + Fx`: 打开对应的调度中心
+-   `cmd + ctrl + Q`: lock the screen
+
+### Safari
+
+-   `cmd + shift + L`: 打开侧边栏
+-   `cmd + L`: 打开输入框
+-   `cmd + t` : 新建窗口
+-   `cmd + n`: 打开新的标签页
+-   `cmd + shift + n`: 打开一个无痕浏览页
+-   `cmd + number` : 选择第几个窗口
+-   `ctrl + tab` : 切换窗口
+-   `option + down`: 切换一整页
+-   `space` / `shift + space` 向下/上切换一整页
+-   `cmd + D` : 保存当前页面为标签页
+-   `cmd + shift + click` : 在新标签页打开页面
+-   \`cmd + \`\` : 切换浏览器窗口
+-   `space`: 下一页
+-   `cmd + R`: refresh
+
+### Terminal
+
+-   `cmd + N` : open a new terminal
+-   `cmd + T`: create new page
+-   `cmd + D`: 将窗口拆成两个面板
+-   `shift+cmd+D`: 关闭拆封面板
+
+### Finder
+
+-   `cmd + shift + i` : 打开文件检查器
+-   `shift + cmd + o`: 前往文稿
+-   `option + cmd + L` : 前往下载
+-   `shift + cmd + D`: 前往桌面
+-   `cmd + shift + .`: 显示隐藏文件
+-   `cmd + up` : 返回上层文件夹
+-   `cmd + option + R`: 重新命名
+
+### Mail
+
+-   `cmd + shift + U` : 标记为已读
+
+### NotePlan
+
+-   `cmd + option + -> / <-` : change daily plan
+-   `cmd + option + 1`: hide/show sidebar
+-   `cmd + option + 2`: hide/show calendar
+
+### Typora
+
+-   `cmd + ctrl + 1` : 切换到大纲视图
+
+### PowerPoint
+
+-   `cmd + shift + D`: 复制幻灯片
+
+### 字符
+
+-   `option + V`: √
+-   `option + i`: ˆ
+-   `option + k`: ˚
+-   `option + w`: ∑
+-   `option + </ >`: ≤, ≥

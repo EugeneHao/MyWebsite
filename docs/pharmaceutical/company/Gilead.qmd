@@ -1,0 +1,14 @@
+---
+title: "Gilead"
+---
+
+## Introduction
+
+### Financial Statements
+
+| Year | Q1 | Q2 | Q3 | Q4 |
+|----|----|----|----|----|
+| 2021 | [2021 Q1](https://www.gilead.com/news-and-press/press-room/press-releases/2021/4/gilead-sciences-announces-first-quarter-2021-financial-results) | [2021 Q2](https://www.gilead.com/news-and-press/press-room/press-releases/2021/7/gilead-sciences-announces-second-quarter-2021-financial-results) | [2021 Q3](https://www.gilead.com/news-and-press/press-room/press-releases/2021/10/gilead-sciences-announces-third-quarter-2021-financial-results) | [2021 Q4](https://www.gilead.com/news-and-press/press-room/press-releases/2022/2/gilead-sciences-announces-fourth-quarter-and-full-year-2021-financial-results) |
+| 2022 | [2022 Q1](https://www.gilead.com/news-and-press/press-room/press-releases/2022/4/gilead-sciences-announces-first-quarter-2022-financial-results) | [2022 Q2](https://www.gilead.com/news-and-press/press-room/press-releases/2022/8/gilead-sciences-announces-second-quarter-2022-financial-results) | [2022 Q3](https://www.gilead.com/news-and-press/press-room/press-releases/2022/10/gilead-sciences-announces-third-quarter-2022-financial-results) | [2022 Q4](https://www.gilead.com/news-and-press/press-room/press-releases/2023/2/gilead-sciences-announces-fourth-quarter-and-full-year-2022-financial-results) |
+| 2023 | [2023 Q1](https://www.gilead.com/news-and-press/press-room/press-releases/2023/4/gilead-sciences-announces-first-quarter-2023-financial-results) | [2023 Q2](https://www.gilead.com/news-and-press/press-room/press-releases/2023/8/gilead-sciences-announces-second-quarter-2023-financial-results) | [2023 Q3](https://www.gilead.com/news-and-press/press-room/press-releases/2023/11/gilead-sciences-announces-third-quarter-2023-financial-results) | [2023 Q4](https://www.gilead.com/news-and-press/press-room/press-releases/2024/2/gilead-sciences-announces-fourth-quarter-and-full-year-2023-financial-results) |
+| 2024 | [2024 Q1](https://www.gilead.com/news-and-press/press-room/press-releases/2024/4/gilead-sciences-to-release-first-quarter-2024-financial-results-on-thursday-april-25-2024) | [2024 Q2](https://www.gilead.com/news-and-press/press-room/press-releases/2024/8/gilead-sciences-announces-second-quarter-2024-financial-results) | [2024 Q3](https://www.gilead.com/news/news-details/2024/gilead-sciences-announces-third-quarter-2024-financial-results) |  |

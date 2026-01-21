@@ -1,0 +1,59 @@
+- name: QSTEST
+  domain: QS
+  label: Questionnaire Test Name
+
+- name: QSTESTCD
+  domain: QS
+  label: Questionnaire Test Short Name
+
+- name: QSORRES
+  domain: QS
+  label: Result or Finding as Collected
+
+- name: QSSTRESC
+  domain: QS
+  label: Character Result/Finding in Standard Format
+
+- name: QSSTRESN
+  domain: QS
+  label: Numeric Result/Finding in Standard Units
+
+- name: QSSTAT
+  domain: QS
+  label: Completion Status
+
+- name: QSREASND
+  domain: QS
+  label: Reason Not Done
+
+- name: QSDTC
+  domain: QS
+  label: Date/Time of Questionnaire Assessment
+
+- name: QSSTDY
+  domain: QS
+  label: Study Day of Questionnaire Assessment
+
+- name: QSCAT
+  domain: QS
+  label: Category for Questionnaire
+
+- name: QSSCAT
+  domain: QS
+  label: Subcategory for Questionnaire
+
+- name: QSEVAL
+  domain: QS
+  label: Evaluator
+
+- name: QSGRPID
+  domain: QS
+  label: Group ID
+
+- name: QSREFID
+  domain: QS
+  label: Reference ID
+
+- name: QSSPID
+  domain: QS
+  label: Sponsor-Defined Identifier

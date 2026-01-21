@@ -1,0 +1,16 @@
+---
+title: "GSK"
+---
+
+## Introduction
+
+### Financial Statement
+
+-   [GSK Quarterly Results](https://www.gsk.com/en-gb/investors/quarterly-results/)
+
+| Year | Q1 | Q2 | Q3 | Q4 |
+|---------------|---------------|---------------|---------------|---------------|
+| 2021 | [2021 Q1](https://www.gsk.com/media/6837/q1-2021-results-announcement.pdf) | [2021 Q2](https://www.gsk.com/media/7124/q2-2021-results-announcement.pdf) | [2021 Q3](https://www.gsk.com/media/7228/q3-2021-results-announcement.pdf) | [2021 Q4](https://www.gsk.com/media/7377/fy-2021-results-announcement.pdf) |
+| 2022 | [2022 Q1](https://www.gsk.com/media/7639/q1-2022-announcement.pdf) | [2022 Q2](https://www.gsk.com/media/9386/q2-2022-results-announcement.pdf) | [2022 Q3](https://www.gsk.com/media/9642/q3-2022-results-slides.pdf) | [2022 Q4](https://www.gsk.com/media/9855/fy-2022-results-slides.pdf) |
+| 2023 | [2023 Q1](https://www.gsk.com/media/10017/q1-2023-slides.pdf) | [2023 Q2](https://www.gsk.com/media/10425/q2-2023-results-slides.pdf) | [2023 Q3](https://www.gsk.com/media/10668/q3-2023-results-slides.pdf) | [2023 Q4](https://www.gsk.com/media/10929/fy-2023-results-slides.pdf) |
+| 2024 | [2024 Q1](https://www.gsk.com/media/11105/q1-2024-results-slides.pdf) | [2024 Q2](https://www.gsk.com/media/11413/q2-2024-results-slides.pdf) | [2024 Q3](https://www.gsk.com/media/11643/q3-2024-results-slides.pdf) |  |

@@ -1,0 +1,14 @@
+listing: 
+  type: table
+  sort-ui: [Document, Agency, Date, Keywords]
+  fields: 
+    - Document 
+    - Agency
+    - Date
+    - Keywords
+  field-links: 
+    - Document
+format:
+  html:
+    anchor-sections: false
+  

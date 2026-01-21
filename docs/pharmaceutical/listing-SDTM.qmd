@@ -1,0 +1,50 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-SDTM
+  contents: 
+    - listings/SDTM/SDTM_domain.yml
+    - listings/SDTM/SDTM_ALL.yml
+    - listings/SDTM/SDTM_AE.yml
+    - listings/SDTM/SDTM_CE.yml
+    - listings/SDTM/SDTM_CM.yml
+    - listings/SDTM/SDTM_DD.yml
+    - listings/SDTM/SDTM_DM.yml
+    - listings/SDTM/SDTM_DS.yml
+    - listings/SDTM/SDTM_DV.yml
+    - listings/SDTM/SDTM_EC.yml
+    - listings/SDTM/SDTM_EX.yml
+    - listings/SDTM/SDTM_FA.yml
+    - listings/SDTM/SDTM_IE.yml
+    - listings/SDTM/SDTM_LB.yml
+    - listings/SDTM/SDTM_MB.yml
+    - listings/SDTM/SDTM_MH.yml
+    - listings/SDTM/SDTM_MO.yml
+    - listings/SDTM/SDTM_PC.yml
+    - listings/SDTM/SDTM_PE.yml
+    - listings/SDTM/SDTM_PP.yml
+    - listings/SDTM/SDTM_PR.yml
+    - listings/SDTM/SDTM_QS.yml
+    - listings/SDTM/SDTM_RP.yml
+    - listings/SDTM/SDTM_RS.yml
+    - listings/SDTM/SDTM_SE.yml    
+    - listings/SDTM/SDTM_SS.yml 
+    - listings/SDTM/SDTM_SV.yml    
+    - listings/SDTM/SDTM_TA.yml    
+    - listings/SDTM/SDTM_TE.yml    
+    - listings/SDTM/SDTM_TI.yml    
+    - listings/SDTM/SDTM_TS.yml    
+    - listings/SDTM/SDTM_TV.yml    
+    - listings/SDTM/SDTM_VS.yml    
+metadata-files: 
+  - listings/_metadata_SDTM.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### SDTM {.unlisted}
+
+::: {#listing-regulatory .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+### Short Course
+
+-   [2025 RISW: Graphical multiple comparison procedures Combining flexibility with optimality](https://drive.google.com/file/d/1YZqlKCmT3M6afCzAD2fEhQJA1-dBLaXa/view?usp=drive_link)

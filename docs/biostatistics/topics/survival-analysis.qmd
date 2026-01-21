@@ -1,0 +1,24 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+## Books
+
+-   [**Survival Analysis - Techniques for Censored and Truncated Data**](../../books/survival%20analysis/Survival%20Analysis%20-%20Techniques%20for%20Censored%20and%20Truncated%20Data.qmd) authored by *John P.Klein* and *Melvin L. Moeschberger*
+
+### Papers
+
+Event Prediction
+
+-   (BayesPET) [Bayesian Prediction of Event Times Using Mixture Model for Blinded Randomized Controlled Trials](https://drive.google.com/file/d/1Y8nXg6bf_XfjDpRZ0pT0_untJkZW6FbC/view?usp=drive_link)
+
+Unclassified
+
+-   (EFS with Cure Rate) [Statistical Consideration for Event-Free Survival With Cure Rate in Acute Myeloid Leukemia Studies](https://drive.google.com/file/d/1kpQMpU3l2ole0fr8NYDmqCYlwND2Oe9V/view?usp=drive_link) ([supp](https://drive.google.com/file/d/1RVgfaOi6g-4x3yRUNxtQrpXDe1xgWcHI/view?usp=drive_link))

@@ -1,0 +1,90 @@
+- name: MHSEQ
+  domain: MH
+  label: Sequence Number 
+
+- name: MHREFID
+  domain: MH
+  label: Reference ID
+  
+- name: MHSPID
+  domain: MH
+  label: Sponsor-Defined Identifier 
+  
+- name: MHLNKID
+  domain: MH
+  label: Link ID
+  
+- name: MHTERM
+  domain: MH
+  label: Reported Term for the Medical History 
+  
+- name: MHLLT
+  domain: MH
+  label: Lowest Level Term 
+  
+- name: MHLLTCD
+  domain: MH
+  label: Lowest Level Term Code
+  
+- name: MHDECOD
+  domain: MH
+  label: Dictionary-Derived Term 
+  
+- name: MHPTCD
+  domain: MH
+  label: Preferred Term Code
+  
+- name: MHHLT
+  domain: MH
+  label: High Level Term
+  
+- name: MHHLTCD
+  domain: MH
+  label: High Level Term Code
+  
+- name: MHHLGT
+  domain: MH
+  label: High Level Group Term
+  
+- name: MHHLGTCD
+  domain: MH
+  label: High Level Group Term Code
+  
+- name: MHCAT
+  domain: MH
+  label: Category for Medical History (e.g. CARDIAC, GENERAL)
+
+- name: MHBODSYS
+  domain: MH
+  label: Body System or Organ Class
+  
+- name: MHBDSYCD
+  domain: MH
+  label: Body System or Organ Class Code
+  
+- name: MHTOXGR
+  domain: MH
+  label: Standard Toxicity Grade 
+  
+- name: MHSTDTC
+  domain: MH
+  label: Start Date/Time of Medical Histroy Event 
+
+- name: MHENDTC
+  domain: MH
+  label: End Date/Time of Medical Histroy Event 
+  
+- name: MHSTDY
+  domain: MH
+  label: Study Day of Start of Medical History
+  
+- name: MHENDY
+  domain: MH
+  label: Study Day of End of Medical History
+  
+- name: MHENRF
+  domain: MH
+  label: End Relative to Reference Period 
+  
+  
+  

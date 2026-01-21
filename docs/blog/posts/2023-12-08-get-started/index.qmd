@@ -1,0 +1,14 @@
+---
+title: Get Started
+subtitle: This blog records that my personal website was launched on Dec-08-2023.
+description: |
+  This is my first blog on my website. I hope you like my website and can learn something from it. 
+categories:
+  - Daily
+author: Hao Sun
+date: "12/08/2023"
+image: "firework.jpeg"
+image-alt: "Fireworks with a silhouette of an audience"
+---
+
+Hello World!

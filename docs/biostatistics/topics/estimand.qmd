@@ -1,0 +1,14 @@
+---
+title: "Biostatistical Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+### Short Course
+
+-   [2025 RISW: A Practical (Principled) Guide To Estimand Thinking](https://drive.google.com/file/d/1OziM1Hvu4g6aJ525orybKBrl039eo3mb/view?usp=drive_link)

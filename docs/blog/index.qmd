@@ -1,0 +1,15 @@
+---
+title: My Blog
+subtitle: News, tips, and thoughts about all things 
+listing:
+  sort: "date desc"
+  contents: "posts/*/index.qmd"
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: true
+page-layout: full
+title-block-banner: "#EDF3F9"
+title-block-banner-color: body
+search: true
+---

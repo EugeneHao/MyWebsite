@@ -1,0 +1,18 @@
+listing: 
+  type: table
+  sort-ui: [name, domain]
+  fields: 
+    - name
+    - domain    
+    - label
+  field-links: 
+    - name
+  field-display-names: 
+    name: Variable Name
+    domain: Domain
+    label: Variable Label 
+format:
+  html:
+    anchor-sections: false
+    table: true
+    datatable: true

@@ -1,0 +1,24 @@
+---
+title: "Keytruda"
+---
+
+## 药物简介（Drug Overview）
+
+帕博利珠单抗（Pembrolizumab，商业名称为Keytruda）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）。它被广泛用于治疗多种类型的癌症，包括非小细胞肺癌（[Non-Small Cell Lung Cancer, NSCLC](../disease/NSCLC.qmd)）、黑色素瘤（[Melanoma](../disease/Melanoma.qmd)）和头颈癌（Head and Neck Cancer）等。
+
+## 作用机制（Mechanism of Action）
+
+帕博利珠单抗的作用机制是通过靶向PD-1（程序性死亡-1，Programmed Death-1）受体，一个位于T细胞表面的免疫检查点分子。它通过阻断PD-1与其配体PD-L1和PD-L2的结合，解除肿瘤细胞对免疫系统的抑制作用，增强免疫细胞对癌细胞的攻击能力。
+
+## 适应症（Indications）
+
+帕博利珠单抗被批准用于以下情况：
+
+-   不可切除或转移性黑色素瘤。
+-   作为一线治疗，用于某些类型的非小细胞肺癌。
+-   头颈部鳞状细胞癌。
+-   经典霍奇金淋巴瘤（Classical Hodgkin Lymphoma）等多种癌症类型。
+
+## 副作用（Side Effects）
+
+帕博利珠单抗的副作用可能包括疲劳（Fatigue）、皮疹（Rash）、腹泻（Diarrhea）和关节痛（Arthralgia）。更严重的副作用可能包括免疫相关的不良反应，如结肠炎（Colitis）、肝炎（Hepatitis）、肺炎（Pneumonitis）和内分泌异常（Endocrinopathies）等。因此，在使用帕博利珠单抗时需要密切监测患者的健康状况。

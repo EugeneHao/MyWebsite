@@ -1,0 +1,21 @@
+---
+title: "Eliquis"
+---
+
+## 药物简介（Drug Overview）
+
+阿哌沙班(Apixaban，商业名称为Eliquis) 是一种口服抗凝剂（Oral Anticoagulant），属于直接X因子抑制剂（Direct Factor Xa Inhibitor）类药物。它通过抑制凝血系统中的关键酶X因子（Factor Xa），减少血栓的形成。
+
+## 作用机制（Mechanism of Action）
+阿哌沙班的作用机制在于直接抑制凝血级联反应中的X因子，而非通过抗维生素K机制。X因子在血液凝固过程中起着核心作用，阿哌沙班通过抑制这一因子，降低血液凝固，从而减少血栓的形成。
+
+## 适应症（Indications）
+阿哌沙班主要用于以下情况：
+
++ 预防中风和系统性栓塞事件，特别是在房颤（Atrial Fibrillation）患者中。
+深静脉血栓（Deep Vein Thrombosis, DVT）和肺栓塞（Pulmonary Embolism, PE）的治疗和预防。
++ 在膝盖或髋部置换手术后预防静脉血栓栓塞症（Venous Thromboembolism, VTE）。
+
+
+## 副作用（Side Effects）
+阿哌沙班的常见副作用包括出血，如鼻血（Epistaxis）、牙龈出血（Gingival Bleeding）和皮肤瘀伤（Bruising）。与其他抗凝剂相比，阿哌沙班在减少大出血风险方面具有一定优势，但仍需在医生指导下谨慎使用。

@@ -1,0 +1,4028 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Common AE list by SOC and PT – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/pharmaceutical/other/Biomarker.html" rel="next">
+<link href="../../../docs/pharmaceutical/other/MAT.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-4047a52802fd86a63e724898511f5ccc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Common AE list by SOC and PT – Hao Sun">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Common AE list by SOC and PT – Hao Sun">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Clinical Trial</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Adverse Event by SOC and PT</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharmaceutical Content</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Company</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/BMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BMS</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Eliquis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eliquis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Opdivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opdivo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Reblozyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reblozyl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Revlimid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revlimid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Yervoy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yervoy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Onureg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onureg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Inrebic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inrebic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Iberdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iberdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mezigdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mezigdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Alnuctamab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alnuctamab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Abecma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abecma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Breyanzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breyanzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Krazati.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Krazati</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Merck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Keytruda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keytruda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Januvia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Januvia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Gardasil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gardasil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Pneumovax</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/J &amp; J.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">J &amp; J</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carvykti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carvykti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecvayli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecvayli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Darzalex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Darzalex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Remicade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remicade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Stelara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stelara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xarelto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xarelto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Bortezomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bortezomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Pfizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pfizer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mylotarg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mylotarg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Comirnaty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comirnaty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Prevnar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prevnar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ibrance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ibrance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xeljanz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xeljanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xalkori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xalkori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Sirolimus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sirolimus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Roche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roche</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecentriq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecentriq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Rituxan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rituxan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Herceptin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Herceptin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Avastin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avastin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Zelboraf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zelboraf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cotellic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cotellic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Abbvie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbvie</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Humira.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Humira</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/GSK.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tafinlar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tafinlar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Novartis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Novartis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mekinist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mekinist</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Incyte</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Jakafi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jakafi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vertex</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Kalydeco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kalydeco</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Regeneron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regeneron</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Gilead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gilead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">Amgen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carfilzomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carfilzomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Regulatory</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-compound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Compound</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Venclexta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Venclexta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bone Marrow</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Leukemia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leukemia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lymphoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/MDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Myelodysplastic Syndromes (MDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Myeloma (MM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Melanoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Melanoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/NSCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-Small Cell Lung Cancer (NSCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Thrombosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thrombosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDTM</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true">
+ <span class="menu-text">Wiki</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Drug Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ADC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody-Drug Conjugates (ADC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CAR-T</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunotherapy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/MAT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monoclonal Antibody Therapy (MAT)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="true">
+ <span class="menu-text">Clinical Trial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Adverse Event by SOC and PT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intercurrent Events</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Endpoint</span></span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/pharma_note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharma Note</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/Naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drug Naming Rules</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#blood-and-lymphatic-system-disorders" id="toc-blood-and-lymphatic-system-disorders" class="nav-link active" data-scroll-target="#blood-and-lymphatic-system-disorders">Blood and lymphatic system disorders</a></li>
+  <li><a href="#gastrointestinal-disorders" id="toc-gastrointestinal-disorders" class="nav-link" data-scroll-target="#gastrointestinal-disorders">Gastrointestinal disorders</a></li>
+  <li><a href="#infections-and-infestations" id="toc-infections-and-infestations" class="nav-link" data-scroll-target="#infections-and-infestations">Infections and infestations</a></li>
+  <li><a href="#nervous-system-disorders" id="toc-nervous-system-disorders" class="nav-link" data-scroll-target="#nervous-system-disorders">Nervous system disorders</a></li>
+  <li><a href="#general-disorders-and-administration-site-conditions" id="toc-general-disorders-and-administration-site-conditions" class="nav-link" data-scroll-target="#general-disorders-and-administration-site-conditions">General disorders and administration site conditions</a></li>
+  <li><a href="#musculoskeletal-and-connective-tissue-disorders" id="toc-musculoskeletal-and-connective-tissue-disorders" class="nav-link" data-scroll-target="#musculoskeletal-and-connective-tissue-disorders">Musculoskeletal and connective tissue disorders</a></li>
+  <li><a href="#metabolism-and-nutrition-disorders" id="toc-metabolism-and-nutrition-disorders" class="nav-link" data-scroll-target="#metabolism-and-nutrition-disorders">Metabolism and nutrition disorders</a></li>
+  <li><a href="#skin-and-subcutaneous-tissue-disorders" id="toc-skin-and-subcutaneous-tissue-disorders" class="nav-link" data-scroll-target="#skin-and-subcutaneous-tissue-disorders">Skin and subcutaneous tissue disorders</a></li>
+  <li><a href="#respiratory-thoracic-and-mediastinal-disorders" id="toc-respiratory-thoracic-and-mediastinal-disorders" class="nav-link" data-scroll-target="#respiratory-thoracic-and-mediastinal-disorders">Respiratory, thoracic and mediastinal disorders</a></li>
+  <li><a href="#cardiac-disorders" id="toc-cardiac-disorders" class="nav-link" data-scroll-target="#cardiac-disorders">Cardiac disorders</a></li>
+  <li><a href="#renal-and-urinary-disorders" id="toc-renal-and-urinary-disorders" class="nav-link" data-scroll-target="#renal-and-urinary-disorders">Renal and urinary disorders</a></li>
+  <li><a href="#hepatobiliary-disorders" id="toc-hepatobiliary-disorders" class="nav-link" data-scroll-target="#hepatobiliary-disorders">Hepatobiliary disorders</a></li>
+  <li><a href="#immune-system-disorders" id="toc-immune-system-disorders" class="nav-link" data-scroll-target="#immune-system-disorders">Immune system disorders</a></li>
+  <li><a href="#psychiatric-disorders" id="toc-psychiatric-disorders" class="nav-link" data-scroll-target="#psychiatric-disorders">Psychiatric disorders</a></li>
+  <li><a href="#eye-disorders" id="toc-eye-disorders" class="nav-link" data-scroll-target="#eye-disorders">Eye disorders</a></li>
+  <li><a href="#vascular-disorders" id="toc-vascular-disorders" class="nav-link" data-scroll-target="#vascular-disorders">Vascular disorders</a></li>
+  <li><a href="#reproductive-system-and-breast-disorders" id="toc-reproductive-system-and-breast-disorders" class="nav-link" data-scroll-target="#reproductive-system-and-breast-disorders">Reproductive system and breast disorders</a></li>
+  <li><a href="#endocrine-disorders" id="toc-endocrine-disorders" class="nav-link" data-scroll-target="#endocrine-disorders">Endocrine disorders</a></li>
+  <li><a href="#injury-poisoning-and-procedural-complications" id="toc-injury-poisoning-and-procedural-complications" class="nav-link" data-scroll-target="#injury-poisoning-and-procedural-complications">Injury, poisoning and procedural complications</a></li>
+  <li><a href="#ear-and-labyrinth-disorders" id="toc-ear-and-labyrinth-disorders" class="nav-link" data-scroll-target="#ear-and-labyrinth-disorders">Ear and labyrinth disorders</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Clinical Trial</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Adverse Event by SOC and PT</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Common AE list by SOC and PT</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="blood-and-lymphatic-system-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="blood-and-lymphatic-system-disorders">Blood and lymphatic system disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Anemia</td>
+<td>贫血</td>
+<td>1–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>RBC transfusion, ESAs, iron supplementation</td>
+</tr>
+<tr class="even">
+<td>Neutropenia</td>
+<td>中性粒细胞减少</td>
+<td>1–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>G-CSF (filgrastim), dose adjustment</td>
+</tr>
+<tr class="odd">
+<td>Thrombocytopenia</td>
+<td>血小板减少</td>
+<td>1–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Platelet transfusion, TPO-RA, dose adjustment</td>
+</tr>
+<tr class="even">
+<td>Leukopenia</td>
+<td>白细胞减少</td>
+<td>1–4</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>G-CSF, monitor counts</td>
+</tr>
+<tr class="odd">
+<td>Febrile neutropenia</td>
+<td>发热性中性粒细胞减少</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (for some agents)</td>
+<td>Y</td>
+<td>Broad-spectrum antibiotics, G-CSF</td>
+</tr>
+<tr class="even">
+<td>Pancytopenia</td>
+<td>全血细胞减少</td>
+<td>3–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Supportive transfusions, dose adjustment</td>
+</tr>
+<tr class="odd">
+<td>Lymphopenia</td>
+<td>淋巴细胞减少</td>
+<td>1–4</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Monitor counts, infection prophylaxis</td>
+</tr>
+<tr class="even">
+<td>Disseminated intravascular coagulation (DIC)</td>
+<td>弥散性血管内凝血</td>
+<td>4–5</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Anticoagulation, supportive care</td>
+</tr>
+<tr class="odd">
+<td>Hemolytic anemia</td>
+<td>溶血性贫血</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Steroids, immunosuppressants, transfusion</td>
+</tr>
+<tr class="even">
+<td>Aplastic anemia</td>
+<td>再生障碍性贫血</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (for some drugs e.g., chloramphenicol)</td>
+<td>Partial</td>
+<td>Immunosuppressive therapy, HSCT</td>
+</tr>
+<tr class="odd">
+<td>Bleeding tendency</td>
+<td>出血倾向</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Platelet transfusion, antifibrinolytics</td>
+</tr>
+<tr class="even">
+<td>Bone marrow failure</td>
+<td>骨髓功能衰竭</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes (some agents)</td>
+<td>Partial</td>
+<td>HSCT, supportive care</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gastrointestinal-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gastrointestinal-disorders">Gastrointestinal disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nausea</td>
+<td>恶心</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antiemetics (ondansetron, metoclopramide)</td>
+</tr>
+<tr class="even">
+<td>Vomiting</td>
+<td>呕吐</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Antiemetics, IV fluids</td>
+</tr>
+<tr class="odd">
+<td>Diarrhea</td>
+<td>腹泻</td>
+<td>1–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Loperamide, hydration, dose adjustment</td>
+</tr>
+<tr class="even">
+<td>Constipation</td>
+<td>便秘</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Laxatives, stool softeners, hydration</td>
+</tr>
+<tr class="odd">
+<td>Abdominal pain</td>
+<td>腹痛</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, antispasmodics</td>
+</tr>
+<tr class="even">
+<td>Dyspepsia</td>
+<td>消化不良</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>PPIs, H2 blockers, diet modification</td>
+</tr>
+<tr class="odd">
+<td>Oral mucositis</td>
+<td>口腔黏膜炎</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Mouth rinses, analgesics, cryotherapy</td>
+</tr>
+<tr class="even">
+<td>Stomatitis</td>
+<td>口腔炎</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Topical corticosteroids, analgesic rinses</td>
+</tr>
+<tr class="odd">
+<td>Gastrointestinal bleeding</td>
+<td>胃肠道出血</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (NSAIDs, anticoagulants)</td>
+<td>Partial</td>
+<td>Endoscopic therapy, PPI, transfusion</td>
+</tr>
+<tr class="even">
+<td>Ileus</td>
+<td>肠梗阻</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Bowel rest, NG tube, surgery if severe</td>
+</tr>
+<tr class="odd">
+<td>Pancreatitis</td>
+<td>胰腺炎</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (for some agents, e.g., asparaginase)</td>
+<td>Partial</td>
+<td>Supportive care, discontinue causative drug</td>
+</tr>
+<tr class="even">
+<td>Colitis</td>
+<td>结肠炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (immune checkpoint inhibitors)</td>
+<td>Y</td>
+<td>Corticosteroids, immunosuppressants</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="infections-and-infestations" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="infections-and-infestations">Infections and infestations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pneumonia</td>
+<td>肺炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Antibiotics, oxygen therapy, hospitalization if severe</td>
+</tr>
+<tr class="even">
+<td>Upper respiratory tract infection (URTI)</td>
+<td>上呼吸道感染</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Symptomatic treatment, antivirals if needed</td>
+</tr>
+<tr class="odd">
+<td>Sepsis</td>
+<td>败血症</td>
+<td>3–5</td>
+<td>High</td>
+<td>Yes (e.g., some immunosuppressants)</td>
+<td>Partial</td>
+<td>IV antibiotics, fluids, ICU support</td>
+</tr>
+<tr class="even">
+<td>COVID-19 infection</td>
+<td>新冠感染</td>
+<td>2–5</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Antivirals, supportive care, oxygen</td>
+</tr>
+<tr class="odd">
+<td>Influenza</td>
+<td>流感</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antivirals (oseltamivir), supportive care</td>
+</tr>
+<tr class="even">
+<td>Herpes zoster</td>
+<td>带状疱疹</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antivirals (acyclovir, valacyclovir), analgesics</td>
+</tr>
+<tr class="odd">
+<td>Oral candidiasis</td>
+<td>口腔念珠菌病</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Topical or systemic antifungals</td>
+</tr>
+<tr class="even">
+<td>Urinary tract infection (UTI)</td>
+<td>泌尿道感染</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antibiotics, hydration</td>
+</tr>
+<tr class="odd">
+<td>Cytomegalovirus infection (CMV)</td>
+<td>巨细胞病毒感染</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Ganciclovir, valganciclovir</td>
+</tr>
+<tr class="even">
+<td>Tuberculosis (TB)</td>
+<td>结核病</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (TNF inhibitors)</td>
+<td>Y</td>
+<td>Anti-TB therapy (RIPE regimen)</td>
+</tr>
+<tr class="odd">
+<td>Hepatitis B reactivation</td>
+<td>乙型肝炎再激活</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (rituximab, some chemo)</td>
+<td>Partial</td>
+<td>Antivirals (entecavir, tenofovir), prophylaxis</td>
+</tr>
+<tr class="even">
+<td>Fungal pneumonia (Aspergillus)</td>
+<td>真菌性肺炎（曲霉）</td>
+<td>3–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Antifungals (voriconazole), ICU care</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nervous-system-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="nervous-system-disorders">Nervous system disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Headache</td>
+<td>头痛</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics (acetaminophen, NSAIDs)</td>
+</tr>
+<tr class="even">
+<td>Dizziness</td>
+<td>眩晕</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Symptomatic treatment, hydration</td>
+</tr>
+<tr class="odd">
+<td>Peripheral neuropathy</td>
+<td>周围神经病变</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Dose adjustment, duloxetine, gabapentin</td>
+</tr>
+<tr class="even">
+<td>Paresthesia</td>
+<td>感觉异常</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Neuropathic pain meds, physical therapy</td>
+</tr>
+<tr class="odd">
+<td>Tremor</td>
+<td>震颤</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Beta-blockers, dose adjustment</td>
+</tr>
+<tr class="even">
+<td>Seizure</td>
+<td>癫痫发作</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (some drugs, e.g., bupropion, clozapine)</td>
+<td>Y</td>
+<td>Antiepileptics, discontinue causative agent</td>
+</tr>
+<tr class="odd">
+<td>Cognitive disorder</td>
+<td>认知障碍</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Cognitive rehab, supportive therapy</td>
+</tr>
+<tr class="even">
+<td>Encephalopathy</td>
+<td>脑病</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (e.g., if drug-induced hepatic encephalopathy)</td>
+<td>Partial</td>
+<td>Supportive care, treat underlying cause</td>
+</tr>
+<tr class="odd">
+<td>Stroke</td>
+<td>中风</td>
+<td>3–5</td>
+<td>High</td>
+<td>Yes (risk ↑ with some cancer therapies)</td>
+<td>Partial</td>
+<td>Antiplatelets, anticoagulants, rehab</td>
+</tr>
+<tr class="even">
+<td>Ataxia</td>
+<td>共济失调</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Physical therapy, dose modification</td>
+</tr>
+<tr class="odd">
+<td>Somnolence</td>
+<td>嗜睡</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Dose adjustment, stimulants if needed</td>
+</tr>
+<tr class="even">
+<td>Neuropathy, motor</td>
+<td>运动神经病变</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Physiotherapy, occupational therapy</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="general-disorders-and-administration-site-conditions" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="general-disorders-and-administration-site-conditions">General disorders and administration site conditions</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fatigue</td>
+<td>疲劳</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Rest, exercise, stimulants (modafinil)</td>
+</tr>
+<tr class="even">
+<td>Pyrexia</td>
+<td>发热</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antipyretics, hydration</td>
+</tr>
+<tr class="odd">
+<td>Asthenia</td>
+<td>乏力</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Supportive care, nutrition, dose adjustment</td>
+</tr>
+<tr class="even">
+<td>Edema peripheral</td>
+<td>外周水肿</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Diuretics, compression stockings</td>
+</tr>
+<tr class="odd">
+<td>Chills</td>
+<td>寒战</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Antipyretics, antihistamines</td>
+</tr>
+<tr class="even">
+<td>Infusion-related reaction (IRR)</td>
+<td>输注相关反应</td>
+<td>2–3</td>
+<td>High</td>
+<td>Yes (for monoclonal antibodies)</td>
+<td>Y</td>
+<td>Premedication (antihistamines, steroids), slow infusion</td>
+</tr>
+<tr class="odd">
+<td>Malaise</td>
+<td>全身不适</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Supportive care</td>
+</tr>
+<tr class="even">
+<td>Injection site reaction</td>
+<td>注射部位反应</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Topical corticosteroids, cold compress</td>
+</tr>
+<tr class="odd">
+<td>Pain (general)</td>
+<td>疼痛（全身性）</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics (acetaminophen, opioids if severe)</td>
+</tr>
+<tr class="even">
+<td>Oedema (generalized)</td>
+<td>全身性水肿</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Diuretics, albumin if hypoalbuminemia</td>
+</tr>
+<tr class="odd">
+<td>Sudden death</td>
+<td>猝死</td>
+<td>5</td>
+<td>High</td>
+<td>Yes (some agents, e.g., anthracyclines, CAR-T)</td>
+<td>N</td>
+<td>Supportive resuscitation only</td>
+</tr>
+<tr class="even">
+<td>Multi-organ failure</td>
+<td>多器官功能衰竭</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes (severe immune therapies, sepsis)</td>
+<td>N</td>
+<td>ICU support, discontinuation of therapy</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="musculoskeletal-and-connective-tissue-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="musculoskeletal-and-connective-tissue-disorders">Musculoskeletal and connective tissue disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bone pain</td>
+<td>骨痛</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, bisphosphonates, radiotherapy</td>
+</tr>
+<tr class="even">
+<td>Arthralgia</td>
+<td>关节痛</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>NSAIDs, corticosteroids, physiotherapy</td>
+</tr>
+<tr class="odd">
+<td>Myalgia</td>
+<td>肌痛</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>NSAIDs, muscle relaxants</td>
+</tr>
+<tr class="even">
+<td>Back pain</td>
+<td>背痛</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, physiotherapy</td>
+</tr>
+<tr class="odd">
+<td>Muscle spasms</td>
+<td>肌肉痉挛</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Muscle relaxants, hydration</td>
+</tr>
+<tr class="even">
+<td>Musculoskeletal chest pain</td>
+<td>肌肉骨骼性胸痛</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, exclude cardiac causes</td>
+</tr>
+<tr class="odd">
+<td>Osteonecrosis of jaw (ONJ)</td>
+<td>颌骨坏死</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (bisphosphonates, denosumab)</td>
+<td>Partial</td>
+<td>Dental care, surgery if severe</td>
+</tr>
+<tr class="even">
+<td>Pathological fracture</td>
+<td>病理性骨折</td>
+<td>3–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Orthopedic surgery, analgesics</td>
+</tr>
+<tr class="odd">
+<td>Osteoporosis</td>
+<td>骨质疏松</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Bisphosphonates, calcium, vitamin D</td>
+</tr>
+<tr class="even">
+<td>Muscle weakness</td>
+<td>肌无力</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Physiotherapy, dose adjustment</td>
+</tr>
+<tr class="odd">
+<td>Tendonitis</td>
+<td>肌腱炎</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Rest, NSAIDs, physiotherapy</td>
+</tr>
+<tr class="even">
+<td>Joint swelling</td>
+<td>关节肿胀</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>NSAIDs, corticosteroids</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="metabolism-and-nutrition-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="metabolism-and-nutrition-disorders">Metabolism and nutrition disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Decreased appetite</td>
+<td>食欲下降</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Nutritional support, appetite stimulants</td>
+</tr>
+<tr class="even">
+<td>Weight loss</td>
+<td>体重下降</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Nutritional supplements, dietitian consult</td>
+</tr>
+<tr class="odd">
+<td>Weight gain</td>
+<td>体重增加</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Diet modification, exercise</td>
+</tr>
+<tr class="even">
+<td>Hyperglycemia</td>
+<td>高血糖</td>
+<td>1–4</td>
+<td>High</td>
+<td>Yes (steroids, PI3K inhibitors)</td>
+<td>Y</td>
+<td>Insulin, oral hypoglycemics</td>
+</tr>
+<tr class="odd">
+<td>Hypoglycemia</td>
+<td>低血糖</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Glucose tablets/IV, adjust antidiabetic therapy</td>
+</tr>
+<tr class="even">
+<td>Hypercalcemia</td>
+<td>高钙血症</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>IV bisphosphonates, hydration, calcitonin</td>
+</tr>
+<tr class="odd">
+<td>Hypocalcemia</td>
+<td>低钙血症</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Calcium, vitamin D supplementation</td>
+</tr>
+<tr class="even">
+<td>Hyponatremia</td>
+<td>低钠血症</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>IV saline, fluid restriction, tolvaptan</td>
+</tr>
+<tr class="odd">
+<td>Hyperkalemia</td>
+<td>高钾血症</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (RAAS inhibitors risk)</td>
+<td>Partial</td>
+<td>IV calcium, insulin/glucose, dialysis if severe</td>
+</tr>
+<tr class="even">
+<td>Hypokalemia</td>
+<td>低钾血症</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Oral/IV potassium replacement</td>
+</tr>
+<tr class="odd">
+<td>Dehydration</td>
+<td>脱水</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>IV fluids, electrolyte correction</td>
+</tr>
+<tr class="even">
+<td>Malnutrition</td>
+<td>营养不良</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Nutritional support, enteral/parenteral feeding</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="skin-and-subcutaneous-tissue-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="skin-and-subcutaneous-tissue-disorders">Skin and subcutaneous tissue disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rash</td>
+<td>皮疹</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Topical steroids, antihistamines</td>
+</tr>
+<tr class="even">
+<td>Pruritus</td>
+<td>瘙痒</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antihistamines, emollients</td>
+</tr>
+<tr class="odd">
+<td>Alopecia</td>
+<td>脱发</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>N</td>
+<td>Wigs, scalp cooling (partial prevention)</td>
+</tr>
+<tr class="even">
+<td>Dry skin (xerosis)</td>
+<td>皮肤干燥</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Moisturizers, urea creams</td>
+</tr>
+<tr class="odd">
+<td>Urticaria</td>
+<td>荨麻疹</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antihistamines, corticosteroids</td>
+</tr>
+<tr class="even">
+<td>Stevens–Johnson syndrome (SJS)</td>
+<td>斯蒂文斯–约翰逊综合征</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes (many drugs: anticonvulsants, antibiotics)</td>
+<td>N</td>
+<td>Hospitalization, IVIG, discontinue drug</td>
+</tr>
+<tr class="odd">
+<td>Toxic epidermal necrolysis (TEN)</td>
+<td>中毒性表皮坏死松解症</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes</td>
+<td>N</td>
+<td>ICU/burn unit care, supportive treatment</td>
+</tr>
+<tr class="even">
+<td>Hand–foot syndrome (PPE)</td>
+<td>手足综合征</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Dose modification, emollients, pain control</td>
+</tr>
+<tr class="odd">
+<td>Photosensitivity reaction</td>
+<td>光敏反应</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Sun protection, corticosteroid creams</td>
+</tr>
+<tr class="even">
+<td>Acneiform rash</td>
+<td>痤疮样皮疹</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Topical antibiotics, oral tetracyclines</td>
+</tr>
+<tr class="odd">
+<td>Erythema multiforme</td>
+<td>多形红斑</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, antihistamines</td>
+</tr>
+<tr class="even">
+<td>Skin ulceration</td>
+<td>皮肤溃疡</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Wound care, antibiotics if infected</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="respiratory-thoracic-and-mediastinal-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="respiratory-thoracic-and-mediastinal-disorders">Respiratory, thoracic and mediastinal disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dyspnea</td>
+<td>呼吸困难</td>
+<td>1–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Oxygen, bronchodilators, treat underlying cause</td>
+</tr>
+<tr class="even">
+<td>Cough</td>
+<td>咳嗽</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antitussives, hydration</td>
+</tr>
+<tr class="odd">
+<td>Pulmonary embolism (PE)</td>
+<td>肺栓塞</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (IMiDs, hormonal therapy)</td>
+<td>Y</td>
+<td>Anticoagulation, thrombolysis if severe</td>
+</tr>
+<tr class="even">
+<td>Pleural effusion</td>
+<td>胸腔积液</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Thoracentesis, diuretics, pleurodesis</td>
+</tr>
+<tr class="odd">
+<td>Pneumonitis</td>
+<td>肺炎样反应/间质性肺炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (immune checkpoint inhibitors, mTOR inhibitors)</td>
+<td>Partial</td>
+<td>Corticosteroids, discontinue drug</td>
+</tr>
+<tr class="even">
+<td>Hemoptysis</td>
+<td>咯血</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (VEGF inhibitors)</td>
+<td>Partial</td>
+<td>Supportive care, embolization, discontinue drug</td>
+</tr>
+<tr class="odd">
+<td>Respiratory failure</td>
+<td>呼吸衰竭</td>
+<td>4–5</td>
+<td>High</td>
+<td>No</td>
+<td>N</td>
+<td>Mechanical ventilation, ICU care</td>
+</tr>
+<tr class="even">
+<td>Pulmonary fibrosis</td>
+<td>肺纤维化</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (bleomycin, amiodarone)</td>
+<td>N</td>
+<td>Supportive care, antifibrotics (pirfenidone)</td>
+</tr>
+<tr class="odd">
+<td>Asthma exacerbation</td>
+<td>哮喘加重</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Bronchodilators, corticosteroids</td>
+</tr>
+<tr class="even">
+<td>Bronchitis</td>
+<td>支气管炎</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Symptomatic therapy, antibiotics if bacterial</td>
+</tr>
+<tr class="odd">
+<td>Pharyngolaryngeal pain</td>
+<td>咽喉疼痛</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, lozenges</td>
+</tr>
+<tr class="even">
+<td>Hypoxia</td>
+<td>低氧血症</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Oxygen therapy, treat underlying cause</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cardiac-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="cardiac-disorders">Cardiac disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arrhythmia</td>
+<td>心律失常</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (some TKIs, anthracyclines)</td>
+<td>Partial</td>
+<td>Antiarrhythmics, cardioversion, device therapy</td>
+</tr>
+<tr class="even">
+<td>Atrial fibrillation</td>
+<td>心房颤动</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Anticoagulation, rate/rhythm control</td>
+</tr>
+<tr class="odd">
+<td>Ventricular tachycardia</td>
+<td>室性心动过速</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes</td>
+<td>Partial</td>
+<td>ACLS protocol, antiarrhythmics, defibrillation</td>
+</tr>
+<tr class="even">
+<td>Myocardial infarction</td>
+<td>心肌梗死</td>
+<td>3–5</td>
+<td>High</td>
+<td>Yes (VEGF inhibitors)</td>
+<td>Partial</td>
+<td>PCI, antiplatelets, anticoagulants</td>
+</tr>
+<tr class="odd">
+<td>Heart failure</td>
+<td>心力衰竭</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (anthracyclines, HER2 therapies)</td>
+<td>Partial</td>
+<td>Diuretics, ACE inhibitors, beta-blockers</td>
+</tr>
+<tr class="even">
+<td>Cardiomyopathy</td>
+<td>心肌病</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (anthracyclines, trastuzumab)</td>
+<td>Partial</td>
+<td>Heart failure therapy, discontinue drug</td>
+</tr>
+<tr class="odd">
+<td>Pericardial effusion</td>
+<td>心包积液</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Pericardiocentesis, NSAIDs, colchicine</td>
+</tr>
+<tr class="even">
+<td>Pericarditis</td>
+<td>心包炎</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>NSAIDs, corticosteroids, colchicine</td>
+</tr>
+<tr class="odd">
+<td>Angina pectoris</td>
+<td>心绞痛</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Nitrates, beta-blockers, calcium channel blockers</td>
+</tr>
+<tr class="even">
+<td>Cardiac arrest</td>
+<td>心脏骤停</td>
+<td>5</td>
+<td>High</td>
+<td>Yes (some therapies, e.g., CAR-T cytokine storm)</td>
+<td>N</td>
+<td>CPR, ACLS protocol</td>
+</tr>
+<tr class="odd">
+<td>QT prolongation</td>
+<td>QT间期延长</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (many TKIs, antiarrhythmics)</td>
+<td>Partial</td>
+<td>ECG monitoring, dose adjustment, electrolyte correction</td>
+</tr>
+<tr class="even">
+<td>Palpitations</td>
+<td>心悸</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Symptomatic management, beta-blockers if needed</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="renal-and-urinary-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="renal-and-urinary-disorders">Renal and urinary disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Acute kidney injury (AKI)</td>
+<td>急性肾损伤</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (cisplatin, amphotericin B)</td>
+<td>Partial</td>
+<td>IV fluids, dialysis if severe</td>
+</tr>
+<tr class="even">
+<td>Chronic kidney disease (CKD)</td>
+<td>慢性肾病</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>BP control, avoid nephrotoxins, dialysis if needed</td>
+</tr>
+<tr class="odd">
+<td>Proteinuria</td>
+<td>蛋白尿</td>
+<td>1–4</td>
+<td>Moderate</td>
+<td>Yes (VEGF inhibitors)</td>
+<td>Partial</td>
+<td>ACE inhibitors/ARBs, dose modification</td>
+</tr>
+<tr class="even">
+<td>Hematuria</td>
+<td>血尿</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Treat underlying cause, urology evaluation</td>
+</tr>
+<tr class="odd">
+<td>Dysuria</td>
+<td>排尿困难</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, antibiotics if infection</td>
+</tr>
+<tr class="even">
+<td>Urinary retention</td>
+<td>尿潴留</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Catheterization, alpha-blockers</td>
+</tr>
+<tr class="odd">
+<td>Oliguria</td>
+<td>少尿</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Hydration, dialysis if severe</td>
+</tr>
+<tr class="even">
+<td>Nephrotic syndrome</td>
+<td>肾病综合征</td>
+<td>3–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, immunosuppressants, diuretics</td>
+</tr>
+<tr class="odd">
+<td>Hydronephrosis</td>
+<td>肾积水</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Stenting, nephrostomy</td>
+</tr>
+<tr class="even">
+<td>Urinary tract obstruction</td>
+<td>泌尿道梗阻</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Catheterization, surgery</td>
+</tr>
+<tr class="odd">
+<td>Urinary incontinence</td>
+<td>尿失禁</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Bladder training, anticholinergics</td>
+</tr>
+<tr class="even">
+<td>Renal failure</td>
+<td>肾衰竭</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes (cisplatin, methotrexate high-dose)</td>
+<td>N</td>
+<td>Dialysis, supportive care</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hepatobiliary-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="hepatobiliary-disorders">Hepatobiliary disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Elevated ALT</td>
+<td>丙氨酸氨基转移酶升高</td>
+<td>1–4</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Monitor LFTs, dose adjustment, hepatoprotectants</td>
+</tr>
+<tr class="even">
+<td>Elevated AST</td>
+<td>天冬氨酸氨基转移酶升高</td>
+<td>1–4</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Monitor, dose adjustment</td>
+</tr>
+<tr class="odd">
+<td>Hyperbilirubinemia</td>
+<td>高胆红素血症</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (irinotecan, atazanavir)</td>
+<td>Partial</td>
+<td>Discontinue causative drug, supportive care</td>
+</tr>
+<tr class="even">
+<td>Hepatomegaly</td>
+<td>肝肿大</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Treat underlying disease</td>
+</tr>
+<tr class="odd">
+<td>Hepatitis (drug-induced)</td>
+<td>药物性肝炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (e.g., isoniazid, MTX)</td>
+<td>Partial</td>
+<td>Stop offending drug, corticosteroids if severe</td>
+</tr>
+<tr class="even">
+<td>Cholestasis</td>
+<td>胆汁淤积</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (anabolic steroids, chlorpromazine)</td>
+<td>Partial</td>
+<td>Ursodeoxycholic acid, supportive care</td>
+</tr>
+<tr class="odd">
+<td>Hepatic failure</td>
+<td>肝功能衰竭</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes (acetaminophen overdose, fulminant hepatitis)</td>
+<td>N</td>
+<td>ICU care, liver transplant</td>
+</tr>
+<tr class="even">
+<td>Hepatic steatosis</td>
+<td>脂肪肝</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Lifestyle modification, treat metabolic syndrome</td>
+</tr>
+<tr class="odd">
+<td>Gallstones (cholelithiasis)</td>
+<td>胆结石</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Cholecystectomy if symptomatic</td>
+</tr>
+<tr class="even">
+<td>Cholecystitis</td>
+<td>胆囊炎</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Antibiotics, cholecystectomy</td>
+</tr>
+<tr class="odd">
+<td>Ascites</td>
+<td>腹水</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Diuretics, paracentesis</td>
+</tr>
+<tr class="even">
+<td>Hepatic encephalopathy</td>
+<td>肝性脑病</td>
+<td>3–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Lactulose, rifaximin, supportive care</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="immune-system-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="immune-system-disorders">Immune system disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hypersensitivity</td>
+<td>过敏反应</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (e.g., penicillin, platinum drugs)</td>
+<td>Y</td>
+<td>Antihistamines, corticosteroids, discontinue drug</td>
+</tr>
+<tr class="even">
+<td>Anaphylaxis</td>
+<td>过敏性休克</td>
+<td>4–5</td>
+<td>High</td>
+<td>Yes</td>
+<td>N</td>
+<td>Epinephrine, airway management, ICU care</td>
+</tr>
+<tr class="odd">
+<td>Cytokine release syndrome (CRS)</td>
+<td>细胞因子释放综合征</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (CAR-T therapy, bispecifics)</td>
+<td>Partial</td>
+<td>Tocilizumab, corticosteroids, supportive care</td>
+</tr>
+<tr class="even">
+<td>Immune reconstitution inflammatory syndrome (IRIS)</td>
+<td>免疫重建炎症综合征</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, treat underlying infection</td>
+</tr>
+<tr class="odd">
+<td>Autoimmune hepatitis</td>
+<td>自身免疫性肝炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, immunosuppressants</td>
+</tr>
+<tr class="even">
+<td>Autoimmune thyroiditis</td>
+<td>自身免疫性甲状腺炎</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Levothyroxine if hypothyroid</td>
+</tr>
+<tr class="odd">
+<td>Systemic lupus erythematosus (SLE)</td>
+<td>系统性红斑狼疮</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, hydroxychloroquine, immunosuppressants</td>
+</tr>
+<tr class="even">
+<td>Rheumatoid arthritis (RA)</td>
+<td>类风湿关节炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>DMARDs, biologics, NSAIDs</td>
+</tr>
+<tr class="odd">
+<td>Sarcoidosis</td>
+<td>结节病</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, immunosuppressants</td>
+</tr>
+<tr class="even">
+<td>Graft versus host disease (GVHD)</td>
+<td>移植物抗宿主病</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (HSCT-related)</td>
+<td>Partial</td>
+<td>Corticosteroids, immunosuppressants, supportive care</td>
+</tr>
+<tr class="odd">
+<td>Immune-mediated colitis</td>
+<td>免疫介导性结肠炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (immune checkpoint inhibitors)</td>
+<td>Partial</td>
+<td>Corticosteroids, infliximab</td>
+</tr>
+<tr class="even">
+<td>Hypogammaglobulinemia</td>
+<td>低丙种球蛋白血症</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>IVIG replacement therapy</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="psychiatric-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="psychiatric-disorders">Psychiatric disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Depression</td>
+<td>抑郁</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (antidepressants ↑ suicide risk)</td>
+<td>Partial</td>
+<td>Antidepressants, psychotherapy</td>
+</tr>
+<tr class="even">
+<td>Anxiety</td>
+<td>焦虑</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Anxiolytics, CBT, relaxation techniques</td>
+</tr>
+<tr class="odd">
+<td>Insomnia</td>
+<td>失眠</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Sleep hygiene, hypnotics, CBT-I</td>
+</tr>
+<tr class="even">
+<td>Suicidal ideation</td>
+<td>自杀意念</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (many psych meds)</td>
+<td>N</td>
+<td>Psychiatric emergency care, hospitalization</td>
+</tr>
+<tr class="odd">
+<td>Psychosis</td>
+<td>精神病性障碍</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (antipsychotics ↑ mortality in elderly)</td>
+<td>Partial</td>
+<td>Antipsychotics, inpatient management</td>
+</tr>
+<tr class="even">
+<td>Confusional state</td>
+<td>意识混乱</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Treat underlying cause, antipsychotics if needed</td>
+</tr>
+<tr class="odd">
+<td>Mania</td>
+<td>躁狂</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Mood stabilizers, antipsychotics</td>
+</tr>
+<tr class="even">
+<td>Hallucination</td>
+<td>幻觉</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Antipsychotics</td>
+</tr>
+<tr class="odd">
+<td>Agitation</td>
+<td>激越</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Sedatives, behavioral therapy</td>
+</tr>
+<tr class="even">
+<td>Delirium</td>
+<td>谵妄</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Identify/treat cause, antipsychotics</td>
+</tr>
+<tr class="odd">
+<td>Mood swings</td>
+<td>情绪波动</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Psychotherapy, mood stabilizers</td>
+</tr>
+<tr class="even">
+<td>Cognitive disorder</td>
+<td>认知障碍</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Cognitive training, supportive care</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="eye-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eye-disorders">Eye disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Blurred vision</td>
+<td>视力模糊</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corrective lenses, treat underlying cause</td>
+</tr>
+<tr class="even">
+<td>Dry eye</td>
+<td>干眼症</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Artificial tears, cyclosporine eye drops</td>
+</tr>
+<tr class="odd">
+<td>Conjunctivitis</td>
+<td>结膜炎</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Lubricants, antibiotics if bacterial</td>
+</tr>
+<tr class="even">
+<td>Keratitis</td>
+<td>角膜炎</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Antivirals/antibiotics, corticosteroid drops</td>
+</tr>
+<tr class="odd">
+<td>Cataract</td>
+<td>白内障</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Cataract surgery</td>
+</tr>
+<tr class="even">
+<td>Glaucoma</td>
+<td>青光眼</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Beta-blocker/PG analog eye drops, surgery if needed</td>
+</tr>
+<tr class="odd">
+<td>Diplopia</td>
+<td>复视</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Prism glasses, strabismus surgery</td>
+</tr>
+<tr class="even">
+<td>Vision loss (partial)</td>
+<td>部分视力丧失</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (some drugs, e.g., ethambutol)</td>
+<td>Partial</td>
+<td>Ophthalmology referral, discontinue drug</td>
+</tr>
+<tr class="odd">
+<td>Retinopathy</td>
+<td>视网膜病变</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (e.g., hydroxychloroquine, VEGF inhibitors)</td>
+<td>Partial</td>
+<td>Anti-VEGF therapy, laser photocoagulation</td>
+</tr>
+<tr class="even">
+<td>Photophobia</td>
+<td>畏光</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Sunglasses, lubricating drops</td>
+</tr>
+<tr class="odd">
+<td>Ocular pain</td>
+<td>眼痛</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, treat underlying cause</td>
+</tr>
+<tr class="even">
+<td>Optic neuropathy</td>
+<td>视神经病变</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (linezolid, amiodarone)</td>
+<td>N</td>
+<td>Discontinue drug, supportive therapy</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vascular-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="vascular-disorders">Vascular disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hypertension</td>
+<td>高血压</td>
+<td>1–4</td>
+<td>High</td>
+<td>Yes (VEGF inhibitors, TKIs)</td>
+<td>Y</td>
+<td>Antihypertensives (ACEI, ARB, CCB)</td>
+</tr>
+<tr class="even">
+<td>Hypotension</td>
+<td>低血压</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>IV fluids, vasopressors if severe</td>
+</tr>
+<tr class="odd">
+<td>Deep vein thrombosis (DVT)</td>
+<td>深静脉血栓</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (IMiDs, OCs)</td>
+<td>Y</td>
+<td>Anticoagulation (LMWH, DOACs)</td>
+</tr>
+<tr class="even">
+<td>Pulmonary embolism (PE)</td>
+<td>肺栓塞</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (IMiDs, JAK inhibitors)</td>
+<td>Partial</td>
+<td>Anticoagulation, thrombolysis if severe</td>
+</tr>
+<tr class="odd">
+<td>Thrombophlebitis</td>
+<td>血栓性静脉炎</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>NSAIDs, anticoagulation</td>
+</tr>
+<tr class="even">
+<td>Hemorrhage</td>
+<td>出血</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (anticoagulants, VEGF inhibitors)</td>
+<td>Partial</td>
+<td>Transfusion, hemostatic agents</td>
+</tr>
+<tr class="odd">
+<td>Aneurysm</td>
+<td>动脉瘤</td>
+<td>3–5</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Surgical repair, BP control</td>
+</tr>
+<tr class="even">
+<td>Ischemia (limb ischemia)</td>
+<td>缺血（肢体缺血）</td>
+<td>3–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Antiplatelets, revascularization</td>
+</tr>
+<tr class="odd">
+<td>Vasculitis</td>
+<td>血管炎</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, immunosuppressants</td>
+</tr>
+<tr class="even">
+<td>Flushing</td>
+<td>潮红</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Symptomatic management, avoid triggers</td>
+</tr>
+<tr class="odd">
+<td>Hypertensive crisis</td>
+<td>高血压危象</td>
+<td>4</td>
+<td>High</td>
+<td>Yes (VEGF inhibitors)</td>
+<td>Partial</td>
+<td>IV antihypertensives, ICU care</td>
+</tr>
+<tr class="even">
+<td>Capillary leak syndrome</td>
+<td>毛细血管渗漏综合征</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (IL-2, CAR-T)</td>
+<td>Partial</td>
+<td>IV fluids, corticosteroids, ICU support</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reproductive-system-and-breast-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="reproductive-system-and-breast-disorders">Reproductive system and breast disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Amenorrhea</td>
+<td>闭经</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Hormonal therapy, fertility counseling</td>
+</tr>
+<tr class="even">
+<td>Menorrhagia</td>
+<td>月经过多</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Tranexamic acid, hormonal therapy</td>
+</tr>
+<tr class="odd">
+<td>Dysmenorrhea</td>
+<td>痛经</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>NSAIDs, hormonal contraceptives</td>
+</tr>
+<tr class="even">
+<td>Erectile dysfunction</td>
+<td>勃起功能障碍</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>PDE5 inhibitors (sildenafil), counseling</td>
+</tr>
+<tr class="odd">
+<td>Infertility</td>
+<td>不孕</td>
+<td>2–3</td>
+<td>High</td>
+<td>Yes (alkylating agents, radiation)</td>
+<td>N</td>
+<td>Fertility preservation, ART (IVF)</td>
+</tr>
+<tr class="even">
+<td>Gynecomastia</td>
+<td>男性乳腺发育</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Tamoxifen, surgery if severe</td>
+</tr>
+<tr class="odd">
+<td>Breast pain (mastalgia)</td>
+<td>乳房疼痛</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, supportive bra</td>
+</tr>
+<tr class="even">
+<td>Vaginal dryness</td>
+<td>阴道干涩</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Lubricants, topical estrogen</td>
+</tr>
+<tr class="odd">
+<td>Vaginitis</td>
+<td>阴道炎</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antifungal/antibiotic therapy</td>
+</tr>
+<tr class="even">
+<td>Hot flashes</td>
+<td>潮热</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>SSRIs, gabapentin, hormone therapy (if not contraindicated)</td>
+</tr>
+<tr class="odd">
+<td>Galactorrhea</td>
+<td>溢乳</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Dopamine agonists, evaluate prolactin</td>
+</tr>
+<tr class="even">
+<td>Ovarian failure</td>
+<td>卵巢功能衰竭</td>
+<td>2–3</td>
+<td>High</td>
+<td>Yes (chemotherapy, radiation)</td>
+<td>N</td>
+<td>HRT, fertility counseling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="endocrine-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="endocrine-disorders">Endocrine disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hypothyroidism</td>
+<td>甲状腺功能减退</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Levothyroxine replacement</td>
+</tr>
+<tr class="even">
+<td>Hyperthyroidism</td>
+<td>甲状腺功能亢进</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Antithyroid drugs, beta-blockers, radioiodine</td>
+</tr>
+<tr class="odd">
+<td>Adrenal insufficiency</td>
+<td>肾上腺功能不全</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (immune checkpoint inhibitors)</td>
+<td>Partial</td>
+<td>Corticosteroid replacement (hydrocortisone)</td>
+</tr>
+<tr class="even">
+<td>Cushing’s syndrome</td>
+<td>库欣综合征</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Reduce corticosteroid use, surgery if tumor</td>
+</tr>
+<tr class="odd">
+<td>Diabetes mellitus (new-onset)</td>
+<td>糖尿病（新发）</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (pancreatic cancer drugs, checkpoint inhibitors)</td>
+<td>Y</td>
+<td>Insulin, oral hypoglycemics, lifestyle change</td>
+</tr>
+<tr class="even">
+<td>Hypopituitarism</td>
+<td>垂体功能减退</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Hormone replacement therapy</td>
+</tr>
+<tr class="odd">
+<td>SIADH (Syndrome of inappropriate ADH secretion)</td>
+<td>抗利尿激素分泌异常综合征</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Fluid restriction, tolvaptan</td>
+</tr>
+<tr class="even">
+<td>Hyperparathyroidism</td>
+<td>甲状旁腺功能亢进</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Surgery, calcimimetics</td>
+</tr>
+<tr class="odd">
+<td>Hypoparathyroidism</td>
+<td>甲状旁腺功能减退</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Calcium, vitamin D supplementation</td>
+</tr>
+<tr class="even">
+<td>Pheochromocytoma</td>
+<td>嗜铬细胞瘤</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (if untreated crisis)</td>
+<td>Partial</td>
+<td>Alpha-blockers, surgical removal</td>
+</tr>
+<tr class="odd">
+<td>Thyroiditis (immune-related)</td>
+<td>甲状腺炎（免疫相关）</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, beta-blockers for symptoms</td>
+</tr>
+<tr class="even">
+<td>Hyperprolactinemia</td>
+<td>高泌乳素血症</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Dopamine agonists (cabergoline, bromocriptine)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="injury-poisoning-and-procedural-complications" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="injury-poisoning-and-procedural-complications">Injury, poisoning and procedural complications</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Infusion site extravasation</td>
+<td>输液外渗</td>
+<td>2–3</td>
+<td>High</td>
+<td>Yes (vesicant chemotherapy)</td>
+<td>Partial</td>
+<td>Stop infusion, cold/warm compress, antidotes (dexrazoxane)</td>
+</tr>
+<tr class="even">
+<td>Injection site reaction</td>
+<td>注射部位反应</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Topical steroids, antihistamines</td>
+</tr>
+<tr class="odd">
+<td>Surgical wound infection</td>
+<td>手术切口感染</td>
+<td>2–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antibiotics, wound care</td>
+</tr>
+<tr class="even">
+<td>Postoperative hemorrhage</td>
+<td>术后出血</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Hemostasis, transfusion, reoperation</td>
+</tr>
+<tr class="odd">
+<td>Procedural pain</td>
+<td>操作相关疼痛</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, local anesthesia</td>
+</tr>
+<tr class="even">
+<td>Radiation injury</td>
+<td>放射损伤</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Supportive care, corticosteroids</td>
+</tr>
+<tr class="odd">
+<td>Drug toxicity (overdose)</td>
+<td>药物中毒（过量）</td>
+<td>3–5</td>
+<td>High</td>
+<td>Yes (chemotherapy, opioids, APAP)</td>
+<td>Partial</td>
+<td>Antidotes (naloxone, NAC), supportive care</td>
+</tr>
+<tr class="even">
+<td>Accidental overdose</td>
+<td>意外过量</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (many drugs)</td>
+<td>Partial</td>
+<td>Antidotes, monitoring</td>
+</tr>
+<tr class="odd">
+<td>Fall</td>
+<td>跌倒</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Fall prevention, physiotherapy</td>
+</tr>
+<tr class="even">
+<td>Fracture (traumatic)</td>
+<td>外伤性骨折</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Orthopedic fixation, rehabilitation</td>
+</tr>
+<tr class="odd">
+<td>Procedural complication (unspecified)</td>
+<td>操作并发症（未特指）</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Supportive management depending on type</td>
+</tr>
+<tr class="even">
+<td>Catheter related infection</td>
+<td>导管相关感染</td>
+<td>2–4</td>
+<td>High</td>
+<td>No</td>
+<td>Y</td>
+<td>Remove catheter, antibiotics</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ear-and-labyrinth-disorders" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="ear-and-labyrinth-disorders">Ear and labyrinth disorders</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PT</strong></th>
+<th><strong>中文翻译</strong></th>
+<th><strong>Severity (CTCAE Grade)</strong></th>
+<th><strong>Impact on QoL</strong></th>
+<th><strong>Black Box Warning</strong></th>
+<th><strong>Manageable (Y/N)</strong></th>
+<th><strong>Typical Management / Medication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tinnitus</td>
+<td>耳鸣</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>N</td>
+<td>Symptomatic care, sound therapy</td>
+</tr>
+<tr class="even">
+<td>Vertigo</td>
+<td>眩晕</td>
+<td>1–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Vestibular suppressants (meclizine), rehab</td>
+</tr>
+<tr class="odd">
+<td>Hearing loss (sensorineural)</td>
+<td>听力下降（感音性）</td>
+<td>2–4</td>
+<td>High</td>
+<td>Yes (aminoglycosides, cisplatin)</td>
+<td>N</td>
+<td>Hearing aids, cochlear implant</td>
+</tr>
+<tr class="even">
+<td>Deafness</td>
+<td>耳聋</td>
+<td>3–4</td>
+<td>High</td>
+<td>Yes (ototoxic drugs)</td>
+<td>N</td>
+<td>Assistive devices, rehabilitation</td>
+</tr>
+<tr class="odd">
+<td>Ear pain (otalgia)</td>
+<td>耳痛</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Analgesics, antibiotics if infection</td>
+</tr>
+<tr class="even">
+<td>Ear infection (otitis media/externa)</td>
+<td>耳部感染（中耳炎/外耳炎）</td>
+<td>1–3</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Antibiotics, ear drops</td>
+</tr>
+<tr class="odd">
+<td>Balance disorder</td>
+<td>平衡障碍</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Vestibular rehab, supportive therapy</td>
+</tr>
+<tr class="even">
+<td>Ear fullness</td>
+<td>耳闷感</td>
+<td>1–2</td>
+<td>Low</td>
+<td>No</td>
+<td>Y</td>
+<td>Decongestants, antihistamines</td>
+</tr>
+<tr class="odd">
+<td>Labyrinthitis</td>
+<td>迷路炎</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Corticosteroids, antivirals, vestibular suppressants</td>
+</tr>
+<tr class="even">
+<td>Hyperacusis</td>
+<td>听觉过敏</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>N</td>
+<td>Counseling, sound therapy</td>
+</tr>
+<tr class="odd">
+<td>Meniere’s disease</td>
+<td>美尼尔病</td>
+<td>2–3</td>
+<td>High</td>
+<td>No</td>
+<td>Partial</td>
+<td>Low-salt diet, diuretics, vestibular rehab</td>
+</tr>
+<tr class="even">
+<td>Ear hemorrhage</td>
+<td>耳出血</td>
+<td>1–2</td>
+<td>Moderate</td>
+<td>No</td>
+<td>Y</td>
+<td>Local hemostasis, treat underlying cause</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/pharmaceutical/other/MAT.html" class="pagination-link" aria-label="Monoclonal Antibody Therapy (MAT)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Monoclonal Antibody Therapy (MAT)</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="pagination-link" aria-label="Biomarker">
+        <span class="nav-page-text">Biomarker</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

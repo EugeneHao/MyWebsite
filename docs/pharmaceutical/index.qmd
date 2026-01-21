@@ -1,0 +1,19 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-filters
+  contents: listings/company.yml
+metadata-files: 
+  - listings/_metadata_company.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### Company
+
+###  {.unlisted}
+
+::: {#listing-filters .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

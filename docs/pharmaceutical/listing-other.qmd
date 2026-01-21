@@ -1,0 +1,18 @@
+---
+title: "Pharmaceutial"
+listing: 
+  id: listing-other
+  contents: 
+    - listings/other.yml
+metadata-files: 
+  - listings/_metadata.yml
+---
+
+{{< include _listing-preamble.qmd >}}
+
+### Other {.unlisted}
+
+::: {#listing-regulatory .column-body-outset-right}
+:::
+
+{{< include _listing-footer.qmd >}}

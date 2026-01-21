@@ -1,0 +1,17 @@
+listing: 
+  type: table
+  sort-ui: [name]
+  fields: 
+    - name
+    - country
+    - drug
+  field-links: 
+    - name
+  field-display-names: 
+    name: Name
+    country: Country
+    drug: Drug
+format:
+  html:
+    anchor-sections: false
+  

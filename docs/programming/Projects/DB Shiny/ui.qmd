@@ -1,0 +1,158 @@
+---
+title: "UI"
+search: true
+format:
+  html:
+    code-link: true
+    smooth-scroll: true
+---
+
+::::: {.grid .step .column-page-right}
+::: {.g-col-lg-8 .g-col-12}
+``` {#load-packages .r}
+# Dynamic Borrowing Shiny Application 
+
+require(bslib)
+require(dplyr)
+require(purrr)
+require(DT)
+require(readxl)
+require(plotly)
+library(shiny)
+require(psborrow)
+require(shinyFeedback)
+library(shinyjs)
+library(RBesT)
+library(shinybusy)
+library(ggpubr)
+library(bayesplot)
+```
+
+``` {#other-options .r}
+# Get all R script files in the functions directory and its subdirectories
+files <- list.files("functions", pattern = "\\.R$", recursive = TRUE, full.names = TRUE)
+walk(files, source)
+
+options(shiny.maxRequestSize = 50 * 1024^2)
+```
+
+``` r
+ui <- navbarPage(
+  useShinyjs(),  # Initialize shinyjs
+  header = tags$head(tags$style(HTML(".navbar-default .navbar-nav > li > a:hover {color: black;background-color: #f7bfc2; text-decoration:underline;}
+                                     body {font-size: 15px;}  /* 全局字体大小 */
+                                     .navbar-brand, .navbar-nav > li > a {font-size: 18px;} 
+                                     .tab-content {font-size: 16px;}  
+                                     .custom-label {font-size: 15px; font-weight: bold;} 
+                                     button, .btn {
+                                        background-color: #FD8B01 !important; 
+                                        border: none !important; 
+                                     }
+                                     ")),
+                     withMathJax()),
+  theme = bs_theme(bootswatch = "minty", primary = "#be2bbb", 'navbar-inverse-bg' = "#f7bfc2", 
+                   'navbar-bg' = "#f1d4f1", "progress-bar-bg" = "#be2bbb"), 
+  title = "Dynamic Borrowing",
+
+  ### Data Section ####
+  tabPanel(title = "Data",
+           fluidPage(
+             sidebarLayout(
+               ### Data - Side Bar
+               sidebarPanel(width = 3, 
+                            module_UI_data_sidebar("data_sidebar")
+                           ),
+
+               ### Data - Main Panel
+               mainPanel(type = "tabs", width = 9, 
+                         tabsetPanel(
+                         #### Data Input ####
+                         tabPanel(title = "Data Input", class = "p-3 border rounded border-top-0 rounded-bottom",
+                                  # Simulate Datasets
+                                  module_UI_simulate_data("simu_data"),
+                                  # Upload Datasets 
+                                  module_UI_upload_data("upload_data")
+                                  )
+                         #### Data Visulization ####
+                        #  tabPanel(title = "Data Visulization", 
+                        #           class = "p-3 border rounded border-top-0 rounded-bottom",
+                        #           module_UI_generate_data("generate_data")
+                        #  ), 
+                        #   
+                        #  #### Advanced Settings ####
+                        #  tabPanel(title = "Advanced Settings", class = "p-3 border rounded border-top-0 rounded-bottom")
+                        )
+               ),
+               position = c("left", "right")
+             )
+           )
+  ),
+  
+  
+  # Simulation #### 
+  tabPanel(title = "Simulation", 
+           fluidPage(
+             sidebarLayout(
+               sidebarPanel(width = 3,
+                            module_UI_simu_sidebar("simu_sidebar")
+               ), 
+               mainPanel(type = "tabs", width = 9,
+                 tabsetPanel(
+                   tabPanel(
+                     title = "Simulation Using One Method", class = "p-3 border rounded border-top-0 rounded-bottom",
+                     module_UI_simu_one_method("simu_one_method")
+                   ) 
+                   # tabPanel(
+                   #   title = "Comparison Across Multiple Methods", class = "p-3 border rounded border-top-0 rounded-bottom"
+                   # )
+                 )
+               )
+             )
+            )
+           ),
+  
+  # Instruction ####
+  tabPanel("Instruction", 
+           class = "p-3 border rounded border-top-0 rounded-bottom",
+           tabsetPanel(
+             tabPanel("Data Panel", 
+                      class = "p-3 border rounded border-top-0 rounded-bottom",
+                      div(tags$iframe(style = "height:100vh; width:100%; border:none; overflow:hidden;", 
+                                      src = "instruction/data/_site/introduction.html"))
+                      ),
+             tabPanel("Simulation Panel", 
+                      class = "p-3 border rounded border-top-0 rounded-bottom",
+                      div(tags$iframe(style = "height:100vh; width:100%; border:none; overflow:hidden;", 
+                                      src = "instruction/simulation/_site/introduction.html"))
+                      )
+             )
+  ),
+  
+  # Section #### 
+  section_UI_guidance("guidance")
+
+)
+```
+:::
+
+::: {.g-col-lg-4 .g-col-12}
+-   Data Panel:
+    -   [module_UI_data_sidebar](main/module_data_sidebar.qmd#module_UI_data_sidebar)
+        -   ID: `data_sidebar`
+    -   [module_UI_simulate_data](main/module_data_simulate.qmd#module_UI_simulate_data)
+        -   ID: `simu_data`
+    -   [module_UI_upload_data]()
+        -   ID: `upload_data`
+-   Simulation Panel:
+    -   [module_UI_simu_sidebar]()
+        -   ID: `simu_sidebar`
+    -   [module_UI_simu_one_method]()
+        -   ID: `simu_one_method`
+-   Instruction Panel:
+    -   For data panel: "instruction/data/\_site/introduction.html"
+    -   For simulation panel: "instruction/simulation/\_site/introduction.html"
+-   Guidance Panel:
+    -   [section_UI_guidance]()
+        -   ID: `guidance`
+:::
+:::::

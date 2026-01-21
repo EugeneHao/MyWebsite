@@ -1,0 +1,63 @@
+- name: CESTDTC
+  domain: CE
+  label: Start Date/Time of Clinical Event
+
+- name: CEENDTC
+  domain: CE
+  label: End Date/Time of Clinical Event
+
+- name: CEDECOD
+  domain: CE
+  label: Dictionary-Derived Term
+
+- name: CETERM
+  domain: CE
+  label: Reported Term for Clinical Event
+
+- name: CECAT
+  domain: CE
+  label: Category of Clinical Event
+
+- name: CESCAT
+  domain: CE
+  label: Subcategory of Clinical Event
+
+- name: CESEV
+  domain: CE
+  label: Severity/Intensity
+
+- name: CESER
+  domain: CE
+  label: Seriousness Indicator
+
+- name: CEACN
+  domain: CE
+  label: Action Taken with Study Treatment
+
+- name: CEREL
+  domain: CE
+  label: Causality
+
+- name: CEOUT
+  domain: CE
+  label: Outcome of Clinical Event
+
+- name: CEGRPID
+  domain: CE
+  label: Group ID
+
+- name: CEREFID
+  domain: CE
+  label: Reference ID
+
+- name: CESPID
+  domain: CE
+  label: Sponsor-Defined Identifier
+
+- name: CEEVAL
+  domain: CE
+  label: Evaluator (e.g., Investigator, Sponsor)
+
+- name: CEBODSYS
+  domain: CE
+  label: Body System or Organ Class

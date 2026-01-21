@@ -1,0 +1,21 @@
+---
+title: "Mezigdomide"
+---
+
+### **药物简介（Drug Overview）**
+
+Mezigdomide是一种处于研发阶段的小分子药物，属于蛋白降解诱导剂（Protein Degradation Inducer）类别。它是一种口服CELMoD（Cereblon E3 Ligase Modulator）化合物，正在研究用于治疗多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)）和可能的其他血液恶性肿瘤。
+
+### **作用机制（Mechanism of Action）**
+
+Mezigdomide的作用机制是通过靶向特定的E3泛素连接酶复合体Cereblon（CRBN），从而诱导肿瘤细胞中特定蛋白的降解。它通过这种方式可以抑制肿瘤细胞的生长和存活，从而具有潜在的抗癌作用。
+
+### **适应症（Indications）**
+
+由于Mezigdomide仍处于临床研究阶段，其确切的适应症尚未最终确定。但是，它主要被研究用于治疗多发性骨髓瘤，特别是在传统治疗失败的患者中。
+
+### **副作用（Side Effects）**
+
+关于Mezigdomide的副作用数据尚处于收集和分析阶段。像其他抗癌药物一样，潜在的副作用可能包括血液学变化、消化系统反应、疲劳等。准确的副作用档案将随着临床试验的进展而更加清晰。
+
+由于Mezigdomide仍在临床试验中，其关于疗效和安全性的数据仍在不断积累和更新中。对于任何实验性药物，最终的临床适用性和副作用概况都将基于全面的临床试验结果。

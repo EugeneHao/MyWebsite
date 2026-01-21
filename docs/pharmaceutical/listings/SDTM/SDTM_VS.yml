@@ -1,0 +1,63 @@
+- name: VSSEQ
+  domain: VS
+  label: Sequence Number
+
+- name: VSREFID
+  domain: VS
+  label: Reference ID
+
+- name: VSTESTCD
+  domain: VS
+  label: Vital Signs Test Short Name (e.g. SYSBP, DIABP)
+
+- name: VSTEST
+  domain: VS
+  label: Vital Signs Test Name (e.g. Systolic Blood Pressure, Diastolic Blood Pressure)
+
+- name: VSPOS
+  domain: VS
+  label: Vital Signs Position of Subject (e.g. SUPINE, STANDING, SITTING)
+
+- name: VSORRES
+  domain: VS
+  label: Result or Finding in Original Units
+
+- name: VSORRESU
+  domain: VS
+  label: Original Units (e.g. IN, LB, BEATS/MIN)
+
+- name: VSSTRESC
+  domain: VS
+  label: Character Result/Finding In Std Format
+
+- name: VSSTRESN
+  domain: VS
+  label: Numeric Result/Finding in Standard Units
+
+- name: VSSTRESU
+  domain: VS
+  label: Standard Units
+
+- name: VSSTAT
+  domain: VS
+  label: Completion Status
+
+- name: VSREASND
+  domain: VS
+  label: Reason Not Performed (e.g. BROKEN EQUIPMENT, SUBJECT REFUSED)
+
+- name: VSLOBXFL
+  domain: VS
+  label: Last Observation Before Exposure Flag
+
+- name: VSBLFL
+  domain: VS
+  label: Baseline Flag
+
+- name: VSDTC
+  domain: VS
+  label: Date/Time of Measurements
+
+- name: VSDY
+  domain: VS
+  label: Study Day of Vital Signs

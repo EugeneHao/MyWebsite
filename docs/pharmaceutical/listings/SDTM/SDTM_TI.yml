@@ -1,0 +1,15 @@
+- name: IETESTCD
+  domain: TI
+  label: Incl/Excl Criterion Short Name
+
+- name: IETEST
+  domain: TI
+  label: Inclusion/Exclusion Criterion
+
+- name: IECAT
+  domain: TI
+  label: Inclusion/Exclusion Category
+
+- name: TIVERS
+  domain: TI
+  label: Protocol Criteria

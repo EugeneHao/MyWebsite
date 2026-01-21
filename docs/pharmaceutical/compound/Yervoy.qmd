@@ -1,0 +1,22 @@
+---
+title: "Yervoy"
+---
+
+## 药物简介（Drug Overview）
+
+伊匹单抗（Ipilimumab，商业名称为Yervoy）是一种免疫治疗药物，属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）类。它主要用于治疗晚期或转移性黑色素瘤（[Melanoma](../disease/Melanoma.qmd)）等类型的癌症。
+
+## 作用机制（Mechanism of Action）
+
+伊匹单抗的作用机制是通过靶向CTL-4（细胞毒性T淋巴细胞相关蛋白-4，Cytotoxic T-Lymphocyte-Associated Protein 4）。CTL-4是一种在T细胞表面发现的免疫检查点分子，其作用是抑制免疫反应。伊匹单抗通过阻断CTL-4，可以增强免疫系统识别和攻击癌细胞的能力。
+
+## 适应症（Indications）
+
+伊匹单抗被批准用于以下临床情况：
+
+-   治疗不可切除或转移性黑色素瘤（Unresectable or Metastatic Melanoma）。
+-   作为辅助治疗，用于治疗在手术后有复发风险的黑色素瘤。
+
+## 副作用（Side Effects）
+
+伊匹单抗的副作用可能包括疲劳（Fatigue）、皮疹（Rash）、腹泻（Diarrhea）和恶心（Nausea）。更严重的副作用可能包括免疫相关的不良反应，例如结肠炎（Colitis）、肝炎（Hepatitis）、皮肤病变（Dermatologic Reactions）和内分泌异常（Endocrinopathies）等。在使用伊匹单抗时需要密切监测这些潜在的副作

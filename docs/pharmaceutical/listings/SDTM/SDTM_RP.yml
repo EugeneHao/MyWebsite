@@ -1,0 +1,63 @@
+- name: RPTEST
+  domain: RP
+  label: Reproductive Findings Test Name
+
+- name: RPTESTCD
+  domain: RP
+  label: Reproductive Findings Test Short Name
+
+- name: RPORRES
+  domain: RP
+  label: Result or Finding as Collected
+
+- name: RPSTRESC
+  domain: RP
+  label: Character Result/Finding in Standard Format
+
+- name: RPSTRESN
+  domain: RP
+  label: Numeric Result/Finding in Standard Units
+
+- name: RPSTAT
+  domain: RP
+  label: Completion Status
+
+- name: RPREASND
+  domain: RP
+  label: Reason Not Done
+
+- name: RPDTC
+  domain: RP
+  label: Date/Time of Reproductive Finding
+
+- name: RPSTDY
+  domain: RP
+  label: Study Day of Reproductive Finding
+
+- name: RPCAT
+  domain: RP
+  label: Category for Reproductive Findings
+
+- name: RPSCAT
+  domain: RP
+  label: Subcategory for Reproductive Findings
+
+- name: RPMETHOD
+  domain: RP
+  label: Method of Reproductive Finding
+
+- name: RPLOC
+  domain: RP
+  label: Location of Reproductive Finding
+
+- name: RPGRPID
+  domain: RP
+  label: Group ID
+
+- name: RPREFID
+  domain: RP
+  label: Reference ID
+
+- name: RPSPID
+  domain: RP
+  label: Sponsor-Defined Identifier

@@ -1,0 +1,39 @@
+---
+title: "Humira"
+---
+
+### **药物简介（Drug Overview）**
+
+修美乐（Humira，通用名为阿达木单抗 Adalimumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），广泛用于治疗多种炎症性疾病。作为肿瘤坏死因子抑制剂（Tumor Necrosis Factor Inhibitor, TNF Inhibitor），它通过靶向并中和肿瘤坏死因子α（Tumor Necrosis Factor Alpha, TNF-α）来减轻炎症和调节免疫反应。
+
+### **治疗原理（Treatment Mechanism）**
+
+阿达木单抗通过特异性地结合到TNF-α上，阻止其与体内的TNF受体结合。TNF-α是一种在自身免疫和炎症性疾病中促进炎症的关键细胞因子。通过抑制TNF-α的活动，修美乐可以有效减少炎症反应，减轻疾病症状，并改善患者的生活质量。
+
+### **适应症（Indications）**
+
+修美乐被批准用于以下疾病的治疗：
+
+1.  类风湿性关节炎（Rheumatoid Arthritis, 类风湿关节炎）
+
+2.  脊柱关节炎（Ankylosing Spondylitis, 脊柱关节炎）
+
+3.  银屑病性关节炎（Psoriatic Arthritis, 牛皮癣性关节炎）
+
+4.  克罗恩病（Crohn's Disease, 克罗恩病）
+
+5.  溃疡性结肠炎（Ulcerative Colitis, 溃疡性结肠炎）
+
+6.  银屑病（Psoriasis, 牛皮癣）
+
+7.  幼年特发性关节炎（Juvenile Idiopathic Arthritis, 幼年特发性关节炎）
+
+8.  汗腺炎（Hidradenitis Suppurativa, 汗腺炎）
+
+9.  泛性脊索炎（Axial Spondyloarthritis, 泛性脊索炎）
+
+### **副作用（Side Effects）**
+
+修美乐的常见副作用包括注射部位反应、上呼吸道感染和头痛。由于其作为免疫调节剂，还可能增加感染的风险，包括结核和其他严重感染。长期使用可能与某些类型的癌症风险增加有关。
+
+修美乐为许多炎症性疾病患者提供了有效的治疗选择，但考虑到其潜在的副作用，使用时应在医疗专业人员的严格指导和监控下进行。

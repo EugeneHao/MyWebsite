@@ -1,0 +1,51 @@
+[
+  {
+    "listing": "/docs/pharmaceutical/listing-disease.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/index.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-company.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-compound.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/courses/index.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/visualization/index.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/blog/index.html",
+    "items": [
+      "/docs/blog/posts/2024-04-28-drug2023/index.html",
+      "/docs/blog/posts/2024-04-02-phrase/index.html",
+      "/docs/blog/posts/2024-01-17-mindnode/index.html",
+      "/docs/blog/posts/2023-12-08-get-started/index.html"
+    ]
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-target.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-regulatory.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-other.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-SDTM.html",
+    "items": []
+  }
+]

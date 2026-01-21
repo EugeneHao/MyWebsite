@@ -1,0 +1,29 @@
+---
+title: "Rituxan"
+---
+
+### **药物简介（Drug Overview）**
+
+利妥昔单抗（Rituxan，通用名：Rituximab）是一种靶向疗法药物，属于单克隆抗体。它主要用于治疗某些类型的癌症，特别是涉及B细胞的血液癌，以及一些自身免疫疾病。
+
+### **药物原理（Drug Mechanism）**
+
+利妥昔单抗的作用机制是靶向CD20，这是一种主要在B淋巴细胞表面表达的蛋白。通过与CD20结合，利妥昔单抗能够诱导这些细胞的死亡，从而减少病理性B细胞的数量，并影响疾病过程。
+
+### **适应症（Indications）**
+
+利妥昔单抗被批准用于治疗以下疾病：
+
+1.  非霍奇金淋巴瘤（Non-Hodgkin's Lymphoma, NHL）
+
+2.  慢性淋巴细胞白血病（Chronic Lymphocytic Leukemia, CLL）
+
+3.  类风湿关节炎（Rheumatoid Arthritis, RA）
+
+4.  血管炎（Vasculitis）
+
+5.  幼年特发性关节炎（Juvenile Idiopathic Arthritis, JIA）
+
+### **副作用（Side Effects）**
+
+利妥昔单抗的常见副作用包括发热、寒战、恶心、疲劳、头痛和血压变化。更严重的副作用可能包括严重的输液反应、感染、心脏问题和其他免疫相关反应。考虑到这些潜在的副作用，使用利妥昔单抗时需要在医疗专业人员的严格指导和监控下进行。

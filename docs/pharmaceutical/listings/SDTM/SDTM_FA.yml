@@ -1,0 +1,59 @@
+- name: FATEST
+  domain: FA
+  label: Findings About Test Name
+
+- name: FATESTCD
+  domain: FA
+  label: Findings About Test Short Name
+
+- name: FAOBJ
+  domain: FA
+  label: Object of the Observation
+
+- name: FACAT
+  domain: FA
+  label: Category for Findings About
+
+- name: FASCAT
+  domain: FA
+  label: Subcategory for Findings About
+
+- name: FAORRES
+  domain: FA
+  label: Result or Finding as Collected
+
+- name: FASTRESC
+  domain: FA
+  label: Character Result/Finding in Standard Format
+
+- name: FASTRESN
+  domain: FA
+  label: Numeric Result/Finding in Standard Units
+
+- name: FASTAT
+  domain: FA
+  label: Completion Status
+
+- name: FAREASND
+  domain: FA
+  label: Reason Not Done
+
+- name: FADTC
+  domain: FA
+  label: Date/Time of Observation/Collection
+
+- name: FASTDY
+  domain: FA
+  label: Study Day of Observation
+
+- name: FAGRPID
+  domain: FA
+  label: Group ID
+
+- name: FAREFID
+  domain: FA
+  label: Reference ID
+
+- name: FASPID
+  domain: FA
+  label: Sponsor-Defined Identifier

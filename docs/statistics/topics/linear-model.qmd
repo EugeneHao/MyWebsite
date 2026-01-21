@@ -1,0 +1,14 @@
+---
+title: "Topics"
+code-copy: hover
+editor_options:
+  markdown:
+    wrap: sentence
+    canonical: true
+---
+
+{{< include ../_tool-chooser.md >}}
+
+## Courses
+
+-   [STAT510](../../courses/STAT510/STAT510.qmd)

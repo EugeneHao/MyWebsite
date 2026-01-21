@@ -1,0 +1,89 @@
+---
+title: "Programming"
+subtitle: "My programming notes"
+format:
+  html:
+    include-after-body: 
+      text: |
+        <script type="text/javascript">
+        window['quarto-download-release'] = true;
+        window['quarto-download-prerelease'] = true;
+        window['quarto-download-nonews'] = true;
+        window["quarto-prerelease-mode"] = '{{< meta prerelease-mode >}}';
+        </script>      
+page-layout: full
+toc: false
+anchor-sections: false
+editor: source
+search: true
+---
+
+::::: {.grid .step .column-page-right}
+::: {.g-col-lg-3 .g-col-12}
+## Language
+
+#### Choose the language <br/>and get started {.fw-light}
+:::
+
+::: {.tool .g-col-lg-9 .g-col-12}
+<a href="R/index.html" role="button" class="btn btn-outline-light"> ![](images/r-logo.png){width="77" fig-alt="VS Code logo."}R </a>
+
+<a href="R/test2.html" role="button" class="btn btn-outline-light"> ![](images/python-logo.jpg){width="77" fig-alt="Jupyter logo."}Python </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/SAS-logo.png){width="77" fig-alt="RStudio logo."}SAS </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/C++-logo.png){width="77" fig-alt="RStudio logo."}C++ </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/html-logo.jpg){width="77" fig-alt="RStudio logo."}HTML </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/JS-logo.png){width="77" fig-alt="RStudio logo."}JavaScript </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/SQL-logo.png){width="77" fig-alt="RStudio logo."}SQL </a>
+:::
+:::::
+
+::::: {.grid .step .column-page-right}
+::: {.g-col-lg-3 .g-col-12}
+## Software & System
+
+#### Choose the software/system <br/>and get started {.fw-light}
+:::
+
+::: {.tool .g-col-lg-9 .g-col-12}
+<a href="Softwares/Rstudio.html" role="button" class="btn btn-outline-light"> ![](images/rstudio-logo.png){width="77" fig-alt="RStudio logo."}Rstudio </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/word.png){width="77" fig-alt="RStudio logo."}Word </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/excel.png){width="77" fig-alt="RStudio logo."}Excel </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/powerpoint.jpg){width="77" fig-alt="RStudio logo."}PowerPoint </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/OneNote.jpg){width="77" fig-alt="RStudio logo."}OneNote </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/jupyter-logo.png){width="77" fig-alt="RStudio logo."}Jupyter </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/Latex-logo.png){width="77" fig-alt="RStudio logo."}Latex </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/vscode-logo.png){width="77" fig-alt="RStudio logo."}VScode </a>
+
+<a href="Softwares/Notion.html" role="button" class="btn btn-outline-light"> ![](images/notion-logo.png){width="77" fig-alt="RStudio logo."}Notion </a>
+
+<a href="Quarto/QuartoBasic.html" role="button" class="btn btn-outline-light"> ![](images/quarto-logo.png){width="77" fig-alt="RStudio logo."}Quarto </a>
+
+<a href="hello/rstudio.html" role="button" class="btn btn-outline-light"> ![](images/sublime-logo.jpg){width="77" fig-alt="RStudio logo."}Sublime </a>
+
+<a href="Softwares/MacOS.html" role="button" class="btn btn-outline-light"> ![](images/MacOS.png){width="77" fig-alt="RStudio logo."}MacOS </a>
+:::
+:::::
+
+::::: {.grid .step .column-page-right}
+::: {.g-col-lg-3 .g-col-12}
+## Project
+
+#### Track Large Programming Project {.fw-light}
+:::
+
+::: {.tool .g-col-lg-9 .g-col-12}
+<a href="Projects/DB_Shiny.html" role="button" class="btn btn-outline-light"> ![](Projects/images/DB_shiny.png){width="77" fig-alt="DB Shiny logo."}Dynamic Borrowing Shiny App </a>
+:::
+:::::

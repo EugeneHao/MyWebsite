@@ -1,0 +1,78 @@
+- name: ECSEQ
+  domain: EC
+  label: Sequence Number
+  
+- name: ECTRT
+  domain: EC
+  label: Name of Treatment
+
+- name: ECMOOD
+  domain: EC
+  label: Mood (e.g. SCHEDULED, PERFORMED)
+
+- name: ECCAT
+  domain: EC
+  label: Category of Treatment
+
+- name: ECPRESP
+  domain: EC
+  label: Pre-specified
+
+- name: ECOCCUR
+  domain: EC
+  label: Occurrence 
+  
+- name: ECDOSE
+  domain: EC
+  label: Dose 
+
+- name: ECDOSTXT
+  domain: EC
+  label: Dose Description
+
+- name: ECDOSU
+  domain: EC
+  label: Dose Units (for ECDOSE, ECDOSTOT, or ECDOSTXT)
+
+- name: ECDOSFRM
+  domain: EC
+  label: Dose Form (e.g. TABLET, LOTION)
+
+- name: ECDOSFRQ
+  domain: EC
+  label: Dosing Frequency per Interval (e.g. Q2H, QD, BID)
+  
+- name: ECDOSTOT
+  domain: EC
+  label: Total Daily Dose 
+
+- name: ECROUTE
+  domain: EC
+  label: Route of Adminstration (e.g. ORAL, INTRAVENOUS)
+
+- name: ECFAST
+  domain: EC
+  label: Fasting Status 
+  
+- name: ECSTDTC
+  domain: EC
+  label: Start Date/Time of Treatment 
+
+- name: ECENDTC
+  domain: EC
+  label: End Date/Time of Treatment 
+  
+- name: ECSTDY
+  domain: EC
+  label: Study Day of Start of Treatment
+  
+- name: ECENDY
+  domain: EC
+  label: Study Day og End of Treatment 
+  
+  
+  
+  
+  
+  
+  

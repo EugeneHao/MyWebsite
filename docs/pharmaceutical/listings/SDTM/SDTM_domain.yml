@@ -1,0 +1,153 @@
+- name: AE
+  domain: DOMAIN
+  label: Adverse Event
+
+- name: CE
+  domain: DOMAIN
+  label: Clinical Events 
+  
+- name: CM
+  domain: DOMAIN
+  label: Concomitant Medication
+
+- name: DA
+  domain: DOMAIN
+  label: Drug Accountablity  
+
+- name: DD
+  domain: DOMAIN
+  label: Death Details 
+  
+- name: DM
+  domain: DOMAIN
+  label: Demographic 
+
+- name: DS
+  domain: DOMAIN
+  label: Disposition
+  
+- name: DV
+  domain: DOMAIN
+  label: Protocol Deviation 
+  
+- name: EC
+  domain: DOMAIN
+  label: Exposure as Collected 
+
+- name: EG
+  domain: DOMAIN
+  label: ECG Test Results  
+  
+- name: EX
+  domain: DOMAIN
+  label: Exposure
+
+- name: FA
+  domain: DOMAIN
+  label: Findings About  
+  
+- name: HO
+  domain: DOMAIN
+  label: Healthcare Encounters  
+  
+- name: IE
+  domain: DOMAIN
+  label: Inclusion/Exclusion Criteria Not Met
+  
+- name: LB
+  domain: DOMAIN
+  label: Laboratory Test Results 
+
+- name: MB
+  domain: DOMAIN
+  label: Microbiology Specimen 
+
+- name: MH
+  domain: DOMAIN
+  label: Medical Histroy
+
+- name: ML
+  domain: DOMAIN
+  label: Meal Data
+  
+- name: MO
+  domain: DOMAIN
+  label: Morphology 
+
+- name: PC
+  domain: DOMAIN
+  label: Pharmacokinetics Concentrations
+
+- name: PE
+  domain: DOMAIN
+  label: Physical Examination 
+  
+- name: PP
+  domain: DOMAIN
+  label: Pharmacokinetics Parameters 
+  
+- name: PR
+  domain: DOMAIN
+  label: Procedure
+  
+- name: QS
+  domain: DOMAIN
+  label: Questionnaire
+  
+- name: RS
+  domain: DOMAIN
+  label: Disease Response and Clinical Classification 
+
+- name: SC
+  domain: DOMAIN
+  label: Subject Characteristics  
+  
+- name: SE
+  domain: DOMAIN
+  label: Subject Elements
+
+- name: SR
+  domain: DOMAIN
+  label: Skin Response 
+  
+- name: SS
+  domain: DOMAIN
+  label: Subject Status 
+  
+- name: SU
+  domain: DOMAIN
+  label: Substance Use
+  
+- name: SV
+  domain: DOMAIN
+  label: Subject Visits
+  
+- name: TA
+  domain: DOMAIN
+  label: Trial Arms 
+
+- name: TE
+  domain: DOMAIN
+  label: Trial Elements
+
+- name: TI
+  domain: DOMAIN
+  label: Trial Inclusion/Exclusion Criteria
+  
+- name: TS
+  domain: DOMAIN
+  label: Trial Summary   
+  
+- name: TV
+  domain: DOMAIN
+  label: Trial Visits 
+  
+- name: VS
+  domain: DOMAIN
+  label: Vital Signs
+  
+  
+  
+  
+  
+  
