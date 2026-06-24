@@ -180,7 +180,9 @@ website:
               - text: Breyanzi
                 href: docs/pharmaceutical/compound/Breyanzi.qmd  
               - text: Krazati
-                href: docs/pharmaceutical/compound/Krazati.qmd                 
+                href: docs/pharmaceutical/compound/Krazati.qmd
+              - text: Pumitamig
+                href: docs/pharmaceutical/compound/Pumitamig.qmd
             - section: Merck
               href: docs/pharmaceutical/company/Merck.qmd
               contents:                  

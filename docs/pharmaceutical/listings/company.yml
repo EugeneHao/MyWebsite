@@ -4,7 +4,7 @@
   drug: |
     [Opdivo](compound/Opdivo.qmd), [Eliquis](compound/Eliquis.qmd), [Reblozyl](compound/Reblozyl.qmd), [Revlimid](compound/Revlimid.qmd), [Yervoy](compound/Yervoy.qmd), 
     [Iberdomide](compound/Iberdomide.qmd), [Mezigdomide](compound/Mezigdomide.qmd), [Alnuctamab](compound/Alnuctamab.qmd), [Abecma](compound/Abecma.qmd), 
-    [Onureg](compound/Onureg.qmd), [Inrebic](compound/Inrebic.qmd), [Krazati](compound/Krazati.qmd)
+    [Onureg](compound/Onureg.qmd), [Inrebic](compound/Inrebic.qmd), [Krazati](compound/Krazati.qmd), [Pumitamig](compound/Pumitamig.qmd)
 - name: Pfizer
   path: company/Pfizer.html
   country: USA

@@ -1,0 +1,837 @@
+---
+title: "Pumitamig（BNT327/BMS-986545）"
+description: "介绍PD-L1 × VEGF-A双特异性抗体pumitamig的作用机制、开发历史、临床证据、主要试验和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Clinical Trials
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 疾病与药物概述
+
+**Pumitamig（暂无广泛认可的中文通用名；BioNTech和[Bristol Myers Squibb](../company/BMS.qmd)共同开发；尚无获批商品名；development codes: BNT327、BMS-986545、PM8002）**是一种研究性**programmed death-ligand 1 × vascular endothelial growth factor A, PD-L1 × VEGF-A（程序性死亡配体1 × 血管内皮生长因子A）**双特异性抗体。
+
+Pumitamig通过一个分子同时实现：
+
+1. 阻断PD-L1介导的[免疫检查点](../other/Immunotherapy.qmd)信号；
+2. 中和VEGF-A介导的血管生成和免疫抑制。
+
+其开发理念是利用抗体与肿瘤细胞或肿瘤微环境中的PD-L1结合，将VEGF-A抑制作用更集中地定位于**tumor microenvironment, TME（肿瘤微环境）**，从而同时改善抗肿瘤免疫和肿瘤血管环境。
+
+截至2026年6月24日，pumitamig仍属于**investigational therapy（研究性治疗）**，尚未获得美国FDA、欧洲EMA或其他主要监管机构的上市批准。BioNTech和Bristol Myers Squibb正在多个实体瘤中开展广泛的Phase 2和Phase 3开发项目，包括[肺癌](../disease/Lung_Cancer.qmd)、[三阴性乳腺癌](../disease/Breast_Cancer.qmd)、结直肠癌和胃癌。
+
+# Drug Profile（药物概况）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Pumitamig |
+| 中文通用名 | 暂无广泛认可的中文通用名 |
+| Development codes | BNT327、BMS-986545、PM8002 |
+| Original development code | PM8002 |
+| Original developer | Biotheus |
+| Current developers | BioNTech和Bristol Myers Squibb |
+| Drug class | PD-L1 × VEGF-A bispecific antibody |
+| Molecular type | 重组双特异性单克隆抗体 |
+| Targets | PD-L1和VEGF-A |
+| Main mechanisms | 免疫检查点阻断、VEGF-A中和、抗血管生成和TME调节 |
+| Route of administration | Intravenous infusion（静脉输注） |
+| Development stage | 多个Phase 2和Phase 3试验正在进行 |
+| Approved indication | 尚无 |
+| Brand name | 尚无获批商品名 |
+| Regulatory status | 研究性药物，尚未获批 |
+
+# Development History（开发历史）
+
+Pumitamig最初以PM8002的研发代号由Biotheus开发。BioNTech随后获得该资产的开发权益，并将其命名为BNT327。
+
+2025年6月2日，BioNTech与Bristol Myers Squibb宣布建立全球合作关系，共同开发和商业化BNT327。双方计划按照约定共同承担开发和生产成本，并分享全球商业利润或亏损。
+
+合作后，pumitamig同时使用以下研发代号：
+
+| 名称 | 主要来源或用途 |
+|---|---|
+| PM8002 | Biotheus原始研发代号 |
+| BNT327 | BioNTech研发代号 |
+| BMS-986545 | Bristol Myers Squibb研发代号 |
+| Pumitamig | International nonproprietary-style generic name used in development |
+
+截至2026年5月30日，BioNTech和BMS表示已有超过2,000名患者在临床试验中接受过pumitamig治疗，并有7项具有注册潜力的全球Phase 3试验正在开展。该数字来自公司披露，并不等同于监管机构对疗效或安全性的独立确认。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| [ADC](../other/ADC.qmd) | Antibody–drug conjugate | 抗体偶联药物 |
+| BICR | Blinded independent central review | 盲态独立中心审评 |
+| cORR | Confirmed objective response rate | 经确认的客观缓解率 |
+| CPS | Combined positive score | 联合阳性评分 |
+| DCR | Disease control rate | 疾病控制率 |
+| DOR | Duration of response | 缓解持续时间 |
+| ES-SCLC | Extensive-stage small cell lung cancer | 广泛期小细胞肺癌 |
+| irAE | Immune-related adverse event | 免疫相关不良事件 |
+| [NSCLC](../disease/NSCLC.qmd) | Non-small cell lung cancer | 非小细胞肺癌 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| PD-L1 | Programmed death-ligand 1 | 程序性死亡配体1 |
+| [PFS](../other/PFS.qmd) | Progression-free survival | 无进展生存期 |
+| Q2W | Every two weeks | 每两周一次 |
+| Q3W | Every three weeks | 每三周一次 |
+| RECIST 1.1 | Response Evaluation Criteria in Solid Tumors version 1.1 | 实体瘤疗效评价标准1.1版 |
+| TME | Tumor microenvironment | 肿瘤微环境 |
+| TNBC | Triple-negative breast cancer | 三阴性乳腺癌 |
+| TRAE | Treatment-related adverse event | 治疗相关不良事件 |
+| VEGF-A | Vascular endothelial growth factor A | 血管内皮生长因子A |
+
+# Mechanism of Action（作用机制）
+
+## PD-L1 Checkpoint Blockade
+
+PD-L1可表达于肿瘤细胞、免疫细胞和其他TME成分。PD-L1与T细胞表面的PD-1结合后，会抑制T细胞的活化、增殖和细胞毒性功能。
+
+Pumitamig与PD-L1结合后，旨在阻断PD-1/PD-L1信号，使受抑制的效应T细胞重新获得识别和攻击肿瘤细胞的能力。
+
+其基本作用链条为：
+
+$$
+\text{PD-L1 blockade}
+\rightarrow
+\text{reduced inhibitory signaling}
+\rightarrow
+\text{T-cell reactivation}
+\rightarrow
+\text{enhanced antitumor immunity}
+$$
+
+## VEGF-A Neutralization
+
+VEGF-A是肿瘤血管生成的重要调节因子。VEGF-A不仅促进异常血管形成，还可通过多种机制形成免疫抑制性TME，包括：
+
+- 抑制树突状细胞成熟；
+- 限制效应T细胞进入肿瘤；
+- 促进免疫抑制细胞聚集；
+- 形成结构异常、通透性较高的肿瘤血管；
+- 增加缺氧和组织间压力；
+- 影响其他抗肿瘤治疗进入肿瘤组织。
+
+中和VEGF-A的目标包括：
+
+$$
+\text{VEGF-A blockade}
+\rightarrow
+\text{reduced angiogenesis}
++
+\text{vascular normalization}
++
+\text{reduced immune suppression}
+$$
+
+## Cooperative Binding（协同结合）
+
+Pumitamig被设计为同时与PD-L1和VEGF-A结合。
+
+其理论优势不是简单地将两种单药作用相加，而是利用PD-L1结合将抗体锚定于TME，从而在肿瘤局部实现较强的VEGF-A中和。
+
+可能的协同机制包括：
+
+1. PD-L1 blockade恢复T细胞功能；
+2. VEGF-A blockade降低TME中的免疫抑制；
+3. 血管正常化促进T细胞进入肿瘤；
+4. 改善化疗、ADC或其他联合药物在肿瘤内的递送；
+5. 通过一个分子减少两个独立药物之间的药代动力学差异。
+
+以上部分机制具有明确的生物学依据，但“肿瘤局部化能够减少全身VEGF相关毒性”仍属于需要临床数据验证的开发假设，不能仅根据分子设计推断。
+
+# Why Combine PD-L1 and VEGF-A?（为何同时靶向PD-L1与VEGF-A）
+
+单独使用PD-1或PD-L1免疫检查点抑制剂时，部分患者可能由于以下因素无法产生充分疗效：
+
+- 缺乏预存的抗肿瘤T细胞；
+- T细胞难以进入肿瘤；
+- VEGF驱动的免疫抑制；
+- 异常肿瘤血管；
+- 低PD-L1表达；
+- 其他免疫逃逸机制。
+
+单独抑制VEGF可减少血管生成，但通常不足以产生持久的抗肿瘤免疫记忆。
+
+因此，PD-(L)1与VEGF双重抑制的治疗假设为：
+
+| 作用维度 | PD-L1 blockade | VEGF-A blockade |
+|---|---|---|
+| T细胞功能 | 解除免疫检查点抑制 | 改善免疫细胞进入肿瘤 |
+| 肿瘤血管 | 间接影响较少 | 抑制血管生成并促进血管正常化 |
+| TME | 恢复效应T细胞功能 | 减轻VEGF介导的免疫抑制 |
+| 联合治疗 | 提高免疫应答 | 可能改善化疗或ADC递送 |
+| 主要风险 | Immune-mediated toxicity | 高血压、出血、蛋白尿和血栓等 |
+
+# Clinical Development Program（临床开发项目）
+
+## 主要注册性开发项目
+
+截至2026年6月24日，pumitamig的主要全球后期试验包括：
+
+| Trial | Phase | 疾病与人群 | 试验组 | 对照组 | 主要终点 |
+|---|---:|---|---|---|---|
+| ROSETTA Lung-01, NCT06712355 | 3 | 未经治疗的ES-SCLC | Pumitamig + carboplatin + etoposide | [Atezolizumab](Tecentriq.qmd) + carboplatin + etoposide | PFS和/或OS，依方案定义 |
+| ROSETTA Lung-02, NCT06712316 | 2/3 | 一线晚期NSCLC，无actionable genomic alteration，任何PD-L1水平 | Pumitamig + histology-specific chemotherapy | [Pembrolizumab](Keytruda.qmd) + chemotherapy | Phase 3主要终点为BICR-assessed PFS |
+| ROSETTA Lung-201, NCT07361497 | 3 | 同步放化疗后未进展的不可切除Stage III NSCLC | Pumitamig monotherapy | Durvalumab | 方案规定的主要疗效终点 |
+| ROSETTA Lung-202, NCT07361510 | 3 | 未经系统治疗、局部晚期或转移性NSCLC，PD-L1 ≥50% | Pumitamig monotherapy | Pembrolizumab | 方案规定的主要疗效终点 |
+| ROSETTA Breast-01, NCT07173751 | 3 | 一线局部晚期或转移性TNBC，PD-L1阴性或不适合PD-(L)1治疗 | Pumitamig + chemotherapy | Placebo + chemotherapy | PFS及其他关键终点 |
+| ROSETTA CRC-203, NCT07221357 | 2/3 | 一线不可切除或转移性结直肠癌 | Pumitamig + chemotherapy | [Bevacizumab](Avastin.qmd) + chemotherapy | PFS、OS及其他终点 |
+| ROSETTA Gastric-204, NCT07221149 | 2/3 | 一线晚期胃癌、胃食管结合部癌或食管腺癌 | Pumitamig + chemotherapy | [Nivolumab](Opdivo.qmd) + chemotherapy | PFS、OS及其他终点 |
+
+实际primary endpoint、alpha allocation和分析计划应以最新ClinicalTrials.gov记录、protocol和statistical analysis plan为准。
+
+## 其他开发方向
+
+Pumitamig还在研究以下联合策略：
+
+- 与HER2、HER3、TROP2或EGFR/HER3-directed ADC联合；
+- 与其他免疫调节型双特异性抗体联合；
+- 与肿瘤特异性免疫治疗联合；
+- 用于复发性glioblastoma；
+- 用于多种晚期实体瘤的signal-seeking试验；
+- 用于MTAP-deficient NSCLC的联合治疗；
+- 用于不同线次的肺癌、乳腺癌和消化道肿瘤。
+
+BioNTech将pumitamig视为潜在的下一代**immuno-oncology backbone（免疫肿瘤治疗骨架）**。该定位目前仍属于开发目标，尚未通过注册性研究和监管审批确立。
+
+# Early Clinical Evidence（早期临床证据）
+
+目前公开证据主要来自单臂或随机Phase 2试验的interim analysis。以下结果不能与成熟、确证性的Phase 3治疗效果等同。
+
+## ROSETTA Lung-02：一线NSCLC
+
+ROSETTA Lung-02是一项全球Phase 2/3试验，研究pumitamig联合化疗用于未经治疗的晚期NSCLC。
+
+Phase 2剂量优化阶段比较了：
+
+- Pumitamig 1,400 mg Q3W；
+- Pumitamig 2,000 mg Q3W；
+
+并根据组织学联合：
+
+- 非鳞状NSCLC：carboplatin + pemetrexed；
+- 鳞状NSCLC：carboplatin + paclitaxel。
+
+根据2026年4月13日数据截止、2026年5月30日公布的interim data：
+
+| 指标 | 非鳞状NSCLC | 鳞状NSCLC |
+|---|---:|---:|
+| Response-evaluable sample | 总计40例可评价患者 | 总计40例可评价患者 |
+| Confirmed ORR | 57.1% | 68.4% |
+| DCR | 100% | 100% |
+| Median follow-up | 两组总体约9.0个月 | 两组总体约9.0个月 |
+
+安全性结果包括：
+
+| 安全性指标 | 结果 |
+|---|---:|
+| Grade ≥3 TRAE | 48.8% |
+| Grade ≥3 pumitamig-related AE | 23.3% |
+| Treatment discontinuation due to AE | 9.3% |
+| Any-grade irAE | 37.2% |
+| Grade ≥3 irAE | 4.7% |
+| Any-grade bleeding event | 20.9% |
+| Grade 3 bleeding event | 1例 |
+
+这些结果来自样本量较小且随访尚短的interim analysis。没有成熟的随机对照PFS或OS结果，因此不能据此证明pumitamig优于pembrolizumab-based standard of care。
+
+根据Phase 2数据的整体评估，Phase 3部分选择pumitamig 1,500 mg flat dose Q3W联合化疗继续开发。Phase 3主要终点为BICR-assessed PFS，关键次要终点包括OS、ORR和DOR。
+
+## ES-SCLC Phase 2 Data
+
+一项全球随机Phase 2试验NCT06449209评估pumitamig联合carboplatin和etoposide用于未经治疗的ES-SCLC。
+
+2025年9月披露的interim analysis显示：
+
+- 出现具有临床活性的抗肿瘤缓解；
+- PFS结果呈积极趋势；
+- 整体安全性被公司描述为manageable；
+- 未发现新的安全性信号；
+- 因不良事件停药的比例较低。
+
+公开公司材料尚不足以支持对长期OS获益作出结论。该Phase 2项目主要为ROSETTA Lung-01 Phase 3开发提供剂量、疗效信号和安全性依据。
+
+## Advanced TNBC Phase 2 Data
+
+全球Phase 2试验NCT06449222评估pumitamig联合不同化疗方案，用于一线或后线局部晚期或转移性TNBC。
+
+在2025年10月1日数据截止的interim analysis中，39例可评价患者接受pumitamig联合nab-paclitaxel治疗。
+
+| 疗效指标 | 结果 |
+|---|---:|
+| Confirmed ORR | 61.5%（24/39） |
+| Unconfirmed ORR | 71.8%（28/39） |
+| DCR | 92.3%（36/39） |
+| 9-month PFS rate | 59.3% |
+| Median PFS | 尚未成熟 |
+| Median DOR | 尚未成熟 |
+| Median OS | 尚未成熟 |
+
+探索性分组结果显示：
+
+| 亚组 | Unconfirmed ORR |
+|---|---:|
+| PD-L1 CPS ≥10 | 70.6% |
+| PD-L1 CPS <10 | 70.6% |
+| First-line | 76.5% |
+| Second-line | 68.2% |
+
+安全性方面：
+
+| Cohort | Grade ≥3 TRAE |
+|---|---:|
+| Pumitamig + nab-paclitaxel | 42.5% |
+| Pumitamig + other chemotherapy regimens | 38.2% |
+
+未报告pumitamig-related death。
+
+这些数据支持在PD-L1低表达或阴性TNBC中进一步研究pumitamig，但样本量较小、分析为interim、缺乏同时随机对照，因此不能证明其疗效不受PD-L1状态影响，也不能直接与其他试验的ORR横向比较。
+
+# Safety Profile（安全性特征）
+
+Pumitamig的整体安全性可能同时包含以下三类风险：
+
+1. PD-L1 immune checkpoint blockade相关风险；
+2. VEGF-A inhibition相关风险；
+3. 联合化疗或其他药物产生的叠加毒性。
+
+## Immune-Mediated Toxicity
+
+潜在免疫相关不良事件包括：
+
+- pneumonitis；
+- colitis；
+- hepatitis；
+- thyroid dysfunction；
+- adrenal insufficiency；
+- hypophysitis；
+- nephritis；
+- immune-mediated skin toxicity；
+- infusion-related reaction。
+
+这些事件的发生时间可能较晚，也可能在停药后出现。临床管理通常依赖早期识别、暂停治疗和使用corticosteroid或其他免疫抑制治疗。
+
+## VEGF-Related Toxicity
+
+VEGF-A inhibition可能带来：
+
+- hypertension；
+- proteinuria；
+- bleeding；
+- arterial or venous thromboembolism；
+- impaired wound healing；
+- gastrointestinal perforation；
+- fistula；
+- posterior reversible encephalopathy syndrome；
+- cardiac dysfunction。
+
+不同肿瘤类型和联合方案中的风险可能不同。例如，中央型肺部病灶、空洞性病灶、肿瘤侵及大血管或既往有明显咯血的患者可能需要特别关注出血风险。
+
+## Combination-Related Toxicity
+
+联合化疗后还可能出现：
+
+- neutropenia；
+- anemia；
+- thrombocytopenia；
+- nausea和vomiting；
+- fatigue；
+- peripheral neuropathy；
+- infection；
+- hepatic laboratory abnormalities。
+
+目前公开数据尚不能完整描述pumitamig的长期、罕见或累积性安全风险。
+
+# Pharmacologic and Dose Considerations（药理与剂量考虑）
+
+## Weight-Based versus Flat Dose
+
+早期研究中使用过：
+
+- 15 mg/kg Q2W；
+- 20 mg/kg Q2W；
+- 1,400 mg Q3W；
+- 2,000 mg Q3W。
+
+ROSETTA Lung-02 Phase 3部分选择了1,500 mg flat dose Q3W。
+
+由weight-based dosing转向flat dosing通常需要综合评估：
+
+- population pharmacokinetics；
+- exposure–response relationship；
+- target engagement；
+- efficacy plateau；
+- exposure–toxicity relationship；
+- body weight对clearance和exposure的影响；
+- 给药便利性和生产可行性。
+
+不同适应证和联合方案的最终推荐剂量可能不同，不能仅根据某一个试验的剂量推断所有开发项目。
+
+## Dual-Target Engagement
+
+Pumitamig需要同时考虑：
+
+- 对PD-L1的结合程度；
+- 对游离VEGF-A的中和；
+- 两个靶点之间的协同结合；
+- 肿瘤组织与外周组织中的分布；
+- soluble target对药物暴露的影响；
+- antidrug antibody；
+- 联合化疗对药代动力学的影响。
+
+双特异性药物的exposure–response关系可能比传统单靶点抗体更复杂，因为同一暴露水平未必代表两个靶点均达到相同程度的药理作用。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Dose Optimization
+
+Pumitamig的Phase 2开发不仅用于筛查疗效信号，也承担dose optimization任务。
+
+剂量选择不能仅依据最高ORR，还需要综合：
+
+- confirmed ORR；
+- tumor shrinkage；
+- DOR；
+- PFS；
+- Grade ≥3 AE；
+- dose interruption和dose discontinuation；
+- bleeding和hypertension；
+- pharmacokinetics；
+- pharmacodynamics；
+- exposure–response；
+- 不同联合化疗方案下的耐受性。
+
+当Phase 2阶段比较多个剂量但未针对剂量间差异进行正式multiplicity control时，剂量选择通常属于综合决策，而不是确证性假设检验。
+
+## ORR as an Early Endpoint
+
+早期pumitamig研究大量使用**objective response rate, ORR（客观缓解率）**作为疗效信号。
+
+ORR的优势包括：
+
+- 可较早获得；
+- 对单臂早期试验较实用；
+- 可用于剂量选择；
+- 能反映肿瘤缩小活性。
+
+但ORR不能完整说明：
+
+- 缓解是否持久；
+- 是否延长PFS；
+- 是否改善OS；
+- 是否改善症状或生活质量；
+- 与标准治疗相比是否具有净获益。
+
+因此应结合DOR、PFS和成熟OS进行判断。
+
+## Confirmed versus Unconfirmed ORR
+
+部分早期结果同时报告cORR和unconfirmed ORR。
+
+Unconfirmed response通常表示患者达到CR或PR，但尚未在后续评估中得到确认。该指标可能高估持久的真实缓解率。
+
+在解释数据时应优先关注：
+
+- cORR；
+- 具体确认窗口；
+- response-evaluable population的定义；
+- 因缺失确认扫描而无法确认的患者；
+- 数据截止时仍等待确认的患者。
+
+## Single-Arm Interpretation
+
+单臂研究结果容易受到以下因素影响：
+
+- 患者选择；
+- baseline prognosis；
+- 既往治疗线次；
+- PD-L1分布；
+- 研究中心差异；
+- 扫描频率；
+- 可评价人群选择；
+- 随访成熟度；
+- historical control不可比性。
+
+例如，TNBC Phase 2分析中的39例efficacy-evaluable patients并不等同于所有已治疗患者。若未纳入缺少基线后影像或早期停药患者，ORR可能产生selection bias。
+
+应同时报告：
+
+- intention-to-treat或all-treated population；
+- response-evaluable population；
+- 缺失或不可评价患者数量；
+- 以所有入组患者为分母的支持性ORR。
+
+## PD-L1 Subgroup Analysis
+
+Pumitamig的核心开发假设之一是通过VEGF-A阻断改善低PD-L1肿瘤中的免疫反应。
+
+评价这一假设时不能仅比较：
+
+- PD-L1高表达组中的ORR是否显著；
+- PD-L1低表达组中的ORR是否显著。
+
+应重点分析：
+
+- treatment-by-PD-L1 interaction；
+- 连续PD-L1表达与治疗效果的关系；
+- 不同assay和cutoff的一致性；
+- tumor cell expression与immune cell expression；
+- 缺失PD-L1样本；
+- archival tissue与fresh biopsy差异。
+
+在没有随机对照的亚组中观察到相似ORR，并不能证明PD-L1不是predictive biomarker。
+
+## Phase 2/3 Seamless Design
+
+ROSETTA Lung-02采用seamless Phase 2/3设计。
+
+该设计的潜在优势包括：
+
+- 加快剂量选择和确证性评价；
+- 减少Phase 2至Phase 3之间的时间；
+- 允许基于早期数据选择剂量；
+- 共享部分运营基础设施。
+
+主要统计问题包括：
+
+| 问题 | 需要考虑的内容 |
+|---|---|
+| Dose selection | 是否由预设算法、IDMC或综合证据决定 |
+| Phase 2 data reuse | Phase 2患者是否纳入Phase 3主要分析 |
+| Type I error | 选择过程和期中分析是否影响FWER |
+| Operational bias | 剂量选择信息是否可能影响后续研究执行 |
+| Endpoint transition | Phase 2 ORR与Phase 3 PFS之间如何衔接 |
+| Sample size adaptation | 是否允许基于blinded或unblinded数据调整样本量 |
+
+若Phase 2患者被纳入最终确证性分析，需要采用适当方法控制选择和期中查看数据造成的type I error inflation。
+
+## PFS Assessment
+
+后期试验通常使用**progression-free survival, PFS（无进展生存期）**作为主要或共同主要终点。
+
+PFS分析需要明确：
+
+- RECIST 1.1；
+- investigator assessment或BICR；
+- 扫描频率；
+- missed assessment处理；
+- 新抗肿瘤治疗前后的删失规则；
+- 临床进展是否构成事件；
+- 死亡窗口；
+- 脑转移和非靶病灶规则。
+
+ROSETTA Lung-02 Phase 3主要终点采用BICR-assessed PFS，有助于减少开放标签或可识别毒性导致的assessment bias。
+
+## Overall Survival
+
+**Overall survival, OS（总生存期）**具有明确临床意义，但可能受到：
+
+- crossover；
+- subsequent immunotherapy；
+- 后续ADC或靶向治疗；
+- 不同国家药物可及性；
+- 进展后生存时间；
+- informative loss to follow-up；
+
+的影响。
+
+在对照组患者进展后接受PD-(L)1 × VEGF类药物时，可能稀释OS差异。protocol和SAP应预先规定后续治疗收集方式及支持性分析。
+
+## Non-Proportional Hazards
+
+免疫治疗研究可能出现：
+
+- 延迟曲线分离；
+- 早期治疗相关事件；
+- 长期缓解亚群；
+- survival plateau；
+- 曲线交叉。
+
+因此，单一**hazard ratio, HR（风险比）**可能不能完整描述治疗获益。
+
+除stratified log-rank test和Cox model外，可补充：
+
+- Kaplan–Meier curves；
+- landmark survival rates；
+- **restricted mean survival time, RMST（限制性平均生存时间）**；
+- piecewise HR；
+- time-varying treatment effect。
+
+## Multiplicity
+
+Pumitamig Phase 3开发项目可能同时涉及：
+
+- PFS和OS；
+- 不同组织学亚组；
+- 不同PD-L1人群；
+- 单药和联合治疗；
+- 多个剂量；
+- 多次interim analysis；
+- ORR和DOR等关键次要终点。
+
+需要预先规定：
+
+1. 初始alpha分配；
+2. PFS与OS之间的检验顺序；
+3. interim和final analysis的alpha spending；
+4. 总体与PD-L1亚组之间的alpha传递；
+5. 不同试验部分或剂量选择对type I error的影响；
+6. ORR、DOR和PRO是否进入正式检验层级。
+
+## Cross-Trial Comparison
+
+Pumitamig常被拿来与以下方案间接比较：
+
+- pembrolizumab-based therapy；
+- atezolizumab-based therapy；
+- durvalumab consolidation；
+- bevacizumab-based therapy；
+- 其他PD-(L)1 × VEGF双特异性抗体。
+
+这种比较需要谨慎，因为试验可能在以下方面不同：
+
+- line of therapy；
+- PD-L1 cutoff；
+- histology；
+- geographic region；
+- chemotherapy backbone；
+- biomarker eligibility；
+- brain metastasis；
+- response confirmation；
+- follow-up maturity；
+- subsequent therapy。
+
+除非进行设计合理的head-to-head randomized trial，否则不能仅通过跨试验ORR或median PFS判断pumitamig优于现有标准治疗。
+
+# Clinical Trial Design Considerations（临床试验设计考虑）
+
+## Comparator Selection
+
+Pumitamig开发覆盖多种临床场景，因此对照方案需要匹配当前standard of care。
+
+| 临床场景 | 代表性对照 |
+|---|---|
+| First-line advanced NSCLC | Pembrolizumab + chemotherapy |
+| PD-L1 ≥50% advanced NSCLC | Pembrolizumab monotherapy |
+| Unresectable Stage III NSCLC after chemoradiation | Durvalumab |
+| First-line ES-SCLC | Atezolizumab + platinum + etoposide |
+| First-line PD-L1-negative TNBC | Placebo + chemotherapy |
+| First-line metastatic CRC | Bevacizumab + chemotherapy |
+| First-line gastric or gastroesophageal adenocarcinoma | Nivolumab + chemotherapy |
+
+对照组选择还应考虑试验启动时和最终分析时standard of care可能发生变化。
+
+## Blinding
+
+部分pumitamig试验使用double-blind设计，但以下差异可能影响实际blinding：
+
+- 给药频率；
+- 输注时间；
+- 特征性免疫毒性；
+- VEGF-related hypertension或proteinuria；
+- 不同化疗方案；
+- dose modification规则。
+
+因此，即使名义上为double-blind，仍需评估潜在functional unblinding。
+
+## Safety Monitoring
+
+由于pumitamig同时具有免疫检查点和VEGF抑制作用，DMC或IDMC通常需要同时监测：
+
+- treatment-related death；
+- severe bleeding；
+- pulmonary hemorrhage；
+- gastrointestinal perforation；
+- arterial thromboembolism；
+- myocarditis；
+- severe pneumonitis；
+- immune-mediated hepatitis；
+- treatment discontinuation；
+- early survival imbalance。
+
+## Treatment Discontinuation
+
+双重机制可能增加停药原因的复杂性，包括：
+
+- immune-mediated toxicity；
+- bleeding；
+- hypertension；
+- chemotherapy toxicity；
+- disease progression；
+- protocol-defined treatment duration；
+- investigator decision。
+
+主要estimand应明确治疗中止后是否继续收集影像、PFS、OS和PRO数据。
+
+# Competitive Landscape（竞争格局）
+
+## Conventional Combination Strategy
+
+PD-(L)1和VEGF联合并不是全新的生物学概念。既往已经通过两个独立药物实现类似联合，例如：
+
+- immune checkpoint inhibitor + bevacizumab；
+- immune checkpoint inhibitor + VEGF receptor tyrosine kinase inhibitor。
+
+Pumitamig的差异在于将两个作用整合到一个双特异性抗体中。
+
+## Other PD-(L)1 × VEGF Bispecific Antibodies
+
+该领域还包括其他研究性或区域性开发的双特异性药物，其中较受关注的是：
+
+**Ivonescimab（依沃西单抗；Akeso与Summit Therapeutics；中国商品名依达方®）**，一种PD-1 × VEGF双特异性抗体。
+
+Pumitamig与ivonescimab的重要区别包括：
+
+| 特征 | Pumitamig | Ivonescimab |
+|---|---|---|
+| Immune checkpoint target | PD-L1 | PD-1 |
+| Angiogenesis target | VEGF-A | VEGF |
+| Developers | BioNTech和BMS | Akeso；部分地区与Summit合作 |
+| Global development focus | 多个实体瘤和多种novel combination | 以肺癌等实体瘤为核心 |
+| Regulatory status | 截至2026年6月尚未获批 | 已在部分地区获得适应证批准，全球开发仍在进行 |
+
+不同分子的结构、靶点亲和力、价态、药代动力学、剂量和安全性可能不同。不能将同一类别内某一药物的结果直接外推至pumitamig。
+
+# Practical Example（实践示例）
+
+## ROSETTA Lung-202
+
+ROSETTA Lung-202研究：
+
+> 在PD-L1 ≥50%、未经系统治疗的局部晚期或转移性NSCLC患者中，pumitamig monotherapy是否优于pembrolizumab monotherapy。
+
+| 设计要素 | 内容 |
+|---|---|
+| Study phase | Phase 3 |
+| Design | Randomized、double-blind |
+| Population | First-line locally advanced or metastatic NSCLC with PD-L1 ≥50% |
+| Experimental arm | Pumitamig monotherapy |
+| Control arm | Pembrolizumab monotherapy |
+| Clinical question | 双重PD-L1/VEGF-A抑制能否优于单纯PD-1抑制 |
+| Likely key endpoints | PFS、OS、ORR、DOR和安全性 |
+| Important stratification factors | Histology、region、brain metastasis和PD-L1 level |
+| Key safety contrast | Immune-related AE加VEGF-related AE versus conventional checkpoint inhibition |
+| Main interpretive challenge | OS受到后续治疗和交叉使用同类药物的影响 |
+
+该试验是验证pumitamig单药价值的重要研究，因为它避免了化疗对抗肿瘤作用和毒性的混杂。
+
+若试验显示PFS改善但OS尚不成熟，需要结合：
+
+- HR及其confidence interval；
+- Kaplan–Meier曲线；
+- DOR；
+- subsequent therapy；
+- Grade ≥3 AE；
+- treatment discontinuation；
+- patient-reported outcomes；
+
+判断净临床获益。
+
+# Common Pitfalls（常见误区）
+
+## 将Pumitamig理解为PD-1抗体
+
+Pumitamig的免疫检查点靶点是PD-L1，而不是PD-1。同时它还直接中和VEGF-A。
+
+## 将Pumitamig称为已获批药物
+
+截至2026年6月24日，pumitamig仍为研究性药物，尚无获批适应证或商品名。
+
+## 将双特异性抗体理解为简单联合用药
+
+Pumitamig是一个同时结合两个靶点的分子，不等同于分别输注一个PD-L1抗体和一个anti-VEGF抗体。其组织分布、协同结合和药代动力学可能不同。
+
+## 根据单臂ORR断言优于Standard of Care
+
+较高ORR只能说明存在抗肿瘤活性，不能证明相对于现有标准治疗具有优势。优越性需要随机对照Phase 3数据验证。
+
+## 将Unconfirmed ORR当作最终ORR
+
+Unconfirmed response可能未在后续扫描中持续。评价疗效时应优先使用cORR及其CI。
+
+## 认为低PD-L1患者的早期疗效证明PD-L1不再重要
+
+低PD-L1亚组中的缓解信号支持进一步研究，但只有随机对照和interaction analysis才能判断PD-L1是否具有预测作用。
+
+## 忽视VEGF相关毒性
+
+即使VEGF-A中和被设计为定位于TME，也不能假定不存在全身性出血、高血压、蛋白尿或血栓风险。
+
+## 直接比较不同双特异性抗体
+
+PD-1 × VEGF和PD-L1 × VEGF-A药物在结构、靶点、剂量和适应证方面并不相同，不能仅依据类别名称进行疗效排序。
+
+# Current Development Status（当前开发状态）
+
+截至2026年6月24日：
+
+- Pumitamig尚未获得主要监管机构上市批准；
+- BioNTech和BMS共同负责全球开发和商业化；
+- 多项Phase 2和Phase 3试验正在开展；
+- 已进入ES-SCLC、NSCLC、TNBC、结直肠癌和胃癌等多个后期开发项目；
+- 已公开的疗效数据主要来自interim Phase 2 analyses；
+- 尚缺乏成熟的全球随机Phase 3 PFS和OS确证性结果；
+- 当前最关键的问题是其能否在head-to-head研究中优于现有checkpoint inhibitor或anti-VEGF-based standard of care，同时保持可接受的安全性。
+
+# Key Takeaways（关键要点）
+
+1. Pumitamig是一种研究性PD-L1 × VEGF-A双特异性抗体，研发代号包括BNT327、BMS-986545和PM8002。
+2. 该药由BioNTech和Bristol Myers Squibb共同开发，目标是同时解除免疫检查点抑制并改善VEGF驱动的肿瘤血管和免疫微环境。
+3. 截至2026年6月24日，pumitamig尚未获批，但已进入多个全球Phase 3试验。
+4. NSCLC、ES-SCLC和TNBC的Phase 2 interim data显示出抗肿瘤活性，但目前尚不能证明其优于标准治疗。
+5. 其潜在安全风险同时包括immune-mediated toxicity、VEGF-related toxicity和联合化疗毒性。
+6. 后期试验的关键统计问题包括dose optimization、PFS评估、non-proportional hazards、multiplicity、PD-L1 subgroup和后续治疗。
+7. Pumitamig能否成为新的immuno-oncology backbone，最终取决于随机Phase 3试验中的PFS、OS、安全性和患者获益结果。
+
+# References（参考文献）
+
+1. BioNTech and Bristol Myers Squibb. *BioNTech and Bristol Myers Squibb Announce Global Strategic Partnership to Co-Develop and Co-Commercialize Next-generation Bispecific Antibody Candidate BNT327 Broadly for Multiple Solid Tumor Types*. June 2, 2025.  
+   <https://news.bms.com/news/details/2025/BioNTech-and-Bristol-Myers-Squibb-Announce-Global-Strategic-Partnership-to-Co-Develop-and-Co-Commercialize-Next-generation-Bispecific-Antibody-Candidate-BNT327-Broadly-for-Multiple-Solid-Tumor-Types/default.aspx>
+
+2. BioNTech and Bristol Myers Squibb. *Global Data for BioNTech and Bristol Myers Squibb’s PD-L1xVEGF-A Bispecific Pumitamig Shows Encouraging Efficacy in Patients with Non-Small Cell Lung Cancer in ROSETTA Lung-02 Trial*. May 30, 2026.  
+   <https://news.bms.com/news/corporate-financial/2026/Global-Data-for-BioNTech-and-Bristol-Myers-Squibbs-PD-L1xVEGF-A-Bispecific-Pumitamig-Shows-Encouraging-Efficacy-in-Patients-with-Non-Small-Cell-Lung-Cancer-in-ROSETTA-Lung-02-Trial-2026-TW53rMYYjx/default.aspx>
+
+3. BioNTech and Bristol Myers Squibb. *First Disclosure of Global Interim Phase 2 Data for Pumitamig in Extensive-Stage Small Cell Lung Cancer*. September 8, 2025.  
+   <https://news.bms.com/news/corporate-financial/2025/First-Disclosure-of-Global-Interim-Phase-2-Data-for-BioNTech-and-Bristol-Myers-Squibb-PD-L1xVEGF-A-Bispecific-Antibody-Pumitamig-BNT327-BMS986545-in-Patients-with-Extensive-Stage-Small-Cell-Lung-Cancer-Shows-Encouraging-Antitumor-Activity/default.aspx>
+
+4. BioNTech and Bristol Myers Squibb. *First Global Phase 2 Data for Pumitamig in Advanced Triple-Negative Breast Cancer*. December 9, 2025.  
+   <https://news.bms.com/news/details/2025/BioNTech-and-Bristol-Myers-Squibb-Present-First-Global-Phase-2-Data-for-PD-L1xVEGF-A-Bispecific-Antibody-Pumitamig-Showing-Encouraging-Efficacy-in-Advanced-Triple-Negative-Breast-Cancer/default.aspx>
+
+5. ClinicalTrials.gov. *ROSETTA Lung-01: Pumitamig in Extensive-Stage Small Cell Lung Cancer*. NCT06712355.  
+   <https://clinicaltrials.gov/study/NCT06712355>
+
+6. ClinicalTrials.gov. *ROSETTA Lung-02: Pumitamig in First-Line Advanced Non-Small Cell Lung Cancer*. NCT06712316.  
+   <https://clinicaltrials.gov/study/NCT06712316>
+
+7. ClinicalTrials.gov. *ROSETTA Lung-201: Pumitamig versus Durvalumab Following Concurrent Chemoradiation in Unresectable Stage III NSCLC*. NCT07361497.  
+   <https://clinicaltrials.gov/study/NCT07361497>
+
+8. ClinicalTrials.gov. *ROSETTA Lung-202: Pumitamig versus Pembrolizumab in PD-L1 ≥50% Advanced NSCLC*. NCT07361510.  
+   <https://clinicaltrials.gov/study/NCT07361510>
+
+9. ClinicalTrials.gov. *ROSETTA Breast-01: Pumitamig Plus Chemotherapy in Advanced Triple-Negative Breast Cancer*. NCT07173751.  
+   <https://clinicaltrials.gov/study/NCT07173751>
+
+10. ClinicalTrials.gov. *ROSETTA CRC-203: Pumitamig Plus Chemotherapy versus Bevacizumab Plus Chemotherapy in Metastatic Colorectal Cancer*. NCT07221357.  
+    <https://clinicaltrials.gov/study/NCT07221357>
+
+11. ClinicalTrials.gov. *ROSETTA Gastric-204: Pumitamig Plus Chemotherapy versus Nivolumab Plus Chemotherapy*. NCT07221149.  
+    <https://clinicaltrials.gov/study/NCT07221149>
+
+12. Tzuri N, et al. Targeting the tumor vasculature and immune microenvironment through combined VEGF and immune-checkpoint inhibition. *Scientific Reports*. 2023;13:11923.
+
+13. Kim HJ, et al. Vascular endothelial growth factor and immune regulation in the tumor microenvironment. *Archives of Pharmacal Research*. 2022;45:401–416.

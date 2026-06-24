@@ -18,7 +18,7 @@ image: quarto-dark-bg.jpeg
 ::: {.content-block}
 
 ::: {.hero-text}
-## Welcome to Hao Sun's Website!^[®]{.trademark}^ {.mt-1}
+## Welcome to Hao Sun's Website! {.mt-1}
 
 Hi! Welcome to my personal webpage. I am a biostatistician in the department of Global Biometric Sciences at [Bristol Myers Squibb](https://www.bms.com/). 
 
@@ -40,7 +40,6 @@ I received my PhD in [Statistics](https://www.stat.iastate.edu/ "ISU Statistics 
 
 :::
 :::
-
 
 
 

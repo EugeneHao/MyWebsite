@@ -540,6 +540,13 @@
   company: BMS
   indication: Treats relapsed or refractory large B-cell lymphoma, including diffuse large B-cell lymphoma, after two or more lines of systemic therapy.
 
+- drug: Pumitamig
+  compound: BNT327 / BMS-986545 / PM8002
+  path: compound/Pumitamig.html
+  company: BMS, BioNTech
+  indication: |
+    Investigational PD-L1 × VEGF-A bispecific antibody in development for [lung cancer](disease/Lung_Cancer.qmd), [NSCLC](disease/NSCLC.qmd), [triple-negative breast cancer](disease/Breast_Cancer.qmd), colorectal cancer, and gastric cancer.
+
 - drug: Abecma
   compound: Idecabtagene Vicleucel
   path: compound/Abecma.html

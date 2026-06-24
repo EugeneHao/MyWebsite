@@ -1,48 +1,1376 @@
 ---
-title: "NSCLC"
+title: "Non-Small Cell Lung Cancer, NSCLC（非小细胞肺癌）"
+description: "系统介绍NSCLC的组织学与分子分类、分期、诊断、治疗格局，以及临床试验和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
 ---
 
-See also: [Lung Cancer overview](Lung_Cancer.qmd).
+# 疾病概述
 
-非小细胞肺癌（NSCLC）是一种肺癌的主要类型，占所有肺癌病例的大约85%。NSCLC这个名称的由来是相对于另一种主要类型的肺癌——小细胞肺癌（Small Cell Lung Cancer, SCLC）。这两种分类基于肿瘤细胞在显微镜下的外观区别。
+**Non-small cell lung cancer, NSCLC（非小细胞肺癌）**是[肺癌](Lung_Cancer.qmd)中最常见的一大类，约占全部肺癌的80%–85%。NSCLC并不是单一疾病，而是由多个组织学和分子亚型组成的高度异质性疾病。
 
--   小细胞肺癌 (SCLC)：这种肺癌的细胞较小，核较大，细胞质少。小细胞肺癌生长迅速，早期就容易通过血液和淋巴系统扩散。
--   非小细胞肺癌 (NSCLC)：这个分类包括几种不同类型的肺癌，它们的共同点是细胞相对较大。这一类包括鳞状细胞癌、腺癌和大细胞癌。相比小细胞肺癌，非小细胞肺癌通常生长和扩散的速度较慢。
+NSCLC主要包括：
 
-因此，“非小细胞”这个名字反映的是与小细胞肺癌相对应的肿瘤细胞类型。这种分类方法有助于医生确定适合的治疗方法，因为小细胞肺癌和非小细胞肺癌的治疗策略有所不同。
+- **lung adenocarcinoma（肺腺癌）**；
+- **squamous cell carcinoma, SCC（鳞状细胞癌）**；
+- large cell carcinoma及其他少见亚型。
 
-## 成因
+与**small cell lung cancer, SCLC（小细胞肺癌）**相比，NSCLC通常生长和转移相对较慢，但其临床行为取决于疾病分期、组织学类型、分子驱动变异、免疫微环境和患者一般状况。
 
--   吸烟：最主要的风险因素，包括主动吸烟和被动吸烟。
--   环境因素：如长期暴露于石棉、放射性气体（如氡）、空气污染等。
--   遗传因素：家族史中有肺癌病例的人群风险增加。
--   职业暴露：接触某些化学物质，如砷、铬、镍等。
--   慢性肺部疾病：如慢性阻塞性肺病（COPD）和肺纤维化也可能增加风险。
+现代NSCLC治疗已经从主要依据组织学选择化疗，发展为同时依据以下因素进行精准决策：
 
-## 主要治疗方案
+1. 疾病是否可以手术切除；
+2. 局限期、局部晚期或转移性疾病；
+3. 鳞状或非鳞状组织学；
+4. 是否存在actionable genomic alteration；
+5. **programmed death-ligand 1, PD-L1（程序性死亡配体1）**表达；
+6. 脑转移状态；
+7. 既往治疗和耐药机制；
+8. 患者的身体状况、合并症和治疗目标。
 
--   手术：早期非小细胞肺癌的首选治疗方法。
--   放疗 (Radiotherapy)：用于不能手术或拒绝手术的患者，以及作为手术后的辅助治疗。
--   化疗 (Chemotherapy)：常用于晚期疾病，或作为手术前后的辅助治疗。
--   靶向治疗 (Targeted Therapy)：针对特定遗传变异（如EGFR突变、ALK重排）的治疗。
--   免疫治疗 ([Immunotherapy](../other/Immunotherapy.qmd))：利用免疫检查点抑制剂激活免疫系统攻击癌细胞。
+截至2026年6月，NSCLC拥有实体瘤中最成熟的生物标志物指导治疗体系之一，多个基因突变、融合、扩增或蛋白表达状态已经可以直接影响治疗选择。
 
-## 主流药物
+# 流行病学
 
--   EGFR抑制剂：如吉非替尼 (Gefitinib)、厄洛替尼 (Erlotinib)。
--   ALK抑制剂：如克唑替尼 ([Crizotinib](../compound/Xalkori.qmd))
--   免疫检查点抑制剂：如纳武利尤单抗 ([Nivolumab](../compound/Opdivo.qmd))、帕博利尤单抗 ([Pembrolizumab](../compound/Keytruda.qmd))。
--   化疗药物：如紫杉醇 (Paclitaxel)、顺铂 (Cisplatin)。
+全球2022年约有250万例新发肺癌和180万例肺癌死亡。肺癌是全球最常见的癌症之一，也是癌症死亡的首要原因。
 
-## 与SCLC的治疗方式差异
+由于NSCLC约占全部肺癌的80%–85%，它构成了全球肺癌疾病负担的主体。
 
--   小细胞肺癌（SCLC）
-    -   更依赖化疗和放疗：SCLC由于其迅速的生长速度和高度的恶性程度，更倾向于使用化疗和放疗。这些治疗方式可以迅速对抗快速分裂的癌细胞。
-    -   手术较少使用：由于SCLC在诊断时往往已经发展到晚期，因此手术治疗不是主要选择。只有在非常早期的SCLC中，手术可能被考虑。
-    -   较快的疾病进展：SCLC的治疗通常需要更紧急和更集中的治疗方法来控制疾病的迅速进展。
--   非小细胞肺癌（NSCLC）
-    -   手术治疗更常见：在早期NSCLC中，手术是主要的治疗方法。如果癌症被局限在肺部并且患者的整体健康状况允许，手术可能是最佳选择。
-    -   靶向治疗和免疫治疗：许多NSCLC患者的肿瘤细胞表现出特定的遗传突变，这使得靶向治疗成为一种有效的治疗选择。此外，免疫治疗也在NSCLC的治疗中扮演着越来越重要的角色。
-    -   较慢的疾病进展：NSCLC通常比SCLC生长和扩散得慢，这意味着治疗策略可以更加多样化，包括监测和选择最适合患者情况的治疗方法。
+## 主要人群特征
 
-总结来说，SCLC由于其快速的进展和高度侵袭性，通常依赖于更激进的化疗和放疗。而NSCLC由于其生长速度较慢，治疗选项更为多样，包括手术、化疗、放疗、靶向治疗和免疫治疗。每种肺癌的治疗策略都需要根据患者的具体情况来定制。
+| 特征 | 主要表现 |
+|---|---|
+| 年龄 | 多数患者在中老年阶段确诊，但部分分子驱动型NSCLC可发生于年轻患者 |
+| 性别 | 历史上男性发病率较高，但部分地区女性发病率持续增加 |
+| 吸烟状态 | 吸烟是最主要危险因素，但从不吸烟者也可发生NSCLC |
+| 组织学 | 腺癌是最常见亚型，在从不吸烟者中尤其常见 |
+| 地域和种族 | 部分驱动变异的频率存在明显地域和种族差异 |
+| 诊断阶段 | 相当比例患者在局部晚期或转移性阶段确诊 |
+
+## Risk Factors（危险因素）
+
+| 危险因素 | 主要说明 |
+|---|---|
+| Tobacco smoking | NSCLC最重要的可预防危险因素 |
+| Secondhand smoke | 长期二手烟暴露增加肺癌风险 |
+| Radon | 重要的环境性危险因素 |
+| Air pollution | 长期细颗粒物和空气污染暴露与风险增加相关 |
+| Occupational exposure | 包括石棉、砷、铬、镍、硅尘和柴油废气等 |
+| Prior thoracic radiation | 既往胸部放疗可能增加继发肺癌风险 |
+| Chronic lung disease | 慢性阻塞性肺病和肺纤维化等与风险增加相关 |
+| Genetic susceptibility | 家族史和部分遗传因素可能影响个体风险 |
+
+吸烟史与NSCLC风险密切相关，但不能用于排除分子检测。即使患者具有明确吸烟史，也可能存在可靶向驱动变异。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| BICR | Blinded independent central review | 盲态独立中心审评 |
+| CNS | Central nervous system | 中枢神经系统 |
+| ctDNA | Circulating tumor DNA | 循环肿瘤DNA |
+| DFS | Disease-free survival | 无病生存期 |
+| DOR | Duration of response | 缓解持续时间 |
+| EFS | Event-free survival | 无事件生存期 |
+| HR | Hazard ratio | 风险比 |
+| IRC | Independent review committee | 独立审评委员会 |
+| NGS | Next-generation sequencing | 下一代测序 |
+| NSCLC | Non-small cell lung cancer | 非小细胞肺癌 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| pCR | Pathological complete response | 病理完全缓解 |
+| PD-L1 | Programmed death-ligand 1 | 程序性死亡配体1 |
+| [PFS](../other/PFS.qmd) | Progression-free survival | 无进展生存期 |
+| PRO | Patient-reported outcome | 患者报告结局 |
+| RECIST 1.1 | Response Evaluation Criteria in Solid Tumors version 1.1 | 实体瘤疗效评价标准1.1版 |
+| RMST | Restricted mean survival time | 限制性平均生存时间 |
+| SBRT | Stereotactic body radiation therapy | 立体定向体部放疗 |
+| SCC | Squamous cell carcinoma | 鳞状细胞癌 |
+| TKI | Tyrosine kinase inhibitor | 酪氨酸激酶抑制剂 |
+| TMB | Tumor mutational burden | 肿瘤突变负荷 |
+| TNM | Tumor–Node–Metastasis | 原发肿瘤–区域淋巴结–远处转移 |
+| TPS | Tumor proportion score | 肿瘤细胞阳性比例评分 |
+
+# Histologic Classification（组织学分类）
+
+## 主要组织学亚型
+
+| 亚型 | 英文名称 | NSCLC中的大致比例 | 主要特征 |
+|---|---|---:|---|
+| 肺腺癌 | Lung adenocarcinoma | 约50%–60% | 最常见；多位于肺外周；驱动变异较丰富 |
+| 鳞状细胞癌 | Squamous cell carcinoma | 约20%–30% | 与吸烟密切相关；常发生于中央气道 |
+| 大细胞癌或低分化癌 | Large cell or poorly differentiated carcinoma | 比例较低 | 缺乏明确腺癌或鳞癌分化特征 |
+| 腺鳞癌 | Adenosquamous carcinoma | 少见 | 同时具有腺癌和鳞癌成分 |
+| 肉瘤样癌 | Sarcomatoid carcinoma | 罕见 | 通常侵袭性较强，可能伴特定分子改变 |
+| 唾液腺型肿瘤 | Salivary gland-type carcinoma | 罕见 | 包括黏液表皮样癌和腺样囊性癌等 |
+| 未另分类NSCLC | NSCLC not otherwise specified | 小活检中可见 | 组织量不足以进一步分类 |
+
+这些比例会受到人群、吸烟模式、病理标准和样本来源影响，因此仅作为近似范围。
+
+## Lung Adenocarcinoma（肺腺癌）
+
+肺腺癌是最常见的NSCLC组织学亚型，也是分子靶向治疗最重要的疾病类别。
+
+肺腺癌中可能出现：
+
+- *EGFR* mutation；
+- *ALK* fusion；
+- *ROS1* fusion；
+- *RET* fusion；
+- *MET* exon 14 skipping alteration；
+- *BRAF* V600E mutation；
+- *KRAS* G12C mutation；
+- *ERBB2/HER2* mutation；
+- *NTRK* fusion；
+- 其他较少见的驱动改变。
+
+这些驱动改变在从不吸烟者、年轻患者和东亚患者中可能更常见，但不能仅根据临床特征决定是否检测。
+
+## Squamous Cell Carcinoma（鳞状细胞癌）
+
+SCC通常与长期吸烟密切相关，常发生于较大的中央气道。
+
+SCC具有以下特点：
+
+- 经典可靶向驱动改变总体少于肺腺癌；
+- 可能出现较高的基因组复杂性；
+- 常见*TP53*改变；
+- 可出现*FGFR1* amplification、*PIK3CA* mutation和其他改变；
+- 免疫治疗在晚期疾病中具有重要地位；
+- 某些抗血管生成药物的使用需要特别考虑出血风险。
+
+年轻、从不吸烟或小活检诊断为SCC的患者，仍可能需要广泛分子检测，因为小活检可能无法反映完整的组织学异质性。
+
+## Pathologic Markers（病理标志物）
+
+| 标志物 | 主要用途 |
+|---|---|
+| TTF-1 | 支持肺腺癌分化 |
+| Napsin A | 支持肺腺癌分化 |
+| p40 | 支持鳞状细胞癌分化 |
+| p63 | 可支持鳞状分化，但特异性低于p40 |
+| CK5/6 | 支持鳞状分化 |
+| Synaptophysin | 评估神经内分泌分化 |
+| Chromogranin | 评估神经内分泌分化 |
+| INSM1 | 支持神经内分泌肿瘤诊断 |
+
+对于小活检，应尽量使用有限的免疫组织化学panel完成分类，以保存组织用于分子检测。
+
+# Molecular [Biomarkers](../other/Biomarker.qmd)（分子生物标志物）
+
+## 检测原则
+
+晚期或转移性非鳞状NSCLC通常应进行广泛的分子检测。优先策略是使用多基因NGS，而不是依次进行多个单基因检测。
+
+常用样本包括：
+
+- 肿瘤组织；
+- 细胞学标本；
+- 胸腔积液细胞块；
+- 血浆ctDNA；
+- 其他经过验证的液体活检样本。
+
+组织和血浆检测具有互补性：
+
+| 检测方式 | 优势 | 主要局限 |
+|---|---|---|
+| Tissue NGS | 可同时评估组织学、DNA、RNA和蛋白表达 | 组织量有限、取样有创、周转时间可能较长 |
+| Plasma ctDNA | 微创、周转较快、可反映多病灶异质性 | 低肿瘤脱落时可能出现假阴性 |
+| RNA-based assay | 对融合和exon skipping alteration较敏感 | 对样本质量要求较高 |
+| IHC | 快速评估PD-L1或部分蛋白表达 | 不能替代完整基因组检测 |
+
+阴性ctDNA结果不能完全排除驱动变异。若血浆检测未发现可干预改变，且临床可行，通常仍需要组织检测。
+
+## 主要Actionable Biomarkers
+
+下表中的频率主要用于描述肺腺癌或非鳞状NSCLC。实际比例受种族、吸烟状态、检测方法和疾病阶段影响。
+
+| Biomarker | 肺腺癌中的大致频率 | 常见人群或特征 | 临床意义 |
+|---|---:|---|---|
+| *EGFR* sensitizing mutation | 西方约10%–15%；东亚约30%–50% | 从不吸烟者、女性和东亚患者中较常见 | 可使用EGFR-directed therapy |
+| *ALK* fusion | 约3%–7% | 较年轻、腺癌、轻度或从不吸烟者 | 可使用ALK TKI |
+| *ROS1* fusion | 约1%–2% | 腺癌、从不吸烟者中相对常见 | 可使用ROS1 TKI |
+| *BRAF* V600E mutation | 约1%–2% | 吸烟者和从不吸烟者均可出现 | 可使用BRAF和MEK联合抑制 |
+| *MET* exon 14 skipping | 约3%–4% | 年龄相对较大的患者中可见 | 可使用MET-directed therapy |
+| *RET* fusion | 约1%–2% | 腺癌和从不吸烟者中相对常见 | 可使用selective RET inhibitor |
+| *NTRK1/2/3* fusion | 通常低于1% | 无明确典型临床人群 | 可使用tumor-agnostic TRK inhibitor |
+| *KRAS* G12C mutation | 西方约10%–15%；东亚较低 | 吸烟相关腺癌中较常见 | 存在KRAS G12C-directed therapy |
+| *ERBB2/HER2* activating mutation | 约2%–4% | 非鳞状NSCLC、从不吸烟者中相对常见 | 可使用HER2-directed therapy |
+| *NRG1* fusion | 通常低于1% | 部分侵袭性黏液性腺癌 | 属于少见但潜在可干预亚组 |
+| *EGFR* exon 20 insertion | 约占*EGFR* mutation的4%–12% | 非鳞状NSCLC | 治疗策略不同于常见*EGFR* mutation |
+| *MET* amplification | 频率依cutoff而异 | 可为原发改变或EGFR TKI耐药机制 | 需区分高水平扩增与低水平拷贝数增加 |
+
+不同驱动变异通常相互排斥，但并非绝对。共突变可能影响疗效和预后。
+
+## EGFR
+
+**Epidermal growth factor receptor, EGFR（表皮生长因子受体）**常见敏感突变包括：
+
+- exon 19 deletion；
+- exon 21 L858R。
+
+其他较少见改变包括：
+
+- G719X；
+- L861Q；
+- S768I；
+- exon 20 insertion。
+
+不同突变对EGFR TKI的敏感性不同，因此不能将所有*EGFR* mutation视为同一治疗群体。
+
+获得性耐药机制可能包括：
+
+- secondary *EGFR* mutation；
+- *MET* amplification；
+- HER2 pathway activation；
+- histologic transformation；
+- epithelial-to-mesenchymal transition；
+- 其他旁路信号通路激活。
+
+疾病进展后可通过组织或ctDNA重新检测耐药机制。
+
+## ALK、ROS1与RET Fusion
+
+基因融合检测需要注意：
+
+- DNA panel可能漏检部分复杂融合；
+- RNA-based assay通常更适合确认表达性融合；
+- fusion partner可能影响检测灵敏度；
+- 不同TKI的中枢神经系统活性不同；
+- 耐药后可能出现secondary kinase-domain mutation。
+
+对存在脑转移风险的患者，选择具有较好CNS penetration的药物尤其重要。
+
+## KRAS G12C
+
+*KRAS*是肺腺癌中最常见的驱动基因之一，但只有部分具体变异目前具有成熟的靶向治疗选择。
+
+*KRAS* G12C患者的治疗效果还可能受到共突变影响，例如：
+
+- *STK11*；
+- *KEAP1*；
+- *TP53*。
+
+这些共突变可能与肿瘤免疫微环境、预后和免疫治疗敏感性有关，但尚不能在所有情况下直接决定治疗。
+
+## HER2 / ERBB2
+
+NSCLC中的HER2异常包括：
+
+- *ERBB2* activating mutation；
+- gene amplification；
+- protein overexpression。
+
+三者是不同的生物标志物，不能相互替代。
+
+截至2026年2月26日，美国FDA已扩大zongertinib的accelerated approval适应证，用于具有HER2 tyrosine kinase domain activating mutation的不可切除或转移性非鳞状NSCLC。治疗选择应依据具体突变、既往治疗、监管地区和适应证要求。
+
+## PD-L1
+
+PD-L1通常通过IHC评估，并以TPS表示。
+
+| PD-L1 TPS | 常见分类 | 主要意义 |
+|---|---|---|
+| <1% | 阴性 | 单药checkpoint inhibitor获益概率通常较低，但联合治疗仍可能有效 |
+| 1%–49% | 中低表达 | 通常结合疾病负荷和化疗联合策略考虑 |
+| ≥50% | 高表达 | 无驱动变异患者可能适合immune checkpoint inhibitor单药或联合治疗 |
+
+PD-L1是一个不完美的预测性生物标志物：
+
+- PD-L1高表达不保证治疗有效；
+- PD-L1阴性患者仍可能从联合免疫治疗获益；
+- 表达具有空间和时间异质性；
+- 不同assay和抗体clone之间可能不完全一致；
+- 既往治疗可能改变PD-L1表达；
+- 具有明确驱动变异的患者通常优先接受相应靶向治疗。
+
+## Tumor Mutational Burden
+
+**Tumor mutational burden, TMB（肿瘤突变负荷）**表示单位基因组区域内的体细胞突变数量。
+
+较高TMB可能与免疫原性增加相关，但其临床应用存在局限：
+
+- 不同panel的计算范围不同；
+- cutoff缺乏统一标准；
+- tissue TMB与blood TMB不能直接互换；
+- 某些高TMB肿瘤仍具有免疫耐药机制；
+- 在NSCLC中，TMB通常不是替代PD-L1的常规首要决策指标。
+
+# Staging（分期）
+
+NSCLC通常使用TNM系统进行分期。
+
+| 组成 | 评估内容 |
+|---|---|
+| T: Tumor | 肿瘤大小、位置、局部侵犯和同侧肺内其他病灶 |
+| N: Node | 肺门、纵隔、锁骨上及其他区域淋巴结受累 |
+| M: Metastasis | 对侧肺、胸膜、心包或远处器官转移 |
+
+## 临床分期框架
+
+| Stage | 一般疾病范围 | 主要治疗目标 |
+|---|---|---|
+| Stage I | 肿瘤局限于肺内，通常无淋巴结转移 | 根治性局部治疗 |
+| Stage II | 较大肿瘤和/或有限区域淋巴结受累 | 手术为主并结合系统治疗 |
+| Stage III | 局部晚期，常伴纵隔淋巴结或邻近结构受累 | 多学科根治性治疗 |
+| Stage IV | 存在远处转移、对侧肺结节或恶性胸膜/心包疾病 | 以系统治疗为主 |
+
+Stage III具有高度异质性，不能简单理解为单一人群。关键问题包括：
+
+- 是否可以完整切除；
+- N2或N3淋巴结范围；
+- 是否为单站或多站淋巴结受累；
+- 是否适合同步放化疗；
+- 是否具有明确驱动变异；
+- 患者能否耐受多模式治疗。
+
+## Oligometastatic Disease（寡转移疾病）
+
+部分Stage IV患者仅存在有限数量的转移病灶，可被称为oligometastatic disease。
+
+这类患者可能在系统治疗基础上接受：
+
+- 手术；
+- SBRT；
+- 脑立体定向放射外科；
+- 其他局部消融治疗。
+
+寡转移的定义在不同试验中并不统一，可能基于：
+
+- 转移器官数量；
+- 转移灶数量；
+- 是否可安全实施局部治疗；
+- 是否为同步或异时转移；
+- 是否为治疗后残留少量病灶。
+
+# Diagnosis（诊断）
+
+## 诊断流程
+
+典型的NSCLC诊断流程包括：
+
+1. 通过症状、筛查或偶然影像发现肺部异常；
+2. 使用胸部增强CT评估原发肿瘤和区域淋巴结；
+3. 根据需要使用PET-CT评估代谢活跃病灶和远处转移；
+4. 使用脑MRI评估脑转移；
+5. 获取组织或细胞学样本；
+6. 确认病理类型；
+7. 完成分子生物标志物和PD-L1检测；
+8. 完成TNM分期；
+9. 由多学科团队确定治疗策略。
+
+## 组织获取方式
+
+| 方法 | 主要用途 |
+|---|---|
+| Bronchoscopy | 中央型病灶或支气管内病灶 |
+| Endobronchial ultrasound-guided biopsy | 纵隔或肺门淋巴结分期和取样 |
+| CT-guided percutaneous biopsy | 外周肺部病灶 |
+| Thoracentesis | 恶性胸腔积液诊断 |
+| Surgical biopsy | 其他方法无法确诊或需要更大组织量时 |
+| Liquid biopsy | 组织不足或需快速分子检测时作为补充 |
+
+取样部位应尽量同时满足：
+
+- 病理诊断；
+- 分期；
+- 分子检测；
+- 尽量降低患者风险。
+
+## 基线分期检查
+
+根据疾病范围，常见检查包括：
+
+- 胸部和上腹部增强CT；
+- PET-CT；
+- brain MRI；
+- 骨相关检查；
+- 肺功能评估；
+- 实验室检查；
+- 手术患者的心肺功能和围手术期风险评估。
+
+即使没有神经系统症状，局部晚期或转移性NSCLC通常也需要考虑基线脑MRI。
+
+# Screening（筛查）
+
+高风险人群使用**low-dose computed tomography, LDCT（低剂量计算机断层扫描）**筛查可以降低肺癌死亡率。
+
+美国现行USPSTF筛查框架适用于：
+
+- 50–80岁；
+- 至少20 pack-years吸烟史；
+- 目前仍吸烟，或戒烟未满15年；
+- 健康状况允许接受后续诊断和潜在根治性治疗。
+
+筛查可能带来：
+
+- false-positive finding；
+- incidental finding；
+- overdiagnosis；
+- radiation exposure；
+- 侵入性诊断操作；
+- 患者焦虑。
+
+筛查获益依赖于合理选择高风险人群、规范结节管理和戒烟支持。
+
+# Treatment Landscape（治疗格局）
+
+# Early-Stage NSCLC（早期NSCLC）
+
+## 手术治疗
+
+可切除Stage I、Stage II及部分Stage III NSCLC通常以手术为核心。
+
+| 手术方式 | 主要说明 |
+|---|---|
+| Lobectomy | 肺叶切除，是许多可手术患者的标准方式 |
+| Segmentectomy | 对部分小型外周肿瘤可考虑 |
+| Wedge resection | 通常用于肺功能不足或不适合更大范围手术者 |
+| Pneumonectomy | 全肺切除，仅适用于部分中央型或范围较大的肿瘤 |
+| Lymph-node evaluation | 系统性淋巴结取样或清扫对准确分期至关重要 |
+
+手术切缘可分为：
+
+- R0：无显微镜下残留肿瘤；
+- R1：存在显微镜下残留；
+- R2：存在肉眼残留。
+
+切缘状态会影响辅助治疗和预后。
+
+## SBRT
+
+对于医学上不适合手术或拒绝手术的早期患者，SBRT可以提供较高的局部控制率。
+
+SBRT试验和临床实践需要考虑：
+
+- 中央型与外周型肿瘤；
+- 肿瘤大小；
+- 与支气管、食管和大血管的距离；
+- 既往放疗；
+- 基线肺功能；
+- radiation pneumonitis风险。
+
+## Perioperative Therapy（围手术期治疗）
+
+早期和可切除局部晚期NSCLC的系统治疗可以发生在：
+
+- neoadjuvant阶段；
+- adjuvant阶段；
+- perioperative阶段，即术前和术后均治疗。
+
+治疗选择取决于：
+
+- disease stage；
+- nodal status；
+- tumor size；
+- histology；
+- *EGFR*、*ALK*等分子状态；
+- PD-L1表达；
+- 患者能否耐受化疗和免疫治疗；
+- 手术后病理结果。
+
+## Neoadjuvant Therapy（新辅助治疗）
+
+新辅助治疗的潜在优势包括：
+
+- 缩小肿瘤；
+- 提高完整切除可能性；
+- 早期控制微转移病灶；
+- 直接观察肿瘤对治疗的敏感性；
+- 获取病理缓解终点。
+
+主要风险包括：
+
+- 毒性导致手术延迟；
+- 疾病进展导致无法手术；
+- 术前治疗增加围手术期复杂性；
+- 未接受手术患者的终点处理困难。
+
+## Adjuvant Therapy（辅助治疗）
+
+完全切除后，部分患者可接受：
+
+- platinum-based chemotherapy；
+- biomarker-directed targeted therapy；
+- immune checkpoint inhibitor；
+- 放疗，适用于特定高风险情形。
+
+辅助治疗的目标是清除微小残留病灶并降低复发风险。
+
+# Unresectable Stage III NSCLC（不可切除Stage III NSCLC）
+
+不可切除Stage III NSCLC通常采用多模式治疗。
+
+对身体状况允许的患者，核心治疗框架通常为：
+
+1. platinum-based concurrent chemoradiotherapy；
+2. 放化疗后未进展者接受consolidation therapy；
+3. 根据分子生物标志物考虑特定后续策略。
+
+同步放化疗通常比序贯化疗和放疗具有更强的疾病控制，但毒性也可能更高。
+
+常见毒性包括：
+
+- esophagitis；
+- radiation pneumonitis；
+- hematologic toxicity；
+- infection；
+- fatigue；
+- cardiac toxicity。
+
+## Stage III中的关键分类问题
+
+“不可切除”不是纯粹的解剖学定义，也受到以下因素影响：
+
+- 胸外科经验；
+- 淋巴结受累范围；
+- 是否可获得R0切除；
+- 手术风险；
+- 放疗可行性；
+- 多学科团队判断；
+- 患者偏好。
+
+因此，不同中心对部分Stage III患者的治疗策略可能不同。
+
+## Post-Chemoradiation Population（放化疗后人群）
+
+在放化疗后未进展患者中开展的巩固治疗试验，估计的是：
+
+> 已完成放化疗并且在该阶段未进展、仍符合随机化条件患者中的治疗效应。
+
+该结果不能直接外推到：
+
+- 未能完成放化疗者；
+- 放化疗期间进展者；
+- 因毒性无法进入巩固阶段者；
+- 未接受同步放化疗者。
+
+这是典型的post-baseline selection问题。
+
+# Metastatic NSCLC（转移性NSCLC）
+
+转移性NSCLC的治疗首先应判断是否存在actionable genomic alteration。
+
+## 存在Actionable Genomic Alteration
+
+对于具有明确驱动改变的患者，通常优先使用相应的靶向治疗。
+
+| 分子亚组 | 常见治疗方向 |
+|---|---|
+| *EGFR* common sensitizing mutation | EGFR TKI，可根据具体临床情形联合其他治疗 |
+| *ALK* fusion | CNS-active ALK TKI |
+| *ROS1* fusion | ROS1-directed TKI |
+| *BRAF* V600E | BRAF inhibitor联合MEK inhibitor |
+| *MET* exon 14 skipping | MET inhibitor |
+| *RET* fusion | Selective RET inhibitor |
+| *NTRK* fusion | TRK inhibitor |
+| *KRAS* G12C | KRAS G12C inhibitor，常用于特定治疗线次 |
+| *ERBB2/HER2* activating mutation | HER2-directed TKI或[ADC](../other/ADC.qmd)，依据适应证和治疗线次 |
+| *EGFR* exon 20 insertion | 针对该特定突变的治疗策略 |
+
+靶向治疗的主要优势通常包括：
+
+- 较高ORR；
+- 较快症状改善；
+- 较长PFS；
+- 部分药物具有较强CNS活性。
+
+但几乎所有晚期患者最终都可能发生耐药，因此需要考虑治疗后的再活检和耐药机制分析。
+
+## 无Actionable Genomic Alteration
+
+若未发现可靶向驱动改变，治疗主要依据：
+
+- PD-L1 TPS；
+- 鳞状或非鳞状组织学；
+- 肿瘤负荷；
+- 是否存在症状或内脏危象；
+- 脑转移；
+- autoimmune disease；
+- organ transplantation；
+- performance status；
+- 患者治疗偏好。
+
+## PD-L1高表达
+
+PD-L1 TPS ≥50%的部分患者可接受[immune checkpoint inhibitor](../other/Immunotherapy.qmd)单药。
+
+单药策略的潜在优势包括：
+
+- 避免化疗毒性；
+- 部分患者可获得长期缓解；
+- 治疗方案相对简化。
+
+但对于以下情况，可能更倾向考虑联合治疗：
+
+- 肿瘤负荷高；
+- 症状明显；
+- 需要快速肿瘤缩小；
+- aggressive disease；
+- 对单药早期进展风险存在担忧。
+
+## PD-L1中低表达或阴性
+
+常见策略包括：
+
+- [immune checkpoint inhibitor](../other/Immunotherapy.qmd)联合platinum-based chemotherapy；
+- dual immune checkpoint blockade，部分方案可联合短程化疗；
+- 依据组织学选择适当chemotherapy backbone。
+
+## Histology-Specific Chemotherapy
+
+| 组织学 | 常见化疗框架 |
+|---|---|
+| Nonsquamous NSCLC | Platinum + pemetrexed，部分患者进入pemetrexed maintenance |
+| Squamous NSCLC | Platinum + taxane或gemcitabine等 |
+| 未明确分类 | 应尽可能完善病理分类后选择方案 |
+
+Pemetrexed主要用于非鳞状NSCLC，不是典型SCC的标准药物。
+
+## Brain Metastases（脑转移）
+
+脑转移治疗取决于：
+
+- 病灶数量和大小；
+- 是否有症状；
+- 是否需要corticosteroid；
+- 是否存在mass effect；
+- 分子驱动状态；
+- 系统治疗的CNS活性；
+- 既往脑部放疗；
+- 患者预期生存。
+
+可能的治疗包括：
+
+- neurosurgery；
+- stereotactic radiosurgery；
+- whole-brain radiotherapy；
+- CNS-active targeted therapy；
+- systemic immunotherapy或化疗。
+
+临床试验必须明确区分：
+
+- treated and stable brain metastases；
+- untreated asymptomatic brain metastases；
+- active symptomatic brain metastases；
+- leptomeningeal disease。
+
+# Treatment Resistance（治疗耐药）
+
+## 靶向治疗耐药
+
+靶向治疗耐药可分为：
+
+- primary resistance；
+- acquired resistance。
+
+主要机制包括：
+
+| 耐药类型 | 示例 |
+|---|---|
+| On-target resistance | 靶蛋白出现secondary mutation |
+| Bypass pathway activation | *MET* amplification或其他旁路激活 |
+| Histologic transformation | 转化为SCLC或其他组织学类型 |
+| Phenotypic change | Epithelial-to-mesenchymal transition |
+| Pharmacologic resistance | CNS或其他sanctuary site暴露不足 |
+| Heterogeneous resistance | 不同病灶具有不同耐药机制 |
+
+疾病进展后应尽量进行组织或ctDNA检测。若怀疑SCLC transformation，组织活检尤其重要，因为液体活检不能可靠确认组织学转化。
+
+## 免疫治疗耐药
+
+免疫治疗耐药可能与以下因素有关：
+
+- 缺乏有效肿瘤抗原；
+- 抗原呈递缺陷；
+- T细胞排斥；
+- immunosuppressive TME；
+- alternative checkpoint activation；
+- *STK11*或*KEAP1*等共突变；
+- 长期corticosteroid使用；
+- host immune factors。
+
+目前许多免疫耐药机制仍处于研究阶段，尚不能全部转化为常规临床决策。
+
+# Prognosis（预后）
+
+NSCLC预后主要取决于疾病分期，但同一分期内也存在显著异质性。
+
+重要预后因素包括：
+
+| 因素 | 一般影响 |
+|---|---|
+| Disease stage | 最重要的预后因素之一 |
+| Performance status | 较差状态通常与较差结局相关 |
+| Weight loss | 明显体重下降通常提示不良预后 |
+| Molecular subtype | 可靶向驱动改变可显著改变治疗路径 |
+| Brain or liver metastasis | 通常与较差预后相关 |
+| Tumor burden | 较高负荷通常对应更高进展风险 |
+| Response depth | 深度缓解可能与更长疾病控制相关 |
+| Duration of response | 持久缓解通常具有重要临床价值 |
+| Access to subsequent therapy | 后续有效治疗可能显著影响OS |
+| Treatment era | 新型靶向和免疫治疗已改变部分亚组自然史 |
+
+不能使用单一中位生存时间代表所有NSCLC患者。
+
+例如：
+
+- 早期可切除患者可能获得长期无病生存；
+- 不可切除Stage III患者可能通过多模式治疗获得长期控制；
+- 具有特定驱动变异的Stage IV患者可能接受多线靶向治疗；
+- 部分免疫治疗患者可能出现长期生存平台；
+- aggressive molecular subtype患者可能较快进展。
+
+# Clinical Trial Endpoints（临床试验终点）
+
+## 常用终点
+
+| 终点 | 英文名称 | 典型应用 |
+|---|---|---|
+| OS | Overall survival | 各阶段确证性试验 |
+| PFS | Progression-free survival | 晚期和不可切除局部晚期疾病 |
+| DFS | Disease-free survival | 根治性切除后的辅助治疗 |
+| EFS | Event-free survival | 新辅助或围手术期治疗 |
+| ORR | Objective response rate | 早期开发、单臂试验和快速疗效评价 |
+| DOR | Duration of response | 评价缓解持久性 |
+| pCR | Pathological complete response | 新辅助治疗 |
+| Major pathological response | 主要病理缓解 | 新辅助NSCLC试验 |
+| CNS-PFS | Central nervous system progression-free survival | CNS-active药物试验 |
+| Intracranial ORR | 颅内客观缓解率 | 脑转移患者试验 |
+| PRO | Patient-reported outcome | 症状、功能和生活质量评价 |
+
+## Overall Survival
+
+**Overall survival, OS（总生存期）**通常定义为从随机化至任何原因死亡的时间。
+
+优势：
+
+- 定义清楚；
+- 临床意义直接；
+- 不依赖肿瘤评估频率；
+- 通常不存在测量者主观判断。
+
+局限：
+
+- 需要较长随访；
+- 受到后续治疗影响；
+- 受到treatment switching和crossover影响；
+- 在多线有效治疗环境中可能稀释组间差异；
+- 死亡原因不能区分治疗机制。
+
+## Progression-Free Survival
+
+**Progression-free survival, PFS（无进展生存期）**通常定义为从随机化至首次影像学疾病进展或死亡的时间。
+
+PFS对以下因素高度敏感：
+
+- 扫描时间表；
+- RECIST版本；
+- investigator或BICR评价；
+- 缺失扫描；
+- 新抗肿瘤治疗；
+- 死亡窗口；
+- 临床进展；
+- 非靶病灶评价；
+- 新病灶定义。
+
+PFS并不等同于患者“感觉良好的时间”，也不能自动代表OS或生活质量获益。
+
+## Objective Response Rate
+
+**Objective response rate, ORR（客观缓解率）**通常定义为达到confirmed complete response或partial response的患者比例。
+
+ORR适用于：
+
+- 单臂早期试验；
+- 靶向药物的快速疗效评价；
+- 需要快速肿瘤缩小的临床场景；
+- accelerated approval支持性证据。
+
+ORR必须结合DOR解释。较高ORR但DOR较短的治疗，其临床价值可能有限。
+
+## Disease-Free Survival
+
+**Disease-free survival, DFS（无病生存期）**常用于根治性切除后的辅助治疗试验。
+
+可能的DFS事件包括：
+
+- 局部复发；
+- 区域复发；
+- 远处复发；
+- 第二原发肺癌；
+- 其他第二原发恶性肿瘤；
+- 任何原因死亡。
+
+不同试验的DFS定义可能不同，比较结果前必须核对具体组成事件。
+
+## Event-Free Survival
+
+**Event-free survival, EFS（无事件生存期）**常用于新辅助或围手术期试验。
+
+可能事件包括：
+
+- 阻止手术的疾病进展；
+- 无法完成根治性手术；
+- 局部或远处复发；
+- 手术后疾病进展；
+- 任何原因死亡。
+
+未接受手术是否构成EFS事件以及事件日期如何定义，必须在protocol中预先说明。
+
+## Pathological Response
+
+常见病理终点包括：
+
+| 终点 | 常用定义 |
+|---|---|
+| pCR | 切除的原发肿瘤和淋巴结中无残余活肿瘤 |
+| Major pathological response | 原发肿瘤床中残余活肿瘤通常不超过10% |
+| Percent viable tumor | 连续量化残余活肿瘤比例 |
+
+病理缓解可以较早获得，但其作为EFS或OS替代终点的可靠性仍需根据治疗机制和试验证据判断。
+
+# Response Assessment（疗效评价）
+
+## RECIST 1.1
+
+晚期NSCLC试验通常使用RECIST 1.1。
+
+| 评价结果 | 英文名称 | 一般含义 |
+|---|---|---|
+| CR | Complete response | 所有靶病灶消失 |
+| PR | Partial response | 靶病灶总径达到规定程度的缩小 |
+| SD | Stable disease | 未达到PR，也未达到PD |
+| PD | Progressive disease | 靶病灶增长达到规定标准或出现新病灶 |
+| NE | Not evaluable | 缺乏充分数据进行评价 |
+
+## Immune-Related Response
+
+免疫治疗可能出现：
+
+- delayed response；
+- pseudoprogression；
+- mixed response；
+- durable stable disease；
+- long-term survival plateau。
+
+多数注册性NSCLC试验仍使用RECIST 1.1作为主要评价标准。iRECIST可以作为支持性框架，但不应在分析阶段未经预设地改变主要终点规则。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Disease Heterogeneity（疾病异质性）
+
+NSCLC试验中的治疗效果可能受以下因素影响：
+
+- histology；
+- disease stage；
+- actionable genomic alteration；
+- PD-L1 TPS；
+- smoking status；
+- brain metastasis；
+- liver metastasis；
+- performance status；
+- prior therapy；
+- geographic region；
+- ethnicity；
+- tumor burden；
+- co-mutation profile。
+
+总体治疗效果可能掩盖重要亚组差异，因此需要合理分层和预设亚组分析。
+
+## Stratification Factors（分层因素）
+
+| 分层因素 | 主要原因 |
+|---|---|
+| Histology | 鳞状和非鳞状疾病的治疗方案与预后不同 |
+| PD-L1 TPS | 影响免疫治疗敏感性 |
+| Geographic region | 影响人群特征和后续治疗 |
+| Brain metastasis | 重要预后因素 |
+| Disease stage | 反映基线风险 |
+| Smoking status | 与分子特征和免疫环境相关 |
+| Performance status | 强预后因素 |
+| Molecular alteration | 保证关键分子亚组平衡 |
+| Prior therapy | 影响耐药和预后 |
+| Sex | 部分研究中与生物学和预后相关 |
+
+随机化分层因素不宜过多，否则会形成大量小分层或空分层。
+
+## Biomarker-Enriched Design（生物标志物富集设计）
+
+靶向治疗试验通常采用biomarker-enriched design，仅纳入具有特定分子改变的患者。
+
+优势包括：
+
+- 增加观察治疗效果的概率；
+- 减少无关患者暴露；
+- 降低所需样本量；
+- 明确药物与靶点关系。
+
+挑战包括：
+
+- 生物标志物检测准确性；
+- 罕见突变导致招募缓慢；
+- 不同assay结果不一致；
+- central与local testing差异；
+- tissue与ctDNA discordance；
+- 复杂变异是否具有相同敏感性；
+- screening failure rate较高。
+
+## Companion Diagnostic
+
+若药物适应证要求使用特定检测识别患者，需要同步考虑companion diagnostic开发。
+
+统计和运营问题包括：
+
+- assay sensitivity和specificity；
+- invalid result；
+- missing sample；
+- bridging study；
+- 不同平台之间的一致性；
+- biomarker prevalence；
+- 临床试验assay与commercial assay差异。
+
+## Independent Review Versus Investigator Assessment
+
+PFS可以由：
+
+- investigator assessment；
+- IRC；
+- BICR；
+
+进行评价。
+
+| 评价方式 | 优势 | 局限 |
+|---|---|---|
+| Investigator assessment | 接近临床实践，可及时指导患者治疗 | 开放标签试验中可能受到治疗知识影响 |
+| BICR | 评价更标准化，可降低assessment bias | 依赖完整影像，可能与临床信息脱节 |
+| Audit BICR | 降低中央审评工作量 | 需要合理抽样和偏倚模型 |
+
+INV和BICR之间的不一致不一定表示某一方错误，可能来自：
+
+- 非靶病灶解释差异；
+- 新病灶判断；
+- 扫描时间不同；
+- BICR缺少临床信息；
+- retrospective review；
+- missing scan。
+
+## Assessment-Time Bias
+
+疾病进展只能在计划评估时被观察到，因此PFS本质上具有interval-censoring特征。
+
+若两组存在不同的：
+
+- 扫描频率；
+- 扫描延迟；
+- 早期停药率；
+- 治疗后随访；
+- 非计划影像使用；
+
+则可能产生评估时间偏倚。
+
+标准PFS分析通常使用发现进展的扫描日期，但敏感性分析可考虑不同事件日期规则。
+
+## Missing Tumor Assessments
+
+缺失扫描可能与毒性、病情恶化或治疗中止有关，因此可能是informative missingness。
+
+常见敏感性分析包括：
+
+- alternative censoring rules；
+- 将连续缺失后发生的进展回溯至较早时间；
+- 将特定缺失情形视为事件；
+- tipping-point analysis；
+- 多种死亡窗口；
+- inverse probability weighting。
+
+不能仅通过删除缺失患者解决问题。
+
+## Non-Proportional Hazards
+
+免疫治疗和部分靶向治疗可能导致：
+
+- delayed separation；
+- crossing survival curves；
+- long-term survival plateau；
+- treatment effect随时间变化。
+
+这可能违反**proportional hazards assumption, PH assumption（比例风险假设）**。
+
+除HR外，可补充：
+
+- Kaplan–Meier curves；
+- milestone survival；
+- RMST；
+- piecewise HR；
+- weighted log-rank test；
+- time-varying coefficient model。
+
+若主要检验仍采用log-rank test，应在设计阶段考虑预期曲线形态和统计功效。
+
+## Treatment Switching and Subsequent Therapy
+
+晚期NSCLC通常存在多线有效治疗，因此OS可能受到：
+
+- crossover；
+- progression后接受试验药或同类药物；
+- 后续靶向治疗；
+- 不同地区的药物可及性；
+- 再活检和耐药机制检测；
+- 局部治疗；
+- salvage therapy；
+
+影响。
+
+主要OS分析通常采用treatment-policy strategy。可探索使用：
+
+- rank-preserving structural failure time model；
+- inverse probability of censoring weighting；
+- two-stage adjustment。
+
+这些方法依赖较强假设，不应完全替代原始随机化比较。
+
+## Competing Risks（竞争风险）
+
+早期NSCLC患者可能在复发前死于：
+
+- 心血管疾病；
+- 慢性肺病；
+- 第二原发癌症；
+- 其他非NSCLC原因。
+
+若终点关注特定复发类型，可考虑：
+
+- cumulative incidence function；
+- cause-specific hazard model；
+- Fine–Gray model。
+
+若终点是复发或死亡的复合DFS，则不需要将死亡作为竞争事件，但必须清楚解释复合终点含义。
+
+## Multiplicity（多重性）
+
+NSCLC Phase 3试验常包含：
+
+- PFS和OS；
+- overall population和PD-L1 subgroup；
+- 多个剂量；
+- 多个组织学亚组；
+- CNS endpoint；
+- ORR和DOR；
+- 多次interim analysis；
+- 不同治疗组合。
+
+常见控制方法包括：
+
+- hierarchical testing；
+- graphical testing procedure；
+- alpha recycling；
+- group sequential design；
+- fallback procedure；
+- alpha splitting。
+
+必须预先明确：
+
+1. 初始alpha如何分配；
+2. PFS成功后多少alpha传递至OS；
+3. 总体和生物标志物亚组的检验顺序；
+4. interim analysis使用何种alpha-spending function；
+5. 一个假设失败后是否停止后续检验；
+6. 多个剂量或治疗臂如何控制family-wise type I error。
+
+## Subgroup Analysis（亚组分析）
+
+亚组内一个HR显著、另一个不显著，并不能证明两个亚组治疗效果不同。
+
+正确评估应关注：
+
+- treatment-by-subgroup interaction；
+- HR及其confidence interval；
+- 亚组样本量和事件数；
+- 分析是否预设；
+- 分组cutoff是否数据驱动；
+- 多重性；
+- 生物学合理性；
+- 与其他证据的一致性。
+
+特别是在少见驱动变异和脑转移亚组中，confidence interval通常较宽。
+
+## Estimand Considerations
+
+NSCLC试验中常见intercurrent events包括：
+
+- treatment discontinuation；
+- initiation of new anticancer therapy；
+- crossover；
+- local treatment of isolated progression；
+- surgery not performed；
+- death before tumor assessment；
+- histologic transformation；
+- loss to follow-up。
+
+主要estimand需要明确：
+
+| 要素 | 示例 |
+|---|---|
+| Population | 随机化的Stage IV、driver-negative NSCLC患者 |
+| Treatment | 分配的试验治疗与对照治疗 |
+| Variable | 从随机化至RECIST progression或死亡的时间 |
+| Intercurrent event strategy | 开始新治疗前未进展者按预设规则处理 |
+| Summary measure | Stratified HR及Kaplan–Meier estimates |
+
+不同PFS censoring rule实际上可能对应不同的治疗效果问题，不应仅视为技术选择。
+
+# Clinical Trial Design Considerations（临床试验设计考虑）
+
+## Early-Stage Trials（早期疾病试验）
+
+| 设计类型 | 主要临床问题 | 常见终点 |
+|---|---|---|
+| Neoadjuvant trial | 术前治疗能否提高病理缓解并改善长期结局 | pCR、major pathological response、EFS |
+| Adjuvant trial | 手术后治疗能否降低复发风险 | DFS、OS |
+| Perioperative trial | 术前加术后整体策略能否改善结局 | EFS、OS |
+| Biomarker-selected trial | 特定分子亚组是否从靶向治疗获益 | DFS、EFS、OS |
+
+围手术期试验必须处理：
+
+- 未接受手术；
+- 手术推迟；
+- R0、R1和R2切除；
+- 术后治疗未开始；
+- 新辅助期间进展；
+- 围手术期死亡；
+- treatment discontinuation；
+- 术后病理样本缺失。
+
+## Unresectable Stage III Trials
+
+关键设计要素包括：
+
+- 是否要求concurrent chemoradiotherapy；
+- 放疗剂量和质量控制；
+- 随机化发生在放化疗前还是后；
+- 是否只纳入未进展患者；
+- 从放疗结束到随机化的时间窗口；
+- 是否允许sequential chemoradiotherapy；
+- 是否纳入驱动变异阳性患者；
+- baseline和随访脑MRI要求。
+
+若随机化发生在放化疗完成后，主要分析人群已排除无法完成治疗或早期进展患者，因此不能估计完整治疗序列从诊断开始的效果。
+
+## First-Line Metastatic Trials
+
+关键入组标准包括：
+
+- 是否排除actionable genomic alterations；
+- PD-L1范围；
+- histology；
+- untreated brain metastasis；
+- performance status；
+- prior adjuvant therapy；
+- 从辅助治疗结束至复发的间隔；
+- 是否允许既往immune checkpoint inhibitor；
+- 是否允许baseline corticosteroid。
+
+## Targeted-Therapy Trials
+
+罕见驱动变异试验可能采用：
+
+- single-arm basket study；
+- multi-cohort study；
+- randomized Phase 2或Phase 3 study；
+- tissue-agnostic development；
+- historical control comparison。
+
+单臂试验通常重点评价：
+
+- confirmed ORR；
+- DOR；
+- CNS ORR；
+- PFS；
+- safety；
+- consistency across variant subtypes。
+
+若依赖ORR支持accelerated approval，通常仍需要后续确证性研究验证临床获益。
+
+## CNS-Focused Design
+
+具有CNS活性的药物试验应明确：
+
+- baseline brain MRI；
+- CNS target lesion definition；
+- prior brain radiotherapy；
+- corticosteroid use；
+- intracranial RECIST criteria；
+- CNS-PFS；
+- time to new brain metastasis；
+- competing extracranial progression；
+- leptomeningeal disease。
+
+颅内ORR不能替代全身疾病控制或OS，但可提供重要的药物分布和临床活性证据。
+
+# Practical Example（实践示例）
+
+假设开展一项随机、双盲Phase 3试验，比较新型PD-L1 × VEGF-A双特异性抗体与pembrolizumab，用于：
+
+> 未经系统治疗、局部晚期或转移性、PD-L1 TPS ≥50%、且无可靶向驱动变异的NSCLC患者。
+
+| 设计要素 | 示例 |
+|---|---|
+| Population | First-line advanced NSCLC with PD-L1 TPS ≥50% |
+| Experimental arm | Investigational PD-L1 × VEGF-A bispecific antibody |
+| Control arm | [Pembrolizumab](../compound/Keytruda.qmd) |
+| Primary endpoint | OS或PFS，依据protocol |
+| Key secondary endpoints | PFS或OS、ORR、DOR、PRO和安全性 |
+| Stratification factors | Histology、region、brain metastasis和PD-L1 TPS |
+| Primary analysis | Stratified log-rank test和Cox model |
+| Assessment | BICR-assessed PFS |
+| Main safety concern | Immune-mediated toxicity及VEGF-related bleeding、hypertension和proteinuria |
+| Main interpretive issue | 后续治疗、non-proportional hazards和不同histology下的效应异质性 |
+
+该试验的核心临床问题是：
+
+> 在PD-L1高表达且没有明确可靶向驱动改变的一线晚期NSCLC中，双重PD-L1/VEGF-A抑制是否优于标准PD-1单药治疗。
+
+如果试验显示PFS改善但OS尚未成熟，需要同时评估：
+
+- PFS HR和绝对中位数差异；
+- Kaplan–Meier曲线形态；
+- DOR；
+- early mortality；
+- subsequent therapy；
+- Grade ≥3 toxicity；
+- treatment discontinuation；
+- PRO；
+- OS maturity。
+
+# Common Pitfalls（常见误区）
+
+## 将NSCLC视为单一疾病
+
+NSCLC包括多个组织学和分子亚型。不同亚型的自然史、治疗和预后可能完全不同。
+
+## 只检测EGFR和ALK
+
+现代晚期非鳞状NSCLC通常需要广泛NGS检测。仅检测少数常见基因可能遗漏RET、MET、ROS1、BRAF、HER2和其他可干预改变。
+
+## 在分子检测完成前过早开始免疫治疗
+
+对于可能存在驱动变异的患者，在完整分子结果返回前开始免疫治疗，可能导致：
+
+- 错过最佳一线靶向治疗；
+- 后续治疗序贯复杂；
+- 某些TKI相关毒性增加；
+- 影响临床试验资格。
+
+## 将PD-L1高表达视为免疫治疗必然有效
+
+PD-L1是概率性而非确定性生物标志物。部分PD-L1高表达患者仍会发生早期进展。
+
+## 将PD-L1阴性理解为免疫治疗无效
+
+PD-L1阴性患者仍可能从免疫治疗联合化疗或其他组合策略中获益。
+
+## 将HER2 Mutation、Amplification和Expression混为一谈
+
+HER2 mutation、gene amplification和protein overexpression是不同生物标志物，需要不同检测和治疗证据。
+
+## 阴性Liquid Biopsy后停止检测
+
+低ctDNA shedding可能导致假阴性。若液体活检阴性，应在临床可行时补充组织检测。
+
+## 直接比较不同试验的Median PFS
+
+不同试验可能在以下方面不同：
+
+- biomarker selection；
+- line of therapy；
+- scanning schedule；
+- brain metastasis；
+- prior treatment；
+- assessment method；
+- censoring rules；
+- follow-up maturity。
+
+因此，不能仅凭两个median PFS数值判断药物优劣。
+
+## 将ORR等同于长期获益
+
+较高ORR不一定转化为更长PFS、OS或更好的生活质量。DOR和安全性同样重要。
+
+## 忽视脑转移
+
+药物的全身疗效不能自动代表CNS疗效。应单独评价颅内缓解和CNS进展。
+
+## 亚组内一个显著、另一个不显著就认为存在差异
+
+应使用interaction分析，而不是比较两个亚组各自的p值。
+
+# Key Takeaways（关键要点）
+
+1. NSCLC约占全部肺癌的80%–85%，主要包括肺腺癌和鳞状细胞癌。
+2. NSCLC治疗首先取决于疾病分期，其次取决于组织学、分子驱动变异、PD-L1表达和患者一般状况。
+3. 晚期非鳞状NSCLC应尽可能在一线治疗前完成广泛NGS和PD-L1检测。
+4. 存在actionable genomic alteration时，通常优先采用相应靶向治疗，而不是仅依据PD-L1选择免疫治疗。
+5. 早期、不可切除Stage III和转移性NSCLC对应不同的治疗目标、分析人群和临床试验终点。
+6. NSCLC试验需要重点处理疾病异质性、影像评估偏倚、脑转移、非比例风险、后续治疗、多重性和缺失评估。
+7. 解释试验结果时，不能只看HR或median PFS，还应结合曲线形态、DOR、OS成熟度、安全性、PRO和后续治疗。
+
+# References（参考文献）
+
+1. World Health Organization. *Lung cancer*. Updated June 2026.
+   <https://www.who.int/news-room/fact-sheets/detail/lung-cancer>
+
+2. International Agency for Research on Cancer. *Lung Cancer*.
+   <https://www.iarc.who.int/cancer-type/lung-cancer/>
+
+3. National Cancer Institute. *Non-Small Cell Lung Cancer Treatment (PDQ®)–Health Professional Version*. Updated May 15, 2025.
+   <https://www.cancer.gov/types/lung/hp/non-small-cell-lung-treatment-pdq>
+
+4. National Cancer Institute. *Non-Small Cell Lung Cancer Treatment (PDQ®)–Patient Version*. Updated May 16, 2025.
+   <https://www.cancer.gov/types/lung/patient/non-small-cell-lung-treatment-pdq>
+
+5. International Association for the Study of Lung Cancer. *CAP/IASLC/AMP Molecular Testing Guideline*.
+   <https://www.iaslc.org/research-education/research-committees/pathology-committee/cap/iaslc/amp-molecular-testing>
+
+6. International Association for the Study of Lung Cancer. *IASLC Atlas of Molecular Testing for Targeted Therapy in Lung Cancer*.
+   <https://www.iaslc.org/iaslc-atlas-molecular-testing-targeted-therapy-lung-cancer>
+
+7. U.S. Food and Drug Administration. *FDA grants accelerated approval to zongertinib for unresectable or metastatic non-squamous non-small cell lung cancer*. February 26, 2026.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zongertinib-unresectable-or-metastatic-non-squamous-non-small-cell>
+
+8. U.S. Food and Drug Administration. *FDA grants accelerated approval to sevabertinib for non-squamous non-small cell lung cancer*. November 19, 2025.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sevabertinib-non-squamous-non-small-cell-lung-cancer>
+
+9. U.S. Food and Drug Administration. *FDA approves tepotinib for metastatic NSCLC with MET exon 14 skipping alterations*. February 15, 2024.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tepotinib-metastatic-non-small-cell-lung-cancer>
+
+10. Travis WD, Brambilla E, Nicholson AG, et al. The 2015 World Health Organization classification of lung tumors. *Journal of Thoracic Oncology*. 2015;10:1243–1260.
+
+11. Lindeman NI, Cagle PT, Aisner DL, et al. Updated molecular testing guideline for the selection of lung cancer patients for treatment with targeted tyrosine kinase inhibitors. *Archives of Pathology & Laboratory Medicine*. 2018;142:321–346.
+
+12. Eisenhauer EA, Therasse P, Bogaerts J, et al. New response evaluation criteria in solid tumours: Revised RECIST guideline, version 1.1. *European Journal of Cancer*. 2009;45:228–247.
+
+13. Seymour L, Bogaerts J, Perrone A, et al. iRECIST: Guidelines for response criteria for use in trials testing immunotherapeutics. *The Lancet Oncology*. 2017;18:e143–e152.
+
+14. Goldstraw P, Chansky K, Crowley J, et al. The IASLC Lung Cancer Staging Project: Proposals for revision of the TNM stage groupings. *Journal of Thoracic Oncology*. 2016;11:39–51.
+
+15. Ramalingam SS, Vansteenkiste J, Planchard D, et al. Overall survival with osimertinib in untreated, EGFR-mutated advanced NSCLC. *New England Journal of Medicine*. 2020;382:41–50.
+
+16. Planchard D, Jänne PA, Cheng Y, et al. Osimertinib with or without chemotherapy in EGFR-mutated advanced NSCLC. *New England Journal of Medicine*. 2023;389:1935–1948.
+
+17. Antonia SJ, Villegas A, Daniel D, et al. Durvalumab after chemoradiotherapy in Stage III non-small-cell lung cancer. *New England Journal of Medicine*. 2017;377:1919–1929.
+
+18. Forde PM, Spicer J, Lu S, et al. Neoadjuvant nivolumab plus chemotherapy in resectable lung cancer. *New England Journal of Medicine*. 2022;386:1973–1985.

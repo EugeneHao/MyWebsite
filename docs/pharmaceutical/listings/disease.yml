@@ -238,21 +238,21 @@
   chinese: 肺癌
   body part: Lungs
   drugs: |
-    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Tafinlar](compound/Tafinlar.qmd), [Mekinist](compound/Mekinist.qmd), [Krazati](compound/Krazati.qmd), Tagrisso, Imfinzi
+    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Tafinlar](compound/Tafinlar.qmd), [Mekinist](compound/Mekinist.qmd), [Krazati](compound/Krazati.qmd), [Pumitamig](compound/Pumitamig.qmd), Tagrisso, Imfinzi
 
 - name: Non-Small Cell Lung Cancer (NSCLC)
   path: disease/NSCLC.html
   chinese: 非小细胞肺癌
   body part: Lungs
   drugs: |
-    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), Tagrisso, Imfinzi
+    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Pumitamig](compound/Pumitamig.qmd), Tagrisso, Imfinzi
 
 - name: Breast Cancer
   path: disease/Breast_Cancer.html
   chinese: 乳腺癌
   body part: Breast
   drugs: |
-    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd), [Lynparza](compound/Lynparza.qmd), [Keytruda](compound/Keytruda.qmd), [Tecentriq](compound/Tecentriq.qmd)
+    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd), [Lynparza](compound/Lynparza.qmd), [Keytruda](compound/Keytruda.qmd), [Tecentriq](compound/Tecentriq.qmd), [Pumitamig](compound/Pumitamig.qmd)
 
 - name: Stomach Cancer
   chinese: 胃癌
