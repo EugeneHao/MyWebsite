@@ -4,7 +4,7 @@ title: "Xarelto"
 
 ### **药物简介（Drug Overview）**
 
-拜瑞妥（Xarelto，通用名为利伐沙班 Rivaroxaban）是一种口服抗凝药物，属于直接Xa因子抑制剂。它用于预防和治疗血栓相关疾病，如深静脉血栓（Deep Vein Thrombosis, DVT）和肺栓塞（Pulmonary Embolism, PE）。
+拜瑞妥（Xarelto，通用名为利伐沙班 Rivaroxaban）是一种口服抗凝药物，属于直接Xa因子抑制剂。它用于预防和治疗血栓相关疾病，如深静脉血栓（Deep Vein [Thrombosis](../disease/Thrombosis.qmd), DVT）和肺栓塞（Pulmonary Embolism, PE）。
 
 ### **药物原理（Drug Mechanism）**
 

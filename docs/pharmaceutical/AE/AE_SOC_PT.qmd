@@ -90,7 +90,7 @@ editor_options:
 | Injection site reaction | 注射部位反应 | 1–2 | Low | No | Y | Topical corticosteroids, cold compress |
 | Pain (general) | 疼痛（全身性） | 1–3 | High | No | Y | Analgesics (acetaminophen, opioids if severe) |
 | Oedema (generalized) | 全身性水肿 | 2–3 | High | No | Partial | Diuretics, albumin if hypoalbuminemia |
-| Sudden death | 猝死 | 5 | High | Yes (some agents, e.g., anthracyclines, CAR-T) | N | Supportive resuscitation only |
+| Sudden death | 猝死 | 5 | High | Yes (some agents, e.g., anthracyclines, [CAR-T](../other/CAR-T.qmd)) | N | Supportive resuscitation only |
 | Multi-organ failure | 多器官功能衰竭 | 4–5 | High | Yes (severe immune therapies, sepsis) | N | ICU support, discontinuation of therapy |
 
 ## Musculoskeletal and connective tissue disorders {.unnumbered}

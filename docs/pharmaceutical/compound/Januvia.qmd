@@ -4,7 +4,7 @@ title: "Januvia"
 
 ### **药物简介（Drug Overview）**
 
-西格列汀（Sitagliptin，商业名称为Januvia）是一种口服降糖药，属于二肽基肽酶-4（Dipeptidyl Peptidase-4, DPP-4）抑制剂类。它被用于改善2型糖尿病（Type 2 Diabetes Mellitus）患者的血糖控制。
+西格列汀（Sitagliptin，商业名称为Januvia）是一种口服降糖药，属于二肽基肽酶-4（Dipeptidyl Peptidase-4, DPP-4）抑制剂类。它被用于改善2型糖尿病（[Type 2 Diabetes](../disease/T2DM.qmd) Mellitus）患者的血糖控制。
 
 ### **作用机制（Mechanism of Action）**
 

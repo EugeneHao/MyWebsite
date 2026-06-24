@@ -17,7 +17,7 @@ title: "Opdivo"
 -   高级非小细胞肺癌（Advanced Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）
 -   复发性或转移性黑色素瘤（Recurrent or Metastatic [Melanoma](../disease/Melanoma.qmd)）
 -   肾细胞癌（Renal Cell Carcinoma, RCC）
--   经典霍奇金淋巴瘤（Classical Hodgkin Lymphoma, cHL）
+-   经典霍奇金淋巴瘤（Classical Hodgkin [Lymphoma](../disease/Lymphoma.qmd), cHL）
 -   头颈部鳞状细胞癌（Head and Neck Squamous Cell Carcinoma, HNSCC）
 
 ## 副作用（Side Effects）

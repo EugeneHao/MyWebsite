@@ -14,7 +14,7 @@ title: "Yervoy"
 
 伊匹单抗被批准用于以下临床情况：
 
--   治疗不可切除或转移性黑色素瘤（Unresectable or Metastatic Melanoma）。
+-   治疗不可切除或转移性黑色素瘤（Unresectable or Metastatic [Melanoma](../disease/Melanoma.qmd)）。
 -   作为辅助治疗，用于治疗在手术后有复发风险的黑色素瘤。
 
 ## 副作用（Side Effects）

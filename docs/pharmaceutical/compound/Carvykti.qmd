@@ -4,7 +4,7 @@ title: "Carvykti"
 
 ### **药物简介（Drug Overview）**
 
-卡威克提（Carvykti，通用名为Ciltacabtagene autoleucel，简称Cilta-cel）是一种嵌合抗原受体T细胞（Chimeric Antigen Receptor T-cell，简称CAR-T）疗法。它是专为治疗多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)）设计的细胞治疗产品。
+卡威克提（Carvykti，通用名为Ciltacabtagene autoleucel，简称Cilta-cel）是一种嵌合抗原受体T细胞（Chimeric Antigen Receptor T-cell，简称[CAR-T](../other/CAR-T.qmd)）疗法。它是专为治疗多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)）设计的细胞治疗产品。
 
 ### **作用机制（Mechanism of Action）**
 

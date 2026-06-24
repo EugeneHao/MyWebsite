@@ -14,7 +14,7 @@ title: "Krazati"
 
 阿达格拉西布目前主要在临床试验中研究，用于治疗携带KRAS G12C突变的以下类型的癌症：
 
-1.  非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC）
+1.  非小细胞肺癌（Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）
 
 2.  结直肠癌（Colorectal Cancer, CRC）
 

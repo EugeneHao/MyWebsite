@@ -23,8 +23,8 @@ title: "ADC"
 -   蛋白质工程 (Protein Engineering)：设计或改变蛋白质结构以提高其疗效或稳定性。
 -   生物相似药物和生物仿制药 (Biosimilars and Biogenerics)：类似于现有生物药品的药物。
 -   干细胞技术 (Stem Cell Technology)：利用干细胞治疗疾病的技术。
--   生物标志物开发 (Biomarker Development)：识别用于指示疾病或治疗反应的生物标志物。
--   免疫治疗技术 (Immunotherapy Techniques)：包括疫苗和免疫调节药物的开发，用于增强或调节免疫系统。
+-   生物标志物开发 ([Biomarker](Biomarker.qmd) Development)：识别用于指示疾病或治疗反应的生物标志物。
+-   免疫治疗技术 ([Immunotherapy](Immunotherapy.qmd) Techniques)：包括疫苗和免疫调节药物的开发，用于增强或调节免疫系统。
 :::
 
 ## ADCs的工作原理

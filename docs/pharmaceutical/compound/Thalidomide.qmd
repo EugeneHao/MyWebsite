@@ -16,7 +16,7 @@ title: "Thalidomide"
 
 -   多发性骨髓瘤（[Multiple Myeloma](../disease/multiple_myeloma.qmd)），通常与其他药物联合使用。
 
--   某些类型的骨髓增生异常综合征（Myelodysplastic Syndromes, MDS）。
+-   某些类型的骨髓增生异常综合征（Myelodysplastic Syndromes, [MDS](../disease/MDS.qmd)）。
 
 -   皮肤病变，如类鱼鳞病（Ichthyosis）和红皮病（Erythroderma）。
 

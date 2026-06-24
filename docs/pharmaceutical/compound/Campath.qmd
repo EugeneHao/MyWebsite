@@ -4,7 +4,7 @@ title: "Campath"
 
 ### **药物简介（Drug Overview）**
 
-坎帕斯（Campath，通用名为亚历单抗 Alemtuzumab）是一种单克隆抗体（Monoclonal Antibody），原本用于治疗某些类型的癌症，如慢性淋巴细胞白血病（Chronic Lymphocytic Leukemia, CLL）。此外，它也被用于治疗多发性硬化症（Multiple Sclerosis, MS）。
+坎帕斯（Campath，通用名为亚历单抗 Alemtuzumab）是一种单克隆抗体（Monoclonal Antibody），原本用于治疗某些类型的癌症，如慢性淋巴细胞白血病（Chronic Lymphocytic [Leukemia](../disease/Leukemia.qmd), CLL）。此外，它也被用于治疗多发性硬化症（Multiple Sclerosis, MS）。
 
 ### **药物原理（Drug Mechanism）**
 

@@ -13,7 +13,7 @@ title: "Eliquis"
 阿哌沙班主要用于以下情况：
 
 + 预防中风和系统性栓塞事件，特别是在房颤（Atrial Fibrillation）患者中。
-深静脉血栓（Deep Vein Thrombosis, DVT）和肺栓塞（Pulmonary Embolism, PE）的治疗和预防。
+深静脉血栓（Deep Vein [Thrombosis](../disease/Thrombosis.qmd), DVT）和肺栓塞（Pulmonary Embolism, PE）的治疗和预防。
 + 在膝盖或髋部置换手术后预防静脉血栓栓塞症（Venous Thromboembolism, VTE）。
 
 

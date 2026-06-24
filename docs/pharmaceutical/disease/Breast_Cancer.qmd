@@ -1,0 +1,890 @@
+---
+title: "Breast Cancer（乳腺癌）"
+description: "系统介绍乳腺癌的流行病学、组织学与分子分型、分期、诊断、治疗格局，以及临床试验和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 疾病概述
+
+**Breast cancer（乳腺癌）**是起源于乳腺导管、乳腺小叶或其他乳腺组织的恶性肿瘤。绝大多数乳腺癌发生于女性，但男性也可能患病。
+
+乳腺癌并不是一种单一疾病。其临床行为、复发风险和治疗选择主要取决于：
+
+- 是否为原位癌或浸润性癌；
+- 组织学类型和分级；
+- 肿瘤大小和淋巴结状态；
+- 是否存在远处转移；
+- **estrogen receptor, ER（雌激素受体）**状态；
+- **progesterone receptor, PR（孕激素受体）**状态；
+- **human epidermal growth factor receptor 2, HER2（人表皮生长因子受体2）**状态；
+- 生殖系或体细胞基因变异；
+- 患者年龄、绝经状态、合并症和既往治疗。
+
+现代乳腺癌治疗通常依据疾病分期与分子亚型，将手术、放疗、内分泌治疗、化疗、HER2-directed therapy、靶向治疗、[免疫治疗](../other/Immunotherapy.qmd)和**antibody–drug conjugate, [ADC](../other/ADC.qmd)（抗体偶联药物）**进行组合或序贯使用。
+
+# 流行病学
+
+乳腺癌是全球女性中最常见的恶性肿瘤之一。根据World Health Organization和International Agency for Research on Cancer公布的GLOBOCAN 2022估计，全球每年约有230万例女性被诊断为乳腺癌，约67万人死于该疾病。
+
+美国Surveillance, Epidemiology, and End Results数据估计，2026年美国约有321,910例女性乳腺癌新发病例和42,140例相关死亡。2019–2023年女性乳腺癌年龄标化发病率约为每10万人132.5例。
+
+乳腺癌主要发生于中老年女性，但年轻女性也可能患病。美国患者诊断时的中位年龄约为64岁。不同国家和人群的发病率、诊断阶段和死亡率存在明显差异，这些差异可能与筛查覆盖、医疗可及性、生育模式、生活方式和遗传背景有关。
+
+男性乳腺癌约占全部乳腺癌的1%，其治疗原则通常参考女性乳腺癌，但男性患者更常为ER阳性，并可能具有不同的遗传风险特征。
+
+## Risk Factors（危险因素）
+
+| 危险因素 | 主要说明 |
+|---|---|
+| Increasing age | 年龄增加是最重要的风险因素之一 |
+| Female sex | 绝大多数病例发生于女性 |
+| Family history | 一级亲属乳腺癌或卵巢癌史可能增加风险 |
+| Germline pathogenic variant | *BRCA1*、*BRCA2*、*PALB2*、*TP53*等基因致病变异可增加风险 |
+| Reproductive history | 初潮较早、绝经较晚、未生育或首次足月妊娠较晚与风险升高相关 |
+| Dense breast tissue | 乳腺致密度较高既增加风险，也降低钼靶筛查敏感性 |
+| Prior breast lesion | 非典型导管增生、小叶原位瘤等与后续风险升高相关 |
+| Prior chest radiation | 年轻时接受胸部放疗可增加后续乳腺癌风险 |
+| Postmenopausal hormone therapy | 部分绝经后激素治疗方案可增加风险 |
+| Alcohol use | 饮酒量增加与乳腺癌风险升高相关 |
+| Obesity after menopause | 绝经后肥胖与部分HR阳性乳腺癌风险升高相关 |
+| Physical inactivity | 缺乏运动可能增加风险 |
+
+多数乳腺癌患者并不存在明确的遗传综合征。缺少家族史也不能排除乳腺癌或生殖系致病变异。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| ADC | Antibody–drug conjugate | 抗体偶联药物 |
+| BCS | Breast-conserving surgery | 保乳手术 |
+| BICR | Blinded independent central review | 盲态独立中心审评 |
+| CI | Confidence interval | 置信区间 |
+| DFS | Disease-free survival | 无病生存期 |
+| DOR | Duration of response | 缓解持续时间 |
+| EFS | Event-free survival | 无事件生存期 |
+| ER | Estrogen receptor | 雌激素受体 |
+| HER2 | Human epidermal growth factor receptor 2 | 人表皮生长因子受体2 |
+| HR | Hormone receptor | 激素受体 |
+| iDFS | Invasive disease-free survival | 浸润性无病生存期 |
+| IRC | Independent review committee | 独立审评委员会 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| pCR | Pathological complete response | 病理完全缓解 |
+| PFS | Progression-free survival | 无进展生存期 |
+| PR | Progesterone receptor | 孕激素受体 |
+| RCB | Residual cancer burden | 残余肿瘤负荷 |
+| TNBC | Triple-negative breast cancer | 三阴性乳腺癌 |
+
+# Histologic Classification（组织学分类）
+
+## 原位癌与浸润性癌
+
+| 类型 | 英文名称 | 主要特征 |
+|---|---|---|
+| 导管原位癌 | Ductal carcinoma in situ, DCIS | 异常细胞局限于乳腺导管内，尚未突破基底膜；属于非浸润性病变 |
+| 小叶原位瘤 | Lobular carcinoma in situ, LCIS | 更多被视为双侧乳腺癌风险标志，而非典型浸润性癌前体 |
+| 浸润性导管癌 | Invasive ductal carcinoma / invasive carcinoma of no special type | 最常见的浸润性乳腺癌类型 |
+| 浸润性小叶癌 | Invasive lobular carcinoma, ILC | 约占浸润性乳腺癌的10%–15%；常与细胞黏附蛋白E-cadherin缺失相关 |
+| 特殊组织学亚型 | Special histologic subtypes | 包括管状癌、黏液癌、筛状癌和化生性癌等 |
+
+DCIS本身不会产生远处转移，但未经治疗的部分DCIS可能发展为浸润性乳腺癌。DCIS的主要治疗目标是防止同侧乳腺发生浸润性或原位复发，同时避免过度治疗。
+
+## Histologic Grade（组织学分级）
+
+浸润性乳腺癌通常使用Nottingham grading system进行分级，主要评估：
+
+1. 腺管形成程度；
+2. 细胞核异型性；
+3. 有丝分裂活性。
+
+| 分级 | 一般含义 |
+|---|---|
+| Grade 1 | 分化较好，通常生长较慢 |
+| Grade 2 | 中度分化 |
+| Grade 3 | 分化较差，通常增殖较快且侵袭性较高 |
+
+组织学分级是重要的预后因素，但不能独立决定治疗方案。
+
+# Molecular Classification（分子分型）
+
+临床实践中最常使用ER、PR和HER2状态进行分型。ER和PR统称为**hormone receptor, HR（激素受体）**。
+
+根据美国SEER 2019–2023年女性乳腺癌数据，各临床亚型的大致分布如下：
+
+| 临床亚型 | 定义 | 女性乳腺癌中的大致比例 | 主要特点 |
+|---|---|---:|---|
+| HR-positive/HER2-negative | ER和/或PR阳性，HER2阴性 | 约70% | 最常见；通常对内分泌治疗敏感 |
+| HR-positive/HER2-positive | HR阳性，HER2阳性 | 约9% | 可同时使用内分泌治疗和HER2-directed therapy |
+| HR-negative/HER2-positive | HR阴性，HER2阳性 | 约4% | 通常生物学侵袭性较高，但对HER2-directed therapy敏感 |
+| Triple-negative breast cancer, TNBC | ER阴性、PR阴性、HER2阴性 | 约11% | 缺少传统ER、PR和HER2靶点；异质性高 |
+| Unknown | 检测缺失或状态未知 | 约6% | 不能进行可靠的分子亚型分类 |
+
+以上比例的分母为SEER登记的女性乳腺癌病例，并可能随人群、检测标准、年份和病例构成变化。
+
+## Intrinsic Molecular Subtypes（内在分子亚型）
+
+基因表达分析可将乳腺癌进一步分为：
+
+| 分子亚型 | 常见临床特征 | 一般生物学行为 |
+|---|---|---|
+| Luminal A | 多为HR阳性、HER2阴性、低增殖 | 通常预后较好，对内分泌治疗敏感 |
+| Luminal B | 多为HR阳性，可为HER2阳性或阴性，增殖较高 | 复发风险通常高于Luminal A |
+| HER2-enriched | HER2相关基因高表达，但不完全等同于临床HER2阳性 | 生物学侵袭性较高 |
+| Basal-like | 常与TNBC重叠，但并非完全相同 | 增殖较快，异质性高 |
+| Normal-like | 生物学定义和临床意义存在一定争议 | 可能受正常组织成分影响 |
+
+临床IHC分型不能完全替代基因表达分型。例如，TNBC不等于basal-like，HER2阳性也不一定属于HER2-enriched亚型。
+
+# Molecular Biomarkers（分子生物标志物）
+
+## ER、PR与HER2
+
+| Biomarker | 检测方式 | 临床意义 |
+|---|---|---|
+| ER | Immunohistochemistry, IHC | 预测内分泌治疗获益 |
+| PR | IHC | 辅助评估HR状态和肿瘤生物学 |
+| HER2 | IHC，并在必要时使用in situ hybridization, ISH | 预测HER2-directed therapy获益 |
+| Ki-67 | IHC | 反映增殖活性，但检测重复性和cutoff存在局限 |
+
+ER表达通常以肿瘤细胞核染色比例评估。低水平ER表达患者的生物学特征和内分泌治疗获益可能不同于典型ER高表达患者。
+
+HER2检测需要区分：
+
+- HER2-positive；
+- HER2-negative；
+- HER2-low；
+- HER2-ultralow。
+
+HER2-low和HER2-ultralow主要是治疗选择相关的表达分类，并不是传统意义上的独立疾病亚型。其定义和临床用途可能随药物适应证、检测标准及监管批准更新。
+
+## 主要基因与可干预通路
+
+| Biomarker或通路 | 常见人群 | 临床意义 |
+|---|---|---|
+| *BRCA1/BRCA2* germline pathogenic variant | 遗传性乳腺癌、年轻患者、TNBC或明显家族史患者 | 影响风险管理，并可预测部分PARP inhibitor获益 |
+| *PALB2* pathogenic variant | 部分遗传性乳腺癌 | 增加乳腺癌风险；治疗预测价值仍在研究 |
+| *PIK3CA* mutation | HR阳性/HER2阴性晚期乳腺癌中较常见 | 可用于选择PI3K或AKT通路相关治疗 |
+| *ESR1* mutation | 经芳香化酶抑制剂治疗后的HR阳性晚期乳腺癌中较常见 | 与内分泌耐药相关，可指导部分ER-directed therapy |
+| *AKT1* alteration | 部分HR阳性/HER2阴性乳腺癌 | 可影响AKT pathway-directed therapy选择 |
+| *PTEN* alteration | 多个分子亚型 | 可能与PI3K–AKT通路激活和治疗选择有关 |
+| PD-L1 expression | 主要用于晚期TNBC | 可用于选择部分免疫治疗方案 |
+| Microsatellite instability-high, MSI-H | 乳腺癌中少见 | 可能支持tumor-agnostic immunotherapy |
+| NTRK gene fusion | 极少见 | 可能支持tumor-agnostic TRK inhibitor治疗 |
+
+[生物标志物](../other/Biomarker.qmd)频率取决于疾病阶段、既往治疗、检测平台、样本来源及亚型。原发肿瘤与转移灶之间也可能出现ER、PR、HER2或其他分子状态变化。
+
+## Genomic Assays（基因表达检测）
+
+对于部分早期HR阳性/HER2阴性乳腺癌患者，多基因表达检测可辅助评估复发风险及化疗获益。
+
+常见检测包括：
+
+- Oncotype DX；
+- MammaPrint；
+- Prosigna；
+- EndoPredict；
+- Breast Cancer Index。
+
+这些检测的适用人群、验证终点和治疗决策价值不同，不能相互直接替代。检测结果应结合淋巴结状态、肿瘤大小、分级、年龄和绝经状态解释。
+
+# Staging（分期）
+
+乳腺癌通常使用American Joint Committee on Cancer的**Tumor–Node–Metastasis, TNM（原发肿瘤–区域淋巴结–远处转移）**系统进行分期。
+
+| 组成 | 评估内容 |
+|---|---|
+| T: Tumor | 原发肿瘤大小及对皮肤或胸壁的侵犯 |
+| N: Node | 腋窝、内乳和锁骨区域淋巴结受累情况 |
+| M: Metastasis | 是否存在远处转移 |
+
+AJCC乳腺癌分期除传统解剖学分期外，还可结合：
+
+- ER状态；
+- PR状态；
+- HER2状态；
+- 组织学分级；
+- 部分基因表达结果。
+
+## 临床阶段
+
+| 阶段 | 一般含义 | 主要治疗目标 |
+|---|---|---|
+| Stage 0 | DCIS等非浸润性病变 | 防止局部复发和发展为浸润性癌 |
+| Stage I | 较小且局限的浸润性肿瘤 | 根治 |
+| Stage II | 较大肿瘤和/或有限区域淋巴结受累 | 根治 |
+| Stage III | 局部晚期，存在广泛区域淋巴结或局部结构受累 | 多学科根治性治疗 |
+| Stage IV | 存在远处转移 | 延长生存、控制疾病和维持生活质量 |
+
+常见转移部位包括：
+
+- 骨；
+- 肝；
+- 肺和胸膜；
+- 脑；
+- 远处淋巴结。
+
+不同分子亚型的转移模式可能不同。例如，HER2阳性和TNBC具有较高的脑转移风险，而HR阳性乳腺癌常见骨转移。
+
+# Diagnosis（诊断）
+
+## 诊断流程
+
+乳腺癌的典型诊断流程包括：
+
+1. 筛查或症状触发乳腺影像检查；
+2. 对异常区域进行诊断性mammography、ultrasound或breast MRI；
+3. 使用core needle biopsy获取组织；
+4. 确认组织学类型和分级；
+5. 检测ER、PR和HER2；
+6. 根据临床阶段和症状决定是否进行全身分期影像；
+7. 根据年龄、家族史和临床特征评估germline genetic testing；
+8. 由外科、肿瘤内科、放疗科、影像科、病理科和遗传咨询团队进行综合评估。
+
+## 常见临床表现
+
+可能的临床表现包括：
+
+- 无痛性乳房肿块；
+- 腋窝肿块；
+- 乳房形状或大小改变；
+- 乳头内陷或异常分泌物；
+- 乳房皮肤凹陷、增厚或橘皮样改变；
+- 乳头或乳晕湿疹样改变；
+- 持续性局部疼痛。
+
+早期乳腺癌可能完全没有症状，仅通过筛查发现。
+
+## Screening（筛查）
+
+Mammography是人群乳腺癌筛查的主要工具。具体起始年龄和筛查间隔因国家、专业组织及个人风险不同而有所差异。
+
+高风险女性可能需要更早或更强化的筛查，例如联合使用：
+
+- mammography；
+- breast MRI；
+- 遗传咨询与基因检测；
+- 风险降低药物；
+- 风险降低手术。
+
+致密乳腺组织可能降低mammography的敏感性，但是否增加额外影像检查应结合总体风险和当地指南。
+
+# Treatment Landscape（治疗格局）
+
+## Early-Stage Breast Cancer（早期乳腺癌）
+
+早期乳腺癌通常以根治为目标，治疗可能包括：
+
+- 手术；
+- 放疗；
+- neoadjuvant systemic therapy；
+- adjuvant systemic therapy；
+- 内分泌治疗；
+- HER2-directed therapy；
+- 化疗；
+- 免疫治疗；
+- 特定高风险或分子亚组的靶向治疗。
+
+## Surgery（手术）
+
+主要手术方式包括：
+
+| 手术方式 | 英文名称 | 主要说明 |
+|---|---|---|
+| 保乳手术 | Breast-conserving surgery, BCS | 切除肿瘤并保留大部分乳房，通常需术后放疗 |
+| 全乳切除术 | Mastectomy | 切除全部乳腺组织 |
+| 前哨淋巴结活检 | Sentinel lymph node biopsy | 用于评估区域淋巴结状态并减少不必要的腋窝清扫 |
+| 腋窝淋巴结清扫 | Axillary lymph node dissection | 用于部分淋巴结阳性或高风险患者 |
+
+对适当选择的早期患者，BCS联合放疗与mastectomy通常具有相近的长期生存结局。选择主要取决于肿瘤范围、乳房大小、遗传风险、放疗可行性和患者偏好。
+
+## Neoadjuvant Therapy（新辅助治疗）
+
+新辅助治疗是手术前给予的系统性治疗，常用于：
+
+- 局部晚期乳腺癌；
+- HER2阳性乳腺癌；
+- TNBC；
+- 需要缩小肿瘤以增加保乳机会的患者；
+- 希望根据术后残余病灶调整后续治疗的患者。
+
+新辅助治疗的重要优势是能够直接观察肿瘤对治疗的敏感性，并以pCR或RCB评估残余病灶。
+
+## HR阳性/HER2阴性疾病
+
+### 早期疾病
+
+治疗基础通常为内分泌治疗，包括：
+
+- tamoxifen；
+- aromatase inhibitor；
+- ovarian function suppression。
+
+是否加入化疗取决于：
+
+- 肿瘤大小；
+- 淋巴结状态；
+- 组织学分级；
+- 年龄和绝经状态；
+- Ki-67；
+- 多基因表达检测；
+- 临床复发风险。
+
+部分高风险患者还可能接受CDK4/6 inhibitor等强化辅助治疗。
+
+### 晚期或转移性疾病
+
+在不存在需要快速肿瘤缩小的内脏危象时，治疗通常优先采用内分泌治疗联合靶向药物。
+
+常见治疗方向包括：
+
+- CDK4/6 inhibitor联合内分泌治疗；
+- selective estrogen receptor degrader；
+- 针对*PIK3CA*、*AKT1*、*PTEN*或*mTOR*通路的治疗；
+- 针对*ESR1* mutation的ER-directed therapy；
+- PARP inhibitor用于部分germline *BRCA1/2*致病变异患者；
+- ADC；
+- 化疗。
+
+晚期治疗顺序取决于既往内分泌敏感性、耐药机制、疾病负荷和生物标志物。
+
+## HER2阳性疾病
+
+HER2阳性乳腺癌过去预后较差，但HER2-directed therapy显著改善了早期和晚期疾病结局。
+
+### 早期疾病
+
+治疗可能包括：
+
+- 化疗联合HER2-directed therapy；
+- neoadjuvant therapy；
+- 术后根据pCR或残余浸润性病灶选择辅助治疗；
+- HR阳性患者同时接受内分泌治疗。
+
+### 晚期疾病
+
+治疗可能包括：
+
+- HER2 monoclonal antibody；
+- HER2 tyrosine kinase inhibitor；
+- HER2-directed ADC；
+- 化疗；
+- HR阳性患者的内分泌治疗。
+
+HER2阳性晚期乳腺癌试验需要特别关注脑转移患者，因为不同HER2-directed therapy的中枢神经系统活性可能存在明显差异。
+
+## Triple-Negative Breast Cancer（三阴性乳腺癌）
+
+TNBC缺少ER、PR和传统HER2靶点，通常具有较高的早期复发风险，但其生物学高度异质。
+
+### 早期疾病
+
+对高风险早期TNBC，新辅助治疗通常包含：
+
+- anthracycline和taxane类化疗；
+- 部分患者加入platinum；
+- 符合条件时联合免疫治疗。
+
+术后治疗可能根据：
+
+- 是否达到pCR；
+- RCB；
+- germline *BRCA1/2*状态；
+- 是否存在残余浸润性病灶；
+
+进行风险适应性调整。
+
+### 晚期疾病
+
+治疗选择可能包括：
+
+- PD-1或PD-L1 inhibitor联合化疗，用于符合生物标志物要求的患者；
+- PARP inhibitor，用于部分germline *BRCA1/2*致病变异患者；
+- ADC；
+- 单药或联合化疗；
+- 临床试验。
+
+## Locally Advanced and Inflammatory Breast Cancer
+
+**Inflammatory breast cancer（炎性乳腺癌）**是一种进展迅速的临床类型，常表现为乳房红肿、皮肤增厚和橘皮样改变。
+
+治疗通常采用多学科模式：
+
+1. neoadjuvant systemic therapy；
+2. mastectomy及腋窝手术；
+3. postoperative radiation therapy；
+4. 根据亚型继续系统性治疗。
+
+炎性乳腺癌通常不适合初始BCS。
+
+## Metastatic Breast Cancer（转移性乳腺癌）
+
+转移性乳腺癌通常难以治愈，但部分患者可以通过长期序贯治疗获得多年疾病控制。
+
+治疗目标包括：
+
+- 延长OS；
+- 控制肿瘤相关症状；
+- 延缓疾病进展；
+- 保持身体功能和生活质量；
+- 减少治疗毒性；
+- 预防骨折、脊髓压迫和脑部并发症。
+
+开始晚期治疗前，如临床可行，应对转移灶重新活检并检测ER、PR和HER2，因为生物标志物可能与原发肿瘤不同。
+
+# Prognosis（预后）
+
+乳腺癌预后取决于疾病分期、分子亚型、组织学分级、年龄、治疗反应和医疗可及性。
+
+美国SEER 2016–2022年数据中，女性乳腺癌总体5年相对生存率约为91.9%。按SEER summary stage分类：
+
+| 疾病范围 | 5年相对生存率 | 解释 |
+|---|---:|---|
+| Localized | 接近100% | 肿瘤局限于乳房 |
+| Regional | 约87.5% | 已累及区域淋巴结或邻近结构 |
+| Distant | 约33.8% | 存在远处转移 |
+
+这些是人群水平的历史估计，不代表个体患者的确定结局。实际预后还受到以下因素影响：
+
+- HR和HER2状态；
+- 肿瘤分级和增殖活性；
+- 淋巴结受累数量；
+- 是否达到pCR；
+- RCB水平；
+- 是否存在脑、肝或广泛骨转移；
+- 对治疗的敏感性；
+- 是否可接受后续有效治疗。
+
+HR阳性乳腺癌可能在初始治疗多年后复发，因此较短随访可能低估其长期复发风险。TNBC和HER2阳性疾病的复发风险通常更集中在诊断后的早期阶段，但HER2-directed therapy已显著改变HER2阳性疾病的自然史。
+
+# Clinical Trial Endpoints（临床试验终点）
+
+## 早期乳腺癌常用终点
+
+| 终点 | 英文名称 | 典型定义或用途 |
+|---|---|---|
+| pCR | Pathological complete response | 新辅助治疗后乳房和取样淋巴结中无残余浸润性肿瘤；具体定义需预先规定 |
+| RCB | Residual cancer burden | 综合原发肿瘤床、残余肿瘤细胞比例和淋巴结病灶量化残余疾病 |
+| EFS | Event-free survival | 从随机化至阻止手术的进展、局部或远处复发、第二原发肿瘤或死亡；定义因试验而异 |
+| DFS | Disease-free survival | 根治性治疗后至复发、第二原发肿瘤或死亡的时间 |
+| iDFS | Invasive disease-free survival | 排除部分非浸润性事件，重点评价浸润性复发、第二原发浸润性癌或死亡 |
+| Distant DFS | Distant disease-free survival | 至远处复发或死亡的时间 |
+| OS | Overall survival | 从随机化至任何原因死亡的时间 |
+
+不同乳腺癌试验对DFS、iDFS和EFS的组成事件可能不同。比较不同研究结果前必须核对protocol或statistical analysis plan中的具体定义。
+
+## 晚期乳腺癌常用终点
+
+| 终点 | 英文名称 | 主要用途 |
+|---|---|---|
+| [PFS](../other/PFS.qmd) | Progression-free survival | 评价疾病进展或死亡风险 |
+| OS | Overall survival | 评价生存获益 |
+| ORR | Objective response rate | 评价达到完全缓解或部分缓解的患者比例 |
+| DOR | Duration of response | 评价缓解的持久性 |
+| Clinical benefit rate | 临床获益率 | 通常包括缓解和达到规定持续时间的稳定疾病 |
+| Time to treatment failure | 至治疗失败时间 | 可包含进展、毒性停药或其他治疗失败原因 |
+| Patient-reported outcome | 患者报告结局 | 评价症状、功能和生活质量 |
+| Time to deterioration | 至恶化时间 | 评价症状或功能发生临床有意义恶化的时间 |
+
+## pCR的定义问题
+
+常见pCR定义包括：
+
+| 定义 | 解释 |
+|---|---|
+| ypT0 ypN0 | 乳房和淋巴结中均无浸润性或原位癌 |
+| ypT0/is ypN0 | 乳房和淋巴结中无残余浸润性癌，但可存在DCIS |
+| Breast pCR | 仅评价乳房，不要求淋巴结阴性 |
+
+ypT0/is ypN0是乳腺癌新辅助试验中较常用的定义。不同定义会产生不同的pCR率，因此主要分析必须预先规定唯一、可重复的定义。
+
+pCR与长期结局的关联在HER2阳性和TNBC中通常较强，但患者层面的预后关联并不等同于试验层面的surrogacy。提高pCR率并不能自动证明一定改善EFS或OS。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## 疾病异质性
+
+乳腺癌试验必须考虑以下异质性来源：
+
+- HR/HER2亚型；
+- 早期或转移性疾病；
+- 淋巴结状态；
+- 绝经状态；
+- germline mutation；
+- 既往内分泌治疗或HER2-directed therapy；
+- de novo metastatic与复发性转移；
+- 内脏转移和脑转移；
+- disease-free interval；
+- 既往CDK4/6 inhibitor或ADC暴露。
+
+不同亚型的自然史和治疗效应可能明显不同，因此不应在缺乏临床和统计依据时将其合并为单一总体。
+
+## Stratification Factors（分层因素）
+
+乳腺癌随机试验常用分层因素包括：
+
+| 分层因素 | 主要原因 |
+|---|---|
+| HR和HER2状态 | 决定疾病生物学和治疗敏感性 |
+| Disease stage | 反映基线复发或死亡风险 |
+| Nodal status | 早期乳腺癌的重要预后因素 |
+| Menopausal status | 影响内分泌治疗和化疗获益 |
+| Prior therapy | 影响耐药机制和治疗效应 |
+| Visceral metastasis | 与疾病负荷和预后相关 |
+| Brain metastasis | 影响预后和CNS endpoint |
+| Disease-free interval | 区分原发耐药与晚期复发 |
+| Geographic region | 反映治疗模式和后续治疗差异 |
+| PD-L1 status | 部分TNBC免疫治疗试验的重要预测因素 |
+
+分层因素过多会形成大量小分层，因此应优先选择最重要的预后或预测因素。
+
+## 新辅助试验中的分析人群
+
+pCR分析的主要人群通常为所有随机化患者，而不是仅包括接受手术并具有可评价病理标本的患者。
+
+若仅分析接受手术者，可能排除：
+
+- 治疗期间疾病进展者；
+- 因毒性无法接受手术者；
+- 撤回同意者；
+- 因其他原因未接受手术者。
+
+这些患者的排除可能造成post-randomization selection bias。通常需要在protocol中明确未手术、病理缺失或无法评价患者是否按未达到pCR处理。
+
+## EFS中的Intercurrent Events（伴发事件）
+
+新辅助和围手术期试验常见intercurrent events包括：
+
+- 未接受计划手术；
+- 手术延迟；
+- 接受非方案规定手术；
+- 术前开始其他抗肿瘤治疗；
+- 术后辅助治疗未开始；
+- 因毒性停药；
+- 因非肿瘤原因死亡；
+- 对侧新发乳腺癌；
+- 非乳腺第二原发恶性肿瘤。
+
+EFS定义必须明确每类事件是否计入复合终点、如何确定事件日期以及采用何种estimand strategy。
+
+## 长期随访与Non-Proportional Hazards
+
+HR阳性早期乳腺癌可在多年后复发，治疗效应可能随时间改变。以下因素可能导致**proportional hazards assumption, PH assumption（比例风险假设）**不成立：
+
+- 延迟出现的治疗获益；
+- 早期治疗毒性；
+- 不同时间段的复发模式；
+- 治疗停止后的效应变化；
+- 长期存活患者比例差异。
+
+除**hazard ratio, HR（风险比）**外，可补充报告：
+
+- Kaplan–Meier曲线；
+- 固定时间点生存率；
+- **restricted mean survival time, RMST（限制性平均生存时间）**；
+- 分时段HR；
+- 时间变化治疗效应。
+
+## Competing Risks（竞争风险）
+
+早期乳腺癌患者，尤其是年龄较大或低复发风险患者，可能在复发前死于其他原因。
+
+若研究问题关注乳腺癌复发而不是复合DFS，可考虑：
+
+- cumulative incidence function；
+- cause-specific hazard model；
+- Fine–Gray model。
+
+将非乳腺癌死亡作为删失隐含其为非信息性删失，这一假设在老年人群中可能不成立。
+
+## Independent Review（独立审评）
+
+转移性乳腺癌PFS可由：
+
+- investigator assessment；
+- **independent review committee, IRC（独立审评委员会）**；
+- BICR；
+
+进行评价。
+
+开放标签试验中，BICR可降低治疗知识导致的评估偏倚，但也可能受到：
+
+- 扫描缺失；
+- 非计划评估；
+- retrospective review；
+- reader disagreement；
+- 临床进展信息不完整；
+
+的影响。
+
+主要分析应明确使用investigator assessment还是BICR，并预设一致性分析和敏感性分析。
+
+## Missing Assessments（缺失评估）
+
+乳腺癌试验中可能缺失：
+
+- 肿瘤影像；
+- 手术病理；
+- 生物标志物；
+- PRO；
+- 长期生存状态；
+- 复发事件的确认材料。
+
+缺失原因可能与疗效或毒性相关，因此不能机械地视为随机缺失。
+
+可考虑的分析包括：
+
+- alternative censoring rules；
+- 将特定缺失情形视为事件；
+- multiple imputation；
+- tipping-point analysis；
+- pattern-mixture model；
+- inverse probability weighting。
+
+## Biomarker Subgroup Analysis（生物标志物亚组分析）
+
+乳腺癌具有多个重叠生物标志物，例如：
+
+- HR；
+- HER2；
+- HER2-low；
+- PD-L1；
+- *PIK3CA*；
+- *ESR1*；
+- *BRCA1/2*；
+- intrinsic subtype。
+
+分析时需要区分：
+
+1. biomarker-positive人群是否为主要分析人群；
+2. biomarker是否为预后因素或预测因素；
+3. 检测使用组织还是血液；
+4. 使用原发肿瘤还是转移灶；
+5. cutoff是否预先规定；
+6. 缺失样本如何处理；
+7. 多个亚组是否进行multiplicity adjustment。
+
+一个亚组内治疗效果显著、另一个亚组不显著，并不能证明两组治疗效果不同。治疗效应异质性应通过interaction estimate及其CI评估。
+
+## Multiplicity（多重性）
+
+乳腺癌Phase 3试验可能同时包含：
+
+- pCR和EFS；
+- PFS和OS；
+- HR阳性总体和特定基因变异亚组；
+- HER2阳性与HER2-low人群；
+- 不同剂量；
+- 多个期中分析；
+- 多个关键次要终点。
+
+常见控制方法包括：
+
+- hierarchical testing；
+- graphical testing procedure；
+- alpha recycling；
+- fallback procedure；
+- group sequential design。
+
+必须预先明确：
+
+- 每个假设的初始alpha；
+- 假设间alpha传递规则；
+- 期中和最终分析的alpha spending；
+- 亚组与总体人群的检验顺序；
+- 一个主要终点失败后是否继续检验其他终点。
+
+## Treatment Switching and Subsequent Therapy
+
+转移性乳腺癌通常存在多线后续治疗。OS可能受到以下因素影响：
+
+- 对照组交叉使用试验药；
+- 后续使用CDK4/6 inhibitor、ADC或HER2-directed therapy；
+- 不同国家的药物可及性；
+- 生物标志物检测和后续靶向治疗差异；
+- 进展后生存时间较长。
+
+主要OS分析通常采用treatment-policy strategy。若需要估计无交叉情况下的治疗效应，可探索使用：
+
+- rank-preserving structural failure time model；
+- inverse probability of censoring weighting；
+- two-stage adjustment。
+
+这些方法依赖较强假设，应与未调整的随机化比较同时报告。
+
+# Clinical Trial Considerations（临床试验设计考虑）
+
+## 早期辅助治疗试验
+
+典型设计如下：
+
+| 设计要素 | 常见选择 |
+|---|---|
+| 人群 | 根治性手术后具有一定复发风险的患者 |
+| 随机化时间 | 手术后，部分试验在化疗或放疗后随机化 |
+| 主要终点 | iDFS、DFS或EFS |
+| 关键次要终点 | Distant DFS、OS和安全性 |
+| 随访时间 | 通常需要多年随访 |
+| 主要挑战 | 事件率低、治疗效果延迟、长期失访和非乳腺癌死亡 |
+
+HR阳性早期疾病的复发风险持续时间较长，因此成熟OS结果可能需要十年以上随访。
+
+## 新辅助试验
+
+| 设计要素 | 常见选择 |
+|---|---|
+| 主要早期终点 | pCR |
+| 长期终点 | EFS和OS |
+| 病理评价 | Local pathology或central pathology review |
+| 关键分析问题 | 未手术患者处理、pCR定义和残余病灶分类 |
+| 分层因素 | Stage、nodal status、HR status和region |
+| 主要挑战 | pCR的surrogacy、术后治疗差异和EFS事件定义 |
+
+若术后治疗根据pCR结果发生变化，则长期EFS比较同时反映新辅助治疗和风险适应性术后治疗的共同影响。
+
+## 转移性疾病试验
+
+| 设计要素 | 常见选择 |
+|---|---|
+| 主要终点 | PFS或OS |
+| 支持性终点 | ORR、DOR、PRO和安全性 |
+| 影像评价 | RECIST 1.1，investigator或BICR |
+| 分层因素 | Visceral disease、prior therapy、biomarker status和region |
+| 主要挑战 | 后续治疗、交叉、脑转移和non-proportional hazards |
+
+## ADC试验的特殊考虑
+
+ADC越来越多地用于HER2阳性、HER2-low、HR阳性和TNBC。
+
+试验设计需关注：
+
+- target expression assay；
+- biomarker cutoff；
+- bystander effect；
+- 既往同靶点ADC暴露；
+- interstitial lung disease或pneumonitis；
+- ocular toxicity；
+- hematologic toxicity；
+- treatment discontinuation；
+- dose modification和relative dose intensity。
+
+在不同ADC之间，抗体、linker、payload和drug-to-antibody ratio均可能不同，因此不能仅依据靶点名称推断疗效或安全性相同。
+
+# Practical Example（实践示例）
+
+假设开展一项随机、双盲Phase 3试验，评价新型oral selective estrogen receptor degrader联合CDK4/6 inhibitor，用于一线治疗期间出现*ESR1* mutation、但尚未发生影像学进展的HR阳性/HER2阴性晚期乳腺癌。
+
+| 设计要素 | 示例 |
+|---|---|
+| 研究人群 | 一线aromatase inhibitor联合CDK4/6 inhibitor治疗期间，ctDNA检测到*ESR1* mutation但无RECIST进展 |
+| 试验组 | 新型ER degrader联合原CDK4/6 inhibitor |
+| 对照组 | 继续原内分泌治疗联合CDK4/6 inhibitor |
+| 主要终点 | BICR-assessed PFS |
+| 关键次要终点 | OS、ORR、DOR和PRO |
+| 分层因素 | Visceral metastasis、baseline *ESR1* variant和既往治疗时间 |
+| 主要分析 | Stratified log-rank test和Cox model |
+| 主要estimand | 在随机治疗策略下，不论治疗中止或后续治疗的PFS效应 |
+| 关键挑战 | Molecular progression的检测频率、ctDNA assay sensitivity及lead-time bias |
+
+该试验研究的是在影像学进展前，根据分子耐药信号提前更换内分泌治疗能否延缓临床进展，而不是传统的疾病进展后换药策略。
+
+# Common Pitfalls（常见误区）
+
+## 将乳腺癌视为单一疾病
+
+HR阳性/HER2阴性、HER2阳性和TNBC在自然史、治疗和复发模式方面差异明显，不能仅依据总体乳腺癌结果进行推断。
+
+## 将HR状态与HER2状态混为一谈
+
+HR和HER2是两个不同维度。患者可以同时HR阳性和HER2阳性。
+
+## 将TNBC等同于Basal-Like
+
+两者高度重叠，但不是完全相同的分类。
+
+## 将HER2-Low视为传统独立分子亚型
+
+HER2-low主要是与特定治疗选择有关的蛋白表达分类，其生物学独立性和检测重复性需要谨慎解释。
+
+## 将pCR提高直接等同于OS获益
+
+pCR是重要的早期疗效指标，但试验层面是否能可靠替代EFS或OS取决于具体亚型、治疗机制和证据。
+
+## 直接比较不同试验的pCR率或PFS
+
+不同试验的患者风险、终点定义、影像频率、病理标准和后续治疗可能不同，不能进行简单横向比较。
+
+## 仅依据亚组内p值判断疗效差异
+
+亚组内一个显著、另一个不显著，并不代表存在真实的治疗交互作用。
+
+## 忽视晚期疾病中的Biomarker Conversion
+
+原发肿瘤和转移灶之间可能出现ER、PR或HER2变化。在临床可行时，应重新活检并复测关键生物标志物。
+
+## 将所有HR阳性患者视为低风险
+
+HR阳性疾病通常预后较好，但高分级、淋巴结阳性、内脏转移或内分泌耐药患者仍可能具有较高风险。
+
+# Key Takeaways（关键要点）
+
+1. 乳腺癌是一组高度异质的疾病，治疗决策主要由分期、HR状态、HER2状态、分子变异及患者特征共同决定。
+2. HR阳性/HER2阴性是最常见的临床亚型；HER2阳性和TNBC虽然比例较低，但具有不同的治疗策略和复发模式。
+3. 早期乳腺癌通常以根治为目标，综合使用手术、放疗和风险适应性系统治疗。
+4. 新辅助治疗中的pCR和RCB可反映治疗敏感性，但不能在所有情形下替代EFS或OS。
+5. 转移性乳腺癌治疗通常为多线序贯治疗，需在每个阶段重新考虑生物标志物、耐药机制和既往药物暴露。
+6. 乳腺癌临床试验应重点处理亚型异质性、长期随访、竞争风险、治疗转换、后续治疗、多重性和缺失评估。
+7. 不同试验的endpoint definition、分析人群和评估方式可能明显不同，比较结果前必须核对protocol和SAP。
+
+# References（参考文献）
+
+1. World Health Organization. *Breast cancer*. Updated April 16, 2026.  
+   <https://www.who.int/news-room/fact-sheets/breast-cancer>
+
+2. International Agency for Research on Cancer. *Breast Cancer*.  
+   <https://www.iarc.who.int/cancer-type/breast-cancer/>
+
+3. National Cancer Institute. *Breast Cancer Treatment (PDQ®)–Health Professional Version*. Updated April 25, 2025.  
+   <https://www.cancer.gov/types/breast/hp/breast-treatment-pdq>
+
+4. National Cancer Institute. *Treatment for Breast Cancer*.  
+   <https://www.cancer.gov/types/breast/treatment>
+
+5. Surveillance, Epidemiology, and End Results Program. *Cancer Stat Facts: Female Breast Cancer*. Accessed June 24, 2026.  
+   <https://seer.cancer.gov/statfacts/html/breast.html>
+
+6. Surveillance, Epidemiology, and End Results Program. *Cancer Stat Facts: Female Breast Cancer Subtypes*. Accessed June 24, 2026.  
+   <https://seer.cancer.gov/statfacts/html/breast-subtypes.html>
+
+7. Surveillance, Epidemiology, and End Results Program. *Cancer Stat Facts: Invasive Lobular Carcinoma*. Accessed June 24, 2026.  
+   <https://seer.cancer.gov/statfacts/html/ilc.html>
+
+8. National Cancer Institute. *Male Breast Cancer Treatment (PDQ®)–Health Professional Version*. Updated February 28, 2025.  
+   <https://www.cancer.gov/types/breast/hp/male-breast-treatment-pdq>
+
+9. Giuliano AE, Edge SB, Hortobagyi GN. Eighth edition of the AJCC Cancer Staging Manual: Breast cancer. *Annals of Surgical Oncology*. 2018;25:1783–1785.
+
+10. Wolff AC, Hammond MEH, Allison KH, et al. Human epidermal growth factor receptor 2 testing in breast cancer: ASCO/CAP clinical practice guideline focused update. *Journal of Clinical Oncology*. 2018;36:2105–2122.
+
+11. Allison KH, Hammond MEH, Dowsett M, et al. Estrogen and progesterone receptor testing in breast cancer: ASCO/CAP guideline update. *Journal of Clinical Oncology*. 2020;38:1346–1366.
+
+12. Cortazar P, Zhang L, Untch M, et al. Pathological complete response and long-term clinical benefit in breast cancer: The CTNeoBC pooled analysis. *The Lancet*. 2014;384:164–172.
+
+13. Symmans WF, Peintinger F, Hatzis C, et al. Measurement of residual breast cancer burden to predict survival after neoadjuvant chemotherapy. *Journal of Clinical Oncology*. 2007;25:4414–4422.
+
+14. Hudis CA, Barlow WE, Costantino JP, et al. Proposal for standardized definitions for efficacy end points in adjuvant breast cancer trials: The STEEP system. *Journal of Clinical Oncology*. 2007;25:2127–2132.
+
+15. Gourgou-Bourgade S, Cameron D, Poortmans P, et al. Guidelines for time-to-event end point definitions in breast cancer trials: Results of the DATECAN initiative. *Annals of Oncology*. 2015;26:2505–2506.

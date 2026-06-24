@@ -2,6 +2,8 @@
 title: "NSCLC"
 ---
 
+See also: [Lung Cancer overview](Lung_Cancer.qmd).
+
 非小细胞肺癌（NSCLC）是一种肺癌的主要类型，占所有肺癌病例的大约85%。NSCLC这个名称的由来是相对于另一种主要类型的肺癌——小细胞肺癌（Small Cell Lung Cancer, SCLC）。这两种分类基于肿瘤细胞在显微镜下的外观区别。
 
 -   小细胞肺癌 (SCLC)：这种肺癌的细胞较小，核较大，细胞质少。小细胞肺癌生长迅速，早期就容易通过血液和淋巴系统扩散。
@@ -23,7 +25,7 @@ title: "NSCLC"
 -   放疗 (Radiotherapy)：用于不能手术或拒绝手术的患者，以及作为手术后的辅助治疗。
 -   化疗 (Chemotherapy)：常用于晚期疾病，或作为手术前后的辅助治疗。
 -   靶向治疗 (Targeted Therapy)：针对特定遗传变异（如EGFR突变、ALK重排）的治疗。
--   免疫治疗 (Immunotherapy)：利用免疫检查点抑制剂激活免疫系统攻击癌细胞。
+-   免疫治疗 ([Immunotherapy](../other/Immunotherapy.qmd))：利用免疫检查点抑制剂激活免疫系统攻击癌细胞。
 
 ## 主流药物
 

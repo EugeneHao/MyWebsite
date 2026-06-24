@@ -6,7 +6,7 @@ title: "Tecentriq"
 
 ### **药物简介（Drug Overview）**
 
-德沙替尼（Tecentriq，通用名为阿替利珠单抗 Atezolizumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）。它用于治疗多种类型的癌症，包括非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC）、三阴性乳腺癌（Triple-Negative Breast Cancer, TNBC）和泌尿系统癌症等。
+德沙替尼（Tecentriq，通用名为阿替利珠单抗 Atezolizumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）。它用于治疗多种类型的癌症，包括非小细胞肺癌（Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）、[三阴性乳腺癌](../disease/Breast_Cancer.qmd)（Triple-Negative Breast Cancer, TNBC）和泌尿系统癌症等。
 
 ### **治疗原理（Treatment Mechanism）**
 

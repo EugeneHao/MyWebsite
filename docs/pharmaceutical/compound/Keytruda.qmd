@@ -17,7 +17,7 @@ title: "Keytruda"
 -   不可切除或转移性黑色素瘤。
 -   作为一线治疗，用于某些类型的非小细胞肺癌。
 -   头颈部鳞状细胞癌。
--   经典霍奇金淋巴瘤（Classical Hodgkin Lymphoma）等多种癌症类型。
+-   经典霍奇金淋巴瘤（Classical Hodgkin [Lymphoma](../disease/Lymphoma.qmd)）等多种癌症类型。
 
 ## 副作用（Side Effects）
 

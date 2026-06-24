@@ -15,8 +15,8 @@ title: "Pharma Note"
     ::: {.callout-note collapse="true" title="Materials"}
     -   Morning:
         -   BeiGene: [Sponsor Briefing Document](https://drive.google.com/file/d/11z1VIWMlud_NNw03lr-22_qr8VW39NnY/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/11m5bkYoKGVYrbbpgtspbMOBvUeYzXHdm/view?usp=drive_link)
-        -   BMS: [Sponsor Briefing Document](https://drive.google.com/file/d/11nxygmKCl0YErSe35A5LUB1Y9u11WJAW/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/12Nhm1Lij09t3kbGdfLQzHR6xWsOqXWdn/view?usp=drive_link)
-        -   Merck: [Sponsor Briefing Document](https://drive.google.com/file/d/12VNIw75EoMKZmDxyKNU0GCeHXePyeFf9/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/126xWKNxsvuESx3t8dnMrENyeKZ31qkOF/view?usp=drive_link)
+        -   [BMS](../company/BMS.qmd): [Sponsor Briefing Document](https://drive.google.com/file/d/11nxygmKCl0YErSe35A5LUB1Y9u11WJAW/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/12Nhm1Lij09t3kbGdfLQzHR6xWsOqXWdn/view?usp=drive_link)
+        -   [Merck](../company/Merck.qmd): [Sponsor Briefing Document](https://drive.google.com/file/d/12VNIw75EoMKZmDxyKNU0GCeHXePyeFf9/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/126xWKNxsvuESx3t8dnMrENyeKZ31qkOF/view?usp=drive_link)
         -   FDA: [Briefing Document](https://drive.google.com/file/d/12_Oe8YOMX0RkDQIoOb-r3dM6lIJ793FF/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/11r7By64gxcpy8cLTBuMwJo58YzFprj18/view?usp=drive_link)
     -   Afternoon:
         -   BeiGene: [Sponsor Briefing Document](https://drive.google.com/file/d/12PjByaF1pDgSoTE2FXbHNf-4rF6EjyaJ/view?usp=drive_link), [Presentation](https://drive.google.com/file/d/11kEKjzdLnNxtyFjDjwcP5iAw8-9B7rT7/view?usp=drive_link)
@@ -71,7 +71,7 @@ title: "Pharma Note"
     :::
 
     ::: {.callout-warning collapse="true" title="Agenda"}
-    The meeting presentations will be heard, viewed, captioned, and recorded through an online teleconferencing and/or video conferencing platform. The Committee will discuss the use of **minimal residual disease (MRD)** as an endpoint in multiple myeloma clinical trials, including considerations regarding timing of assessment, patient populations, and trial design for future studies that intend to use MRD to support accelerated approval of a new product or a new indication.
+    The meeting presentations will be heard, viewed, captioned, and recorded through an online teleconferencing and/or video conferencing platform. The Committee will discuss the use of **minimal residual disease (MRD)** as an endpoint in [multiple myeloma](../disease/multiple_myeloma.qmd) clinical trials, including considerations regarding timing of assessment, patient populations, and trial design for future studies that intend to use MRD to support accelerated approval of a new product or a new indication.
     :::
 
 -   [March 15, 2024: Meeting of the Oncologic Drugs Advisory Committee Meeting Announcement](https://www.fda.gov/advisory-committees/advisory-committee-calendar/march-15-2024-meeting-oncologic-drugs-advisory-committee-meeting-announcement-03152024 "March 15, 2024: Meeting of the Oncologic Drugs Advisory Committee Meeting Announcement - 03/15/2024")

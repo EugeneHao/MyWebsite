@@ -233,6 +233,13 @@
   body part: Urinary Tract
   drugs: Imfinzi
 
+- name: Lung Cancer
+  path: disease/Lung_Cancer.html
+  chinese: 肺癌
+  body part: Lungs
+  drugs: |
+    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Tafinlar](compound/Tafinlar.qmd), [Mekinist](compound/Mekinist.qmd), [Krazati](compound/Krazati.qmd), Tagrisso, Imfinzi
+
 - name: Non-Small Cell Lung Cancer (NSCLC)
   path: disease/NSCLC.html
   chinese: 非小细胞肺癌
@@ -241,10 +248,11 @@
     [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), Tagrisso, Imfinzi
 
 - name: Breast Cancer
+  path: disease/Breast_Cancer.html
   chinese: 乳腺癌
   body part: Breast
   drugs: |
-    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd)
+    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd), [Lynparza](compound/Lynparza.qmd), [Keytruda](compound/Keytruda.qmd), [Tecentriq](compound/Tecentriq.qmd)
 
 - name: Stomach Cancer
   chinese: 胃癌
@@ -344,4 +352,3 @@
   body part: Lungs
   drugs: |
     [Eliquis](compound/Eliquis.qmd), [Xarelto](compound/Xarelto.qmd)
-

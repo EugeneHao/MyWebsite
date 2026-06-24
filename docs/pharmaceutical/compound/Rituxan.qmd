@@ -14,9 +14,9 @@ title: "Rituxan"
 
 利妥昔单抗被批准用于治疗以下疾病：
 
-1.  非霍奇金淋巴瘤（Non-Hodgkin's Lymphoma, NHL）
+1.  非霍奇金淋巴瘤（Non-Hodgkin's [Lymphoma](../disease/Lymphoma.qmd), NHL）
 
-2.  慢性淋巴细胞白血病（Chronic Lymphocytic Leukemia, CLL）
+2.  慢性淋巴细胞白血病（Chronic Lymphocytic [Leukemia](../disease/Leukemia.qmd), CLL）
 
 3.  类风湿关节炎（Rheumatoid Arthritis, RA）
 

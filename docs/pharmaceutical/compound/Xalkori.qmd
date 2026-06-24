@@ -14,7 +14,7 @@ title: "Xalkori"
 
 赛可瑞被批准用于治疗：
 
-1.  ALK阳性的晚期非小细胞肺癌（Advanced NSCLC with ALK Positive）：用于ALK基因重排阳性的患者。
+1.  ALK阳性的晚期非小细胞肺癌（Advanced [NSCLC](../disease/NSCLC.qmd) with ALK Positive）：用于ALK基因重排阳性的患者。
 
 2.  ROS1阳性的非小细胞肺癌（NSCLC with ROS1 Positive）：用于ROS1阳性的患者。
 

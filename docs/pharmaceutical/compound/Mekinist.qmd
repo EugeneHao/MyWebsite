@@ -4,7 +4,7 @@ title: "Mekinist"
 
 ### **药物简介（Drug Overview）**
 
-美克尼斯特（Mekinist，通用名为曲美替尼 Trametinib）是一种口服靶向疗法药物，属于MEK抑制剂。它主要用于治疗含有特定BRAF基因突变的黑色素瘤（[Melanoma](../disease/Melanoma.qmd)）和非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC）。
+美克尼斯特（Mekinist，通用名为曲美替尼 Trametinib）是一种口服靶向疗法药物，属于MEK抑制剂。它主要用于治疗含有特定BRAF基因突变的黑色素瘤（[Melanoma](../disease/Melanoma.qmd)）和非小细胞肺癌（Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）。
 
 ### **药物原理（Drug Mechanism）**
 

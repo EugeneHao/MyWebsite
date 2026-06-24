@@ -4,7 +4,7 @@ title: "Mylotarg"
 
 ### **药物简介（Drug Overview）**
 
-迈罗达克（Mylotarg，通用名为吉姆图单抗 Gemtuzumab ozogamicin）是一种靶向疗法药物，属于抗体药物偶联物（Antibody-Drug Conjugate, ADC）。它主要用于治疗急性髓系白血病（[Acute Myeloid Leukemia, AML](../disease/Leukemia.qmd#acute-myeloid-leukemia)）。
+迈罗达克（Mylotarg，通用名为吉姆图单抗 Gemtuzumab ozogamicin）是一种靶向疗法药物，属于抗体药物偶联物（Antibody-Drug Conjugate, [ADC](../other/ADC.qmd)）。它主要用于治疗急性髓系白血病（[Acute Myeloid Leukemia, AML](../disease/Leukemia.qmd#acute-myeloid-leukemia)）。
 
 ### **作用机制（Mechanism of Action）**
 

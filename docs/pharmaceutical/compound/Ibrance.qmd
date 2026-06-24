@@ -4,7 +4,7 @@ title: "Ibrance"
 
 ### **药物简介（Drug Overview）**
 
-依布替尼（Ibrance，通用名为帕博西利 Palbociclib）是一种口服药物，属于激酶抑制剂类。它主要用于治疗某些类型的乳腺癌，尤其是荷尔蒙受体阳性、HER2阴性的晚期或转移性乳腺癌。
+依布替尼（Ibrance，通用名为帕博西利 Palbociclib）是一种口服药物，属于激酶抑制剂类。它主要用于治疗某些类型的[乳腺癌](../disease/Breast_Cancer.qmd)，尤其是荷尔蒙受体阳性、HER2阴性的晚期或转移性乳腺癌。
 
 ### **药物原理（Mechanism of Action）**
 

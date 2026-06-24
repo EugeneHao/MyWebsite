@@ -296,6 +296,10 @@ website:
                 href: docs/pharmaceutical/disease/multiple_myeloma.qmd
             - text: Melanoma
               href: docs/pharmaceutical/disease/Melanoma.qmd
+            - text: Breast Cancer
+              href: docs/pharmaceutical/disease/Breast_Cancer.qmd
+            - text: Lung Cancer
+              href: docs/pharmaceutical/disease/Lung_Cancer.qmd
             - text: Non-Small Cell Lung Cancer (NSCLC)
               href: docs/pharmaceutical/disease/NSCLC.qmd
             - text: Type 2 Diabete Mellitus (T2DM)
