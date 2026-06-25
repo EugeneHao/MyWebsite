@@ -1,0 +1,294 @@
+---
+title: "Vascular Endothelial Growth Factor, VEGF（血管内皮生长因子）"
+description: "介绍 VEGF 的生物学功能、VEGF 信号通路、肿瘤中的作用及抗 VEGF 治疗策略。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Immuno-Oncology
+  - Biomarkers
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Vascular endothelial growth factor, VEGF（血管内皮生长因子）**是调控**angiogenesis（血管生成）**的核心细胞因子，也是肿瘤发生、发展和转移过程中最重要的驱动因素之一。
+
+正常情况下，VEGF在胚胎发育、伤口愈合和组织修复过程中发挥重要作用；而在肿瘤中，VEGF常因缺氧（hypoxia）等因素过度表达，促进异常血管形成，为肿瘤提供氧气和营养，并帮助肿瘤细胞发生远处转移。
+
+由于VEGF在肿瘤生物学中的关键作用，抗VEGF治疗已成为实体瘤治疗的重要策略，并广泛应用于[lung cancer（肺癌）](../disease/Lung_Cancer.qmd)、[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)、colorectal cancer、hepatocellular carcinoma、renal cell carcinoma、ovarian cancer等多种恶性肿瘤。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| VEGF | Vascular endothelial growth factor（血管内皮生长因子） |
+| VEGFR | Vascular endothelial growth factor receptor（VEGF受体） |
+| Angiogenesis | 血管生成 |
+| Endothelial cell | 血管内皮细胞 |
+| Hypoxia | 缺氧 |
+| HIF-1α | Hypoxia-inducible factor-1 alpha（缺氧诱导因子1α） |
+
+# VEGF家族
+
+VEGF并不是单一蛋白，而是一个蛋白家族。
+
+| 成员 | 主要作用 |
+|---|---|
+| VEGF-A | 最重要的血管生成因子，也是多数抗VEGF药物的靶点 |
+| VEGF-B | 调节血管生存及代谢 |
+| VEGF-C | 促进淋巴管生成 |
+| VEGF-D | 促进淋巴管生成及部分血管生成 |
+| Placental growth factor, PlGF | 参与炎症及血管生成 |
+
+其中，**VEGF-A**是临床研究和药物开发中最重要的成员，通常简称为VEGF。
+
+# VEGF信号通路
+
+VEGF主要作用于血管内皮细胞。
+
+```text
+Tumor hypoxia
+      |
+      v
+   HIF-1alpha activation
+      |
+      v
+ Increased VEGF secretion
+      |
+      v
+ VEGFR-2 activation
+      |
+      v
+ PI3K-AKT
+ MAPK
+ PLCgamma
+      |
+      v
+Angiogenesis
+Endothelial proliferation
+Vascular permeability
+```
+
+VEGF与**vascular endothelial growth factor receptor-2, VEGFR-2（血管内皮生长因子受体2）**结合后，可激活多条信号通路，包括：
+
+- PI3K-AKT pathway；
+- MAPK pathway；
+- PLCγ pathway。
+
+最终促进：
+
+- 内皮细胞增殖；
+- 内皮细胞迁移；
+- 新生血管形成；
+- 血管通透性增加。
+
+# VEGF在肿瘤中的作用
+
+## 促进肿瘤血管生成
+
+肿瘤直径超过约1-2 mm后，仅依赖弥散已无法满足氧气和营养需求，因此需要新生血管支持持续生长。
+
+VEGF是这一过程的核心驱动因子。
+
+## 促进肿瘤转移
+
+VEGF可增加血管通透性，使肿瘤细胞更容易进入血液循环，从而促进远处转移。
+
+## 建立免疫抑制微环境
+
+VEGF不仅促进血管生成，还具有明显的免疫抑制作用，可：
+
+- 抑制dendritic cell（树突状细胞）成熟；
+- 减少CD8+ T cell浸润；
+- 增加regulatory T cell, Treg（调节性T细胞）比例；
+- 增加myeloid-derived suppressor cell, MDSC（髓源性抑制细胞）募集；
+- 增强tumor-associated macrophage, TAM（肿瘤相关巨噬细胞）的免疫抑制表型。
+
+因此，VEGF已成为连接血管生成与肿瘤免疫的重要桥梁。
+
+# VEGF与免疫治疗
+
+VEGF与[PD-1/PD-L1](PD-L1.qmd)通路具有明显协同作用。
+
+```text
+VEGF up
+ |
+ +-- Abnormal vasculature
+ +-- Reduced T-cell entry into tumor
+ +-- Increased Treg
+ +-- Increased MDSC
+ +-- Impaired dendritic cells
+        |
+        v
+ Immunosuppressive TME
+```
+
+阻断VEGF后可产生：
+
+- 血管正常化（vascular normalization）；
+- 改善免疫细胞浸润；
+- 提高PD-1/PD-L1 inhibitor疗效。
+
+因此，目前大量研究采用：
+
+- PD-1 + VEGF；
+- PD-L1 + VEGF；
+- PD-1 × VEGF bispecific antibody；
+- PD-L1 × VEGF-A bispecific antibody。
+
+# 抗VEGF药物
+
+## 抗VEGF单克隆抗体
+
+| 药物 | 靶点 | 类型 |
+|---|---|---|
+| [Bevacizumab](../compound/Avastin.qmd) | VEGF-A | 单克隆抗体 |
+| Ramucirumab | VEGFR-2 | 单克隆抗体 |
+
+## 多靶点Tyrosine Kinase Inhibitor（TKI）
+
+| 药物 | 靶点 |
+|---|---|
+| Sunitinib | VEGFR、PDGFR、KIT |
+| Sorafenib | VEGFR、RAF |
+| Axitinib | VEGFR |
+| Lenvatinib | VEGFR、FGFR等 |
+| Cabozantinib | VEGFR、MET等 |
+
+## 双特异性抗体
+
+| 药物 | 靶点 |
+|---|---|
+| [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1 × VEGF |
+| [Pumitamig](../compound/Pumitamig.qmd) | PD-L1 × VEGF-A |
+
+# VEGF在不同肿瘤中的应用
+
+| 肿瘤 | 常见抗VEGF治疗 |
+|---|---|
+| [NSCLC](../disease/NSCLC.qmd) | Bevacizumab、Ivonescimab |
+| Colorectal cancer | Bevacizumab、Ramucirumab |
+| Hepatocellular carcinoma | Bevacizumab + atezolizumab、TKIs |
+| Renal cell carcinoma | Axitinib + [pembrolizumab](../compound/Keytruda.qmd)、cabozantinib + [nivolumab](../compound/Opdivo.qmd) |
+| Ovarian cancer | Bevacizumab |
+| Cervical cancer | Bevacizumab联合化疗 |
+
+# VEGF相关毒性
+
+由于VEGF对正常血管功能也十分重要，因此抑制VEGF后可出现特征性不良事件。
+
+| 不良事件 | 原因 |
+|---|---|
+| Hypertension（高血压） | NO生成减少、血管收缩 |
+| Proteinuria（蛋白尿） | 肾小球内皮损伤 |
+| Bleeding（出血） | 血管修复受影响 |
+| Thromboembolism（血栓） | 血管内皮功能异常 |
+| Delayed wound healing（伤口愈合延迟） | 血管生成受抑制 |
+| Gastrointestinal perforation（胃肠穿孔） | 少见但严重 |
+
+# VEGF作为Biomarker（生物标志物）
+
+尽管VEGF是重要治疗靶点，但目前并不是成熟的伴随诊断生物标志物。
+
+原因包括：
+
+- 肿瘤组织VEGF表达异质性较大；
+- 血浆VEGF水平波动明显；
+- 不同检测方法之间一致性有限；
+- VEGF表达与疗效之间相关性并不稳定。
+
+因此，目前大多数抗VEGF药物无需依据VEGF表达水平筛选患者。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+抗VEGF药物试验通常关注以下终点：
+
+- **overall survival, OS（总生存期）**；
+- **progression-free survival, PFS（无进展生存期）**；
+- **objective response rate, ORR（客观缓解率）**；
+- **duration of response, DOR（缓解持续时间）**。
+
+安全性评价需重点监测：
+
+- Hypertension；
+- Proteinuria；
+- Bleeding；
+- Arterial thromboembolism；
+- Wound healing complications。
+
+在联合免疫治疗研究中，还需同时评价VEGF相关毒性与immune-related adverse events, irAEs（免疫相关不良事件）。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Selection（终点选择）
+
+抗VEGF药物通常首先改善PFS，因此许多III期研究以PFS为主要终点，并进一步验证OS获益。
+
+## Safety Monitoring（安全性监测）
+
+应重点分析：
+
+- >=Grade 3 hypertension；
+- Proteinuria；
+- Bleeding；
+- Dose interruption；
+- Dose reduction；
+- Treatment discontinuation。
+
+并采用暴露调整发生率（exposure-adjusted incidence rate）等方法评估长期安全性。
+
+## Biomarker Analysis（生物标志物分析）
+
+虽然VEGF本身尚未成为成熟预测性生物标志物，但研究中常探索：
+
+- VEGF expression；
+- VEGFR expression；
+- Circulating VEGF；
+- Angiogenesis gene signature。
+
+以寻找可能获益的人群。
+
+## Combination Therapy（联合治疗）
+
+PD-1/VEGF联合治疗试验通常需考虑：
+
+- 双主要终点，如PFS和OS；
+- 多重性控制（multiplicity）；
+- 亚组分析，如PD-L1状态；
+- 联合治疗毒性的归因分析。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| VEGF仅参与血管生成 | VEGF还具有重要免疫调节作用 |
+| 所有抗VEGF药物机制相同 | 有的靶向VEGF-A，有的靶向VEGFR，还有多靶点TKI |
+| VEGF高表达患者一定获益更多 | 目前缺乏稳定证据支持 |
+| 抗VEGF治疗等同于化疗 | 抗VEGF属于靶向治疗，通过抑制血管生成发挥作用 |
+| VEGF与PD-L1是同一类靶点 | VEGF调控血管生成和免疫微环境，PD-L1属于免疫检查点，两者机制不同但具有协同作用 |
+
+# Key Takeaways（总结）
+
+1. VEGF是肿瘤血管生成最重要的驱动因子，也是实体瘤靶向治疗的重要靶点。
+2. VEGF不仅促进新生血管形成，还通过调节肿瘤微环境抑制抗肿瘤免疫。
+3. 抗VEGF药物包括单克隆抗体、VEGFR-TKI及新型PD-1 × VEGF或PD-L1 × VEGF-A双特异性抗体。
+4. VEGF与PD-1/PD-L1通路具有显著协同作用，因此联合治疗已成为当前肿瘤治疗的重要方向。
+5. 生物统计学上需重点关注PFS、OS、安全性监测及联合治疗试验中的多重性控制和亚组分析。
+
+# References
+
+1. Ferrara N. VEGF as a therapeutic target in cancer. *Oncologist*. 2004.
+2. Carmeliet P, Jain RK. Angiogenesis in cancer and other diseases. *Nature*. 2000.
+3. Jain RK. Normalization of tumor vasculature. *Science*. 2005.
+4. National Comprehensive Cancer Network (NCCN) Clinical Practice Guidelines in Oncology.
+5. Ferrara N, Adamis AP. Ten years of anti-vascular endothelial growth factor therapy. *Nature Reviews Drug Discovery*. 2016.

@@ -20,9 +20,9 @@ bibliography: ../../../references.bib
 
 # 概述
 
-**Ivonescimab（依沃西单抗；[Akeso 康方生物](../company/Akeso.qmd)；[Summit Therapeutics](../company/Summit_Therapeutics.qmd)（中国以外部分地区合作开发）；中国商品名：依达方；development code: AK112）**是一种**PD-1（Programmed Death-1）× VEGF（Vascular Endothelial Growth Factor）双特异性单克隆抗体（bispecific antibody）**。
+**Ivonescimab（依沃西单抗；[Akeso 康方生物](../company/Akeso.qmd)；[Summit Therapeutics](../company/Summit_Therapeutics.qmd)（中国以外部分地区合作开发）；中国商品名：依达方；development code: AK112）**是一种**PD-1（Programmed Death-1）× [VEGF（Vascular Endothelial Growth Factor）](../target/VEGF.qmd)双特异性单克隆抗体（bispecific antibody）**。
 
-与传统**PD-1/PD-L1 inhibitor（PD-1/PD-L1 抑制剂）**不同，Ivonescimab可同时：
+与传统**PD-1/[PD-L1](../target/PD-L1.qmd) inhibitor（PD-1/PD-L1抑制剂）**不同，Ivonescimab可同时：
 
 - 阻断PD-1免疫检查点，恢复T细胞抗肿瘤免疫；
 - 阻断VEGF信号，抑制肿瘤血管生成，并改善肿瘤免疫微环境。
@@ -70,7 +70,7 @@ Ivonescimab同时结合**PD-1**与**VEGF-A**。
 - [Nivolumab](Opdivo.qmd)；
 - Tislelizumab。
 
-## VEGF阻断
+## [VEGF](../target/VEGF.qmd)阻断
 
 VEGF是肿瘤血管生成最重要的驱动因素。
 
@@ -178,7 +178,7 @@ HARMONi-2是PD-1×VEGF双抗与pembrolizumab进行头对头比较的III期研究
 |---|---|---|---|
 | [Pembrolizumab](Keytruda.qmd) | PD-1 | [Merck](../company/Merck.qmd) | 全球标准治疗 |
 | [Nivolumab](Opdivo.qmd) | PD-1 | [Bristol Myers Squibb](../company/BMS.qmd) | 多瘤种 |
-| Cadonilimab | PD-1×CTLA-4 | [Akeso](../company/Akeso.qmd) | 双免疫检查点 |
+| [Cadonilimab](Cadonilimab.qmd) | PD-1×CTLA-4 | [Akeso](../company/Akeso.qmd) | 双免疫检查点 |
 | Ivonescimab | PD-1×VEGF | [Akeso](../company/Akeso.qmd) / [Summit](../company/Summit_Therapeutics.qmd) | 双机制协同 |
 | [Bevacizumab](Avastin.qmd) + PD-1 | VEGF + PD-1 | 联合治疗 | 两个药分别给药 |
 

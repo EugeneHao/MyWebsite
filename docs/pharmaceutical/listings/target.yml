@@ -1,19 +1,28 @@
 - Abbr: EGFR 
+  path: target/HER.html
   Full: Epidermal Growth Factor Receptor
   Description: |
-    是一种细胞表面受体，主要在多种癌症细胞的生长、分化和存活过程中发挥作用。它在许多类型的癌症中过度表达或突变，特别是在非小细胞肺癌中，成为了一种重要的治疗靶点
+    [EGFR](target/HER.qmd)是HER/ErbB家族成员之一，主要在多种癌症细胞的生长、分化和存活过程中发挥作用。它在许多类型的癌症中过度表达或突变，特别是在非小细胞肺癌中，成为了一种重要的治疗靶点。
 - Abbr: HER2  
+  path: target/HER.html
   Full: Human Epidermal Growth Factor Receptor 2
   Description: |
-    是一种在某些癌细胞类型中过度表达的蛋白质，尤其是在约20%的乳腺癌患者中。HER2过度表达与癌症的侵袭性和预后较差相关联。针对HER2的治疗，如Perjeta, Enhertu, Kadcyla, Hercepin等药物，已经成为HER2阳性乳腺癌的标准治疗方法
+    [HER2](target/HER.qmd)是HER/ErbB家族成员之一，在部分癌细胞类型中过度表达或扩增，尤其见于乳腺癌和胃癌。HER2过度表达与癌症侵袭性和治疗选择密切相关。针对HER2的治疗，如Perjeta、Enhertu、Kadcyla、[Herceptin](compound/Herceptin.qmd)等药物，已经成为HER2阳性乳腺癌的重要标准治疗方法。
+- Abbr: TROP2
+  path: target/TROP2.html
+  Full: Trophoblast Cell Surface Antigen 2
+  Description: |
+    [TROP2](target/TROP2.qmd)是一种跨膜糖蛋白，在多种实体瘤中过表达，并已成为ADC开发的重要靶点。代表性TROP2 ADC包括sacituzumab govitecan和datopotamab deruxtecan，主要覆盖乳腺癌、NSCLC和尿路上皮癌等方向。
 - Abbr: VEGFR  
+  path: target/VEGF.html
   Full: Vascular Endothelial Growth Factor Receptor
   Description: |
-    主要参与调控血管生成，即新血管的形成过程。这个过程在多种癌症的生长和转移中至关重要，因为肿瘤需要血管来提供营养和氧气。针对VEGFR的治疗，如贝伐珠单抗（[Bevacizumab](compound/Avastin.qmd)），旨在阻断肿瘤血管生成，从而限制其生长和扩散。
-- Abbr: PD-1, PD-L1  
+    主要参与调控血管生成，即新血管的形成过程。这个过程在多种癌症的生长和转移中至关重要，因为肿瘤需要血管来提供营养和氧气。针对[VEGF/VEGFR](target/VEGF.qmd)轴的治疗，如贝伐珠单抗（[Bevacizumab](compound/Avastin.qmd)），旨在阻断肿瘤血管生成，从而限制其生长和扩散。
+- Abbr: PD-1, PD-L1
+  path: target/PD-L1.html
   Full: Programmed Death Protein 1/Programmed Death-Ligand 1
   Description: |
-    它们是一对蛋白质，当PD-L1与PD-1结合时，可以阻止免疫系统攻击癌细胞，相当于给肿瘤“隐形斗篷”。针对PD-1或PD-L1的药物，如[Keytruda](compound/Keytruda), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), Imfinzi，通过阻断这种相互作用来增强免疫系统对癌细胞的攻击，用于治疗多种类型的癌症。
+    它们是一对蛋白质，当[PD-L1](target/PD-L1.qmd)与PD-1结合时，可以阻止免疫系统攻击癌细胞，相当于给肿瘤“隐形斗篷”。针对PD-1或PD-L1的药物，如[Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), Imfinzi，通过阻断这种相互作用来增强免疫系统对癌细胞的攻击，用于治疗多种类型的癌症。
 - Abbr: BRAF  
   Full: B-Rapidly Accelerated Fibrosarcoma
   Description: |
@@ -43,9 +52,10 @@
   Description: |
     c-Myc是一种转录因子，它在细胞增殖、生长和代谢中起着关键作用。c-Myc的异常表达或活化常见于多种癌症中，包括某些类型的淋巴瘤、乳腺癌和肺癌。它的过度活化可以促进肿瘤细胞的快速增长和存活。尽管c-Myc是一个有前途的抗癌靶点，但由于其在正常细胞中的基本作用，直接针对c-Myc的药物开发面临挑战。研究者正在探索间接抑制c-Myc活性或影响其表达的策略。
 - Abbr: KRAS
-  Full: Kirsten Rat Sarcoma Virus
+  path: target/KRAS.html
+  Full: Kirsten Rat Sarcoma Viral Oncogene Homolog
   Description: |
-    KRAS是一种小GTP酶，属于RAS基因家族，它在细胞增殖、分化和存活的信号传导途径中起着关键作用。KRAS基因的突变是多种癌症中常见的致病因素，特别是在胰腺癌、结直肠癌和非小细胞肺癌中。KRAS突变导致蛋白持续激活，促进肿瘤细胞的无控制增长。长期以来，由于其结构和功能特点，KRAS被认为是“不可治疗”的靶点，但最近的研究进展已经开发出针对特定KRAS突变的靶向药物，如针对KRAS G12C突变的药物。
+    [KRAS](target/KRAS.qmd)是一种小GTPase，属于RAS基因家族，在细胞增殖、分化和存活信号传导中起关键作用。KRAS突变是胰腺癌、结直肠癌和非小细胞肺癌中的常见驱动改变，KRAS G12C抑制剂已使其从长期的“不可成药”靶点转变为重要精准治疗方向。
 - Abbr: BCL-2
   Full: B-cell Lymphoma 2
   Description: |
@@ -93,9 +103,10 @@
     叶酸受体α（FRα）是一种与细胞吸收叶酸相关的蛋白。在某些类型的肿瘤（如卵巢癌和乳腺癌）中，FRα表达增加，使其成为针对这些癌症的潜在治疗靶点。
 
 - Abbr: VEGFA
+  path: target/VEGF.html
   Full: Vascular Endothelial Growth Factor A
   Description: |
-    VEGFA是一种关键的血管生成因子，促进血管形成和增殖。它在多种癌症的发展中发挥重要作用，尤其是在肿瘤的血供形成方面。
+    [VEGFA](target/VEGF.qmd)是一种关键的血管生成因子，促进血管形成和增殖。它在多种癌症的发展中发挥重要作用，尤其是在肿瘤的血供形成方面。
 
 - Abbr: BCMA
   Full: B-Cell Maturation Antigen

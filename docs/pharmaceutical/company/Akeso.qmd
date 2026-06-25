@@ -8,14 +8,14 @@ title: "Akeso（康方生物）"
 
 Akeso开发的代表性资产包括：
 
-- [Ivonescimab](../compound/Ivonescimab.qmd)（AK112），PD-1 × VEGF双特异性抗体；
-- Cadonilimab，PD-1 × CTLA-4双特异性抗体。
+- [Ivonescimab](../compound/Ivonescimab.qmd)（AK112），PD-1 × [VEGF](../target/VEGF.qmd)双特异性抗体；
+- [Cadonilimab](../compound/Cadonilimab.qmd)（AK104），PD-1 × CTLA-4双特异性抗体。
 
 # Key Oncology Assets
 
 | Asset | Modality | Main Development Area |
 |---|---|---|
-| [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1 × VEGF bispecific antibody | NSCLC and other solid tumors |
-| Cadonilimab | PD-1 × CTLA-4 bispecific antibody | Gynecologic and other solid tumors |
+| [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1 × [VEGF](../target/VEGF.qmd) bispecific antibody | NSCLC and other solid tumors |
+| [Cadonilimab](../compound/Cadonilimab.qmd) | PD-1 × CTLA-4 bispecific antibody | Cervical cancer, gastric cancer, and other solid tumors |
 
 Akeso与Summit Therapeutics就ivonescimab在中国以外部分地区的开发和商业化建立合作。

@@ -3,7 +3,7 @@
   path: compound/Opdivo.html
   company: BMS
   indication: |
-    Cancer treatment, including [Melanoma](disease/Melanoma.qmd), lung cancer, and more.
+    PD-1 inhibitor for multiple cancers, including [Melanoma](disease/Melanoma.qmd), [NSCLC](disease/NSCLC.qmd), RCC, cHL, urothelial carcinoma, MSI-H/dMMR CRC, and gastric/esophageal cancers.
 - drug: Eliquis
   compound: Apixaban
   path: compound/Eliquis.html
@@ -560,6 +560,13 @@
   company: Akeso, Summit Therapeutics
   indication: |
     PD-1 × VEGF bispecific antibody approved in China for selected [NSCLC](disease/NSCLC.qmd) settings and in global development for lung cancer, CRC, BTC, HNSCC, and other solid tumors.
+
+- drug: Cadonilimab
+  compound: AK104
+  path: compound/Cadonilimab.html
+  company: Akeso
+  indication: |
+    PD-1 × CTLA-4 bispecific antibody approved in China for cervical cancer and gastric or gastroesophageal junction adenocarcinoma, with continued development across solid tumors.
 
 - drug: Abecma
   compound: Idecabtagene Vicleucel

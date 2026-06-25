@@ -4,11 +4,11 @@ title: "Herceptin"
 
 ### **药物简介（Drug Overview）**
 
-赫赛汀（Herceptin，通用名为曲妥珠单抗 Trastuzumab）是一种靶向疗法药物，属于单克隆抗体（Monoclonal Antibody）。它主要用于治疗HER2阳性的[乳腺癌](../disease/Breast_Cancer.qmd)和胃癌。
+赫赛汀（Herceptin，通用名为曲妥珠单抗 Trastuzumab）是一种靶向疗法药物，属于单克隆抗体（Monoclonal Antibody）。它主要用于治疗[HER2](../target/HER.qmd)阳性的[乳腺癌](../disease/Breast_Cancer.qmd)和胃癌。
 
 ### **药物原理（Drug Mechanism）**
 
-曲妥珠单抗的作用机制是靶向人表皮生长因子受体2（HER2，Human Epidermal Growth Factor Receptor 2）。在某些癌症细胞中，HER2表达过量，促进细胞的生长和分裂。曲妥珠单抗通过结合到HER2阳性细胞表面的HER2蛋白，能够阻断其信号通路，抑制肿瘤生长，并促进免疫系统清除这些癌细胞。
+曲妥珠单抗的作用机制是靶向[人表皮生长因子受体2（HER2，Human Epidermal Growth Factor Receptor 2）](../target/HER.qmd)。在某些癌症细胞中，HER2表达过量，促进细胞的生长和分裂。曲妥珠单抗通过结合到HER2阳性细胞表面的HER2蛋白，能够阻断其信号通路，抑制肿瘤生长，并促进免疫系统清除这些癌细胞。
 
 ### **适应症（Indications）**
 

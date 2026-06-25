@@ -1,0 +1,174 @@
+---
+title: "Cadonilimab（卡度尼利单抗，AK104）"
+description: "介绍 PD-1×CTLA-4 双特异性抗体 Cadonilimab 的机制、临床开发、安全性及统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Development
+  - Drug Profile
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Cadonilimab（卡度尼利单抗；[Akeso 康方生物](../company/Akeso.qmd)；开坦尼 / Kaitanni；development code: AK104）**是一种**programmed death-1, PD-1（程序性死亡受体1）× cytotoxic T-lymphocyte-associated protein 4, CTLA-4（细胞毒性T淋巴细胞相关蛋白4）双特异性抗体（bispecific antibody）**。
+
+Cadonilimab的核心设计理念是用一个双特异性抗体同时阻断PD-1和CTLA-4两个免疫检查点，从而增强T cell（T细胞）介导的抗肿瘤免疫反应。
+
+截至2026年6月，Cadonilimab已在中国获批用于复发或转移性宫颈癌、一线持续性/复发性/转移性宫颈癌，以及一线局部晚期不可切除或转移性胃癌/胃食管结合部腺癌。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Cadonilimab |
+| 中文通用名 | 卡度尼利单抗 |
+| Development code | AK104 |
+| Brand name | 开坦尼 / Kaitanni |
+| Sponsor/company | [Akeso（康方生物）](../company/Akeso.qmd) |
+| Drug class | PD-1×CTLA-4 bispecific antibody |
+| Molecular type | Humanized tetravalent bispecific antibody |
+| Target | PD-1 and CTLA-4 |
+| Route | Intravenous infusion（静脉输注） |
+| 首次获批 | 2022年6月，中国NMPA |
+| 主要获批地区 | 中国 |
+| 当前状态 | 已上市药物，同时仍在多个实体瘤适应症中继续开发 |
+
+# Mechanism of Action（作用机制）
+
+Cadonilimab同时结合PD-1和CTLA-4。
+
+PD-1阻断主要发生在肿瘤微环境中，可恢复已被抑制的T cell活性。CTLA-4阻断主要增强早期T cell priming（T细胞启动）和抗肿瘤免疫激活。
+
+理论上，PD-1与CTLA-4双重阻断可比单一PD-1抑制产生更强免疫激活，但也可能带来更高的immune-related adverse events, irAEs（免疫相关不良事件）。Cadonilimab的开发重点之一，是在提高疗效的同时尽量控制CTLA-4相关毒性。
+
+Cadonilimab属于[免疫治疗](../other/Immunotherapy.qmd)中的双免疫检查点阻断策略。
+
+# Clinical Development（临床开发）
+
+## 已获批适应症
+
+| 适应症 | 治疗线数 | 治疗方案 | 地区 |
+|---|---|---|---|
+| Relapsed or metastatic cervical cancer, R/M CC（复发或转移性宫颈癌） | 铂类化疗后 | Cadonilimab monotherapy | 中国 |
+| Persistent, recurrent, or metastatic cervical cancer（持续性、复发性或转移性宫颈癌） | 一线 | Cadonilimab + platinum-based chemotherapy ± [bevacizumab](Avastin.qmd) | 中国 |
+| Gastric or gastroesophageal junction adenocarcinoma, G/GEJ adenocarcinoma（胃癌或胃食管结合部腺癌） | 一线 | Cadonilimab + fluoropyrimidine + platinum chemotherapy | 中国 |
+
+# 主要临床研究
+
+| Trial | Phase | 人群 | Experimental arm | Comparator | Primary endpoint | 主要意义 |
+|---|---:|---|---|---|---|---|
+| AK104-201 | II | 铂类治疗失败R/M CC | Cadonilimab | Single-arm | ORR | 支持二线及后线宫颈癌获批 |
+| COMPASSION-16 / AK104-303 | III | 一线持续性、复发性或转移性宫颈癌 | Cadonilimab + chemotherapy ± bevacizumab | Placebo + chemotherapy ± bevacizumab | [PFS](../other/PFS.qmd), OS | 支持一线宫颈癌获批 |
+| AK104-302 | III | 一线晚期G/GEJ adenocarcinoma | Cadonilimab + chemotherapy | Placebo + chemotherapy | OS, PFS | 支持一线胃癌/GEJ获批 |
+| COMPASSION-18 / AK104-305 | III | 局部晚期宫颈癌 | Cadonilimab + concurrent chemoradiotherapy, CCRT | Standard CCRT | PFS | 正在开发 |
+
+# Safety Profile（安全性）
+
+Cadonilimab的安全性主要来自双免疫检查点阻断。
+
+常见或重点关注的不良事件包括：
+
+| 类型 | 事件 |
+|---|---|
+| 免疫相关 | Rash、hypothyroidism、hepatitis、colitis、pneumonitis |
+| 胃肠道 | Diarrhea、nausea、vomiting |
+| 血液学 | Anemia、neutropenia、leukopenia |
+| 肝功能 | ALT/AST elevation |
+| 联合化疗相关 | Myelosuppression、fatigue、alopecia |
+
+与传统PD-1单抗相比，Cadonilimab需要更关注CTLA-4相关irAEs，尤其是colitis、hepatitis和内分泌毒性。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | Target | 类型 | 主要特点 |
+|---|---|---|---|
+| [Pembrolizumab](Keytruda.qmd) | PD-1 | 单抗 | 多瘤种标准PD-1 therapy |
+| [Nivolumab](Opdivo.qmd) + [Ipilimumab](Yervoy.qmd) | PD-1 + CTLA-4 | 两药联合 | 双checkpoint blockade，但毒性较高 |
+| Cadonilimab | PD-1×CTLA-4 | 双特异性抗体 | 单一分子双重阻断 |
+| [Ivonescimab](Ivonescimab.qmd) | PD-1×[VEGF](../target/VEGF.qmd) | 双特异性抗体 | 免疫 + 抗血管生成双机制 |
+
+Cadonilimab与[Nivolumab](Opdivo.qmd) + [Ipilimumab](Yervoy.qmd)的概念相近，均为PD-1/CTLA-4双重免疫阻断；区别在于Cadonilimab是一个单一双特异性抗体，而Nivolumab + Ipilimumab是两个单抗联合。
+
+# 与Ivonescimab的区别
+
+[Ivonescimab](Ivonescimab.qmd)和Cadonilimab均由Akeso开发，且都属于双特异性抗体，但二者作用机制不同。
+
+| 特征 | Cadonilimab | Ivonescimab |
+|---|---|---|
+| Target | PD-1 × CTLA-4 | PD-1 × [VEGF](../target/VEGF.qmd) |
+| Main strategy | 双免疫检查点阻断 | 免疫检查点阻断 + 抗血管生成 |
+| Core safety concern | irAEs，尤其CTLA-4相关毒性 | 免疫相关毒性 + [VEGF](../target/VEGF.qmd)相关毒性 |
+| Main approved area in China | 宫颈癌、胃癌/GEJ | 部分NSCLC场景 |
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Selection（终点选择）
+
+Cadonilimab的关键研究中常见终点包括：
+
+| Endpoint | 英文全称 | 中文解释 | 常见用途 |
+|---|---|---|---|
+| ORR | Objective response rate | 客观缓解率 | 单臂II期研究 |
+| DOR | Duration of response | 缓解持续时间 | 支持ORR的持久性 |
+| [PFS](../other/PFS.qmd) | Progression-free survival | 无进展生存期 | 随机III期主要终点 |
+| OS | Overall survival | 总生存期 | 随机III期关键终点 |
+| DoT | Duration of treatment | 治疗持续时间 | 暴露与安全性解释 |
+
+## 单臂研究中的解释问题
+
+在R/M CC后线治疗中，若采用single-arm phase II design（单臂II期设计），ORR通常是主要终点。但单臂研究缺少concurrent control（同期对照），因此需要结合历史对照、DOR、安全性和unmet medical need（未满足医疗需求）解释临床获益。
+
+## 随机III期中的Multiplicity（多重性）
+
+当研究同时评价PFS和OS，或同时覆盖PD-L1阳性与all-comer population（全人群）时，需要预设alpha allocation（α分配）和hierarchical testing（层级检验），以控制**family-wise type I error rate, FWER（族系第一类错误率）**。
+
+## Subgroup Analysis（亚组分析）
+
+关键亚组通常包括：
+
+- [PD-L1](../target/PD-L1.qmd) expression, CPS（combined positive score）；
+- ECOG performance status；
+- 是否使用bevacizumab；
+- 是否有远处转移；
+- 地区；
+- 组织学类型。
+
+对Cadonilimab来说，PD-L1阴性或低表达患者的疗效尤其重要，因为双checkpoint blockade可能在更广泛人群中产生获益。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| Cadonilimab是普通PD-1单抗 | 它是PD-1×CTLA-4双特异性抗体 |
+| CTLA-4阻断一定导致不可接受毒性 | 毒性取决于分子设计、剂量、给药方案和联合治疗 |
+| 单臂ORR足以完全证明临床获益 | 仍需DOR、OS、外部对照和后续随机研究支持 |
+| PD-L1阴性患者一定不能获益 | 双免疫机制可能使部分PD-L1阴性患者获益，但需临床数据支持 |
+| Cadonilimab与Ivonescimab机制类似 | 二者均为双抗，但Cadonilimab是PD-1×CTLA-4，Ivonescimab是PD-1×VEGF |
+
+# Key Takeaways（总结）
+
+1. Cadonilimab是全球较早获批的**PD-1×CTLA-4 bispecific antibody（双特异性抗体）**。
+2. 其核心机制是同时阻断PD-1和CTLA-4，增强抗肿瘤免疫。
+3. 目前主要获批适应症集中在宫颈癌和胃癌/胃食管结合部腺癌。
+4. 与PD-1单抗相比，Cadonilimab可能带来更强免疫激活，但也需要更仔细监测irAEs。
+5. 从统计学角度，Cadonilimab的开发涉及单臂ORR支持加速开发、随机III期OS/PFS验证、多重性控制及PD-L1亚组解释。
+
+# References
+
+1. Akeso. Cadonilimab product information and approved indications.
+2. Akeso. Cadonilimab approved for first-line cervical cancer in China, 2025.
+3. National Medical Products Administration, NMPA（中国国家药品监督管理局）approval information for cadonilimab.
+4. ClinicalTrials.gov. Cadonilimab clinical trial records.
+5. Lou H, et al. Cadonilimab combined with chemotherapy with or without bevacizumab in cervical cancer.
+6. Akeso. Cadonilimab development updates in cervical cancer and gastric cancer.

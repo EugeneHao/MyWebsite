@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hao Sun">
+<meta name="dcterms.date" content="2026-06-25">
+<meta name="description" content="介绍 PD-1 inhibitor Nivolumab 的机制、主要适应证、临床开发及生物统计学考虑。">
 
-<title>Opdivo – Hao Sun</title>
+<title>Nivolumab（纳武利尤单抗，Opdivo） – Hao Sun</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -72,12 +109,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="Opdivo – Hao Sun">
-<meta property="og:description" content="">
+<meta property="og:title" content="Nivolumab（纳武利尤单抗，Opdivo） – Hao Sun">
+<meta property="og:description" content="介绍 PD-1 inhibitor Nivolumab 的机制、主要适应证、临床开发及生物统计学考虑。">
 <meta property="og:image" content="BMS.png">
 <meta property="og:site_name" content="Hao Sun">
-<meta name="twitter:title" content="Opdivo – Hao Sun">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Nivolumab（纳武利尤单抗，Opdivo） – Hao Sun">
+<meta name="twitter:description" content="介绍 PD-1 inhibitor Nivolumab 的机制、主要适应证、临床开发及生物统计学考虑。">
 <meta name="twitter:image" content="BMS.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -287,6 +324,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cadonilimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cadonilimab</span></a>
   </div>
 </li>
       </ul>
@@ -706,6 +749,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/SCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Cell Lung Cancer (SCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
   </div>
@@ -718,12 +767,47 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Target</span></a>
+  <a href="../../../docs/pharmaceutical/target/PD-L1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PD-L1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/VEGF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VEGF</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/HER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HER Family</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/TROP2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TROP2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/KRAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
@@ -737,29 +821,29 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Other</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
- <span class="menu-text">Wiki</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false">
- <span class="menu-text">Biotechnology</span></a>
+ <span class="menu-text">Wiki</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
@@ -794,13 +878,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
  <span class="menu-text">Clinical Trial</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
@@ -851,10 +935,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#药物简介drug-overview" id="toc-药物简介drug-overview" class="nav-link active" data-scroll-target="#药物简介drug-overview">药物简介（Drug Overview）</a></li>
-  <li><a href="#作用机制mechanism-of-action" id="toc-作用机制mechanism-of-action" class="nav-link" data-scroll-target="#作用机制mechanism-of-action">作用机制（Mechanism of Action）</a></li>
-  <li><a href="#适应症indications" id="toc-适应症indications" class="nav-link" data-scroll-target="#适应症indications">适应症（Indications）</a></li>
-  <li><a href="#副作用side-effects" id="toc-副作用side-effects" class="nav-link" data-scroll-target="#副作用side-effects">副作用（Side Effects）</a></li>
+  <li><a href="#概述" id="toc-概述" class="nav-link active" data-scroll-target="#概述"><span class="header-section-number">1</span> 概述</a></li>
+  <li><a href="#drug-profile药物信息" id="toc-drug-profile药物信息" class="nav-link" data-scroll-target="#drug-profile药物信息"><span class="header-section-number">2</span> Drug Profile（药物信息）</a></li>
+  <li><a href="#mechanism-of-action作用机制" id="toc-mechanism-of-action作用机制" class="nav-link" data-scroll-target="#mechanism-of-action作用机制"><span class="header-section-number">3</span> Mechanism of Action（作用机制）</a></li>
+  <li><a href="#主要适应证" id="toc-主要适应证" class="nav-link" data-scroll-target="#主要适应证"><span class="header-section-number">4</span> 主要适应证</a></li>
+  <li><a href="#重要临床研究" id="toc-重要临床研究" class="nav-link" data-scroll-target="#重要临床研究"><span class="header-section-number">5</span> 重要临床研究</a></li>
+  <li><a href="#safety-profile安全性" id="toc-safety-profile安全性" class="nav-link" data-scroll-target="#safety-profile安全性"><span class="header-section-number">6</span> Safety Profile（安全性）</a></li>
+  <li><a href="#opdivo-qvantig皮下注射制剂" id="toc-opdivo-qvantig皮下注射制剂" class="nav-link" data-scroll-target="#opdivo-qvantig皮下注射制剂"><span class="header-section-number">7</span> Opdivo Qvantig（皮下注射制剂）</a></li>
+  <li><a href="#competitive-landscape竞争格局" id="toc-competitive-landscape竞争格局" class="nav-link" data-scroll-target="#competitive-landscape竞争格局"><span class="header-section-number">8</span> Competitive Landscape（竞争格局）</a></li>
+  <li><a href="#biostatistical-considerations生物统计学考虑" id="toc-biostatistical-considerations生物统计学考虑" class="nav-link" data-scroll-target="#biostatistical-considerations生物统计学考虑"><span class="header-section-number">9</span> Biostatistical Considerations（生物统计学考虑）</a>
+  <ul class="collapse">
+  <li><a href="#endpoint-selection终点选择" id="toc-endpoint-selection终点选择" class="nav-link" data-scroll-target="#endpoint-selection终点选择"><span class="header-section-number">9.1</span> Endpoint Selection（终点选择）</a></li>
+  <li><a href="#non-proportional-hazards非比例风险" id="toc-non-proportional-hazards非比例风险" class="nav-link" data-scroll-target="#non-proportional-hazards非比例风险"><span class="header-section-number">9.2</span> Non-Proportional Hazards（非比例风险）</a></li>
+  <li><a href="#biomarker-strategy生物标志物策略" id="toc-biomarker-strategy生物标志物策略" class="nav-link" data-scroll-target="#biomarker-strategy生物标志物策略"><span class="header-section-number">9.3</span> Biomarker Strategy（生物标志物策略）</a></li>
+  <li><a href="#multiplicity多重性" id="toc-multiplicity多重性" class="nav-link" data-scroll-target="#multiplicity多重性"><span class="header-section-number">9.4</span> Multiplicity（多重性）</a></li>
+  </ul></li>
+  <li><a href="#clinical-trial-considerations临床试验考虑" id="toc-clinical-trial-considerations临床试验考虑" class="nav-link" data-scroll-target="#clinical-trial-considerations临床试验考虑"><span class="header-section-number">10</span> Clinical Trial Considerations（临床试验考虑）</a>
+  <ul class="collapse">
+  <li><a href="#analysis-population分析人群" id="toc-analysis-population分析人群" class="nav-link" data-scroll-target="#analysis-population分析人群"><span class="header-section-number">10.1</span> Analysis Population（分析人群）</a></li>
+  <li><a href="#intercurrent-events伴发事件" id="toc-intercurrent-events伴发事件" class="nav-link" data-scroll-target="#intercurrent-events伴发事件"><span class="header-section-number">10.2</span> Intercurrent Events（伴发事件）</a></li>
+  <li><a href="#safety-analysis安全性分析" id="toc-safety-analysis安全性分析" class="nav-link" data-scroll-target="#safety-analysis安全性分析"><span class="header-section-number">10.3</span> Safety Analysis（安全性分析）</a></li>
+  </ul></li>
+  <li><a href="#common-pitfalls常见误区" id="toc-common-pitfalls常见误区" class="nav-link" data-scroll-target="#common-pitfalls常见误区"><span class="header-section-number">11</span> Common Pitfalls（常见误区）</a></li>
+  <li><a href="#key-takeaways总结" id="toc-key-takeaways总结" class="nav-link" data-scroll-target="#key-takeaways总结"><span class="header-section-number">12</span> Key Takeaways（总结）</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">13</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -863,14 +967,37 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-company.html">Pharmaceutical Content</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-company.html">Company</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/company/BMS.html">BMS</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/compound/Opdivo.html">Opdivo</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Opdivo</h1>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Nivolumab（纳武利尤单抗，Opdivo）</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Oncology</div>
+    <div class="quarto-category">Immuno-Oncology</div>
+    <div class="quarto-category">Drug Profile</div>
+    <div class="quarto-category">Clinical Trials</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    介绍 PD-1 inhibitor Nivolumab 的机制、主要适应证、临床开发及生物统计学考虑。
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hao Sun </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 25, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -880,29 +1007,590 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="药物简介drug-overview" class="level2">
-<h2 class="anchored" data-anchor-id="药物简介drug-overview">药物简介（Drug Overview）</h2>
-<p>尼伏单抗（Nivolumab, 商业名称为Opdivo）是一种免疫检查点抑制剂（Immune Checkpoint Inhibitor），属于单克隆抗体（Monoclonal Antibody）。它主要用于某些类型的癌症治疗，通过调节人体的免疫系统来攻击癌细胞。</p>
+<section id="概述" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 概述</h1>
+<p><strong>Nivolumab（纳武利尤单抗；<a href="../../../docs/pharmaceutical/company/BMS.html">Bristol Myers Squibb</a>；Opdivo / 欧狄沃）</strong>是一种<strong>programmed death-1, PD-1（程序性死亡受体1）inhibitor（抑制剂）</strong>，属于<strong>immune checkpoint inhibitor（免疫检查点抑制剂）</strong>。</p>
+<p>Nivolumab通过阻断PD-1与<strong>programmed death-ligand 1, <a href="../../../docs/pharmaceutical/target/PD-L1.html">PD-L1</a>（程序性死亡配体1）</strong>及PD-L2的结合，恢复T cell（T细胞）的抗肿瘤免疫活性。它是最早广泛应用于实体瘤和血液肿瘤的PD-1单抗之一。</p>
+<p>截至2026年6月，Opdivo已在多个瘤种中获批，包括<a href="../../../docs/pharmaceutical/disease/Melanoma.html">melanoma（黑色素瘤）</a>、<a href="../../../docs/pharmaceutical/disease/NSCLC.html">non-small cell lung cancer, NSCLC（非小细胞肺癌）</a>、renal cell carcinoma, RCC（肾细胞癌）、classical Hodgkin lymphoma, cHL（经典霍奇金淋巴瘤）、urothelial carcinoma（尿路上皮癌）、gastric cancer（胃癌）、esophageal cancer（食管癌）、colorectal cancer（结直肠癌）等。</p>
+<p>美国FDA也已批准<strong>Opdivo Qvantig（nivolumab and hyaluronidase-nvhy）</strong>作为皮下注射制剂，用于多数已获批的成人实体瘤nivolumab适应证。Opdivo Qvantig不适用于与静脉ipilimumab联合使用。</p>
 </section>
-<section id="作用机制mechanism-of-action" class="level2">
-<h2 class="anchored" data-anchor-id="作用机制mechanism-of-action">作用机制（Mechanism of Action）</h2>
-<p>尼伏单抗的作用机制是通过靶向并阻断称为程序性死亡-1（Programmed Death-1, PD-1）的蛋白质。PD-1是免疫细胞表面的一个抑制性受体，癌细胞通过与PD-1结合来逃避免疫系统的攻击。尼伏单抗通过阻断PD-1与其配体（Ligands）的结合，增强免疫系统对癌细胞的攻击能力。</p>
+<section id="drug-profile药物信息" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Drug Profile（药物信息）</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Generic name</td>
+<td>Nivolumab</td>
+</tr>
+<tr class="even">
+<td>中文通用名</td>
+<td>纳武利尤单抗</td>
+</tr>
+<tr class="odd">
+<td>Brand name</td>
+<td>Opdivo / 欧狄沃</td>
+</tr>
+<tr class="even">
+<td>Subcutaneous formulation</td>
+<td>Opdivo Qvantig</td>
+</tr>
+<tr class="odd">
+<td>Company</td>
+<td><a href="../../../docs/pharmaceutical/company/BMS.html">Bristol Myers Squibb</a></td>
+</tr>
+<tr class="even">
+<td>Drug class</td>
+<td>PD-1 inhibitor</td>
+</tr>
+<tr class="odd">
+<td>Molecular type</td>
+<td>Fully human IgG4 monoclonal antibody</td>
+</tr>
+<tr class="even">
+<td>Target</td>
+<td>PD-1</td>
+</tr>
+<tr class="odd">
+<td>Route</td>
+<td>Intravenous infusion；部分成人实体瘤适应证可使用subcutaneous injection</td>
+</tr>
+<tr class="even">
+<td>Core mechanism</td>
+<td>阻断PD-1/PD-L1和PD-1/PD-L2信号，恢复抗肿瘤免疫</td>
+</tr>
+<tr class="odd">
+<td>Initial U.S. approval</td>
+<td>2014年</td>
+</tr>
+<tr class="even">
+<td>Regulatory status</td>
+<td>多瘤种已获批</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="适应症indications" class="level2">
-<h2 class="anchored" data-anchor-id="适应症indications">适应症（Indications）</h2>
-<p>尼伏单抗被批准用于治疗多种癌症类型，包括但不限于：</p>
+<section id="mechanism-of-action作用机制" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Mechanism of Action（作用机制）</h1>
+<p>PD-1是表达于活化T cell表面的免疫检查点受体。肿瘤细胞或肿瘤微环境中的免疫细胞可表达PD-L1或PD-L2，与PD-1结合后抑制T cell活性，导致肿瘤免疫逃逸。</p>
+<p>Nivolumab结合PD-1后，可阻断PD-1与其配体结合，从而：</p>
 <ul>
-<li>高级非小细胞肺癌（Advanced Non-Small Cell Lung Cancer, <a href="../../../docs/pharmaceutical/disease/NSCLC.html">NSCLC</a>）</li>
-<li>复发性或转移性黑色素瘤（Recurrent or Metastatic <a href="../../../docs/pharmaceutical/disease/Melanoma.html">Melanoma</a>）</li>
-<li>肾细胞癌（Renal Cell Carcinoma, RCC）</li>
-<li>经典霍奇金淋巴瘤（Classical Hodgkin <a href="../../../docs/pharmaceutical/disease/Lymphoma.html">Lymphoma</a>, cHL）</li>
-<li>头颈部鳞状细胞癌（Head and Neck Squamous Cell Carcinoma, HNSCC）</li>
+<li>恢复T cell activation（T细胞活化）；</li>
+<li>增强cytotoxic T-cell activity（细胞毒性T细胞活性）；</li>
+<li>增加抗肿瘤免疫反应；</li>
+<li>诱导部分患者出现持久缓解。</li>
+</ul>
+<pre class="text"><code>Tumor cell / immune cell
+        |
+   PD-L1 / PD-L2
+        |
+        v
+       PD-1
+        |
+        v
+ T-cell inhibition
+
+Nivolumab blocks PD-1
+        |
+        v
+ T-cell reactivation
+        |
+        v
+ Antitumor immune response</code></pre>
+</section>
+<section id="主要适应证" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 主要适应证</h1>
+<p>Nivolumab的适应证非常广，既可作为单药，也可与其他治疗联合使用。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>瘤种</th>
+<th>常见治疗方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Melanoma</td>
+<td>Nivolumab ± <a href="../../../docs/pharmaceutical/compound/Yervoy.html">ipilimumab</a></td>
+<td>辅助治疗或晚期治疗</td>
+</tr>
+<tr class="even">
+<td>NSCLC</td>
+<td>Nivolumab ± ipilimumab；nivolumab + chemotherapy；或后线单药</td>
+<td>取决于疾病阶段、治疗线数、PD-L1状态和既往治疗</td>
+</tr>
+<tr class="odd">
+<td>Malignant pleural mesothelioma</td>
+<td>Nivolumab + ipilimumab</td>
+<td>不可切除疾病的一线治疗选择之一</td>
+</tr>
+<tr class="even">
+<td>RCC</td>
+<td>Nivolumab + ipilimumab；nivolumab + cabozantinib</td>
+<td>晚期RCC标准方案之一</td>
+</tr>
+<tr class="odd">
+<td>cHL</td>
+<td>Nivolumab；nivolumab + AVD</td>
+<td>复发/难治及部分一线晚期cHL</td>
+</tr>
+<tr class="even">
+<td>Urothelial carcinoma</td>
+<td>Nivolumab + cisplatin/gemcitabine；或辅助治疗</td>
+<td>用于晚期或高危患者</td>
+</tr>
+<tr class="odd">
+<td>Gastric/GEJ/esophageal adenocarcinoma</td>
+<td>Nivolumab + fluoropyrimidine/platinum chemotherapy</td>
+<td>一线晚期治疗</td>
+</tr>
+<tr class="even">
+<td>Esophageal squamous cell carcinoma</td>
+<td>Nivolumab-based regimen</td>
+<td>与化疗或ipilimumab联合</td>
+</tr>
+<tr class="odd">
+<td>MSI-H/dMMR colorectal cancer</td>
+<td>Nivolumab ± ipilimumab</td>
+<td>Biomarker-defined population</td>
+</tr>
+<tr class="even">
+<td>Hepatocellular carcinoma</td>
+<td>Nivolumab + ipilimumab</td>
+<td>部分既往治疗后患者，具体以批准标签为准</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="重要临床研究" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 重要临床研究</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th style="text-align: right;">Phase</th>
+<th>人群</th>
+<th>Experimental arm</th>
+<th>Comparator</th>
+<th>Primary endpoint</th>
+<th>主要意义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CheckMate 017</td>
+<td style="text-align: right;">III</td>
+<td>鳞状NSCLC，后线</td>
+<td>Nivolumab</td>
+<td>Docetaxel</td>
+<td>OS</td>
+<td>PD-1单药在NSCLC后线确立疗效</td>
+</tr>
+<tr class="even">
+<td>CheckMate 057</td>
+<td style="text-align: right;">III</td>
+<td>非鳞NSCLC，后线</td>
+<td>Nivolumab</td>
+<td>Docetaxel</td>
+<td>OS</td>
+<td>支持非鳞NSCLC后线应用</td>
+</tr>
+<tr class="odd">
+<td>CheckMate 816</td>
+<td style="text-align: right;">III</td>
+<td>可切除NSCLC，新辅助</td>
+<td>Nivolumab + chemotherapy</td>
+<td>Chemotherapy</td>
+<td>EFS、pCR</td>
+<td>支持围手术期免疫治疗开发</td>
+</tr>
+<tr class="even">
+<td>CheckMate 227</td>
+<td style="text-align: right;">III</td>
+<td>一线NSCLC</td>
+<td>Nivolumab + ipilimumab</td>
+<td>Chemotherapy</td>
+<td>OS / PFS</td>
+<td>建立双免疫治疗策略</td>
+</tr>
+<tr class="odd">
+<td>CheckMate 214</td>
+<td style="text-align: right;">III</td>
+<td>晚期RCC</td>
+<td>Nivolumab + ipilimumab</td>
+<td>Sunitinib</td>
+<td>OS、PFS、ORR</td>
+<td>改变RCC一线治疗格局</td>
+</tr>
+<tr class="even">
+<td>CheckMate 649</td>
+<td style="text-align: right;">III</td>
+<td>胃癌/GEJ/食管腺癌</td>
+<td>Nivolumab + chemotherapy</td>
+<td>Chemotherapy</td>
+<td>OS、PFS</td>
+<td>建立胃食管癌一线免疫联合化疗</td>
+</tr>
+<tr class="odd">
+<td>CheckMate 9ER</td>
+<td style="text-align: right;">III</td>
+<td>晚期RCC</td>
+<td>Nivolumab + cabozantinib</td>
+<td>Sunitinib</td>
+<td>PFS</td>
+<td>支持免疫 + TKI联合</td>
+</tr>
+<tr class="even">
+<td>CheckMate 8HW</td>
+<td style="text-align: right;">III</td>
+<td>MSI-H/dMMR CRC</td>
+<td>Nivolumab + ipilimumab</td>
+<td>Chemotherapy</td>
+<td>PFS</td>
+<td>支持biomarker-defined CRC一线治疗</td>
+</tr>
+<tr class="odd">
+<td>CheckMate 67T</td>
+<td style="text-align: right;">III</td>
+<td>晚期或转移性clear cell RCC</td>
+<td>Opdivo Qvantig</td>
+<td>IV nivolumab</td>
+<td>PK endpoints、ORR</td>
+<td>支持皮下注射制剂批准</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-profile安全性" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Safety Profile（安全性）</h1>
+<p>Nivolumab的安全性主要来自免疫系统激活，因此重点关注<strong>immune-related adverse events, irAEs（免疫相关不良事件）</strong>。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>系统</th>
+<th>常见或重要不良事件</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>皮肤</td>
+<td>Rash、pruritus</td>
+</tr>
+<tr class="even">
+<td>胃肠道</td>
+<td>Diarrhea、colitis</td>
+</tr>
+<tr class="odd">
+<td>肝脏</td>
+<td>Hepatitis、ALT/AST elevation</td>
+</tr>
+<tr class="even">
+<td>肺部</td>
+<td>Pneumonitis</td>
+</tr>
+<tr class="odd">
+<td>内分泌</td>
+<td>Hypothyroidism、hyperthyroidism、adrenal insufficiency、type 1 diabetes</td>
+</tr>
+<tr class="even">
+<td>肾脏</td>
+<td>Nephritis</td>
+</tr>
+<tr class="odd">
+<td>全身</td>
+<td>Fatigue、infusion-related reaction</td>
+</tr>
+</tbody>
+</table>
+<p>与ipilimumab联合时，irAEs通常更常见、更严重，因此联合免疫治疗研究中需要特别关注grade &gt;=3 AE、steroid use、dose interruption和treatment discontinuation。</p>
+</section>
+<section id="opdivo-qvantig皮下注射制剂" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Opdivo Qvantig（皮下注射制剂）</h1>
+<p><strong>Opdivo Qvantig（nivolumab and hyaluronidase-nvhy；Bristol Myers Squibb）</strong>是nivolumab的皮下注射制剂。FDA于2024年12月27日批准其用于多数已获批成人实体瘤nivolumab适应证，包括单药、完成Opdivo + Yervoy（ipilimumab）联合治疗后的单药维持、联合化疗或联合cabozantinib。</p>
+<p>与IV Opdivo相比，Opdivo Qvantig的主要临床价值是给药更方便。FDA批准基于CheckMate 67T研究中的药代动力学桥接、ORR和安全性数据。根据FDA说明，Opdivo Qvantig不适用于与静脉ipilimumab联合使用。</p>
+</section>
+<section id="competitive-landscape竞争格局" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Competitive Landscape（竞争格局）</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>药物</th>
+<th>靶点</th>
+<th>公司</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nivolumab</td>
+<td>PD-1</td>
+<td><a href="../../../docs/pharmaceutical/company/BMS.html">Bristol Myers Squibb</a></td>
+<td>多瘤种、可单药或联合ipilimumab</td>
+</tr>
+<tr class="even">
+<td><a href="../../../docs/pharmaceutical/compound/Keytruda.html">Pembrolizumab</a></td>
+<td>PD-1</td>
+<td>Merck</td>
+<td>多瘤种，PD-L1 biomarker使用广泛</td>
+</tr>
+<tr class="odd">
+<td>Cemiplimab</td>
+<td>PD-1</td>
+<td>Regeneron/Sanofi</td>
+<td>CSCC、NSCLC等</td>
+</tr>
+<tr class="even">
+<td>Atezolizumab</td>
+<td>PD-L1</td>
+<td>Roche</td>
+<td>PD-L1单抗</td>
+</tr>
+<tr class="odd">
+<td>Durvalumab</td>
+<td>PD-L1</td>
+<td>AstraZeneca</td>
+<td>Stage III NSCLC、SCLC、BTC等</td>
+</tr>
+<tr class="even">
+<td><a href="../../../docs/pharmaceutical/compound/Ivonescimab.html">Ivonescimab</a></td>
+<td>PD-1 × <a href="../../../docs/pharmaceutical/target/VEGF.html">VEGF</a></td>
+<td>Akeso/Summit</td>
+<td>双特异性抗体</td>
+</tr>
+<tr class="odd">
+<td><a href="../../../docs/pharmaceutical/compound/Cadonilimab.html">Cadonilimab</a></td>
+<td>PD-1 × CTLA-4</td>
+<td>Akeso</td>
+<td>双特异性抗体</td>
+</tr>
+</tbody>
+</table>
+<p>Nivolumab的特点是联合策略非常丰富，尤其是：</p>
+<ul>
+<li>nivolumab + ipilimumab；</li>
+<li>nivolumab + chemotherapy；</li>
+<li>nivolumab + cabozantinib；</li>
+<li>nivolumab + AVD in cHL。</li>
 </ul>
 </section>
-<section id="副作用side-effects" class="level2">
-<h2 class="anchored" data-anchor-id="副作用side-effects">副作用（Side Effects）</h2>
-<p>尼伏单抗的常见副作用包括疲劳（Fatigue）、皮疹（Rash）、腹泻（Diarrhea）、关节痛（Arthralgia）和瘙痒（Pruritus）。严重副作用可能包括免疫相关的不良反应，如肝炎（Hepatitis）、结肠炎（Colitis）、肺炎（Pneumonitis）和甲状腺功能异常（Thyroid Dysfunction）。在使用时应密切监测这些副作用，并在必要时进行适当的管理和治疗。</p>
+<section id="biostatistical-considerations生物统计学考虑" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Biostatistical Considerations（生物统计学考虑）</h1>
+<section id="endpoint-selection终点选择" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="endpoint-selection终点选择"><span class="header-section-number">9.1</span> Endpoint Selection（终点选择）</h2>
+<p>Nivolumab的关键研究通常使用以下终点：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Endpoint</th>
+<th>英文全称</th>
+<th>中文解释</th>
+<th>常见用途</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OS</td>
+<td>Overall survival</td>
+<td>总生存期</td>
+<td>III期确证性研究核心终点</td>
+</tr>
+<tr class="even">
+<td>PFS</td>
+<td>Progression-free survival</td>
+<td>无进展生存期</td>
+<td>实体瘤随机研究常用终点</td>
+</tr>
+<tr class="odd">
+<td>ORR</td>
+<td>Objective response rate</td>
+<td>客观缓解率</td>
+<td>单臂研究或早期研究常用</td>
+</tr>
+<tr class="even">
+<td>DOR</td>
+<td>Duration of response</td>
+<td>缓解持续时间</td>
+<td>评估缓解持久性</td>
+</tr>
+<tr class="odd">
+<td>EFS</td>
+<td>Event-free survival</td>
+<td>无事件生存期</td>
+<td>新辅助/围手术期研究</td>
+</tr>
+<tr class="even">
+<td>DFS</td>
+<td>Disease-free survival</td>
+<td>无病生存期</td>
+<td>辅助治疗研究</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="non-proportional-hazards非比例风险" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="non-proportional-hazards非比例风险"><span class="header-section-number">9.2</span> Non-Proportional Hazards（非比例风险）</h2>
+<p>免疫治疗研究中常出现delayed treatment effect（延迟治疗效应），即早期Kaplan-Meier曲线接近，随后逐渐分离。因此需关注：</p>
+<ul>
+<li><strong>proportional hazards assumption, PH assumption（比例风险假设）</strong>；</li>
+<li>log-rank test的效率；</li>
+<li>hazard ratio, HR（风险比）的时间平均解释；</li>
+<li>restricted mean survival time, RMST（限制性平均生存时间）作为补充分析。</li>
+</ul>
+</section>
+<section id="biomarker-strategy生物标志物策略" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="biomarker-strategy生物标志物策略"><span class="header-section-number">9.3</span> Biomarker Strategy（生物标志物策略）</h2>
+<p>Nivolumab研究常涉及以下biomarker：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/target/PD-L1.html">PD-L1</a> expression；</li>
+<li>tumor mutational burden, TMB（肿瘤突变负荷）；</li>
+<li>microsatellite instability-high, MSI-H（微卫星高度不稳定）；</li>
+<li>mismatch repair deficient, dMMR（错配修复缺陷）；</li>
+<li>histology；</li>
+<li>gene mutation subgroup。</li>
+</ul>
+<p>PD-L1可作为入组条件、分层因素或预设亚组，但不是所有nivolumab适应证都要求PD-L1阳性。</p>
+</section>
+<section id="multiplicity多重性" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="multiplicity多重性"><span class="header-section-number">9.4</span> Multiplicity（多重性）</h2>
+<p>Nivolumab的大型III期研究常涉及：</p>
+<ul>
+<li>多个主要终点，如OS和PFS；</li>
+<li>多个人群，如all-comer population、PD-L1-positive subgroup；</li>
+<li>多个治疗臂，如nivolumab单药、nivolumab + ipilimumab、chemotherapy；</li>
+<li>多个interim analysis, IA（期中分析）。</li>
+</ul>
+<p>因此通常需要预先定义alpha allocation（α分配）和hierarchical testing（层级检验），以控制<strong>family-wise type I error rate, FWER（族系第一类错误率）</strong>。</p>
+</section>
+</section>
+<section id="clinical-trial-considerations临床试验考虑" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Clinical Trial Considerations（临床试验考虑）</h1>
+<section id="analysis-population分析人群" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="analysis-population分析人群"><span class="header-section-number">10.1</span> Analysis Population（分析人群）</h2>
+<p>常见分析人群包括：</p>
+<ul>
+<li><strong>intention-to-treat population, ITT population（意向治疗人群）</strong>；</li>
+<li><strong>safety analysis set（安全性分析集）</strong>；</li>
+<li>biomarker-evaluable population（生物标志物可评价人群）；</li>
+<li>PD-L1-positive population；</li>
+<li>MSI-H/dMMR population。</li>
+</ul>
+</section>
+<section id="intercurrent-events伴发事件" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="intercurrent-events伴发事件"><span class="header-section-number">10.2</span> Intercurrent Events（伴发事件）</h2>
+<p>免疫治疗试验中常见intercurrent events包括：</p>
+<ul>
+<li>treatment discontinuation due to toxicity；</li>
+<li>subsequent anticancer therapy；</li>
+<li>treatment beyond progression；</li>
+<li>steroid or immunosuppressive therapy use；</li>
+<li>crossover or treatment switching。</li>
+</ul>
+<p>这些事件会影响estimand（用于精确定义治疗效应的估计目标）和结果解释。</p>
+</section>
+<section id="safety-analysis安全性分析" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="safety-analysis安全性分析"><span class="header-section-number">10.3</span> Safety Analysis（安全性分析）</h2>
+<p>Nivolumab的安全性分析应重点呈现：</p>
+<ul>
+<li>TEAE；</li>
+<li>treatment-related adverse event；</li>
+<li>immune-mediated adverse event；</li>
+<li>grade &gt;=3 AE；</li>
+<li>serious adverse event；</li>
+<li>AE leading to discontinuation；</li>
+<li>steroid use；</li>
+<li>time to onset and time to resolution of selected irAEs。</li>
+</ul>
+</section>
+</section>
+<section id="common-pitfalls常见误区" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Common Pitfalls（常见误区）</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>误区</th>
+<th>正确理解</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opdivo是化疗</td>
+<td>Opdivo是PD-1 immune checkpoint inhibitor，不是传统化疗</td>
+</tr>
+<tr class="even">
+<td>PD-L1阴性一定不能用nivolumab</td>
+<td>取决于瘤种、治疗线数和具体适应证</td>
+</tr>
+<tr class="odd">
+<td>Nivolumab与pembrolizumab完全一样</td>
+<td>二者同属PD-1 inhibitor，但适应证、联合策略和试验数据不同</td>
+</tr>
+<tr class="even">
+<td>免疫治疗没有严重毒性</td>
+<td>irAEs可累及肺、肝、肠道、内分泌系统，严重时可危及生命</td>
+</tr>
+<tr class="odd">
+<td>HR可以完整概括免疫治疗疗效</td>
+<td>若存在delayed effect或non-proportional hazards，HR解释需谨慎</td>
+</tr>
+<tr class="even">
+<td>Opdivo Qvantig可以替代所有Opdivo用法</td>
+<td>皮下注射制剂适用范围不同，且不用于与静脉ipilimumab联合</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-takeaways总结" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Key Takeaways（总结）</h1>
+<ol type="1">
+<li>Nivolumab是经典PD-1 inhibitor，也是肿瘤免疫治疗代表性药物之一。</li>
+<li>Opdivo已获批多个实体瘤和血液肿瘤适应证，可单药或与ipilimumab、化疗、TKI等联合使用。</li>
+<li>Nivolumab的核心机制是阻断PD-1信号，恢复T cell抗肿瘤免疫。</li>
+<li>安全性重点是immune-related adverse events，尤其在联合ipilimumab时更需关注。</li>
+<li>生物统计学上，nivolumab研究常涉及OS/PFS双终点、多重性控制、PD-L1或MSI-H/dMMR biomarker strategy，以及免疫治疗相关的non-proportional hazards。</li>
+</ol>
+</section>
+<section id="references" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> References</h1>
+<ol type="1">
+<li><p>U.S. Food and Drug Administration. <em>OPDIVO (nivolumab) Prescribing Information</em>. Revised April 2025. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s132lbl.pdf" class="uri">https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s132lbl.pdf</a></p></li>
+<li><p>U.S. Food and Drug Administration. <em>FDA approves nivolumab and hyaluronidase-nvhy for subcutaneous injection</em>. December 27, 2024. <a href="https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-and-hyaluronidase-nvhy-subcutaneous-injection" class="uri">https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-and-hyaluronidase-nvhy-subcutaneous-injection</a></p></li>
+<li><p>Bristol Myers Squibb. <em>OPDIVO and OPDIVO Qvantig official indication information</em>. <a href="https://www.opdivo.com/" class="uri">https://www.opdivo.com/</a></p></li>
+<li><p>Bristol Myers Squibb. <em>U.S. Food and Drug Administration Approves Opdivo Qvantig (nivolumab and hyaluronidase-nvhy) Injection</em>. December 27, 2024. <a href="https://news.bms.com/news/corporate-financial/2024/US-Food-and-Drug-Administration-Approves-Opdivo-Qvantig-nivolumab-and-hyaluronidase-nvhy-Injection-for-Subcutaneous-Use-in-Most-Previously-Approved-Adult-Solid-Tumor-Opdivo-nivolumab-Indications12/default.aspx" class="uri">https://news.bms.com/news/corporate-financial/2024/US-Food-and-Drug-Administration-Approves-Opdivo-Qvantig-nivolumab-and-hyaluronidase-nvhy-Injection-for-Subcutaneous-Use-in-Most-Previously-Approved-Adult-Solid-Tumor-Opdivo-nivolumab-Indications12/default.aspx</a></p></li>
+<li><p>U.S. Food and Drug Administration. <em>FDA approves nivolumab with chemotherapy for previously untreated Hodgkin lymphoma</em>. March 20, 2026. <a href="https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-chemotherapy-previously-untreated-hodgkin-lymphoma" class="uri">https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-chemotherapy-previously-untreated-hodgkin-lymphoma</a></p></li>
+<li><p>National Comprehensive Cancer Network. <em>NCCN Clinical Practice Guidelines in Oncology</em>.</p></li>
+</ol>
 
+
+<!-- -->
 
 </section>
 
@@ -1013,6 +1701,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -1354,7 +2093,276 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text">Reblozyl</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Nivolumab（纳武利尤单抗，Opdivo）"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "介绍 PD-1 inhibitor Nivolumab 的机制、主要适应证、临床开发及生物统计学考虑。"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Hao Sun"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Oncology</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Immuno-Oncology</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Drug Profile</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">  - Clinical Trials</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../../../references.bib</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu"># 概述</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>**Nivolumab（纳武利尤单抗；[Bristol Myers Squibb](../company/BMS.qmd)；Opdivo / 欧狄沃）**是一种**programmed death-1, PD-1（程序性死亡受体1）inhibitor（抑制剂）**，属于**immune checkpoint inhibitor（免疫检查点抑制剂）**。</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>Nivolumab通过阻断PD-1与**programmed death-ligand 1, [PD-L1](../target/PD-L1.qmd)（程序性死亡配体1）**及PD-L2的结合，恢复T cell（T细胞）的抗肿瘤免疫活性。它是最早广泛应用于实体瘤和血液肿瘤的PD-1单抗之一。</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>截至2026年6月，Opdivo已在多个瘤种中获批，包括<span class="co">[</span><span class="ot">melanoma（黑色素瘤）</span><span class="co">](../disease/Melanoma.qmd)</span>、<span class="co">[</span><span class="ot">non-small cell lung cancer, NSCLC（非小细胞肺癌）</span><span class="co">](../disease/NSCLC.qmd)</span>、renal cell carcinoma, RCC（肾细胞癌）、classical Hodgkin lymphoma, cHL（经典霍奇金淋巴瘤）、urothelial carcinoma（尿路上皮癌）、gastric cancer（胃癌）、esophageal cancer（食管癌）、colorectal cancer（结直肠癌）等。</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>美国FDA也已批准**Opdivo Qvantig（nivolumab and hyaluronidase-nvhy）**作为皮下注射制剂，用于多数已获批的成人实体瘤nivolumab适应证。Opdivo Qvantig不适用于与静脉ipilimumab联合使用。</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu"># Drug Profile（药物信息）</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>| 项目 | 内容 |</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>| Generic name | Nivolumab |</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>| 中文通用名 | 纳武利尤单抗 |</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>| Brand name | Opdivo / 欧狄沃 |</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>| Subcutaneous formulation | Opdivo Qvantig |</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>| Company | <span class="co">[</span><span class="ot">Bristol Myers Squibb</span><span class="co">](../company/BMS.qmd)</span> |</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>| Drug class | PD-1 inhibitor |</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>| Molecular type | Fully human IgG4 monoclonal antibody |</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>| Target | PD-1 |</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>| Route | Intravenous infusion；部分成人实体瘤适应证可使用subcutaneous injection |</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>| Core mechanism | 阻断PD-1/PD-L1和PD-1/PD-L2信号，恢复抗肿瘤免疫 |</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>| Initial U.S. approval | 2014年 |</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>| Regulatory status | 多瘤种已获批 |</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="fu"># Mechanism of Action（作用机制）</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>PD-1是表达于活化T cell表面的免疫检查点受体。肿瘤细胞或肿瘤微环境中的免疫细胞可表达PD-L1或PD-L2，与PD-1结合后抑制T cell活性，导致肿瘤免疫逃逸。</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>Nivolumab结合PD-1后，可阻断PD-1与其配体结合，从而：</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>恢复T cell activation（T细胞活化）；</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>增强cytotoxic T-cell activity（细胞毒性T细胞活性）；</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>增加抗肿瘤免疫反应；</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>诱导部分患者出现持久缓解。</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="in">Tumor cell / immune cell</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="in">        |</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="in">   PD-L1 / PD-L2</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="in">        |</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="in">        v</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="in">       PD-1</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="in">        |</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="in">        v</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="in"> T-cell inhibition</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="in">Nivolumab blocks PD-1</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="in">        |</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="in">        v</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="in"> T-cell reactivation</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="in">        |</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="in">        v</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="in"> Antitumor immune response</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="fu"># 主要适应证</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>Nivolumab的适应证非常广，既可作为单药，也可与其他治疗联合使用。</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>| 瘤种 | 常见治疗方式 | 说明 |</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>| Melanoma | Nivolumab ± <span class="co">[</span><span class="ot">ipilimumab</span><span class="co">](Yervoy.qmd)</span> | 辅助治疗或晚期治疗 |</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>| NSCLC | Nivolumab ± ipilimumab；nivolumab + chemotherapy；或后线单药 | 取决于疾病阶段、治疗线数、PD-L1状态和既往治疗 |</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>| Malignant pleural mesothelioma | Nivolumab + ipilimumab | 不可切除疾病的一线治疗选择之一 |</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>| RCC | Nivolumab + ipilimumab；nivolumab + cabozantinib | 晚期RCC标准方案之一 |</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>| cHL | Nivolumab；nivolumab + AVD | 复发/难治及部分一线晚期cHL |</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>| Urothelial carcinoma | Nivolumab + cisplatin/gemcitabine；或辅助治疗 | 用于晚期或高危患者 |</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>| Gastric/GEJ/esophageal adenocarcinoma | Nivolumab + fluoropyrimidine/platinum chemotherapy | 一线晚期治疗 |</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>| Esophageal squamous cell carcinoma | Nivolumab-based regimen | 与化疗或ipilimumab联合 |</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>| MSI-H/dMMR colorectal cancer | Nivolumab ± ipilimumab | Biomarker-defined population |</span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>| Hepatocellular carcinoma | Nivolumab + ipilimumab | 部分既往治疗后患者，具体以批准标签为准 |</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="fu"># 重要临床研究</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>| Trial | Phase | 人群 | Experimental arm | Comparator | Primary endpoint | 主要意义 |</span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>|---|---:|---|---|---|---|---|</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>| CheckMate 017 | III | 鳞状NSCLC，后线 | Nivolumab | Docetaxel | OS | PD-1单药在NSCLC后线确立疗效 |</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>| CheckMate 057 | III | 非鳞NSCLC，后线 | Nivolumab | Docetaxel | OS | 支持非鳞NSCLC后线应用 |</span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>| CheckMate 816 | III | 可切除NSCLC，新辅助 | Nivolumab + chemotherapy | Chemotherapy | EFS、pCR | 支持围手术期免疫治疗开发 |</span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>| CheckMate 227 | III | 一线NSCLC | Nivolumab + ipilimumab | Chemotherapy | OS / PFS | 建立双免疫治疗策略 |</span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>| CheckMate 214 | III | 晚期RCC | Nivolumab + ipilimumab | Sunitinib | OS、PFS、ORR | 改变RCC一线治疗格局 |</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>| CheckMate 649 | III | 胃癌/GEJ/食管腺癌 | Nivolumab + chemotherapy | Chemotherapy | OS、PFS | 建立胃食管癌一线免疫联合化疗 |</span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>| CheckMate 9ER | III | 晚期RCC | Nivolumab + cabozantinib | Sunitinib | PFS | 支持免疫 + TKI联合 |</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>| CheckMate 8HW | III | MSI-H/dMMR CRC | Nivolumab + ipilimumab | Chemotherapy | PFS | 支持biomarker-defined CRC一线治疗 |</span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>| CheckMate 67T | III | 晚期或转移性clear cell RCC | Opdivo Qvantig | IV nivolumab | PK endpoints、ORR | 支持皮下注射制剂批准 |</span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="fu"># Safety Profile（安全性）</span></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>Nivolumab的安全性主要来自免疫系统激活，因此重点关注**immune-related adverse events, irAEs（免疫相关不良事件）**。</span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>| 系统 | 常见或重要不良事件 |</span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>| 皮肤 | Rash、pruritus |</span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>| 胃肠道 | Diarrhea、colitis |</span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>| 肝脏 | Hepatitis、ALT/AST elevation |</span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>| 肺部 | Pneumonitis |</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>| 内分泌 | Hypothyroidism、hyperthyroidism、adrenal insufficiency、type 1 diabetes |</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>| 肾脏 | Nephritis |</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>| 全身 | Fatigue、infusion-related reaction |</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>与ipilimumab联合时，irAEs通常更常见、更严重，因此联合免疫治疗研究中需要特别关注grade &gt;=3 AE、steroid use、dose interruption和treatment discontinuation。</span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="fu"># Opdivo Qvantig（皮下注射制剂）</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a>**Opdivo Qvantig（nivolumab and hyaluronidase-nvhy；Bristol Myers Squibb）**是nivolumab的皮下注射制剂。FDA于2024年12月27日批准其用于多数已获批成人实体瘤nivolumab适应证，包括单药、完成Opdivo + Yervoy（ipilimumab）联合治疗后的单药维持、联合化疗或联合cabozantinib。</span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a>与IV Opdivo相比，Opdivo Qvantig的主要临床价值是给药更方便。FDA批准基于CheckMate 67T研究中的药代动力学桥接、ORR和安全性数据。根据FDA说明，Opdivo Qvantig不适用于与静脉ipilimumab联合使用。</span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="fu"># Competitive Landscape（竞争格局）</span></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a>| 药物 | 靶点 | 公司 | 特点 |</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a>|---|---|---|---|</span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>| Nivolumab | PD-1 | <span class="co">[</span><span class="ot">Bristol Myers Squibb</span><span class="co">](../company/BMS.qmd)</span> | 多瘤种、可单药或联合ipilimumab |</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Pembrolizumab</span><span class="co">](Keytruda.qmd)</span> | PD-1 | Merck | 多瘤种，PD-L1 biomarker使用广泛 |</span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>| Cemiplimab | PD-1 | Regeneron/Sanofi | CSCC、NSCLC等 |</span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>| Atezolizumab | PD-L1 | Roche | PD-L1单抗 |</span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>| Durvalumab | PD-L1 | AstraZeneca | Stage III NSCLC、SCLC、BTC等 |</span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Ivonescimab</span><span class="co">](Ivonescimab.qmd)</span> | PD-1 × <span class="co">[</span><span class="ot">VEGF</span><span class="co">](../target/VEGF.qmd)</span> | Akeso/Summit | 双特异性抗体 |</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Cadonilimab</span><span class="co">](Cadonilimab.qmd)</span> | PD-1 × CTLA-4 | Akeso | 双特异性抗体 |</span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>Nivolumab的特点是联合策略非常丰富，尤其是：</span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>nivolumab + ipilimumab；</span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>nivolumab + chemotherapy；</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>nivolumab + cabozantinib；</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>nivolumab + AVD in cHL。</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a><span class="fu"># Biostatistical Considerations（生物统计学考虑）</span></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a><span class="fu">## Endpoint Selection（终点选择）</span></span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a>Nivolumab的关键研究通常使用以下终点：</span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>| Endpoint | 英文全称 | 中文解释 | 常见用途 |</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a>|---|---|---|---|</span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>| OS | Overall survival | 总生存期 | III期确证性研究核心终点 |</span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a>| PFS | Progression-free survival | 无进展生存期 | 实体瘤随机研究常用终点 |</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a>| ORR | Objective response rate | 客观缓解率 | 单臂研究或早期研究常用 |</span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>| DOR | Duration of response | 缓解持续时间 | 评估缓解持久性 |</span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a>| EFS | Event-free survival | 无事件生存期 | 新辅助/围手术期研究 |</span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a>| DFS | Disease-free survival | 无病生存期 | 辅助治疗研究 |</span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a><span class="fu">## Non-Proportional Hazards（非比例风险）</span></span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a>免疫治疗研究中常出现delayed treatment effect（延迟治疗效应），即早期Kaplan-Meier曲线接近，随后逐渐分离。因此需关注：</span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**proportional hazards assumption, PH assumption（比例风险假设）**；</span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>log-rank test的效率；</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>hazard ratio, HR（风险比）的时间平均解释；</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>restricted mean survival time, RMST（限制性平均生存时间）作为补充分析。</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="fu">## Biomarker Strategy（生物标志物策略）</span></span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a>Nivolumab研究常涉及以下biomarker：</span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">PD-L1</span><span class="co">](../target/PD-L1.qmd)</span> expression；</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>tumor mutational burden, TMB（肿瘤突变负荷）；</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>microsatellite instability-high, MSI-H（微卫星高度不稳定）；</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>mismatch repair deficient, dMMR（错配修复缺陷）；</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>histology；</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>gene mutation subgroup。</span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a>PD-L1可作为入组条件、分层因素或预设亚组，但不是所有nivolumab适应证都要求PD-L1阳性。</span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a><span class="fu">## Multiplicity（多重性）</span></span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a>Nivolumab的大型III期研究常涉及：</span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>多个主要终点，如OS和PFS；</span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>多个人群，如all-comer population、PD-L1-positive subgroup；</span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>多个治疗臂，如nivolumab单药、nivolumab + ipilimumab、chemotherapy；</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>多个interim analysis, IA（期中分析）。</span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a>因此通常需要预先定义alpha allocation（α分配）和hierarchical testing（层级检验），以控制**family-wise type I error rate, FWER（族系第一类错误率）**。</span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Trial Considerations（临床试验考虑）</span></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a><span class="fu">## Analysis Population（分析人群）</span></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a>常见分析人群包括：</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**intention-to-treat population, ITT population（意向治疗人群）**；</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**safety analysis set（安全性分析集）**；</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>biomarker-evaluable population（生物标志物可评价人群）；</span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L1-positive population；</span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>MSI-H/dMMR population。</span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a><span class="fu">## Intercurrent Events（伴发事件）</span></span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a>免疫治疗试验中常见intercurrent events包括：</span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>treatment discontinuation due to toxicity；</span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>subsequent anticancer therapy；</span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>treatment beyond progression；</span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>steroid or immunosuppressive therapy use；</span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>crossover or treatment switching。</span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a>这些事件会影响estimand（用于精确定义治疗效应的估计目标）和结果解释。</span>
+<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a><span class="fu">## Safety Analysis（安全性分析）</span></span>
+<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a>Nivolumab的安全性分析应重点呈现：</span>
+<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TEAE；</span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>treatment-related adverse event；</span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>immune-mediated adverse event；</span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>grade &gt;=3 AE；</span>
+<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>serious adverse event；</span>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>AE leading to discontinuation；</span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>steroid use；</span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>time to onset and time to resolution of selected irAEs。</span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a><span class="fu"># Common Pitfalls（常见误区）</span></span>
+<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a>| 误区 | 正确理解 |</span>
+<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-241"><a href="#cb2-241" aria-hidden="true" tabindex="-1"></a>| Opdivo是化疗 | Opdivo是PD-1 immune checkpoint inhibitor，不是传统化疗 |</span>
+<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a>| PD-L1阴性一定不能用nivolumab | 取决于瘤种、治疗线数和具体适应证 |</span>
+<span id="cb2-243"><a href="#cb2-243" aria-hidden="true" tabindex="-1"></a>| Nivolumab与pembrolizumab完全一样 | 二者同属PD-1 inhibitor，但适应证、联合策略和试验数据不同 |</span>
+<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a>| 免疫治疗没有严重毒性 | irAEs可累及肺、肝、肠道、内分泌系统，严重时可危及生命 |</span>
+<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a>| HR可以完整概括免疫治疗疗效 | 若存在delayed effect或non-proportional hazards，HR解释需谨慎 |</span>
+<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a>| Opdivo Qvantig可以替代所有Opdivo用法 | 皮下注射制剂适用范围不同，且不用于与静脉ipilimumab联合 |</span>
+<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Takeaways（总结）</span></span>
+<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Nivolumab是经典PD-1 inhibitor，也是肿瘤免疫治疗代表性药物之一。</span>
+<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Opdivo已获批多个实体瘤和血液肿瘤适应证，可单药或与ipilimumab、化疗、TKI等联合使用。</span>
+<span id="cb2-252"><a href="#cb2-252" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Nivolumab的核心机制是阻断PD-1信号，恢复T cell抗肿瘤免疫。</span>
+<span id="cb2-253"><a href="#cb2-253" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>安全性重点是immune-related adverse events，尤其在联合ipilimumab时更需关注。</span>
+<span id="cb2-254"><a href="#cb2-254" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>生物统计学上，nivolumab研究常涉及OS/PFS双终点、多重性控制、PD-L1或MSI-H/dMMR biomarker strategy，以及免疫治疗相关的non-proportional hazards。</span>
+<span id="cb2-255"><a href="#cb2-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-256"><a href="#cb2-256" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
+<span id="cb2-257"><a href="#cb2-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-258"><a href="#cb2-258" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>U.S. Food and Drug Administration. *OPDIVO (nivolumab) Prescribing Information*. Revised April 2025. <span class="ot">&lt;https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s132lbl.pdf&gt;</span></span>
+<span id="cb2-259"><a href="#cb2-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-260"><a href="#cb2-260" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>U.S. Food and Drug Administration. *FDA approves nivolumab and hyaluronidase-nvhy for subcutaneous injection*. December 27, 2024. <span class="ot">&lt;https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-and-hyaluronidase-nvhy-subcutaneous-injection&gt;</span></span>
+<span id="cb2-261"><a href="#cb2-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-262"><a href="#cb2-262" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Bristol Myers Squibb. *OPDIVO and OPDIVO Qvantig official indication information*. <span class="ot">&lt;https://www.opdivo.com/&gt;</span></span>
+<span id="cb2-263"><a href="#cb2-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-264"><a href="#cb2-264" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Bristol Myers Squibb. *U.S. Food and Drug Administration Approves Opdivo Qvantig (nivolumab and hyaluronidase-nvhy) Injection*. December 27, 2024. <span class="ot">&lt;https://news.bms.com/news/corporate-financial/2024/US-Food-and-Drug-Administration-Approves-Opdivo-Qvantig-nivolumab-and-hyaluronidase-nvhy-Injection-for-Subcutaneous-Use-in-Most-Previously-Approved-Adult-Solid-Tumor-Opdivo-nivolumab-Indications12/default.aspx&gt;</span></span>
+<span id="cb2-265"><a href="#cb2-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-266"><a href="#cb2-266" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>U.S. Food and Drug Administration. *FDA approves nivolumab with chemotherapy for previously untreated Hodgkin lymphoma*. March 20, 2026. <span class="ot">&lt;https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-chemotherapy-previously-untreated-hodgkin-lymphoma&gt;</span></span>
+<span id="cb2-267"><a href="#cb2-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-268"><a href="#cb2-268" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

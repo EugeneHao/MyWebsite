@@ -67,7 +67,7 @@ title: "General Drug Introduction"
 
 ### **临床应用案例**
 
--   **赫赛汀（[Herceptin](../compound/Herceptin.qmd)，一种单克隆抗体）**：用于治疗HER2阳性的乳腺癌。
+-   **赫赛汀（[Herceptin](../compound/Herceptin.qmd)，一种单克隆抗体）**：用于治疗[HER2](../target/HER.qmd)阳性的乳腺癌。
 
 -   **利妥昔单抗（Rituximab）**：用于治疗非霍奇金淋巴瘤和某些自身免疫性疾病。
 
@@ -101,7 +101,7 @@ title: "General Drug Introduction"
 
 单克隆抗体疗法已成为多种疾病治疗的重要手段，尤其是在癌症治疗领域：
 
--   **癌症治疗**：例如赫赛汀（Herceptin）用于治疗HER2阳性的乳腺癌，利妥昔单抗（Rituximab）用于治疗非霍奇金淋巴瘤。
+-   **癌症治疗**：例如赫赛汀（[Herceptin](../compound/Herceptin.qmd)）用于治疗[HER2](../target/HER.qmd)阳性的乳腺癌，利妥昔单抗（Rituximab）用于治疗非霍奇金淋巴瘤。
 
 -   **自身免疫疾病**：如阿达木单抗（Adalimumab）用于治疗类风湿性关节炎和克罗恩病。
 

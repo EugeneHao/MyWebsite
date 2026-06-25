@@ -1,121 +1,303 @@
 ---
-title: "ADC"
+title: "Antibody–Drug Conjugate, ADC（抗体偶联药物）"
+description: "介绍 ADC 的组成、作用机制、分类、临床开发及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Development
+  - Drug Profile
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
 ---
 
-# 抗体药物偶联物（Antibody-Drug Conjugates, ADCs）基本概念和原理
+# 概述
 
-## ADCs简介
+**Antibody–Drug Conjugate, ADC（抗体偶联药物）**是近年来肿瘤药物研发最活跃的领域之一。ADC将**单克隆抗体（monoclonal antibody）**、**连接子（linker）**和**高效细胞毒载荷（payload）**三部分结合在一起，实现将高毒性的化疗药物精准递送至肿瘤细胞，从而提高疗效并降低全身毒性。
 
-抗体药物偶联物（Antibody-Drug Conjugates, ADCs）是一种创新的生物制药技术，近年来在癌症治疗领域引起了广泛关注。要理解ADCs，我们可以将其分解为三个基本组件：抗体、药物和连接物。下面对这三个组件进行详细解释：
+ADC常被形象地称为**Biological Missile（生物导弹）**，即利用抗体精准识别肿瘤细胞，再将毒素定向释放至肿瘤内部。
 
--   抗体（Antibody）：抗体是一种由免疫系统产生的蛋白质，能特异性地识别和结合到身体中的特定分子，比如癌细胞表面的抗原。在ADCs中，抗体被用作“导航系统”，引导药物直接送达至癌细胞，而不是正常细胞。
--   药物（Drug）：这部分通常是一种强效的化疗药物，能够杀死癌细胞。这些药物在没有抗体的引导下可能会对正常细胞产生严重的毒性，但在ADCs中，它们被精确地运送到癌细胞，从而减少了对正常细胞的损伤。
--   连接物（Linker）：连接物是一种用于将药物和抗体结合在一起的稳定化学链。它必须足够稳定，以确保在抗体将药物运送到癌细胞之前不会释放出药物。一旦抗体与癌细胞结合，连接物则会被分解，释放出药物，以杀死癌细胞。
+近年来，随着[HER2](../target/HER.qmd)、[TROP2](../target/TROP2.qmd)、Nectin-4、CLDN18.2、[HER3](../target/HER.qmd)等多个靶点ADC获得成功，ADC已成为实体瘤和血液肿瘤治疗的重要组成部分。
 
-这种独特的组合使得ADCs能够将药物直接和特异性地送达到癌细胞，减少对正常细胞的损害。总的来说，ADCs是一种将抗体的靶向能力与化疗药物的杀伤力结合在一起的策略。这种设计允许更精确地对癌症进行治疗，同时减少对患者正常组织的损害，从而提高了治疗的效果并减轻了副作用
+# Drug Profile（药物组成）
 
-::: {.callout-note collapse="true" title="生物制药技术"}
--   重组DNA技术 (Recombinant DNA Technology)：改造细胞遗传物质以生产药物的技术。
--   单克隆抗体技术 (Monoclonal Antibody Technology)：用于生产特定目标抗体的技术。
--   细胞培养技术 (Cell Culture Technology)：在控制条件下培养细胞以生产药物。
--   基因治疗 (Gene Therapy)：通过基因转移治疗或预防疾病的方法。
--   RNA干扰 (RNA Interference, RNAi)：使用小RNA分子抑制特定基因表达的技术。
--   蛋白质工程 (Protein Engineering)：设计或改变蛋白质结构以提高其疗效或稳定性。
--   生物相似药物和生物仿制药 (Biosimilars and Biogenerics)：类似于现有生物药品的药物。
--   干细胞技术 (Stem Cell Technology)：利用干细胞治疗疾病的技术。
--   生物标志物开发 ([Biomarker](Biomarker.qmd) Development)：识别用于指示疾病或治疗反应的生物标志物。
--   免疫治疗技术 ([Immunotherapy](Immunotherapy.qmd) Techniques)：包括疫苗和免疫调节药物的开发，用于增强或调节免疫系统。
-:::
+ADC主要由三部分组成：
 
-## ADCs的工作原理
+| 组成 | 英文 | 作用 |
+|---|---|---|
+| 抗体 | Antibody | 识别肿瘤特异性抗原 |
+| 连接子 | Linker | 将抗体与载荷连接，并控制药物释放 |
+| 载荷 | Payload | 杀伤肿瘤细胞 |
 
-ADCs的核心机制是利用抗体的特异性识别能力。抗体部分被设计为识别并紧密结合到癌细胞表面的特定抗原。一旦结合，ADC可以被癌细胞吞噬进入其内部。在细胞内部，由于细胞环境的变化，连接物（Linker）被分解，释放出携带的药物。这些药物是高度毒性的，可以有效地杀死癌细胞。
+整体结构可表示为：
 
-通过这种方式，ADCs将药物直接送达目标细胞，大大提高了治疗的特异性和效率。相比传统化疗，这减少了对健康细胞的损伤，降低了副作用，提高了患者的生活质量。尤其在难以治疗的癌症类型中，ADCs展现了巨大的潜力，为癌症治疗开辟了新的道路。
+```text
+Antibody --- Linker --- Payload
+```
 
-# ADCs的历史发展和当前状态
+# Mechanism of Action（作用机制）
 
-## 历史发展
+ADC的作用过程通常包括以下几个步骤。
 
-ADCs的概念最早可以追溯到20世纪70年代，当时科学家开始探索如何利用抗体来传递药物。但由于早期技术的限制，如抗体的特异性不足、连接物（Linker）的不稳定性以及药物的低效性，这一领域的发展相对缓慢。进入21世纪，随着分子生物学和化学技术的进步，ADCs的研究迎来了重大突破。抗体的工程化改造、更稳定有效的连接物的设计，以及更加强效的药物的开发，共同推动了ADCs的快速发展。
+## 1. 靶向结合（Target Binding）
 
-## ADCs的当前状态：批准使用的药物列表
+ADC首先通过抗体识别肿瘤细胞表面的特异性抗原，例如：
 
-ADCs作为一种新兴的癌症治疗方法，已经有多种药物获得市场批准。以下是截至目前批准使用的主要ADCs药物列表：
+- [HER2](../target/HER.qmd)；
+- [TROP2](../target/TROP2.qmd)；
+- Nectin-4；
+- CD30；
+- CD22；
+- [HER3](../target/HER.qmd)。
 
--   Trastuzumab Emtansine (Kadcyla) - 用于治疗HER2阳性乳腺癌。
--   Brentuximab Vedotin (Adcetris) - 用于治疗霍奇金淋巴瘤和某些类型的非霍奇金淋巴瘤。
--   Ado-trastuzumab Emtansine (Enhertu) - 用于治疗HER2阳性乳腺癌。
--   Gemtuzumab Ozogamicin ([Mylotarg](../compound/Mylotarg.qmd)) - 用于治疗急性髓系白血病（[AML](../disease/Leukemia.qmd#acute-myeloid-leukemia)）。
--   Inotuzumab Ozogamicin (Besponsa) - 用于治疗急性淋巴细胞白血病（ALL）。
--   Polatuzumab Vedotin (Polivy) - 与其他药物联合用于治疗复发或难治性的非霍奇金淋巴瘤。
--   Enfortumab Vedotin (Padcev) - 用于治疗局部晚期或转移性尿路上皮癌。
--   Sacituzumab Govitecan (Trodelvy) - 用于治疗三阴性乳腺癌。
--   Loncastuximab Tesirine (Zynlonta) - 用于治疗复发或难治性的大B细胞淋巴瘤。
--   Belantamab Mafodotin (Blenrep) - 用于治疗复发或难治性的多发性骨髓瘤。
+由于正常组织通常表达较低，因此能够提高治疗选择性。
 
-以上药物代表了ADCs在癌症治疗领域的多样性和潜力。它们针对不同类型的癌症，展示了针对性治疗的优势和效果。
+## 2. 内吞（Internalization）
 
-# ADCs的设计和制造
+ADC与抗原结合后，被肿瘤细胞通过**endocytosis（胞吞作用）**内化进入细胞。
 
-## 设计原则
+## 3. Payload释放
 
-设计高效且安全的ADCs涉及多个关键步骤。首先，选择合适的抗体至关重要。这个抗体必须具有高度的特异性，能够精确识别并结合到癌细胞表面的特定抗原，而不会与正常细胞产生显著交互作用。其次，药物的选择同样重要。药物通常是高度毒性的，旨在杀死癌细胞。因此，选择一种能在癌细胞内有效释放且具有强大杀伤力的药物是关键。最后，连接物（Linker）的设计也是制造ADCs的关键组成部分。一个理想的连接物应该稳定，能够在药物运输到目标细胞之前保持完整，而在达到目标后迅速且准确地释放药物。
+进入溶酶体（lysosome）后：
 
-## 制造过程中的挑战
+- Linker被切断（可切割linker）；
+- 或ADC被降解释放payload（不可切割linker）。
 
-制造ADCs面临着许多挑战。其中之一是确保高度的一致性和纯度，因为任何微小的变化都可能影响治疗的安全性和有效性。此外，由于ADCs的复杂性，生产过程需要高度精准的技术，以确保抗体、药物和连接物之间的正确结合。高效的纯化技术也是必不可少的，以去除任何未反应的组分或副产品。
+随后释放高活性的细胞毒药物。
 
-## 创新技术
+## 4. 肿瘤细胞死亡
 
-为了克服这些挑战，多种创新技术已经被开发和应用。例如，使用生物工程技术改善抗体的特异性和稳定性，以及开发更稳定、更可控的连接物。此外，高级的纯化和分析技术也在不断进步，以提高生产过程的效率和质量控制。随着技术的不断发展，我们可以预期未来的ADCs将更加有效和安全。
+Payload可作用于不同靶点，例如：
 
-# ADCs的安全性和副作用
+- 抑制微管形成；
+- 抑制DNA拓扑异构酶I（Topoisomerase I）；
+- 诱导DNA损伤；
+- 阻断细胞分裂。
 
-## 常见副作用
+最终导致细胞凋亡。
 
-尽管ADCs提供了针对癌症的更加精准的治疗方法，但它们仍然可能引起一些副作用。常见的副作用包括：
+## 5. Bystander Effect（旁观者效应）
 
--   骨髓抑制：导致白细胞、红细胞和血小板数量减少，增加感染、贫血和出血的风险。
--   肝脏毒性：表现为肝酶水平升高，严重时可能导致肝功能衰竭。
--   神经系统副作用：如头痛、感觉异常和周围神经病变。
--   皮肤反应：包括皮疹、瘙痒和干燥。
--   胃肠道反应：如恶心、呕吐、腹泻和便秘。
+部分payload能够扩散至邻近肿瘤细胞，即使这些细胞抗原表达较低，也可能被杀伤。
 
-## 安全性问题
+这一特点有助于克服肿瘤异质性，但也可能增加正常组织毒性。
 
-与安全性相关的主要问题包括药物的特异性和连接物（Linker）的稳定性。虽然ADCs旨在精准靶向癌细胞，但有时也可能影响正常细胞，尤其是那些表达相似抗原的细胞。此外，如果连接物在血液中过早释放药物，也可能导致副作用。
+# ADC的组成详解
 
-# **双抗ADC与单抗ADC的区别**
+## Antibody（抗体）
 
-### **结构差异**
+理想靶点应满足：
 
--   **单抗ADC**：
+- 肿瘤高表达；
+- 正常组织低表达；
+- 易发生内吞；
+- 表达稳定。
 
-    -   **构成**：由单一的抗体分子组成，该抗体通过化学偶联与一个或多个抗癌药物（如化疗药物）连接。
+常见ADC靶点如下：
 
-    -   **作用**：单抗ADC主要针对一个特定的肿瘤相关抗原。
+| 靶点 | 代表药物 |
+|---|---|
+| [HER2](../target/HER.qmd) | Trastuzumab deruxtecan、Trastuzumab emtansine |
+| [TROP2](../target/TROP2.qmd) | Sacituzumab govitecan、Datopotamab deruxtecan |
+| Nectin-4 | Enfortumab vedotin |
+| CD30 | Brentuximab vedotin |
+| CD22 | Inotuzumab ozogamicin |
+| [HER3](../target/HER.qmd) | Patritumab deruxtecan、[Izalontamab brengitecan](../compound/Izalontamab_Brengitecan.qmd) |
 
--   **双抗ADC**：
+## Linker（连接子）
 
-    -   **构成**：含有两个不同的抗体或抗体片段，它们能同时靶向两种不同的肿瘤相关抗原。
+Linker决定ADC的稳定性及释放方式。
 
-    -   **作用**：通过双重靶向机制，双抗ADC可以更精确地靶向癌细胞，减少对正常细胞的影响。
+### 可切割Linker（Cleavable Linker）
 
-### **靶向机制的差异**
+利用：
 
--   **单抗ADC**：单一靶点，依靠单个抗原的识别来引导药物到达癌细胞。
+- 蛋白酶；
+- 酸性环境；
+- 谷胱甘肽；
 
--   **双抗ADC**：双重靶向，能够同时攻击两个不同的抗原，这种双重机制有望提高治疗的精确性和效率。
+释放payload。
 
-### **临床应用差异**
+优点：
 
--   **单抗ADC**：在多种癌症治疗中显示效果，特别是在某些淋巴瘤和乳腺癌治疗中已经被证明有效。
+- 药效较强；
+- 容易产生旁观者效应。
 
--   **双抗ADC**：虽然是相对较新的概念，但在实验和早期临床试验中显示出对多种癌症的潜在治疗效果，特别是对于那些传统单抗ADC效果有限的癌症类型。
+缺点：
 
-# 相关资料
+- 稳定性要求较高。
 
--   [影响抗体偶联药物疗效的关键因素](https://mp.weixin.qq.com/s/r1cfXIsVfwK2aOZNBFRnlw)
--   [JPM2024深度分析-ADC](https://mp.weixin.qq.com/s/ssRcxMGFVBvgjrCRbThhNA)
--   [探索下一代抗体偶联药物](https://mp.weixin.qq.com/s/sFc0Oa9RovFIiE7CHBkcGA)
+### 不可切割Linker（Non-cleavable Linker）
+
+需ADC完全降解后释放payload。
+
+优点：
+
+- 稳定性高；
+- 脱靶毒性较低。
+
+代表药物：
+
+- Trastuzumab emtansine（T-DM1）。
+
+## Payload（载荷）
+
+由于每个ADC分子进入细胞数量有限，因此payload必须具有极高活性。
+
+常见类型如下：
+
+| Payload类型 | 代表药物 |
+|---|---|
+| Topoisomerase I inhibitor | DXd、SN-38 |
+| Microtubule inhibitor | MMAE、MMAF、DM1、DM4 |
+| DNA damaging agent | Calicheamicin、PBD |
+
+# Drug-to-Antibody Ratio（DAR）
+
+**Drug-to-antibody ratio, DAR（药物抗体比）**指每个抗体平均偶联多少个payload。
+
+| DAR | 特点 |
+|---|---|
+| 2–4 | 稳定性较高 |
+| 6–8 | 药效增强 |
+| >8 | 易聚集、毒性增加 |
+
+DAR是ADC设计中的关键参数，会影响：
+
+- 药代动力学（PK）；
+- 疗效；
+- 安全性；
+- 稳定性。
+
+# 已上市代表性ADC
+
+| 药物 | 靶点 | Payload | 主要适应症 |
+|---|---|---|---|
+| Trastuzumab emtansine (T-DM1) | [HER2](../target/HER.qmd) | DM1 | HER2阳性[乳腺癌](../disease/Breast_Cancer.qmd) |
+| Trastuzumab deruxtecan (T-DXd) | [HER2](../target/HER.qmd) | DXd | HER2阳性乳腺癌、胃癌、[NSCLC](../disease/NSCLC.qmd)等 |
+| Sacituzumab govitecan | [TROP2](../target/TROP2.qmd) | SN-38 | TNBC、HR+/HER2-乳腺癌 |
+| Datopotamab deruxtecan | [TROP2](../target/TROP2.qmd) | DXd | NSCLC、乳腺癌 |
+| Enfortumab vedotin | Nectin-4 | MMAE | 尿路上皮癌 |
+| Brentuximab vedotin | CD30 | MMAE | 霍奇金[淋巴瘤](../disease/Lymphoma.qmd) |
+| [Gemtuzumab ozogamicin](../compound/Mylotarg.qmd) | CD33 | Calicheamicin | [AML](../disease/Leukemia.qmd#acute-myeloid-leukemia) |
+| Inotuzumab ozogamicin | CD22 | Calicheamicin | ALL |
+| Belantamab mafodotin | BCMA | MMAF | 多发性[骨髓瘤](../disease/multiple_myeloma.qmd) |
+
+# ADC的优势
+
+相比传统化疗：
+
+- 更高肿瘤选择性；
+- 更高局部药物浓度；
+- 系统毒性降低；
+- 可治疗低表达靶点；
+- 与[免疫治疗](Immunotherapy.qmd)具有协同作用。
+
+# ADC的局限性
+
+主要挑战包括：
+
+- 抗原表达异质性；
+- 获得性耐药；
+- Payload外泄导致毒性；
+- Linker稳定性不足；
+- ILD（interstitial lung disease，间质性肺疾病）等特殊毒性，尤其是部分DXd类ADC。
+
+# Clinical Development（临床开发特点）
+
+近年来ADC已成为全球肿瘤研发热点。
+
+热门靶点包括：
+
+- [HER2](../target/HER.qmd)；
+- [TROP2](../target/TROP2.qmd)；
+- [HER3](../target/HER.qmd)；
+- EGFR；
+- CLDN18.2；
+- B7-H3；
+- LIV-1；
+- Mesothelin。
+
+常见联合治疗策略包括：
+
+- ADC + PD-1/PD-L1 inhibitor；
+- ADC + [VEGF](../target/VEGF.qmd) inhibitor；
+- ADC + 化疗；
+- ADC + 双特异性抗体；
+- ADC + ADC。
+
+双特异性ADC也正在快速发展，例如[izalontamab brengitecan](../compound/Izalontamab_Brengitecan.qmd)是一种[EGFR × HER3](../target/HER.qmd) bispecific ADC。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+ADC临床试验与传统抗体药物类似，但由于具有独特毒性和治疗模式，在设计和分析中有若干特殊考虑。
+
+## 常见终点
+
+包括：
+
+- **objective response rate, ORR（客观缓解率）**；
+- **duration of response, DOR（缓解持续时间）**；
+- **[progression-free survival, PFS（无进展生存期）](PFS.qmd)**；
+- **overall survival, OS（总生存期）**。
+
+早期单臂研究通常以ORR和DOR为主要终点；III期随机研究则多采用PFS和OS。
+
+## 剂量优化（Dose Optimization）
+
+ADC的疗效和毒性均与暴露密切相关，因此越来越多的项目在早期开发阶段开展剂量优化研究，而非仅采用传统最大耐受剂量（MTD）。
+
+## 安全性分析
+
+ADC常需重点分析：
+
+- ILD（DXd类）；
+- Peripheral neuropathy（外周神经病变，MMAE类）；
+- Ocular toxicity（眼毒性）；
+- Neutropenia（中性粒细胞减少）；
+- Liver toxicity（肝毒性）。
+
+对于导致停药、减量或延迟给药的不良事件，应结合**estimand（估计目标）**及[intercurrent event（伴发事件）](Intercurrent_Events.qmd)制定合适的分析策略。
+
+## Biomarker Analysis（生物标志物分析）
+
+ADC疗效通常与靶点表达水平密切相关，因此试验中常进行：
+
+- [HER2](../target/HER.qmd) expression；
+- [TROP2](../target/TROP2.qmd) expression；
+- CLDN18.2 expression；
+- HER3 expression；
+
+等亚组分析，以探索预测性[生物标志物](Biomarker.qmd)。
+
+# ADC与其他药物类型比较
+
+| 类型 | 靶向性 | 是否携带毒素 | 代表药物 |
+|---|---|---|---|
+| 化疗 | × | 是 | Docetaxel |
+| 单克隆抗体 | 是 | 否 | [Pembrolizumab](../compound/Keytruda.qmd) |
+| 双特异性抗体 | 是 | 否 | [Ivonescimab](../compound/Ivonescimab.qmd)、[Cadonilimab](../compound/Cadonilimab.qmd) |
+| ADC | 是 | 是 | Trastuzumab deruxtecan |
+
+# Key Takeaways（总结）
+
+1. ADC由抗体、连接子和高活性载荷组成，实现精准递送细胞毒药物。
+2. 靶点选择、linker类型、payload类型及DAR是决定ADC成败的四个核心设计因素。
+3. Bystander effect有助于克服肿瘤异质性，但可能增加脱靶毒性。
+4. ADC已成为肿瘤药物研发的重要方向，在乳腺癌、肺癌、尿路上皮癌及血液肿瘤等领域取得显著进展。
+5. 生物统计学上需重点关注剂量优化、安全性监测、生物标志物亚组分析及适当的终点设计。
+
+# References
+
+1. Lambert JM, Morris CQ. Antibody–Drug Conjugates (ADCs) for Personalized Treatment of Solid Tumors. *Adv Ther*. 2017.
+2. Beck A, et al. Strategies and challenges for the next generation of antibody–drug conjugates. *Nat Rev Drug Discov*. 2017.
+3. National Comprehensive Cancer Network (NCCN) Guidelines.
+4. U.S. Food and Drug Administration (FDA). Approved Antibody–Drug Conjugates.
+5. European Medicines Agency (EMA). Antibody–Drug Conjugate approvals.

@@ -10,7 +10,7 @@ title: "Tecentriq"
 
 ### **治疗原理（Treatment Mechanism）**
 
-阿替利珠单抗的作用机制是靶向PD-L1（程序性死亡配体-1，Programmed Death-Ligand 1），一种在一些癌细胞以及免疫系统细胞表面表达的蛋白。通过阻断PD-L1与其受体PD-1的结合，阿替利珠单抗能够激活T细胞，增强免疫系统对癌细胞的攻击能力。
+阿替利珠单抗的作用机制是靶向[PD-L1（程序性死亡配体-1，Programmed Death-Ligand 1）](../target/PD-L1.qmd)，一种在一些癌细胞以及免疫系统细胞表面表达的蛋白。通过阻断PD-L1与其受体PD-1的结合，阿替利珠单抗能够激活T细胞，增强免疫系统对癌细胞的攻击能力。
 
 ### **适应症（Indications）**
 
@@ -24,7 +24,7 @@ title: "Tecentriq"
 
 4.  肝细胞癌（Hepatocellular Carcinoma, HCC，肝细胞癌）
 
-5.  广泛型小细胞肺癌（Extensive-Stage Small Cell Lung Cancer, SCLC，广泛期小细胞肺癌）
+5.  [广泛期小细胞肺癌（Extensive-Stage Small Cell Lung Cancer, ES-SCLC）](../disease/SCLC.qmd#extensive-stage-sclc)
 
 ### **副作用（Side Effects）**
 

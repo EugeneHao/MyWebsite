@@ -1,0 +1,301 @@
+---
+title: "Programmed Death-Ligand 1, PD-L1（程序性死亡配体1）"
+description: "介绍 PD-L1 的生物学功能、检测方法、临床意义及在肿瘤药物开发中的应用。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Immuno-Oncology
+  - Biomarkers
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Programmed Death-Ligand 1, PD-L1（程序性死亡配体1）**是肿瘤免疫治疗中最重要的**predictive biomarker（预测性生物标志物）**之一，也是目前**immune checkpoint inhibitor（免疫检查点抑制剂）**临床开发中应用最广泛的[生物标志物](../other/Biomarker.qmd)之一。
+
+PD-L1是一种跨膜蛋白，可与**programmed death-1, PD-1（程序性死亡受体1）**结合，抑制T cell（T细胞）的活化，从而帮助肿瘤细胞逃避免疫系统攻击。
+
+目前，PD-L1表达水平已被广泛用于指导**PD-1/PD-L1 inhibitor（PD-1/PD-L1抑制剂）**的治疗选择，尤其是在[Non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)、尿路上皮癌、头颈鳞癌、胃癌及食管癌等多个瘤种中。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| PD-1 | Programmed Death-1，表达于活化T细胞上的免疫检查点受体 |
+| PD-L1 | Programmed Death-Ligand 1，PD-1的主要配体 |
+| PD-L2 | PD-1的另一配体，表达范围较窄 |
+| Immune checkpoint | 免疫检查点，用于维持免疫耐受、防止过度免疫反应 |
+| Immune checkpoint inhibitor | 阻断免疫检查点的药物，如[Pembrolizumab](../compound/Keytruda.qmd)、[Nivolumab](../compound/Opdivo.qmd) |
+
+# PD-1/PD-L1信号通路
+
+正常情况下，当T细胞识别肿瘤细胞时，会产生杀伤作用。
+
+然而，许多肿瘤细胞大量表达PD-L1：
+
+```text
+Tumor Cell
+      |
+   PD-L1
+      |
+      v
+     PD-1
+      |
+Activated T Cell
+      |
+      v
+T-cell inhibition
+↓ Cytokine production
+↓ Cell proliferation
+↓ Tumor killing
+```
+
+PD-L1与PD-1结合后，可导致：
+
+- 抑制T cell活化；
+- 降低细胞毒作用；
+- 减少细胞因子释放；
+- 促进肿瘤免疫逃逸（immune evasion）。
+
+PD-1/PD-L1抑制剂通过阻断该通路，可恢复T细胞的抗肿瘤功能。
+
+# PD-L1的表达
+
+PD-L1可表达于多种细胞。
+
+| 细胞类型 | 是否表达PD-L1 |
+|---|---|
+| Tumor cells（肿瘤细胞） | 高表达 |
+| Macrophages（巨噬细胞） | 可表达 |
+| Dendritic cells（树突状细胞） | 可表达 |
+| B cells | 可表达 |
+| Endothelial cells（内皮细胞） | 部分表达 |
+| Normal epithelial cells（正常上皮细胞） | 一般较低 |
+
+PD-L1的表达具有动态变化特点，可受到：
+
+- IFN-gamma（干扰素γ）；
+- 炎症反应；
+- 放疗；
+- 化疗；
+- 靶向治疗；
+- 肿瘤微环境；
+
+等多种因素影响，因此同一患者不同时间或不同部位的PD-L1水平可能不同。
+
+# PD-L1检测
+
+目前临床主要采用**Immunohistochemistry, IHC（免疫组织化学）**检测PD-L1。
+
+## 常用检测平台
+
+| 检测抗体 | 主要配套药物 |
+|---|---|
+| 22C3 | [Pembrolizumab](../compound/Keytruda.qmd) |
+| 28-8 | [Nivolumab](../compound/Opdivo.qmd) |
+| SP263 | Durvalumab |
+| SP142 | [Atezolizumab](../compound/Tecentriq.qmd) |
+| 73-10 | Avelumab |
+
+不同抗体平台之间具有一定一致性，但并非完全等同，因此不能简单互换。
+
+# PD-L1评分方法
+
+不同瘤种采用不同评分体系。
+
+## Tumor Proportion Score（TPS）
+
+**Tumor Proportion Score, TPS（肿瘤比例评分）**是NSCLC中最常用的方法。
+
+计算公式：
+
+$$
+TPS=\frac{\text{PD-L1阳性肿瘤细胞数}}{\text{全部存活肿瘤细胞数}}\times100\%
+$$
+
+常见分层：
+
+| TPS | 临床意义 |
+|---|---|
+| <1% | 阴性 |
+| 1–49% | 低表达 |
+| ≥50% | 高表达 |
+
+Pembrolizumab单药一线治疗NSCLC通常要求TPS ≥50%。
+
+## Combined Positive Score（CPS）
+
+**Combined Positive Score, CPS（综合阳性评分）**常用于胃癌、宫颈癌和头颈癌。
+
+计算公式：
+
+$$
+CPS=\frac{\text{PD-L1阳性肿瘤细胞+淋巴细胞+巨噬细胞}}{\text{全部肿瘤细胞}}\times100
+$$
+
+理论上CPS可大于100，但通常报告为不超过100。
+
+常见分层包括：
+
+- CPS ≥1；
+- CPS ≥5；
+- CPS ≥10。
+
+具体阈值取决于药物和适应症。
+
+## Immune Cell（IC）评分
+
+尿路上皮癌等部分瘤种采用**Immune Cell（IC）评分**，依据免疫细胞中PD-L1染色面积进行评价。
+
+# PD-L1在不同肿瘤中的临床意义
+
+| 肿瘤 | 常用评分 | 主要Cutoff |
+|---|---|---|
+| [NSCLC](../disease/NSCLC.qmd) | TPS | 1%、50% |
+| Gastric cancer | CPS | 1、5、10 |
+| Cervical cancer | CPS | 1 |
+| Esophageal cancer | CPS | 10 |
+| Head and neck cancer | CPS | 1、20 |
+| Urothelial carcinoma | IC或CPS | 根据药物不同 |
+
+不同药物和不同临床试验采用的cutoff并不完全一致，因此解释结果时必须结合具体研究方案。
+
+# PD-L1与免疫治疗
+
+目前已有多种获批药物以PD-L1作为患者筛选依据。
+
+| 药物 | 靶点 | 常见适应症 |
+|---|---|---|
+| [Pembrolizumab](../compound/Keytruda.qmd) | PD-1 | NSCLC、[Melanoma](../disease/Melanoma.qmd)、HNSCC等 |
+| [Nivolumab](../compound/Opdivo.qmd) | PD-1 | 多种实体瘤 |
+| Cemiplimab | PD-1 | NSCLC、CSCC |
+| [Atezolizumab](../compound/Tecentriq.qmd) | PD-L1 | 尿路上皮癌、NSCLC |
+| Durvalumab | PD-L1 | Stage III NSCLC、[SCLC](../disease/SCLC.qmd) |
+| [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1×[VEGF](VEGF.qmd) | NSCLC |
+| [Cadonilimab](../compound/Cadonilimab.qmd) | PD-1×CTLA-4 | 宫颈癌、胃癌 |
+
+需要注意的是，PD-L1阳性通常提示更高的免疫治疗获益概率，但并不意味着：
+
+- PD-L1阴性患者一定无效；
+- PD-L1阳性患者一定有效。
+
+因此，PD-L1是预测性生物标志物，而不是绝对的治疗标准。
+
+# 局限性
+
+PD-L1检测存在若干局限。
+
+| 局限 | 说明 |
+|---|---|
+| 空间异质性 | 原发灶与转移灶可能不同 |
+| 时间异质性 | 治疗前后表达可能变化 |
+| 检测平台不同 | 各IHC抗体之间并非完全一致 |
+| Cutoff不统一 | 不同研究采用不同阈值 |
+| 观察者差异 | 病理医生判读存在一定主观性 |
+
+因此，在临床研究中，通常需要统一检测平台、中央实验室检测及预先定义cutoff。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+PD-L1是免疫治疗试验设计的重要组成部分。
+
+常见应用包括：
+
+- 入组标准（Eligibility criterion）；
+- 分层随机（Stratified randomization）；
+- 主要分析人群定义；
+- 亚组分析；
+- 伴随诊断（Companion diagnostic）。
+
+例如：
+
+- KEYNOTE-024：TPS ≥50%；
+- KEYNOTE-042：TPS ≥1%；
+- CheckMate系列：通常全人群入组，同时进行PD-L1亚组分析。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Biomarker Strategy（生物标志物策略）
+
+PD-L1可作为：
+
+- Predictive biomarker（预测性生物标志物）；
+- Stratification factor（随机化分层因素）；
+- Enrichment factor（富集设计因素）；
+- Prespecified subgroup（预设亚组）。
+
+## Cutoff Selection（Cutoff的选择）
+
+PD-L1 cutoff的确定通常综合考虑：
+
+- 生物学依据；
+- 早期剂量探索研究；
+- 暴露-反应关系；
+- ROC分析；
+- 临床获益与样本量。
+
+不同cutoff会直接影响入组人群和试验效能。
+
+## Subgroup Analysis（亚组分析）
+
+PD-L1亚组分析通常预先定义，例如：
+
+- TPS <1%；
+- TPS 1–49%；
+- TPS ≥50%；
+
+或：
+
+- CPS <1；
+- CPS ≥1；
+- CPS ≥10。
+
+分析时应关注：
+
+- HR是否一致；
+- Interaction test；
+- Forest plot；
+- 样本量是否充足。
+
+## Missing Data（缺失数据）
+
+PD-L1检测失败或样本不足较为常见，应在SAP中预先规定：
+
+- Missing PD-L1如何分类；
+- 是否纳入ITT population；
+- 是否单独作为一个分析亚组。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| PD-L1是治疗靶点 | PD-L1同时是药物靶点和临床生物标志物 |
+| PD-L1阳性一定有效 | 仅表示获益概率较高 |
+| PD-L1阴性不能用免疫治疗 | 多个瘤种中阴性患者仍可能获益 |
+| 所有PD-L1检测结果都一致 | 不同抗体、平台及评分体系可能不同 |
+| TPS与CPS可以直接比较 | 两者定义不同，不能互换 |
+
+# Key Takeaways（总结）
+
+1. PD-L1是目前免疫治疗最重要的预测性生物标志物之一。
+2. PD-L1通过与PD-1结合抑制T细胞活化，促进肿瘤免疫逃逸。
+3. 临床主要采用IHC检测，常见评分体系包括TPS、CPS和IC。
+4. PD-L1广泛应用于患者筛选、随机化分层及亚组分析，但不同瘤种和药物采用的检测方法及cutoff不尽相同。
+5. 生物统计学上需重点关注cutoff选择、生物标志物富集设计、亚组分析及缺失数据处理。
+
+# References
+
+1. NCCN Clinical Practice Guidelines in Oncology.
+2. ASCO Guidelines on Biomarker Testing for Immunotherapy.
+3. FDA. Companion Diagnostic Devices for PD-L1 Testing.
+4. Herbst RS, et al. PD-L1 as a Biomarker in Cancer Immunotherapy. *Nature*. 2014.
+5. Topalian SL, et al. Immune Checkpoint Blockade: A Common Denominator Approach to Cancer Therapy. *Cancer Cell*. 2015.

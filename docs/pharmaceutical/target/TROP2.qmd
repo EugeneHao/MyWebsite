@@ -1,0 +1,264 @@
+---
+title: "Trophoblast Cell Surface Antigen 2, TROP2（滋养层细胞表面抗原2）"
+description: "介绍 TROP2 的生物学功能、在肿瘤中的作用、ADC 开发及临床应用。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Biomarkers
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Trophoblast cell surface antigen 2, TROP2（滋养层细胞表面抗原2）**，又称**TACSTD2（tumor-associated calcium signal transducer 2）**，是一种跨膜糖蛋白，属于**epithelial cell surface antigen（上皮细胞表面抗原）**。
+
+TROP2在正常组织中表达有限，但在多种实体瘤中过表达，并与肿瘤增殖、侵袭、转移及不良预后相关。因此，TROP2已成为目前**antibody-drug conjugate, [ADC](../other/ADC.qmd)（抗体偶联药物）**开发最成功的靶点之一。
+
+目前已有多个TROP2 ADC获批上市或进入III期临床研究，覆盖[breast cancer（乳腺癌）](../disease/Breast_Cancer.qmd)、[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)、尿路上皮癌及其他实体瘤。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| TROP2 | Trophoblast cell surface antigen 2 |
+| TACSTD2 | TROP2基因名称 |
+| ADC | Antibody-drug conjugate（抗体偶联药物） |
+| Payload | ADC携带的细胞毒载荷 |
+| Internalization | ADC与靶点结合后的内吞过程 |
+| Bystander effect | 旁观者效应 |
+
+# 分子结构
+
+TROP2是一种I型跨膜糖蛋白。
+
+```text
+Extracellular domain
+        |
+Transmembrane domain
+        |
+Short intracellular domain
+```
+
+胞外结构域可作为ADC抗体识别位点。
+
+当抗体结合TROP2后，可迅速发生**internalization（内吞）**，这是TROP2成为ADC理想靶点的重要原因。
+
+# 生物学功能
+
+TROP2参与多条促进肿瘤生长的信号通路。
+
+主要功能包括：
+
+- 促进细胞增殖；
+- 抑制细胞凋亡；
+- 增强细胞迁移；
+- 促进侵袭；
+- 促进转移。
+
+其下游可激活：
+
+- PI3K-AKT pathway；
+- MAPK pathway；
+- β-catenin pathway。
+
+TROP2与**epithelial-mesenchymal transition, EMT（上皮-间质转化）**密切相关，因此可能促进远处转移。
+
+# TROP2在肿瘤中的表达
+
+TROP2在多种实体瘤中均有较高表达。
+
+| 肿瘤 | TROP2表达情况 |
+|---|---|
+| Triple-negative breast cancer, TNBC | 很高 |
+| HR+/HER2- breast cancer | 高 |
+| NSCLC | 高 |
+| [Small cell lung cancer, SCLC](../disease/SCLC.qmd) | 中等 |
+| Urothelial carcinoma | 高 |
+| Endometrial cancer | 高 |
+| Ovarian cancer | 高 |
+| Pancreatic cancer | 中等至高 |
+| Colorectal cancer | 中等 |
+| Gastric cancer | 中等 |
+
+由于TROP2在多数实体瘤均有表达，因此其适应证覆盖范围明显大于[HER2](HER.qmd)。
+
+# 为什么TROP2是优秀的ADC靶点？
+
+一个理想ADC靶点通常应具备：
+
+| 条件 | TROP2表现 |
+|---|---|
+| 肿瘤高表达 | 是 |
+| 正常组织低表达 | 是 |
+| 易发生内吞 | 是 |
+| 表达稳定 | 是 |
+| 广泛存在于多种肿瘤 | 是 |
+
+因此，TROP2已成为继HER2后最热门的ADC靶点之一。
+
+# TROP2 ADC（抗体偶联药物）
+
+## 已上市药物
+
+### Sacituzumab govitecan（戈沙妥珠单抗；Gilead；Trodelvy）
+
+特点：
+
+- target: TROP2；
+- payload: SN-38（topoisomerase I inhibitor）；
+- linker: 可切割（cleavable linker）。
+
+主要适应证：
+
+- TNBC；
+- HR+/HER2-乳腺癌；
+- 部分尿路上皮癌。
+
+## Datopotamab Deruxtecan（Datroway；AstraZeneca/Daiichi Sankyo；development code: Dato-DXd）
+
+特点：
+
+- target: TROP2；
+- payload: DXd（topoisomerase I inhibitor）；
+- drug-to-antibody ratio, DAR约为4；
+- 具有明显旁观者效应。
+
+主要开发方向：
+
+- NSCLC；
+- HR+/HER2- breast cancer；
+- TNBC。
+
+目前已在部分适应证获批，并继续开展多个III期研究。
+
+# TROP2 ADC对比
+
+| 药物 | Payload | Linker | 主要适应证 |
+|---|---|---|---|
+| Sacituzumab govitecan | SN-38 | Cleavable | TNBC、HR+/HER2-乳腺癌、尿路上皮癌 |
+| Datopotamab deruxtecan | DXd | Cleavable | NSCLC、乳腺癌 |
+| SKB264（sacituzumab tirumotecan） | KL610023 | Cleavable | NSCLC、TNBC等，开发中 |
+
+# TROP2与HER2 ADC比较
+
+| 特征 | TROP2 | HER2 |
+|---|---|---|
+| 表达范围 | 广泛 | 相对局限 |
+| 是否需要高表达 | 通常不需要严格筛选 | 多数需要HER2检测 |
+| 主要药物 | Sacituzumab govitecan、datopotamab deruxtecan | Trastuzumab deruxtecan、trastuzumab emtansine |
+| 热门瘤种 | 乳腺癌、NSCLC | 乳腺癌、胃癌 |
+
+近年来，TROP2 ADC在NSCLC中取得积极结果，使其成为肺癌药物开发的重要方向。
+
+# TROP2是否作为Companion Diagnostic（伴随诊断）？
+
+目前，大多数获批TROP2 ADC**并不要求检测TROP2表达**。
+
+主要原因包括：
+
+- 大部分目标肿瘤均存在一定程度表达；
+- TROP2表达水平与疗效相关性尚不稳定；
+- 尚无统一IHC检测标准和cutoff。
+
+因此，与HER2不同，TROP2目前仍主要作为治疗靶点，而非成熟的预测性生物标志物。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+TROP2 ADC的III期研究通常采用随机对照设计。
+
+常见主要终点包括：
+
+- **progression-free survival, PFS（无进展生存期）**；
+- **overall survival, OS（总生存期）**。
+
+关键次要终点包括：
+
+- **objective response rate, ORR（客观缓解率）**；
+- **duration of response, DOR（缓解持续时间）**；
+- safety；
+- patient-reported outcomes, PRO。
+
+在NSCLC中，datopotamab deruxtecan的多个TROPION-Lung系列研究主要与标准化疗或免疫治疗进行比较。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Biomarker Strategy（生物标志物策略）
+
+目前多数TROP2 ADC研究采用**all-comer design（全人群设计）**，而非仅纳入TROP2高表达患者。
+
+探索性分析通常包括：
+
+- TROP2 expression level；
+- histology；
+- EGFR mutation；
+- PD-L1 expression。
+
+以评估不同亚组疗效。
+
+## Endpoint Selection（终点选择）
+
+III期研究多采用：
+
+- PFS；
+- OS。
+
+早期单臂研究则常采用：
+
+- ORR；
+- DOR。
+
+支持剂量探索和早期开发。
+
+## Safety Monitoring（安全性监测）
+
+TROP2 ADC的安全性主要由payload决定。
+
+重点关注：
+
+| Payload | 常见毒性 |
+|---|---|
+| SN-38 | Neutropenia、diarrhea |
+| DXd | Interstitial lung disease, ILD、stomatitis、nausea |
+
+分析中通常包括：
+
+- dose interruption；
+- dose reduction；
+- treatment discontinuation；
+- exposure-adjusted incidence rate。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| TROP2是HER家族成员 | TROP2与HER家族无关，是独立跨膜糖蛋白 |
+| 所有TROP2阳性患者疗效相同 | 表达水平与疗效关系尚未完全明确 |
+| TROP2 ADC都使用同一种payload | 不同ADC可采用SN-38、DXd等不同载荷 |
+| TROP2必须检测后才能治疗 | 目前大多数获批适应证无需常规检测TROP2 |
+| 所有ADC毒性相同 | 毒性更多取决于payload和linker，而非靶点本身 |
+
+# Key Takeaways（总结）
+
+1. TROP2是一种广泛表达于实体瘤的跨膜糖蛋白，也是当前最重要的ADC靶点之一。
+2. TROP2具有肿瘤高表达、易内吞和正常组织表达较低等特点，非常适合作为ADC靶点。
+3. Sacituzumab govitecan和datopotamab deruxtecan是目前最具代表性的TROP2 ADC。
+4. 与HER2不同，目前TROP2尚未发展为成熟的伴随诊断生物标志物，大多数研究无需按TROP2表达筛选患者。
+5. 生物统计学上需重点关注全人群设计、探索性生物标志物分析、PFS/OS终点及ADC特有安全性分析。
+
+# References
+
+1. Goldenberg DM, et al. TROP-2 is a novel target for solid cancer therapy. *Expert Opinion on Therapeutic Targets*. 2018.
+2. Bardia A, et al. Sacituzumab govitecan in metastatic triple-negative breast cancer. *New England Journal of Medicine*. 2021.
+3. Rugo HS, et al. Sacituzumab govitecan in hormone receptor-positive/HER2-negative breast cancer. *New England Journal of Medicine*. 2023.
+4. Daiichi Sankyo and AstraZeneca. Datopotamab deruxtecan clinical development program.
+5. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.

@@ -1,0 +1,224 @@
+---
+title: "KRAS（Kirsten Rat Sarcoma Viral Oncogene Homolog）"
+description: "介绍 KRAS 的生物学功能、常见突变、临床意义及 KRAS 靶向治疗。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Biomarkers
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**KRAS（Kirsten rat sarcoma viral oncogene homolog）**是**RAS（rat sarcoma）**基因家族的重要成员，编码一种小分子**GTPase（鸟苷三磷酸酶）**。KRAS是肿瘤中最常见的driver gene（驱动基因）之一，其突变可导致细胞持续增殖和肿瘤发生。
+
+长期以来，KRAS被认为是**undruggable target（不可成药靶点）**，直到近年来**KRAS G12C inhibitor（KRAS G12C抑制剂）**的成功开发，KRAS成为肿瘤精准治疗的重要靶点。
+
+KRAS突变常见于：
+
+- [non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)；
+- colorectal cancer, CRC（结直肠癌）；
+- pancreatic ductal adenocarcinoma, PDAC（胰腺导管腺癌）。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| KRAS | Kirsten rat sarcoma viral oncogene homolog |
+| RAS | RAS蛋白家族，包括KRAS、NRAS、HRAS |
+| GTP | Guanosine triphosphate（鸟苷三磷酸） |
+| GDP | Guanosine diphosphate（鸟苷二磷酸） |
+| Driver mutation | 驱动突变 |
+| KRAS G12C | KRAS第12位甘氨酸突变为半胱氨酸 |
+
+# RAS家族
+
+RAS家族共有三个成员。
+
+| 基因 | 常见肿瘤 |
+|---|---|
+| KRAS | 肺癌、结直肠癌、胰腺癌 |
+| NRAS | 黑色素瘤、AML |
+| HRAS | 头颈癌、甲状腺癌 |
+
+KRAS是临床最重要、突变率最高的成员。
+
+# KRAS信号通路
+
+KRAS位于**epidermal growth factor receptor, [EGFR](HER.qmd)（表皮生长因子受体）**下游。
+
+```text
+EGFR
+ |
+ v
+KRAS
+ |
+ +-- RAF-MEK-ERK
+ +-- PI3K-AKT-mTOR
+ +-- RAL pathway
+```
+
+正常情况下：
+
+- KRAS-GDP：失活状态；
+- KRAS-GTP：激活状态。
+
+KRAS突变会导致蛋白持续处于GTP结合状态，即使没有上游刺激，也能持续激活下游信号。
+
+# 常见KRAS突变
+
+绝大多数突变发生在第12、13和61位密码子。
+
+| 突变 | 常见瘤种 |
+|---|---|
+| G12C | NSCLC |
+| G12D | 胰腺癌、CRC |
+| G12V | 胰腺癌、CRC |
+| G13D | CRC |
+| Q61H | 黑色素瘤、肺癌 |
+
+## 各肿瘤中的KRAS突变率
+
+| 肿瘤 | KRAS突变率（约） |
+|---|---|
+| PDAC | 90%-95% |
+| CRC | 35%-45% |
+| NSCLC（肺腺癌） | 25%-35% |
+| Endometrial cancer | 10%-20% |
+
+在NSCLC中，KRAS G12C约占全部KRAS突变的40%左右。
+
+# KRAS靶向治疗
+
+## KRAS G12C抑制剂
+
+### Sotorasib（索托拉西布；Amgen；Lumakras / Lumykras）
+
+Sotorasib是首个获批的KRAS G12C抑制剂。
+
+适应证：
+
+- KRAS G12C突变NSCLC；
+- 后线治疗。
+
+### [Adagrasib](../compound/Krazati.qmd)（阿达格拉西布；Bristol Myers Squibb；Krazati）
+
+特点：
+
+- 半衰期较长；
+- 中枢神经系统（CNS）活性较好。
+
+适应证：
+
+- KRAS G12C突变NSCLC；
+- KRAS G12C突变CRC，常与EGFR单抗联合。
+
+# 为什么CRC需要联合EGFR？
+
+在结直肠癌中，仅抑制KRAS G12C后，EGFR通路容易重新激活，因此通常采用：
+
+- adagrasib + cetuximab；
+- sotorasib + panitumumab。
+
+联合治疗可提高疗效。
+
+# KRAS G12D：下一代研发热点
+
+目前多数KRAS突变并非G12C，而是：
+
+- G12D；
+- G12V。
+
+近年来多家公司正在开发：
+
+- KRAS G12D inhibitor；
+- pan-KRAS inhibitor；
+- KRAS vaccine；
+- KRAS TCR-T。
+
+其中G12D被认为是未来最重要的研发方向之一。
+
+# KRAS与免疫治疗
+
+KRAS突变患者并不一定适合KRAS抑制剂，治疗策略取决于伴随分子改变。
+
+例如：
+
+| 分子特征 | 临床意义 |
+|---|---|
+| KRAS + TP53 | 免疫治疗获益可能较好 |
+| KRAS + STK11 | 免疫治疗疗效较差 |
+| KRAS + KEAP1 | 预后较差 |
+
+因此，next-generation sequencing, NGS（二代测序）通常用于综合评估患者的分子特征。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+KRAS靶向治疗研究通常要求：
+
+- 中央实验室确认KRAS突变；
+- 使用NGS或PCR检测G12C等特定突变；
+- 根据不同突变亚型进行分层分析。
+
+常见终点包括：
+
+- **objective response rate, ORR（客观缓解率）**；
+- **progression-free survival, PFS（无进展生存期）**；
+- **overall survival, OS（总生存期）**；
+- **duration of response, DOR（缓解持续时间）**。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Biomarker-Enriched Design（生物标志物富集设计）
+
+KRAS抑制剂研究通常仅纳入携带目标突变，如G12C的患者，因此属于典型的生物标志物富集设计。
+
+## Subgroup Analysis（亚组分析）
+
+常见亚组包括：
+
+- G12C；
+- G12D；
+- G12V；
+- STK11共突变；
+- KEAP1共突变；
+- TP53共突变。
+
+## Companion Diagnostics（伴随诊断）
+
+KRAS G12C抑制剂需配合经验证的分子检测，以确保患者携带相应突变。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| KRAS只有一种突变 | KRAS有多种突变亚型，生物学行为和治疗策略不同 |
+| 所有KRAS突变都有靶向药 | 目前获批药物主要针对G12C突变 |
+| KRAS突变患者不能做免疫治疗 | 是否适合免疫治疗需结合PD-L1表达及共突变情况综合判断 |
+| KRAS是EGFR下游，因此EGFR抑制剂一定有效 | KRAS突变会导致EGFR抑制剂耐药，尤其在CRC中 |
+
+# Key Takeaways（总结）
+
+1. KRAS是最常见的肿瘤驱动基因之一，在肺癌、结直肠癌和胰腺癌中具有重要作用。
+2. KRAS突变导致RAS-MAPK信号持续激活，促进肿瘤生长。
+3. KRAS G12C抑制剂的成功开发使KRAS从“不可成药”靶点转变为重要治疗靶点。
+4. KRAS G12D和pan-KRAS抑制剂是当前全球研发热点。
+5. 生物统计学上，KRAS靶向治疗试验通常采用生物标志物富集设计，并重视不同突变亚型及共突变的亚组分析。
+
+# References
+
+1. Ostrem JM, et al. KRAS(G12C) inhibitors allosterically control GTP affinity and effector interactions. *Nature*. 2013.
+2. Skoulidis F, et al. Sotorasib for lung cancers with KRAS p.G12C mutation. *New England Journal of Medicine*. 2021.
+3. Jänne PA, et al. Adagrasib in non-small-cell lung cancer harboring a KRAS G12C mutation. *New England Journal of Medicine*. 2022.
+4. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer*.
+5. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Colon Cancer*.

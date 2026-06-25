@@ -1,0 +1,290 @@
+---
+title: "Small Cell Lung Cancer, SCLC（小细胞肺癌）"
+description: "介绍 SCLC 的流行病学、分期、分子特征、治疗策略及临床试验设计。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Small cell lung cancer, SCLC（小细胞肺癌）**是一种来源于肺神经内分泌细胞（neuroendocrine cells）的高度恶性[肺癌](Lung_Cancer.qmd)，占全部肺癌的约**10%-15%**。
+
+SCLC的特点包括：
+
+- 生长速度极快；
+- 倍增时间短；
+- 早期发生远处转移；
+- 对化疗和放疗初始敏感；
+- 容易复发；
+- 预后较差。
+
+与**[non-small cell lung cancer, NSCLC（非小细胞肺癌）](NSCLC.qmd)**相比，SCLC更少依赖单一驱动基因突变，因此目前靶向治疗的发展相对有限，近年来主要突破来自**immune checkpoint inhibitor（免疫检查点抑制剂）**和**antibody-drug conjugate, [ADC](../other/ADC.qmd)（抗体偶联药物）**。
+
+# Epidemiology（流行病学）
+
+## 发病情况
+
+| 指标 | 情况 |
+|---|---|
+| 占全部肺癌比例 | 约10%-15% |
+| 平均发病年龄 | 约65-70岁 |
+| 性别 | 男性略多于女性 |
+| 吸烟相关性 | >95%与吸烟有关 |
+
+SCLC与吸烟的相关性远高于NSCLC，几乎所有患者都有长期吸烟史。
+
+## 预后
+
+未经治疗时：
+
+- limited-stage SCLC, LS-SCLC（局限期小细胞肺癌）中位OS通常仅数月；
+- extensive-stage SCLC, ES-SCLC（广泛期小细胞肺癌）中位OS更短。
+
+近年来随着免疫治疗加入，一线ES-SCLC的中位**overall survival, OS（总生存期）**已提高至约12-15个月，但长期生存率仍然较低。
+
+# Histologic Features（病理特点）
+
+SCLC属于高等级神经内分泌肿瘤。
+
+典型特点包括：
+
+- 小细胞；
+- 核浆比高；
+- 染色质细颗粒状（salt-and-pepper chromatin）；
+- 核仁不明显；
+- 有丝分裂活跃；
+- 坏死明显。
+
+常见免疫组化标志物：
+
+| Marker | 表达情况 |
+|---|---|
+| Synaptophysin | 阳性 |
+| Chromogranin A | 阳性 |
+| CD56 | 阳性 |
+| INSM1 | 阳性 |
+| TTF-1 | 多数阳性 |
+| Ki-67 | 通常>70% |
+
+# 分期（Staging）
+
+SCLC临床上最常采用**Veterans Administration Lung Study Group, VALSG（退伍军人肺癌研究组）**分期。
+
+## Limited-Stage SCLC（LS-SCLC） {#limited-stage-sclc}
+
+定义：
+
+疾病局限于一个放疗野内，可接受根治性同步放化疗。
+
+约占：
+
+- 30%。
+
+## Extensive-Stage SCLC（ES-SCLC） {#extensive-stage-sclc}
+
+定义：
+
+疾病超出单个放疗野，包括：
+
+- 对侧肺；
+- 恶性胸腔积液；
+- 远处转移。
+
+约占：
+
+- 70%。
+
+近年来临床研究也越来越多采用**TNM staging（TNM分期）**，但治疗决策仍主要依据LS-SCLC与ES-SCLC分类。
+
+# Molecular Biology（分子生物学）
+
+与NSCLC不同，SCLC很少存在可靶向的驱动基因突变。
+
+常见分子异常包括：
+
+| 分子异常 | 发生率（约） | 临床意义 |
+|---|---:|---|
+| TP53 mutation | >90% | 最常见 |
+| RB1 loss | >90% | SCLC特征性改变 |
+| MYC amplification | 10%-20% | 与侵袭性相关 |
+| NOTCH pathway alteration | 常见 | 神经内分泌分化 |
+| BCL2 overexpression | 常见 | 抗凋亡 |
+
+目前尚无成熟的分子分型用于临床治疗决策。
+
+# SCLC分子亚型
+
+近年来根据转录因子表达，将SCLC分为四种主要亚型：
+
+| 亚型 | 特征 |
+|---|---|
+| SCLC-A | ASCL1高表达 |
+| SCLC-N | NEUROD1高表达 |
+| SCLC-P | POU2F3高表达 |
+| SCLC-I | Inflammatory subtype，炎症型 |
+
+其中：
+
+- SCLC-I可能对免疫治疗更敏感；
+- SCLC-A和SCLC-N是目前最常见亚型。
+
+该分类目前主要用于研究阶段，尚未广泛应用于临床实践。
+
+# 治疗策略
+
+## Limited-Stage SCLC
+
+标准治疗：
+
+- concurrent chemoradiotherapy（同步放化疗）；
+- platinum + etoposide；
+- 必要时prophylactic cranial irradiation, PCI（预防性脑照射）。
+
+部分患者可接受手术，但仅限极早期病例。
+
+## Extensive-Stage SCLC
+
+目前标准一线治疗包括：
+
+| 治疗方案 | 代表药物 |
+|---|---|
+| Platinum + etoposide + PD-L1 inhibitor | [Atezolizumab](../compound/Tecentriq.qmd) |
+| Platinum + etoposide + PD-L1 inhibitor | Durvalumab |
+
+免疫治疗维持已成为ES-SCLC标准方案。
+
+## 后线治疗
+
+可选方案包括：
+
+| 药物 | 类型 |
+|---|---|
+| Topotecan | 化疗 |
+| Lurbinectedin | 转录抑制剂 |
+| Tarlatamab | DLL3 × CD3双特异性T-cell engager, TCE |
+| 临床试验 | ADC、DLL3靶向药物等 |
+
+# 新兴治疗方向
+
+近年来SCLC的研发热点包括：
+
+| 靶点 | 药物类型 |
+|---|---|
+| DLL3 | T-cell engager、ADC |
+| B7-H3 | ADC |
+| [TROP2](../target/TROP2.qmd) | ADC |
+| PARP | PARP inhibitor |
+| TIGIT | 免疫治疗 |
+| Aurora kinase | 小分子抑制剂 |
+
+其中**DLL3**是目前最受关注的新靶点之一，因为约80%-90%的SCLC表达DLL3，而正常组织表达极低。
+
+# Clinical Trial Endpoints（临床试验终点）
+
+SCLC研究常采用：
+
+| Endpoint | 英文全称 | 常见用途 |
+|---|---|---|
+| OS | Overall survival | III期主要终点 |
+| PFS | Progression-free survival | 常见主要终点 |
+| ORR | Objective response rate | II期研究 |
+| DOR | Duration of response | 缓解持续时间 |
+| Safety | Safety | 所有研究 |
+
+由于SCLC进展迅速，OS通常仍被认为是最重要的临床终点。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Selection（终点选择）
+
+III期研究通常采用：
+
+- OS（主要终点）；
+- PFS（共同主要终点或关键次要终点）。
+
+早期研究则常采用：
+
+- ORR；
+- DOR。
+
+## Stratification Factors（随机化分层因素）
+
+常见分层因素包括：
+
+- disease stage（LS或ES）；
+- ECOG performance status；
+- brain metastasis；
+- geographic region；
+- platinum sensitivity（后线研究）。
+
+## Non-Proportional Hazards（非比例风险）
+
+免疫治疗研究可能出现延迟获益，因此需关注：
+
+- proportional hazards assumption（比例风险假设）；
+- Kaplan-Meier曲线是否交叉；
+- restricted mean survival time, RMST（限制性平均生存时间）；
+- landmark analysis（里程碑分析）。
+
+## Biomarker Development（生物标志物开发）
+
+目前尚无成熟生物标志物。
+
+正在探索：
+
+- DLL3 expression；
+- SCLC subtype；
+- tumor mutational burden, TMB；
+- circulating tumor DNA, ctDNA。
+
+# SCLC与NSCLC比较
+
+| 特征 | SCLC | NSCLC |
+|---|---|---|
+| 占肺癌比例 | 10%-15% | 85%-90% |
+| 生长速度 | 很快 | 较慢 |
+| 转移 | 早期 | 相对较晚 |
+| 吸烟相关 | 极强 | 较弱 |
+| 驱动基因 | 少 | 多 |
+| 靶向治疗 | 较少 | 丰富 |
+| 免疫治疗 | 已成为标准治疗 | 广泛应用 |
+| 手术 | 少数早期患者 | 多数早期患者可手术 |
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| SCLC与NSCLC治疗方式类似 | 两者生物学行为和治疗策略差异很大 |
+| 所有SCLC都不能手术 | 极早期LS-SCLC可考虑手术 |
+| SCLC没有免疫治疗 | PD-L1抑制剂联合化疗已成为ES-SCLC一线标准治疗 |
+| SCLC没有新药 | DLL3、ADC和TCE正快速发展 |
+| PD-L1是SCLC的重要筛选指标 | 与NSCLC不同，目前PD-L1并非SCLC免疫治疗的常规筛选标准 |
+
+# Key Takeaways（总结）
+
+1. SCLC是高度恶性、快速进展的神经内分泌肺癌，与吸烟高度相关。
+2. 临床主要分为LS-SCLC和ES-SCLC，两者治疗策略不同。
+3. 一线ES-SCLC标准治疗为platinum + etoposide联合PD-L1抑制剂。
+4. DLL3是目前最具潜力的新靶点，TCE和ADC是未来研发重点。
+5. 生物统计学上，SCLC研究以OS为核心终点，并需关注免疫治疗中的非比例风险及新型生物标志物开发。
+
+# References
+
+1. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Small Cell Lung Cancer*.
+2. Horn L, et al. First-line atezolizumab plus chemotherapy in extensive-stage small-cell lung cancer. *New England Journal of Medicine*. 2018.
+3. Paz-Ares L, et al. Durvalumab plus platinum-etoposide versus platinum-etoposide in first-line extensive-stage SCLC (CASPIAN). *Lancet*. 2019.
+4. Rudin CM, et al. Molecular subtypes of small cell lung cancer. *Nature Reviews Cancer*. 2019.
+5. U.S. Food and Drug Administration. *Tarlatamab prescribing information*.

@@ -1,0 +1,304 @@
+---
+title: "Human Epidermal Growth Factor Receptor, HER（人表皮生长因子受体）家族"
+description: "介绍 HER 家族的结构、信号通路、HER2 在肿瘤中的作用及相关靶向治疗。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Biomarkers
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Human epidermal growth factor receptor, HER（人表皮生长因子受体）**家族，又称**ErbB family（ErbB受体家族）**，是一类跨膜**receptor tyrosine kinase, RTK（受体酪氨酸激酶）**。
+
+HER家族在正常组织中参与：
+
+- 细胞增殖（cell proliferation）；
+- 分化（differentiation）；
+- 存活（cell survival）；
+- 迁移（migration）；
+- 组织修复（tissue repair）。
+
+当HER家族发生**gene amplification（基因扩增）**、**mutation（突变）**或**protein overexpression（蛋白过表达）**时，可持续激活下游信号通路，促进肿瘤发生。
+
+HER2是目前临床最成功的肿瘤治疗靶点之一，也是**antibody-drug conjugate, [ADC](../other/ADC.qmd)（抗体偶联药物）**开发最成熟的靶点。
+
+# HER家族成员
+
+HER家族共有四个成员。
+
+| 名称 | 基因 | 常用名称 | 是否有天然配体 |
+|---|---|---|---|
+| HER1 | EGFR / ERBB1 | Epidermal growth factor receptor | 有 |
+| HER2 | ERBB2 | HER2 | 无 |
+| HER3 | ERBB3 | HER3 | 有 |
+| HER4 | ERBB4 | HER4 | 有 |
+
+其中：
+
+- HER1 = EGFR；
+- HER2 = ERBB2；
+- HER3 = ERBB3；
+- HER4 = ERBB4。
+
+# HER受体结构
+
+HER家族结构基本一致。
+
+```text
+Extracellular domain
+        |
+Transmembrane domain
+        |
+Tyrosine kinase domain
+        |
+Intracellular signaling
+```
+
+包括：
+
+1. 细胞外配体结合区（extracellular domain）；
+2. 跨膜区（transmembrane domain）；
+3. 胞内酪氨酸激酶区（tyrosine kinase domain）。
+
+HER3是一个特殊成员，其激酶活性极弱，因此通常需要与HER2等其他HER成员形成二聚体后才能发挥作用。
+
+# HER信号通路
+
+HER受体受到配体刺激后，可形成：
+
+- homodimer（同源二聚体）；
+- heterodimer（异源二聚体）。
+
+随后发生自身磷酸化，激活多条经典信号通路。
+
+```text
+Growth factor
+      |
+      v
+HER receptor dimerization
+      |
+      v
+Tyrosine phosphorylation
+      |
+      +-- PI3K-AKT-mTOR
+      +-- RAS-RAF-MEK-ERK
+      +-- PLCgamma
+      +-- JAK-STAT
+```
+
+最终促进：
+
+- 细胞增殖；
+- 抗凋亡；
+- 血管生成；
+- 转移；
+- 耐药。
+
+# HER2（ERBB2）
+
+## HER2的特点
+
+HER2是HER家族中最重要的临床靶点。
+
+与其他HER成员不同：
+
+- 没有已知天然配体；
+- 更容易形成二聚体；
+- 信号激活能力最强；
+- HER2/HER3二聚体被认为是HER家族中最强的致癌信号复合物。
+
+HER2的异常主要表现为：
+
+- gene amplification（基因扩增）；
+- protein overexpression（蛋白过表达）。
+
+在部分肿瘤中，尤其是[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)，HER2也可表现为activating mutation。
+
+## HER2阳性肿瘤
+
+HER2过表达可见于：
+
+| 肿瘤 | HER2阳性比例（约） |
+|---|---|
+| [Breast cancer](../disease/Breast_Cancer.qmd) | 15%-20% |
+| Gastric cancer | 10%-20% |
+| Gastroesophageal junction cancer | 15%-20% |
+| Colorectal cancer | 3%-5% |
+| [NSCLC](../disease/NSCLC.qmd) | 2%-4%，主要为HER2 mutation |
+
+需要注意：乳腺癌和胃癌主要是**HER2 amplification**；NSCLC更多见**HER2 mutation**，两者治疗策略不同。
+
+# HER3（ERBB3）
+
+HER3本身激酶活性较弱，但具有丰富的PI3K结合位点。
+
+HER2/HER3二聚体可强烈激活：
+
+- PI3K-AKT pathway。
+
+因此HER3已成为近年来新的热门靶点。
+
+代表药物包括：
+
+| 药物 | 类型 |
+|---|---|
+| Patritumab deruxtecan | HER3 ADC |
+| [Izalontamab brengitecan](../compound/Izalontamab_Brengitecan.qmd) | EGFR × HER3 bispecific ADC |
+
+HER3 ADC目前主要开发方向包括：
+
+- EGFR突变NSCLC；
+- HER3高表达实体瘤。
+
+# HER靶向治疗
+
+## HER2单克隆抗体
+
+| 药物 | 类型 |
+|---|---|
+| [Trastuzumab](../compound/Herceptin.qmd) | HER2单抗 |
+| Pertuzumab | HER2单抗 |
+
+二者联合已成为HER2阳性乳腺癌标准治疗。
+
+## HER2 Tyrosine Kinase Inhibitor（TKI）
+
+| 药物 | 特点 |
+|---|---|
+| Lapatinib | HER2/EGFR双靶点 |
+| Neratinib | Pan-HER TKI |
+| Tucatinib | HER2高选择性 |
+| Pyrotinib | Pan-HER TKI |
+
+## HER2 ADC
+
+HER2是目前ADC开发最成熟的靶点。
+
+| 药物 | Payload |
+|---|---|
+| Trastuzumab emtansine, T-DM1 | DM1 |
+| Trastuzumab deruxtecan, T-DXd | DXd |
+| Disitamab vedotin | MMAE |
+
+其中，T-DXd已成为HER2阳性乳腺癌、胃癌及HER2-mutant NSCLC的重要标准治疗。
+
+# HER2检测
+
+HER2通常采用：
+
+- **immunohistochemistry, IHC（免疫组织化学）**；
+- **in situ hybridization, ISH（原位杂交）**，包括FISH（fluorescence in situ hybridization，荧光原位杂交）。
+
+乳腺癌常见判定标准如下：
+
+| IHC | HER2状态 |
+|---|---|
+| 0 | 阴性 |
+| 1+ | HER2-low |
+| 2+ | 需进一步FISH检测 |
+| 3+ | HER2阳性 |
+
+近年来**HER2-low（IHC 1+或IHC 2+/FISH-）**和**HER2-ultralow**概念的提出，进一步扩大了HER2靶向治疗的适用人群，尤其是T-DXd。
+
+# HER2-Low（HER2低表达）
+
+HER2-low并非传统意义上的HER2阳性。
+
+定义为：
+
+- IHC 1+；
+- 或IHC 2+/ISH-。
+
+过去认为HER2-low患者无法从HER2靶向治疗获益，但ADC，尤其是T-DXd，利用bystander effect（旁观者效应）在HER2-low人群中取得显著疗效，改变了HER2分类和治疗模式。
+
+# HER家族相关肿瘤
+
+| HER成员 | 常见肿瘤 |
+|---|---|
+| EGFR | NSCLC、头颈癌、结直肠癌 |
+| HER2 | 乳腺癌、胃癌、NSCLC |
+| HER3 | NSCLC、乳腺癌 |
+| HER4 | 临床意义相对有限 |
+
+# Clinical Trial Considerations（临床试验考虑）
+
+HER靶向药物试验通常需要进行中央实验室检测HER状态，并根据不同生物标志物定义入组标准。
+
+常见终点包括：
+
+- **objective response rate, ORR（客观缓解率）**；
+- **progression-free survival, PFS（无进展生存期）**；
+- **overall survival, OS（总生存期）**；
+- **duration of response, DOR（缓解持续时间）**。
+
+近年来HER2-low、HER2-mutant等亚型常作为预设分析人群。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Biomarker-Enriched Design（生物标志物富集设计）
+
+HER靶向研究通常采用富集设计，仅纳入HER2阳性或HER2突变患者，以提高治疗效应和试验效率。
+
+## Biomarker Subgroup Analysis（生物标志物亚组分析）
+
+常见亚组包括：
+
+- HER2-positive；
+- HER2-low；
+- HER2-ultralow；
+- HER2-mutant；
+- HER2 amplification。
+
+不同HER状态患者的疗效可能差异显著，因此应预先定义分析策略。
+
+## Companion Diagnostics（伴随诊断）
+
+HER2检测通常作为伴随诊断（companion diagnostic），应统一检测平台、评分标准及中央实验室，以减少测量误差和患者错分。
+
+## Safety Monitoring（安全性监测）
+
+HER2靶向治疗需重点监测：
+
+- cardiotoxicity（心脏毒性，尤其trastuzumab）；
+- interstitial lung disease, ILD（间质性肺疾病，尤其T-DXd）；
+- hematologic toxicity（血液学毒性）；
+- ocular toxicity（部分ADC）。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| HER与HER2是同一个概念 | HER是一个受体家族，HER2只是其中一个成员 |
+| HER2阳性等于HER2突变 | HER2阳性通常指扩增或过表达，HER2突变是另一类分子异常 |
+| HER2-low属于HER2阳性 | HER2-low是独立分类，治疗策略不同 |
+| 所有HER靶向药物都是单抗 | HER靶向药物包括单抗、TKI和ADC等多种类型 |
+| HER3没有激酶活性就没有作用 | HER3可通过与HER2形成异源二聚体激活PI3K-AKT通路，是重要治疗靶点 |
+
+# Key Takeaways（总结）
+
+1. HER家族包括HER1（EGFR）、HER2、HER3和HER4四个成员，是重要的受体酪氨酸激酶家族。
+2. HER2是目前最成功的肿瘤靶点之一，在乳腺癌、胃癌及部分肺癌中具有重要临床意义。
+3. HER2靶向治疗已从单抗发展到TKI和ADC，其中HER2 ADC已成为当前研发热点。
+4. HER2-low概念改变了HER2靶向治疗策略，显著扩大了可获益患者范围。
+5. 生物统计学上应重点关注HER状态定义、伴随诊断、生物标志物富集设计及亚组分析。
+
+# References
+
+1. Yarden Y, Sliwkowski MX. Untangling the ErbB signalling network. *Nature Reviews Molecular Cell Biology*. 2001.
+2. Moasser MM. The oncogene HER2: its signaling and transforming functions. *New England Journal of Medicine*. 2007.
+3. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Breast Cancer*.
+4. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer*.
+5. Modi S, et al. Trastuzumab deruxtecan in previously treated HER2-low breast cancer. *New England Journal of Medicine*. 2022.
+6. U.S. Food and Drug Administration. HER2 companion diagnostics and HER2-targeted therapies.

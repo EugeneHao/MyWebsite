@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hao Sun">
+<meta name="dcterms.date" content="2026-06-25">
+<meta name="description" content="介绍 ADC 的组成、作用机制、分类、临床开发及生物统计学考虑。">
 
-<title>ADC – Hao Sun</title>
+<title>Antibody–Drug Conjugate, ADC（抗体偶联药物） – Hao Sun</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -72,10 +109,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="ADC – Hao Sun">
+<meta property="og:title" content="Antibody–Drug Conjugate, ADC（抗体偶联药物） – Hao Sun">
+<meta property="og:description" content="介绍 ADC 的组成、作用机制、分类、临床开发及生物统计学考虑。">
 <meta property="og:image" content="BMS.png">
 <meta property="og:site_name" content="Hao Sun">
-<meta name="twitter:title" content="ADC – Hao Sun">
+<meta name="twitter:title" content="Antibody–Drug Conjugate, ADC（抗体偶联药物） – Hao Sun">
+<meta name="twitter:description" content="介绍 ADC 的组成、作用机制、分类、临床开发及生物统计学考虑。">
 <meta name="twitter:image" content="BMS.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -285,6 +324,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cadonilimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cadonilimab</span></a>
   </div>
 </li>
       </ul>
@@ -704,6 +749,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/SCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Cell Lung Cancer (SCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
   </div>
@@ -716,12 +767,47 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Target</span></a>
+  <a href="../../../docs/pharmaceutical/target/PD-L1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PD-L1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/VEGF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VEGF</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/HER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HER Family</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/TROP2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TROP2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/KRAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
@@ -735,29 +821,29 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Other</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="true">
- <span class="menu-text">Wiki</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="true">
- <span class="menu-text">Biotechnology</span></a>
+ <span class="menu-text">Wiki</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth3 show">  
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
@@ -792,13 +878,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
  <span class="menu-text">Clinical Trial</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
@@ -849,34 +935,41 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#抗体药物偶联物antibody-drug-conjugates-adcs基本概念和原理" id="toc-抗体药物偶联物antibody-drug-conjugates-adcs基本概念和原理" class="nav-link active" data-scroll-target="#抗体药物偶联物antibody-drug-conjugates-adcs基本概念和原理">抗体药物偶联物（Antibody-Drug Conjugates, ADCs）基本概念和原理</a>
+  <li><a href="#概述" id="toc-概述" class="nav-link active" data-scroll-target="#概述"><span class="header-section-number">1</span> 概述</a></li>
+  <li><a href="#drug-profile药物组成" id="toc-drug-profile药物组成" class="nav-link" data-scroll-target="#drug-profile药物组成"><span class="header-section-number">2</span> Drug Profile（药物组成）</a></li>
+  <li><a href="#mechanism-of-action作用机制" id="toc-mechanism-of-action作用机制" class="nav-link" data-scroll-target="#mechanism-of-action作用机制"><span class="header-section-number">3</span> Mechanism of Action（作用机制）</a>
   <ul class="collapse">
-  <li><a href="#adcs简介" id="toc-adcs简介" class="nav-link" data-scroll-target="#adcs简介">ADCs简介</a></li>
-  <li><a href="#adcs的工作原理" id="toc-adcs的工作原理" class="nav-link" data-scroll-target="#adcs的工作原理">ADCs的工作原理</a></li>
+  <li><a href="#靶向结合target-binding" id="toc-靶向结合target-binding" class="nav-link" data-scroll-target="#靶向结合target-binding"><span class="header-section-number">3.1</span> 1. 靶向结合（Target Binding）</a></li>
+  <li><a href="#内吞internalization" id="toc-内吞internalization" class="nav-link" data-scroll-target="#内吞internalization"><span class="header-section-number">3.2</span> 2. 内吞（Internalization）</a></li>
+  <li><a href="#payload释放" id="toc-payload释放" class="nav-link" data-scroll-target="#payload释放"><span class="header-section-number">3.3</span> 3. Payload释放</a></li>
+  <li><a href="#肿瘤细胞死亡" id="toc-肿瘤细胞死亡" class="nav-link" data-scroll-target="#肿瘤细胞死亡"><span class="header-section-number">3.4</span> 4. 肿瘤细胞死亡</a></li>
+  <li><a href="#bystander-effect旁观者效应" id="toc-bystander-effect旁观者效应" class="nav-link" data-scroll-target="#bystander-effect旁观者效应"><span class="header-section-number">3.5</span> 5. Bystander Effect（旁观者效应）</a></li>
   </ul></li>
-  <li><a href="#adcs的历史发展和当前状态" id="toc-adcs的历史发展和当前状态" class="nav-link" data-scroll-target="#adcs的历史发展和当前状态">ADCs的历史发展和当前状态</a>
+  <li><a href="#adc的组成详解" id="toc-adc的组成详解" class="nav-link" data-scroll-target="#adc的组成详解"><span class="header-section-number">4</span> ADC的组成详解</a>
   <ul class="collapse">
-  <li><a href="#历史发展" id="toc-历史发展" class="nav-link" data-scroll-target="#历史发展">历史发展</a></li>
-  <li><a href="#adcs的当前状态批准使用的药物列表" id="toc-adcs的当前状态批准使用的药物列表" class="nav-link" data-scroll-target="#adcs的当前状态批准使用的药物列表">ADCs的当前状态：批准使用的药物列表</a></li>
-  </ul></li>
-  <li><a href="#adcs的设计和制造" id="toc-adcs的设计和制造" class="nav-link" data-scroll-target="#adcs的设计和制造">ADCs的设计和制造</a>
+  <li><a href="#antibody抗体" id="toc-antibody抗体" class="nav-link" data-scroll-target="#antibody抗体"><span class="header-section-number">4.1</span> Antibody（抗体）</a></li>
+  <li><a href="#linker连接子" id="toc-linker连接子" class="nav-link" data-scroll-target="#linker连接子"><span class="header-section-number">4.2</span> Linker（连接子）</a>
   <ul class="collapse">
-  <li><a href="#设计原则" id="toc-设计原则" class="nav-link" data-scroll-target="#设计原则">设计原则</a></li>
-  <li><a href="#制造过程中的挑战" id="toc-制造过程中的挑战" class="nav-link" data-scroll-target="#制造过程中的挑战">制造过程中的挑战</a></li>
-  <li><a href="#创新技术" id="toc-创新技术" class="nav-link" data-scroll-target="#创新技术">创新技术</a></li>
+  <li><a href="#可切割linkercleavable-linker" id="toc-可切割linkercleavable-linker" class="nav-link" data-scroll-target="#可切割linkercleavable-linker"><span class="header-section-number">4.2.1</span> 可切割Linker（Cleavable Linker）</a></li>
+  <li><a href="#不可切割linkernon-cleavable-linker" id="toc-不可切割linkernon-cleavable-linker" class="nav-link" data-scroll-target="#不可切割linkernon-cleavable-linker"><span class="header-section-number">4.2.2</span> 不可切割Linker（Non-cleavable Linker）</a></li>
   </ul></li>
-  <li><a href="#adcs的安全性和副作用" id="toc-adcs的安全性和副作用" class="nav-link" data-scroll-target="#adcs的安全性和副作用">ADCs的安全性和副作用</a>
+  <li><a href="#payload载荷" id="toc-payload载荷" class="nav-link" data-scroll-target="#payload载荷"><span class="header-section-number">4.3</span> Payload（载荷）</a></li>
+  </ul></li>
+  <li><a href="#drug-to-antibody-ratiodar" id="toc-drug-to-antibody-ratiodar" class="nav-link" data-scroll-target="#drug-to-antibody-ratiodar"><span class="header-section-number">5</span> Drug-to-Antibody Ratio（DAR）</a></li>
+  <li><a href="#已上市代表性adc" id="toc-已上市代表性adc" class="nav-link" data-scroll-target="#已上市代表性adc"><span class="header-section-number">6</span> 已上市代表性ADC</a></li>
+  <li><a href="#adc的优势" id="toc-adc的优势" class="nav-link" data-scroll-target="#adc的优势"><span class="header-section-number">7</span> ADC的优势</a></li>
+  <li><a href="#adc的局限性" id="toc-adc的局限性" class="nav-link" data-scroll-target="#adc的局限性"><span class="header-section-number">8</span> ADC的局限性</a></li>
+  <li><a href="#clinical-development临床开发特点" id="toc-clinical-development临床开发特点" class="nav-link" data-scroll-target="#clinical-development临床开发特点"><span class="header-section-number">9</span> Clinical Development（临床开发特点）</a></li>
+  <li><a href="#biostatistical-considerations生物统计学考虑" id="toc-biostatistical-considerations生物统计学考虑" class="nav-link" data-scroll-target="#biostatistical-considerations生物统计学考虑"><span class="header-section-number">10</span> Biostatistical Considerations（生物统计学考虑）</a>
   <ul class="collapse">
-  <li><a href="#常见副作用" id="toc-常见副作用" class="nav-link" data-scroll-target="#常见副作用">常见副作用</a></li>
-  <li><a href="#安全性问题" id="toc-安全性问题" class="nav-link" data-scroll-target="#安全性问题">安全性问题</a></li>
+  <li><a href="#常见终点" id="toc-常见终点" class="nav-link" data-scroll-target="#常见终点"><span class="header-section-number">10.1</span> 常见终点</a></li>
+  <li><a href="#剂量优化dose-optimization" id="toc-剂量优化dose-optimization" class="nav-link" data-scroll-target="#剂量优化dose-optimization"><span class="header-section-number">10.2</span> 剂量优化（Dose Optimization）</a></li>
+  <li><a href="#安全性分析" id="toc-安全性分析" class="nav-link" data-scroll-target="#安全性分析"><span class="header-section-number">10.3</span> 安全性分析</a></li>
+  <li><a href="#biomarker-analysis生物标志物分析" id="toc-biomarker-analysis生物标志物分析" class="nav-link" data-scroll-target="#biomarker-analysis生物标志物分析"><span class="header-section-number">10.4</span> Biomarker Analysis（生物标志物分析）</a></li>
   </ul></li>
-  <li><a href="#双抗adc与单抗adc的区别" id="toc-双抗adc与单抗adc的区别" class="nav-link" data-scroll-target="#双抗adc与单抗adc的区别"><strong>双抗ADC与单抗ADC的区别</strong></a>
-  <ul class="collapse">
-  <li><a href="#结构差异" id="toc-结构差异" class="nav-link" data-scroll-target="#结构差异"><strong>结构差异</strong></a></li>
-  <li><a href="#靶向机制的差异" id="toc-靶向机制的差异" class="nav-link" data-scroll-target="#靶向机制的差异"><strong>靶向机制的差异</strong></a></li>
-  <li><a href="#临床应用差异" id="toc-临床应用差异" class="nav-link" data-scroll-target="#临床应用差异"><strong>临床应用差异</strong></a></li>
-  </ul></li>
-  <li><a href="#相关资料" id="toc-相关资料" class="nav-link" data-scroll-target="#相关资料">相关资料</a></li>
+  <li><a href="#adc与其他药物类型比较" id="toc-adc与其他药物类型比较" class="nav-link" data-scroll-target="#adc与其他药物类型比较"><span class="header-section-number">11</span> ADC与其他药物类型比较</a></li>
+  <li><a href="#key-takeaways总结" id="toc-key-takeaways总结" class="nav-link" data-scroll-target="#key-takeaways总结"><span class="header-section-number">12</span> Key Takeaways（总结）</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">13</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -885,14 +978,36 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Drug.html">Biotechnology</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/ADC.html">Antibody-Drug Conjugates (ADC)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">ADC</h1>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Antibody–Drug Conjugate, ADC（抗体偶联药物）</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Oncology</div>
+    <div class="quarto-category">Drug Development</div>
+    <div class="quarto-category">Drug Profile</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    介绍 ADC 的组成、作用机制、分类、临床开发及生物统计学考虑。
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hao Sun </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 25, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -902,148 +1017,452 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="抗体药物偶联物antibody-drug-conjugates-adcs基本概念和原理" class="level1">
-<h1>抗体药物偶联物（Antibody-Drug Conjugates, ADCs）基本概念和原理</h1>
-<section id="adcs简介" class="level2">
-<h2 class="anchored" data-anchor-id="adcs简介">ADCs简介</h2>
-<p>抗体药物偶联物（Antibody-Drug Conjugates, ADCs）是一种创新的生物制药技术，近年来在癌症治疗领域引起了广泛关注。要理解ADCs，我们可以将其分解为三个基本组件：抗体、药物和连接物。下面对这三个组件进行详细解释：</p>
+<section id="概述" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 概述</h1>
+<p><strong>Antibody–Drug Conjugate, ADC（抗体偶联药物）</strong>是近年来肿瘤药物研发最活跃的领域之一。ADC将<strong>单克隆抗体（monoclonal antibody）</strong>、<strong>连接子（linker）</strong>和<strong>高效细胞毒载荷（payload）</strong>三部分结合在一起，实现将高毒性的化疗药物精准递送至肿瘤细胞，从而提高疗效并降低全身毒性。</p>
+<p>ADC常被形象地称为<strong>Biological Missile（生物导弹）</strong>，即利用抗体精准识别肿瘤细胞，再将毒素定向释放至肿瘤内部。</p>
+<p>近年来，随着<a href="../../../docs/pharmaceutical/target/HER.html">HER2</a>、<a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a>、Nectin-4、CLDN18.2、<a href="../../../docs/pharmaceutical/target/HER.html">HER3</a>等多个靶点ADC获得成功，ADC已成为实体瘤和血液肿瘤治疗的重要组成部分。</p>
+</section>
+<section id="drug-profile药物组成" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Drug Profile（药物组成）</h1>
+<p>ADC主要由三部分组成：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>组成</th>
+<th>英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>抗体</td>
+<td>Antibody</td>
+<td>识别肿瘤特异性抗原</td>
+</tr>
+<tr class="even">
+<td>连接子</td>
+<td>Linker</td>
+<td>将抗体与载荷连接，并控制药物释放</td>
+</tr>
+<tr class="odd">
+<td>载荷</td>
+<td>Payload</td>
+<td>杀伤肿瘤细胞</td>
+</tr>
+</tbody>
+</table>
+<p>整体结构可表示为：</p>
+<pre class="text"><code>Antibody --- Linker --- Payload</code></pre>
+</section>
+<section id="mechanism-of-action作用机制" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Mechanism of Action（作用机制）</h1>
+<p>ADC的作用过程通常包括以下几个步骤。</p>
+<section id="靶向结合target-binding" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="靶向结合target-binding"><span class="header-section-number">3.1</span> 1. 靶向结合（Target Binding）</h2>
+<p>ADC首先通过抗体识别肿瘤细胞表面的特异性抗原，例如：</p>
 <ul>
-<li>抗体（Antibody）：抗体是一种由免疫系统产生的蛋白质，能特异性地识别和结合到身体中的特定分子，比如癌细胞表面的抗原。在ADCs中，抗体被用作“导航系统”，引导药物直接送达至癌细胞，而不是正常细胞。</li>
-<li>药物（Drug）：这部分通常是一种强效的化疗药物，能够杀死癌细胞。这些药物在没有抗体的引导下可能会对正常细胞产生严重的毒性，但在ADCs中，它们被精确地运送到癌细胞，从而减少了对正常细胞的损伤。</li>
-<li>连接物（Linker）：连接物是一种用于将药物和抗体结合在一起的稳定化学链。它必须足够稳定，以确保在抗体将药物运送到癌细胞之前不会释放出药物。一旦抗体与癌细胞结合，连接物则会被分解，释放出药物，以杀死癌细胞。</li>
+<li><a href="../../../docs/pharmaceutical/target/HER.html">HER2</a>；</li>
+<li><a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a>；</li>
+<li>Nectin-4；</li>
+<li>CD30；</li>
+<li>CD22；</li>
+<li><a href="../../../docs/pharmaceutical/target/HER.html">HER3</a>。</li>
 </ul>
-<p>这种独特的组合使得ADCs能够将药物直接和特异性地送达到癌细胞，减少对正常细胞的损害。总的来说，ADCs是一种将抗体的靶向能力与化疗药物的杀伤力结合在一起的策略。这种设计允许更精确地对癌症进行治疗，同时减少对患者正常组织的损害，从而提高了治疗的效果并减轻了副作用</p>
-<div class="callout callout-style-default callout-note callout-titled" title="生物制药技术">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-生物制药技术
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<p>由于正常组织通常表达较低，因此能够提高治疗选择性。</p>
+</section>
+<section id="内吞internalization" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="内吞internalization"><span class="header-section-number">3.2</span> 2. 内吞（Internalization）</h2>
+<p>ADC与抗原结合后，被肿瘤细胞通过<strong>endocytosis（胞吞作用）</strong>内化进入细胞。</p>
+</section>
+<section id="payload释放" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="payload释放"><span class="header-section-number">3.3</span> 3. Payload释放</h2>
+<p>进入溶酶体（lysosome）后：</p>
 <ul>
-<li>重组DNA技术 (Recombinant DNA Technology)：改造细胞遗传物质以生产药物的技术。</li>
-<li>单克隆抗体技术 (Monoclonal Antibody Technology)：用于生产特定目标抗体的技术。</li>
-<li>细胞培养技术 (Cell Culture Technology)：在控制条件下培养细胞以生产药物。</li>
-<li>基因治疗 (Gene Therapy)：通过基因转移治疗或预防疾病的方法。</li>
-<li>RNA干扰 (RNA Interference, RNAi)：使用小RNA分子抑制特定基因表达的技术。</li>
-<li>蛋白质工程 (Protein Engineering)：设计或改变蛋白质结构以提高其疗效或稳定性。</li>
-<li>生物相似药物和生物仿制药 (Biosimilars and Biogenerics)：类似于现有生物药品的药物。</li>
-<li>干细胞技术 (Stem Cell Technology)：利用干细胞治疗疾病的技术。</li>
-<li>生物标志物开发 (<a href="../../../docs/pharmaceutical/other/Biomarker.html">Biomarker</a> Development)：识别用于指示疾病或治疗反应的生物标志物。</li>
-<li>免疫治疗技术 (<a href="../../../docs/pharmaceutical/other/Immunotherapy.html">Immunotherapy</a> Techniques)：包括疫苗和免疫调节药物的开发，用于增强或调节免疫系统。</li>
+<li>Linker被切断（可切割linker）；</li>
+<li>或ADC被降解释放payload（不可切割linker）。</li>
 </ul>
-</div>
-</div>
-</div>
+<p>随后释放高活性的细胞毒药物。</p>
 </section>
-<section id="adcs的工作原理" class="level2">
-<h2 class="anchored" data-anchor-id="adcs的工作原理">ADCs的工作原理</h2>
-<p>ADCs的核心机制是利用抗体的特异性识别能力。抗体部分被设计为识别并紧密结合到癌细胞表面的特定抗原。一旦结合，ADC可以被癌细胞吞噬进入其内部。在细胞内部，由于细胞环境的变化，连接物（Linker）被分解，释放出携带的药物。这些药物是高度毒性的，可以有效地杀死癌细胞。</p>
-<p>通过这种方式，ADCs将药物直接送达目标细胞，大大提高了治疗的特异性和效率。相比传统化疗，这减少了对健康细胞的损伤，降低了副作用，提高了患者的生活质量。尤其在难以治疗的癌症类型中，ADCs展现了巨大的潜力，为癌症治疗开辟了新的道路。</p>
-</section>
-</section>
-<section id="adcs的历史发展和当前状态" class="level1">
-<h1>ADCs的历史发展和当前状态</h1>
-<section id="历史发展" class="level2">
-<h2 class="anchored" data-anchor-id="历史发展">历史发展</h2>
-<p>ADCs的概念最早可以追溯到20世纪70年代，当时科学家开始探索如何利用抗体来传递药物。但由于早期技术的限制，如抗体的特异性不足、连接物（Linker）的不稳定性以及药物的低效性，这一领域的发展相对缓慢。进入21世纪，随着分子生物学和化学技术的进步，ADCs的研究迎来了重大突破。抗体的工程化改造、更稳定有效的连接物的设计，以及更加强效的药物的开发，共同推动了ADCs的快速发展。</p>
-</section>
-<section id="adcs的当前状态批准使用的药物列表" class="level2">
-<h2 class="anchored" data-anchor-id="adcs的当前状态批准使用的药物列表">ADCs的当前状态：批准使用的药物列表</h2>
-<p>ADCs作为一种新兴的癌症治疗方法，已经有多种药物获得市场批准。以下是截至目前批准使用的主要ADCs药物列表：</p>
+<section id="肿瘤细胞死亡" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="肿瘤细胞死亡"><span class="header-section-number">3.4</span> 4. 肿瘤细胞死亡</h2>
+<p>Payload可作用于不同靶点，例如：</p>
 <ul>
-<li>Trastuzumab Emtansine (Kadcyla) - 用于治疗HER2阳性乳腺癌。</li>
-<li>Brentuximab Vedotin (Adcetris) - 用于治疗霍奇金淋巴瘤和某些类型的非霍奇金淋巴瘤。</li>
-<li>Ado-trastuzumab Emtansine (Enhertu) - 用于治疗HER2阳性乳腺癌。</li>
-<li>Gemtuzumab Ozogamicin (<a href="../../../docs/pharmaceutical/compound/Mylotarg.html">Mylotarg</a>) - 用于治疗急性髓系白血病（<a href="../../../docs/pharmaceutical/disease/Leukemia.html#acute-myeloid-leukemia">AML</a>）。</li>
-<li>Inotuzumab Ozogamicin (Besponsa) - 用于治疗急性淋巴细胞白血病（ALL）。</li>
-<li>Polatuzumab Vedotin (Polivy) - 与其他药物联合用于治疗复发或难治性的非霍奇金淋巴瘤。</li>
-<li>Enfortumab Vedotin (Padcev) - 用于治疗局部晚期或转移性尿路上皮癌。</li>
-<li>Sacituzumab Govitecan (Trodelvy) - 用于治疗三阴性乳腺癌。</li>
-<li>Loncastuximab Tesirine (Zynlonta) - 用于治疗复发或难治性的大B细胞淋巴瘤。</li>
-<li>Belantamab Mafodotin (Blenrep) - 用于治疗复发或难治性的多发性骨髓瘤。</li>
+<li>抑制微管形成；</li>
+<li>抑制DNA拓扑异构酶I（Topoisomerase I）；</li>
+<li>诱导DNA损伤；</li>
+<li>阻断细胞分裂。</li>
 </ul>
-<p>以上药物代表了ADCs在癌症治疗领域的多样性和潜力。它们针对不同类型的癌症，展示了针对性治疗的优势和效果。</p>
+<p>最终导致细胞凋亡。</p>
+</section>
+<section id="bystander-effect旁观者效应" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="bystander-effect旁观者效应"><span class="header-section-number">3.5</span> 5. Bystander Effect（旁观者效应）</h2>
+<p>部分payload能够扩散至邻近肿瘤细胞，即使这些细胞抗原表达较低，也可能被杀伤。</p>
+<p>这一特点有助于克服肿瘤异质性，但也可能增加正常组织毒性。</p>
 </section>
 </section>
-<section id="adcs的设计和制造" class="level1">
-<h1>ADCs的设计和制造</h1>
-<section id="设计原则" class="level2">
-<h2 class="anchored" data-anchor-id="设计原则">设计原则</h2>
-<p>设计高效且安全的ADCs涉及多个关键步骤。首先，选择合适的抗体至关重要。这个抗体必须具有高度的特异性，能够精确识别并结合到癌细胞表面的特定抗原，而不会与正常细胞产生显著交互作用。其次，药物的选择同样重要。药物通常是高度毒性的，旨在杀死癌细胞。因此，选择一种能在癌细胞内有效释放且具有强大杀伤力的药物是关键。最后，连接物（Linker）的设计也是制造ADCs的关键组成部分。一个理想的连接物应该稳定，能够在药物运输到目标细胞之前保持完整，而在达到目标后迅速且准确地释放药物。</p>
-</section>
-<section id="制造过程中的挑战" class="level2">
-<h2 class="anchored" data-anchor-id="制造过程中的挑战">制造过程中的挑战</h2>
-<p>制造ADCs面临着许多挑战。其中之一是确保高度的一致性和纯度，因为任何微小的变化都可能影响治疗的安全性和有效性。此外，由于ADCs的复杂性，生产过程需要高度精准的技术，以确保抗体、药物和连接物之间的正确结合。高效的纯化技术也是必不可少的，以去除任何未反应的组分或副产品。</p>
-</section>
-<section id="创新技术" class="level2">
-<h2 class="anchored" data-anchor-id="创新技术">创新技术</h2>
-<p>为了克服这些挑战，多种创新技术已经被开发和应用。例如，使用生物工程技术改善抗体的特异性和稳定性，以及开发更稳定、更可控的连接物。此外，高级的纯化和分析技术也在不断进步，以提高生产过程的效率和质量控制。随着技术的不断发展，我们可以预期未来的ADCs将更加有效和安全。</p>
-</section>
-</section>
-<section id="adcs的安全性和副作用" class="level1">
-<h1>ADCs的安全性和副作用</h1>
-<section id="常见副作用" class="level2">
-<h2 class="anchored" data-anchor-id="常见副作用">常见副作用</h2>
-<p>尽管ADCs提供了针对癌症的更加精准的治疗方法，但它们仍然可能引起一些副作用。常见的副作用包括：</p>
+<section id="adc的组成详解" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> ADC的组成详解</h1>
+<section id="antibody抗体" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="antibody抗体"><span class="header-section-number">4.1</span> Antibody（抗体）</h2>
+<p>理想靶点应满足：</p>
 <ul>
-<li>骨髓抑制：导致白细胞、红细胞和血小板数量减少，增加感染、贫血和出血的风险。</li>
-<li>肝脏毒性：表现为肝酶水平升高，严重时可能导致肝功能衰竭。</li>
-<li>神经系统副作用：如头痛、感觉异常和周围神经病变。</li>
-<li>皮肤反应：包括皮疹、瘙痒和干燥。</li>
-<li>胃肠道反应：如恶心、呕吐、腹泻和便秘。</li>
+<li>肿瘤高表达；</li>
+<li>正常组织低表达；</li>
+<li>易发生内吞；</li>
+<li>表达稳定。</li>
 </ul>
+<p>常见ADC靶点如下：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>靶点</th>
+<th>代表药物</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../../../docs/pharmaceutical/target/HER.html">HER2</a></td>
+<td>Trastuzumab deruxtecan、Trastuzumab emtansine</td>
+</tr>
+<tr class="even">
+<td><a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a></td>
+<td>Sacituzumab govitecan、Datopotamab deruxtecan</td>
+</tr>
+<tr class="odd">
+<td>Nectin-4</td>
+<td>Enfortumab vedotin</td>
+</tr>
+<tr class="even">
+<td>CD30</td>
+<td>Brentuximab vedotin</td>
+</tr>
+<tr class="odd">
+<td>CD22</td>
+<td>Inotuzumab ozogamicin</td>
+</tr>
+<tr class="even">
+<td><a href="../../../docs/pharmaceutical/target/HER.html">HER3</a></td>
+<td>Patritumab deruxtecan、<a href="../../../docs/pharmaceutical/compound/Izalontamab_Brengitecan.html">Izalontamab brengitecan</a></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="安全性问题" class="level2">
-<h2 class="anchored" data-anchor-id="安全性问题">安全性问题</h2>
-<p>与安全性相关的主要问题包括药物的特异性和连接物（Linker）的稳定性。虽然ADCs旨在精准靶向癌细胞，但有时也可能影响正常细胞，尤其是那些表达相似抗原的细胞。此外，如果连接物在血液中过早释放药物，也可能导致副作用。</p>
-</section>
-</section>
-<section id="双抗adc与单抗adc的区别" class="level1">
-<h1><strong>双抗ADC与单抗ADC的区别</strong></h1>
-<section id="结构差异" class="level3">
-<h3 class="anchored" data-anchor-id="结构差异"><strong>结构差异</strong></h3>
+<section id="linker连接子" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="linker连接子"><span class="header-section-number">4.2</span> Linker（连接子）</h2>
+<p>Linker决定ADC的稳定性及释放方式。</p>
+<section id="可切割linkercleavable-linker" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="可切割linkercleavable-linker"><span class="header-section-number">4.2.1</span> 可切割Linker（Cleavable Linker）</h3>
+<p>利用：</p>
 <ul>
-<li><p><strong>单抗ADC</strong>：</p>
+<li>蛋白酶；</li>
+<li>酸性环境；</li>
+<li>谷胱甘肽；</li>
+</ul>
+<p>释放payload。</p>
+<p>优点：</p>
 <ul>
-<li><p><strong>构成</strong>：由单一的抗体分子组成，该抗体通过化学偶联与一个或多个抗癌药物（如化疗药物）连接。</p></li>
-<li><p><strong>作用</strong>：单抗ADC主要针对一个特定的肿瘤相关抗原。</p></li>
-</ul></li>
-<li><p><strong>双抗ADC</strong>：</p>
+<li>药效较强；</li>
+<li>容易产生旁观者效应。</li>
+</ul>
+<p>缺点：</p>
 <ul>
-<li><p><strong>构成</strong>：含有两个不同的抗体或抗体片段，它们能同时靶向两种不同的肿瘤相关抗原。</p></li>
-<li><p><strong>作用</strong>：通过双重靶向机制，双抗ADC可以更精确地靶向癌细胞，减少对正常细胞的影响。</p></li>
-</ul></li>
+<li>稳定性要求较高。</li>
 </ul>
 </section>
-<section id="靶向机制的差异" class="level3">
-<h3 class="anchored" data-anchor-id="靶向机制的差异"><strong>靶向机制的差异</strong></h3>
+<section id="不可切割linkernon-cleavable-linker" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="不可切割linkernon-cleavable-linker"><span class="header-section-number">4.2.2</span> 不可切割Linker（Non-cleavable Linker）</h3>
+<p>需ADC完全降解后释放payload。</p>
+<p>优点：</p>
 <ul>
-<li><p><strong>单抗ADC</strong>：单一靶点，依靠单个抗原的识别来引导药物到达癌细胞。</p></li>
-<li><p><strong>双抗ADC</strong>：双重靶向，能够同时攻击两个不同的抗原，这种双重机制有望提高治疗的精确性和效率。</p></li>
+<li>稳定性高；</li>
+<li>脱靶毒性较低。</li>
 </ul>
-</section>
-<section id="临床应用差异" class="level3">
-<h3 class="anchored" data-anchor-id="临床应用差异"><strong>临床应用差异</strong></h3>
+<p>代表药物：</p>
 <ul>
-<li><p><strong>单抗ADC</strong>：在多种癌症治疗中显示效果，特别是在某些淋巴瘤和乳腺癌治疗中已经被证明有效。</p></li>
-<li><p><strong>双抗ADC</strong>：虽然是相对较新的概念，但在实验和早期临床试验中显示出对多种癌症的潜在治疗效果，特别是对于那些传统单抗ADC效果有限的癌症类型。</p></li>
+<li>Trastuzumab emtansine（T-DM1）。</li>
 </ul>
 </section>
 </section>
-<section id="相关资料" class="level1">
-<h1>相关资料</h1>
+<section id="payload载荷" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="payload载荷"><span class="header-section-number">4.3</span> Payload（载荷）</h2>
+<p>由于每个ADC分子进入细胞数量有限，因此payload必须具有极高活性。</p>
+<p>常见类型如下：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Payload类型</th>
+<th>代表药物</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Topoisomerase I inhibitor</td>
+<td>DXd、SN-38</td>
+</tr>
+<tr class="even">
+<td>Microtubule inhibitor</td>
+<td>MMAE、MMAF、DM1、DM4</td>
+</tr>
+<tr class="odd">
+<td>DNA damaging agent</td>
+<td>Calicheamicin、PBD</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="drug-to-antibody-ratiodar" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Drug-to-Antibody Ratio（DAR）</h1>
+<p><strong>Drug-to-antibody ratio, DAR（药物抗体比）</strong>指每个抗体平均偶联多少个payload。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>DAR</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2–4</td>
+<td>稳定性较高</td>
+</tr>
+<tr class="even">
+<td>6–8</td>
+<td>药效增强</td>
+</tr>
+<tr class="odd">
+<td>&gt;8</td>
+<td>易聚集、毒性增加</td>
+</tr>
+</tbody>
+</table>
+<p>DAR是ADC设计中的关键参数，会影响：</p>
 <ul>
-<li><a href="https://mp.weixin.qq.com/s/r1cfXIsVfwK2aOZNBFRnlw">影响抗体偶联药物疗效的关键因素</a></li>
-<li><a href="https://mp.weixin.qq.com/s/ssRcxMGFVBvgjrCRbThhNA">JPM2024深度分析-ADC</a></li>
-<li><a href="https://mp.weixin.qq.com/s/sFc0Oa9RovFIiE7CHBkcGA">探索下一代抗体偶联药物</a></li>
+<li>药代动力学（PK）；</li>
+<li>疗效；</li>
+<li>安全性；</li>
+<li>稳定性。</li>
 </ul>
+</section>
+<section id="已上市代表性adc" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 已上市代表性ADC</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>药物</th>
+<th>靶点</th>
+<th>Payload</th>
+<th>主要适应症</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trastuzumab emtansine (T-DM1)</td>
+<td><a href="../../../docs/pharmaceutical/target/HER.html">HER2</a></td>
+<td>DM1</td>
+<td>HER2阳性<a href="../../../docs/pharmaceutical/disease/Breast_Cancer.html">乳腺癌</a></td>
+</tr>
+<tr class="even">
+<td>Trastuzumab deruxtecan (T-DXd)</td>
+<td><a href="../../../docs/pharmaceutical/target/HER.html">HER2</a></td>
+<td>DXd</td>
+<td>HER2阳性乳腺癌、胃癌、<a href="../../../docs/pharmaceutical/disease/NSCLC.html">NSCLC</a>等</td>
+</tr>
+<tr class="odd">
+<td>Sacituzumab govitecan</td>
+<td><a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a></td>
+<td>SN-38</td>
+<td>TNBC、HR+/HER2-乳腺癌</td>
+</tr>
+<tr class="even">
+<td>Datopotamab deruxtecan</td>
+<td><a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a></td>
+<td>DXd</td>
+<td>NSCLC、乳腺癌</td>
+</tr>
+<tr class="odd">
+<td>Enfortumab vedotin</td>
+<td>Nectin-4</td>
+<td>MMAE</td>
+<td>尿路上皮癌</td>
+</tr>
+<tr class="even">
+<td>Brentuximab vedotin</td>
+<td>CD30</td>
+<td>MMAE</td>
+<td>霍奇金<a href="../../../docs/pharmaceutical/disease/Lymphoma.html">淋巴瘤</a></td>
+</tr>
+<tr class="odd">
+<td><a href="../../../docs/pharmaceutical/compound/Mylotarg.html">Gemtuzumab ozogamicin</a></td>
+<td>CD33</td>
+<td>Calicheamicin</td>
+<td><a href="../../../docs/pharmaceutical/disease/Leukemia.html#acute-myeloid-leukemia">AML</a></td>
+</tr>
+<tr class="even">
+<td>Inotuzumab ozogamicin</td>
+<td>CD22</td>
+<td>Calicheamicin</td>
+<td>ALL</td>
+</tr>
+<tr class="odd">
+<td>Belantamab mafodotin</td>
+<td>BCMA</td>
+<td>MMAF</td>
+<td>多发性<a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html">骨髓瘤</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="adc的优势" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> ADC的优势</h1>
+<p>相比传统化疗：</p>
+<ul>
+<li>更高肿瘤选择性；</li>
+<li>更高局部药物浓度；</li>
+<li>系统毒性降低；</li>
+<li>可治疗低表达靶点；</li>
+<li>与<a href="../../../docs/pharmaceutical/other/Immunotherapy.html">免疫治疗</a>具有协同作用。</li>
+</ul>
+</section>
+<section id="adc的局限性" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> ADC的局限性</h1>
+<p>主要挑战包括：</p>
+<ul>
+<li>抗原表达异质性；</li>
+<li>获得性耐药；</li>
+<li>Payload外泄导致毒性；</li>
+<li>Linker稳定性不足；</li>
+<li>ILD（interstitial lung disease，间质性肺疾病）等特殊毒性，尤其是部分DXd类ADC。</li>
+</ul>
+</section>
+<section id="clinical-development临床开发特点" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Clinical Development（临床开发特点）</h1>
+<p>近年来ADC已成为全球肿瘤研发热点。</p>
+<p>热门靶点包括：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/target/HER.html">HER2</a>；</li>
+<li><a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a>；</li>
+<li><a href="../../../docs/pharmaceutical/target/HER.html">HER3</a>；</li>
+<li>EGFR；</li>
+<li>CLDN18.2；</li>
+<li>B7-H3；</li>
+<li>LIV-1；</li>
+<li>Mesothelin。</li>
+</ul>
+<p>常见联合治疗策略包括：</p>
+<ul>
+<li>ADC + PD-1/PD-L1 inhibitor；</li>
+<li>ADC + <a href="../../../docs/pharmaceutical/target/VEGF.html">VEGF</a> inhibitor；</li>
+<li>ADC + 化疗；</li>
+<li>ADC + 双特异性抗体；</li>
+<li>ADC + ADC。</li>
+</ul>
+<p>双特异性ADC也正在快速发展，例如<a href="../../../docs/pharmaceutical/compound/Izalontamab_Brengitecan.html">izalontamab brengitecan</a>是一种<a href="../../../docs/pharmaceutical/target/HER.html">EGFR × HER3</a> bispecific ADC。</p>
+</section>
+<section id="biostatistical-considerations生物统计学考虑" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Biostatistical Considerations（生物统计学考虑）</h1>
+<p>ADC临床试验与传统抗体药物类似，但由于具有独特毒性和治疗模式，在设计和分析中有若干特殊考虑。</p>
+<section id="常见终点" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="常见终点"><span class="header-section-number">10.1</span> 常见终点</h2>
+<p>包括：</p>
+<ul>
+<li><strong>objective response rate, ORR（客观缓解率）</strong>；</li>
+<li><strong>duration of response, DOR（缓解持续时间）</strong>；</li>
+<li><strong><a href="../../../docs/pharmaceutical/other/PFS.html">progression-free survival, PFS（无进展生存期）</a></strong>；</li>
+<li><strong>overall survival, OS（总生存期）</strong>。</li>
+</ul>
+<p>早期单臂研究通常以ORR和DOR为主要终点；III期随机研究则多采用PFS和OS。</p>
+</section>
+<section id="剂量优化dose-optimization" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="剂量优化dose-optimization"><span class="header-section-number">10.2</span> 剂量优化（Dose Optimization）</h2>
+<p>ADC的疗效和毒性均与暴露密切相关，因此越来越多的项目在早期开发阶段开展剂量优化研究，而非仅采用传统最大耐受剂量（MTD）。</p>
+</section>
+<section id="安全性分析" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="安全性分析"><span class="header-section-number">10.3</span> 安全性分析</h2>
+<p>ADC常需重点分析：</p>
+<ul>
+<li>ILD（DXd类）；</li>
+<li>Peripheral neuropathy（外周神经病变，MMAE类）；</li>
+<li>Ocular toxicity（眼毒性）；</li>
+<li>Neutropenia（中性粒细胞减少）；</li>
+<li>Liver toxicity（肝毒性）。</li>
+</ul>
+<p>对于导致停药、减量或延迟给药的不良事件，应结合<strong>estimand（估计目标）</strong>及<a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html">intercurrent event（伴发事件）</a>制定合适的分析策略。</p>
+</section>
+<section id="biomarker-analysis生物标志物分析" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="biomarker-analysis生物标志物分析"><span class="header-section-number">10.4</span> Biomarker Analysis（生物标志物分析）</h2>
+<p>ADC疗效通常与靶点表达水平密切相关，因此试验中常进行：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/target/HER.html">HER2</a> expression；</li>
+<li><a href="../../../docs/pharmaceutical/target/TROP2.html">TROP2</a> expression；</li>
+<li>CLDN18.2 expression；</li>
+<li>HER3 expression；</li>
+</ul>
+<p>等亚组分析，以探索预测性<a href="../../../docs/pharmaceutical/other/Biomarker.html">生物标志物</a>。</p>
+</section>
+</section>
+<section id="adc与其他药物类型比较" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> ADC与其他药物类型比较</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>靶向性</th>
+<th>是否携带毒素</th>
+<th>代表药物</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>化疗</td>
+<td>×</td>
+<td>是</td>
+<td>Docetaxel</td>
+</tr>
+<tr class="even">
+<td>单克隆抗体</td>
+<td>是</td>
+<td>否</td>
+<td><a href="../../../docs/pharmaceutical/compound/Keytruda.html">Pembrolizumab</a></td>
+</tr>
+<tr class="odd">
+<td>双特异性抗体</td>
+<td>是</td>
+<td>否</td>
+<td><a href="../../../docs/pharmaceutical/compound/Ivonescimab.html">Ivonescimab</a>、<a href="../../../docs/pharmaceutical/compound/Cadonilimab.html">Cadonilimab</a></td>
+</tr>
+<tr class="even">
+<td>ADC</td>
+<td>是</td>
+<td>是</td>
+<td>Trastuzumab deruxtecan</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-takeaways总结" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Key Takeaways（总结）</h1>
+<ol type="1">
+<li>ADC由抗体、连接子和高活性载荷组成，实现精准递送细胞毒药物。</li>
+<li>靶点选择、linker类型、payload类型及DAR是决定ADC成败的四个核心设计因素。</li>
+<li>Bystander effect有助于克服肿瘤异质性，但可能增加脱靶毒性。</li>
+<li>ADC已成为肿瘤药物研发的重要方向，在乳腺癌、肺癌、尿路上皮癌及血液肿瘤等领域取得显著进展。</li>
+<li>生物统计学上需重点关注剂量优化、安全性监测、生物标志物亚组分析及适当的终点设计。</li>
+</ol>
+</section>
+<section id="references" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> References</h1>
+<ol type="1">
+<li>Lambert JM, Morris CQ. Antibody–Drug Conjugates (ADCs) for Personalized Treatment of Solid Tumors. <em>Adv Ther</em>. 2017.</li>
+<li>Beck A, et al.&nbsp;Strategies and challenges for the next generation of antibody–drug conjugates. <em>Nat Rev Drug Discov</em>. 2017.</li>
+<li>National Comprehensive Cancer Network (NCCN) Guidelines.</li>
+<li>U.S. Food and Drug Administration (FDA). Approved Antibody–Drug Conjugates.</li>
+<li>European Medicines Agency (EMA). Antibody–Drug Conjugate approvals.</li>
+</ol>
 
+
+<!-- -->
 
 </section>
 
@@ -1154,6 +1573,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -1495,7 +1965,311 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text">CAR-T</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Antibody–Drug Conjugate, ADC（抗体偶联药物）"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "介绍 ADC 的组成、作用机制、分类、临床开发及生物统计学考虑。"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Hao Sun"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Oncology</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Drug Development</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Drug Profile</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../../../references.bib</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu"># 概述</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>**Antibody–Drug Conjugate, ADC（抗体偶联药物）**是近年来肿瘤药物研发最活跃的领域之一。ADC将**单克隆抗体（monoclonal antibody）**、**连接子（linker）**和**高效细胞毒载荷（payload）**三部分结合在一起，实现将高毒性的化疗药物精准递送至肿瘤细胞，从而提高疗效并降低全身毒性。</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ADC常被形象地称为**Biological Missile（生物导弹）**，即利用抗体精准识别肿瘤细胞，再将毒素定向释放至肿瘤内部。</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>近年来，随着<span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span>、<span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span>、Nectin-4、CLDN18.2、<span class="co">[</span><span class="ot">HER3</span><span class="co">](../target/HER.qmd)</span>等多个靶点ADC获得成功，ADC已成为实体瘤和血液肿瘤治疗的重要组成部分。</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="fu"># Drug Profile（药物组成）</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>ADC主要由三部分组成：</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>| 组成 | 英文 | 作用 |</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>| 抗体 | Antibody | 识别肿瘤特异性抗原 |</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>| 连接子 | Linker | 将抗体与载荷连接，并控制药物释放 |</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>| 载荷 | Payload | 杀伤肿瘤细胞 |</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>整体结构可表示为：</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="in">Antibody --- Linker --- Payload</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="fu"># Mechanism of Action（作用机制）</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>ADC的作用过程通常包括以下几个步骤。</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. 靶向结合（Target Binding）</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>ADC首先通过抗体识别肿瘤细胞表面的特异性抗原，例如：</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span>；</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span>；</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nectin-4；</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CD30；</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CD22；</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">HER3</span><span class="co">](../target/HER.qmd)</span>。</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>由于正常组织通常表达较低，因此能够提高治疗选择性。</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. 内吞（Internalization）</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>ADC与抗原结合后，被肿瘤细胞通过**endocytosis（胞吞作用）**内化进入细胞。</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Payload释放</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>进入溶酶体（lysosome）后：</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Linker被切断（可切割linker）；</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>或ADC被降解释放payload（不可切割linker）。</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>随后释放高活性的细胞毒药物。</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. 肿瘤细胞死亡</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>Payload可作用于不同靶点，例如：</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>抑制微管形成；</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>抑制DNA拓扑异构酶I（Topoisomerase I）；</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>诱导DNA损伤；</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>阻断细胞分裂。</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>最终导致细胞凋亡。</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. Bystander Effect（旁观者效应）</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>部分payload能够扩散至邻近肿瘤细胞，即使这些细胞抗原表达较低，也可能被杀伤。</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>这一特点有助于克服肿瘤异质性，但也可能增加正常组织毒性。</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="fu"># ADC的组成详解</span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="fu">## Antibody（抗体）</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>理想靶点应满足：</span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>肿瘤高表达；</span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>正常组织低表达；</span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>易发生内吞；</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>表达稳定。</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>常见ADC靶点如下：</span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>| 靶点 | 代表药物 |</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span> | Trastuzumab deruxtecan、Trastuzumab emtansine |</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span> | Sacituzumab govitecan、Datopotamab deruxtecan |</span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>| Nectin-4 | Enfortumab vedotin |</span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>| CD30 | Brentuximab vedotin |</span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>| CD22 | Inotuzumab ozogamicin |</span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">HER3</span><span class="co">](../target/HER.qmd)</span> | Patritumab deruxtecan、<span class="co">[</span><span class="ot">Izalontamab brengitecan</span><span class="co">](../compound/Izalontamab_Brengitecan.qmd)</span> |</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="fu">## Linker（连接子）</span></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>Linker决定ADC的稳定性及释放方式。</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="fu">### 可切割Linker（Cleavable Linker）</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>利用：</span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>蛋白酶；</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>酸性环境；</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>谷胱甘肽；</span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>释放payload。</span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>优点：</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>药效较强；</span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>容易产生旁观者效应。</span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a>缺点：</span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>稳定性要求较高。</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="fu">### 不可切割Linker（Non-cleavable Linker）</span></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>需ADC完全降解后释放payload。</span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>优点：</span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>稳定性高；</span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>脱靶毒性较低。</span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>代表药物：</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Trastuzumab emtansine（T-DM1）。</span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="fu">## Payload（载荷）</span></span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a>由于每个ADC分子进入细胞数量有限，因此payload必须具有极高活性。</span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a>常见类型如下：</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a>| Payload类型 | 代表药物 |</span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>| Topoisomerase I inhibitor | DXd、SN-38 |</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a>| Microtubule inhibitor | MMAE、MMAF、DM1、DM4 |</span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>| DNA damaging agent | Calicheamicin、PBD |</span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a><span class="fu"># Drug-to-Antibody Ratio（DAR）</span></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a>**Drug-to-antibody ratio, DAR（药物抗体比）**指每个抗体平均偶联多少个payload。</span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a>| DAR | 特点 |</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a>| 2–4 | 稳定性较高 |</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a>| 6–8 | 药效增强 |</span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>| &gt;8 | 易聚集、毒性增加 |</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a>DAR是ADC设计中的关键参数，会影响：</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>药代动力学（PK）；</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>疗效；</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>安全性；</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>稳定性。</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a><span class="fu"># 已上市代表性ADC</span></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a>| 药物 | 靶点 | Payload | 主要适应症 |</span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a>|---|---|---|---|</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a>| Trastuzumab emtansine (T-DM1) | <span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span> | DM1 | HER2阳性<span class="co">[</span><span class="ot">乳腺癌</span><span class="co">](../disease/Breast_Cancer.qmd)</span> |</span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a>| Trastuzumab deruxtecan (T-DXd) | <span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span> | DXd | HER2阳性乳腺癌、胃癌、<span class="co">[</span><span class="ot">NSCLC</span><span class="co">](../disease/NSCLC.qmd)</span>等 |</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a>| Sacituzumab govitecan | <span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span> | SN-38 | TNBC、HR+/HER2-乳腺癌 |</span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a>| Datopotamab deruxtecan | <span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span> | DXd | NSCLC、乳腺癌 |</span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a>| Enfortumab vedotin | Nectin-4 | MMAE | 尿路上皮癌 |</span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a>| Brentuximab vedotin | CD30 | MMAE | 霍奇金<span class="co">[</span><span class="ot">淋巴瘤</span><span class="co">](../disease/Lymphoma.qmd)</span> |</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a>| <span class="co">[</span><span class="ot">Gemtuzumab ozogamicin</span><span class="co">](../compound/Mylotarg.qmd)</span> | CD33 | Calicheamicin | <span class="co">[</span><span class="ot">AML</span><span class="co">](../disease/Leukemia.qmd#acute-myeloid-leukemia)</span> |</span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a>| Inotuzumab ozogamicin | CD22 | Calicheamicin | ALL |</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a>| Belantamab mafodotin | BCMA | MMAF | 多发性<span class="co">[</span><span class="ot">骨髓瘤</span><span class="co">](../disease/multiple_myeloma.qmd)</span> |</span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="fu"># ADC的优势</span></span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a>相比传统化疗：</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>更高肿瘤选择性；</span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>更高局部药物浓度；</span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>系统毒性降低；</span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>可治疗低表达靶点；</span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>与<span class="co">[</span><span class="ot">免疫治疗</span><span class="co">](Immunotherapy.qmd)</span>具有协同作用。</span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a><span class="fu"># ADC的局限性</span></span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>主要挑战包括：</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>抗原表达异质性；</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>获得性耐药；</span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Payload外泄导致毒性；</span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Linker稳定性不足；</span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ILD（interstitial lung disease，间质性肺疾病）等特殊毒性，尤其是部分DXd类ADC。</span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Development（临床开发特点）</span></span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a>近年来ADC已成为全球肿瘤研发热点。</span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a>热门靶点包括：</span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span>；</span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span>；</span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">HER3</span><span class="co">](../target/HER.qmd)</span>；</span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>EGFR；</span>
+<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CLDN18.2；</span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>B7-H3；</span>
+<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>LIV-1；</span>
+<span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mesothelin。</span>
+<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a>常见联合治疗策略包括：</span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ADC + PD-1/PD-L1 inhibitor；</span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ADC + <span class="co">[</span><span class="ot">VEGF</span><span class="co">](../target/VEGF.qmd)</span> inhibitor；</span>
+<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ADC + 化疗；</span>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ADC + 双特异性抗体；</span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ADC + ADC。</span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a>双特异性ADC也正在快速发展，例如<span class="co">[</span><span class="ot">izalontamab brengitecan</span><span class="co">](../compound/Izalontamab_Brengitecan.qmd)</span>是一种<span class="co">[</span><span class="ot">EGFR × HER3</span><span class="co">](../target/HER.qmd)</span> bispecific ADC。</span>
+<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a><span class="fu"># Biostatistical Considerations（生物统计学考虑）</span></span>
+<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a>ADC临床试验与传统抗体药物类似，但由于具有独特毒性和治疗模式，在设计和分析中有若干特殊考虑。</span>
+<span id="cb2-241"><a href="#cb2-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a><span class="fu">## 常见终点</span></span>
+<span id="cb2-243"><a href="#cb2-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a>包括：</span>
+<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**objective response rate, ORR（客观缓解率）**；</span>
+<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**duration of response, DOR（缓解持续时间）**；</span>
+<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**[progression-free survival, PFS（无进展生存期）](PFS.qmd)**；</span>
+<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**overall survival, OS（总生存期）**。</span>
+<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a>早期单臂研究通常以ORR和DOR为主要终点；III期随机研究则多采用PFS和OS。</span>
+<span id="cb2-252"><a href="#cb2-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-253"><a href="#cb2-253" aria-hidden="true" tabindex="-1"></a><span class="fu">## 剂量优化（Dose Optimization）</span></span>
+<span id="cb2-254"><a href="#cb2-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-255"><a href="#cb2-255" aria-hidden="true" tabindex="-1"></a>ADC的疗效和毒性均与暴露密切相关，因此越来越多的项目在早期开发阶段开展剂量优化研究，而非仅采用传统最大耐受剂量（MTD）。</span>
+<span id="cb2-256"><a href="#cb2-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-257"><a href="#cb2-257" aria-hidden="true" tabindex="-1"></a><span class="fu">## 安全性分析</span></span>
+<span id="cb2-258"><a href="#cb2-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-259"><a href="#cb2-259" aria-hidden="true" tabindex="-1"></a>ADC常需重点分析：</span>
+<span id="cb2-260"><a href="#cb2-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-261"><a href="#cb2-261" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ILD（DXd类）；</span>
+<span id="cb2-262"><a href="#cb2-262" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Peripheral neuropathy（外周神经病变，MMAE类）；</span>
+<span id="cb2-263"><a href="#cb2-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ocular toxicity（眼毒性）；</span>
+<span id="cb2-264"><a href="#cb2-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Neutropenia（中性粒细胞减少）；</span>
+<span id="cb2-265"><a href="#cb2-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Liver toxicity（肝毒性）。</span>
+<span id="cb2-266"><a href="#cb2-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-267"><a href="#cb2-267" aria-hidden="true" tabindex="-1"></a>对于导致停药、减量或延迟给药的不良事件，应结合**estimand（估计目标）**及<span class="co">[</span><span class="ot">intercurrent event（伴发事件）</span><span class="co">](Intercurrent_Events.qmd)</span>制定合适的分析策略。</span>
+<span id="cb2-268"><a href="#cb2-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-269"><a href="#cb2-269" aria-hidden="true" tabindex="-1"></a><span class="fu">## Biomarker Analysis（生物标志物分析）</span></span>
+<span id="cb2-270"><a href="#cb2-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-271"><a href="#cb2-271" aria-hidden="true" tabindex="-1"></a>ADC疗效通常与靶点表达水平密切相关，因此试验中常进行：</span>
+<span id="cb2-272"><a href="#cb2-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-273"><a href="#cb2-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">HER2</span><span class="co">](../target/HER.qmd)</span> expression；</span>
+<span id="cb2-274"><a href="#cb2-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TROP2</span><span class="co">](../target/TROP2.qmd)</span> expression；</span>
+<span id="cb2-275"><a href="#cb2-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CLDN18.2 expression；</span>
+<span id="cb2-276"><a href="#cb2-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>HER3 expression；</span>
+<span id="cb2-277"><a href="#cb2-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-278"><a href="#cb2-278" aria-hidden="true" tabindex="-1"></a>等亚组分析，以探索预测性<span class="co">[</span><span class="ot">生物标志物</span><span class="co">](Biomarker.qmd)</span>。</span>
+<span id="cb2-279"><a href="#cb2-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-280"><a href="#cb2-280" aria-hidden="true" tabindex="-1"></a><span class="fu"># ADC与其他药物类型比较</span></span>
+<span id="cb2-281"><a href="#cb2-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-282"><a href="#cb2-282" aria-hidden="true" tabindex="-1"></a>| 类型 | 靶向性 | 是否携带毒素 | 代表药物 |</span>
+<span id="cb2-283"><a href="#cb2-283" aria-hidden="true" tabindex="-1"></a>|---|---|---|---|</span>
+<span id="cb2-284"><a href="#cb2-284" aria-hidden="true" tabindex="-1"></a>| 化疗 | × | 是 | Docetaxel |</span>
+<span id="cb2-285"><a href="#cb2-285" aria-hidden="true" tabindex="-1"></a>| 单克隆抗体 | 是 | 否 | <span class="co">[</span><span class="ot">Pembrolizumab</span><span class="co">](../compound/Keytruda.qmd)</span> |</span>
+<span id="cb2-286"><a href="#cb2-286" aria-hidden="true" tabindex="-1"></a>| 双特异性抗体 | 是 | 否 | <span class="co">[</span><span class="ot">Ivonescimab</span><span class="co">](../compound/Ivonescimab.qmd)</span>、<span class="co">[</span><span class="ot">Cadonilimab</span><span class="co">](../compound/Cadonilimab.qmd)</span> |</span>
+<span id="cb2-287"><a href="#cb2-287" aria-hidden="true" tabindex="-1"></a>| ADC | 是 | 是 | Trastuzumab deruxtecan |</span>
+<span id="cb2-288"><a href="#cb2-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-289"><a href="#cb2-289" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Takeaways（总结）</span></span>
+<span id="cb2-290"><a href="#cb2-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-291"><a href="#cb2-291" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>ADC由抗体、连接子和高活性载荷组成，实现精准递送细胞毒药物。</span>
+<span id="cb2-292"><a href="#cb2-292" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>靶点选择、linker类型、payload类型及DAR是决定ADC成败的四个核心设计因素。</span>
+<span id="cb2-293"><a href="#cb2-293" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Bystander effect有助于克服肿瘤异质性，但可能增加脱靶毒性。</span>
+<span id="cb2-294"><a href="#cb2-294" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>ADC已成为肿瘤药物研发的重要方向，在乳腺癌、肺癌、尿路上皮癌及血液肿瘤等领域取得显著进展。</span>
+<span id="cb2-295"><a href="#cb2-295" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>生物统计学上需重点关注剂量优化、安全性监测、生物标志物亚组分析及适当的终点设计。</span>
+<span id="cb2-296"><a href="#cb2-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-297"><a href="#cb2-297" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
+<span id="cb2-298"><a href="#cb2-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-299"><a href="#cb2-299" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Lambert JM, Morris CQ. Antibody–Drug Conjugates (ADCs) for Personalized Treatment of Solid Tumors. *Adv Ther*. 2017.</span>
+<span id="cb2-300"><a href="#cb2-300" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Beck A, et al. Strategies and challenges for the next generation of antibody–drug conjugates. *Nat Rev Drug Discov*. 2017.</span>
+<span id="cb2-301"><a href="#cb2-301" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>National Comprehensive Cancer Network (NCCN) Guidelines.</span>
+<span id="cb2-302"><a href="#cb2-302" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>U.S. Food and Drug Administration (FDA). Approved Antibody–Drug Conjugates.</span>
+<span id="cb2-303"><a href="#cb2-303" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>European Medicines Agency (EMA). Antibody–Drug Conjugate approvals.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

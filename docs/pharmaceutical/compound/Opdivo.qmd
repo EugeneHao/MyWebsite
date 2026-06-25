@@ -1,25 +1,268 @@
 ---
-title: "Opdivo"
+title: "Nivolumab（纳武利尤单抗，Opdivo）"
+description: "介绍 PD-1 inhibitor Nivolumab 的机制、主要适应证、临床开发及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Immuno-Oncology
+  - Drug Profile
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
 ---
 
-## 药物简介（Drug Overview）
+# 概述
 
-尼伏单抗（Nivolumab, 商业名称为Opdivo）是一种免疫检查点抑制剂（Immune Checkpoint Inhibitor），属于单克隆抗体（Monoclonal Antibody）。它主要用于某些类型的癌症治疗，通过调节人体的免疫系统来攻击癌细胞。
+**Nivolumab（纳武利尤单抗；[Bristol Myers Squibb](../company/BMS.qmd)；Opdivo / 欧狄沃）**是一种**programmed death-1, PD-1（程序性死亡受体1）inhibitor（抑制剂）**，属于**immune checkpoint inhibitor（免疫检查点抑制剂）**。
 
-## 作用机制（Mechanism of Action）
+Nivolumab通过阻断PD-1与**programmed death-ligand 1, [PD-L1](../target/PD-L1.qmd)（程序性死亡配体1）**及PD-L2的结合，恢复T cell（T细胞）的抗肿瘤免疫活性。它是最早广泛应用于实体瘤和血液肿瘤的PD-1单抗之一。
 
-尼伏单抗的作用机制是通过靶向并阻断称为程序性死亡-1（Programmed Death-1, PD-1）的蛋白质。PD-1是免疫细胞表面的一个抑制性受体，癌细胞通过与PD-1结合来逃避免疫系统的攻击。尼伏单抗通过阻断PD-1与其配体（Ligands）的结合，增强免疫系统对癌细胞的攻击能力。
+截至2026年6月，Opdivo已在多个瘤种中获批，包括[melanoma（黑色素瘤）](../disease/Melanoma.qmd)、[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)、renal cell carcinoma, RCC（肾细胞癌）、classical Hodgkin lymphoma, cHL（经典霍奇金淋巴瘤）、urothelial carcinoma（尿路上皮癌）、gastric cancer（胃癌）、esophageal cancer（食管癌）、colorectal cancer（结直肠癌）等。
 
-## 适应症（Indications）
+美国FDA也已批准**Opdivo Qvantig（nivolumab and hyaluronidase-nvhy）**作为皮下注射制剂，用于多数已获批的成人实体瘤nivolumab适应证。Opdivo Qvantig不适用于与静脉ipilimumab联合使用。
 
-尼伏单抗被批准用于治疗多种癌症类型，包括但不限于：
+# Drug Profile（药物信息）
 
--   高级非小细胞肺癌（Advanced Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）
--   复发性或转移性黑色素瘤（Recurrent or Metastatic [Melanoma](../disease/Melanoma.qmd)）
--   肾细胞癌（Renal Cell Carcinoma, RCC）
--   经典霍奇金淋巴瘤（Classical Hodgkin [Lymphoma](../disease/Lymphoma.qmd), cHL）
--   头颈部鳞状细胞癌（Head and Neck Squamous Cell Carcinoma, HNSCC）
+| 项目 | 内容 |
+|---|---|
+| Generic name | Nivolumab |
+| 中文通用名 | 纳武利尤单抗 |
+| Brand name | Opdivo / 欧狄沃 |
+| Subcutaneous formulation | Opdivo Qvantig |
+| Company | [Bristol Myers Squibb](../company/BMS.qmd) |
+| Drug class | PD-1 inhibitor |
+| Molecular type | Fully human IgG4 monoclonal antibody |
+| Target | PD-1 |
+| Route | Intravenous infusion；部分成人实体瘤适应证可使用subcutaneous injection |
+| Core mechanism | 阻断PD-1/PD-L1和PD-1/PD-L2信号，恢复抗肿瘤免疫 |
+| Initial U.S. approval | 2014年 |
+| Regulatory status | 多瘤种已获批 |
 
-## 副作用（Side Effects）
+# Mechanism of Action（作用机制）
 
-尼伏单抗的常见副作用包括疲劳（Fatigue）、皮疹（Rash）、腹泻（Diarrhea）、关节痛（Arthralgia）和瘙痒（Pruritus）。严重副作用可能包括免疫相关的不良反应，如肝炎（Hepatitis）、结肠炎（Colitis）、肺炎（Pneumonitis）和甲状腺功能异常（Thyroid Dysfunction）。在使用时应密切监测这些副作用，并在必要时进行适当的管理和治疗。
+PD-1是表达于活化T cell表面的免疫检查点受体。肿瘤细胞或肿瘤微环境中的免疫细胞可表达PD-L1或PD-L2，与PD-1结合后抑制T cell活性，导致肿瘤免疫逃逸。
+
+Nivolumab结合PD-1后，可阻断PD-1与其配体结合，从而：
+
+- 恢复T cell activation（T细胞活化）；
+- 增强cytotoxic T-cell activity（细胞毒性T细胞活性）；
+- 增加抗肿瘤免疫反应；
+- 诱导部分患者出现持久缓解。
+
+```text
+Tumor cell / immune cell
+        |
+   PD-L1 / PD-L2
+        |
+        v
+       PD-1
+        |
+        v
+ T-cell inhibition
+
+Nivolumab blocks PD-1
+        |
+        v
+ T-cell reactivation
+        |
+        v
+ Antitumor immune response
+```
+
+# 主要适应证
+
+Nivolumab的适应证非常广，既可作为单药，也可与其他治疗联合使用。
+
+| 瘤种 | 常见治疗方式 | 说明 |
+|---|---|---|
+| Melanoma | Nivolumab ± [ipilimumab](Yervoy.qmd) | 辅助治疗或晚期治疗 |
+| NSCLC | Nivolumab ± ipilimumab；nivolumab + chemotherapy；或后线单药 | 取决于疾病阶段、治疗线数、PD-L1状态和既往治疗 |
+| Malignant pleural mesothelioma | Nivolumab + ipilimumab | 不可切除疾病的一线治疗选择之一 |
+| RCC | Nivolumab + ipilimumab；nivolumab + cabozantinib | 晚期RCC标准方案之一 |
+| cHL | Nivolumab；nivolumab + AVD | 复发/难治及部分一线晚期cHL |
+| Urothelial carcinoma | Nivolumab + cisplatin/gemcitabine；或辅助治疗 | 用于晚期或高危患者 |
+| Gastric/GEJ/esophageal adenocarcinoma | Nivolumab + fluoropyrimidine/platinum chemotherapy | 一线晚期治疗 |
+| Esophageal squamous cell carcinoma | Nivolumab-based regimen | 与化疗或ipilimumab联合 |
+| MSI-H/dMMR colorectal cancer | Nivolumab ± ipilimumab | Biomarker-defined population |
+| Hepatocellular carcinoma | Nivolumab + ipilimumab | 部分既往治疗后患者，具体以批准标签为准 |
+
+# 重要临床研究
+
+| Trial | Phase | 人群 | Experimental arm | Comparator | Primary endpoint | 主要意义 |
+|---|---:|---|---|---|---|---|
+| CheckMate 017 | III | 鳞状NSCLC，后线 | Nivolumab | Docetaxel | OS | PD-1单药在NSCLC后线确立疗效 |
+| CheckMate 057 | III | 非鳞NSCLC，后线 | Nivolumab | Docetaxel | OS | 支持非鳞NSCLC后线应用 |
+| CheckMate 816 | III | 可切除NSCLC，新辅助 | Nivolumab + chemotherapy | Chemotherapy | EFS、pCR | 支持围手术期免疫治疗开发 |
+| CheckMate 227 | III | 一线NSCLC | Nivolumab + ipilimumab | Chemotherapy | OS / PFS | 建立双免疫治疗策略 |
+| CheckMate 214 | III | 晚期RCC | Nivolumab + ipilimumab | Sunitinib | OS、PFS、ORR | 改变RCC一线治疗格局 |
+| CheckMate 649 | III | 胃癌/GEJ/食管腺癌 | Nivolumab + chemotherapy | Chemotherapy | OS、PFS | 建立胃食管癌一线免疫联合化疗 |
+| CheckMate 9ER | III | 晚期RCC | Nivolumab + cabozantinib | Sunitinib | PFS | 支持免疫 + TKI联合 |
+| CheckMate 8HW | III | MSI-H/dMMR CRC | Nivolumab + ipilimumab | Chemotherapy | PFS | 支持biomarker-defined CRC一线治疗 |
+| CheckMate 67T | III | 晚期或转移性clear cell RCC | Opdivo Qvantig | IV nivolumab | PK endpoints、ORR | 支持皮下注射制剂批准 |
+
+# Safety Profile（安全性）
+
+Nivolumab的安全性主要来自免疫系统激活，因此重点关注**immune-related adverse events, irAEs（免疫相关不良事件）**。
+
+| 系统 | 常见或重要不良事件 |
+|---|---|
+| 皮肤 | Rash、pruritus |
+| 胃肠道 | Diarrhea、colitis |
+| 肝脏 | Hepatitis、ALT/AST elevation |
+| 肺部 | Pneumonitis |
+| 内分泌 | Hypothyroidism、hyperthyroidism、adrenal insufficiency、type 1 diabetes |
+| 肾脏 | Nephritis |
+| 全身 | Fatigue、infusion-related reaction |
+
+与ipilimumab联合时，irAEs通常更常见、更严重，因此联合免疫治疗研究中需要特别关注grade >=3 AE、steroid use、dose interruption和treatment discontinuation。
+
+# Opdivo Qvantig（皮下注射制剂）
+
+**Opdivo Qvantig（nivolumab and hyaluronidase-nvhy；Bristol Myers Squibb）**是nivolumab的皮下注射制剂。FDA于2024年12月27日批准其用于多数已获批成人实体瘤nivolumab适应证，包括单药、完成Opdivo + Yervoy（ipilimumab）联合治疗后的单药维持、联合化疗或联合cabozantinib。
+
+与IV Opdivo相比，Opdivo Qvantig的主要临床价值是给药更方便。FDA批准基于CheckMate 67T研究中的药代动力学桥接、ORR和安全性数据。根据FDA说明，Opdivo Qvantig不适用于与静脉ipilimumab联合使用。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | 靶点 | 公司 | 特点 |
+|---|---|---|---|
+| Nivolumab | PD-1 | [Bristol Myers Squibb](../company/BMS.qmd) | 多瘤种、可单药或联合ipilimumab |
+| [Pembrolizumab](Keytruda.qmd) | PD-1 | Merck | 多瘤种，PD-L1 biomarker使用广泛 |
+| Cemiplimab | PD-1 | Regeneron/Sanofi | CSCC、NSCLC等 |
+| Atezolizumab | PD-L1 | Roche | PD-L1单抗 |
+| Durvalumab | PD-L1 | AstraZeneca | Stage III NSCLC、SCLC、BTC等 |
+| [Ivonescimab](Ivonescimab.qmd) | PD-1 × [VEGF](../target/VEGF.qmd) | Akeso/Summit | 双特异性抗体 |
+| [Cadonilimab](Cadonilimab.qmd) | PD-1 × CTLA-4 | Akeso | 双特异性抗体 |
+
+Nivolumab的特点是联合策略非常丰富，尤其是：
+
+- nivolumab + ipilimumab；
+- nivolumab + chemotherapy；
+- nivolumab + cabozantinib；
+- nivolumab + AVD in cHL。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Selection（终点选择）
+
+Nivolumab的关键研究通常使用以下终点：
+
+| Endpoint | 英文全称 | 中文解释 | 常见用途 |
+|---|---|---|---|
+| OS | Overall survival | 总生存期 | III期确证性研究核心终点 |
+| PFS | Progression-free survival | 无进展生存期 | 实体瘤随机研究常用终点 |
+| ORR | Objective response rate | 客观缓解率 | 单臂研究或早期研究常用 |
+| DOR | Duration of response | 缓解持续时间 | 评估缓解持久性 |
+| EFS | Event-free survival | 无事件生存期 | 新辅助/围手术期研究 |
+| DFS | Disease-free survival | 无病生存期 | 辅助治疗研究 |
+
+## Non-Proportional Hazards（非比例风险）
+
+免疫治疗研究中常出现delayed treatment effect（延迟治疗效应），即早期Kaplan-Meier曲线接近，随后逐渐分离。因此需关注：
+
+- **proportional hazards assumption, PH assumption（比例风险假设）**；
+- log-rank test的效率；
+- hazard ratio, HR（风险比）的时间平均解释；
+- restricted mean survival time, RMST（限制性平均生存时间）作为补充分析。
+
+## Biomarker Strategy（生物标志物策略）
+
+Nivolumab研究常涉及以下biomarker：
+
+- [PD-L1](../target/PD-L1.qmd) expression；
+- tumor mutational burden, TMB（肿瘤突变负荷）；
+- microsatellite instability-high, MSI-H（微卫星高度不稳定）；
+- mismatch repair deficient, dMMR（错配修复缺陷）；
+- histology；
+- gene mutation subgroup。
+
+PD-L1可作为入组条件、分层因素或预设亚组，但不是所有nivolumab适应证都要求PD-L1阳性。
+
+## Multiplicity（多重性）
+
+Nivolumab的大型III期研究常涉及：
+
+- 多个主要终点，如OS和PFS；
+- 多个人群，如all-comer population、PD-L1-positive subgroup；
+- 多个治疗臂，如nivolumab单药、nivolumab + ipilimumab、chemotherapy；
+- 多个interim analysis, IA（期中分析）。
+
+因此通常需要预先定义alpha allocation（α分配）和hierarchical testing（层级检验），以控制**family-wise type I error rate, FWER（族系第一类错误率）**。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Analysis Population（分析人群）
+
+常见分析人群包括：
+
+- **intention-to-treat population, ITT population（意向治疗人群）**；
+- **safety analysis set（安全性分析集）**；
+- biomarker-evaluable population（生物标志物可评价人群）；
+- PD-L1-positive population；
+- MSI-H/dMMR population。
+
+## Intercurrent Events（伴发事件）
+
+免疫治疗试验中常见intercurrent events包括：
+
+- treatment discontinuation due to toxicity；
+- subsequent anticancer therapy；
+- treatment beyond progression；
+- steroid or immunosuppressive therapy use；
+- crossover or treatment switching。
+
+这些事件会影响estimand（用于精确定义治疗效应的估计目标）和结果解释。
+
+## Safety Analysis（安全性分析）
+
+Nivolumab的安全性分析应重点呈现：
+
+- TEAE；
+- treatment-related adverse event；
+- immune-mediated adverse event；
+- grade >=3 AE；
+- serious adverse event；
+- AE leading to discontinuation；
+- steroid use；
+- time to onset and time to resolution of selected irAEs。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| Opdivo是化疗 | Opdivo是PD-1 immune checkpoint inhibitor，不是传统化疗 |
+| PD-L1阴性一定不能用nivolumab | 取决于瘤种、治疗线数和具体适应证 |
+| Nivolumab与pembrolizumab完全一样 | 二者同属PD-1 inhibitor，但适应证、联合策略和试验数据不同 |
+| 免疫治疗没有严重毒性 | irAEs可累及肺、肝、肠道、内分泌系统，严重时可危及生命 |
+| HR可以完整概括免疫治疗疗效 | 若存在delayed effect或non-proportional hazards，HR解释需谨慎 |
+| Opdivo Qvantig可以替代所有Opdivo用法 | 皮下注射制剂适用范围不同，且不用于与静脉ipilimumab联合 |
+
+# Key Takeaways（总结）
+
+1. Nivolumab是经典PD-1 inhibitor，也是肿瘤免疫治疗代表性药物之一。
+2. Opdivo已获批多个实体瘤和血液肿瘤适应证，可单药或与ipilimumab、化疗、TKI等联合使用。
+3. Nivolumab的核心机制是阻断PD-1信号，恢复T cell抗肿瘤免疫。
+4. 安全性重点是immune-related adverse events，尤其在联合ipilimumab时更需关注。
+5. 生物统计学上，nivolumab研究常涉及OS/PFS双终点、多重性控制、PD-L1或MSI-H/dMMR biomarker strategy，以及免疫治疗相关的non-proportional hazards。
+
+# References
+
+1. U.S. Food and Drug Administration. *OPDIVO (nivolumab) Prescribing Information*. Revised April 2025. <https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/125554s132lbl.pdf>
+
+2. U.S. Food and Drug Administration. *FDA approves nivolumab and hyaluronidase-nvhy for subcutaneous injection*. December 27, 2024. <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-and-hyaluronidase-nvhy-subcutaneous-injection>
+
+3. Bristol Myers Squibb. *OPDIVO and OPDIVO Qvantig official indication information*. <https://www.opdivo.com/>
+
+4. Bristol Myers Squibb. *U.S. Food and Drug Administration Approves Opdivo Qvantig (nivolumab and hyaluronidase-nvhy) Injection*. December 27, 2024. <https://news.bms.com/news/corporate-financial/2024/US-Food-and-Drug-Administration-Approves-Opdivo-Qvantig-nivolumab-and-hyaluronidase-nvhy-Injection-for-Subcutaneous-Use-in-Most-Previously-Approved-Adult-Solid-Tumor-Opdivo-nivolumab-Indications12/default.aspx>
+
+5. U.S. Food and Drug Administration. *FDA approves nivolumab with chemotherapy for previously untreated Hodgkin lymphoma*. March 20, 2026. <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-chemotherapy-previously-untreated-hodgkin-lymphoma>
+
+6. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.

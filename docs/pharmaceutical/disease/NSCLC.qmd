@@ -28,7 +28,7 @@ NSCLC主要包括：
 - **squamous cell carcinoma, SCC（鳞状细胞癌）**；
 - large cell carcinoma及其他少见亚型。
 
-与**small cell lung cancer, SCLC（小细胞肺癌）**相比，NSCLC通常生长和转移相对较慢，但其临床行为取决于疾病分期、组织学类型、分子驱动变异、免疫微环境和患者一般状况。
+与**[small cell lung cancer, SCLC（小细胞肺癌）](SCLC.qmd)**相比，NSCLC通常生长和转移相对较慢，但其临床行为取决于疾病分期、组织学类型、分子驱动变异、免疫微环境和患者一般状况。
 
 现代NSCLC治疗已经从主要依据组织学选择化疗，发展为同时依据以下因素进行精准决策：
 
@@ -36,7 +36,7 @@ NSCLC主要包括：
 2. 局限期、局部晚期或转移性疾病；
 3. 鳞状或非鳞状组织学；
 4. 是否存在actionable genomic alteration；
-5. **programmed death-ligand 1, PD-L1（程序性死亡配体1）**表达；
+5. **[programmed death-ligand 1, PD-L1（程序性死亡配体1）](../target/PD-L1.qmd)**表达；
 6. 脑转移状态；
 7. 既往治疗和耐药机制；
 8. 患者的身体状况、合并症和治疗目标。
@@ -92,7 +92,7 @@ NSCLC主要包括：
 | ORR | Objective response rate | 客观缓解率 |
 | OS | Overall survival | 总生存期 |
 | pCR | Pathological complete response | 病理完全缓解 |
-| PD-L1 | Programmed death-ligand 1 | 程序性死亡配体1 |
+| [PD-L1](../target/PD-L1.qmd) | Programmed death-ligand 1 | 程序性死亡配体1 |
 | [PFS](../other/PFS.qmd) | Progression-free survival | 无进展生存期 |
 | PRO | Patient-reported outcome | 患者报告结局 |
 | RECIST 1.1 | Response Evaluation Criteria in Solid Tumors version 1.1 | 实体瘤疗效评价标准1.1版 |
@@ -132,8 +132,8 @@ NSCLC主要包括：
 - *RET* fusion；
 - *MET* exon 14 skipping alteration；
 - *BRAF* V600E mutation；
-- *KRAS* G12C mutation；
-- *ERBB2/HER2* mutation；
+- *[KRAS](../target/KRAS.qmd)* G12C mutation；
+- *[ERBB2/HER2](../target/HER.qmd)* mutation；
 - *NTRK* fusion；
 - 其他较少见的驱动改变。
 
@@ -200,22 +200,22 @@ SCC具有以下特点：
 
 | Biomarker | 肺腺癌中的大致频率 | 常见人群或特征 | 临床意义 |
 |---|---:|---|---|
-| *EGFR* sensitizing mutation | 西方约10%–15%；东亚约30%–50% | 从不吸烟者、女性和东亚患者中较常见 | 可使用EGFR-directed therapy |
+| *[EGFR](../target/HER.qmd)* sensitizing mutation | 西方约10%–15%；东亚约30%–50% | 从不吸烟者、女性和东亚患者中较常见 | 可使用EGFR-directed therapy |
 | *ALK* fusion | 约3%–7% | 较年轻、腺癌、轻度或从不吸烟者 | 可使用ALK TKI |
 | *ROS1* fusion | 约1%–2% | 腺癌、从不吸烟者中相对常见 | 可使用ROS1 TKI |
 | *BRAF* V600E mutation | 约1%–2% | 吸烟者和从不吸烟者均可出现 | 可使用BRAF和MEK联合抑制 |
 | *MET* exon 14 skipping | 约3%–4% | 年龄相对较大的患者中可见 | 可使用MET-directed therapy |
 | *RET* fusion | 约1%–2% | 腺癌和从不吸烟者中相对常见 | 可使用selective RET inhibitor |
 | *NTRK1/2/3* fusion | 通常低于1% | 无明确典型临床人群 | 可使用tumor-agnostic TRK inhibitor |
-| *KRAS* G12C mutation | 西方约10%–15%；东亚较低 | 吸烟相关腺癌中较常见 | 存在KRAS G12C-directed therapy |
-| *ERBB2/HER2* activating mutation | 约2%–4% | 非鳞状NSCLC、从不吸烟者中相对常见 | 可使用HER2-directed therapy |
+| *[KRAS](../target/KRAS.qmd)* G12C mutation | 西方约10%–15%；东亚较低 | 吸烟相关腺癌中较常见 | 存在KRAS G12C-directed therapy |
+| *[ERBB2/HER2](../target/HER.qmd)* activating mutation | 约2%–4% | 非鳞状NSCLC、从不吸烟者中相对常见 | 可使用HER2-directed therapy |
 | *NRG1* fusion | 通常低于1% | 部分侵袭性黏液性腺癌 | 属于少见但潜在可干预亚组 |
 | *EGFR* exon 20 insertion | 约占*EGFR* mutation的4%–12% | 非鳞状NSCLC | 治疗策略不同于常见*EGFR* mutation |
 | *MET* amplification | 频率依cutoff而异 | 可为原发改变或EGFR TKI耐药机制 | 需区分高水平扩增与低水平拷贝数增加 |
 
 不同驱动变异通常相互排斥，但并非绝对。共突变可能影响疗效和预后。
 
-## EGFR
+## [EGFR](../target/HER.qmd)
 
 **Epidermal growth factor receptor, EGFR（表皮生长因子受体）**常见敏感突变包括：
 
@@ -254,7 +254,7 @@ SCC具有以下特点：
 
 对存在脑转移风险的患者，选择具有较好CNS penetration的药物尤其重要。
 
-## KRAS G12C
+## [KRAS](../target/KRAS.qmd) G12C
 
 *KRAS*是肺腺癌中最常见的驱动基因之一，但只有部分具体变异目前具有成熟的靶向治疗选择。
 
@@ -266,7 +266,7 @@ SCC具有以下特点：
 
 这些共突变可能与肿瘤免疫微环境、预后和免疫治疗敏感性有关，但尚不能在所有情况下直接决定治疗。
 
-## HER2 / ERBB2
+## [HER2 / ERBB2](../target/HER.qmd)
 
 NSCLC中的HER2异常包括：
 
@@ -278,7 +278,7 @@ NSCLC中的HER2异常包括：
 
 截至2026年2月26日，美国FDA已扩大zongertinib的accelerated approval适应证，用于具有HER2 tyrosine kinase domain activating mutation的不可切除或转移性非鳞状NSCLC。治疗选择应依据具体突变、既往治疗、监管地区和适应证要求。
 
-## PD-L1
+## [PD-L1](../target/PD-L1.qmd)
 
 PD-L1通常通过IHC评估，并以TPS表示。
 
@@ -577,7 +577,7 @@ SBRT试验和临床实践需要考虑：
 | *MET* exon 14 skipping | MET inhibitor |
 | *RET* fusion | Selective RET inhibitor |
 | *NTRK* fusion | TRK inhibitor |
-| *KRAS* G12C | KRAS G12C inhibitor，常用于特定治疗线次 |
+| *[KRAS](../target/KRAS.qmd)* G12C | KRAS G12C inhibitor，常用于特定治疗线次 |
 | *ERBB2/HER2* activating mutation | HER2-directed TKI或[ADC](../other/ADC.qmd)，依据适应证和治疗线次 |
 | *EGFR* exon 20 insertion | 针对该特定突变的治疗策略 |
 
@@ -1223,14 +1223,14 @@ NSCLC试验中常见intercurrent events包括：
 
 # Practical Example（实践示例）
 
-假设开展一项随机、双盲Phase 3试验，比较新型PD-L1 × VEGF-A双特异性抗体与pembrolizumab，用于：
+假设开展一项随机、双盲Phase 3试验，比较新型PD-L1 × [VEGF-A](../target/VEGF.qmd)双特异性抗体与pembrolizumab，用于：
 
 > 未经系统治疗、局部晚期或转移性、PD-L1 TPS ≥50%、且无可靶向驱动变异的NSCLC患者。
 
 | 设计要素 | 示例 |
 |---|---|
 | Population | First-line advanced NSCLC with PD-L1 TPS ≥50% |
-| Experimental arm | Investigational PD-L1 × VEGF-A bispecific antibody |
+| Experimental arm | Investigational PD-L1 × [VEGF-A](../target/VEGF.qmd) bispecific antibody |
 | Control arm | [Pembrolizumab](../compound/Keytruda.qmd) |
 | Primary endpoint | OS或PFS，依据protocol |
 | Key secondary endpoints | PFS或OS、ORR、DOR、PRO和安全性 |

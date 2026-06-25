@@ -8,7 +8,7 @@ title: "Avastin"
 
 ### **药物原理（Drug Mechanism）**
 
-贝伐珠单抗的作用机制是靶向血管内皮生长因子（Vascular Endothelial Growth Factor, VEGF）。VEGF在肿瘤的血管生成（Angiogenesis）过程中起关键作用。通过阻断VEGF的活动，艾瓦斯汀能够抑制肿瘤的血管形成，从而减缓肿瘤的生长和扩散。
+贝伐珠单抗的作用机制是靶向[血管内皮生长因子（Vascular Endothelial Growth Factor, VEGF）](../target/VEGF.qmd)。VEGF在肿瘤的血管生成（Angiogenesis）过程中起关键作用。通过阻断VEGF的活动，艾瓦斯汀能够抑制肿瘤的血管形成，从而减缓肿瘤的生长和扩散。
 
 ### **适应症（Indications）**
 

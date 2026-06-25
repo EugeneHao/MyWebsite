@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hao Sun">
+<meta name="dcterms.date" content="2026-06-25">
+<meta name="description" content="介绍 KRAS 的生物学功能、常见突变、临床意义及 KRAS 靶向治疗。">
+
+<title>KRAS（Kirsten Rat Sarcoma Viral Oncogene Homolog） – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/pharmaceutical/listing-SDTM.html" rel="next">
+<link href="../../../docs/pharmaceutical/target/TROP2.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="KRAS（Kirsten Rat Sarcoma Viral Oncogene Homolog） – Hao Sun">
+<meta property="og:description" content="介绍 KRAS 的生物学功能、常见突变、临床意义及 KRAS 靶向治疗。">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="KRAS（Kirsten Rat Sarcoma Viral Oncogene Homolog） – Hao Sun">
+<meta name="twitter:description" content="介绍 KRAS 的生物学功能、常见突变、临床意义及 KRAS 靶向治疗。">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-company.html">Pharmaceutical Content</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-target.html">Target</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/target/KRAS.html">KRAS</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharmaceutical Content</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Company</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/BMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BMS</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Eliquis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eliquis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Opdivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opdivo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Reblozyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reblozyl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Revlimid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revlimid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Yervoy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yervoy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Onureg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onureg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Inrebic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inrebic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Iberdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iberdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mezigdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mezigdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Alnuctamab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alnuctamab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Abecma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abecma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Breyanzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breyanzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Krazati.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Krazati</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Pumitamig.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pumitamig</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Izalontamab_Brengitecan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Izalontamab Brengitecan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Akeso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Akeso</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cadonilimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cadonilimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Summit_Therapeutics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summit Therapeutics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Merck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Keytruda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keytruda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Januvia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Januvia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Gardasil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gardasil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Pneumovax</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/J &amp; J.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">J &amp; J</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carvykti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carvykti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecvayli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecvayli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Darzalex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Darzalex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Remicade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remicade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Stelara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stelara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xarelto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xarelto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Bortezomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bortezomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Pfizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pfizer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mylotarg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mylotarg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Comirnaty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comirnaty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Prevnar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prevnar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ibrance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ibrance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xeljanz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xeljanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xalkori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xalkori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Sirolimus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sirolimus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Roche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roche</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecentriq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecentriq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Rituxan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rituxan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Herceptin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Herceptin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Avastin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avastin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Zelboraf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zelboraf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cotellic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cotellic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Abbvie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbvie</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Humira.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Humira</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/GSK.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tafinlar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tafinlar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Novartis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Novartis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mekinist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mekinist</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
+ <span class="menu-text">Incyte</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Jakafi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jakafi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vertex</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Kalydeco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kalydeco</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Regeneron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regeneron</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Gilead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gilead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+ <span class="menu-text">Amgen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carfilzomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carfilzomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Regulatory</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-compound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Compound</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Venclexta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Venclexta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bone Marrow</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Leukemia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leukemia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lymphoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/MDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Myelodysplastic Syndromes (MDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Myeloma (MM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Melanoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Melanoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Breast_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breast Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lung Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/NSCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-Small Cell Lung Cancer (NSCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/SCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Cell Lung Cancer (SCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Thrombosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thrombosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/PD-L1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PD-L1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/VEGF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VEGF</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/HER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HER Family</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/TROP2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TROP2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/KRAS.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">KRAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDTM</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false">
+ <span class="menu-text">Wiki</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Drug Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ADC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody-Drug Conjugates (ADC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CAR-T</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunotherapy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/MAT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monoclonal Antibody Therapy (MAT)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
+ <span class="menu-text">Clinical Trial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adverse Event by SOC and PT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intercurrent Events</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Endpoint</span></span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/pharma_note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharma Note</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/Naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drug Naming Rules</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#概述" id="toc-概述" class="nav-link active" data-scroll-target="#概述"><span class="header-section-number">1</span> 概述</a></li>
+  <li><a href="#key-terminology关键术语" id="toc-key-terminology关键术语" class="nav-link" data-scroll-target="#key-terminology关键术语"><span class="header-section-number">2</span> Key Terminology（关键术语）</a></li>
+  <li><a href="#ras家族" id="toc-ras家族" class="nav-link" data-scroll-target="#ras家族"><span class="header-section-number">3</span> RAS家族</a></li>
+  <li><a href="#kras信号通路" id="toc-kras信号通路" class="nav-link" data-scroll-target="#kras信号通路"><span class="header-section-number">4</span> KRAS信号通路</a></li>
+  <li><a href="#常见kras突变" id="toc-常见kras突变" class="nav-link" data-scroll-target="#常见kras突变"><span class="header-section-number">5</span> 常见KRAS突变</a>
+  <ul class="collapse">
+  <li><a href="#各肿瘤中的kras突变率" id="toc-各肿瘤中的kras突变率" class="nav-link" data-scroll-target="#各肿瘤中的kras突变率"><span class="header-section-number">5.1</span> 各肿瘤中的KRAS突变率</a></li>
+  </ul></li>
+  <li><a href="#kras靶向治疗" id="toc-kras靶向治疗" class="nav-link" data-scroll-target="#kras靶向治疗"><span class="header-section-number">6</span> KRAS靶向治疗</a>
+  <ul class="collapse">
+  <li><a href="#kras-g12c抑制剂" id="toc-kras-g12c抑制剂" class="nav-link" data-scroll-target="#kras-g12c抑制剂"><span class="header-section-number">6.1</span> KRAS G12C抑制剂</a>
+  <ul class="collapse">
+  <li><a href="#sotorasib索托拉西布amgenlumakras-lumykras" id="toc-sotorasib索托拉西布amgenlumakras-lumykras" class="nav-link" data-scroll-target="#sotorasib索托拉西布amgenlumakras-lumykras"><span class="header-section-number">6.1.1</span> Sotorasib（索托拉西布；Amgen；Lumakras / Lumykras）</a></li>
+  <li><a href="#adagrasib阿达格拉西布bristol-myers-squibbkrazati" id="toc-adagrasib阿达格拉西布bristol-myers-squibbkrazati" class="nav-link" data-scroll-target="#adagrasib阿达格拉西布bristol-myers-squibbkrazati"><span class="header-section-number">6.1.2</span> Adagrasib（阿达格拉西布；Bristol Myers Squibb；Krazati）</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#为什么crc需要联合egfr" id="toc-为什么crc需要联合egfr" class="nav-link" data-scroll-target="#为什么crc需要联合egfr"><span class="header-section-number">7</span> 为什么CRC需要联合EGFR？</a></li>
+  <li><a href="#kras-g12d下一代研发热点" id="toc-kras-g12d下一代研发热点" class="nav-link" data-scroll-target="#kras-g12d下一代研发热点"><span class="header-section-number">8</span> KRAS G12D：下一代研发热点</a></li>
+  <li><a href="#kras与免疫治疗" id="toc-kras与免疫治疗" class="nav-link" data-scroll-target="#kras与免疫治疗"><span class="header-section-number">9</span> KRAS与免疫治疗</a></li>
+  <li><a href="#clinical-trial-considerations临床试验考虑" id="toc-clinical-trial-considerations临床试验考虑" class="nav-link" data-scroll-target="#clinical-trial-considerations临床试验考虑"><span class="header-section-number">10</span> Clinical Trial Considerations（临床试验考虑）</a></li>
+  <li><a href="#biostatistical-considerations生物统计学考虑" id="toc-biostatistical-considerations生物统计学考虑" class="nav-link" data-scroll-target="#biostatistical-considerations生物统计学考虑"><span class="header-section-number">11</span> Biostatistical Considerations（生物统计学考虑）</a>
+  <ul class="collapse">
+  <li><a href="#biomarker-enriched-design生物标志物富集设计" id="toc-biomarker-enriched-design生物标志物富集设计" class="nav-link" data-scroll-target="#biomarker-enriched-design生物标志物富集设计"><span class="header-section-number">11.1</span> Biomarker-Enriched Design（生物标志物富集设计）</a></li>
+  <li><a href="#subgroup-analysis亚组分析" id="toc-subgroup-analysis亚组分析" class="nav-link" data-scroll-target="#subgroup-analysis亚组分析"><span class="header-section-number">11.2</span> Subgroup Analysis（亚组分析）</a></li>
+  <li><a href="#companion-diagnostics伴随诊断" id="toc-companion-diagnostics伴随诊断" class="nav-link" data-scroll-target="#companion-diagnostics伴随诊断"><span class="header-section-number">11.3</span> Companion Diagnostics（伴随诊断）</a></li>
+  </ul></li>
+  <li><a href="#common-pitfalls常见误区" id="toc-common-pitfalls常见误区" class="nav-link" data-scroll-target="#common-pitfalls常见误区"><span class="header-section-number">12</span> Common Pitfalls（常见误区）</a></li>
+  <li><a href="#key-takeaways总结" id="toc-key-takeaways总结" class="nav-link" data-scroll-target="#key-takeaways总结"><span class="header-section-number">13</span> Key Takeaways（总结）</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">14</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-company.html">Pharmaceutical Content</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-target.html">Target</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/target/KRAS.html">KRAS</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">KRAS（Kirsten Rat Sarcoma Viral Oncogene Homolog）</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Oncology</div>
+    <div class="quarto-category">Biomarkers</div>
+    <div class="quarto-category">Drug Development</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    介绍 KRAS 的生物学功能、常见突变、临床意义及 KRAS 靶向治疗。
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hao Sun </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 25, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="概述" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 概述</h1>
+<p><strong>KRAS（Kirsten rat sarcoma viral oncogene homolog）</strong>是<strong>RAS（rat sarcoma）</strong>基因家族的重要成员，编码一种小分子<strong>GTPase（鸟苷三磷酸酶）</strong>。KRAS是肿瘤中最常见的driver gene（驱动基因）之一，其突变可导致细胞持续增殖和肿瘤发生。</p>
+<p>长期以来，KRAS被认为是<strong>undruggable target（不可成药靶点）</strong>，直到近年来<strong>KRAS G12C inhibitor（KRAS G12C抑制剂）</strong>的成功开发，KRAS成为肿瘤精准治疗的重要靶点。</p>
+<p>KRAS突变常见于：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/disease/NSCLC.html">non-small cell lung cancer, NSCLC（非小细胞肺癌）</a>；</li>
+<li>colorectal cancer, CRC（结直肠癌）；</li>
+<li>pancreatic ductal adenocarcinoma, PDAC（胰腺导管腺癌）。</li>
+</ul>
+</section>
+<section id="key-terminology关键术语" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Key Terminology（关键术语）</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KRAS</td>
+<td>Kirsten rat sarcoma viral oncogene homolog</td>
+</tr>
+<tr class="even">
+<td>RAS</td>
+<td>RAS蛋白家族，包括KRAS、NRAS、HRAS</td>
+</tr>
+<tr class="odd">
+<td>GTP</td>
+<td>Guanosine triphosphate（鸟苷三磷酸）</td>
+</tr>
+<tr class="even">
+<td>GDP</td>
+<td>Guanosine diphosphate（鸟苷二磷酸）</td>
+</tr>
+<tr class="odd">
+<td>Driver mutation</td>
+<td>驱动突变</td>
+</tr>
+<tr class="even">
+<td>KRAS G12C</td>
+<td>KRAS第12位甘氨酸突变为半胱氨酸</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ras家族" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> RAS家族</h1>
+<p>RAS家族共有三个成员。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>基因</th>
+<th>常见肿瘤</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KRAS</td>
+<td>肺癌、结直肠癌、胰腺癌</td>
+</tr>
+<tr class="even">
+<td>NRAS</td>
+<td>黑色素瘤、AML</td>
+</tr>
+<tr class="odd">
+<td>HRAS</td>
+<td>头颈癌、甲状腺癌</td>
+</tr>
+</tbody>
+</table>
+<p>KRAS是临床最重要、突变率最高的成员。</p>
+</section>
+<section id="kras信号通路" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> KRAS信号通路</h1>
+<p>KRAS位于<strong>epidermal growth factor receptor, <a href="../../../docs/pharmaceutical/target/HER.html">EGFR</a>（表皮生长因子受体）</strong>下游。</p>
+<pre class="text"><code>EGFR
+ |
+ v
+KRAS
+ |
+ +-- RAF-MEK-ERK
+ +-- PI3K-AKT-mTOR
+ +-- RAL pathway</code></pre>
+<p>正常情况下：</p>
+<ul>
+<li>KRAS-GDP：失活状态；</li>
+<li>KRAS-GTP：激活状态。</li>
+</ul>
+<p>KRAS突变会导致蛋白持续处于GTP结合状态，即使没有上游刺激，也能持续激活下游信号。</p>
+</section>
+<section id="常见kras突变" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 常见KRAS突变</h1>
+<p>绝大多数突变发生在第12、13和61位密码子。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>突变</th>
+<th>常见瘤种</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>G12C</td>
+<td>NSCLC</td>
+</tr>
+<tr class="even">
+<td>G12D</td>
+<td>胰腺癌、CRC</td>
+</tr>
+<tr class="odd">
+<td>G12V</td>
+<td>胰腺癌、CRC</td>
+</tr>
+<tr class="even">
+<td>G13D</td>
+<td>CRC</td>
+</tr>
+<tr class="odd">
+<td>Q61H</td>
+<td>黑色素瘤、肺癌</td>
+</tr>
+</tbody>
+</table>
+<section id="各肿瘤中的kras突变率" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="各肿瘤中的kras突变率"><span class="header-section-number">5.1</span> 各肿瘤中的KRAS突变率</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>肿瘤</th>
+<th>KRAS突变率（约）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PDAC</td>
+<td>90%-95%</td>
+</tr>
+<tr class="even">
+<td>CRC</td>
+<td>35%-45%</td>
+</tr>
+<tr class="odd">
+<td>NSCLC（肺腺癌）</td>
+<td>25%-35%</td>
+</tr>
+<tr class="even">
+<td>Endometrial cancer</td>
+<td>10%-20%</td>
+</tr>
+</tbody>
+</table>
+<p>在NSCLC中，KRAS G12C约占全部KRAS突变的40%左右。</p>
+</section>
+</section>
+<section id="kras靶向治疗" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> KRAS靶向治疗</h1>
+<section id="kras-g12c抑制剂" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="kras-g12c抑制剂"><span class="header-section-number">6.1</span> KRAS G12C抑制剂</h2>
+<section id="sotorasib索托拉西布amgenlumakras-lumykras" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="sotorasib索托拉西布amgenlumakras-lumykras"><span class="header-section-number">6.1.1</span> Sotorasib（索托拉西布；Amgen；Lumakras / Lumykras）</h3>
+<p>Sotorasib是首个获批的KRAS G12C抑制剂。</p>
+<p>适应证：</p>
+<ul>
+<li>KRAS G12C突变NSCLC；</li>
+<li>后线治疗。</li>
+</ul>
+</section>
+<section id="adagrasib阿达格拉西布bristol-myers-squibbkrazati" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="adagrasib阿达格拉西布bristol-myers-squibbkrazati"><span class="header-section-number">6.1.2</span> <a href="../../../docs/pharmaceutical/compound/Krazati.html">Adagrasib</a>（阿达格拉西布；Bristol Myers Squibb；Krazati）</h3>
+<p>特点：</p>
+<ul>
+<li>半衰期较长；</li>
+<li>中枢神经系统（CNS）活性较好。</li>
+</ul>
+<p>适应证：</p>
+<ul>
+<li>KRAS G12C突变NSCLC；</li>
+<li>KRAS G12C突变CRC，常与EGFR单抗联合。</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="为什么crc需要联合egfr" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 为什么CRC需要联合EGFR？</h1>
+<p>在结直肠癌中，仅抑制KRAS G12C后，EGFR通路容易重新激活，因此通常采用：</p>
+<ul>
+<li>adagrasib + cetuximab；</li>
+<li>sotorasib + panitumumab。</li>
+</ul>
+<p>联合治疗可提高疗效。</p>
+</section>
+<section id="kras-g12d下一代研发热点" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> KRAS G12D：下一代研发热点</h1>
+<p>目前多数KRAS突变并非G12C，而是：</p>
+<ul>
+<li>G12D；</li>
+<li>G12V。</li>
+</ul>
+<p>近年来多家公司正在开发：</p>
+<ul>
+<li>KRAS G12D inhibitor；</li>
+<li>pan-KRAS inhibitor；</li>
+<li>KRAS vaccine；</li>
+<li>KRAS TCR-T。</li>
+</ul>
+<p>其中G12D被认为是未来最重要的研发方向之一。</p>
+</section>
+<section id="kras与免疫治疗" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> KRAS与免疫治疗</h1>
+<p>KRAS突变患者并不一定适合KRAS抑制剂，治疗策略取决于伴随分子改变。</p>
+<p>例如：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分子特征</th>
+<th>临床意义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KRAS + TP53</td>
+<td>免疫治疗获益可能较好</td>
+</tr>
+<tr class="even">
+<td>KRAS + STK11</td>
+<td>免疫治疗疗效较差</td>
+</tr>
+<tr class="odd">
+<td>KRAS + KEAP1</td>
+<td>预后较差</td>
+</tr>
+</tbody>
+</table>
+<p>因此，next-generation sequencing, NGS（二代测序）通常用于综合评估患者的分子特征。</p>
+</section>
+<section id="clinical-trial-considerations临床试验考虑" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Clinical Trial Considerations（临床试验考虑）</h1>
+<p>KRAS靶向治疗研究通常要求：</p>
+<ul>
+<li>中央实验室确认KRAS突变；</li>
+<li>使用NGS或PCR检测G12C等特定突变；</li>
+<li>根据不同突变亚型进行分层分析。</li>
+</ul>
+<p>常见终点包括：</p>
+<ul>
+<li><strong>objective response rate, ORR（客观缓解率）</strong>；</li>
+<li><strong>progression-free survival, PFS（无进展生存期）</strong>；</li>
+<li><strong>overall survival, OS（总生存期）</strong>；</li>
+<li><strong>duration of response, DOR（缓解持续时间）</strong>。</li>
+</ul>
+</section>
+<section id="biostatistical-considerations生物统计学考虑" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Biostatistical Considerations（生物统计学考虑）</h1>
+<section id="biomarker-enriched-design生物标志物富集设计" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="biomarker-enriched-design生物标志物富集设计"><span class="header-section-number">11.1</span> Biomarker-Enriched Design（生物标志物富集设计）</h2>
+<p>KRAS抑制剂研究通常仅纳入携带目标突变，如G12C的患者，因此属于典型的生物标志物富集设计。</p>
+</section>
+<section id="subgroup-analysis亚组分析" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="subgroup-analysis亚组分析"><span class="header-section-number">11.2</span> Subgroup Analysis（亚组分析）</h2>
+<p>常见亚组包括：</p>
+<ul>
+<li>G12C；</li>
+<li>G12D；</li>
+<li>G12V；</li>
+<li>STK11共突变；</li>
+<li>KEAP1共突变；</li>
+<li>TP53共突变。</li>
+</ul>
+</section>
+<section id="companion-diagnostics伴随诊断" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="companion-diagnostics伴随诊断"><span class="header-section-number">11.3</span> Companion Diagnostics（伴随诊断）</h2>
+<p>KRAS G12C抑制剂需配合经验证的分子检测，以确保患者携带相应突变。</p>
+</section>
+</section>
+<section id="common-pitfalls常见误区" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Common Pitfalls（常见误区）</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>误区</th>
+<th>正确理解</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KRAS只有一种突变</td>
+<td>KRAS有多种突变亚型，生物学行为和治疗策略不同</td>
+</tr>
+<tr class="even">
+<td>所有KRAS突变都有靶向药</td>
+<td>目前获批药物主要针对G12C突变</td>
+</tr>
+<tr class="odd">
+<td>KRAS突变患者不能做免疫治疗</td>
+<td>是否适合免疫治疗需结合PD-L1表达及共突变情况综合判断</td>
+</tr>
+<tr class="even">
+<td>KRAS是EGFR下游，因此EGFR抑制剂一定有效</td>
+<td>KRAS突变会导致EGFR抑制剂耐药，尤其在CRC中</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-takeaways总结" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Key Takeaways（总结）</h1>
+<ol type="1">
+<li>KRAS是最常见的肿瘤驱动基因之一，在肺癌、结直肠癌和胰腺癌中具有重要作用。</li>
+<li>KRAS突变导致RAS-MAPK信号持续激活，促进肿瘤生长。</li>
+<li>KRAS G12C抑制剂的成功开发使KRAS从“不可成药”靶点转变为重要治疗靶点。</li>
+<li>KRAS G12D和pan-KRAS抑制剂是当前全球研发热点。</li>
+<li>生物统计学上，KRAS靶向治疗试验通常采用生物标志物富集设计，并重视不同突变亚型及共突变的亚组分析。</li>
+</ol>
+</section>
+<section id="references" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> References</h1>
+<ol type="1">
+<li>Ostrem JM, et al.&nbsp;KRAS(G12C) inhibitors allosterically control GTP affinity and effector interactions. <em>Nature</em>. 2013.</li>
+<li>Skoulidis F, et al.&nbsp;Sotorasib for lung cancers with KRAS p.G12C mutation. <em>New England Journal of Medicine</em>. 2021.</li>
+<li>Jänne PA, et al.&nbsp;Adagrasib in non-small-cell lung cancer harboring a KRAS G12C mutation. <em>New England Journal of Medicine</em>. 2022.</li>
+<li>National Comprehensive Cancer Network. <em>NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer</em>.</li>
+<li>National Comprehensive Cancer Network. <em>NCCN Clinical Practice Guidelines in Oncology: Colon Cancer</em>.</li>
+</ol>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/pharmaceutical/target/TROP2.html" class="pagination-link" aria-label="TROP2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">TROP2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="pagination-link" aria-label="SDTM">
+        <span class="nav-page-text">SDTM</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "KRAS（Kirsten Rat Sarcoma Viral Oncogene Homolog）"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "介绍 KRAS 的生物学功能、常见突变、临床意义及 KRAS 靶向治疗。"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Hao Sun"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Oncology</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Biomarkers</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Drug Development</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../../../references.bib</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu"># 概述</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>**KRAS（Kirsten rat sarcoma viral oncogene homolog）**是**RAS（rat sarcoma）**基因家族的重要成员，编码一种小分子**GTPase（鸟苷三磷酸酶）**。KRAS是肿瘤中最常见的driver gene（驱动基因）之一，其突变可导致细胞持续增殖和肿瘤发生。</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>长期以来，KRAS被认为是**undruggable target（不可成药靶点）**，直到近年来**KRAS G12C inhibitor（KRAS G12C抑制剂）**的成功开发，KRAS成为肿瘤精准治疗的重要靶点。</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>KRAS突变常见于：</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">non-small cell lung cancer, NSCLC（非小细胞肺癌）</span><span class="co">](../disease/NSCLC.qmd)</span>；</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>colorectal cancer, CRC（结直肠癌）；</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pancreatic ductal adenocarcinoma, PDAC（胰腺导管腺癌）。</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Terminology（关键术语）</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>| 名称 | 解释 |</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>| KRAS | Kirsten rat sarcoma viral oncogene homolog |</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>| RAS | RAS蛋白家族，包括KRAS、NRAS、HRAS |</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>| GTP | Guanosine triphosphate（鸟苷三磷酸） |</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>| GDP | Guanosine diphosphate（鸟苷二磷酸） |</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>| Driver mutation | 驱动突变 |</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>| KRAS G12C | KRAS第12位甘氨酸突变为半胱氨酸 |</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="fu"># RAS家族</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>RAS家族共有三个成员。</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>| 基因 | 常见肿瘤 |</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>| KRAS | 肺癌、结直肠癌、胰腺癌 |</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>| NRAS | 黑色素瘤、AML |</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>| HRAS | 头颈癌、甲状腺癌 |</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>KRAS是临床最重要、突变率最高的成员。</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="fu"># KRAS信号通路</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>KRAS位于**epidermal growth factor receptor, [EGFR](HER.qmd)（表皮生长因子受体）**下游。</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="in">EGFR</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="in"> |</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="in"> v</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="in">KRAS</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="in"> |</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="in"> +-- RAF-MEK-ERK</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="in"> +-- PI3K-AKT-mTOR</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="in"> +-- RAL pathway</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>正常情况下：</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS-GDP：失活状态；</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS-GTP：激活状态。</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>KRAS突变会导致蛋白持续处于GTP结合状态，即使没有上游刺激，也能持续激活下游信号。</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="fu"># 常见KRAS突变</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>绝大多数突变发生在第12、13和61位密码子。</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>| 突变 | 常见瘤种 |</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>| G12C | NSCLC |</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>| G12D | 胰腺癌、CRC |</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>| G12V | 胰腺癌、CRC |</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>| G13D | CRC |</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>| Q61H | 黑色素瘤、肺癌 |</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="fu">## 各肿瘤中的KRAS突变率</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>| 肿瘤 | KRAS突变率（约） |</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>| PDAC | 90%-95% |</span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>| CRC | 35%-45% |</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>| NSCLC（肺腺癌） | 25%-35% |</span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>| Endometrial cancer | 10%-20% |</span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>在NSCLC中，KRAS G12C约占全部KRAS突变的40%左右。</span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="fu"># KRAS靶向治疗</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## KRAS G12C抑制剂</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sotorasib（索托拉西布；Amgen；Lumakras / Lumykras）</span></span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>Sotorasib是首个获批的KRAS G12C抑制剂。</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>适应证：</span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS G12C突变NSCLC；</span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>后线治疗。</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Adagrasib](../compound/Krazati.qmd)（阿达格拉西布；Bristol Myers Squibb；Krazati）</span></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>特点：</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>半衰期较长；</span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>中枢神经系统（CNS）活性较好。</span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>适应证：</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS G12C突变NSCLC；</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS G12C突变CRC，常与EGFR单抗联合。</span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="fu"># 为什么CRC需要联合EGFR？</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>在结直肠癌中，仅抑制KRAS G12C后，EGFR通路容易重新激活，因此通常采用：</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>adagrasib + cetuximab；</span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sotorasib + panitumumab。</span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a>联合治疗可提高疗效。</span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="fu"># KRAS G12D：下一代研发热点</span></span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>目前多数KRAS突变并非G12C，而是：</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>G12D；</span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>G12V。</span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>近年来多家公司正在开发：</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS G12D inhibitor；</span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pan-KRAS inhibitor；</span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS vaccine；</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KRAS TCR-T。</span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a>其中G12D被认为是未来最重要的研发方向之一。</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a><span class="fu"># KRAS与免疫治疗</span></span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a>KRAS突变患者并不一定适合KRAS抑制剂，治疗策略取决于伴随分子改变。</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a>例如：</span>
+<span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>| 分子特征 | 临床意义 |</span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a>| KRAS + TP53 | 免疫治疗获益可能较好 |</span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a>| KRAS + STK11 | 免疫治疗疗效较差 |</span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a>| KRAS + KEAP1 | 预后较差 |</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>因此，next-generation sequencing, NGS（二代测序）通常用于综合评估患者的分子特征。</span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Trial Considerations（临床试验考虑）</span></span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>KRAS靶向治疗研究通常要求：</span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>中央实验室确认KRAS突变；</span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>使用NGS或PCR检测G12C等特定突变；</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>根据不同突变亚型进行分层分析。</span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a>常见终点包括：</span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**objective response rate, ORR（客观缓解率）**；</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**progression-free survival, PFS（无进展生存期）**；</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**overall survival, OS（总生存期）**；</span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**duration of response, DOR（缓解持续时间）**。</span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a><span class="fu"># Biostatistical Considerations（生物统计学考虑）</span></span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a><span class="fu">## Biomarker-Enriched Design（生物标志物富集设计）</span></span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a>KRAS抑制剂研究通常仅纳入携带目标突变，如G12C的患者，因此属于典型的生物标志物富集设计。</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## Subgroup Analysis（亚组分析）</span></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a>常见亚组包括：</span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>G12C；</span>
+<span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>G12D；</span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>G12V；</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>STK11共突变；</span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KEAP1共突变；</span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TP53共突变。</span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a><span class="fu">## Companion Diagnostics（伴随诊断）</span></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a>KRAS G12C抑制剂需配合经验证的分子检测，以确保患者携带相应突变。</span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="fu"># Common Pitfalls（常见误区）</span></span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>| 误区 | 正确理解 |</span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>| KRAS只有一种突变 | KRAS有多种突变亚型，生物学行为和治疗策略不同 |</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a>| 所有KRAS突变都有靶向药 | 目前获批药物主要针对G12C突变 |</span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>| KRAS突变患者不能做免疫治疗 | 是否适合免疫治疗需结合PD-L1表达及共突变情况综合判断 |</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a>| KRAS是EGFR下游，因此EGFR抑制剂一定有效 | KRAS突变会导致EGFR抑制剂耐药，尤其在CRC中 |</span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Takeaways（总结）</span></span>
+<span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>KRAS是最常见的肿瘤驱动基因之一，在肺癌、结直肠癌和胰腺癌中具有重要作用。</span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>KRAS突变导致RAS-MAPK信号持续激活，促进肿瘤生长。</span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>KRAS G12C抑制剂的成功开发使KRAS从“不可成药”靶点转变为重要治疗靶点。</span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>KRAS G12D和pan-KRAS抑制剂是当前全球研发热点。</span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>生物统计学上，KRAS靶向治疗试验通常采用生物标志物富集设计，并重视不同突变亚型及共突变的亚组分析。</span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Ostrem JM, et al. KRAS(G12C) inhibitors allosterically control GTP affinity and effector interactions. *Nature*. 2013.</span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Skoulidis F, et al. Sotorasib for lung cancers with KRAS p.G12C mutation. *New England Journal of Medicine*. 2021.</span>
+<span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Jänne PA, et al. Adagrasib in non-small-cell lung cancer harboring a KRAS G12C mutation. *New England Journal of Medicine*. 2022.</span>
+<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer*.</span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Colon Cancer*.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

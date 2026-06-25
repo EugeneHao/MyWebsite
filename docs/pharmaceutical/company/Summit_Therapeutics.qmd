@@ -10,6 +10,6 @@ title: "Summit Therapeutics"
 
 | Asset | Partner | Modality | Main Development Area |
 |---|---|---|---|
-| [Ivonescimab](../compound/Ivonescimab.qmd) | Akeso | PD-1 × VEGF bispecific antibody | NSCLC and other solid tumors |
+| [Ivonescimab](../compound/Ivonescimab.qmd) | Akeso | PD-1 × [VEGF](../target/VEGF.qmd) bispecific antibody | NSCLC and other solid tumors |
 
 Ivonescimab项目包括NSCLC以及CRC、BTC、HNSCC等多个实体瘤方向的全球临床研究。

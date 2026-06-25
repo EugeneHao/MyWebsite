@@ -9,7 +9,7 @@
   path: company/Akeso.html
   country: China
   drug: |
-    [Ivonescimab](compound/Ivonescimab.qmd), Cadonilimab
+    [Ivonescimab](compound/Ivonescimab.qmd), [Cadonilimab](compound/Cadonilimab.qmd)
 - name: Summit Therapeutics
   path: company/Summit_Therapeutics.html
   country: USA

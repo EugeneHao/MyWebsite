@@ -190,6 +190,8 @@ website:
               contents:
               - text: Ivonescimab
                 href: docs/pharmaceutical/compound/Ivonescimab.qmd
+              - text: Cadonilimab
+                href: docs/pharmaceutical/compound/Cadonilimab.qmd
             - section: Summit Therapeutics
               href: docs/pharmaceutical/company/Summit_Therapeutics.qmd
               contents:
@@ -316,12 +318,25 @@ website:
               href: docs/pharmaceutical/disease/Lung_Cancer.qmd
             - text: Non-Small Cell Lung Cancer (NSCLC)
               href: docs/pharmaceutical/disease/NSCLC.qmd
+            - text: Small Cell Lung Cancer (SCLC)
+              href: docs/pharmaceutical/disease/SCLC.qmd
             - text: Type 2 Diabete Mellitus (T2DM)
               href: docs/pharmaceutical/disease/T2DM.qmd
             - text: Thrombosis
               href: docs/pharmaceutical/disease/Thrombosis.qmd
-          - text: Target
+          - section: Target
             href: docs/pharmaceutical/listing-target.qmd
+            contents:
+            - text: PD-L1
+              href: docs/pharmaceutical/target/PD-L1.qmd
+            - text: VEGF
+              href: docs/pharmaceutical/target/VEGF.qmd
+            - text: HER Family
+              href: docs/pharmaceutical/target/HER.qmd
+            - text: TROP2
+              href: docs/pharmaceutical/target/TROP2.qmd
+            - text: KRAS
+              href: docs/pharmaceutical/target/KRAS.qmd
           - text: SDTM
             href: docs/pharmaceutical/listing-SDTM.qmd    
         - "---"

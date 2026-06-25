@@ -248,6 +248,13 @@
   drugs: |
     [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd), [Ivonescimab](compound/Ivonescimab.qmd), Tagrisso, Imfinzi
 
+- name: Small Cell Lung Cancer (SCLC)
+  path: disease/SCLC.html
+  chinese: 小细胞肺癌
+  body part: Lungs
+  drugs: |
+    [Tecentriq](compound/Tecentriq.qmd), [Pumitamig](compound/Pumitamig.qmd), Durvalumab, Topotecan, Lurbinectedin, Tarlatamab
+
 - name: Breast Cancer
   path: disease/Breast_Cancer.html
   chinese: 乳腺癌
@@ -259,7 +266,7 @@
   chinese: 胃癌
   body part: Stomach
   drugs: |
-    [Herceptin](compound/Herceptin.qmd)
+    [Herceptin](compound/Herceptin.qmd), [Cadonilimab](compound/Cadonilimab.qmd)
 
 - name: Multiple Myeloma
   path: disease/multiple_myeloma.html
@@ -314,7 +321,7 @@
   chinese: 人类乳头瘤病毒相关疾病
   body part: Various
   drugs: |
-    [Gardasil](compound/Gardasil.qmd)
+    [Gardasil](compound/Gardasil.qmd), [Cadonilimab](compound/Cadonilimab.qmd)
 
 - name: Shingles (Herpes Zoster)
   chinese: 带状疱疹
