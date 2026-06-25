@@ -1,0 +1,663 @@
+---
+title: "Izalontamab Brengitecan, Iza-bren（BL-B01D1）"
+description: "介绍EGFR×HER3双特异性抗体偶联药物Iza-bren的结构、作用机制、主要开发癌种、安全性和当前监管状态。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Izalontamab brengitecan（暂无广泛认可的中文通用名；Sichuan Biokin、SystImmune和[Bristol Myers Squibb](../company/BMS.qmd)；尚无获批商品名；简称：Iza-bren；development codes: BL-B01D1、BMS-986507）**是一种研究性**epidermal growth factor receptor × human epidermal growth factor receptor 3, EGFR×HER3（表皮生长因子受体×人表皮生长因子受体3）**双特异性**[antibody–drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Iza-bren由三个主要部分组成：
+
+1. 同时识别EGFR和HER3的双特异性抗体；
+2. 连接抗体与细胞毒药物的linker；
+3. 抑制**topoisomerase I（拓扑异构酶I）**的细胞毒payload。
+
+它的基本治疗思路是：利用EGFR和HER3将ADC定位到肿瘤细胞表面，促进药物进入细胞，然后在细胞内释放payload并造成DNA损伤。
+
+截至2026年6月24日，Iza-bren仍属于**investigational therapy（研究性治疗）**，尚未获得美国或中国的正式上市批准。该药正在[肺癌](../disease/Lung_Cancer.qmd)、[乳腺癌](../disease/Breast_Cancer.qmd)、食管癌、鼻咽癌、尿路上皮癌及其他实体瘤中开发。
+
+# Drug Profile（药物概况）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Izalontamab brengitecan |
+| 简称 | Iza-bren |
+| 中文通用名 | 暂无广泛认可的中文通用名 |
+| Development codes | BL-B01D1、BMS-986507 |
+| Original developer | Sichuan Biokin Pharmaceutical |
+| 中国开发主体 | Sichuan Biokin Pharmaceutical |
+| 中国境外开发主体 | SystImmune与[Bristol Myers Squibb](../company/BMS.qmd) |
+| Drug class | EGFR×HER3 bispecific ADC |
+| Molecular type | 双特异性抗体偶联药物 |
+| Antibody targets | EGFR和HER3 |
+| Payload | Topoisomerase I inhibitor |
+| Route of administration | Intravenous infusion（静脉输注） |
+| Current development stage | 多种实体瘤的Phase 1至Phase 3临床开发 |
+| Approved indication | 尚无 |
+| Brand name | 尚无获批商品名 |
+| Regulatory status | 尚未上市的研究性药物 |
+
+# ADC是什么
+
+[ADC](../other/ADC.qmd)可以理解为一种“带有定向递送功能的细胞毒药物”。
+
+传统化疗药进入血液后会广泛分布，同时损伤肿瘤细胞和正常细胞。ADC则使用抗体识别肿瘤细胞表面的特定蛋白，再将细胞毒payload递送到表达相应靶点的细胞。
+
+典型ADC包括三个组成部分：
+
+| 组成部分 | 主要功能 | Iza-bren中的设计 |
+|---|---|---|
+| Antibody | 识别并结合肿瘤细胞表面的靶点 | 同时识别EGFR和HER3 |
+| Linker | 连接抗体和payload，在适当位置释放药物 | 可裂解linker |
+| Payload | 进入细胞后产生细胞毒作用 | Topoisomerase I inhibitor |
+
+ADC并不是完全没有化疗毒性的“精准导弹”。一部分payload仍可能在正常组织中释放或影响表达相同靶点的正常细胞，因此仍可能产生明显的全身毒性。
+
+# Molecular Targets（分子靶点）
+
+## EGFR
+
+**Epidermal growth factor receptor, EGFR（表皮生长因子受体）**是ERBB receptor family成员之一。
+
+EGFR激活后可以启动多条与细胞生长和存活有关的信号通路，包括：
+
+- RAS–RAF–MEK–ERK pathway；
+- PI3K–AKT–mTOR pathway；
+- JAK–STAT pathway。
+
+EGFR异常可以表现为：
+
+- gene mutation；
+- gene amplification；
+- protein overexpression；
+- receptor或ligand介导的异常信号激活。
+
+EGFR可在多种上皮来源肿瘤中表达，包括：
+
+- **[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)**；
+- 食管鳞状细胞癌；
+- 头颈部肿瘤；
+- 鼻咽癌；
+- 结直肠癌；
+- [乳腺癌](../disease/Breast_Cancer.qmd)。
+
+Iza-bren并不是EGFR tyrosine kinase inhibitor，因此其潜在应用并不局限于携带经典 *EGFR* activating mutation的肿瘤。
+
+## HER3
+
+**Human epidermal growth factor receptor 3, HER3（人表皮生长因子受体3；gene symbol: ERBB3）**也是ERBB receptor family成员。
+
+HER3自身的激酶活性较弱，但可以与EGFR、HER2和其他受体形成heterodimer，并激活PI3K–AKT signaling。
+
+HER3可能参与：
+
+- 肿瘤细胞存活；
+- 肿瘤生长和转移；
+- 对EGFR-directed therapy产生耐药；
+- 对HER2-directed therapy产生耐药；
+- 肿瘤细胞在治疗压力下的适应性信号激活。
+
+部分肿瘤在接受EGFR或HER2靶向治疗后会增加HER3相关信号。因此，HER3既可以作为ADC的递送靶点，也可能帮助覆盖经过既往靶向治疗后的耐药肿瘤细胞。
+
+# Mechanism of Action（作用机制）
+
+## 双靶点结合
+
+Iza-bren的抗体部分可以同时识别EGFR和HER3。
+
+其理论优势包括：
+
+- 覆盖EGFR高表达的肿瘤细胞；
+- 覆盖HER3高表达的肿瘤细胞；
+- 增加对同时表达EGFR和HER3细胞的结合能力；
+- 减少肿瘤内部靶点表达不均匀造成的影响；
+- 在单一靶点表达下降时，仍可能通过另一个靶点实现药物递送。
+
+这些属于双靶点设计的理论优势。是否真正优于单靶点ADC，仍需要临床研究直接验证。
+
+## Internalization（内化）
+
+Iza-bren与肿瘤细胞表面的EGFR或HER3结合后，抗体–受体复合物被细胞内化，并进入endosome和lysosome。
+
+随后linker被裂解，释放具有细胞毒性的payload。
+
+## Topoisomerase I Inhibition
+
+Topoisomerase I在DNA复制和转录过程中负责缓解DNA链的扭转压力。
+
+Iza-bren释放的topoisomerase I inhibitor会阻止DNA单链断裂正常修复。当细胞继续复制DNA时，损伤可能进一步转化为严重的DNA断裂，最终导致：
+
+- replication stress；
+- cell-cycle arrest；
+- apoptosis；
+- tumor-cell death。
+
+整个过程可以概括为：
+
+$$
+\text{EGFR/HER3 binding}
+\rightarrow
+\text{internalization}
+\rightarrow
+\text{payload release}
+\rightarrow
+\text{DNA damage}
+\rightarrow
+\text{tumor-cell death}
+$$
+
+## Bystander Effect（旁观者效应）
+
+部分释放出来的payload可以离开最初摄取ADC的细胞，并进入邻近肿瘤细胞，这种现象称为bystander effect。
+
+这一机制可能帮助杀伤：
+
+- EGFR或HER3表达较低的肿瘤细胞；
+- 没有直接摄取足够ADC的肿瘤细胞；
+- 位于靶点高表达细胞附近的异质性肿瘤细胞。
+
+Bystander effect可能提高ADC对异质性肿瘤的覆盖范围，但也可能增加邻近正常组织受到payload影响的风险。
+
+# 为什么同时靶向EGFR和HER3
+
+实体瘤中的靶点表达通常并不均匀。同一肿瘤中的不同细胞可能表现为：
+
+- EGFR高、HER3低；
+- HER3高、EGFR低；
+- EGFR和HER3均高；
+- 两个靶点均为中低水平表达。
+
+肿瘤在接受治疗后也可能发生变化。例如，EGFR通路受到抑制后，HER3可能作为补偿性信号通路被激活。
+
+| 肿瘤特征 | 双靶点设计的潜在作用 |
+|---|---|
+| EGFR表达较高 | 可通过EGFR结合并内化 |
+| HER3表达较高 | 可通过HER3结合并内化 |
+| EGFR和HER3共同表达 | 可能产生更稳定或更强的结合 |
+| EGFR治疗后HER3升高 | 仍可能通过HER3递送payload |
+| 肿瘤内部表达不均匀 | 双靶点与bystander effect可能扩大覆盖范围 |
+| 单一靶点表达下降 | 可保留通过另一靶点结合的可能性 |
+
+Iza-bren的核心目的不是单纯抑制EGFR和HER3信号，而是利用这两个受体作为进入肿瘤细胞的“入口”，将细胞毒payload递送至肿瘤内部。
+
+# Iza-bren与EGFR TKI的区别
+
+**EGFR tyrosine kinase inhibitor, EGFR TKI（EGFR酪氨酸激酶抑制剂）**与Iza-bren的作用方式不同。
+
+| 特征 | EGFR TKI | Iza-bren |
+|---|---|---|
+| 药物类型 | Small-molecule targeted therapy | Bispecific ADC |
+| 主要作用位置 | EGFR细胞内激酶结构域 | 细胞表面的EGFR和HER3 |
+| 主要机制 | 抑制EGFR信号传导 | 递送topoisomerase I inhibitor |
+| 是否依赖特定 *EGFR* mutation | 通常需要 | 不完全依赖 |
+| 是否直接靶向HER3 | 通常不直接靶向 | 是 |
+| 主要抗肿瘤作用 | 阻断驱动信号 | 造成DNA损伤和细胞死亡 |
+| EGFR TKI耐药后是否可能有效 | 取决于具体耐药机制 | 若仍表达EGFR或HER3，可能继续递送payload |
+
+因此，Iza-bren不应被理解为“另一种EGFR TKI”。
+
+即使肿瘤已经对osimertinib等EGFR TKI产生耐药，只要肿瘤细胞仍表达EGFR或HER3，并能够摄取ADC和释放payload，Iza-bren仍可能具有活性。
+
+# [Biomarker](../other/Biomarker.qmd) Considerations（生物标志物考虑）
+
+Iza-bren与传统mutation-specific targeted therapy不同。它识别的是细胞表面的EGFR和HER3蛋白，而不是只针对某一种基因突变。
+
+可能影响Iza-bren疗效的因素包括：
+
+- EGFR protein expression；
+- HER3 protein expression；
+- EGFR与HER3共表达；
+- 靶点在细胞膜上的分布；
+- receptor internalization能力；
+- 肿瘤内部表达异质性；
+- payload对肿瘤细胞的杀伤能力；
+- DNA damage repair能力；
+- drug-efflux transporter；
+- 既往EGFR、HER2或ADC治疗。
+
+## EGFR Mutation不是通用入组要求
+
+Iza-bren在EGFR-mutated NSCLC中具有重要开发项目，但其他癌种通常不要求患者携带 *EGFR* mutation。
+
+例如：
+
+- TNBC患者通常没有经典 *EGFR* activating mutation；
+- 食管鳞状细胞癌和鼻咽癌的开发主要基于EGFR和HER3表达及肿瘤生物学；
+- 尿路上皮癌和其他实体瘤研究也不一定要求特定 *EGFR* mutation。
+
+因此，不能使用“有没有EGFR mutation”作为判断所有患者是否可能适合Iza-bren的唯一标准。
+
+## 是否需要检测EGFR或HER3表达
+
+截至2026年6月，尚无获得广泛验证并正式批准的companion diagnostic用于选择Iza-bren患者。
+
+目前临床开发仍在评估：
+
+- EGFR表达是否能够预测疗效；
+- HER3表达是否能够预测疗效；
+- 是否需要两个靶点共同表达；
+- 最佳检测方法和cutoff；
+- 原发肿瘤与转移灶之间是否存在表达差异。
+
+# Clinical Development（临床开发）
+
+## 主要开发癌种
+
+| 癌种 | 主要研究人群或场景 |
+|---|---|
+| EGFR-mutated [NSCLC](../disease/NSCLC.qmd) | EGFR TKI和platinum-based chemotherapy治疗后进展 |
+| EGFR wild-type [NSCLC](../disease/NSCLC.qmd) | 免疫治疗和含铂化疗后进展 |
+| Triple-negative [breast cancer](../disease/Breast_Cancer.qmd) | 既往接受系统治疗的晚期疾病及一线晚期疾病 |
+| Esophageal squamous cell carcinoma | PD-1/PD-L1 inhibitor和含铂化疗后进展 |
+| Nasopharyngeal carcinoma | 复发或转移性疾病 |
+| Urothelial carcinoma | 免疫治疗后进展 |
+| Head and neck cancer | 复发或转移性疾病 |
+| Small cell lung cancer | 晚期或复发性疾病探索 |
+| Other solid tumors | 评估广谱抗肿瘤活性和安全性 |
+
+# NSCLC中的开发
+
+## EGFR-Mutated NSCLC
+
+Iza-bren在[NSCLC](../disease/NSCLC.qmd)中的重点人群之一是：
+
+- 局部晚期或转移性NSCLC；
+- 携带 *EGFR* exon 19 deletion或exon 21 L858R mutation；
+- 接受EGFR TKI后疾病进展；
+- 接受platinum-based chemotherapy后疾病进展。
+
+这些患者通常已经接受过osimertinib等第三代EGFR TKI。发生进一步进展后，可用的标准治疗选择相对有限。
+
+Iza-bren可能绕过部分EGFR TKI耐药机制，因为它并不需要继续抑制EGFR激酶活性，而是利用细胞表面的EGFR或HER3将payload递送进入细胞。
+
+## FDA Breakthrough Therapy Designation
+
+2025年8月18日，美国**U.S. Food and Drug Administration, FDA（美国食品药品监督管理局）**授予Iza-bren **Breakthrough Therapy Designation（突破性疗法认定）**，适用于接受EGFR TKI和platinum-based chemotherapy后进展的特定EGFR-mutated晚期NSCLC患者。
+
+Breakthrough Therapy Designation表示FDA认为初步临床证据提示该药可能相对现有治疗带来明显改善，并允许开发方与FDA进行更密切的沟通。
+
+这一认定：
+
+- 不代表药物已经获批；
+- 不保证未来一定获批；
+- 不等同于FDA已经确认其长期疗效和安全性。
+
+## 其他NSCLC人群
+
+Iza-bren也在以下NSCLC人群中进行研究：
+
+- EGFR wild-type NSCLC；
+- 免疫治疗和含铂化疗后进展的NSCLC；
+- *EGFR* exon 20 insertion；
+- uncommon *EGFR* mutation；
+- *ERBB2/HER2* mutation；
+- 与osimertinib联合治疗。
+
+# Breast Cancer（乳腺癌）中的开发
+
+## Triple-Negative Breast Cancer
+
+**Triple-negative [breast cancer](../disease/Breast_Cancer.qmd), TNBC（三阴性乳腺癌）**缺少estrogen receptor、progesterone receptor和传统HER2治疗靶点。
+
+部分TNBC表达EGFR或HER3，因此可以利用这些受体向肿瘤细胞递送ADC payload。
+
+## PANKU-Breast02
+
+PANKU-Breast02是一项在中国开展的随机Phase 3研究，纳入：
+
+- 不可切除的局部晚期、复发或转移性TNBC；
+- 晚期疾病阶段已经接受过一至两线系统治疗；
+- 既往接受过taxane治疗。
+
+研究比较Iza-bren与physician's choice chemotherapy。
+
+2026年公布的结果显示，Iza-bren相较于化疗改善了主要疗效结局。该研究使Iza-bren成为较早在Phase 3研究中显示临床获益的双特异性ADC之一。
+
+该研究主要在中国人群中开展。能否将结果完整外推到不同地区和既往治疗模式的患者，仍需要结合全球研究结果判断。
+
+## 一线晚期乳腺癌
+
+Iza-bren也在一线晚期乳腺癌中开发，研究人群包括：
+
+- 一线转移性TNBC；
+- 不适合PD-1或PD-L1 inhibitor的患者；
+- PD-L1表达不符合免疫治疗要求的患者；
+- 部分ER-low/HER2-negative乳腺癌患者。
+
+# Esophageal Cancer（食管癌）中的开发
+
+Iza-bren正在复发或转移性**esophageal squamous cell carcinoma（食管鳞状细胞癌）**中开发。
+
+重点研究人群通常已经接受：
+
+- PD-1或PD-L1 inhibitor；
+- platinum-based chemotherapy；
+- 此后发生疾病进展。
+
+Phase 3研究显示，Iza-bren相较于physician's choice chemotherapy改善了主要疗效结局。
+
+中国**National Medical Products Administration, NMPA（中国国家药品监督管理局）**下属Center for Drug Evaluation已接受该适应证的**New Drug Application, NDA（新药上市申请）**，并将其纳入priority review。
+
+NDA获受理表示监管审评已经开始，并不表示药物已经获得上市批准。
+
+# Nasopharyngeal Cancer（鼻咽癌）中的开发
+
+Iza-bren也在复发或转移性nasopharyngeal carcinoma中完成了Phase 3研究，并报告了积极结果。
+
+鼻咽癌中EGFR表达较为常见，因此EGFR×HER3 ADC具有一定的生物学开发基础。
+
+该适应证的NDA已被中国监管机构受理并纳入priority review。截至2026年6月24日，相关审评仍不等同于正式批准。
+
+# Other Solid Tumors（其他实体瘤）
+
+除[肺癌](../disease/Lung_Cancer.qmd)、[乳腺癌](../disease/Breast_Cancer.qmd)、食管癌和鼻咽癌外，Iza-bren还在以下疾病中研究：
+
+- metastatic urothelial carcinoma；
+- recurrent or metastatic head and neck cancer；
+- small cell lung cancer；
+- gastrointestinal cancer；
+- gynecologic cancer；
+- 其他表达EGFR或HER3的实体瘤。
+
+部分研究也在探索Iza-bren与其他药物联合，例如：
+
+- osimertinib；
+- PD-1或PD-L1 inhibitor；
+- 其他免疫治疗；
+- 其他靶向治疗。
+
+# 主要临床研究
+
+| 研究 | 阶段 | 主要癌种或人群 | 研究目的 |
+|---|---:|---|---|
+| BL-B01D1-101 | Phase 1 | 晚期实体瘤 | 评估剂量、安全性和初步抗肿瘤活性 |
+| BL-B01D1-LUNG-101 | Phase 1 | NSCLC及其他实体瘤 | 全球剂量探索和扩展 |
+| PANKU-Breast02 | Phase 3 | 经治晚期TNBC | 比较Iza-bren与physician's choice chemotherapy |
+| PANKU-Esophagus01 | Phase 3 | 经治复发或转移性食管鳞癌 | 比较Iza-bren与physician's choice chemotherapy |
+| BL-B01D1-301 | Phase 3 | 复发或转移性鼻咽癌 | 比较Iza-bren与标准治疗 |
+| NCT06926868 | Phase 3 | 一线晚期TNBC或ER-low/HER2-negative乳腺癌 | 比较Iza-bren与化疗 |
+| NCT06838273 | Phase 1/2 | EGFR-mutated NSCLC | 研究Iza-bren与osimertinib联合 |
+| NCT07106762 | Phase 2/3 | 免疫治疗后进展的转移性尿路上皮癌 | 比较Iza-bren与含铂化疗 |
+
+试验状态、剂量、入组标准和治疗方案可能继续更新，应以最新ClinicalTrials.gov记录和正式protocol为准。
+
+# Safety Profile（安全性特征）
+
+Iza-bren的主要毒性与其topoisomerase I inhibitor payload、ADC结构以及靶点在正常组织中的表达有关。
+
+由于该药尚未正式上市，目前的安全性认识主要来自临床试验。最终风险描述、dose modification和监测要求需要以未来的approved prescribing information为准。
+
+## Hematologic Toxicity（血液学毒性）
+
+主要血液学不良反应可能包括：
+
+- neutropenia；
+- leukopenia；
+- anemia；
+- thrombocytopenia；
+- febrile neutropenia。
+
+这些不良反应可能增加：
+
+- 感染；
+- 出血；
+- 疲劳；
+- 输血需求；
+- 治疗延迟或停药风险。
+
+治疗期间通常需要定期检查**complete blood count, CBC（全血细胞计数）**。
+
+发生明显骨髓抑制时，临床上可能需要：
+
+- 延迟下一次给药；
+- 调整后续剂量；
+- 使用granulocyte colony-stimulating factor；
+- 输注红细胞或血小板；
+- 使用抗感染治疗；
+- 对严重或反复毒性停止治疗。
+
+具体处理取决于不良反应类型、严重程度、持续时间以及临床试验方案。
+
+## Gastrointestinal Toxicity（胃肠道毒性）
+
+可能出现：
+
+- nausea；
+- vomiting；
+- decreased appetite；
+- diarrhea；
+- constipation；
+- stomatitis；
+- weight loss。
+
+部分患者可能需要预防性或治疗性使用antiemetic medication，并监测脱水、电解质异常和营养状况。
+
+## Interstitial Lung Disease
+
+**Interstitial lung disease, ILD（间质性肺病）**或pneumonitis是多个ADC需要重点监测的潜在风险。
+
+可能表现为：
+
+- 新发或加重的咳嗽；
+- 呼吸困难；
+- 发热；
+- 低氧；
+- 胸部影像出现磨玻璃影或其他间质性改变。
+
+怀疑ILD时通常需要：
+
+1. 暂停Iza-bren；
+2. 进行胸部CT和血氧评估；
+3. 排除感染、肿瘤进展和其他原因；
+4. 根据严重程度使用corticosteroid；
+5. 由肺科或相关专科进行评估；
+6. 对严重或复发性ILD永久停止治疗。
+
+虽然公开研究中的严重ILD并不是最常见毒性，但其后果可能严重，因此不能忽略。
+
+## Infusion-Related Reaction（输注相关反应）
+
+静脉输注期间或输注后可能出现：
+
+- fever；
+- chills；
+- flushing；
+- rash；
+- dyspnea；
+- hypotension；
+- hypersensitivity reaction。
+
+出现反应时可能需要：
+
+- 暂停或降低输注速度；
+- 使用antihistamine、antipyretic或corticosteroid；
+- 对严重反应停止输注；
+- 加强生命体征监测。
+
+## 其他潜在不良反应
+
+还可能出现：
+
+- fatigue；
+- alopecia；
+- elevated liver enzymes；
+- infection；
+- electrolyte abnormality；
+- peripheral neuropathy；
+- decreased body weight。
+
+目前公开数据尚不足以完整描述长期、罕见或累积性毒性。
+
+# 治疗监测
+
+Iza-bren通过静脉输注给药。不同研究使用的剂量和给药频率可能不同，因此试验剂量不能直接视为未来统一的上市推荐剂量。
+
+治疗前和治疗期间通常需要监测：
+
+| 监测项目 | 主要目的 |
+|---|---|
+| CBC | 监测neutropenia、anemia和thrombocytopenia |
+| Liver function | 监测肝功能异常 |
+| Kidney function | 评估器官功能和治疗耐受性 |
+| Pulmonary symptoms | 及早识别ILD或pneumonitis |
+| Infection signs | 识别中性粒细胞减少相关感染 |
+| Gastrointestinal symptoms | 管理恶心、呕吐、腹泻和营养问题 |
+| Infusion vital signs | 识别输注相关反应 |
+| Tumor imaging | 评价疾病变化 |
+| Concomitant medications | 评估联合药物和支持治疗的影响 |
+
+# Potential Resistance（潜在耐药机制）
+
+ADC的作用需要依次完成靶点结合、内化、linker裂解、payload释放和DNA损伤。任一环节发生改变都可能导致耐药。
+
+| 耐药环节 | 可能机制 |
+|---|---|
+| Target expression | EGFR或HER3表达下降或丢失 |
+| Antibody binding | 靶点结构或细胞膜定位发生改变 |
+| Internalization | 抗体–受体复合物内化减少 |
+| Intracellular trafficking | ADC不能有效进入lysosome |
+| Linker cleavage | Payload释放不足 |
+| Payload sensitivity | Topoisomerase I或DNA damage response发生改变 |
+| Drug efflux | ABC transporter等药物外排机制增强 |
+| Tumor heterogeneity | 部分肿瘤细胞缺少EGFR和HER3 |
+| Tumor penetration | 肿瘤间质限制大分子ADC进入内部区域 |
+
+双靶点设计和bystander effect可能减少部分耐药风险，但不能完全防止获得性耐药。
+
+# 与其他治疗的区别
+
+## 与普通化疗相比
+
+| 特征 | Iza-bren | Chemotherapy |
+|---|---|---|
+| 药物类型 | Bispecific ADC | Systemic cytotoxic therapy |
+| 药物递送 | 通过EGFR和HER3相对定向递送 | 在全身广泛分布 |
+| 主要细胞毒机制 | Topoisomerase I inhibitor payload | 取决于具体化疗药物 |
+| 是否需要肿瘤靶点 | 可能受EGFR和HER3表达影响 | 通常不要求特定表面靶点 |
+| 主要风险 | 骨髓抑制、胃肠道毒性、ILD等 | 骨髓抑制及药物特异性毒性 |
+| 对正常组织影响 | 仍然存在 | 通常较广泛 |
+
+## 与单靶点ADC相比
+
+| 特征 | Iza-bren | 单靶点ADC |
+|---|---|---|
+| 识别靶点 | EGFR和HER3 | 一个特定靶点 |
+| 潜在细胞覆盖范围 | 可覆盖表达任一靶点的细胞 | 主要依赖单一靶点表达 |
+| 肿瘤异质性 | 理论上可降低单靶点异质性的影响 | 靶点缺失可能直接降低递送 |
+| 是否一定更有效 | 尚未确定 | 取决于具体药物和疾病 |
+| 安全性 | 可能受到两个靶点正常组织表达的影响 | 主要受单一靶点和payload影响 |
+
+双特异性结构本身并不保证疗效一定高于单靶点ADC。最终价值取决于药物的结合能力、内化、payload、剂量、安全性和临床研究结果。
+
+# Current Development Status（当前开发状态）
+
+截至2026年6月24日：
+
+- Iza-bren仍为研究性EGFR×HER3双特异性ADC；
+- 尚未获得FDA或NMPA正式上市批准；
+- 在中国由Sichuan Biokin负责开发；
+- 在中国境外由SystImmune和Bristol Myers Squibb联合开发；
+- FDA已授予其特定经治EGFR-mutated NSCLC适应证Breakthrough Therapy Designation；
+- 中国监管机构已受理鼻咽癌和食管鳞状细胞癌适应证的NDA，并纳入priority review；
+- 经治TNBC、食管鳞状细胞癌和鼻咽癌的Phase 3研究已报告积极结果；
+- 全球开发还覆盖NSCLC、一线晚期乳腺癌、尿路上皮癌和其他实体瘤；
+- 正式适应证、推荐剂量和安全性管理方案仍需等待监管审评结果。
+
+# Common Pitfalls（常见误区）
+
+## 正确简称是Iza-bren
+
+“Iza bran”通常是对Iza-bren的非正式拼写。完整通用名为izalontamab brengitecan。
+
+## Iza-bren不是普通双特异性抗体
+
+它不仅结合EGFR和HER3，还携带细胞毒payload，因此属于bispecific ADC。
+
+## Iza-bren不是EGFR TKI
+
+它不主要通过抑制EGFR细胞内激酶发挥作用，而是利用EGFR和HER3将payload递送进入肿瘤细胞。
+
+## 并非所有患者都需要EGFR Mutation
+
+在EGFR-mutated NSCLC中，*EGFR* mutation用于确定特定开发人群；但在TNBC、食管癌和鼻咽癌等疾病中，并不要求存在经典 *EGFR* activating mutation。
+
+## ADC并不等于没有化疗毒性
+
+Iza-bren携带强效topoisomerase I inhibitor，仍可能造成明显的骨髓抑制、胃肠道毒性和其他全身不良反应。
+
+## Breakthrough Therapy Designation不等于批准
+
+该认定可以加快开发和审评，但不能证明药物已经上市，也不能保证未来一定获得批准。
+
+## NDA获受理不等于上市
+
+NDA被监管机构接受意味着申请进入正式审评程序，而不是已经获得marketing authorization。
+
+## Phase 3结果积极不等于所有癌种都有效
+
+Iza-bren在一种癌症中的结果不能直接外推到其他癌症、治疗线次或生物标志物人群。
+
+## 不能只根据EGFR或HER3表达判断疗效
+
+Iza-bren疗效还可能受到内化能力、payload sensitivity、DNA repair、肿瘤异质性和既往治疗的影响。
+
+# Key Takeaways（关键要点）
+
+1. Iza-bren的完整名称为izalontamab brengitecan，研发代号包括BL-B01D1和BMS-986507。
+2. 它是一种同时靶向EGFR和HER3的双特异性ADC，并携带topoisomerase I inhibitor payload。
+3. EGFR和HER3主要作为药物进入肿瘤细胞的递送入口，其作用方式不同于EGFR TKI。
+4. Iza-bren不仅用于EGFR-mutated NSCLC，也在TNBC、食管癌、鼻咽癌、尿路上皮癌和其他实体瘤中开发。
+5. 主要安全风险包括骨髓抑制、胃肠道毒性、输注相关反应和潜在ILD。
+6. 截至2026年6月24日，Iza-bren尚未正式获批，但多个Phase 3研究已经报告积极结果。
+7. Breakthrough Therapy Designation、priority review和NDA受理均代表开发或审评进展，不等同于上市批准。
+
+# References（参考文献）
+
+1. Bristol Myers Squibb and SystImmune. *Izalontamab Brengitecan Demonstrates Statistically Significant and Clinically Meaningful Improvements in Patients with Triple-Negative Breast Cancer and Esophageal Squamous Cell Carcinoma*. June 2, 2026.
+   <https://news.bms.com/news/corporate-financial/2026/Izalontamab-Brengitecan-Iza-Bren-Demonstrates-Statistically-Significant-and-Clinically-Meaningful-Improvements-in-Overall-Survival-and-Progression-Free-Survival-in-Patients-with-Triple-Negative-Breast-Cancer-and-Esophageal-Squamous-Cell-Carcinoma/default.aspx>
+
+2. Bristol Myers Squibb and SystImmune. *Positive Phase III Interim Topline Results for Izalontamab Brengitecan in Previously Treated Triple-Negative Breast Cancer*. February 26, 2026.
+   <https://news.bms.com/news/corporate-financial/2026/SystImmune-and-Bristol-Myers-Squibb-Highlight-Positive-Phase-III-Interim-Topline-Results-for-izalontamab-brengitecan-Iza-bren-in-Previously-Treated-Unresectable-Locally-Advanced-or-Metastatic-Triple-Negative-Breast-Cancer/default.aspx>
+
+3. Bristol Myers Squibb and SystImmune. *Izalontamab Brengitecan Granted Breakthrough Therapy Designation by U.S. FDA for Previously Treated Advanced EGFR-Mutated NSCLC*. August 18, 2025.
+   <https://news.bms.com/news/details/2025/Izalontamab-Brengitecan-EGFRxHER3-ADC-Granted-Breakthrough-Therapy-Designation-by-U-S--FDA-for-Patients-with-Previously-Treated-Advanced-EGFR-Mutated-Non-Small-Cell-Lung-Cancer/default.aspx>
+
+4. ClinicalTrials.gov. *A Study of BL-B01D1 in Patients With Locally Advanced or Metastatic Solid Tumors*. NCT05194982.
+   <https://clinicaltrials.gov/study/NCT05194982>
+
+5. ClinicalTrials.gov. *A Study of BL-B01D1 in Patients With Unresectable Locally Advanced or Metastatic Breast Cancer and Other Solid Tumors*. NCT05470348.
+   <https://clinicaltrials.gov/study/NCT05470348>
+
+6. ClinicalTrials.gov. *A Study Comparing BL-B01D1 With Physician's Choice Chemotherapy*. NCT06118333.
+   <https://clinicaltrials.gov/study/NCT06118333>
+
+7. ClinicalTrials.gov. *A Study of Izalontamab Brengitecan in Advanced Breast Cancer*. NCT06926868.
+   <https://clinicaltrials.gov/study/NCT06926868>
+
+8. ClinicalTrials.gov. *A Study of BL-B01D1 in Combination With Osimertinib*. NCT06838273.
+   <https://clinicaltrials.gov/study/NCT06838273>
+
+9. ClinicalTrials.gov. *IZABRIGHT-Bladder01: Izalontamab Brengitecan Versus Platinum-Based Chemotherapy for Metastatic Urothelial Cancer*. NCT07106762.
+   <https://clinicaltrials.gov/study/NCT07106762>
+
+10. ClinicalTrials.gov. *A Study Comparing BL-B01D1 With Standard Treatment in EGFR Wild-Type NSCLC*. NCT06382129.
+    <https://clinicaltrials.gov/study/NCT06382129>
+
+11. U.S. Food and Drug Administration. *Global Substance Registration System: Izalontamab Brengitecan*.
+    <https://precision.fda.gov/ginas/app/ui/substances/ed0cf65a-eabb-488c-9184-ecdb4fc72628>

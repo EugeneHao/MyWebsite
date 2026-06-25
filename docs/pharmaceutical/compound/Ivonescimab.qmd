@@ -1,0 +1,261 @@
+---
+title: "Ivonescimab（依沃西单抗，AK112）"
+description: "PD-1×VEGF 双特异性抗体的作用机制、临床开发及统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Development
+  - Drug Profile
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Ivonescimab（依沃西单抗；[Akeso 康方生物](../company/Akeso.qmd)；[Summit Therapeutics](../company/Summit_Therapeutics.qmd)（中国以外部分地区合作开发）；中国商品名：依达方；development code: AK112）**是一种**PD-1（Programmed Death-1）× VEGF（Vascular Endothelial Growth Factor）双特异性单克隆抗体（bispecific antibody）**。
+
+与传统**PD-1/PD-L1 inhibitor（PD-1/PD-L1 抑制剂）**不同，Ivonescimab可同时：
+
+- 阻断PD-1免疫检查点，恢复T细胞抗肿瘤免疫；
+- 阻断VEGF信号，抑制肿瘤血管生成，并改善肿瘤免疫微环境。
+
+由于同时作用于[免疫治疗](../other/Immunotherapy.qmd)和抗血管生成两条经典通路，Ivonescimab被认为是PD-1×VEGF双抗领域的代表性产品。
+
+截至2026年6月：
+
+- 已在中国获批部分[NSCLC](../disease/NSCLC.qmd)适应症；
+- 美国FDA已受理首个Biologics License Application, BLA；
+- 全球已有多项III期研究正在开展，覆盖NSCLC、CRC、BTC、HNSCC等多个瘤种。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Ivonescimab |
+| 中文名称 | 依沃西单抗 |
+| Development code | AK112 |
+| 商品名 | 依达方（中国） |
+| Sponsor | [康方生物（Akeso）](../company/Akeso.qmd) |
+| Global partner | [Summit Therapeutics](../company/Summit_Therapeutics.qmd)（欧美开发） |
+| Drug class | PD-1×VEGF bispecific antibody |
+| Molecular type | Humanized IgG-like bispecific monoclonal antibody |
+| Targets | PD-1、VEGF-A |
+| Route | Intravenous infusion（静脉输注） |
+| 首次中国批准 | 2024年 |
+| FDA状态 | BLA已受理（EGFR突变NSCLC） |
+
+# Mechanism of Action（作用机制）
+
+Ivonescimab同时结合**PD-1**与**VEGF-A**。
+
+## PD-1阻断
+
+阻断PD-1与PD-L1的结合：
+
+- 恢复T cell活性；
+- 增强抗肿瘤免疫；
+- 提高免疫细胞杀伤能力。
+
+作用机制类似：
+
+- [Pembrolizumab](Keytruda.qmd)；
+- [Nivolumab](Opdivo.qmd)；
+- Tislelizumab。
+
+## VEGF阻断
+
+VEGF是肿瘤血管生成最重要的驱动因素。
+
+阻断VEGF后可以：
+
+- 减少新生血管形成；
+- 改善血管正常化（vascular normalization）；
+- 降低免疫抑制微环境；
+- 增强免疫细胞进入肿瘤。
+
+类似治疗包括[bevacizumab](Avastin.qmd)。
+
+## 双机制协同作用
+
+理论优势包括：
+
+- 一个分子即可完成双重阻断；
+- 提高局部VEGF抑制浓度；
+- 减少分别给药的复杂性；
+- 增强免疫治疗疗效。
+
+因此，Ivonescimab常被视为next-generation immunotherapy（下一代免疫治疗）的代表性方向之一。
+
+# Clinical Development（临床开发）
+
+## 已获批适应症
+
+截至2026年6月，中国已批准：
+
+- **EGFR突变局部晚期或转移性非鳞状[NSCLC](../disease/NSCLC.qmd)**；
+- 经EGFR-TKI治疗失败后；
+- 联合含铂化疗治疗患者。
+
+美国及欧洲尚未正式批准，但FDA已受理该适应症的BLA。
+
+## 主要III期研究
+
+| Trial | Phase | 人群 | Experimental arm | Comparator | Primary endpoint |
+|---|---:|---|---|---|---|
+| HARMONi-A | III | EGFR-TKI失败NSCLC | Ivonescimab + Chemotherapy | Placebo + Chemotherapy | [PFS](../other/PFS.qmd) |
+| HARMONi-2 | III | PD-L1阳性NSCLC | Ivonescimab | [Pembrolizumab](Keytruda.qmd) | PFS |
+| HARMONi-3 | III | 一线转移性NSCLC | Ivonescimab + Chemotherapy | Pembrolizumab + Chemotherapy | OS、PFS |
+| HARMONi-6 | III | 一线鳞状NSCLC | Ivonescimab + Chemotherapy | Tislelizumab + Chemotherapy | OS |
+| HARMONi-7 | III | PD-L1 >=50% NSCLC | Ivonescimab | Pembrolizumab | OS |
+| HARMONi-GI3 | III | 转移性CRC | Ivonescimab + FOLFOX | [Bevacizumab](Avastin.qmd) + FOLFOX | PFS |
+
+# 关键疗效结果
+
+## HARMONi-A
+
+研究对象为EGFR突变NSCLC、EGFR-TKI治疗失败患者。
+
+主要结果包括：
+
+- PFS显著改善；
+- 中位PFS约为7.1个月，对照组约为4.8个月；
+- 安全性可接受。
+
+## HARMONi-2
+
+HARMONi-2是PD-1×VEGF双抗与pembrolizumab进行头对头比较的III期研究。
+
+结果显示：
+
+- PFS显著改善；
+- 多个亚组获益方向一致；
+- 该研究使ivonescimab成为国际NSCLC免疫治疗格局中的重要竞争者。
+
+## HARMONi-3
+
+国际多中心研究比较：
+
+- Ivonescimab + 化疗；
+- Pembrolizumab + 化疗。
+
+共同主要终点为OS和PFS，目前仍在随访OS。
+
+## HARMONi-6
+
+2026年公布数据显示：
+
+- 达到主要终点OS；
+- 相比Tislelizumab + 化疗进一步降低死亡风险；
+- 这是PD-1×VEGF双抗在一线鳞状NSCLC中的重要III期阳性结果。
+
+# Safety Profile（安全性）
+
+常见不良事件包括：
+
+| 类型 | 常见事件 |
+|---|---|
+| 血液学 | Neutropenia、Anemia、Thrombocytopenia |
+| 胃肠道 | Nausea、Vomiting |
+| VEGF相关 | Hypertension、Proteinuria、Bleeding |
+| 免疫相关 | Pneumonitis、Hepatitis、Colitis、Thyroid dysfunction |
+
+整体来看：
+
+- 未观察到明显新的安全性信号；
+- 不良事件谱基本符合PD-1与抗VEGF药物的预期。
+
+# Competitive Landscape（竞争格局）
+
+| Drug | Target | Company | 特点 |
+|---|---|---|---|
+| [Pembrolizumab](Keytruda.qmd) | PD-1 | [Merck](../company/Merck.qmd) | 全球标准治疗 |
+| [Nivolumab](Opdivo.qmd) | PD-1 | [Bristol Myers Squibb](../company/BMS.qmd) | 多瘤种 |
+| Cadonilimab | PD-1×CTLA-4 | [Akeso](../company/Akeso.qmd) | 双免疫检查点 |
+| Ivonescimab | PD-1×VEGF | [Akeso](../company/Akeso.qmd) / [Summit](../company/Summit_Therapeutics.qmd) | 双机制协同 |
+| [Bevacizumab](Avastin.qmd) + PD-1 | VEGF + PD-1 | 联合治疗 | 两个药分别给药 |
+
+Ivonescimab最大优势在于：
+
+- 单一分子同时阻断PD-1与VEGF；
+- 已在多项III期研究中获得积极结果；
+- 有望挑战以pembrolizumab为代表的标准治疗方案。
+
+# 与Pumitamig的区别
+
+[Pumitamig](Pumitamig.qmd)同样是免疫检查点与VEGF轴相关的双特异性药物，但二者靶点并不相同。
+
+| 特征 | Ivonescimab | Pumitamig |
+|---|---|---|
+| Immune checkpoint target | PD-1 | PD-L1 |
+| Angiogenesis target | VEGF-A | VEGF-A |
+| Development partners | Akeso / Summit | BioNTech / BMS |
+| Regulatory status | 中国已获批部分NSCLC适应症；美国BLA已受理 | 研究性药物，尚未获主要监管机构批准 |
+
+# Biostatistical Considerations（生物统计学考虑）
+
+Ivonescimab的多个关键III期研究采用典型的肿瘤学设计，因此具有较高的统计学参考价值。
+
+## 常见主要终点
+
+- **overall survival, OS（总生存期）**；
+- **[progression-free survival, PFS（无进展生存期）](../other/PFS.qmd)**；
+- **objective response rate, ORR（客观缓解率）**；
+- **duration of response, DOR（缓解持续时间）**。
+
+## PFS评估
+
+通常包括：
+
+- Investigator assessment（研究者评估）；
+- Independent Review Committee, IRC（独立审评委员会）敏感性分析。
+
+## Multiplicity（多重性）
+
+部分研究采用：
+
+- 双主要终点（OS + PFS）；
+- Key secondary endpoints；
+- 预设的层级检验（hierarchical testing）以控制family-wise type I error rate, FWER（族系第一类错误率）。
+
+## 分层因素
+
+常见stratification factor包括：
+
+- PD-L1 expression；
+- EGFR mutation；
+- Histology（鳞癌/非鳞癌）；
+- Brain metastasis；
+- Geographic region。
+
+# Current Development Status（最新开发进展）
+
+截至2026年6月：
+
+- 中国已完成多个III期研究并获批部分适应症；
+- 美国FDA已受理EGFR突变NSCLC的上市申请，目标审评日期为2026年11月；
+- HARMONi-3、HARMONi-7、HARMONi-GI3等全球III期研究仍在进行；
+- Akeso与Summit正持续扩展至头颈癌、胆道癌、结直肠癌、胰腺癌等多个实体瘤适应症。
+
+# Key Takeaways（总结）
+
+1. Ivonescimab是全球领先的PD-1×VEGF双特异性抗体之一。
+2. 同时抑制免疫逃逸和肿瘤血管生成，是其区别于传统PD-1单抗的核心优势。
+3. HARMONi-A、HARMONi-2和HARMONi-6等III期研究均取得积极结果。
+4. 目前全球开发重点集中于NSCLC，同时扩展至CRC、BTC、HNSCC等多个实体瘤。
+5. 对生物统计学而言，该项目涉及双主要终点、多重性控制、IRC评估及全球多区域III期试验设计，是值得深入学习的典型案例。
+
+# References
+
+1. Akeso. Official pipeline and ivonescimab information.
+2. Summit Therapeutics. Ivonescimab clinical development program.
+3. ClinicalTrials.gov. HARMONi-3 (NCT05899608).
+4. Fang W, et al. *JAMA Oncology*. 2024. Phase III HARMONi-A study.
+5. FDA and Summit Therapeutics announcements regarding BLA acceptance (2026).

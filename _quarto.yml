@@ -183,6 +183,18 @@ website:
                 href: docs/pharmaceutical/compound/Krazati.qmd
               - text: Pumitamig
                 href: docs/pharmaceutical/compound/Pumitamig.qmd
+              - text: Izalontamab Brengitecan
+                href: docs/pharmaceutical/compound/Izalontamab_Brengitecan.qmd
+            - section: Akeso
+              href: docs/pharmaceutical/company/Akeso.qmd
+              contents:
+              - text: Ivonescimab
+                href: docs/pharmaceutical/compound/Ivonescimab.qmd
+            - section: Summit Therapeutics
+              href: docs/pharmaceutical/company/Summit_Therapeutics.qmd
+              contents:
+              - text: Ivonescimab
+                href: docs/pharmaceutical/compound/Ivonescimab.qmd
             - section: Merck
               href: docs/pharmaceutical/company/Merck.qmd
               contents:                  

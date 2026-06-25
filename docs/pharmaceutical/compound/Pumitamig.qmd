@@ -692,7 +692,7 @@ Pumitamig的差异在于将两个作用整合到一个双特异性抗体中。
 
 该领域还包括其他研究性或区域性开发的双特异性药物，其中较受关注的是：
 
-**Ivonescimab（依沃西单抗；Akeso与Summit Therapeutics；中国商品名依达方®）**，一种PD-1 × VEGF双特异性抗体。
+**[Ivonescimab](Ivonescimab.qmd)（依沃西单抗；[Akeso](../company/Akeso.qmd)与[Summit Therapeutics](../company/Summit_Therapeutics.qmd)；中国商品名依达方）**，一种PD-1 × VEGF双特异性抗体。
 
 Pumitamig与ivonescimab的重要区别包括：
 

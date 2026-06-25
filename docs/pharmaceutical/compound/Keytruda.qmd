@@ -1,24 +1,589 @@
 ---
-title: "Keytruda"
+title: "Keytruda（Pembrolizumab，帕博利珠单抗）"
+description: "介绍Keytruda的作用机制、主要适应证、生物标志物、给药方式、免疫相关不良反应及临床定位。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
 ---
 
-## 药物简介（Drug Overview）
+# 药物概述
 
-帕博利珠单抗（Pembrolizumab，商业名称为Keytruda）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）。它被广泛用于治疗多种类型的癌症，包括非小细胞肺癌（[Non-Small Cell Lung Cancer, NSCLC](../disease/NSCLC.qmd)）、黑色素瘤（[Melanoma](../disease/Melanoma.qmd)）和头颈癌（Head and Neck Cancer）等。
+**Pembrolizumab（帕博利珠单抗；[Merck & Co., Inc.](../company/Merck.qmd)；Keytruda / 可瑞达；development code: MK-3475）**是一种靶向**programmed death receptor 1, PD-1（程序性死亡受体1）**的[免疫检查点抑制剂](../other/Immunotherapy.qmd)。
 
-## 作用机制（Mechanism of Action）
+Keytruda通过解除PD-1通路对T细胞的抑制，使免疫系统重新识别并攻击肿瘤细胞。它不是传统化疗药，也不直接杀死肿瘤细胞，而是通过增强患者自身的抗肿瘤免疫反应发挥作用。
 
-帕博利珠单抗的作用机制是通过靶向PD-1（程序性死亡-1，Programmed Death-1）受体，一个位于T细胞表面的免疫检查点分子。它通过阻断PD-1与其配体PD-L1和PD-L2的结合，解除肿瘤细胞对免疫系统的抑制作用，增强免疫细胞对癌细胞的攻击能力。
+Keytruda于2014年首次获得美国**U.S. Food and Drug Administration, FDA（美国食品药品监督管理局）**批准，目前已用于多种实体瘤和部分血液系统肿瘤。它既可作为单药，也可与化疗、靶向治疗、放疗或其他抗肿瘤药物联合使用。
 
-## 适应症（Indications）
+截至2026年6月，美国获批制剂包括：
 
-帕博利珠单抗被批准用于以下情况：
+- Keytruda静脉输注制剂；
+- **Keytruda Qlex（pembrolizumab and berahyaluronidase alfa-pmph）**皮下注射制剂。
 
--   不可切除或转移性黑色素瘤。
--   作为一线治疗，用于某些类型的非小细胞肺癌。
--   头颈部鳞状细胞癌。
--   经典霍奇金淋巴瘤（Classical Hodgkin [Lymphoma](../disease/Lymphoma.qmd)）等多种癌症类型。
+具体适应证、联合方案和治疗时长因癌种、疾病阶段及生物标志物而异，不能将一个癌种中的用法直接套用于其他癌种。
 
-## 副作用（Side Effects）
+# Drug Profile（药物概况）
 
-帕博利珠单抗的副作用可能包括疲劳（Fatigue）、皮疹（Rash）、腹泻（Diarrhea）和关节痛（Arthralgia）。更严重的副作用可能包括免疫相关的不良反应，如结肠炎（Colitis）、肝炎（Hepatitis）、肺炎（Pneumonitis）和内分泌异常（Endocrinopathies）等。因此，在使用帕博利珠单抗时需要密切监测患者的健康状况。
+| 项目 | 内容 |
+|---|---|
+| Generic name | Pembrolizumab |
+| 中文通用名 | 帕博利珠单抗 |
+| Development code | MK-3475 |
+| Brand name | Keytruda / 可瑞达 |
+| Developer和上市许可持有人 | [Merck & Co., Inc.](../company/Merck.qmd)及其相关公司 |
+| Drug class | PD-1 immune checkpoint inhibitor |
+| Molecular type | Humanized IgG4 kappa monoclonal antibody |
+| Target | PD-1 |
+| Main mechanism | 阻断PD-1与PD-L1及PD-L2结合，恢复T细胞抗肿瘤活性 |
+| Intravenous formulation | Keytruda |
+| Subcutaneous formulation | Keytruda Qlex，由pembrolizumab与berahyaluronidase alfa-pmph组成 |
+| Initial U.S. approval | 2014年 |
+| Regulatory status | 已在多个国家和地区获批用于多种癌症 |
+
+# PD-1/PD-L1通路
+
+## 正常生理作用
+
+PD-1主要表达于活化的T细胞表面。其主要配体包括：
+
+- **programmed death-ligand 1, PD-L1（程序性死亡配体1）**；
+- **programmed death-ligand 2, PD-L2（程序性死亡配体2）**。
+
+当PD-1与PD-L1或PD-L2结合时，会向T细胞传递抑制信号，从而减少：
+
+- T细胞增殖；
+- cytokine release；
+- 肿瘤细胞杀伤；
+- 过度免疫反应和自身免疫损伤。
+
+这一通路本来是人体维持免疫耐受的重要机制。
+
+## 肿瘤免疫逃逸
+
+部分肿瘤细胞或肿瘤周围的免疫细胞会增加PD-L1表达。PD-L1与T细胞上的PD-1结合后，可使T细胞处于功能受抑制或耗竭状态，帮助肿瘤逃避免疫攻击。
+
+## Keytruda的作用
+
+Pembrolizumab与PD-1结合，阻止PD-1与PD-L1和PD-L2相互作用：
+
+$$
+\text{Pembrolizumab binds PD-1}
+\rightarrow
+\text{PD-1/PD-L1 and PD-1/PD-L2 blockade}
+\rightarrow
+\text{T-cell reactivation}
+\rightarrow
+\text{enhanced antitumor immune response}
+$$
+
+由于PD-1通路也用于保护正常组织，解除这一抑制后，活化的免疫系统也可能攻击正常器官，从而产生**immune-mediated adverse reactions（免疫介导的不良反应）**。
+
+# Keytruda与传统治疗的区别
+
+| 治疗类型 | 主要作用方式 | 典型特点 |
+|---|---|---|
+| Chemotherapy | 直接损伤快速分裂的细胞 | 起效相对较快，但也损伤骨髓、毛囊和消化道等正常组织 |
+| Targeted therapy | 抑制特定肿瘤驱动分子或通路 | 通常要求存在相应分子靶点 |
+| Keytruda | 解除PD-1对T细胞的抑制 | 部分患者可获得持久缓解，但并非所有患者有效 |
+| Radiation therapy | 使用电离辐射破坏局部肿瘤细胞 | 主要为局部治疗 |
+| Cancer surgery | 切除可见肿瘤 | 主要适用于可切除疾病 |
+
+Keytruda并不是“提高所有免疫力”的药物，而是针对特定免疫检查点进行调节。
+
+# 主要获批癌种
+
+Keytruda在美国具有大量适应证。下表按癌种概括其主要应用范围，不代替完整的FDA prescribing information。
+
+| 癌种 | 常见临床应用 |
+|---|---|
+| [Melanoma](../disease/Melanoma.qmd)（黑色素瘤） | 不可切除或转移性疾病，以及部分完全切除后的辅助治疗 |
+| [Non-small cell lung cancer, NSCLC](../disease/NSCLC.qmd)（非小细胞肺癌） | 一线单药、与化疗联合、围手术期治疗及部分术后辅助治疗 |
+| Malignant pleural mesothelioma（恶性胸膜间皮瘤） | 与pemetrexed和铂类化疗联合用于部分晚期患者 |
+| Head and neck squamous cell carcinoma（头颈部鳞状细胞癌） | 复发或转移性疾病，以及部分可切除局部晚期疾病的围手术期治疗 |
+| Classical Hodgkin [lymphoma](../disease/Lymphoma.qmd)（经典型霍奇金淋巴瘤） | 复发或难治性疾病 |
+| Primary mediastinal large B-cell [lymphoma](../disease/Lymphoma.qmd)（原发纵隔大B细胞淋巴瘤） | 部分复发或难治性患者 |
+| Urothelial carcinoma（尿路上皮癌） | 晚期疾病、部分膀胱保留或围手术期治疗场景 |
+| Colorectal cancer（结直肠癌） | 主要用于MSI-H或dMMR疾病 |
+| Gastric and gastroesophageal junction cancer（胃癌及胃食管结合部癌） | 根据HER2、PD-L1和治疗方案与化疗或[trastuzumab](Herceptin.qmd)联合 |
+| Esophageal cancer（食管癌） | 部分局部晚期、复发或转移性疾病 |
+| Cervical cancer（宫颈癌） | 与放化疗或系统治疗联合，以及部分PD-L1阳性疾病 |
+| Hepatocellular carcinoma（肝细胞癌） | 特定既往治疗后的患者 |
+| Biliary tract cancer（胆道癌） | 与gemcitabine和cisplatin联合 |
+| Renal cell carcinoma（肾细胞癌） | 晚期一线联合治疗，以及部分肾切除后的辅助治疗 |
+| Endometrial carcinoma（子宫内膜癌） | 与化疗或lenvatinib联合，以及部分MSI-H或dMMR疾病 |
+| Triple-negative [breast cancer](../disease/Breast_Cancer.qmd), TNBC（三阴性乳腺癌） | 部分高风险早期疾病的围手术期治疗及PD-L1阳性晚期疾病 |
+| Cutaneous squamous cell carcinoma（皮肤鳞状细胞癌） | 无法通过手术或放疗治愈的复发、局部晚期或转移性疾病 |
+| Merkel cell carcinoma（默克尔细胞癌） | 复发、局部晚期或转移性疾病 |
+| Ovarian cancer（卵巢癌） | 部分PD-L1阳性的铂耐药复发性疾病，与paclitaxel及可选[bevacizumab](Avastin.qmd)联合 |
+
+Keytruda还具有基于肿瘤分子特征、而不是基于原发器官的**tumor-agnostic indication（不限瘤种适应证）**。
+
+# Tumor-Agnostic Indications（不限瘤种适应证）
+
+## MSI-H和dMMR
+
+**Microsatellite instability-high, MSI-H（微卫星高度不稳定）**和**mismatch repair deficient, dMMR（错配修复缺陷）**表示肿瘤修复DNA复制错误的能力受损。
+
+这类肿瘤通常积累较多突变，可能产生更多异常抗原，从而更容易被免疫系统识别。
+
+Pembrolizumab可用于部分不可切除或转移性MSI-H或dMMR实体瘤患者，具体要求取决于癌种、既往治疗和当地批准标签。
+
+## TMB-H
+
+**Tumor mutational burden-high, TMB-H（肿瘤突变负荷高）**通常表示肿瘤基因组中存在较多体细胞突变。
+
+在美国，pembrolizumab可用于部分：
+
+- 不可切除或转移性实体瘤；
+- TMB达到FDA规定阈值；
+- 既往治疗后进展；
+- 缺少满意替代治疗方案；
+
+的成人和儿童患者。
+
+TMB的检测结果受到检测panel、测序质量和cutoff影响，不能脱离FDA-authorized test及具体适应证解释。
+
+# [Biomarker](../other/Biomarker.qmd) Testing（生物标志物检测）
+
+并非所有使用Keytruda的患者都必须PD-L1阳性。是否需要生物标志物取决于具体癌种和治疗方案。
+
+| Biomarker | 检测内容 | 对Keytruda治疗的意义 |
+|---|---|---|
+| PD-L1 protein expression | 检测肿瘤细胞或免疫细胞上的PD-L1蛋白 | 某些癌种和治疗方案要求达到规定cutoff |
+| MSI-H | 检测微卫星不稳定 | 可用于识别部分可能从免疫治疗获益的肿瘤 |
+| dMMR | 检测错配修复蛋白缺失或功能缺陷 | 与MSI-H高度相关，可支持特定适应证 |
+| TMB-H | 检测单位基因组区域中的突变数量 | 可用于特定tumor-agnostic indication |
+| Actionable driver alteration | 检测*EGFR*、*ALK*等驱动改变 | 在NSCLC中，存在相应驱动变异时通常优先考虑靶向治疗 |
+
+## PD-L1评分方式
+
+不同癌种可能采用不同PD-L1评分方法。
+
+### Tumor Proportion Score
+
+**Tumor proportion score, TPS（肿瘤细胞阳性比例评分）**表示具有膜性PD-L1染色的活肿瘤细胞比例，常用于NSCLC。
+
+例如：
+
+| TPS | 常见描述 |
+|---|---|
+| <1% | PD-L1阴性或极低表达 |
+| 1%–49% | 中低表达 |
+| ≥50% | 高表达 |
+
+### Combined Positive Score
+
+**Combined positive score, CPS（联合阳性评分）**同时考虑PD-L1阳性的肿瘤细胞、淋巴细胞和巨噬细胞：
+
+$$
+\text{CPS}
+=
+\frac{
+\text{PD-L1阳性肿瘤细胞、淋巴细胞和巨噬细胞数量}
+}{
+\text{全部活肿瘤细胞数量}
+}
+\times 100
+$$
+
+CPS常用于头颈癌、胃癌、宫颈癌和TNBC等疾病。
+
+TPS与CPS不能直接互换，不同癌种也可能采用不同的assay和cutoff。
+
+# NSCLC中的临床定位
+
+Keytruda是[NSCLC](../disease/NSCLC.qmd)中最重要的免疫治疗药物之一，但使用前通常需要先完成：
+
+- 病理类型确认；
+- PD-L1检测；
+- 适当的分子检测；
+- 疾病分期；
+- 脑转移评估；
+- autoimmune disease和器官移植史评估。
+
+## Metastatic Nonsquamous NSCLC
+
+对于没有*EGFR*或*ALK*等相应驱动改变的转移性非鳞状NSCLC，Keytruda可与：
+
+- pemetrexed；
+- platinum chemotherapy；
+
+联合用于一线治疗。
+
+## Metastatic Squamous NSCLC
+
+对于转移性鳞状NSCLC，Keytruda可与：
+
+- carboplatin；
+- paclitaxel或nab-paclitaxel；
+
+联合用于一线治疗。
+
+## PD-L1阳性单药治疗
+
+部分无明确可靶向驱动变异且PD-L1达到规定水平的患者，可接受Keytruda单药治疗。
+
+单药更适合哪些患者，需要综合考虑：
+
+- PD-L1表达水平；
+- 肿瘤负荷；
+- 症状严重程度；
+- 是否需要快速缩小肿瘤；
+- 年龄和器官功能；
+- 是否能耐受化疗。
+
+## Early-Stage Resectable NSCLC
+
+对于部分可切除、肿瘤至少4 cm或淋巴结阳性的NSCLC，Keytruda可：
+
+1. 与含铂化疗联合用于neoadjuvant treatment；
+2. 手术后继续作为adjuvant treatment。
+
+此外，部分接受完整切除和含铂化疗的Stage IB、II或IIIA患者，可使用Keytruda进行辅助治疗。
+
+# 给药方式
+
+## Intravenous Keytruda
+
+成人常见给药剂量为：
+
+- 200 mg every three weeks；
+- 400 mg every six weeks。
+
+Keytruda需要稀释后静脉输注，输注时间通常为30分钟。
+
+实际剂量、联合药物、治疗周期和最长治疗时间取决于：
+
+- 癌种；
+- 疾病阶段；
+- 单药或联合治疗；
+- 患者年龄；
+- 不良反应；
+- 是否出现疾病进展；
+- 具体FDA-approved indication。
+
+Keytruda通常不采用常规的逐级减量方式。发生明显免疫相关毒性时，常见处理是暂停或永久停止治疗，而不是降低pembrolizumab剂量。
+
+## Keytruda Qlex
+
+**Keytruda Qlex（pembrolizumab and berahyaluronidase alfa-pmph；[Merck](../company/Merck.qmd)）**是皮下注射制剂。
+
+Berahyaluronidase alfa-pmph可暂时分解皮下组织中的透明质酸，帮助较大体积的药物溶液在皮下扩散和吸收。
+
+Keytruda Qlex于2025年9月19日获得FDA批准，可用于符合标签规定的成人和12岁及以上儿童实体瘤适应证。其给药时间明显短于静脉输注，但并不意味着患者的完整就诊时间只有几分钟。
+
+Keytruda和Keytruda Qlex的制剂、给药方式和适用范围不同，应依据各自prescribing information使用。
+
+# 常见不良反应
+
+Keytruda单药常见不良反应包括：
+
+| 不良反应 | 主要表现 |
+|---|---|
+| Fatigue | 疲劳、乏力 |
+| Musculoskeletal pain | 肌肉、关节或骨骼疼痛 |
+| Rash | 皮疹 |
+| Pruritus | 瘙痒 |
+| Diarrhea | 腹泻 |
+| Nausea | 恶心 |
+| Decreased appetite | 食欲下降 |
+| Cough | 咳嗽 |
+| Dyspnea | 呼吸困难 |
+| Constipation | 便秘 |
+| Hypothyroidism | 甲状腺功能减退 |
+
+Keytruda与化疗、靶向药或其他治疗联合时，不良反应还会受到联合药物影响。例如，联合化疗后可能出现：
+
+- neutropenia；
+- anemia；
+- thrombocytopenia；
+- peripheral neuropathy；
+- alopecia；
+- infection；
+- nausea和vomiting。
+
+# Immune-Mediated Adverse Reactions（免疫介导的不良反应）
+
+免疫相关不良反应是Keytruda最重要的安全性特点。
+
+## 主要受累器官
+
+| 器官系统 | 可能的不良反应 | 常见症状或检查异常 |
+|---|---|---|
+| Lung | Immune-mediated pneumonitis | 新发或加重的咳嗽、呼吸困难、胸痛、低氧 |
+| Colon | Immune-mediated colitis | 腹泻、腹痛、便血或排便次数增加 |
+| Liver | Immune-mediated hepatitis | 肝酶或bilirubin升高，部分患者无明显症状 |
+| Thyroid | Thyroiditis、hyperthyroidism或hypothyroidism | 心悸、怕热、疲劳、体重变化或怕冷 |
+| Pituitary gland | Hypophysitis | 头痛、乏力、低血压和激素水平异常 |
+| Adrenal gland | Adrenal insufficiency | 严重乏力、低血压、恶心和电解质异常 |
+| Pancreas | Type 1 diabetes mellitus | 高血糖、口渴、多尿，严重时可发生酮症酸中毒 |
+| Kidney | Immune-mediated nephritis | Creatinine升高、尿量或尿液变化 |
+| Skin | Severe immune-mediated skin reaction | 广泛皮疹、水疱、黏膜损伤 |
+| Nervous system | Neurologic immune toxicity | 肌无力、感觉异常、意识变化或神经功能缺损 |
+| Heart | Myocarditis或pericarditis | 胸痛、心悸、气短，虽少见但可能严重 |
+
+免疫相关不良反应可能：
+
+- 发生于任何器官；
+- 同时累及多个器官；
+- 在第一次治疗后出现；
+- 在治疗数月后出现；
+- 在停药后才出现；
+- 严重时危及生命。
+
+## 基本处理原则
+
+怀疑免疫相关不良反应时，通常需要：
+
+1. 暂停Keytruda；
+2. 排除感染、肿瘤进展或其他药物毒性；
+3. 根据严重程度使用corticosteroid；
+4. 必要时使用其他免疫抑制治疗；
+5. 由相应专科会诊；
+6. 根据恢复程度决定是否重新治疗；
+7. 对严重或危及生命的反应永久停药。
+
+患者不应自行停药或自行使用steroid。处理方式需要由肿瘤科医生根据器官、严重程度和临床指南决定。
+
+# 治疗前与治疗期间监测
+
+## 治疗前评估
+
+开始Keytruda前通常需要评估：
+
+- 既往autoimmune disease；
+- 器官移植史；
+- 既往或计划进行的allogeneic stem-cell transplantation；
+- baseline liver enzymes；
+- kidney function；
+- thyroid function；
+- pregnancy status；
+- 活动性感染；
+- 既往胸部放疗；
+- 正在使用的immunosuppressive medication；
+- baseline肿瘤影像和疾病症状。
+
+## 治疗期间监测
+
+治疗期间通常监测：
+
+| 项目 | 目的 |
+|---|---|
+| Symptoms and physical examination | 及早发现肺炎、结肠炎和内分泌异常等 |
+| Liver enzymes | 发现immune-mediated hepatitis |
+| Creatinine | 发现immune-mediated nephritis |
+| Thyroid function | 发现甲状腺炎、甲亢或甲减 |
+| Blood glucose | 发现免疫相关糖尿病 |
+| Tumor imaging | 评价肿瘤变化 |
+| Blood counts | 尤其适用于联合化疗患者 |
+| Other endocrine tests | 根据症状评估cortisol和pituitary function |
+
+# 特殊人群与重要注意事项
+
+## Pregnancy
+
+Pembrolizumab可能对胎儿造成伤害。
+
+具有生育能力的女性通常需要：
+
+- 治疗前确认妊娠状态；
+- 治疗期间采取有效避孕；
+- 最后一剂治疗后继续避孕4个月。
+
+## Breastfeeding
+
+通常不建议在Keytruda治疗期间及最后一剂后4个月内母乳喂养。
+
+## Autoimmune Disease
+
+自身免疫病患者并非在所有情况下都绝对不能使用Keytruda，但可能存在：
+
+- 原有自身免疫病加重；
+- 更高的免疫相关不良反应风险；
+- 需要使用免疫抑制治疗；
+- 治疗获益与风险之间更复杂的平衡。
+
+是否使用需要个体化评估。
+
+## Organ Transplantation
+
+PD-1 inhibition可能使免疫系统攻击移植器官，导致solid organ transplant rejection。器官移植患者使用前必须进行高度谨慎的多学科评估。
+
+## Allogeneic Stem-Cell Transplantation
+
+在异基因造血干细胞移植前后使用PD-1或PD-L1抑制剂，可能增加严重甚至致死性并发症，包括graft-versus-host disease。
+
+# 为什么不是所有患者都有效
+
+Keytruda是否有效取决于肿瘤和患者免疫系统之间的复杂关系。
+
+可能影响疗效的因素包括：
+
+- PD-L1表达；
+- 肿瘤突变和neoantigen数量；
+- 是否存在MSI-H或dMMR；
+- T细胞能否进入肿瘤；
+- 抗原呈递功能；
+- 肿瘤微环境中的免疫抑制细胞；
+- 肝转移等疾病特征；
+- 特定驱动基因和共突变；
+- 既往治疗；
+- baseline corticosteroid使用；
+- 患者整体免疫状态。
+
+PD-L1高表达只能表示获益概率可能增加，并不能保证治疗有效。PD-L1阴性也不代表患者一定不能从所有Keytruda联合方案中获益。
+
+# Treatment Resistance（治疗耐药）
+
+## Primary Resistance（原发耐药）
+
+部分患者从治疗开始就不产生明显疗效，可能与以下因素有关：
+
+- 肿瘤缺乏可被识别的抗原；
+- T细胞无法进入肿瘤；
+- 抗原呈递功能缺陷；
+- 存在其他强烈的免疫抑制通路；
+- 某些driver alteration或co-mutation；
+- 肿瘤进展速度过快。
+
+## Acquired Resistance（获得性耐药）
+
+部分患者最初有效，之后发生疾病进展。可能机制包括：
+
+- 肿瘤抗原丢失；
+- antigen-presentation machinery改变；
+- interferon signaling异常；
+- alternative immune checkpoint activation；
+- 免疫细胞组成变化；
+- 肿瘤微环境重新形成免疫抑制状态。
+
+进展后的治疗选择取决于癌种、进展模式、既往缓解时间和可用的后续治疗。
+
+# Keytruda与其他Checkpoint Inhibitors
+
+| 药物 | 主要靶点 | 公司 | 常见商品名 |
+|---|---|---|---|
+| Pembrolizumab | PD-1 | [Merck](../company/Merck.qmd) | Keytruda |
+| [Nivolumab](Opdivo.qmd) | PD-1 | [Bristol Myers Squibb](../company/BMS.qmd) | Opdivo |
+| Cemiplimab | PD-1 | [Regeneron](../company/Regeneron.qmd) / Sanofi | Libtayo |
+| Dostarlimab | PD-1 | [GSK](../company/GSK.qmd) | Jemperli |
+| [Atezolizumab](Tecentriq.qmd) | PD-L1 | [Roche](../company/Roche.qmd) / Genentech | Tecentriq |
+| Durvalumab | PD-L1 | AstraZeneca | Imfinzi |
+| Avelumab | PD-L1 | Merck KGaA / [Pfizer](../company/Pfizer.qmd)相关开发历史 | Bavencio |
+
+PD-1 inhibitor与PD-L1 inhibitor作用于同一免疫检查点通路，但靶点并不相同：
+
+- PD-1 inhibitor阻断PD-1与PD-L1及PD-L2结合；
+- PD-L1 inhibitor主要阻断PD-L1与PD-1的结合。
+
+不同药物的适应证、联合方案、给药方式和临床证据不同，不能因为属于同一类别就直接互换。
+
+# Common Pitfalls（常见误区）
+
+## Keytruda不是化疗
+
+Keytruda属于免疫治疗，不通过传统细胞毒机制直接杀伤快速分裂细胞。
+
+## Keytruda不是PD-L1抗体
+
+Pembrolizumab的靶点是PD-1，而不是PD-L1。
+
+## PD-L1阴性不等于绝对不能使用
+
+部分联合治疗适应证并不要求PD-L1阳性。是否适用取决于癌种和具体FDA label。
+
+## PD-L1高表达不保证有效
+
+PD-L1只是预测性不完整的生物标志物。部分高表达患者仍可能快速进展。
+
+## 出现副作用不代表治疗一定有效
+
+免疫相关不良反应与疗效之间可能存在群体层面的关联，但不能据此判断某个患者是否获益。
+
+## 没有明显副作用也不代表无效
+
+部分获得长期缓解的患者可能没有严重免疫相关不良反应。
+
+## 停药后仍可能出现免疫毒性
+
+免疫系统激活可能持续，因此部分不良反应会在停药后出现。
+
+## 不能自行使用Steroid处理所有症状
+
+Corticosteroid可能用于治疗免疫毒性，但使用剂量和疗程需要根据严重程度决定，并应先排除感染等其他原因。
+
+## Keytruda不能替代所有靶向治疗
+
+例如，具有特定*EGFR*或*ALK*改变的NSCLC患者通常优先接受相应靶向治疗，而不是只根据PD-L1选择Keytruda。
+
+## 不同癌种的用法不能互相套用
+
+单药或联合治疗、PD-L1 cutoff、治疗阶段和最长治疗时间均可能不同。
+
+# Current Regulatory Status（当前监管状态）
+
+截至2026年6月24日：
+
+- Keytruda已在美国和多个其他国家或地区获批；
+- 美国静脉制剂的prescribing information于2026年6月更新；
+- FDA批准范围涵盖多种实体瘤和部分血液系统肿瘤；
+- 适应证同时包括晚期治疗、辅助治疗、新辅助治疗和围手术期治疗；
+- 部分适应证要求PD-L1、MSI-H、dMMR或TMB-H等生物标志物；
+- 2025年9月19日，FDA批准Keytruda Qlex皮下注射制剂；
+- 2026年2月10日，FDA批准Keytruda联合paclitaxel并可选择联合bevacizumab，用于部分PD-L1 CPS ≥1的铂耐药卵巢癌、输卵管癌或原发性腹膜癌；
+- 2026年6月12日，FDA批准pembrolizumab联合belzutifan，用于部分肾切除后的透明细胞肾细胞癌辅助治疗。
+
+具体适应证应以患者所在国家或地区的最新approved label为准。
+
+# Key Takeaways（关键要点）
+
+1. Keytruda的通用名是pembrolizumab，中文名为帕博利珠单抗，属于PD-1 immune checkpoint inhibitor。
+2. 它通过阻断PD-1与PD-L1和PD-L2结合，恢复T细胞的抗肿瘤免疫功能。
+3. Keytruda已获批用于多种癌症，可作为单药，也可与化疗、靶向药、放疗或其他治疗联合。
+4. 是否需要PD-L1、MSI-H、dMMR或TMB-H检测取决于具体癌种和治疗方案。
+5. 免疫相关不良反应可累及任何器官，并可能在治疗期间或停药后发生。
+6. Keytruda并非适合所有肿瘤患者，也不能替代具有明确驱动变异患者的相应靶向治疗。
+7. 具体适应证、给药方案和治疗时长必须依据最新approved label和患者临床情况确定。
+
+# References（参考文献）
+
+1. Merck & Co., Inc. *KEYTRUDA® (pembrolizumab) Prescribing Information*. Revised June 2026.
+   <https://www.merck.com/product/usa/pi_circulars/k/keytruda/keytruda_pi.pdf>
+
+2. U.S. Food and Drug Administration. *KEYTRUDA (pembrolizumab) Prescribing Information*. Revised February 2026.
+   <https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514Orig1s186lbl.pdf>
+
+3. U.S. Food and Drug Administration. *FDA approves pembrolizumab and berahyaluronidase alfa-pmph for subcutaneous injection*. September 19, 2025.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-and-berahyaluronidase-alfa-pmph-subcutaneous-injection>
+
+4. Merck & Co., Inc. *KEYTRUDA QLEX Prescribing Information*. Revised June 2026.
+   <https://www.merck.com/product/usa/pi_circulars/k/keytruda_qlex/keytruda_qlex_pi.pdf>
+
+5. U.S. Food and Drug Administration. *FDA approves pembrolizumab for HER2-positive gastric or gastroesophageal junction adenocarcinoma expressing PD-L1 CPS >=1*. March 19, 2025.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-her2-positive-gastric-or-gastroesophageal-junction-adenocarcinoma>
+
+6. U.S. Food and Drug Administration. *FDA approves neoadjuvant and adjuvant pembrolizumab for resectable locally advanced head and neck squamous cell carcinoma*. June 12, 2025.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-resectable-locally-advanced-head-and-neck>
+
+7. U.S. Food and Drug Administration. *FDA approves pembrolizumab with enfortumab vedotin for muscle-invasive bladder cancer*. November 21, 2025.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer>
+
+8. U.S. Food and Drug Administration. *FDA approves pembrolizumab with paclitaxel for platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma*. February 10, 2026.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or>
+
+9. U.S. Food and Drug Administration. *FDA approves belzutifan with pembrolizumab for adjuvant treatment of renal cell carcinoma*. June 12, 2026.
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-belzutifan-pembrolizumab-adjuvant-treatment-renal-cell-carcinoma>
+
+10. U.S. Food and Drug Administration. *FDA approves pembrolizumab for adults and children with TMB-H solid tumors*. June 16, 2020.
+    <https://www.fda.gov/drugs/drug-approvals-and-databases/fda-approves-pembrolizumab-adults-and-children-tmb-h-solid-tumors>

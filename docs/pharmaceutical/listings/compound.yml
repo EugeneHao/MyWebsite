@@ -53,8 +53,8 @@
   compound: Pembrolizumab
   path: compound/Keytruda.html
   company: Merck & Co.
-  indication: | 
-    Various types of cancer, including [Melanoma](disease/Melanoma.qmd) and lung cancer.
+  indication: |
+    PD-1 immune checkpoint inhibitor used across multiple cancers, including [Melanoma](disease/Melanoma.qmd), [NSCLC](disease/NSCLC.qmd), [breast cancer](disease/Breast_Cancer.qmd), and selected tumor-agnostic settings.
 - drug: Januvia
   compound: Sitagliptin
   path: compound/Januvia.html
@@ -546,6 +546,20 @@
   company: BMS, BioNTech
   indication: |
     Investigational PD-L1 × VEGF-A bispecific antibody in development for [lung cancer](disease/Lung_Cancer.qmd), [NSCLC](disease/NSCLC.qmd), [triple-negative breast cancer](disease/Breast_Cancer.qmd), colorectal cancer, and gastric cancer.
+
+- drug: Izalontamab Brengitecan
+  compound: BL-B01D1 / BMS-986507 / Iza-bren
+  path: compound/Izalontamab_Brengitecan.html
+  company: BMS, SystImmune, Sichuan Biokin
+  indication: |
+    Investigational EGFR × HER3 bispecific [ADC](other/ADC.qmd) in development for [lung cancer](disease/Lung_Cancer.qmd), [NSCLC](disease/NSCLC.qmd), [triple-negative breast cancer](disease/Breast_Cancer.qmd), esophageal squamous cell carcinoma, nasopharyngeal carcinoma, urothelial carcinoma, and other solid tumors.
+
+- drug: Ivonescimab
+  compound: AK112
+  path: compound/Ivonescimab.html
+  company: Akeso, Summit Therapeutics
+  indication: |
+    PD-1 × VEGF bispecific antibody approved in China for selected [NSCLC](disease/NSCLC.qmd) settings and in global development for lung cancer, CRC, BTC, HNSCC, and other solid tumors.
 
 - drug: Abecma
   compound: Idecabtagene Vicleucel

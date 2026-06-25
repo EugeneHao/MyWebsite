@@ -4,23 +4,19 @@
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/index.html",
+    "listing": "/docs/pharmaceutical/listing-SDTM.html",
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/listing-company.html",
+    "listing": "/docs/pharmaceutical/listing-other.html",
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/listing-compound.html",
+    "listing": "/docs/pharmaceutical/listing-regulatory.html",
     "items": []
   },
   {
-    "listing": "/docs/courses/index.html",
-    "items": []
-  },
-  {
-    "listing": "/docs/visualization/index.html",
+    "listing": "/docs/pharmaceutical/listing-target.html",
     "items": []
   },
   {
@@ -33,19 +29,23 @@
     ]
   },
   {
-    "listing": "/docs/pharmaceutical/listing-target.html",
+    "listing": "/docs/visualization/index.html",
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/listing-regulatory.html",
+    "listing": "/docs/courses/index.html",
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/listing-other.html",
+    "listing": "/docs/pharmaceutical/listing-compound.html",
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/listing-SDTM.html",
+    "listing": "/docs/pharmaceutical/listing-company.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/index.html",
     "items": []
   }
 ]

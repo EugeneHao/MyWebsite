@@ -1,0 +1,15 @@
+---
+title: "Summit Therapeutics"
+---
+
+# Company Overview
+
+**Summit Therapeutics**是一家生物制药公司，重点开发肿瘤治疗药物。其核心肿瘤项目之一是与Akeso合作在中国以外部分地区开发和商业化[ivonescimab](../compound/Ivonescimab.qmd)。
+
+# Key Oncology Assets
+
+| Asset | Partner | Modality | Main Development Area |
+|---|---|---|---|
+| [Ivonescimab](../compound/Ivonescimab.qmd) | Akeso | PD-1 × VEGF bispecific antibody | NSCLC and other solid tumors |
+
+Ivonescimab项目包括NSCLC以及CRC、BTC、HNSCC等多个实体瘤方向的全球临床研究。

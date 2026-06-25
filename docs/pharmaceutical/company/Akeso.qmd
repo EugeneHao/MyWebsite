@@ -1,0 +1,21 @@
+---
+title: "Akeso（康方生物）"
+---
+
+# Company Overview
+
+**Akeso, Inc.（康方生物）**是一家以抗体药物和肿瘤免疫治疗为核心的生物制药公司，重点布局双特异性抗体、免疫检查点抑制剂和肿瘤联合治疗。
+
+Akeso开发的代表性资产包括：
+
+- [Ivonescimab](../compound/Ivonescimab.qmd)（AK112），PD-1 × VEGF双特异性抗体；
+- Cadonilimab，PD-1 × CTLA-4双特异性抗体。
+
+# Key Oncology Assets
+
+| Asset | Modality | Main Development Area |
+|---|---|---|
+| [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1 × VEGF bispecific antibody | NSCLC and other solid tumors |
+| Cadonilimab | PD-1 × CTLA-4 bispecific antibody | Gynecologic and other solid tumors |
+
+Akeso与Summit Therapeutics就ivonescimab在中国以外部分地区的开发和商业化建立合作。

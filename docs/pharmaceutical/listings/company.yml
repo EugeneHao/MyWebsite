@@ -4,7 +4,17 @@
   drug: |
     [Opdivo](compound/Opdivo.qmd), [Eliquis](compound/Eliquis.qmd), [Reblozyl](compound/Reblozyl.qmd), [Revlimid](compound/Revlimid.qmd), [Yervoy](compound/Yervoy.qmd), 
     [Iberdomide](compound/Iberdomide.qmd), [Mezigdomide](compound/Mezigdomide.qmd), [Alnuctamab](compound/Alnuctamab.qmd), [Abecma](compound/Abecma.qmd), 
-    [Onureg](compound/Onureg.qmd), [Inrebic](compound/Inrebic.qmd), [Krazati](compound/Krazati.qmd), [Pumitamig](compound/Pumitamig.qmd)
+    [Onureg](compound/Onureg.qmd), [Inrebic](compound/Inrebic.qmd), [Krazati](compound/Krazati.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd)
+- name: Akeso
+  path: company/Akeso.html
+  country: China
+  drug: |
+    [Ivonescimab](compound/Ivonescimab.qmd), Cadonilimab
+- name: Summit Therapeutics
+  path: company/Summit_Therapeutics.html
+  country: USA
+  drug: |
+    [Ivonescimab](compound/Ivonescimab.qmd)
 - name: Pfizer
   path: company/Pfizer.html
   country: USA
