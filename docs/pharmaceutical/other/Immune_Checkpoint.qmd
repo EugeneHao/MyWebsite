@@ -1,0 +1,351 @@
+---
+title: "Immune Checkpoint（免疫检查点）"
+description: "介绍 Immune Checkpoint 的生理功能、肿瘤免疫逃逸机制、主要免疫检查点及其在肿瘤治疗中的应用。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Immuno-Oncology
+  - Disease Overview
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Immune checkpoint（免疫检查点）** 是免疫系统中的一类调节分子，其主要作用是**维持 immune homeostasis（免疫稳态）**，防止 T cell（T 细胞）过度活化，从而避免自身免疫反应。
+
+正常情况下，immune checkpoint 能够在病原体被清除后关闭免疫反应。然而，肿瘤细胞可以利用这些天然的调控机制，抑制 T cell 活性，实现 **immune evasion（免疫逃逸）**。
+
+目前，阻断 immune checkpoint 已成为现代肿瘤治疗的重要策略。**Immune checkpoint inhibitor, ICI（免疫检查点抑制剂）** 已广泛应用于肺癌、黑色素瘤、肾癌、胃癌、食管癌等多种恶性肿瘤。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| Immune checkpoint | 免疫检查点 |
+| Immune checkpoint inhibitor, ICI | 免疫检查点抑制剂 |
+| T cell | T 细胞 |
+| Antigen-presenting cell, APC | 抗原呈递细胞 |
+| Immune evasion | 免疫逃逸 |
+| Immune tolerance | 免疫耐受 |
+| Immune-related adverse event, irAE | 免疫相关不良事件 |
+
+# 为什么需要 Immune Checkpoint？
+
+人体免疫系统需要同时具备：
+
+- 足够强的免疫反应，清除病原体和肿瘤细胞；
+- 足够有效的负反馈机制，避免攻击正常组织。
+
+Immune checkpoint 就像汽车的刹车系统。
+
+```text
+T-cell activation
+      |
+      v
+Immune response
+      |
+      v
+Immune checkpoint
+      |
+      v
+Negative regulation
+```
+
+如果没有 immune checkpoint：
+
+- 免疫系统会持续激活；
+- 容易发生自身免疫病；
+- 正常组织受到损伤。
+
+因此，immune checkpoint 对维持免疫平衡至关重要。
+
+# T Cell Activation（T 细胞激活）
+
+T cell 完全激活通常需要两个信号。
+
+## Signal 1（抗原识别）
+
+```text
+TCR
+ |
+ v
+Tumor antigen
+ |
+ v
+MHC on APC
+```
+
+T cell receptor, TCR 识别 APC 呈递的肿瘤抗原。
+
+## Signal 2（共刺激信号）
+
+```text
+CD28
+ |
+ v
+CD80 / CD86
+```
+
+CD28 与 APC 表面的 CD80/CD86 结合后，T cell 被充分激活。
+
+随后，immune checkpoint 会逐渐启动，限制免疫反应。
+
+# 肿瘤如何利用 Immune Checkpoint？
+
+肿瘤细胞可通过表达 immune checkpoint ligand（配体），抑制 T cell。
+
+例如：
+
+```text
+Tumor cell
+     |
+   PD-L1
+     |
+     v
+    PD-1
+     |
+     v
+T-cell inhibition
+```
+
+结果包括：
+
+- T cell exhaustion（T 细胞耗竭）
+- Cytokine 减少
+- 肿瘤杀伤能力下降
+- Tumor immune escape（肿瘤免疫逃逸）
+
+# 主要 Immune Checkpoint
+
+## PD-1（Programmed Death-1）
+
+PD-1 位于：
+
+- Activated T cell
+- B cell
+- NK cell
+
+配体：
+
+- [PD-L1](../target/PD-L1.qmd)
+- PD-L2
+
+作用：
+
+抑制已经进入肿瘤组织的 T cell 活性。
+
+代表药物：
+
+- [Pembrolizumab](../compound/Keytruda.qmd)
+- [Nivolumab](../compound/Opdivo.qmd)
+- Cemiplimab
+
+## PD-L1（Programmed Death-Ligand 1）
+
+[PD-L1](../target/PD-L1.qmd) 表达于：
+
+- Tumor cells
+- APC
+- 部分免疫细胞
+
+作用：
+
+结合 PD-1，关闭 T cell。
+
+代表药物：
+
+- [Atezolizumab](../compound/Tecentriq.qmd)
+- [Durvalumab](../compound/Imfinzi.qmd)
+- Avelumab
+
+## CTLA-4（Cytotoxic T-Lymphocyte-Associated Protein 4）
+
+CTLA-4 位于：
+
+- Activated T cell
+- Regulatory T cell, Treg
+
+作用：
+
+竞争性结合 CD80/CD86，阻止 CD28 提供共刺激信号，因此主要在 **淋巴结** 调控 T cell 初始激活。
+
+代表药物：
+
+- [Ipilimumab](../compound/Yervoy.qmd)
+- Tremelimumab
+
+## 新兴 Immune Checkpoint
+
+近年来研究热点包括：
+
+| 靶点 | 主要作用 |
+|---|---|
+| LAG-3 | 抑制 T cell 活化 |
+| TIGIT | 抑制 T cell 和 NK cell |
+| TIM-3 | T cell 耗竭 |
+| VISTA | 调节髓系细胞功能 |
+| CD47 | 抑制巨噬细胞吞噬，即 "don't eat me" 信号 |
+
+这些靶点已成为新一代[免疫治疗](Immunotherapy.qmd)的重要研发方向。
+
+# PD-1 与 CTLA-4 的区别
+
+| 特征 | PD-1 | CTLA-4 |
+|---|---|---|
+| 主要作用阶段 | T cell 已进入肿瘤后 | T cell 初始激活阶段 |
+| 主要作用部位 | [Tumor microenvironment, TME](TME.qmd) | Lymph node（淋巴结） |
+| 主要作用对象 | Activated T cell | Naive T cell 和 Treg |
+| 临床毒性 | 相对较低 | 相对较高 |
+| 联合治疗 | 常与 CTLA-4 联合 | 常与 PD-1 联合 |
+
+因此：
+
+- PD-1 更像恢复已经疲劳的 T cell；
+- CTLA-4 更像促进更多新的 T cell 被激活。
+
+# Immune Checkpoint Inhibitor（ICI）
+
+ICI 通过解除免疫抑制，使 T cell 恢复杀伤能力。
+
+主要药物类别包括：
+
+| 类型 | 代表药物 |
+|---|---|
+| PD-1 inhibitor | [Pembrolizumab](../compound/Keytruda.qmd)、[Nivolumab](../compound/Opdivo.qmd) |
+| PD-L1 inhibitor | [Durvalumab](../compound/Imfinzi.qmd)、[Atezolizumab](../compound/Tecentriq.qmd)、Avelumab |
+| CTLA-4 inhibitor | [Ipilimumab](../compound/Yervoy.qmd)、Tremelimumab |
+| LAG-3 inhibitor | Relatlimab |
+
+近年来还出现了：
+
+- [PD-1 × CTLA-4 双特异性抗体](../compound/Cadonilimab.qmd)
+- [PD-1 × VEGF 双特异性抗体](../compound/Ivonescimab.qmd)
+- [PD-L1 × VEGF-A 双特异性抗体](../compound/Pumitamig.qmd)
+- PD-L1 × TIGIT 双特异性抗体
+
+# Immune Checkpoint 与 Tumor Microenvironment（TME）
+
+Immune checkpoint 是 [TME](TME.qmd) 中最重要的免疫调节机制之一。
+
+在免疫抑制性 TME 中：
+
+- PD-L1 高表达
+- Treg 增加
+- MDSC 增加
+- M2 型 TAM 增加
+
+共同导致：
+
+- CD8+ T cell 功能下降；
+- 肿瘤持续生长。
+
+ICI 的目标就是重新激活 TME 中的抗肿瘤免疫。
+
+# Immune-Related Adverse Events（irAEs）
+
+由于 ICI 会解除免疫抑制，因此也可能攻击正常组织。
+
+常见 irAEs 包括：
+
+| 系统 | 常见表现 |
+|---|---|
+| 皮肤 | Rash、pruritus |
+| 胃肠道 | Colitis、diarrhea |
+| 肝脏 | Hepatitis |
+| 肺 | Pneumonitis |
+| 内分泌 | Thyroiditis、hypophysitis、adrenal insufficiency |
+| 肾脏 | Nephritis |
+
+PD-1 抑制剂总体毒性低于 CTLA-4 抑制剂，而联合治疗的 irAE 发生率通常更高。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+Immune checkpoint 是现代 oncology 临床研究的核心。
+
+常见研究设计包括：
+
+- PD-1 vs chemotherapy
+- PD-L1 + chemotherapy
+- PD-1 + CTLA-4
+- PD-1 + VEGF
+- PD-1 + ADC
+
+研究通常关注：
+
+- PD-L1 expression
+- ORR
+- PFS
+- OS
+- Duration of response
+- irAEs
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Biomarker Analysis（生物标志物分析）
+
+ICI 研究常分析：
+
+- PD-L1 expression
+- Tumor mutational burden, TMB
+- Microsatellite instability-high, MSI-H
+- Gene expression signature
+- CD8+ T cell infiltration
+
+用于探索预测性生物标志物。
+
+## Non-Proportional Hazards（非比例风险）
+
+ICI 研究常出现：
+
+- Delayed treatment effect（延迟治疗效应）
+- Long-term survival plateau（长期生存平台）
+
+因此需关注：
+
+- Proportional hazards assumption
+- Restricted mean survival time, RMST
+- Milestone survival analysis
+
+## Safety Analysis（安全性分析）
+
+ICI 研究除常规 TEAE 外，还应重点分析：
+
+- irAE
+- Grade >=3 irAE
+- Steroid use
+- Treatment discontinuation due to irAE
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| Immune checkpoint 是肿瘤特有机制 | Immune checkpoint 是正常免疫调节机制，肿瘤只是加以利用 |
+| PD-1 与 PD-L1 完全相同 | PD-1 是受体，PD-L1 是配体，作用位置不同 |
+| CTLA-4 与 PD-1 作用完全一致 | 两者作用阶段和作用部位不同 |
+| ICI 直接杀死肿瘤细胞 | ICI 并不直接杀伤肿瘤，而是恢复 T cell 的抗肿瘤能力 |
+| 所有患者都能从 ICI 获益 | 疗效受肿瘤类型、免疫微环境及生物标志物等多种因素影响 |
+
+# Key Takeaways（总结）
+
+1. Immune checkpoint 是维持免疫稳态的重要负调控机制，可防止免疫系统过度激活。
+2. 肿瘤通过激活 PD-1、PD-L1、CTLA-4 等通路实现免疫逃逸。
+3. Immune checkpoint inhibitor 通过解除免疫抑制，恢复 T cell 抗肿瘤活性，已成为多种实体瘤的标准治疗。
+4. PD-1 和 CTLA-4 分别作用于 T cell 不同阶段，两者联合治疗可进一步增强疗效，但毒性也更高。
+5. 对 biostatistician 而言，理解 immune checkpoint 有助于认识免疫治疗机制、联合治疗设计、生物标志物分析及免疫治疗特有的统计学问题。
+
+# References
+
+1. Pardoll DM. The Blockade of Immune Checkpoints in Cancer Immunotherapy. *Nature Reviews Cancer*. 2012.
+2. Chen DS, Mellman I. Oncology Meets Immunology: The Cancer-Immunity Cycle. *Immunity*. 2013.
+3. Ribas A, Wolchok JD. Cancer Immunotherapy Using Checkpoint Blockade. *Science*. 2018.
+4. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.
+5. Sharma P, Allison JP. The Future of Immune Checkpoint Therapy. *Science*. 2015.

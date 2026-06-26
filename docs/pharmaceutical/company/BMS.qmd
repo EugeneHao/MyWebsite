@@ -8,6 +8,13 @@ title: "BMS"
 
 -   [BMS Quarterly Result](https://www.bms.com/investors/financial-reporting/quarterly-results.html)
 
+### Selected Products and Development Assets
+
+-   [KarXT / COBENFY](../compound/KarXT.qmd): oral xanomeline + trospium chloride fixed-dose combination approved by FDA for adult schizophrenia.
+-   [Opdivo](../compound/Opdivo.qmd): PD-1 immune checkpoint inhibitor used across multiple tumor types.
+-   [Pumitamig](../compound/Pumitamig.qmd): investigational PD-L1 × VEGF-A bispecific antibody co-developed with BioNTech.
+-   [Izalontamab brengitecan](../compound/Izalontamab_Brengitecan.qmd): investigational EGFR × HER3 bispecific ADC developed with SystImmune/Biokin.
+
 | Year | Q1 | Q2 | Q3 | Q4 |
 |----|----|----|----|----|
 | 2021 | [2021 Q1](https://news.bms.com/news/corporate-financial/2021/Bristol-Myers-Squibb-Reports-First-Quarter-Financial-Results-for-2021/default.aspx) | [2021 Q2](https://news.bms.com/news/details/2021/Bristol-Myers-Squibb-Reports-Second-Quarter-Financial-Results-for-2021/default.aspx) | [2021 Q3](https://news.bms.com/news/details/2021/Bristol-Myers-Squibb-Reports-Third-Quarter-Financial-Results-for-2021/default.aspx) | [2021 Q4](https://news.bms.com/news/details/2022/Bristol-Myers-Squibb-Reports-Fourth-Quarter-and-Full-Year-Financial-Results-for-2021/default.aspx) |

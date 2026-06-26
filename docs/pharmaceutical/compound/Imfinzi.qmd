@@ -1,0 +1,329 @@
+---
+title: "Durvalumab（Imfinzi）"
+description: "Durvalumab（Imfinzi）药物简介及临床开发概览。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Drug Development
+  - Oncology
+  - Immunotherapy
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Durvalumab（度伐利尤单抗；[AstraZeneca](../company/AstraZeneca.qmd)；Imfinzi）** 是一种靶向 **[programmed death-ligand 1, PD-L1（程序性死亡配体1）](../target/PD-L1.qmd)** 的全人源 **IgG1 kappa monoclonal antibody（IgG1 kappa 单克隆抗体）**，属于 **[immune checkpoint inhibitor（免疫检查点抑制剂）](../other/Immune_Checkpoint.qmd)**。
+
+Durvalumab 于 **2017 年**首次获得 **U.S. Food and Drug Administration, FDA（美国食品药品监督管理局）** 批准，目前已成为肺癌、胆道癌、肝癌、膀胱癌、子宫内膜癌和胃食管肿瘤等多个瘤种的重要免疫治疗药物。其中最具代表性的适应症是 **不可切除 III 期 [non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)** 的同步放化疗后巩固治疗，即 PACIFIC regimen。
+
+# Drug Profile（药物概况）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Durvalumab |
+| 中文通用名 | 度伐利尤单抗 |
+| Development code | MEDI4736 |
+| Brand name | Imfinzi |
+| Sponsor | [AstraZeneca](../company/AstraZeneca.qmd) |
+| Original developer | MedImmune，现 AstraZeneca 生物制药部门 |
+| Drug class | PD-L1 inhibitor |
+| Molecular type | Fully human IgG1 kappa monoclonal antibody |
+| Target | [PD-L1](../target/PD-L1.qmd) |
+| Route | Intravenous infusion（静脉输注） |
+| FDA first approval | 2017 年 |
+| 是否属于 ICI | 是 |
+
+# Mechanism of Action（作用机制）
+
+## PD-1/PD-L1 通路
+
+正常情况下：
+
+```text
+Tumor cell
+     |
+   PD-L1
+     |
+     v
+PD-1 on T cell
+     |
+     v
+T-cell inhibition
+     |
+     v
+Tumor immune evasion
+```
+
+Durvalumab 能够特异性结合 **PD-L1**，阻断其与：
+
+- **PD-1**
+- **CD80, B7-1**
+
+之间的相互作用，从而恢复 T cell 的抗肿瘤活性。
+
+与部分 **PD-1 inhibitor（PD-1 抑制剂）** 不同，durvalumab 不直接结合 PD-1，而是结合 PD-L1，因此仍保留 **PD-L2-PD-1** 的生理相互作用。理论上，这可能影响不同免疫毒性的发生模式，但临床上不能简单推断其毒性一定低于 PD-1 抑制剂。
+
+# 已获批适应症
+
+截至 **2026 年 6 月**，durvalumab 已在多个国家获批多个适应症。美国主要适应症包括：
+
+| 疾病 | 适应症或治疗场景 |
+|---|---|
+| Unresectable Stage III [NSCLC](../disease/NSCLC.qmd) | 同步含铂放化疗后无进展患者的巩固治疗，PACIFIC regimen |
+| Extensive-stage [SCLC](../disease/SCLC.qmd#extensive-stage-sclc), ES-SCLC | 一线联合 etoposide 和 carboplatin 或 cisplatin，CASPIAN |
+| Limited-stage [SCLC](../disease/SCLC.qmd#limited-stage-sclc), LS-SCLC | 同步含铂放化疗后无进展患者的巩固治疗，ADRIATIC |
+| Resectable [NSCLC](../disease/NSCLC.qmd) | 与含铂化疗联合新辅助治疗，术后继续单药辅助治疗，AEGEAN |
+| Biliary tract cancer, BTC（胆道癌） | 联合 gemcitabine/cisplatin 用于局部晚期或转移性疾病，TOPAZ-1 |
+| Hepatocellular carcinoma, HCC（肝细胞癌） | 与 tremelimumab 联合，HIMALAYA/STRIDE regimen |
+| Endometrial cancer（子宫内膜癌） | 与 carboplatin/paclitaxel 联合，随后 durvalumab 维持，用于 dMMR primary advanced or recurrent disease |
+| Muscle-invasive bladder cancer, MIBC（肌层浸润性膀胱癌） | 与 gemcitabine/cisplatin 新辅助治疗，根治性膀胱切除后单药辅助治疗，NIAGARA |
+| Resectable gastric or gastroesophageal junction adenocarcinoma | 围手术期联合 FLOT 化疗，随后 durvalumab 单药 |
+
+不同国家或地区批准范围可能不同，具体使用应以当地 approved label 为准。
+
+# Clinical Development（临床开发）
+
+## PACIFIC
+
+| 项目 | 内容 |
+|---|---|
+| Disease | Unresectable Stage III [NSCLC](../disease/NSCLC.qmd) |
+| Phase | III |
+| Treatment | Durvalumab vs placebo |
+| Population | cCRT 后无疾病进展患者 |
+| Primary endpoints | [PFS](../other/PFS.qmd)、OS |
+
+PACIFIC 改变了全球 III 期 NSCLC 的标准治疗。
+
+主要结果：
+
+- PFS 显著改善
+- OS 显著改善
+- 建立 PACIFIC regimen
+
+## CASPIAN
+
+| 项目 | 内容 |
+|---|---|
+| Disease | ES-SCLC |
+| Treatment | Durvalumab + platinum/etoposide |
+| Comparator | Chemotherapy |
+| Primary endpoint | OS |
+
+结果：
+
+- OS 显著改善
+- 成为 ES-SCLC 一线标准治疗之一
+
+## ADRIATIC
+
+| 项目 | 内容 |
+|---|---|
+| Disease | LS-SCLC |
+| Treatment | Durvalumab maintenance after cCRT |
+| Comparator | Placebo |
+| Key endpoints | OS、PFS |
+
+ADRIATIC 将 durvalumab 扩展至局限期 SCLC 同步放化疗后的巩固治疗场景。
+
+## AEGEAN
+
+| 项目 | 内容 |
+|---|---|
+| Disease | Resectable NSCLC |
+| Design | Neoadjuvant + surgery + adjuvant |
+| Experimental arm | Durvalumab + chemotherapy before surgery, then durvalumab after surgery |
+| Primary endpoints | Event-free survival, EFS；pathologic complete response, pCR |
+
+AEGEAN 推动 durvalumab 进入围手术期 NSCLC 治疗领域。
+
+## TOPAZ-1
+
+| 项目 | 内容 |
+|---|---|
+| Disease | Advanced BTC |
+| Treatment | Durvalumab + gemcitabine/cisplatin |
+| Primary endpoint | OS |
+
+TOPAZ-1 首次将免疫治疗建立为晚期胆道癌标准治疗之一。
+
+## HIMALAYA
+
+| 项目 | 内容 |
+|---|---|
+| Disease | Advanced HCC |
+| Treatment | Durvalumab + tremelimumab, STRIDE regimen |
+| Comparator | Sorafenib |
+| Primary endpoint | OS |
+
+HIMALAYA 建立了 STRIDE regimen，为 HCC 提供新的免疫治疗方案。
+
+## NIAGARA
+
+| 项目 | 内容 |
+|---|---|
+| Disease | Muscle-invasive bladder cancer |
+| Treatment | Durvalumab + gemcitabine/cisplatin before radical cystectomy, then durvalumab after surgery |
+| Comparator | Neoadjuvant chemotherapy followed by surgery |
+| Key endpoints | EFS、OS 等 |
+
+NIAGARA 支持 durvalumab 进入 MIBC 围手术期治疗。
+
+# Safety Profile（安全性）
+
+常见 **treatment-emergent adverse event, TEAE（治疗期间出现的不良事件）** 包括：
+
+| 常见 AE | 特点 |
+|---|---|
+| Fatigue | 常见 |
+| Rash | 常见 |
+| Pruritus | 常见 |
+| Diarrhea | 常见 |
+| Infusion reaction | 偶见 |
+
+## Immune-Related Adverse Events（irAE）
+
+由于 durvalumab 属于免疫检查点抑制剂，应重点监测：
+
+- Pneumonitis（免疫性肺炎）
+- Hepatitis（免疫性肝炎）
+- Colitis（免疫性结肠炎）
+- Thyroid dysfunction（甲状腺功能异常）
+- Adrenal insufficiency（肾上腺功能不全）
+- Hypophysitis（垂体炎）
+- Type 1 diabetes（1 型糖尿病，较少见）
+
+大多数 irAE 可通过暂停治疗及糖皮质激素控制，但严重或危及生命的不良反应可能需要永久停药。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## 常见 Primary Endpoint
+
+不同适应症主要终点有所不同：
+
+| 疾病 | 常见 primary endpoint |
+|---|---|
+| Stage III NSCLC | PFS、OS |
+| Metastatic NSCLC | OS、PFS |
+| SCLC | OS、PFS |
+| BTC | OS |
+| HCC | OS |
+| Resectable NSCLC | EFS、pCR |
+| MIBC | EFS、OS |
+
+## Time-to-Event Endpoints
+
+Durvalumab 的注册研究大多采用：
+
+- **Overall survival, OS（总生存期）**
+- **Progression-free survival, PFS（无进展生存期）**
+- **Event-free survival, EFS（无事件生存期）**
+- **Disease-free survival, DFS（无病生存期）**
+
+通常使用：
+
+- Kaplan-Meier 曲线
+- Stratified log-rank test
+- Stratified Cox proportional hazards model
+
+进行分析。
+
+## BICR 的应用
+
+在肺癌 III 期研究中，PFS 通常采用：
+
+**Blinded independent central review, BICR（盲态独立中心影像评估）**
+
+以降低：
+
+- Investigator bias
+- Assessment variability
+
+例如：
+
+- PACIFIC
+- AEGEAN
+- PACIFIC-9
+- PACIFIC-8
+
+均可将 BICR 作为重要疗效评价方式。
+
+## 生物标志物分析
+
+Durvalumab 的研究通常包括：
+
+- PD-L1 expression
+- EGFR mutation
+- ALK rearrangement
+- ctDNA，部分研究
+- TMB，探索性分析
+
+这些亚组分析通常作为预设或探索性分析，用于评估不同患者群体的治疗获益。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | Company | Target | 代表研究 |
+|---|---|---|---|
+| Durvalumab | [AstraZeneca](../company/AstraZeneca.qmd) | PD-L1 | PACIFIC、CASPIAN、AEGEAN |
+| [Pembrolizumab](Keytruda.qmd) | Merck | PD-1 | KEYNOTE 系列 |
+| [Nivolumab](Opdivo.qmd) | Bristol Myers Squibb | PD-1 | CheckMate 系列 |
+| [Atezolizumab](Tecentriq.qmd) | Roche | PD-L1 | IMpower 系列 |
+| Cemiplimab | Regeneron / Sanofi | PD-1 | EMPOWER 系列 |
+
+Durvalumab 在 **Stage III NSCLC** 的巩固治疗领域具有领先地位，而在局部晚期及围手术期肺癌中，AstraZeneca 也持续通过 PACIFIC 系列研究扩展其适应症。
+
+# Current Development Status（当前开发状态）
+
+截至 **2026 年 6 月**：
+
+Durvalumab 已成为 AstraZeneca 肿瘤业务最核心的产品之一，仍在持续开展多个 III 期研究，包括：
+
+- PACIFIC-8，联合抗 TIGIT
+- PACIFIC-9，联合抗 CD73 或抗 NKG2A
+- 多项围手术期 NSCLC 研究
+- 多项消化道肿瘤及妇科肿瘤研究
+
+未来开发重点包括：
+
+- 新型免疫联合治疗
+- 围手术期治疗
+- ctDNA 指导治疗
+- 生物标志物驱动精准治疗
+
+# Key Takeaways
+
+1. **Durvalumab（Imfinzi）** 是 AstraZeneca 开发的 PD-L1 单克隆抗体，也是应用最广泛的免疫检查点抑制剂之一。
+2. 与 PD-1 抑制剂不同，durvalumab 靶向 PD-L1，阻断其与 PD-1 和 CD80 的结合，从而恢复 T cell 抗肿瘤免疫。
+3. PACIFIC III 期研究确立了 durvalumab 在不可切除 III 期 NSCLC 中 cCRT 后巩固治疗的标准地位。
+4. 除肺癌外，durvalumab 还广泛应用于 ES-SCLC、LS-SCLC、BTC、HCC、MIBC、子宫内膜癌和胃食管肿瘤等多个瘤种。
+5. 生物统计分析主要围绕 OS、PFS、EFS 等时间事件终点展开，广泛采用 BICR、分层 Cox 模型及预设亚组分析。
+6. AstraZeneca 正通过 PACIFIC 系列研究和多种免疫联合方案进一步拓展 durvalumab 的临床应用。
+
+# References
+
+1. AstraZeneca. *IMFINZI (durvalumab) Prescribing Information*.  
+   <https://www.azpicentral.com/imfinzi/imfinzi.pdf>
+
+2. Antonia SJ, Villegas A, Daniel D, et al. Durvalumab after chemoradiotherapy in Stage III non-small-cell lung cancer. *New England Journal of Medicine*. 2017;377:1919-1929.
+
+3. Paz-Ares L, Dvorkin M, Chen Y, et al. Durvalumab plus platinum-etoposide versus platinum-etoposide in first-line treatment of extensive-stage small-cell lung cancer. *The Lancet*. 2019;394:1929-1939.
+
+4. Oh DY, He AR, Qin S, et al. Durvalumab plus gemcitabine and cisplatin in advanced biliary tract cancer. *New England Journal of Medicine*. 2022;386:851-863.
+
+5. Abou-Alfa GK, Lau G, Kudo M, et al. Tremelimumab plus durvalumab in unresectable hepatocellular carcinoma. *New England Journal of Medicine Evidence*. 2022.
+
+6. Heymach JV, Harpole D, Mitsudomi T, et al. Perioperative durvalumab for resectable non-small-cell lung cancer. *New England Journal of Medicine*. 2023.
+
+7. U.S. Food and Drug Administration. *FDA approves neoadjuvant/adjuvant durvalumab for resectable non-small cell lung cancer*. August 15, 2024.
+
+8. U.S. Food and Drug Administration. *FDA approves durvalumab for limited-stage small cell lung cancer*. December 4, 2024.
+
+9. U.S. Food and Drug Administration. *FDA approves durvalumab for muscle invasive bladder cancer*. March 28, 2025.

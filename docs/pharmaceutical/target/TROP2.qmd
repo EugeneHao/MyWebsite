@@ -170,7 +170,7 @@ TROP2在多种实体瘤中均有较高表达。
 - TROP2表达水平与疗效相关性尚不稳定；
 - 尚无统一IHC检测标准和cutoff。
 
-因此，与HER2不同，TROP2目前仍主要作为治疗靶点，而非成熟的预测性生物标志物。
+因此，与HER2不同，TROP2目前仍主要作为治疗靶点，而非成熟的[预测性生物标志物](../other/Biomarker.qmd#按临床用途分类)。
 
 # Clinical Trial Considerations（临床试验考虑）
 
@@ -252,7 +252,7 @@ TROP2 ADC的安全性主要由payload决定。
 1. TROP2是一种广泛表达于实体瘤的跨膜糖蛋白，也是当前最重要的ADC靶点之一。
 2. TROP2具有肿瘤高表达、易内吞和正常组织表达较低等特点，非常适合作为ADC靶点。
 3. Sacituzumab govitecan和datopotamab deruxtecan是目前最具代表性的TROP2 ADC。
-4. 与HER2不同，目前TROP2尚未发展为成熟的伴随诊断生物标志物，大多数研究无需按TROP2表达筛选患者。
+4. 与HER2不同，目前TROP2尚未发展为成熟的[伴随诊断生物标志物](../other/Biomarker.qmd#companion-diagnostic伴随诊断)，大多数研究无需按TROP2表达筛选患者。
 5. 生物统计学上需重点关注全人群设计、探索性生物标志物分析、PFS/OS终点及ADC特有安全性分析。
 
 # References

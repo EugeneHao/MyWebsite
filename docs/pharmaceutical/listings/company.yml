@@ -44,17 +44,19 @@
   drug: |
       Cosentyx, Entresto, Gilenya, Lucentis, Zolgensma, [Mekinist](compound/Mekinist.qmd)
 - name: Sanofi
+  path: company/Sanofi.html
   country: France
   drug: |
-    Dupixent, Lantus, Aubagio, Toujeo, Praluent
+    [Taxotere](compound/Docetaxel.qmd), Dupixent, Lantus, Aubagio, Toujeo, Praluent
 - name: GSK
   country: UK
   drug: |
     Shingrix, Trelegy, Nucala, Zejula, Benlysta, [Tafinlar](compound/Tafinlar.qmd)
 - name: AstraZeneca
+  path: company/AstraZeneca.html
   country: UK
   drug: |
-    Tagrisso, Imfinzi, Farxiga, Symbicort, Crestor
+    Tagrisso, [Imfinzi](compound/Imfinzi.qmd), Farxiga, Symbicort, Crestor, [Lynparza](compound/Lynparza.qmd)
 - name: Amgen
   country: USA
   drug: |

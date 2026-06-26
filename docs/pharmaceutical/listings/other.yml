@@ -10,17 +10,47 @@
   description: |
     Chimeric Antigen Receptor T-cell Therapy (CAR-T) is a revolutionary cancer treatment that genetically engineers T-cells to fight cancer.
 
+- name: Immune Checkpoint
+  path: other/Immune_Checkpoint.html
+  belong: Technology
+  description: |
+    Immune checkpoints are regulatory immune pathways such as PD-1, PD-L1, and CTLA-4 that maintain tolerance and are targeted by cancer immunotherapy.
+
 - name: Biomarker
   path: other/Biomarker.html
   belong: Clinical Trial
   description: |
     Biomarkers are biological molecules used as indicators of a biological state or condition, crucial in disease diagnosis and therapy assessment.
 
+- name: TNM Staging
+  path: other/TNM_Staging.html
+  belong: Clinical Trial
+  description: |
+    TNM staging describes tumor extent using primary tumor, regional lymph node, and distant metastasis categories, and is central to oncology treatment decisions and trial design.
+
+- name: ECOG Performance Status
+  path: other/ECOG_Performance_Status.html
+  belong: Clinical Trial
+  description: |
+    ECOG Performance Status is a standard oncology functional status scale used for treatment decisions, trial eligibility, stratification, and prognosis.
+
+- name: RECIST 1.1
+  path: other/RECIST_1_1.html
+  belong: Clinical Trial
+  description: |
+    RECIST 1.1 is the standard imaging-based response assessment framework for solid tumor trials and supports ORR, BOR, DOR, and PFS derivations.
+
 - name: Immunotherapy
   path: other/Immunotherapy.html
   belong: Technology
   description: |
     Immunotherapy is a treatment modality that harnesses the body's immune system to detect and combat diseases, particularly cancer.
+
+- name: TME
+  path: other/TME.html
+  belong: Technology
+  description: |
+    Tumor microenvironment (TME) describes the immune, stromal, vascular, extracellular matrix, and signaling context surrounding tumor cells.
 
 - name: MAT
   path: other/MAT.html
@@ -33,4 +63,3 @@
   belong: Endpoint
   description: |
     Progression-Free Survival (PFS) is a measure of the time patients remain in remission without their disease progressing after treatment.
-  

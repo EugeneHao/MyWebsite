@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hao Sun">
+<meta name="dcterms.date" content="2026-06-26">
+<meta name="description" content="介绍 Immune Checkpoint 的生理功能、肿瘤免疫逃逸机制、主要免疫检查点及其在肿瘤治疗中的应用。">
+
+<title>Immune Checkpoint（免疫检查点） – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/pharmaceutical/other/Immunotherapy.html" rel="next">
+<link href="../../../docs/pharmaceutical/other/CAR-T.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Immune Checkpoint（免疫检查点） – Hao Sun">
+<meta property="og:description" content="介绍 Immune Checkpoint 的生理功能、肿瘤免疫逃逸机制、主要免疫检查点及其在肿瘤治疗中的应用。">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Immune Checkpoint（免疫检查点） – Hao Sun">
+<meta name="twitter:description" content="介绍 Immune Checkpoint 的生理功能、肿瘤免疫逃逸机制、主要免疫检查点及其在肿瘤治疗中的应用。">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Drug.html">Biotechnology</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html">Immune Checkpoint</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharmaceutical Content</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Company</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/BMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BMS</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Eliquis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eliquis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Opdivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opdivo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Reblozyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reblozyl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Revlimid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revlimid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Yervoy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yervoy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Onureg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onureg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Inrebic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inrebic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Iberdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iberdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mezigdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mezigdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Alnuctamab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alnuctamab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Abecma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abecma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Breyanzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breyanzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Krazati.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Krazati</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/KarXT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KarXT (COBENFY)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Pumitamig.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pumitamig</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Izalontamab_Brengitecan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Izalontamab Brengitecan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Akeso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Akeso</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cadonilimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cadonilimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Summit_Therapeutics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summit Therapeutics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Merck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Keytruda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keytruda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Januvia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Januvia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Gardasil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gardasil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Pneumovax</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/AstraZeneca.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AstraZeneca</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Imfinzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Imfinzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/J &amp; J.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">J &amp; J</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carvykti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carvykti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecvayli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecvayli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Darzalex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Darzalex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Remicade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remicade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Stelara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stelara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xarelto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xarelto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Bortezomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bortezomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Pfizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pfizer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mylotarg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mylotarg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Comirnaty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comirnaty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Prevnar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prevnar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ibrance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ibrance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xeljanz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xeljanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xalkori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xalkori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Sirolimus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sirolimus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Roche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roche</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecentriq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecentriq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Rituxan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rituxan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Herceptin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Herceptin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Avastin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avastin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Zelboraf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zelboraf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cotellic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cotellic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Abbvie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbvie</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Humira.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Humira</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/GSK.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tafinlar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tafinlar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Novartis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Novartis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mekinist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mekinist</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Sanofi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sanofi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Docetaxel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxotere</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+ <span class="menu-text">Incyte</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Jakafi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jakafi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vertex</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Kalydeco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kalydeco</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Regeneron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regeneron</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Gilead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gilead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">Amgen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carfilzomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carfilzomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Regulatory</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-compound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Compound</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Venclexta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Venclexta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bone Marrow</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Leukemia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leukemia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lymphoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/MDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Myelodysplastic Syndromes (MDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Myeloma (MM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Melanoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Melanoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Breast_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breast Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lung Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/NSCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-Small Cell Lung Cancer (NSCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/SCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Cell Lung Cancer (SCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Thrombosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thrombosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/PD-L1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PD-L1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/VEGF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VEGF</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/HER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HER Family</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/TROP2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TROP2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/KRAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDTM</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true">
+ <span class="menu-text">Wiki</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="true">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Drug Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ADC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody-Drug Conjugates (ADC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CAR-T</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Immune Checkpoint</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunotherapy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/MAT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monoclonal Antibody Therapy (MAT)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/TME.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tumor Microenvironment (TME)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false">
+ <span class="menu-text">Clinical Trial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adverse Event by SOC and PT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intercurrent Events</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/TNM_Staging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TNM Staging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ECOG_Performance_Status.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ECOG Performance Status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/RECIST_1_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RECIST 1.1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Endpoint</span></span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/pharma_note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharma Note</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/Naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drug Naming Rules</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#概述" id="toc-概述" class="nav-link active" data-scroll-target="#概述"><span class="header-section-number">1</span> 概述</a></li>
+  <li><a href="#key-terminology关键术语" id="toc-key-terminology关键术语" class="nav-link" data-scroll-target="#key-terminology关键术语"><span class="header-section-number">2</span> Key Terminology（关键术语）</a></li>
+  <li><a href="#为什么需要-immune-checkpoint" id="toc-为什么需要-immune-checkpoint" class="nav-link" data-scroll-target="#为什么需要-immune-checkpoint"><span class="header-section-number">3</span> 为什么需要 Immune Checkpoint？</a></li>
+  <li><a href="#t-cell-activationt-细胞激活" id="toc-t-cell-activationt-细胞激活" class="nav-link" data-scroll-target="#t-cell-activationt-细胞激活"><span class="header-section-number">4</span> T Cell Activation（T 细胞激活）</a>
+  <ul class="collapse">
+  <li><a href="#signal-1抗原识别" id="toc-signal-1抗原识别" class="nav-link" data-scroll-target="#signal-1抗原识别"><span class="header-section-number">4.1</span> Signal 1（抗原识别）</a></li>
+  <li><a href="#signal-2共刺激信号" id="toc-signal-2共刺激信号" class="nav-link" data-scroll-target="#signal-2共刺激信号"><span class="header-section-number">4.2</span> Signal 2（共刺激信号）</a></li>
+  </ul></li>
+  <li><a href="#肿瘤如何利用-immune-checkpoint" id="toc-肿瘤如何利用-immune-checkpoint" class="nav-link" data-scroll-target="#肿瘤如何利用-immune-checkpoint"><span class="header-section-number">5</span> 肿瘤如何利用 Immune Checkpoint？</a></li>
+  <li><a href="#主要-immune-checkpoint" id="toc-主要-immune-checkpoint" class="nav-link" data-scroll-target="#主要-immune-checkpoint"><span class="header-section-number">6</span> 主要 Immune Checkpoint</a>
+  <ul class="collapse">
+  <li><a href="#pd-1programmed-death-1" id="toc-pd-1programmed-death-1" class="nav-link" data-scroll-target="#pd-1programmed-death-1"><span class="header-section-number">6.1</span> PD-1（Programmed Death-1）</a></li>
+  <li><a href="#pd-l1programmed-death-ligand-1" id="toc-pd-l1programmed-death-ligand-1" class="nav-link" data-scroll-target="#pd-l1programmed-death-ligand-1"><span class="header-section-number">6.2</span> PD-L1（Programmed Death-Ligand 1）</a></li>
+  <li><a href="#ctla-4cytotoxic-t-lymphocyte-associated-protein-4" id="toc-ctla-4cytotoxic-t-lymphocyte-associated-protein-4" class="nav-link" data-scroll-target="#ctla-4cytotoxic-t-lymphocyte-associated-protein-4"><span class="header-section-number">6.3</span> CTLA-4（Cytotoxic T-Lymphocyte-Associated Protein 4）</a></li>
+  <li><a href="#新兴-immune-checkpoint" id="toc-新兴-immune-checkpoint" class="nav-link" data-scroll-target="#新兴-immune-checkpoint"><span class="header-section-number">6.4</span> 新兴 Immune Checkpoint</a></li>
+  </ul></li>
+  <li><a href="#pd-1-与-ctla-4-的区别" id="toc-pd-1-与-ctla-4-的区别" class="nav-link" data-scroll-target="#pd-1-与-ctla-4-的区别"><span class="header-section-number">7</span> PD-1 与 CTLA-4 的区别</a></li>
+  <li><a href="#immune-checkpoint-inhibitorici" id="toc-immune-checkpoint-inhibitorici" class="nav-link" data-scroll-target="#immune-checkpoint-inhibitorici"><span class="header-section-number">8</span> Immune Checkpoint Inhibitor（ICI）</a></li>
+  <li><a href="#immune-checkpoint-与-tumor-microenvironmenttme" id="toc-immune-checkpoint-与-tumor-microenvironmenttme" class="nav-link" data-scroll-target="#immune-checkpoint-与-tumor-microenvironmenttme"><span class="header-section-number">9</span> Immune Checkpoint 与 Tumor Microenvironment（TME）</a></li>
+  <li><a href="#immune-related-adverse-eventsiraes" id="toc-immune-related-adverse-eventsiraes" class="nav-link" data-scroll-target="#immune-related-adverse-eventsiraes"><span class="header-section-number">10</span> Immune-Related Adverse Events（irAEs）</a></li>
+  <li><a href="#clinical-trial-considerations临床试验考虑" id="toc-clinical-trial-considerations临床试验考虑" class="nav-link" data-scroll-target="#clinical-trial-considerations临床试验考虑"><span class="header-section-number">11</span> Clinical Trial Considerations（临床试验考虑）</a></li>
+  <li><a href="#biostatistical-considerations生物统计学考虑" id="toc-biostatistical-considerations生物统计学考虑" class="nav-link" data-scroll-target="#biostatistical-considerations生物统计学考虑"><span class="header-section-number">12</span> Biostatistical Considerations（生物统计学考虑）</a>
+  <ul class="collapse">
+  <li><a href="#biomarker-analysis生物标志物分析" id="toc-biomarker-analysis生物标志物分析" class="nav-link" data-scroll-target="#biomarker-analysis生物标志物分析"><span class="header-section-number">12.1</span> Biomarker Analysis（生物标志物分析）</a></li>
+  <li><a href="#non-proportional-hazards非比例风险" id="toc-non-proportional-hazards非比例风险" class="nav-link" data-scroll-target="#non-proportional-hazards非比例风险"><span class="header-section-number">12.2</span> Non-Proportional Hazards（非比例风险）</a></li>
+  <li><a href="#safety-analysis安全性分析" id="toc-safety-analysis安全性分析" class="nav-link" data-scroll-target="#safety-analysis安全性分析"><span class="header-section-number">12.3</span> Safety Analysis（安全性分析）</a></li>
+  </ul></li>
+  <li><a href="#common-pitfalls常见误区" id="toc-common-pitfalls常见误区" class="nav-link" data-scroll-target="#common-pitfalls常见误区"><span class="header-section-number">13</span> Common Pitfalls（常见误区）</a></li>
+  <li><a href="#key-takeaways总结" id="toc-key-takeaways总结" class="nav-link" data-scroll-target="#key-takeaways总结"><span class="header-section-number">14</span> Key Takeaways（总结）</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">15</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Drug.html">Biotechnology</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html">Immune Checkpoint</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Immune Checkpoint（免疫检查点）</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Oncology</div>
+    <div class="quarto-category">Immuno-Oncology</div>
+    <div class="quarto-category">Disease Overview</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    介绍 Immune Checkpoint 的生理功能、肿瘤免疫逃逸机制、主要免疫检查点及其在肿瘤治疗中的应用。
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hao Sun </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="概述" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 概述</h1>
+<p><strong>Immune checkpoint（免疫检查点）</strong> 是免疫系统中的一类调节分子，其主要作用是<strong>维持 immune homeostasis（免疫稳态）</strong>，防止 T cell（T 细胞）过度活化，从而避免自身免疫反应。</p>
+<p>正常情况下，immune checkpoint 能够在病原体被清除后关闭免疫反应。然而，肿瘤细胞可以利用这些天然的调控机制，抑制 T cell 活性，实现 <strong>immune evasion（免疫逃逸）</strong>。</p>
+<p>目前，阻断 immune checkpoint 已成为现代肿瘤治疗的重要策略。<strong>Immune checkpoint inhibitor, ICI（免疫检查点抑制剂）</strong> 已广泛应用于肺癌、黑色素瘤、肾癌、胃癌、食管癌等多种恶性肿瘤。</p>
+</section>
+<section id="key-terminology关键术语" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Key Terminology（关键术语）</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Immune checkpoint</td>
+<td>免疫检查点</td>
+</tr>
+<tr class="even">
+<td>Immune checkpoint inhibitor, ICI</td>
+<td>免疫检查点抑制剂</td>
+</tr>
+<tr class="odd">
+<td>T cell</td>
+<td>T 细胞</td>
+</tr>
+<tr class="even">
+<td>Antigen-presenting cell, APC</td>
+<td>抗原呈递细胞</td>
+</tr>
+<tr class="odd">
+<td>Immune evasion</td>
+<td>免疫逃逸</td>
+</tr>
+<tr class="even">
+<td>Immune tolerance</td>
+<td>免疫耐受</td>
+</tr>
+<tr class="odd">
+<td>Immune-related adverse event, irAE</td>
+<td>免疫相关不良事件</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="为什么需要-immune-checkpoint" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 为什么需要 Immune Checkpoint？</h1>
+<p>人体免疫系统需要同时具备：</p>
+<ul>
+<li>足够强的免疫反应，清除病原体和肿瘤细胞；</li>
+<li>足够有效的负反馈机制，避免攻击正常组织。</li>
+</ul>
+<p>Immune checkpoint 就像汽车的刹车系统。</p>
+<pre class="text"><code>T-cell activation
+      |
+      v
+Immune response
+      |
+      v
+Immune checkpoint
+      |
+      v
+Negative regulation</code></pre>
+<p>如果没有 immune checkpoint：</p>
+<ul>
+<li>免疫系统会持续激活；</li>
+<li>容易发生自身免疫病；</li>
+<li>正常组织受到损伤。</li>
+</ul>
+<p>因此，immune checkpoint 对维持免疫平衡至关重要。</p>
+</section>
+<section id="t-cell-activationt-细胞激活" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> T Cell Activation（T 细胞激活）</h1>
+<p>T cell 完全激活通常需要两个信号。</p>
+<section id="signal-1抗原识别" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="signal-1抗原识别"><span class="header-section-number">4.1</span> Signal 1（抗原识别）</h2>
+<pre class="text"><code>TCR
+ |
+ v
+Tumor antigen
+ |
+ v
+MHC on APC</code></pre>
+<p>T cell receptor, TCR 识别 APC 呈递的肿瘤抗原。</p>
+</section>
+<section id="signal-2共刺激信号" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="signal-2共刺激信号"><span class="header-section-number">4.2</span> Signal 2（共刺激信号）</h2>
+<pre class="text"><code>CD28
+ |
+ v
+CD80 / CD86</code></pre>
+<p>CD28 与 APC 表面的 CD80/CD86 结合后，T cell 被充分激活。</p>
+<p>随后，immune checkpoint 会逐渐启动，限制免疫反应。</p>
+</section>
+</section>
+<section id="肿瘤如何利用-immune-checkpoint" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 肿瘤如何利用 Immune Checkpoint？</h1>
+<p>肿瘤细胞可通过表达 immune checkpoint ligand（配体），抑制 T cell。</p>
+<p>例如：</p>
+<pre class="text"><code>Tumor cell
+     |
+   PD-L1
+     |
+     v
+    PD-1
+     |
+     v
+T-cell inhibition</code></pre>
+<p>结果包括：</p>
+<ul>
+<li>T cell exhaustion（T 细胞耗竭）</li>
+<li>Cytokine 减少</li>
+<li>肿瘤杀伤能力下降</li>
+<li>Tumor immune escape（肿瘤免疫逃逸）</li>
+</ul>
+</section>
+<section id="主要-immune-checkpoint" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 主要 Immune Checkpoint</h1>
+<section id="pd-1programmed-death-1" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="pd-1programmed-death-1"><span class="header-section-number">6.1</span> PD-1（Programmed Death-1）</h2>
+<p>PD-1 位于：</p>
+<ul>
+<li>Activated T cell</li>
+<li>B cell</li>
+<li>NK cell</li>
+</ul>
+<p>配体：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/target/PD-L1.html">PD-L1</a></li>
+<li>PD-L2</li>
+</ul>
+<p>作用：</p>
+<p>抑制已经进入肿瘤组织的 T cell 活性。</p>
+<p>代表药物：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/compound/Keytruda.html">Pembrolizumab</a></li>
+<li><a href="../../../docs/pharmaceutical/compound/Opdivo.html">Nivolumab</a></li>
+<li>Cemiplimab</li>
+</ul>
+</section>
+<section id="pd-l1programmed-death-ligand-1" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="pd-l1programmed-death-ligand-1"><span class="header-section-number">6.2</span> PD-L1（Programmed Death-Ligand 1）</h2>
+<p><a href="../../../docs/pharmaceutical/target/PD-L1.html">PD-L1</a> 表达于：</p>
+<ul>
+<li>Tumor cells</li>
+<li>APC</li>
+<li>部分免疫细胞</li>
+</ul>
+<p>作用：</p>
+<p>结合 PD-1，关闭 T cell。</p>
+<p>代表药物：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/compound/Tecentriq.html">Atezolizumab</a></li>
+<li><a href="../../../docs/pharmaceutical/compound/Imfinzi.html">Durvalumab</a></li>
+<li>Avelumab</li>
+</ul>
+</section>
+<section id="ctla-4cytotoxic-t-lymphocyte-associated-protein-4" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="ctla-4cytotoxic-t-lymphocyte-associated-protein-4"><span class="header-section-number">6.3</span> CTLA-4（Cytotoxic T-Lymphocyte-Associated Protein 4）</h2>
+<p>CTLA-4 位于：</p>
+<ul>
+<li>Activated T cell</li>
+<li>Regulatory T cell, Treg</li>
+</ul>
+<p>作用：</p>
+<p>竞争性结合 CD80/CD86，阻止 CD28 提供共刺激信号，因此主要在 <strong>淋巴结</strong> 调控 T cell 初始激活。</p>
+<p>代表药物：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/compound/Yervoy.html">Ipilimumab</a></li>
+<li>Tremelimumab</li>
+</ul>
+</section>
+<section id="新兴-immune-checkpoint" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="新兴-immune-checkpoint"><span class="header-section-number">6.4</span> 新兴 Immune Checkpoint</h2>
+<p>近年来研究热点包括：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>靶点</th>
+<th>主要作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LAG-3</td>
+<td>抑制 T cell 活化</td>
+</tr>
+<tr class="even">
+<td>TIGIT</td>
+<td>抑制 T cell 和 NK cell</td>
+</tr>
+<tr class="odd">
+<td>TIM-3</td>
+<td>T cell 耗竭</td>
+</tr>
+<tr class="even">
+<td>VISTA</td>
+<td>调节髓系细胞功能</td>
+</tr>
+<tr class="odd">
+<td>CD47</td>
+<td>抑制巨噬细胞吞噬，即 “don’t eat me” 信号</td>
+</tr>
+</tbody>
+</table>
+<p>这些靶点已成为新一代<a href="../../../docs/pharmaceutical/other/Immunotherapy.html">免疫治疗</a>的重要研发方向。</p>
+</section>
+</section>
+<section id="pd-1-与-ctla-4-的区别" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> PD-1 与 CTLA-4 的区别</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>特征</th>
+<th>PD-1</th>
+<th>CTLA-4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>主要作用阶段</td>
+<td>T cell 已进入肿瘤后</td>
+<td>T cell 初始激活阶段</td>
+</tr>
+<tr class="even">
+<td>主要作用部位</td>
+<td><a href="../../../docs/pharmaceutical/other/TME.html">Tumor microenvironment, TME</a></td>
+<td>Lymph node（淋巴结）</td>
+</tr>
+<tr class="odd">
+<td>主要作用对象</td>
+<td>Activated T cell</td>
+<td>Naive T cell 和 Treg</td>
+</tr>
+<tr class="even">
+<td>临床毒性</td>
+<td>相对较低</td>
+<td>相对较高</td>
+</tr>
+<tr class="odd">
+<td>联合治疗</td>
+<td>常与 CTLA-4 联合</td>
+<td>常与 PD-1 联合</td>
+</tr>
+</tbody>
+</table>
+<p>因此：</p>
+<ul>
+<li>PD-1 更像恢复已经疲劳的 T cell；</li>
+<li>CTLA-4 更像促进更多新的 T cell 被激活。</li>
+</ul>
+</section>
+<section id="immune-checkpoint-inhibitorici" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Immune Checkpoint Inhibitor（ICI）</h1>
+<p>ICI 通过解除免疫抑制，使 T cell 恢复杀伤能力。</p>
+<p>主要药物类别包括：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>代表药物</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PD-1 inhibitor</td>
+<td><a href="../../../docs/pharmaceutical/compound/Keytruda.html">Pembrolizumab</a>、<a href="../../../docs/pharmaceutical/compound/Opdivo.html">Nivolumab</a></td>
+</tr>
+<tr class="even">
+<td>PD-L1 inhibitor</td>
+<td><a href="../../../docs/pharmaceutical/compound/Imfinzi.html">Durvalumab</a>、<a href="../../../docs/pharmaceutical/compound/Tecentriq.html">Atezolizumab</a>、Avelumab</td>
+</tr>
+<tr class="odd">
+<td>CTLA-4 inhibitor</td>
+<td><a href="../../../docs/pharmaceutical/compound/Yervoy.html">Ipilimumab</a>、Tremelimumab</td>
+</tr>
+<tr class="even">
+<td>LAG-3 inhibitor</td>
+<td>Relatlimab</td>
+</tr>
+</tbody>
+</table>
+<p>近年来还出现了：</p>
+<ul>
+<li><a href="../../../docs/pharmaceutical/compound/Cadonilimab.html">PD-1 × CTLA-4 双特异性抗体</a></li>
+<li><a href="../../../docs/pharmaceutical/compound/Ivonescimab.html">PD-1 × VEGF 双特异性抗体</a></li>
+<li><a href="../../../docs/pharmaceutical/compound/Pumitamig.html">PD-L1 × VEGF-A 双特异性抗体</a></li>
+<li>PD-L1 × TIGIT 双特异性抗体</li>
+</ul>
+</section>
+<section id="immune-checkpoint-与-tumor-microenvironmenttme" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Immune Checkpoint 与 Tumor Microenvironment（TME）</h1>
+<p>Immune checkpoint 是 <a href="../../../docs/pharmaceutical/other/TME.html">TME</a> 中最重要的免疫调节机制之一。</p>
+<p>在免疫抑制性 TME 中：</p>
+<ul>
+<li>PD-L1 高表达</li>
+<li>Treg 增加</li>
+<li>MDSC 增加</li>
+<li>M2 型 TAM 增加</li>
+</ul>
+<p>共同导致：</p>
+<ul>
+<li>CD8+ T cell 功能下降；</li>
+<li>肿瘤持续生长。</li>
+</ul>
+<p>ICI 的目标就是重新激活 TME 中的抗肿瘤免疫。</p>
+</section>
+<section id="immune-related-adverse-eventsiraes" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Immune-Related Adverse Events（irAEs）</h1>
+<p>由于 ICI 会解除免疫抑制，因此也可能攻击正常组织。</p>
+<p>常见 irAEs 包括：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>系统</th>
+<th>常见表现</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>皮肤</td>
+<td>Rash、pruritus</td>
+</tr>
+<tr class="even">
+<td>胃肠道</td>
+<td>Colitis、diarrhea</td>
+</tr>
+<tr class="odd">
+<td>肝脏</td>
+<td>Hepatitis</td>
+</tr>
+<tr class="even">
+<td>肺</td>
+<td>Pneumonitis</td>
+</tr>
+<tr class="odd">
+<td>内分泌</td>
+<td>Thyroiditis、hypophysitis、adrenal insufficiency</td>
+</tr>
+<tr class="even">
+<td>肾脏</td>
+<td>Nephritis</td>
+</tr>
+</tbody>
+</table>
+<p>PD-1 抑制剂总体毒性低于 CTLA-4 抑制剂，而联合治疗的 irAE 发生率通常更高。</p>
+</section>
+<section id="clinical-trial-considerations临床试验考虑" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Clinical Trial Considerations（临床试验考虑）</h1>
+<p>Immune checkpoint 是现代 oncology 临床研究的核心。</p>
+<p>常见研究设计包括：</p>
+<ul>
+<li>PD-1 vs chemotherapy</li>
+<li>PD-L1 + chemotherapy</li>
+<li>PD-1 + CTLA-4</li>
+<li>PD-1 + VEGF</li>
+<li>PD-1 + ADC</li>
+</ul>
+<p>研究通常关注：</p>
+<ul>
+<li>PD-L1 expression</li>
+<li>ORR</li>
+<li>PFS</li>
+<li>OS</li>
+<li>Duration of response</li>
+<li>irAEs</li>
+</ul>
+</section>
+<section id="biostatistical-considerations生物统计学考虑" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Biostatistical Considerations（生物统计学考虑）</h1>
+<section id="biomarker-analysis生物标志物分析" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="biomarker-analysis生物标志物分析"><span class="header-section-number">12.1</span> Biomarker Analysis（生物标志物分析）</h2>
+<p>ICI 研究常分析：</p>
+<ul>
+<li>PD-L1 expression</li>
+<li>Tumor mutational burden, TMB</li>
+<li>Microsatellite instability-high, MSI-H</li>
+<li>Gene expression signature</li>
+<li>CD8+ T cell infiltration</li>
+</ul>
+<p>用于探索预测性生物标志物。</p>
+</section>
+<section id="non-proportional-hazards非比例风险" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="non-proportional-hazards非比例风险"><span class="header-section-number">12.2</span> Non-Proportional Hazards（非比例风险）</h2>
+<p>ICI 研究常出现：</p>
+<ul>
+<li>Delayed treatment effect（延迟治疗效应）</li>
+<li>Long-term survival plateau（长期生存平台）</li>
+</ul>
+<p>因此需关注：</p>
+<ul>
+<li>Proportional hazards assumption</li>
+<li>Restricted mean survival time, RMST</li>
+<li>Milestone survival analysis</li>
+</ul>
+</section>
+<section id="safety-analysis安全性分析" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="safety-analysis安全性分析"><span class="header-section-number">12.3</span> Safety Analysis（安全性分析）</h2>
+<p>ICI 研究除常规 TEAE 外，还应重点分析：</p>
+<ul>
+<li>irAE</li>
+<li>Grade &gt;=3 irAE</li>
+<li>Steroid use</li>
+<li>Treatment discontinuation due to irAE</li>
+</ul>
+</section>
+</section>
+<section id="common-pitfalls常见误区" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Common Pitfalls（常见误区）</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>误区</th>
+<th>正确理解</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Immune checkpoint 是肿瘤特有机制</td>
+<td>Immune checkpoint 是正常免疫调节机制，肿瘤只是加以利用</td>
+</tr>
+<tr class="even">
+<td>PD-1 与 PD-L1 完全相同</td>
+<td>PD-1 是受体，PD-L1 是配体，作用位置不同</td>
+</tr>
+<tr class="odd">
+<td>CTLA-4 与 PD-1 作用完全一致</td>
+<td>两者作用阶段和作用部位不同</td>
+</tr>
+<tr class="even">
+<td>ICI 直接杀死肿瘤细胞</td>
+<td>ICI 并不直接杀伤肿瘤，而是恢复 T cell 的抗肿瘤能力</td>
+</tr>
+<tr class="odd">
+<td>所有患者都能从 ICI 获益</td>
+<td>疗效受肿瘤类型、免疫微环境及生物标志物等多种因素影响</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-takeaways总结" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Key Takeaways（总结）</h1>
+<ol type="1">
+<li>Immune checkpoint 是维持免疫稳态的重要负调控机制，可防止免疫系统过度激活。</li>
+<li>肿瘤通过激活 PD-1、PD-L1、CTLA-4 等通路实现免疫逃逸。</li>
+<li>Immune checkpoint inhibitor 通过解除免疫抑制，恢复 T cell 抗肿瘤活性，已成为多种实体瘤的标准治疗。</li>
+<li>PD-1 和 CTLA-4 分别作用于 T cell 不同阶段，两者联合治疗可进一步增强疗效，但毒性也更高。</li>
+<li>对 biostatistician 而言，理解 immune checkpoint 有助于认识免疫治疗机制、联合治疗设计、生物标志物分析及免疫治疗特有的统计学问题。</li>
+</ol>
+</section>
+<section id="references" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> References</h1>
+<ol type="1">
+<li>Pardoll DM. The Blockade of Immune Checkpoints in Cancer Immunotherapy. <em>Nature Reviews Cancer</em>. 2012.</li>
+<li>Chen DS, Mellman I. Oncology Meets Immunology: The Cancer-Immunity Cycle. <em>Immunity</em>. 2013.</li>
+<li>Ribas A, Wolchok JD. Cancer Immunotherapy Using Checkpoint Blockade. <em>Science</em>. 2018.</li>
+<li>National Comprehensive Cancer Network. <em>NCCN Clinical Practice Guidelines in Oncology</em>.</li>
+<li>Sharma P, Allison JP. The Future of Immune Checkpoint Therapy. <em>Science</em>. 2015.</li>
+</ol>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="pagination-link" aria-label="CAR-T">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">CAR-T</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="pagination-link" aria-label="Immunotherapy">
+        <span class="nav-page-text">Immunotherapy</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Immune Checkpoint（免疫检查点）"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "介绍 Immune Checkpoint 的生理功能、肿瘤免疫逃逸机制、主要免疫检查点及其在肿瘤治疗中的应用。"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Hao Sun"</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Oncology</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Immuno-Oncology</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Disease Overview</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../../../references.bib</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu"># 概述</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>**Immune checkpoint（免疫检查点）** 是免疫系统中的一类调节分子，其主要作用是**维持 immune homeostasis（免疫稳态）**，防止 T cell（T 细胞）过度活化，从而避免自身免疫反应。</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>正常情况下，immune checkpoint 能够在病原体被清除后关闭免疫反应。然而，肿瘤细胞可以利用这些天然的调控机制，抑制 T cell 活性，实现 **immune evasion（免疫逃逸）**。</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>目前，阻断 immune checkpoint 已成为现代肿瘤治疗的重要策略。**Immune checkpoint inhibitor, ICI（免疫检查点抑制剂）** 已广泛应用于肺癌、黑色素瘤、肾癌、胃癌、食管癌等多种恶性肿瘤。</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Terminology（关键术语）</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>| 名称 | 解释 |</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>| Immune checkpoint | 免疫检查点 |</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>| Immune checkpoint inhibitor, ICI | 免疫检查点抑制剂 |</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>| T cell | T 细胞 |</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>| Antigen-presenting cell, APC | 抗原呈递细胞 |</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>| Immune evasion | 免疫逃逸 |</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>| Immune tolerance | 免疫耐受 |</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>| Immune-related adverse event, irAE | 免疫相关不良事件 |</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="fu"># 为什么需要 Immune Checkpoint？</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>人体免疫系统需要同时具备：</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>足够强的免疫反应，清除病原体和肿瘤细胞；</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>足够有效的负反馈机制，避免攻击正常组织。</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>Immune checkpoint 就像汽车的刹车系统。</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="in">T-cell activation</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="in">      |</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="in">      v</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="in">Immune response</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="in">      |</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="in">      v</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="in">Immune checkpoint</span></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="in">      |</span></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a><span class="in">      v</span></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a><span class="in">Negative regulation</span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>如果没有 immune checkpoint：</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>免疫系统会持续激活；</span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>容易发生自身免疫病；</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>正常组织受到损伤。</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>因此，immune checkpoint 对维持免疫平衡至关重要。</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="fu"># T Cell Activation（T 细胞激活）</span></span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>T cell 完全激活通常需要两个信号。</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## Signal 1（抗原识别）</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="in">TCR</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="in"> |</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="in"> v</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="in">Tumor antigen</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="in"> |</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="in"> v</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="in">MHC on APC</span></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>T cell receptor, TCR 识别 APC 呈递的肿瘤抗原。</span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## Signal 2（共刺激信号）</span></span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a><span class="in">CD28</span></span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a><span class="in"> |</span></span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a><span class="in"> v</span></span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a><span class="in">CD80 / CD86</span></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a>CD28 与 APC 表面的 CD80/CD86 结合后，T cell 被充分激活。</span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>随后，immune checkpoint 会逐渐启动，限制免疫反应。</span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a><span class="fu"># 肿瘤如何利用 Immune Checkpoint？</span></span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a>肿瘤细胞可通过表达 immune checkpoint ligand（配体），抑制 T cell。</span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a>例如：</span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a><span class="in">Tumor cell</span></span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a><span class="in">     |</span></span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a><span class="in">   PD-L1</span></span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a><span class="in">     |</span></span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="in">     v</span></span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a><span class="in">    PD-1</span></span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a><span class="in">     |</span></span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a><span class="in">     v</span></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a><span class="in">T-cell inhibition</span></span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>结果包括：</span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>T cell exhaustion（T 细胞耗竭）</span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cytokine 减少</span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>肿瘤杀伤能力下降</span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tumor immune escape（肿瘤免疫逃逸）</span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a><span class="fu"># 主要 Immune Checkpoint</span></span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a><span class="fu">## PD-1（Programmed Death-1）</span></span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>PD-1 位于：</span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Activated T cell</span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>B cell</span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>NK cell</span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>配体：</span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">PD-L1</span><span class="co">](../target/PD-L1.qmd)</span></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L2</span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>作用：</span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>抑制已经进入肿瘤组织的 T cell 活性。</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>代表药物：</span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Pembrolizumab</span><span class="co">](../compound/Keytruda.qmd)</span></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Nivolumab</span><span class="co">](../compound/Opdivo.qmd)</span></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cemiplimab</span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a><span class="fu">## PD-L1（Programmed Death-Ligand 1）</span></span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">PD-L1</span><span class="co">](../target/PD-L1.qmd)</span> 表达于：</span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tumor cells</span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>APC</span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>部分免疫细胞</span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>作用：</span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a>结合 PD-1，关闭 T cell。</span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a>代表药物：</span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Atezolizumab</span><span class="co">](../compound/Tecentriq.qmd)</span></span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Durvalumab</span><span class="co">](../compound/Imfinzi.qmd)</span></span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Avelumab</span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a><span class="fu">## CTLA-4（Cytotoxic T-Lymphocyte-Associated Protein 4）</span></span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a>CTLA-4 位于：</span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Activated T cell</span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Regulatory T cell, Treg</span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a>作用：</span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a>竞争性结合 CD80/CD86，阻止 CD28 提供共刺激信号，因此主要在 **淋巴结** 调控 T cell 初始激活。</span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a>代表药物：</span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Ipilimumab</span><span class="co">](../compound/Yervoy.qmd)</span></span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tremelimumab</span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## 新兴 Immune Checkpoint</span></span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a>近年来研究热点包括：</span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a>| 靶点 | 主要作用 |</span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a>| LAG-3 | 抑制 T cell 活化 |</span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a>| TIGIT | 抑制 T cell 和 NK cell |</span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a>| TIM-3 | T cell 耗竭 |</span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a>| VISTA | 调节髓系细胞功能 |</span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a>| CD47 | 抑制巨噬细胞吞噬，即 "don't eat me" 信号 |</span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a>这些靶点已成为新一代<span class="co">[</span><span class="ot">免疫治疗</span><span class="co">](Immunotherapy.qmd)</span>的重要研发方向。</span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a><span class="fu"># PD-1 与 CTLA-4 的区别</span></span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a>| 特征 | PD-1 | CTLA-4 |</span>
+<span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a>| 主要作用阶段 | T cell 已进入肿瘤后 | T cell 初始激活阶段 |</span>
+<span id="cb5-205"><a href="#cb5-205" aria-hidden="true" tabindex="-1"></a>| 主要作用部位 | <span class="co">[</span><span class="ot">Tumor microenvironment, TME</span><span class="co">](TME.qmd)</span> | Lymph node（淋巴结） |</span>
+<span id="cb5-206"><a href="#cb5-206" aria-hidden="true" tabindex="-1"></a>| 主要作用对象 | Activated T cell | Naive T cell 和 Treg |</span>
+<span id="cb5-207"><a href="#cb5-207" aria-hidden="true" tabindex="-1"></a>| 临床毒性 | 相对较低 | 相对较高 |</span>
+<span id="cb5-208"><a href="#cb5-208" aria-hidden="true" tabindex="-1"></a>| 联合治疗 | 常与 CTLA-4 联合 | 常与 PD-1 联合 |</span>
+<span id="cb5-209"><a href="#cb5-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-210"><a href="#cb5-210" aria-hidden="true" tabindex="-1"></a>因此：</span>
+<span id="cb5-211"><a href="#cb5-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-212"><a href="#cb5-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-1 更像恢复已经疲劳的 T cell；</span>
+<span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CTLA-4 更像促进更多新的 T cell 被激活。</span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-215"><a href="#cb5-215" aria-hidden="true" tabindex="-1"></a><span class="fu"># Immune Checkpoint Inhibitor（ICI）</span></span>
+<span id="cb5-216"><a href="#cb5-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-217"><a href="#cb5-217" aria-hidden="true" tabindex="-1"></a>ICI 通过解除免疫抑制，使 T cell 恢复杀伤能力。</span>
+<span id="cb5-218"><a href="#cb5-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-219"><a href="#cb5-219" aria-hidden="true" tabindex="-1"></a>主要药物类别包括：</span>
+<span id="cb5-220"><a href="#cb5-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-221"><a href="#cb5-221" aria-hidden="true" tabindex="-1"></a>| 类型 | 代表药物 |</span>
+<span id="cb5-222"><a href="#cb5-222" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb5-223"><a href="#cb5-223" aria-hidden="true" tabindex="-1"></a>| PD-1 inhibitor | <span class="co">[</span><span class="ot">Pembrolizumab</span><span class="co">](../compound/Keytruda.qmd)</span>、<span class="co">[</span><span class="ot">Nivolumab</span><span class="co">](../compound/Opdivo.qmd)</span> |</span>
+<span id="cb5-224"><a href="#cb5-224" aria-hidden="true" tabindex="-1"></a>| PD-L1 inhibitor | <span class="co">[</span><span class="ot">Durvalumab</span><span class="co">](../compound/Imfinzi.qmd)</span>、<span class="co">[</span><span class="ot">Atezolizumab</span><span class="co">](../compound/Tecentriq.qmd)</span>、Avelumab |</span>
+<span id="cb5-225"><a href="#cb5-225" aria-hidden="true" tabindex="-1"></a>| CTLA-4 inhibitor | <span class="co">[</span><span class="ot">Ipilimumab</span><span class="co">](../compound/Yervoy.qmd)</span>、Tremelimumab |</span>
+<span id="cb5-226"><a href="#cb5-226" aria-hidden="true" tabindex="-1"></a>| LAG-3 inhibitor | Relatlimab |</span>
+<span id="cb5-227"><a href="#cb5-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-228"><a href="#cb5-228" aria-hidden="true" tabindex="-1"></a>近年来还出现了：</span>
+<span id="cb5-229"><a href="#cb5-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-230"><a href="#cb5-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">PD-1 × CTLA-4 双特异性抗体</span><span class="co">](../compound/Cadonilimab.qmd)</span></span>
+<span id="cb5-231"><a href="#cb5-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">PD-1 × VEGF 双特异性抗体</span><span class="co">](../compound/Ivonescimab.qmd)</span></span>
+<span id="cb5-232"><a href="#cb5-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">PD-L1 × VEGF-A 双特异性抗体</span><span class="co">](../compound/Pumitamig.qmd)</span></span>
+<span id="cb5-233"><a href="#cb5-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L1 × TIGIT 双特异性抗体</span>
+<span id="cb5-234"><a href="#cb5-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-235"><a href="#cb5-235" aria-hidden="true" tabindex="-1"></a><span class="fu"># Immune Checkpoint 与 Tumor Microenvironment（TME）</span></span>
+<span id="cb5-236"><a href="#cb5-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-237"><a href="#cb5-237" aria-hidden="true" tabindex="-1"></a>Immune checkpoint 是 <span class="co">[</span><span class="ot">TME</span><span class="co">](TME.qmd)</span> 中最重要的免疫调节机制之一。</span>
+<span id="cb5-238"><a href="#cb5-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-239"><a href="#cb5-239" aria-hidden="true" tabindex="-1"></a>在免疫抑制性 TME 中：</span>
+<span id="cb5-240"><a href="#cb5-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-241"><a href="#cb5-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L1 高表达</span>
+<span id="cb5-242"><a href="#cb5-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Treg 增加</span>
+<span id="cb5-243"><a href="#cb5-243" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>MDSC 增加</span>
+<span id="cb5-244"><a href="#cb5-244" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>M2 型 TAM 增加</span>
+<span id="cb5-245"><a href="#cb5-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-246"><a href="#cb5-246" aria-hidden="true" tabindex="-1"></a>共同导致：</span>
+<span id="cb5-247"><a href="#cb5-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-248"><a href="#cb5-248" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CD8+ T cell 功能下降；</span>
+<span id="cb5-249"><a href="#cb5-249" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>肿瘤持续生长。</span>
+<span id="cb5-250"><a href="#cb5-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-251"><a href="#cb5-251" aria-hidden="true" tabindex="-1"></a>ICI 的目标就是重新激活 TME 中的抗肿瘤免疫。</span>
+<span id="cb5-252"><a href="#cb5-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-253"><a href="#cb5-253" aria-hidden="true" tabindex="-1"></a><span class="fu"># Immune-Related Adverse Events（irAEs）</span></span>
+<span id="cb5-254"><a href="#cb5-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-255"><a href="#cb5-255" aria-hidden="true" tabindex="-1"></a>由于 ICI 会解除免疫抑制，因此也可能攻击正常组织。</span>
+<span id="cb5-256"><a href="#cb5-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-257"><a href="#cb5-257" aria-hidden="true" tabindex="-1"></a>常见 irAEs 包括：</span>
+<span id="cb5-258"><a href="#cb5-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-259"><a href="#cb5-259" aria-hidden="true" tabindex="-1"></a>| 系统 | 常见表现 |</span>
+<span id="cb5-260"><a href="#cb5-260" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb5-261"><a href="#cb5-261" aria-hidden="true" tabindex="-1"></a>| 皮肤 | Rash、pruritus |</span>
+<span id="cb5-262"><a href="#cb5-262" aria-hidden="true" tabindex="-1"></a>| 胃肠道 | Colitis、diarrhea |</span>
+<span id="cb5-263"><a href="#cb5-263" aria-hidden="true" tabindex="-1"></a>| 肝脏 | Hepatitis |</span>
+<span id="cb5-264"><a href="#cb5-264" aria-hidden="true" tabindex="-1"></a>| 肺 | Pneumonitis |</span>
+<span id="cb5-265"><a href="#cb5-265" aria-hidden="true" tabindex="-1"></a>| 内分泌 | Thyroiditis、hypophysitis、adrenal insufficiency |</span>
+<span id="cb5-266"><a href="#cb5-266" aria-hidden="true" tabindex="-1"></a>| 肾脏 | Nephritis |</span>
+<span id="cb5-267"><a href="#cb5-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-268"><a href="#cb5-268" aria-hidden="true" tabindex="-1"></a>PD-1 抑制剂总体毒性低于 CTLA-4 抑制剂，而联合治疗的 irAE 发生率通常更高。</span>
+<span id="cb5-269"><a href="#cb5-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-270"><a href="#cb5-270" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Trial Considerations（临床试验考虑）</span></span>
+<span id="cb5-271"><a href="#cb5-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-272"><a href="#cb5-272" aria-hidden="true" tabindex="-1"></a>Immune checkpoint 是现代 oncology 临床研究的核心。</span>
+<span id="cb5-273"><a href="#cb5-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-274"><a href="#cb5-274" aria-hidden="true" tabindex="-1"></a>常见研究设计包括：</span>
+<span id="cb5-275"><a href="#cb5-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-276"><a href="#cb5-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-1 vs chemotherapy</span>
+<span id="cb5-277"><a href="#cb5-277" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L1 + chemotherapy</span>
+<span id="cb5-278"><a href="#cb5-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-1 + CTLA-4</span>
+<span id="cb5-279"><a href="#cb5-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-1 + VEGF</span>
+<span id="cb5-280"><a href="#cb5-280" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-1 + ADC</span>
+<span id="cb5-281"><a href="#cb5-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-282"><a href="#cb5-282" aria-hidden="true" tabindex="-1"></a>研究通常关注：</span>
+<span id="cb5-283"><a href="#cb5-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-284"><a href="#cb5-284" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L1 expression</span>
+<span id="cb5-285"><a href="#cb5-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ORR</span>
+<span id="cb5-286"><a href="#cb5-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PFS</span>
+<span id="cb5-287"><a href="#cb5-287" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>OS</span>
+<span id="cb5-288"><a href="#cb5-288" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Duration of response</span>
+<span id="cb5-289"><a href="#cb5-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>irAEs</span>
+<span id="cb5-290"><a href="#cb5-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-291"><a href="#cb5-291" aria-hidden="true" tabindex="-1"></a><span class="fu"># Biostatistical Considerations（生物统计学考虑）</span></span>
+<span id="cb5-292"><a href="#cb5-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-293"><a href="#cb5-293" aria-hidden="true" tabindex="-1"></a><span class="fu">## Biomarker Analysis（生物标志物分析）</span></span>
+<span id="cb5-294"><a href="#cb5-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-295"><a href="#cb5-295" aria-hidden="true" tabindex="-1"></a>ICI 研究常分析：</span>
+<span id="cb5-296"><a href="#cb5-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-297"><a href="#cb5-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>PD-L1 expression</span>
+<span id="cb5-298"><a href="#cb5-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tumor mutational burden, TMB</span>
+<span id="cb5-299"><a href="#cb5-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Microsatellite instability-high, MSI-H</span>
+<span id="cb5-300"><a href="#cb5-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gene expression signature</span>
+<span id="cb5-301"><a href="#cb5-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CD8+ T cell infiltration</span>
+<span id="cb5-302"><a href="#cb5-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-303"><a href="#cb5-303" aria-hidden="true" tabindex="-1"></a>用于探索预测性生物标志物。</span>
+<span id="cb5-304"><a href="#cb5-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-305"><a href="#cb5-305" aria-hidden="true" tabindex="-1"></a><span class="fu">## Non-Proportional Hazards（非比例风险）</span></span>
+<span id="cb5-306"><a href="#cb5-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-307"><a href="#cb5-307" aria-hidden="true" tabindex="-1"></a>ICI 研究常出现：</span>
+<span id="cb5-308"><a href="#cb5-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-309"><a href="#cb5-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Delayed treatment effect（延迟治疗效应）</span>
+<span id="cb5-310"><a href="#cb5-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Long-term survival plateau（长期生存平台）</span>
+<span id="cb5-311"><a href="#cb5-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-312"><a href="#cb5-312" aria-hidden="true" tabindex="-1"></a>因此需关注：</span>
+<span id="cb5-313"><a href="#cb5-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-314"><a href="#cb5-314" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Proportional hazards assumption</span>
+<span id="cb5-315"><a href="#cb5-315" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Restricted mean survival time, RMST</span>
+<span id="cb5-316"><a href="#cb5-316" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Milestone survival analysis</span>
+<span id="cb5-317"><a href="#cb5-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-318"><a href="#cb5-318" aria-hidden="true" tabindex="-1"></a><span class="fu">## Safety Analysis（安全性分析）</span></span>
+<span id="cb5-319"><a href="#cb5-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-320"><a href="#cb5-320" aria-hidden="true" tabindex="-1"></a>ICI 研究除常规 TEAE 外，还应重点分析：</span>
+<span id="cb5-321"><a href="#cb5-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-322"><a href="#cb5-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>irAE</span>
+<span id="cb5-323"><a href="#cb5-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Grade &gt;=3 irAE</span>
+<span id="cb5-324"><a href="#cb5-324" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Steroid use</span>
+<span id="cb5-325"><a href="#cb5-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Treatment discontinuation due to irAE</span>
+<span id="cb5-326"><a href="#cb5-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-327"><a href="#cb5-327" aria-hidden="true" tabindex="-1"></a><span class="fu"># Common Pitfalls（常见误区）</span></span>
+<span id="cb5-328"><a href="#cb5-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-329"><a href="#cb5-329" aria-hidden="true" tabindex="-1"></a>| 误区 | 正确理解 |</span>
+<span id="cb5-330"><a href="#cb5-330" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb5-331"><a href="#cb5-331" aria-hidden="true" tabindex="-1"></a>| Immune checkpoint 是肿瘤特有机制 | Immune checkpoint 是正常免疫调节机制，肿瘤只是加以利用 |</span>
+<span id="cb5-332"><a href="#cb5-332" aria-hidden="true" tabindex="-1"></a>| PD-1 与 PD-L1 完全相同 | PD-1 是受体，PD-L1 是配体，作用位置不同 |</span>
+<span id="cb5-333"><a href="#cb5-333" aria-hidden="true" tabindex="-1"></a>| CTLA-4 与 PD-1 作用完全一致 | 两者作用阶段和作用部位不同 |</span>
+<span id="cb5-334"><a href="#cb5-334" aria-hidden="true" tabindex="-1"></a>| ICI 直接杀死肿瘤细胞 | ICI 并不直接杀伤肿瘤，而是恢复 T cell 的抗肿瘤能力 |</span>
+<span id="cb5-335"><a href="#cb5-335" aria-hidden="true" tabindex="-1"></a>| 所有患者都能从 ICI 获益 | 疗效受肿瘤类型、免疫微环境及生物标志物等多种因素影响 |</span>
+<span id="cb5-336"><a href="#cb5-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-337"><a href="#cb5-337" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Takeaways（总结）</span></span>
+<span id="cb5-338"><a href="#cb5-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-339"><a href="#cb5-339" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Immune checkpoint 是维持免疫稳态的重要负调控机制，可防止免疫系统过度激活。</span>
+<span id="cb5-340"><a href="#cb5-340" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>肿瘤通过激活 PD-1、PD-L1、CTLA-4 等通路实现免疫逃逸。</span>
+<span id="cb5-341"><a href="#cb5-341" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Immune checkpoint inhibitor 通过解除免疫抑制，恢复 T cell 抗肿瘤活性，已成为多种实体瘤的标准治疗。</span>
+<span id="cb5-342"><a href="#cb5-342" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>PD-1 和 CTLA-4 分别作用于 T cell 不同阶段，两者联合治疗可进一步增强疗效，但毒性也更高。</span>
+<span id="cb5-343"><a href="#cb5-343" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>对 biostatistician 而言，理解 immune checkpoint 有助于认识免疫治疗机制、联合治疗设计、生物标志物分析及免疫治疗特有的统计学问题。</span>
+<span id="cb5-344"><a href="#cb5-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-345"><a href="#cb5-345" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
+<span id="cb5-346"><a href="#cb5-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-347"><a href="#cb5-347" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Pardoll DM. The Blockade of Immune Checkpoints in Cancer Immunotherapy. *Nature Reviews Cancer*. 2012.</span>
+<span id="cb5-348"><a href="#cb5-348" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Chen DS, Mellman I. Oncology Meets Immunology: The Cancer-Immunity Cycle. *Immunity*. 2013.</span>
+<span id="cb5-349"><a href="#cb5-349" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Ribas A, Wolchok JD. Cancer Immunotherapy Using Checkpoint Blockade. *Science*. 2018.</span>
+<span id="cb5-350"><a href="#cb5-350" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.</span>
+<span id="cb5-351"><a href="#cb5-351" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Sharma P, Allison JP. The Future of Immune Checkpoint Therapy. *Science*. 2015.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,254 @@
+---
+title: "TNM Staging（TNM 分期）"
+description: "介绍 TNM 分期系统的基本概念、组成、临床意义及在肿瘤临床试验中的应用。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**TNM staging（TNM分期）**是目前全球应用最广泛的恶性肿瘤分期系统，由**American Joint Committee on Cancer, AJCC（美国癌症联合委员会）**和**Union for International Cancer Control, UICC（国际抗癌联盟）**共同制定和更新。
+
+TNM分期通过评价：
+
+- **T（primary tumor，原发肿瘤）**；
+- **N（regional lymph nodes，区域淋巴结）**；
+- **M（distant metastasis，远处转移）**；
+
+三个维度，描述肿瘤扩散程度，并进一步划分为Stage I-IV。
+
+TNM分期不仅影响患者预后，也是决定治疗策略、临床试验入组标准和统计分析的重要依据。
+
+# Key Terminology（关键术语）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| T | Primary tumor | 原发肿瘤 |
+| N | Regional lymph nodes | 区域淋巴结 |
+| M | Distant metastasis | 远处转移 |
+| AJCC | American Joint Committee on Cancer | 美国癌症联合委员会 |
+| UICC | Union for International Cancer Control | 国际抗癌联盟 |
+| Clinical stage, cTNM | Clinical TNM staging | 临床分期 |
+| Pathologic stage, pTNM | Pathologic TNM staging | 病理分期 |
+
+# TNM的基本组成
+
+TNM分期由三个独立维度组成。
+
+## T（Primary Tumor）
+
+T描述原发肿瘤的大小及局部侵犯范围。
+
+一般而言：
+
+| 分级 | 含义 |
+|---|---|
+| Tis | 原位癌（carcinoma in situ） |
+| T1 | 较小、局限性肿瘤 |
+| T2 | 肿瘤较大或侵犯邻近结构 |
+| T3 | 局部侵犯进一步增加 |
+| T4 | 广泛侵犯邻近重要组织或器官 |
+
+不同癌种对T1、T2、T3、T4的具体定义不同。例如肺癌主要依据肿瘤大小及侵犯范围，而乳腺癌主要依据肿瘤直径。
+
+## N（Regional Lymph Nodes）
+
+N描述区域淋巴结受累情况。
+
+| 分级 | 含义 |
+|---|---|
+| N0 | 无区域淋巴结转移 |
+| N1 | 少量区域淋巴结受累 |
+| N2 | 更多区域淋巴结受累 |
+| N3 | 广泛区域淋巴结受累 |
+
+N分期通常反映疾病局部扩散程度，也是影响预后的重要因素。
+
+## M（Distant Metastasis）
+
+M描述是否存在远处转移。
+
+| 分级 | 含义 |
+|---|---|
+| M0 | 无远处转移 |
+| M1 | 存在远处转移 |
+
+多数实体瘤中：
+
+> **M1即属于Stage IV（IV期）**。
+
+# Stage Group（分期分组）
+
+TNM最终组合形成临床分期。
+
+一般规律如下，不同癌种略有差异：
+
+| Stage | 一般特点 |
+|---|---|
+| Stage 0 | 原位癌 |
+| Stage I | 早期局限性肿瘤 |
+| Stage II | 肿瘤较大或局部扩散 |
+| Stage III | 明显区域淋巴结受累或局部晚期 |
+| Stage IV | 存在远处转移 |
+
+需要注意：不同癌种的stage分组规则并不完全相同，应依据对应AJCC/UICC分期手册。
+
+# Clinical Stage与Pathologic Stage
+
+TNM可分为不同类型。
+
+| 类型 | 缩写 | 获得方式 |
+|---|---|---|
+| Clinical stage | cTNM | 体检、影像学、内镜、活检等 |
+| Pathologic stage | pTNM | 手术切除后的病理检查 |
+| Post-neoadjuvant stage | ypTNM | 新辅助治疗后的病理分期 |
+| Recurrent stage | rTNM | 肿瘤复发后的分期 |
+
+通常：
+
+- 手术前使用cTNM；
+- 手术后使用pTNM；
+- 新辅助治疗后使用ypTNM。
+
+# TNM分期在肺癌中的应用
+
+[肺癌](../disease/Lung_Cancer.qmd)是TNM分期应用最典型的疾病之一。
+
+## T分期（简化）
+
+主要依据：
+
+- 肿瘤大小；
+- 是否侵犯胸膜；
+- 是否侵犯胸壁；
+- 是否侵犯纵隔；
+- 是否侵犯主支气管等。
+
+## N分期
+
+依据淋巴结位置：
+
+| 分级 | 说明 |
+|---|---|
+| N0 | 无淋巴结转移 |
+| N1 | 同侧肺门或肺内淋巴结 |
+| N2 | 同侧纵隔淋巴结 |
+| N3 | 对侧纵隔、锁骨上等淋巴结 |
+
+## M分期
+
+依据是否存在：
+
+- 对侧肺转移；
+- 脑转移；
+- 骨转移；
+- 肝转移；
+- 肾上腺转移等。
+
+# TNM与治疗策略
+
+TNM分期直接决定治疗方案。
+
+以[NSCLC](../disease/NSCLC.qmd)为例：
+
+| 分期 | 常见治疗策略 |
+|---|---|
+| Stage I | 手术 ± 辅助治疗 |
+| Stage II | 手术 + 辅助化疗 ± 靶向/免疫治疗 |
+| Stage III | 放化疗、围手术期治疗、巩固免疫治疗等 |
+| Stage IV | 全身治疗，包括靶向治疗、免疫治疗、化疗等 |
+
+因此，在protocol中通常会明确规定允许入组的TNM分期。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+TNM分期广泛用于临床试验设计。
+
+主要应用包括：
+
+- eligibility criteria（入组标准）；
+- stratification factors（随机化分层因素）；
+- prespecified subgroup analysis（预设亚组分析）；
+- baseline characteristics（基线特征描述）；
+- covariate adjustment（协变量调整）。
+
+例如：
+
+- 仅纳入Stage IV NSCLC；
+- 或仅纳入unresectable Stage III NSCLC。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Stratification（随机化分层）
+
+TNM分期常作为随机化分层因素。
+
+例如：
+
+- Stage III vs Stage IV；
+- limited-stage vs extensive-stage（[SCLC](../disease/SCLC.qmd)）。
+
+以提高治疗组之间的可比性。
+
+## Subgroup Analysis（亚组分析）
+
+TNM分期也是最常见的预设亚组之一。
+
+例如：
+
+- Stage II；
+- Stage III；
+- Stage IV。
+
+用于评估不同疾病阶段患者的治疗效果是否一致。
+
+## Covariate Adjustment（协变量调整）
+
+在Cox proportional hazards model（Cox比例风险模型）或其他回归模型中，TNM分期常作为协变量进行调整，以减少混杂因素影响。
+
+## Prognostic Factor（预后因素）
+
+TNM分期通常是影响以下终点的最重要预后因素之一：
+
+- overall survival, OS；
+- progression-free survival, PFS。
+
+因此在统计分析和结果解释中需要重点考虑。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| TNM只适用于肺癌 | TNM适用于多数实体瘤，但具体定义因癌种不同而不同 |
+| T仅表示肿瘤大小 | T还包括局部侵犯范围 |
+| N数值越大表示淋巴结数量越多 | N更强调淋巴结的位置和受累范围，而非单纯数量 |
+| M1一定意味着无法治疗 | M1表示远处转移，但仍可能接受靶向治疗、免疫治疗或局部综合治疗 |
+| 所有癌种的Stage I-IV定义相同 | Stage分组依据不同癌种的TNM组合确定，不能直接套用 |
+
+# Key Takeaways（总结）
+
+1. TNM分期是全球最常用的实体瘤分期系统，由T、N、M三部分组成。
+2. T描述原发肿瘤，N描述区域淋巴结，M描述远处转移。
+3. TNM分期直接决定治疗策略、预后评估及临床试验设计。
+4. 在oncology临床研究中，TNM常用于入组标准、随机化分层及亚组分析。
+5. 对biostatistician而言，理解TNM分期的临床意义比记忆具体分期标准更重要，不同癌种的TNM定义需分别学习。
+
+# References
+
+1. Amin MB, et al. *AJCC Cancer Staging Manual*. 8th edition.
+2. Union for International Cancer Control. *TNM Classification of Malignant Tumours*. 8th edition.
+3. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.
+4. Goldstraw P, et al. The IASLC Lung Cancer Staging Project. *Journal of Thoracic Oncology*. 2016.

@@ -1,0 +1,356 @@
+---
+title: "Response Evaluation Criteria in Solid Tumors, RECIST 1.1（实体瘤疗效评价标准 1.1）"
+description: "介绍 RECIST 1.1 的基本原则、疗效评价方法、临床试验应用及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Clinical Trials
+  - Response Assessment
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Response Evaluation Criteria in Solid Tumors, RECIST 1.1（实体瘤疗效评价标准 1.1）** 是目前全球实体瘤临床试验中最广泛使用的疗效评价标准，由 **RECIST Working Group** 于 2009 年发布。
+
+RECIST 1.1 通过标准化影像学测量方法，对肿瘤治疗后的变化进行评价，并将患者疗效分为：
+
+- **Complete response, CR（完全缓解）**
+- **Partial response, PR（部分缓解）**
+- **Stable disease, SD（疾病稳定）**
+- **Progressive disease, PD（疾病进展）**
+
+RECIST 1.1 是几乎所有实体瘤 III 期临床试验的基础，也是 **objective response rate, ORR（客观缓解率）**、[**progression-free survival, PFS（无进展生存期）**](PFS.qmd)、**best overall response, BOR（最佳总体疗效）** 等终点的定义依据。
+
+# Key Terminology（关键术语）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| RECIST | Response Evaluation Criteria in Solid Tumors | 实体瘤疗效评价标准 |
+| TL | Target lesion | 靶病灶 |
+| NTL | Non-target lesion | 非靶病灶 |
+| SOD | Sum of diameters | 靶病灶直径总和 |
+| CR | Complete response | 完全缓解 |
+| PR | Partial response | 部分缓解 |
+| SD | Stable disease | 疾病稳定 |
+| PD | Progressive disease | 疾病进展 |
+| BOR | Best overall response | 最佳总体疗效 |
+| New lesion | New lesion | 新出现的肿瘤病灶 |
+
+# RECIST 1.1 基本原则
+
+RECIST 1.1 将所有病灶分为：
+
+- Target lesions（靶病灶）
+- Non-target lesions（非靶病灶）
+
+随后通过定期影像学检查，通常是 CT 或 MRI，评价病灶变化。
+
+# Target Lesions（靶病灶）
+
+## 定义
+
+靶病灶应满足：
+
+- 可准确测量（measurable）
+- 边界清晰
+- 重复测量误差较小
+
+通常：
+
+- 最多选择 **5 个靶病灶**
+- 每个器官最多 **2 个**
+
+所有靶病灶直径相加得到：
+
+$$
+\text{Sum of Diameters (SOD)}
+$$
+
+作为后续疗效评价依据。
+
+## 可测量病灶
+
+| 病灶 | RECIST 要求 |
+|---|---|
+| 普通实体病灶 | 长径 >=10 mm，且 CT 层厚 <=5 mm |
+| 淋巴结 | 短径 >=15 mm |
+
+# Non-Target Lesions（非靶病灶）
+
+不能准确测量但具有肿瘤意义的病灶可作为非靶病灶。
+
+例如：
+
+- 小于测量标准的病灶
+- 骨病灶
+- 癌性胸水
+- 癌性腹水
+- 软脑膜病变
+
+非靶病灶仅记录：
+
+- 消失
+- 持续存在
+- 明显进展
+
+一般不进行连续测量。
+
+# New Lesions（新病灶）
+
+RECIST 规定：
+
+> 一旦确认出现新的恶性病灶，即判定为 **PD**。
+
+无需等待原有病灶进一步增大。
+
+# 疗效判定标准
+
+## Complete Response（CR）
+
+所有：
+
+- Target lesion 消失
+- Non-target lesion 消失
+- 所有病理淋巴结短径 <10 mm
+
+## Partial Response（PR）
+
+相对于 baseline：
+
+$$
+\text{SOD reduction} \ge 30\%
+$$
+
+且：
+
+- 无新病灶
+- 无 PD
+
+## Progressive Disease（PD）
+
+满足任一条件即可判定为 PD。
+
+### 靶病灶进展
+
+相对于治疗过程中最小 SOD（nadir）：
+
+$$
+\text{SOD increase} \ge 20\%
+$$
+
+且：
+
+- 绝对增加 >=5 mm
+
+### 出现新病灶
+
+任何新的恶性病灶。
+
+### 非靶病灶明显进展
+
+Non-target lesion unequivocal progression。
+
+## Stable Disease（SD）
+
+既未达到：
+
+- PR
+
+也未达到：
+
+- PD
+
+则定义为 SD。
+
+# RECIST 疗效总结
+
+| Response | 定义 |
+|---|---|
+| CR | 所有病灶消失 |
+| PR | SOD 减少 >=30% |
+| SD | 未达到 PR 或 PD |
+| PD | SOD 增加 >=20% 且绝对增加 >=5 mm，或出现新病灶 |
+
+# 疗效评估流程
+
+```text
+Baseline CT
+      |
+Select Target Lesions
+      |
+Measure SOD
+      |
+Follow-up CT
+      |
+Compare with Baseline / Nadir
+      |
+CR / PR / SD / PD
+```
+
+# RECIST 与临床终点
+
+RECIST 是多个关键终点的基础。
+
+| Endpoint | 是否依赖 RECIST |
+|---|---|
+| ORR | Yes |
+| BOR | Yes |
+| DCR（Disease control rate） | Yes |
+| DOR | Yes |
+| PFS | Yes |
+| TTR（Time to response） | Yes |
+| TTP（Time to progression） | Yes |
+
+例如：
+
+$$
+\text{ORR} = \frac{\text{CR} + \text{PR}}{\text{全部患者}}
+$$
+
+# RECIST 1.1 更新内容
+
+相比 RECIST 1.0：
+
+| RECIST 1.0 | RECIST 1.1 |
+|---|---|
+| 最多 10 个靶病灶 | 最多 5 个 |
+| 每器官最多 5 个 | 每器官最多 2 个 |
+| 未明确淋巴结测量标准 | 增加淋巴结测量标准 |
+| PET 作用较少 | 增加 PET 辅助判定新病灶 |
+| PD 主要依据相对增加 | PD 要求绝对增加 >=5 mm |
+
+RECIST 1.1 简化了测量流程，提高了重复性。
+
+# RECIST 在临床试验中的应用
+
+RECIST 1.1 几乎用于所有实体瘤随机试验。
+
+主要应用包括：
+
+- ORR
+- PFS
+- BOR
+- IRC review
+- Investigator assessment
+
+许多 protocol 同时要求：
+
+- Investigator assessment
+- **Independent Review Committee, IRC（独立审评委员会）** 评估
+
+# RECIST 与 iRECIST
+
+RECIST 最初主要针对化疗。
+
+对于免疫治疗，可能出现：
+
+- Pseudoprogression（假性进展）
+- Delayed response（延迟缓解）
+
+因此提出：
+
+**Immune RECIST, iRECIST（免疫 RECIST）**
+
+区别：
+
+| RECIST | iRECIST |
+|---|---|
+| 新病灶立即 PD | 需确认进展 |
+| PD 后通常停止治疗 | 可继续观察，若符合方案要求 |
+| 适用于传统治疗 | 更适用于免疫治疗 |
+
+# Clinical Trial Considerations（临床试验考虑）
+
+RECIST 是 protocol 中最重要的疗效评价标准之一。
+
+需要预先规定：
+
+- Baseline scan
+- Scan interval，例如每 6 或 8 周
+- IRC 评估流程
+- Missing assessment 处理
+- Progression date 定义
+
+SAP 中通常需要详细描述：
+
+- ORR derivation
+- BOR derivation
+- PFS derivation
+- Confirmation rules，若适用
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Derivation（终点推导）
+
+RECIST 是以下终点推导的基础：
+
+- ORR
+- BOR
+- DOR
+- PFS
+- TTR
+- TTP
+
+因此，RECIST 数据质量直接影响主要疗效分析。
+
+## IRC vs Investigator Assessment
+
+许多注册研究采用：
+
+- Investigator assessment（研究者评估）
+- IRC assessment（独立审评委员会评估）
+
+IRC 可减少开放标签研究中的评价偏倚，因此常作为主要分析依据或敏感性分析。
+
+## Missing Tumor Assessment（缺失影像评估）
+
+SAP 中通常需预先规定：
+
+- 漏做影像如何处理；
+- 是否因连续缺失导致删失（censoring）；
+- 是否需要敏感性分析。
+
+## Assessment Schedule（评估时间）
+
+影像评估时间间隔直接影响：
+
+- PFS
+- DOR
+- TTR
+
+因此 protocol 应尽量统一评估时间，减少 assessment bias。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| RECIST 适用于所有肿瘤 | RECIST 主要适用于实体瘤，不适用于多数血液肿瘤 |
+| PR 表示肿瘤缩小 50% | PR 定义为 SOD 减少 >=30% |
+| PD 仅指肿瘤增大 | 新病灶或非靶病灶明确进展也可判定 PD |
+| ORR 包括 SD | ORR 仅包括 CR 和 PR |
+| RECIST 与 iRECIST 相同 | iRECIST 是针对免疫治疗发展的补充标准 |
+
+# Key Takeaways（总结）
+
+1. RECIST 1.1 是实体瘤疗效评价的国际标准，也是肿瘤临床试验最重要的评价体系之一。
+2. RECIST 将病灶分为 target lesion 和 non-target lesion，并依据影像学变化判定 CR、PR、SD 或 PD。
+3. ORR、BOR、PFS、DOR 等关键终点均建立在 RECIST 评价基础上。
+4. 注册研究中常采用 IRC 评估以减少偏倚，并在 SAP 中详细规定疗效推导规则。
+5. 对 biostatistician 而言，熟悉 RECIST 规则及其与 PFS、ORR、BOR 等终点的关系，是 oncology 统计工作的基础。
+
+# References
+
+1. Eisenhauer EA, et al. New Response Evaluation Criteria in Solid Tumours: Revised RECIST Guideline (Version 1.1). *European Journal of Cancer*. 2009.
+2. RECIST Working Group. RECIST Version 1.1.
+3. U.S. Food and Drug Administration. *Clinical Trial Endpoints for the Approval of Cancer Drugs and Biologics: Guidance for Industry*.
+4. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.

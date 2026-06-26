@@ -245,7 +245,7 @@ Iza-bren在EGFR-mutated NSCLC中具有重要开发项目，但其他癌种通常
 
 ## 是否需要检测EGFR或HER3表达
 
-截至2026年6月，尚无获得广泛验证并正式批准的companion diagnostic用于选择Iza-bren患者。
+截至2026年6月，尚无获得广泛验证并正式批准的[companion diagnostic](../other/Biomarker.qmd#companion-diagnostic伴随诊断)用于选择Iza-bren患者。
 
 目前临床开发仍在评估：
 

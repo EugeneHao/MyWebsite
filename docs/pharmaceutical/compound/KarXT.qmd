@@ -1,0 +1,179 @@
+---
+title: "KarXT（COBENFY）"
+description: "Bristol Myers Squibb 首创毒蕈碱受体机制抗精神分裂症药物简介。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Drug Development
+  - Neuroscience
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**KarXT（xanomeline + trospium chloride；暂无广泛认可的中文通用名；Karuna Therapeutics → [Bristol Myers Squibb](../company/BMS.qmd)；COBENFY）** 是一种口服固定剂量复方药物，由 **Karuna Therapeutics** 开发，后于 2024 年被 [Bristol Myers Squibb, BMS](../company/BMS.qmd) 收购。
+
+KarXT 最初是研发代号，上市后的商品名为 **COBENFY**。2024 年 9 月 26 日，美国 **U.S. Food and Drug Administration, FDA（美国食品药品监督管理局）** 批准其用于治疗成人 **schizophrenia（精神分裂症）**。这是数十年来首个采用全新作用机制获批的精神分裂症药物，并非传统的 dopamine（多巴胺）受体拮抗剂。
+
+# Drug Profile（药物概况）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Xanomeline + trospium chloride |
+| Development code | KarXT |
+| Brand name | COBENFY |
+| 中文通用名 | 暂无广泛认可的中文名称 |
+| Sponsor | [Bristol Myers Squibb（BMS）](../company/BMS.qmd) |
+| Original developer | Karuna Therapeutics |
+| Drug class | Muscarinic receptor-targeting antipsychotic（毒蕈碱受体靶向抗精神病药） |
+| Molecular type | Small-molecule fixed-dose combination（小分子固定复方） |
+| Route | Oral（口服） |
+| Current FDA indication | 成人精神分裂症 |
+| Regulatory status | FDA 已批准；其他国家或地区陆续申请中，截至 2026 年 |
+
+# Mechanism of Action（作用机制）
+
+KarXT 由两种药物组成：
+
+| 成分 | 作用 |
+|---|---|
+| Xanomeline | M1/M4 muscarinic receptor agonist（M1/M4 毒蕈碱受体激动剂） |
+| Trospium chloride | 外周 muscarinic receptor antagonist（外周毒蕈碱受体拮抗剂），降低胃肠道等胆碱能副作用 |
+
+其设计理念是：
+
+- Xanomeline 激活中枢 **M1** 和 **M4** 受体。
+- M4 信号可间接调节 dopamine 神经传导，因此无需直接阻断 D2 receptor（多巴胺 D2 受体）即可改善精神分裂症症状。
+- Trospium 基本不能穿过 blood-brain barrier（血脑屏障），主要阻断外周胆碱能作用，从而减少恶心、呕吐、腹泻等副作用，同时尽量保留中枢疗效。
+
+因此，KarXT 被认为代表了精神分裂症治疗从 **dopamine hypothesis（多巴胺假说）** 向 **cholinergic modulation（胆碱能调节）** 的重要转变。
+
+# Clinical Development（临床开发）
+
+## 已获批适应症
+
+- 成人精神分裂症（FDA，2024）
+
+## 主要注册研究
+
+| Trial | Phase | Population | Comparator | Primary Endpoint | 主要结果 |
+|---|---:|---|---|---|---|
+| EMERGENT-2 | Phase 3 | 成人精神分裂症 | Placebo | PANSS 总分变化 | 达到主要终点 |
+| EMERGENT-3 | Phase 3 | 成人精神分裂症 | Placebo | PANSS 总分变化 | 达到主要终点 |
+| EMERGENT-4 | Open-label extension | 长期安全性 | 无 | Safety | 支持长期安全性 |
+| EMERGENT-5 | Phase 3 | 成人精神分裂症 | Placebo | PANSS 总分变化 | 支持注册 |
+
+主要 III 期研究均显示 KarXT 可显著改善 **Positive and Negative Syndrome Scale, PANSS（阳性与阴性症状量表）** 总分，并最终支持 FDA 批准。
+
+## 后续开发
+
+BMS 正持续探索：
+
+- Alzheimer's disease psychosis（阿尔茨海默病相关精神病）
+- Bipolar disorder（双相情感障碍）
+- 其他精神疾病
+
+值得注意的是，2025 年公布的一项 III 期研究中，KarXT 作为 **add-on therapy（联合治疗）** 加用至现有非典型抗精神病药时未达到主要终点，因此该适应症扩展面临挑战。
+
+# Safety Profile（安全性）
+
+最常见不良事件包括：
+
+| 常见 TEAE | 特点 |
+|---|---|
+| Nausea | 常见，多发生于治疗早期 |
+| Vomiting | 较常见 |
+| Constipation | 常见 |
+| Dyspepsia | 常见 |
+| Dry mouth | 常见 |
+
+相较传统 dopamine antagonist：
+
+**潜在优势**
+
+- 较少出现 extrapyramidal symptoms, EPS（锥体外系反应）
+- 较少出现 tardive dyskinesia（迟发性运动障碍）
+- 体重增加风险相对较低
+- 泌乳素升高风险较低
+
+但仍需关注胆碱能相关胃肠道副作用及泌尿系统不良反应。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+KarXT 的开发具有多个值得生物统计人员关注的特点。
+
+## Primary Endpoint
+
+精神分裂症 III 期研究通常采用：
+
+- **Positive and Negative Syndrome Scale, PANSS（阳性与阴性症状量表）** 总分变化
+- Mixed model for repeated measures, MMRM（重复测量混合模型）分析连续终点
+
+这与肿瘤学常用的 OS、PFS 等 time-to-event endpoint 不同。
+
+## Placebo Effect
+
+精神疾病试验通常 placebo response 较高，因此：
+
+- 随机化设计十分关键
+- 对中心效应控制要求较高
+- Missing data 的处理对结果影响较大
+
+## Safety Evaluation
+
+由于治疗通常持续多年，因此：
+
+- 长期开放标签研究（open-label extension）十分重要
+- 重点关注长期耐受性
+- 监测体重、代谢指标及神经系统安全性
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | 机制 | 是否阻断 D2 | 特点 |
+|---|---|---|---|
+| COBENFY（KarXT） | M1/M4 agonist | 否 | 首创机制 |
+| Risperidone | D2 antagonist | 是 | 经典非典型抗精神病药 |
+| Olanzapine | D2 antagonist | 是 | 疗效较强，但代谢副作用明显 |
+| Aripiprazole | D2 partial agonist | 是 | 部分激动剂 |
+| Clozapine | 多受体作用 | 是 | 难治性精神分裂症标准治疗 |
+
+KarXT 是目前已上市、主要治疗机制完全绕开 D2 受体的新型精神分裂症药物。
+
+# Current Development Status（当前开发状态）
+
+截至 **2026 年 6 月**：
+
+- FDA 已批准用于成人精神分裂症。
+- BMS 正推进全球注册及商业化。
+- 适应症扩展仍在继续，但联合治疗 III 期研究结果提示后续开发仍存在不确定性。
+
+# Key Takeaways
+
+1. KarXT 是 BMS 于收购 Karuna Therapeutics 后获得的重磅神经科学产品。
+2. 上市商品名为 **COBENFY**，2024 年获 FDA 批准治疗成人精神分裂症。
+3. 其通过 **M1/M4 muscarinic receptor** 调节神经信号，而非传统 D2 受体阻断，是几十年来首个全新机制的抗精神病药。
+4. Trospium 的加入可减少外周胆碱能副作用，提高整体耐受性。
+5. 关键 III 期 EMERGENT 项目支持其获批，但后续联合治疗扩展研究未达到主要终点。
+6. 对生物统计学而言，其开发以 PANSS 连续终点、MMRM 分析、长期安全性评价和缺失数据处理为主要特点。
+
+# References
+
+1. U.S. Food and Drug Administration. *FDA Approves Drug with New Mechanism of Action for Treatment of Schizophrenia*. September 26, 2024.  
+   <https://www.fda.gov/news-events/press-announcements/fda-approves-drug-new-mechanism-action-treatment-schizophrenia>
+
+2. Bristol Myers Squibb. *Bristol Myers Squibb Receives U.S. FDA Approval for COBENFY (xanomeline and trospium chloride), a First-in-Class Treatment for Adults with Schizophrenia*. September 26, 2024.  
+   <https://news.bms.com/news/details/2024/Bristol-Myers-Squibb-Receives-U.S.-FDA-Approval-for-COBENFY-xanomeline-and-trospium-chloride-a-First-in-Class-Treatment-for-Adults-with-Schizophrenia/default.aspx>
+
+3. Reuters. *Bristol Myers' Cobenfy fails to meet main goal in add-on treatment schizophrenia trial*. April 22, 2025.  
+   <https://www.reuters.com/business/healthcare-pharmaceuticals/bristol-myers-cobenfy-fails-meet-main-goal-add-on-treatment-schizophrenia-2025-04-22/>
+
+4. Bristol Myers Squibb. *COBENFY Prescribing Information*.  
+   <https://www.bms.com/assets/bms/us/en-us/pdf/cobenfy-prescribing-information.pdf>

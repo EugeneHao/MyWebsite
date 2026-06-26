@@ -6,7 +6,7 @@ title: "PFS"
 
 ### **PFS的定义**
 
-进展无复发生存期（Progression-Free Survival, PFS）是临床试验中常用的一个终点指标，定义为从治疗开始到患者的疾病进展或死亡（无论死因）为止的时间。在临床试验中，PFS是一个重要的衡量标准，用来评估新药或治疗方法的效果。疾病的“进展”可以根据肿瘤的大小、数量的变化或新的肿瘤出现来判断，通常依据预先设定的标准如RECIST（Response Evaluation Criteria In Solid Tumors）。
+进展无复发生存期（Progression-Free Survival, PFS）是临床试验中常用的一个终点指标，定义为从治疗开始到患者的疾病进展或死亡（无论死因）为止的时间。在临床试验中，PFS是一个重要的衡量标准，用来评估新药或治疗方法的效果。疾病的“进展”可以根据肿瘤的大小、数量的变化或新的肿瘤出现来判断，通常依据预先设定的标准如[RECIST（Response Evaluation Criteria In Solid Tumors）](RECIST_1_1.qmd)。
 
 ### **PFS的重要性**
 

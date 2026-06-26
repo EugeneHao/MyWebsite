@@ -1,0 +1,253 @@
+---
+title: "Docetaxel（多西他赛；Sanofi；Taxotere / 泰索帝）"
+description: "介绍 Docetaxel 的作用机制、临床应用、主要临床研究及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Development
+  - Drug Profile
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Docetaxel（多西他赛；[Sanofi](../company/Sanofi.qmd)；Taxotere / 泰索帝）**是一种**taxane（紫杉烷类）化疗药物**，属于**microtubule inhibitor（微管抑制剂）**。
+
+Docetaxel于1995年首次获批上市，是目前应用最广泛的细胞毒化疗药物之一，被广泛用于：
+
+- [Breast cancer（乳腺癌）](../disease/Breast_Cancer.qmd)；
+- [Non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)；
+- prostate cancer（前列腺癌）；
+- gastric cancer（胃癌）；
+- head and neck squamous cell carcinoma, HNSCC（头颈鳞癌）。
+
+在免疫治疗时代，docetaxel虽然已不再是许多瘤种的一线标准治疗，但仍然是大量III期临床试验的重要**active comparator（阳性对照）**，尤其是在晚期NSCLC中。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Docetaxel |
+| 中文通用名 | 多西他赛 |
+| Brand name | Taxotere（原研） |
+| Original developer | Rhône-Poulenc Rorer，后并入Sanofi |
+| Drug class | Taxane chemotherapy |
+| Molecular type | Small molecule |
+| Target | β-tubulin（β微管蛋白） |
+| Mechanism | Stabilizes microtubules and inhibits mitosis |
+| Route | Intravenous infusion（静脉输注） |
+| First approval | 1995年 |
+
+# Mechanism of Action（作用机制）
+
+Docetaxel作用于细胞微管。
+
+正常细胞分裂过程中：
+
+```text
+Tubulin
+   |
+Microtubule polymerization
+   |
+Dynamic assembly/disassembly
+   |
+Mitosis
+```
+
+Docetaxel与β-tubulin结合后：
+
+- 稳定微管；
+- 抑制微管解聚（depolymerization）；
+- 阻止纺锤体正常形成；
+- 使细胞停留于G2/M phase（G2/M期）；
+- 最终诱导细胞凋亡。
+
+由于肿瘤细胞分裂速度快，因此对docetaxel更敏感。
+
+# Pharmacology（药理特点）
+
+| 特点 | 描述 |
+|---|---|
+| 给药方式 | 静脉输注 |
+| 代谢 | CYP3A4为主 |
+| 消除 | 胆汁排泄 |
+| 常用给药周期 | 每3周一次，Q3W |
+| Premedication | Dexamethasone预处理以减少水肿和过敏反应 |
+
+# 临床应用
+
+## Breast Cancer（乳腺癌）
+
+Docetaxel可用于：
+
+- 早期辅助治疗；
+- 新辅助治疗；
+- 转移性乳腺癌。
+
+常见联合方案：
+
+- AC → T；
+- TC（docetaxel + cyclophosphamide）；
+- TCH（docetaxel + carboplatin + trastuzumab）。
+
+## NSCLC（非小细胞肺癌）
+
+Docetaxel曾长期作为晚期NSCLC二线标准治疗。
+
+目前主要用于：
+
+- 免疫治疗失败后；
+- 靶向治疗失败后；
+- 与ramucirumab联合。
+
+大量免疫治疗III期研究均采用docetaxel作为对照组，例如：
+
+- CheckMate 017；
+- CheckMate 057；
+- KEYNOTE-010；
+- OAK；
+- TROPION-Lung01；
+- HARMONi-2。
+
+## Prostate Cancer（前列腺癌）
+
+Docetaxel是以下疾病的重要标准治疗之一：
+
+- metastatic hormone-sensitive prostate cancer, mHSPC；
+- metastatic castration-resistant prostate cancer, mCRPC。
+
+## Gastric Cancer（胃癌）
+
+Docetaxel常作为以下方案组成部分：
+
+- DCF（docetaxel + cisplatin + 5-FU）；
+- FLOT（5-FU + leucovorin + oxaliplatin + docetaxel）。
+
+# 重要临床研究
+
+| Trial | 疾病 | Experimental arm | Comparator | Primary endpoint |
+|---|---|---|---|---|
+| TAX 317 | NSCLC | Docetaxel | Best supportive care | OS |
+| TAX 320 | NSCLC | Docetaxel | Vinorelbine/ifosfamide | OS |
+| CheckMate 017 | Squamous NSCLC | [Nivolumab](Opdivo.qmd) | Docetaxel | OS |
+| CheckMate 057 | Nonsquamous NSCLC | Nivolumab | Docetaxel | OS |
+| KEYNOTE-010 | PD-L1+ NSCLC | [Pembrolizumab](Keytruda.qmd) | Docetaxel | OS |
+| OAK | NSCLC | [Atezolizumab](Tecentriq.qmd) | Docetaxel | OS |
+| TROPION-Lung01 | NSCLC | Datopotamab deruxtecan | Docetaxel | PFS、OS |
+
+Docetaxel已成为肺癌III期研究中最经典的active comparator。
+
+# Safety Profile（安全性）
+
+Docetaxel属于典型细胞毒化疗，其毒性较为明确。
+
+| 系统 | 常见不良事件 |
+|---|---|
+| 血液学 | Neutropenia、febrile neutropenia、anemia |
+| 胃肠道 | Nausea、vomiting、diarrhea |
+| 神经系统 | Peripheral neuropathy |
+| 皮肤 | Alopecia、nail changes |
+| 全身 | Fatigue |
+| 液体潴留 | Edema、pleural effusion |
+| 过敏反应 | Infusion-related reaction |
+
+其中，**neutropenia（中性粒细胞减少）**是最重要的剂量限制性毒性（dose-limiting toxicity）。
+
+# 与Paclitaxel比较
+
+| 特征 | Docetaxel | Paclitaxel |
+|---|---|---|
+| 类别 | Taxane | Taxane |
+| 微管作用 | 稳定微管 | 稳定微管 |
+| Neutropenia | 更常见 | 较少 |
+| Peripheral neuropathy | 较轻 | 更明显 |
+| Premedication | 必需 | 必需 |
+| 给药方案 | Q3W常见 | Weekly或Q3W |
+
+# Clinical Trial Considerations（临床试验考虑）
+
+Docetaxel是许多新药III期研究的标准对照。
+
+常见比较包括：
+
+- PD-1 inhibitor vs docetaxel；
+- PD-L1 inhibitor vs docetaxel；
+- ADC vs docetaxel；
+- TKI vs docetaxel。
+
+因此，在肺癌药物开发中，docetaxel是理解历史研究的重要参照。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Selection（终点选择）
+
+Docetaxel对照研究通常采用：
+
+| Endpoint | 英文全称 | 常见用途 |
+|---|---|---|
+| OS | Overall survival | III期主要终点 |
+| PFS | Progression-free survival | 常见主要终点 |
+| ORR | Objective response rate | 次要终点 |
+| DOR | Duration of response | 次要终点 |
+
+## Active Comparator（阳性对照）
+
+由于docetaxel已长期作为标准后线治疗，因此大量随机III期研究选择其作为active comparator，而不是placebo。
+
+这种设计能够直接评价新治疗是否优于现有标准治疗。
+
+## Safety Analysis（安全性分析）
+
+Docetaxel研究通常重点分析：
+
+- grade >=3 TEAE；
+- febrile neutropenia；
+- dose reduction；
+- dose delay；
+- treatment discontinuation；
+- relative dose intensity, RDI。
+
+## Patient-Reported Outcomes（PRO）
+
+随着免疫治疗和ADC的发展，越来越多研究纳入：
+
+- symptoms；
+- quality of life, QoL；
+- physical functioning。
+
+用于证明新治疗不仅延长生存，还改善患者生活质量。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| Docetaxel是靶向治疗 | Docetaxel属于传统细胞毒化疗 |
+| Docetaxel与paclitaxel完全相同 | 两者均属于taxane，但毒性谱和临床应用存在差异 |
+| 免疫治疗时代已不用docetaxel | 在后线NSCLC、前列腺癌等领域仍有重要作用，并广泛作为III期研究对照 |
+| Docetaxel毒性不可管理 | 通过预防性G-CSF、糖皮质激素预处理及剂量调整，可显著降低毒性风险 |
+
+# Key Takeaways（总结）
+
+1. Docetaxel是经典taxane化疗药物，通过稳定微管抑制细胞分裂。
+2. 它广泛用于乳腺癌、NSCLC、前列腺癌、胃癌及头颈癌等多种肿瘤。
+3. 虽然免疫治疗和靶向治疗已改变治疗格局，docetaxel仍是晚期NSCLC等疾病的重要后线治疗和III期临床试验标准对照。
+4. 最重要的不良事件包括中性粒细胞减少、发热性中性粒细胞减少、外周神经病变及液体潴留。
+5. 生物统计学上，docetaxel是肿瘤III期研究中最经典的active comparator，也是理解免疫治疗和ADC临床获益的重要基准。
+
+# References
+
+1. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.
+2. Shepherd FA, et al. Prospective randomized trial of docetaxel versus best supportive care in patients with non-small-cell lung cancer previously treated with platinum-based chemotherapy. *Journal of Clinical Oncology*. 2000.
+3. Brahmer J, et al. Nivolumab versus docetaxel in advanced squamous non-small-cell lung cancer. *New England Journal of Medicine*. 2015.
+4. Borghaei H, et al. Nivolumab versus docetaxel in advanced nonsquamous non-small-cell lung cancer. *New England Journal of Medicine*. 2015.
+5. Herbst RS, et al. Pembrolizumab versus docetaxel for previously treated PD-L1-positive non-small-cell lung cancer. *Lancet*. 2016.
+6. Rittmeyer A, et al. Atezolizumab versus docetaxel in patients with previously treated non-small-cell lung cancer (OAK). *Lancet*. 2017.

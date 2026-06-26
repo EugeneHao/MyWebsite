@@ -8,7 +8,7 @@ title: "Revlimid"
 
 ## 作用机制（Mechanism of Action）
 
-利妥昔单抗的作用机制涉及多种生物学途径。它能够刺激免疫系统，抑制炎症反应，并对肿瘤微环境产生影响。这包括增强T细胞和自然杀伤细胞（Natural Killer Cells）的活性，抑制血管生成（Angiogenesis），以及直接对癌细胞产生毒性效应。
+利妥昔单抗的作用机制涉及多种生物学途径。它能够刺激免疫系统，抑制炎症反应，并对[肿瘤微环境](../other/TME.qmd)产生影响。这包括增强T细胞和自然杀伤细胞（Natural Killer Cells）的活性，抑制血管生成（Angiogenesis），以及直接对癌细胞产生毒性效应。
 
 ## 适应症（Indications）
 

@@ -24,7 +24,7 @@ bibliography: ../../../references.bib
 
 与传统**PD-1/[PD-L1](../target/PD-L1.qmd) inhibitor（PD-1/PD-L1抑制剂）**不同，Ivonescimab可同时：
 
-- 阻断PD-1免疫检查点，恢复T细胞抗肿瘤免疫；
+- 阻断PD-1[免疫检查点](../other/Immune_Checkpoint.qmd)，恢复T细胞抗肿瘤免疫；
 - 阻断VEGF信号，抑制肿瘤血管生成，并改善肿瘤免疫微环境。
 
 由于同时作用于[免疫治疗](../other/Immunotherapy.qmd)和抗血管生成两条经典通路，Ivonescimab被认为是PD-1×VEGF双抗领域的代表性产品。
@@ -178,7 +178,7 @@ HARMONi-2是PD-1×VEGF双抗与pembrolizumab进行头对头比较的III期研究
 |---|---|---|---|
 | [Pembrolizumab](Keytruda.qmd) | PD-1 | [Merck](../company/Merck.qmd) | 全球标准治疗 |
 | [Nivolumab](Opdivo.qmd) | PD-1 | [Bristol Myers Squibb](../company/BMS.qmd) | 多瘤种 |
-| [Cadonilimab](Cadonilimab.qmd) | PD-1×CTLA-4 | [Akeso](../company/Akeso.qmd) | 双免疫检查点 |
+| [Cadonilimab](Cadonilimab.qmd) | PD-1×CTLA-4 | [Akeso](../company/Akeso.qmd) | 双[免疫检查点](../other/Immune_Checkpoint.qmd) |
 | Ivonescimab | PD-1×VEGF | [Akeso](../company/Akeso.qmd) / [Summit](../company/Summit_Therapeutics.qmd) | 双机制协同 |
 | [Bevacizumab](Avastin.qmd) + PD-1 | VEGF + PD-1 | 联合治疗 | 两个药分别给药 |
 
@@ -190,7 +190,7 @@ Ivonescimab最大优势在于：
 
 # 与Pumitamig的区别
 
-[Pumitamig](Pumitamig.qmd)同样是免疫检查点与VEGF轴相关的双特异性药物，但二者靶点并不相同。
+[Pumitamig](Pumitamig.qmd)同样是[免疫检查点](../other/Immune_Checkpoint.qmd)与VEGF轴相关的双特异性药物，但二者靶点并不相同。
 
 | 特征 | Ivonescimab | Pumitamig |
 |---|---|---|

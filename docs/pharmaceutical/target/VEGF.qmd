@@ -198,7 +198,7 @@ VEGF up
 
 # VEGF作为Biomarker（生物标志物）
 
-尽管VEGF是重要治疗靶点，但目前并不是成熟的伴随诊断生物标志物。
+尽管VEGF是重要治疗靶点，但目前并不是成熟的[伴随诊断生物标志物](../other/Biomarker.qmd#companion-diagnostic伴随诊断)。
 
 原因包括：
 
@@ -249,7 +249,7 @@ VEGF up
 
 ## Biomarker Analysis（生物标志物分析）
 
-虽然VEGF本身尚未成为成熟预测性生物标志物，但研究中常探索：
+虽然VEGF本身尚未成为成熟[预测性生物标志物](../other/Biomarker.qmd#按临床用途分类)，但研究中常探索：
 
 - VEGF expression；
 - VEGFR expression；
@@ -275,12 +275,12 @@ PD-1/VEGF联合治疗试验通常需考虑：
 | 所有抗VEGF药物机制相同 | 有的靶向VEGF-A，有的靶向VEGFR，还有多靶点TKI |
 | VEGF高表达患者一定获益更多 | 目前缺乏稳定证据支持 |
 | 抗VEGF治疗等同于化疗 | 抗VEGF属于靶向治疗，通过抑制血管生成发挥作用 |
-| VEGF与PD-L1是同一类靶点 | VEGF调控血管生成和免疫微环境，PD-L1属于免疫检查点，两者机制不同但具有协同作用 |
+| VEGF与PD-L1是同一类靶点 | VEGF调控血管生成和免疫微环境，PD-L1属于[免疫检查点](../other/Immune_Checkpoint.qmd)，两者机制不同但具有协同作用 |
 
 # Key Takeaways（总结）
 
 1. VEGF是肿瘤血管生成最重要的驱动因子，也是实体瘤靶向治疗的重要靶点。
-2. VEGF不仅促进新生血管形成，还通过调节肿瘤微环境抑制抗肿瘤免疫。
+2. VEGF不仅促进新生血管形成，还通过调节[肿瘤微环境](../other/TME.qmd)抑制抗肿瘤免疫。
 3. 抗VEGF药物包括单克隆抗体、VEGFR-TKI及新型PD-1 × VEGF或PD-L1 × VEGF-A双特异性抗体。
 4. VEGF与PD-1/PD-L1通路具有显著协同作用，因此联合治疗已成为当前肿瘤治疗的重要方向。
 5. 生物统计学上需重点关注PFS、OS、安全性监测及联合治疗试验中的多重性控制和亚组分析。

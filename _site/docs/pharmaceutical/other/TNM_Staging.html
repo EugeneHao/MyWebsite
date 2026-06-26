@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hao Sun">
+<meta name="dcterms.date" content="2026-06-25">
+<meta name="description" content="介绍 TNM 分期系统的基本概念、组成、临床意义及在肿瘤临床试验中的应用。">
+
+<title>TNM Staging（TNM 分期） – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/pharmaceutical/other/ECOG_Performance_Status.html" rel="next">
+<link href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="TNM Staging（TNM 分期） – Hao Sun">
+<meta property="og:description" content="介绍 TNM 分期系统的基本概念、组成、临床意义及在肿瘤临床试验中的应用。">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="TNM Staging（TNM 分期） – Hao Sun">
+<meta name="twitter:description" content="介绍 TNM 分期系统的基本概念、组成、临床意义及在肿瘤临床试验中的应用。">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Clinical Trial</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/TNM_Staging.html">TNM Staging</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharmaceutical Content</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Company</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/BMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BMS</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Eliquis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eliquis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Opdivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opdivo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Reblozyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reblozyl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Revlimid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revlimid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Yervoy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yervoy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Onureg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onureg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Inrebic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inrebic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Iberdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iberdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mezigdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mezigdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Alnuctamab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alnuctamab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Abecma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abecma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Breyanzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breyanzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Krazati.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Krazati</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/KarXT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KarXT (COBENFY)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Pumitamig.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pumitamig</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Izalontamab_Brengitecan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Izalontamab Brengitecan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Akeso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Akeso</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cadonilimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cadonilimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Summit_Therapeutics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summit Therapeutics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Merck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Keytruda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keytruda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Januvia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Januvia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Gardasil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gardasil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Pneumovax</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/AstraZeneca.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AstraZeneca</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Imfinzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Imfinzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/J &amp; J.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">J &amp; J</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carvykti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carvykti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecvayli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecvayli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Darzalex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Darzalex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Remicade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remicade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Stelara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stelara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xarelto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xarelto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Bortezomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bortezomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Pfizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pfizer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mylotarg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mylotarg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Comirnaty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comirnaty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Prevnar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prevnar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ibrance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ibrance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xeljanz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xeljanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xalkori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xalkori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Sirolimus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sirolimus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Roche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roche</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecentriq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecentriq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Rituxan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rituxan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Herceptin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Herceptin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Avastin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avastin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Zelboraf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zelboraf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cotellic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cotellic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Abbvie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbvie</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Humira.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Humira</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/GSK.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tafinlar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tafinlar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Novartis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Novartis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mekinist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mekinist</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Sanofi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sanofi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Docetaxel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxotere</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+ <span class="menu-text">Incyte</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Jakafi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jakafi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vertex</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Kalydeco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kalydeco</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Regeneron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regeneron</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Gilead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gilead</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">Amgen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carfilzomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carfilzomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Regulatory</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-compound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Compound</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Venclexta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Venclexta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bone Marrow</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Leukemia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leukemia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lymphoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/MDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Myelodysplastic Syndromes (MDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Myeloma (MM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Melanoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Melanoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Breast_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breast Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lung Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/NSCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-Small Cell Lung Cancer (NSCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/SCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Cell Lung Cancer (SCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Type 2 Diabete Mellitus (T2DM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Thrombosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thrombosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/PD-L1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PD-L1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/VEGF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VEGF</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/HER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HER Family</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/TROP2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TROP2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/KRAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDTM</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true">
+ <span class="menu-text">Wiki</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Drug Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ADC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody-Drug Conjugates (ADC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CAR-T</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immune Checkpoint</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunotherapy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/MAT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monoclonal Antibody Therapy (MAT)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/TME.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tumor Microenvironment (TME)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="true">
+ <span class="menu-text">Clinical Trial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adverse Event by SOC and PT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intercurrent Events</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/TNM_Staging.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">TNM Staging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ECOG_Performance_Status.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ECOG Performance Status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/RECIST_1_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RECIST 1.1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Endpoint</span></span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/pharma_note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharma Note</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/Naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drug Naming Rules</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#概述" id="toc-概述" class="nav-link active" data-scroll-target="#概述"><span class="header-section-number">1</span> 概述</a></li>
+  <li><a href="#key-terminology关键术语" id="toc-key-terminology关键术语" class="nav-link" data-scroll-target="#key-terminology关键术语"><span class="header-section-number">2</span> Key Terminology（关键术语）</a></li>
+  <li><a href="#tnm的基本组成" id="toc-tnm的基本组成" class="nav-link" data-scroll-target="#tnm的基本组成"><span class="header-section-number">3</span> TNM的基本组成</a>
+  <ul class="collapse">
+  <li><a href="#tprimary-tumor" id="toc-tprimary-tumor" class="nav-link" data-scroll-target="#tprimary-tumor"><span class="header-section-number">3.1</span> T（Primary Tumor）</a></li>
+  <li><a href="#nregional-lymph-nodes" id="toc-nregional-lymph-nodes" class="nav-link" data-scroll-target="#nregional-lymph-nodes"><span class="header-section-number">3.2</span> N（Regional Lymph Nodes）</a></li>
+  <li><a href="#mdistant-metastasis" id="toc-mdistant-metastasis" class="nav-link" data-scroll-target="#mdistant-metastasis"><span class="header-section-number">3.3</span> M（Distant Metastasis）</a></li>
+  </ul></li>
+  <li><a href="#stage-group分期分组" id="toc-stage-group分期分组" class="nav-link" data-scroll-target="#stage-group分期分组"><span class="header-section-number">4</span> Stage Group（分期分组）</a></li>
+  <li><a href="#clinical-stage与pathologic-stage" id="toc-clinical-stage与pathologic-stage" class="nav-link" data-scroll-target="#clinical-stage与pathologic-stage"><span class="header-section-number">5</span> Clinical Stage与Pathologic Stage</a></li>
+  <li><a href="#tnm分期在肺癌中的应用" id="toc-tnm分期在肺癌中的应用" class="nav-link" data-scroll-target="#tnm分期在肺癌中的应用"><span class="header-section-number">6</span> TNM分期在肺癌中的应用</a>
+  <ul class="collapse">
+  <li><a href="#t分期简化" id="toc-t分期简化" class="nav-link" data-scroll-target="#t分期简化"><span class="header-section-number">6.1</span> T分期（简化）</a></li>
+  <li><a href="#n分期" id="toc-n分期" class="nav-link" data-scroll-target="#n分期"><span class="header-section-number">6.2</span> N分期</a></li>
+  <li><a href="#m分期" id="toc-m分期" class="nav-link" data-scroll-target="#m分期"><span class="header-section-number">6.3</span> M分期</a></li>
+  </ul></li>
+  <li><a href="#tnm与治疗策略" id="toc-tnm与治疗策略" class="nav-link" data-scroll-target="#tnm与治疗策略"><span class="header-section-number">7</span> TNM与治疗策略</a></li>
+  <li><a href="#clinical-trial-considerations临床试验考虑" id="toc-clinical-trial-considerations临床试验考虑" class="nav-link" data-scroll-target="#clinical-trial-considerations临床试验考虑"><span class="header-section-number">8</span> Clinical Trial Considerations（临床试验考虑）</a></li>
+  <li><a href="#biostatistical-considerations生物统计学考虑" id="toc-biostatistical-considerations生物统计学考虑" class="nav-link" data-scroll-target="#biostatistical-considerations生物统计学考虑"><span class="header-section-number">9</span> Biostatistical Considerations（生物统计学考虑）</a>
+  <ul class="collapse">
+  <li><a href="#stratification随机化分层" id="toc-stratification随机化分层" class="nav-link" data-scroll-target="#stratification随机化分层"><span class="header-section-number">9.1</span> Stratification（随机化分层）</a></li>
+  <li><a href="#subgroup-analysis亚组分析" id="toc-subgroup-analysis亚组分析" class="nav-link" data-scroll-target="#subgroup-analysis亚组分析"><span class="header-section-number">9.2</span> Subgroup Analysis（亚组分析）</a></li>
+  <li><a href="#covariate-adjustment协变量调整" id="toc-covariate-adjustment协变量调整" class="nav-link" data-scroll-target="#covariate-adjustment协变量调整"><span class="header-section-number">9.3</span> Covariate Adjustment（协变量调整）</a></li>
+  <li><a href="#prognostic-factor预后因素" id="toc-prognostic-factor预后因素" class="nav-link" data-scroll-target="#prognostic-factor预后因素"><span class="header-section-number">9.4</span> Prognostic Factor（预后因素）</a></li>
+  </ul></li>
+  <li><a href="#common-pitfalls常见误区" id="toc-common-pitfalls常见误区" class="nav-link" data-scroll-target="#common-pitfalls常见误区"><span class="header-section-number">10</span> Common Pitfalls（常见误区）</a></li>
+  <li><a href="#key-takeaways总结" id="toc-key-takeaways总结" class="nav-link" data-scroll-target="#key-takeaways总结"><span class="header-section-number">11</span> Key Takeaways（总结）</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">12</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Clinical Trial</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/other/TNM_Staging.html">TNM Staging</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">TNM Staging（TNM 分期）</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Oncology</div>
+    <div class="quarto-category">Disease Overview</div>
+    <div class="quarto-category">Clinical Trials</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    介绍 TNM 分期系统的基本概念、组成、临床意义及在肿瘤临床试验中的应用。
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hao Sun </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 25, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="概述" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 概述</h1>
+<p><strong>TNM staging（TNM分期）</strong>是目前全球应用最广泛的恶性肿瘤分期系统，由<strong>American Joint Committee on Cancer, AJCC（美国癌症联合委员会）</strong>和<strong>Union for International Cancer Control, UICC（国际抗癌联盟）</strong>共同制定和更新。</p>
+<p>TNM分期通过评价：</p>
+<ul>
+<li><strong>T（primary tumor，原发肿瘤）</strong>；</li>
+<li><strong>N（regional lymph nodes，区域淋巴结）</strong>；</li>
+<li><strong>M（distant metastasis，远处转移）</strong>；</li>
+</ul>
+<p>三个维度，描述肿瘤扩散程度，并进一步划分为Stage I-IV。</p>
+<p>TNM分期不仅影响患者预后，也是决定治疗策略、临床试验入组标准和统计分析的重要依据。</p>
+</section>
+<section id="key-terminology关键术语" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Key Terminology（关键术语）</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>缩写</th>
+<th>英文全称</th>
+<th>中文解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T</td>
+<td>Primary tumor</td>
+<td>原发肿瘤</td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td>Regional lymph nodes</td>
+<td>区域淋巴结</td>
+</tr>
+<tr class="odd">
+<td>M</td>
+<td>Distant metastasis</td>
+<td>远处转移</td>
+</tr>
+<tr class="even">
+<td>AJCC</td>
+<td>American Joint Committee on Cancer</td>
+<td>美国癌症联合委员会</td>
+</tr>
+<tr class="odd">
+<td>UICC</td>
+<td>Union for International Cancer Control</td>
+<td>国际抗癌联盟</td>
+</tr>
+<tr class="even">
+<td>Clinical stage, cTNM</td>
+<td>Clinical TNM staging</td>
+<td>临床分期</td>
+</tr>
+<tr class="odd">
+<td>Pathologic stage, pTNM</td>
+<td>Pathologic TNM staging</td>
+<td>病理分期</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tnm的基本组成" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> TNM的基本组成</h1>
+<p>TNM分期由三个独立维度组成。</p>
+<section id="tprimary-tumor" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="tprimary-tumor"><span class="header-section-number">3.1</span> T（Primary Tumor）</h2>
+<p>T描述原发肿瘤的大小及局部侵犯范围。</p>
+<p>一般而言：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分级</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tis</td>
+<td>原位癌（carcinoma in situ）</td>
+</tr>
+<tr class="even">
+<td>T1</td>
+<td>较小、局限性肿瘤</td>
+</tr>
+<tr class="odd">
+<td>T2</td>
+<td>肿瘤较大或侵犯邻近结构</td>
+</tr>
+<tr class="even">
+<td>T3</td>
+<td>局部侵犯进一步增加</td>
+</tr>
+<tr class="odd">
+<td>T4</td>
+<td>广泛侵犯邻近重要组织或器官</td>
+</tr>
+</tbody>
+</table>
+<p>不同癌种对T1、T2、T3、T4的具体定义不同。例如肺癌主要依据肿瘤大小及侵犯范围，而乳腺癌主要依据肿瘤直径。</p>
+</section>
+<section id="nregional-lymph-nodes" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="nregional-lymph-nodes"><span class="header-section-number">3.2</span> N（Regional Lymph Nodes）</h2>
+<p>N描述区域淋巴结受累情况。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分级</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>N0</td>
+<td>无区域淋巴结转移</td>
+</tr>
+<tr class="even">
+<td>N1</td>
+<td>少量区域淋巴结受累</td>
+</tr>
+<tr class="odd">
+<td>N2</td>
+<td>更多区域淋巴结受累</td>
+</tr>
+<tr class="even">
+<td>N3</td>
+<td>广泛区域淋巴结受累</td>
+</tr>
+</tbody>
+</table>
+<p>N分期通常反映疾病局部扩散程度，也是影响预后的重要因素。</p>
+</section>
+<section id="mdistant-metastasis" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="mdistant-metastasis"><span class="header-section-number">3.3</span> M（Distant Metastasis）</h2>
+<p>M描述是否存在远处转移。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分级</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>M0</td>
+<td>无远处转移</td>
+</tr>
+<tr class="even">
+<td>M1</td>
+<td>存在远处转移</td>
+</tr>
+</tbody>
+</table>
+<p>多数实体瘤中：</p>
+<blockquote class="blockquote">
+<p><strong>M1即属于Stage IV（IV期）</strong>。</p>
+</blockquote>
+</section>
+</section>
+<section id="stage-group分期分组" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Stage Group（分期分组）</h1>
+<p>TNM最终组合形成临床分期。</p>
+<p>一般规律如下，不同癌种略有差异：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>一般特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stage 0</td>
+<td>原位癌</td>
+</tr>
+<tr class="even">
+<td>Stage I</td>
+<td>早期局限性肿瘤</td>
+</tr>
+<tr class="odd">
+<td>Stage II</td>
+<td>肿瘤较大或局部扩散</td>
+</tr>
+<tr class="even">
+<td>Stage III</td>
+<td>明显区域淋巴结受累或局部晚期</td>
+</tr>
+<tr class="odd">
+<td>Stage IV</td>
+<td>存在远处转移</td>
+</tr>
+</tbody>
+</table>
+<p>需要注意：不同癌种的stage分组规则并不完全相同，应依据对应AJCC/UICC分期手册。</p>
+</section>
+<section id="clinical-stage与pathologic-stage" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Clinical Stage与Pathologic Stage</h1>
+<p>TNM可分为不同类型。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>缩写</th>
+<th>获得方式</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clinical stage</td>
+<td>cTNM</td>
+<td>体检、影像学、内镜、活检等</td>
+</tr>
+<tr class="even">
+<td>Pathologic stage</td>
+<td>pTNM</td>
+<td>手术切除后的病理检查</td>
+</tr>
+<tr class="odd">
+<td>Post-neoadjuvant stage</td>
+<td>ypTNM</td>
+<td>新辅助治疗后的病理分期</td>
+</tr>
+<tr class="even">
+<td>Recurrent stage</td>
+<td>rTNM</td>
+<td>肿瘤复发后的分期</td>
+</tr>
+</tbody>
+</table>
+<p>通常：</p>
+<ul>
+<li>手术前使用cTNM；</li>
+<li>手术后使用pTNM；</li>
+<li>新辅助治疗后使用ypTNM。</li>
+</ul>
+</section>
+<section id="tnm分期在肺癌中的应用" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> TNM分期在肺癌中的应用</h1>
+<p><a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html">肺癌</a>是TNM分期应用最典型的疾病之一。</p>
+<section id="t分期简化" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="t分期简化"><span class="header-section-number">6.1</span> T分期（简化）</h2>
+<p>主要依据：</p>
+<ul>
+<li>肿瘤大小；</li>
+<li>是否侵犯胸膜；</li>
+<li>是否侵犯胸壁；</li>
+<li>是否侵犯纵隔；</li>
+<li>是否侵犯主支气管等。</li>
+</ul>
+</section>
+<section id="n分期" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="n分期"><span class="header-section-number">6.2</span> N分期</h2>
+<p>依据淋巴结位置：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分级</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>N0</td>
+<td>无淋巴结转移</td>
+</tr>
+<tr class="even">
+<td>N1</td>
+<td>同侧肺门或肺内淋巴结</td>
+</tr>
+<tr class="odd">
+<td>N2</td>
+<td>同侧纵隔淋巴结</td>
+</tr>
+<tr class="even">
+<td>N3</td>
+<td>对侧纵隔、锁骨上等淋巴结</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="m分期" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="m分期"><span class="header-section-number">6.3</span> M分期</h2>
+<p>依据是否存在：</p>
+<ul>
+<li>对侧肺转移；</li>
+<li>脑转移；</li>
+<li>骨转移；</li>
+<li>肝转移；</li>
+<li>肾上腺转移等。</li>
+</ul>
+</section>
+</section>
+<section id="tnm与治疗策略" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> TNM与治疗策略</h1>
+<p>TNM分期直接决定治疗方案。</p>
+<p>以<a href="../../../docs/pharmaceutical/disease/NSCLC.html">NSCLC</a>为例：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分期</th>
+<th>常见治疗策略</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stage I</td>
+<td>手术 ± 辅助治疗</td>
+</tr>
+<tr class="even">
+<td>Stage II</td>
+<td>手术 + 辅助化疗 ± 靶向/免疫治疗</td>
+</tr>
+<tr class="odd">
+<td>Stage III</td>
+<td>放化疗、围手术期治疗、巩固免疫治疗等</td>
+</tr>
+<tr class="even">
+<td>Stage IV</td>
+<td>全身治疗，包括靶向治疗、免疫治疗、化疗等</td>
+</tr>
+</tbody>
+</table>
+<p>因此，在protocol中通常会明确规定允许入组的TNM分期。</p>
+</section>
+<section id="clinical-trial-considerations临床试验考虑" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Clinical Trial Considerations（临床试验考虑）</h1>
+<p>TNM分期广泛用于临床试验设计。</p>
+<p>主要应用包括：</p>
+<ul>
+<li>eligibility criteria（入组标准）；</li>
+<li>stratification factors（随机化分层因素）；</li>
+<li>prespecified subgroup analysis（预设亚组分析）；</li>
+<li>baseline characteristics（基线特征描述）；</li>
+<li>covariate adjustment（协变量调整）。</li>
+</ul>
+<p>例如：</p>
+<ul>
+<li>仅纳入Stage IV NSCLC；</li>
+<li>或仅纳入unresectable Stage III NSCLC。</li>
+</ul>
+</section>
+<section id="biostatistical-considerations生物统计学考虑" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Biostatistical Considerations（生物统计学考虑）</h1>
+<section id="stratification随机化分层" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="stratification随机化分层"><span class="header-section-number">9.1</span> Stratification（随机化分层）</h2>
+<p>TNM分期常作为随机化分层因素。</p>
+<p>例如：</p>
+<ul>
+<li>Stage III vs Stage IV；</li>
+<li>limited-stage vs extensive-stage（<a href="../../../docs/pharmaceutical/disease/SCLC.html">SCLC</a>）。</li>
+</ul>
+<p>以提高治疗组之间的可比性。</p>
+</section>
+<section id="subgroup-analysis亚组分析" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="subgroup-analysis亚组分析"><span class="header-section-number">9.2</span> Subgroup Analysis（亚组分析）</h2>
+<p>TNM分期也是最常见的预设亚组之一。</p>
+<p>例如：</p>
+<ul>
+<li>Stage II；</li>
+<li>Stage III；</li>
+<li>Stage IV。</li>
+</ul>
+<p>用于评估不同疾病阶段患者的治疗效果是否一致。</p>
+</section>
+<section id="covariate-adjustment协变量调整" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="covariate-adjustment协变量调整"><span class="header-section-number">9.3</span> Covariate Adjustment（协变量调整）</h2>
+<p>在Cox proportional hazards model（Cox比例风险模型）或其他回归模型中，TNM分期常作为协变量进行调整，以减少混杂因素影响。</p>
+</section>
+<section id="prognostic-factor预后因素" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="prognostic-factor预后因素"><span class="header-section-number">9.4</span> Prognostic Factor（预后因素）</h2>
+<p>TNM分期通常是影响以下终点的最重要预后因素之一：</p>
+<ul>
+<li>overall survival, OS；</li>
+<li>progression-free survival, PFS。</li>
+</ul>
+<p>因此在统计分析和结果解释中需要重点考虑。</p>
+</section>
+</section>
+<section id="common-pitfalls常见误区" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Common Pitfalls（常见误区）</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>误区</th>
+<th>正确理解</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TNM只适用于肺癌</td>
+<td>TNM适用于多数实体瘤，但具体定义因癌种不同而不同</td>
+</tr>
+<tr class="even">
+<td>T仅表示肿瘤大小</td>
+<td>T还包括局部侵犯范围</td>
+</tr>
+<tr class="odd">
+<td>N数值越大表示淋巴结数量越多</td>
+<td>N更强调淋巴结的位置和受累范围，而非单纯数量</td>
+</tr>
+<tr class="even">
+<td>M1一定意味着无法治疗</td>
+<td>M1表示远处转移，但仍可能接受靶向治疗、免疫治疗或局部综合治疗</td>
+</tr>
+<tr class="odd">
+<td>所有癌种的Stage I-IV定义相同</td>
+<td>Stage分组依据不同癌种的TNM组合确定，不能直接套用</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-takeaways总结" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Key Takeaways（总结）</h1>
+<ol type="1">
+<li>TNM分期是全球最常用的实体瘤分期系统，由T、N、M三部分组成。</li>
+<li>T描述原发肿瘤，N描述区域淋巴结，M描述远处转移。</li>
+<li>TNM分期直接决定治疗策略、预后评估及临床试验设计。</li>
+<li>在oncology临床研究中，TNM常用于入组标准、随机化分层及亚组分析。</li>
+<li>对biostatistician而言，理解TNM分期的临床意义比记忆具体分期标准更重要，不同癌种的TNM定义需分别学习。</li>
+</ol>
+</section>
+<section id="references" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> References</h1>
+<ol type="1">
+<li>Amin MB, et al.&nbsp;<em>AJCC Cancer Staging Manual</em>. 8th edition.</li>
+<li>Union for International Cancer Control. <em>TNM Classification of Malignant Tumours</em>. 8th edition.</li>
+<li>National Comprehensive Cancer Network. <em>NCCN Clinical Practice Guidelines in Oncology</em>.</li>
+<li>Goldstraw P, et al.&nbsp;The IASLC Lung Cancer Staging Project. <em>Journal of Thoracic Oncology</em>. 2016.</li>
+</ol>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="pagination-link" aria-label="Intercurrent Events">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Intercurrent Events</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/pharmaceutical/other/ECOG_Performance_Status.html" class="pagination-link" aria-label="ECOG Performance Status">
+        <span class="nav-page-text">ECOG Performance Status</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "TNM Staging（TNM 分期）"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "介绍 TNM 分期系统的基本概念、组成、临床意义及在肿瘤临床试验中的应用。"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Hao Sun"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Oncology</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Disease Overview</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Clinical Trials</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../../../references.bib</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu"># 概述</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>**TNM staging（TNM分期）**是目前全球应用最广泛的恶性肿瘤分期系统，由**American Joint Committee on Cancer, AJCC（美国癌症联合委员会）**和**Union for International Cancer Control, UICC（国际抗癌联盟）**共同制定和更新。</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>TNM分期通过评价：</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**T（primary tumor，原发肿瘤）**；</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**N（regional lymph nodes，区域淋巴结）**；</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**M（distant metastasis，远处转移）**；</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>三个维度，描述肿瘤扩散程度，并进一步划分为Stage I-IV。</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>TNM分期不仅影响患者预后，也是决定治疗策略、临床试验入组标准和统计分析的重要依据。</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Terminology（关键术语）</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>| 缩写 | 英文全称 | 中文解释 |</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>| T | Primary tumor | 原发肿瘤 |</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>| N | Regional lymph nodes | 区域淋巴结 |</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>| M | Distant metastasis | 远处转移 |</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>| AJCC | American Joint Committee on Cancer | 美国癌症联合委员会 |</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>| UICC | Union for International Cancer Control | 国际抗癌联盟 |</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>| Clinical stage, cTNM | Clinical TNM staging | 临床分期 |</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>| Pathologic stage, pTNM | Pathologic TNM staging | 病理分期 |</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu"># TNM的基本组成</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>TNM分期由三个独立维度组成。</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## T（Primary Tumor）</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>T描述原发肿瘤的大小及局部侵犯范围。</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>一般而言：</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>| 分级 | 含义 |</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>| Tis | 原位癌（carcinoma in situ） |</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>| T1 | 较小、局限性肿瘤 |</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>| T2 | 肿瘤较大或侵犯邻近结构 |</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>| T3 | 局部侵犯进一步增加 |</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>| T4 | 广泛侵犯邻近重要组织或器官 |</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>不同癌种对T1、T2、T3、T4的具体定义不同。例如肺癌主要依据肿瘤大小及侵犯范围，而乳腺癌主要依据肿瘤直径。</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## N（Regional Lymph Nodes）</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>N描述区域淋巴结受累情况。</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>| 分级 | 含义 |</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>| N0 | 无区域淋巴结转移 |</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>| N1 | 少量区域淋巴结受累 |</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>| N2 | 更多区域淋巴结受累 |</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>| N3 | 广泛区域淋巴结受累 |</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>N分期通常反映疾病局部扩散程度，也是影响预后的重要因素。</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">## M（Distant Metastasis）</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>M描述是否存在远处转移。</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>| 分级 | 含义 |</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>| M0 | 无远处转移 |</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>| M1 | 存在远处转移 |</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>多数实体瘤中：</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **M1即属于Stage IV（IV期）**。</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu"># Stage Group（分期分组）</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>TNM最终组合形成临床分期。</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>一般规律如下，不同癌种略有差异：</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>| Stage | 一般特点 |</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>| Stage 0 | 原位癌 |</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>| Stage I | 早期局限性肿瘤 |</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>| Stage II | 肿瘤较大或局部扩散 |</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>| Stage III | 明显区域淋巴结受累或局部晚期 |</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>| Stage IV | 存在远处转移 |</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>需要注意：不同癌种的stage分组规则并不完全相同，应依据对应AJCC/UICC分期手册。</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Stage与Pathologic Stage</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>TNM可分为不同类型。</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>| 类型 | 缩写 | 获得方式 |</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>| Clinical stage | cTNM | 体检、影像学、内镜、活检等 |</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>| Pathologic stage | pTNM | 手术切除后的病理检查 |</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>| Post-neoadjuvant stage | ypTNM | 新辅助治疗后的病理分期 |</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>| Recurrent stage | rTNM | 肿瘤复发后的分期 |</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>通常：</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>手术前使用cTNM；</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>手术后使用pTNM；</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>新辅助治疗后使用ypTNM。</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu"># TNM分期在肺癌中的应用</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">肺癌</span><span class="co">](../disease/Lung_Cancer.qmd)</span>是TNM分期应用最典型的疾病之一。</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## T分期（简化）</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>主要依据：</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>肿瘤大小；</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否侵犯胸膜；</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否侵犯胸壁；</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否侵犯纵隔；</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否侵犯主支气管等。</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## N分期</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>依据淋巴结位置：</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>| 分级 | 说明 |</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>| N0 | 无淋巴结转移 |</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>| N1 | 同侧肺门或肺内淋巴结 |</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>| N2 | 同侧纵隔淋巴结 |</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>| N3 | 对侧纵隔、锁骨上等淋巴结 |</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="fu">## M分期</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>依据是否存在：</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>对侧肺转移；</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>脑转移；</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>骨转移；</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>肝转移；</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>肾上腺转移等。</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="fu"># TNM与治疗策略</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>TNM分期直接决定治疗方案。</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>以<span class="co">[</span><span class="ot">NSCLC</span><span class="co">](../disease/NSCLC.qmd)</span>为例：</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>| 分期 | 常见治疗策略 |</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>| Stage I | 手术 ± 辅助治疗 |</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>| Stage II | 手术 + 辅助化疗 ± 靶向/免疫治疗 |</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>| Stage III | 放化疗、围手术期治疗、巩固免疫治疗等 |</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>| Stage IV | 全身治疗，包括靶向治疗、免疫治疗、化疗等 |</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>因此，在protocol中通常会明确规定允许入组的TNM分期。</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Trial Considerations（临床试验考虑）</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>TNM分期广泛用于临床试验设计。</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>主要应用包括：</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>eligibility criteria（入组标准）；</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>stratification factors（随机化分层因素）；</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>prespecified subgroup analysis（预设亚组分析）；</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>baseline characteristics（基线特征描述）；</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>covariate adjustment（协变量调整）。</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>例如：</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>仅纳入Stage IV NSCLC；</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>或仅纳入unresectable Stage III NSCLC。</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu"># Biostatistical Considerations（生物统计学考虑）</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="fu">## Stratification（随机化分层）</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>TNM分期常作为随机化分层因素。</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>例如：</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stage III vs Stage IV；</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>limited-stage vs extensive-stage（<span class="co">[</span><span class="ot">SCLC</span><span class="co">](../disease/SCLC.qmd)</span>）。</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>以提高治疗组之间的可比性。</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="fu">## Subgroup Analysis（亚组分析）</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>TNM分期也是最常见的预设亚组之一。</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>例如：</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stage II；</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stage III；</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stage IV。</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>用于评估不同疾病阶段患者的治疗效果是否一致。</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="fu">## Covariate Adjustment（协变量调整）</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>在Cox proportional hazards model（Cox比例风险模型）或其他回归模型中，TNM分期常作为协变量进行调整，以减少混杂因素影响。</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prognostic Factor（预后因素）</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>TNM分期通常是影响以下终点的最重要预后因素之一：</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>overall survival, OS；</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>progression-free survival, PFS。</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>因此在统计分析和结果解释中需要重点考虑。</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="fu"># Common Pitfalls（常见误区）</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>| 误区 | 正确理解 |</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>| TNM只适用于肺癌 | TNM适用于多数实体瘤，但具体定义因癌种不同而不同 |</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>| T仅表示肿瘤大小 | T还包括局部侵犯范围 |</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>| N数值越大表示淋巴结数量越多 | N更强调淋巴结的位置和受累范围，而非单纯数量 |</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>| M1一定意味着无法治疗 | M1表示远处转移，但仍可能接受靶向治疗、免疫治疗或局部综合治疗 |</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>| 所有癌种的Stage I-IV定义相同 | Stage分组依据不同癌种的TNM组合确定，不能直接套用 |</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Takeaways（总结）</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>TNM分期是全球最常用的实体瘤分期系统，由T、N、M三部分组成。</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>T描述原发肿瘤，N描述区域淋巴结，M描述远处转移。</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>TNM分期直接决定治疗策略、预后评估及临床试验设计。</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>在oncology临床研究中，TNM常用于入组标准、随机化分层及亚组分析。</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>对biostatistician而言，理解TNM分期的临床意义比记忆具体分期标准更重要，不同癌种的TNM定义需分别学习。</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Amin MB, et al. *AJCC Cancer Staging Manual*. 8th edition.</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Union for International Cancer Control. *TNM Classification of Malignant Tumours*. 8th edition.</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Goldstraw P, et al. The IASLC Lung Cancer Staging Project. *Journal of Thoracic Oncology*. 2016.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

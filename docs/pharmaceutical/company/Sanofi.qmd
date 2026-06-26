@@ -1,0 +1,20 @@
+---
+title: "Sanofi"
+---
+
+# Company Overview
+
+**Sanofi**是一家总部位于法国的全球制药公司，业务覆盖肿瘤、免疫、罕见病、疫苗、糖尿病和心血管等领域。
+
+在肿瘤领域，Sanofi历史上的代表性产品之一是**[docetaxel](../compound/Docetaxel.qmd)（Taxotere / 泰索帝）**。Docetaxel是一种taxane化疗药物，长期用于乳腺癌、NSCLC、前列腺癌、胃癌和头颈癌等疾病，也常作为肺癌后线研究的active comparator。
+
+# Selected Products
+
+| Product | Generic name | Area |
+|---|---|---|
+| [Taxotere](../compound/Docetaxel.qmd) | Docetaxel | Oncology |
+| Dupixent | Dupilumab | Immunology |
+| Lantus | Insulin glargine | Diabetes |
+| Aubagio | Teriflunomide | Multiple sclerosis |
+| Toujeo | Insulin glargine | Diabetes |
+| Praluent | Alirocumab | Cardiovascular |

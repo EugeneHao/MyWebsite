@@ -1,0 +1,223 @@
+---
+title: "ECOG Performance Status（ECOG 体力状态评分）"
+description: "介绍 ECOG Performance Status 的定义、评分标准、临床意义及在肿瘤临床试验中的应用。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Clinical Trials
+  - Disease Overview
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**ECOG Performance Status, ECOG PS（ECOG体力状态评分）**是肿瘤临床实践和临床试验中最常用的患者一般状态（functional status）评价工具，由**Eastern Cooperative Oncology Group, ECOG（东部肿瘤协作组）**提出。
+
+ECOG PS用于评估患者的：
+
+- 日常活动能力（daily activity）；
+- 自理能力（self-care）；
+- 工作能力（work ability）；
+- 卧床时间（time spent in bed）。
+
+评分范围为**0-5分**：
+
+- **0分**表示完全正常；
+- **5分**表示死亡。
+
+ECOG PS是影响患者预后、治疗选择及临床试验入组的重要指标，也是几乎所有oncology protocol和statistical analysis plan, SAP中都会出现的基线变量。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| ECOG PS | ECOG Performance Status |
+| Performance status, PS | 体力状态评分 |
+| Functional status | 功能状态 |
+| Activities of daily living, ADL | 日常生活活动能力 |
+| Karnofsky Performance Status, KPS | Karnofsky体力状态评分 |
+
+# ECOG评分标准
+
+| ECOG | 定义 | 临床解释 |
+|---|---|---|
+| **0** | Fully active | 完全正常，无任何活动限制 |
+| **1** | Restricted in physically strenuous activity but ambulatory | 可进行轻体力活动，可正常步行，不能进行剧烈劳动 |
+| **2** | Ambulatory and capable of self-care but unable to work | 能生活自理，可离床活动超过50%的清醒时间，但不能工作 |
+| **3** | Capable of limited self-care; confined to bed/chair >50% of waking hours | 仅能部分生活自理，清醒时间超过50%卧床或坐椅 |
+| **4** | Completely disabled | 完全不能自理，完全卧床或卧椅 |
+| **5** | Dead | 死亡 |
+
+# ECOG各等级示例
+
+| ECOG | 示例 |
+|---|---|
+| 0 | 正常工作、运动，无任何限制 |
+| 1 | 可以上班和生活，但无法进行重体力劳动 |
+| 2 | 可以自己吃饭、洗澡、穿衣，但不能工作，需要较多休息 |
+| 3 | 大部分时间卧床，仅能完成简单自理活动 |
+| 4 | 完全卧床，需要他人照顾全部生活 |
+| 5 | 死亡 |
+
+# ECOG与治疗选择
+
+ECOG PS是决定患者是否能够接受抗肿瘤治疗的重要依据。
+
+一般而言：
+
+| ECOG | 常见治疗策略 |
+|---|---|
+| 0-1 | 可接受绝大多数标准治疗，包括化疗、免疫治疗、靶向治疗及临床试验 |
+| 2 | 可考虑治疗，但需结合年龄、合并症及药物毒性综合评估 |
+| 3-4 | 多数情况下以supportive care（支持治疗）为主，仅部分患者适合积极治疗 |
+
+因此，大多数III期临床试验仅纳入**ECOG 0-1**患者。
+
+# ECOG在不同肿瘤中的应用
+
+ECOG PS几乎适用于所有恶性肿瘤，包括：
+
+- [non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)；
+- [small cell lung cancer, SCLC（小细胞肺癌）](../disease/SCLC.qmd)；
+- [breast cancer（乳腺癌）](../disease/Breast_Cancer.qmd)；
+- colorectal cancer（结直肠癌）；
+- gastric cancer（胃癌）；
+- hepatocellular carcinoma（肝细胞癌）；
+- hematologic malignancies（血液系统恶性肿瘤）。
+
+在肺癌中，ECOG PS尤其重要，因为其与OS、PFS、治疗耐受性及毒性均密切相关。
+
+# ECOG与Karnofsky Performance Status（KPS）
+
+ECOG与**Karnofsky Performance Status, KPS（Karnofsky体力状态评分）**都用于评价患者功能状态。
+
+| ECOG | 大致对应KPS |
+|---|---|
+| 0 | 90-100 |
+| 1 | 70-80 |
+| 2 | 50-60 |
+| 3 | 30-40 |
+| 4 | 10-20 |
+| 5 | 0 |
+
+ECOG更简单，因此目前临床试验中应用更广泛。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Eligibility Criteria（入组标准）
+
+几乎所有oncology protocol都规定ECOG入组要求。
+
+常见要求：
+
+- ECOG 0-1（最常见）；
+- ECOG 0-2（部分研究）；
+- ECOG <=1。
+
+例如：
+
+```text
+Eligible patients must have an ECOG Performance Status of 0 or 1.
+```
+
+## Baseline Characteristics（基线特征）
+
+ECOG是Table 1中最重要的基线变量之一。
+
+例如：
+
+| ECOG | Treatment A | Treatment B |
+|---|---:|---:|
+| 0 | 42% | 40% |
+| 1 | 58% | 60% |
+
+随机化后，两组ECOG分布应保持平衡。
+
+## Stratification Factor（随机化分层）
+
+ECOG常作为随机化分层因素，例如：
+
+- ECOG 0 vs 1；
+- ECOG 0-1 vs 2。
+
+以减少患者体力状态差异对疗效分析的影响。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Prognostic Factor（预后因素）
+
+ECOG是oncology中最重要的预后因素之一。
+
+ECOG越高，通常：
+
+- OS越短；
+- PFS越短；
+- ORR越低；
+- AE越多。
+
+因此，在Cox proportional hazards model（Cox比例风险模型）中，ECOG常作为协变量进行调整。
+
+## Covariate Adjustment（协变量调整）
+
+ECOG常用于：
+
+- Cox model；
+- logistic regression；
+- sensitivity analysis；
+- multivariable analysis。
+
+以减少基线差异带来的混杂。
+
+## Subgroup Analysis（亚组分析）
+
+常见亚组包括：
+
+- ECOG 0；
+- ECOG 1；
+- ECOG 2，若纳入。
+
+用于评估不同体力状态患者是否具有一致疗效。
+
+## Safety Analysis（安全性分析）
+
+ECOG较差患者通常：
+
+- dose reduction更多；
+- treatment discontinuation更多；
+- grade >=3 AE更多。
+
+因此安全性分析常按ECOG分层展示。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| ECOG评价的是肿瘤大小 | ECOG评价的是患者整体功能状态，与肿瘤大小无直接对应关系 |
+| ECOG越高越好 | ECOG分数越高，功能状态越差 |
+| ECOG 0表示没有肿瘤 | ECOG 0仅表示患者功能状态正常，与疾病严重程度无必然关系 |
+| ECOG仅用于临床试验 | ECOG同样广泛用于日常临床决策 |
+| ECOG是客观指标 | ECOG存在一定观察者间差异，应结合临床判断统一评估 |
+
+# Key Takeaways（总结）
+
+1. ECOG Performance Status是oncology最常用的体力状态评分系统，评分范围为0-5。
+2. ECOG主要评价患者的活动能力、自理能力和卧床时间，是治疗决策的重要依据。
+3. 大多数III期肿瘤临床试验要求患者ECOG为0-1。
+4. ECOG是最重要的预后因素之一，也是随机化分层、协变量调整及亚组分析中最常见的基线变量。
+5. 对biostatistician而言，理解ECOG对患者预后及试验设计的影响，比记忆评分文字描述更重要。
+
+# References
+
+1. Oken MM, et al. Toxicity and response criteria of the Eastern Cooperative Oncology Group. *American Journal of Clinical Oncology*. 1982.
+2. National Cancer Institute. Common Terminology Criteria and Performance Status Resources.
+3. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology*.
+4. ECOG-ACRIN Cancer Research Group. Performance Status Assessment.

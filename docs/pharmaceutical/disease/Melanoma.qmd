@@ -43,7 +43,7 @@ title: "Melanoma"
     -   MEK抑制剂：如曲美替尼（[Mekinist](../compound/Mekinist.qmd) (Trametinib)）、考比替尼（[Cotellic](../compound/Cotellic.qmd) (Cobimetinib)）。
 -   免疫治疗：
     -   PD-1抑制剂：如纳武利尤单抗（[Opdivo](../compound/Opdivo.qmd) (Nivolumab)）、帕波利珠单抗（[Keytruda](../compound/Keytruda.qmd) (Pembrolizumab)）。
-    -   CTLA-4抑制剂：如伊匹单抗（[Yervoy](../compound/Yervoy.qmd) (Ipilimumab)）。
+    -   [CTLA-4抑制剂](../other/Immune_Checkpoint.qmd)：如伊匹单抗（[Yervoy](../compound/Yervoy.qmd) (Ipilimumab)）。
 
 ## 预防和筛查
 

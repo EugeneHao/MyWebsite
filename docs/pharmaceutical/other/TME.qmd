@@ -1,0 +1,356 @@
+---
+title: "Tumor Microenvironment, TME（肿瘤微环境）"
+description: "介绍 Tumor Microenvironment 的组成、功能、免疫抑制机制及其在肿瘤治疗和临床试验中的意义。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Immuno-Oncology
+  - Disease Overview
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Tumor microenvironment, TME（肿瘤微环境）** 是指肿瘤细胞周围所有非肿瘤成分共同组成的复杂生态系统，包括免疫细胞、基质细胞、血管、细胞外基质及各种细胞因子。
+
+过去，人们认为肿瘤主要由癌细胞本身驱动；如今认为，**肿瘤的发展、转移、耐药以及免疫逃逸都受到 TME 的深刻影响**。因此，现代肿瘤治疗不仅针对癌细胞本身，也越来越多地针对肿瘤微环境。
+
+近年来的[免疫治疗](Immunotherapy.qmd)，例如 [PD-1/PD-L1 inhibitor](Immune_Checkpoint.qmd)，抗血管生成治疗，例如 [VEGF inhibitor](../target/VEGF.qmd)，以及部分双特异性抗体和 [ADC](ADC.qmd)，均通过改变 TME 来发挥抗肿瘤作用。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| TME | Tumor microenvironment（肿瘤微环境） |
+| ECM | Extracellular matrix（细胞外基质） |
+| CAF | Cancer-associated fibroblast（癌相关成纤维细胞） |
+| TAM | Tumor-associated macrophage（肿瘤相关巨噬细胞） |
+| Treg | Regulatory T cell（调节性 T 细胞） |
+| MDSC | Myeloid-derived suppressor cell（髓源性抑制细胞） |
+| NK cell | Natural killer cell（自然杀伤细胞） |
+| DC | Dendritic cell（树突状细胞） |
+| Cytokine | 细胞因子 |
+| Chemokine | 趋化因子 |
+
+# TME 的组成
+
+TME 不仅包含肿瘤细胞，还包括多种宿主细胞和非细胞成分。
+
+```text
+Tumor Microenvironment
+|
++-- Tumor cells
++-- Immune cells
+|   +-- T cells
+|   +-- B cells
+|   +-- NK cells
+|   +-- Macrophages
+|   +-- Dendritic cells
+|   +-- MDSCs
+|
++-- Stromal cells
+|   +-- CAFs
+|   +-- Endothelial cells
+|   +-- Pericytes
+|
++-- Blood vessels
++-- Extracellular matrix
++-- Cytokines / Growth factors
+```
+
+这些成分相互作用，共同决定肿瘤是否能够持续生长、转移及逃避免疫系统。
+
+# TME 中的重要细胞
+
+## Tumor Cells（肿瘤细胞）
+
+肿瘤细胞是 TME 的核心。
+
+它们能够：
+
+- 分泌 VEGF
+- 表达 PD-L1
+- 招募免疫抑制细胞
+- 重塑周围组织
+
+最终形成有利于自身生存的微环境。
+
+## Cytotoxic T Cells（CD8+ T 细胞）
+
+CD8+ T 细胞是主要抗肿瘤效应细胞。
+
+功能包括：
+
+- 识别肿瘤抗原
+- 杀伤肿瘤细胞
+- 分泌 IFN-gamma、TNF-alpha 等细胞因子
+
+多数免疫治疗的目标都是增强 CD8+ T 细胞功能。
+
+## Helper T Cells（CD4+ T 细胞）
+
+CD4+ T 细胞可调节免疫反应。
+
+不同亚群具有不同作用，例如：
+
+- Th1：促进抗肿瘤免疫
+- Th2：促进体液免疫
+- Th17：参与炎症反应
+
+## Regulatory T Cells（Treg）
+
+Treg 是典型免疫抑制细胞。
+
+主要功能：
+
+- 抑制 CD8+ T cell
+- 抑制 NK cell
+- 抑制 dendritic cell
+
+多数肿瘤中：
+
+> Treg 越多，预后通常越差。
+
+## Tumor-Associated Macrophages（TAM）
+
+巨噬细胞通常分为：
+
+| 类型 | 功能 |
+|---|---|
+| M1 | 抗肿瘤、促进炎症 |
+| M2 | 促进肿瘤生长、免疫抑制 |
+
+多数实体瘤中：
+
+TAM 主要表现为 **M2-like phenotype**。
+
+## Myeloid-Derived Suppressor Cells（MDSC）
+
+MDSC 是近年来重要研究热点。
+
+功能包括：
+
+- 抑制 T cell
+- 抑制 NK cell
+- 分泌免疫抑制因子
+- 促进肿瘤血管生成
+
+VEGF 可明显促进 MDSC 聚集。
+
+## Dendritic Cells（DC）
+
+DC 是最重要的抗原呈递细胞，英文为 antigen-presenting cell, APC。
+
+功能：
+
+- 摄取肿瘤抗原
+- 激活初始 T cell
+- 启动适应性免疫
+
+PD-1、CTLA-4 等[免疫检查点](Immune_Checkpoint.qmd)相关治疗均依赖完整的抗原呈递过程。
+
+## Natural Killer Cells（NK Cells）
+
+NK 细胞属于先天免疫系统。
+
+特点：
+
+- 无需抗原特异性识别
+- 可直接杀伤肿瘤细胞
+- 分泌 IFN-gamma
+
+近年来 NK cell therapy 也是新的研发方向。
+
+## Cancer-Associated Fibroblasts（CAF）
+
+CAF 是肿瘤基质的重要组成部分。
+
+主要作用：
+
+- 分泌细胞因子
+- 促进 ECM 重塑
+- 阻碍免疫细胞浸润
+- 促进耐药
+
+# 血管与细胞外基质
+
+## Blood Vessels（肿瘤血管）
+
+肿瘤血管通常具有：
+
+- 结构异常
+- 通透性增加
+- 灌注不足
+- 缺氧
+
+异常血管导致：
+
+- T cell 难以进入肿瘤
+- 药物递送效率下降
+
+VEGF 抑制剂可通过 **vascular normalization（血管正常化）** 改善上述问题。
+
+## Extracellular Matrix（ECM）
+
+ECM 包括：
+
+- Collagen
+- Fibronectin
+- Laminin
+- Proteoglycan
+
+ECM 不仅提供结构支持，还影响：
+
+- 肿瘤迁移
+- 药物渗透
+- 免疫细胞浸润
+
+# TME 中的重要信号分子
+
+常见细胞因子包括：
+
+| 分子 | 作用 |
+|---|---|
+| VEGF | 血管生成、免疫抑制 |
+| TGF-beta | 免疫抑制、EMT |
+| IL-10 | 抑制免疫 |
+| IFN-gamma | 激活免疫 |
+| TNF-alpha | 炎症反应 |
+| CXCL9/CXCL10 | 招募 CD8+ T cell |
+
+这些信号共同决定 TME 是：
+
+- **Immune-inflamed（炎症型）**
+- **Immune-excluded（免疫排斥型）**
+- **Immune-desert（免疫荒漠型）**
+
+# TME 与免疫治疗
+
+[免疫检查点抑制剂](Immune_Checkpoint.qmd)主要作用于 TME。
+
+例如：
+
+```text
+Tumor cell
+     |
+  PD-L1
+     |
+     v
+CD8 T cell ---- PD-1
+     |
+ Immune inhibition
+```
+
+PD-1/PD-L1 抑制剂阻断该通路后：
+
+- 恢复 T cell 活性
+- 增强肿瘤杀伤
+- 提高长期生存率
+
+# TME 与 VEGF
+
+VEGF 不仅促进血管生成，还可：
+
+- 增加 Treg
+- 增加 MDSC
+- 抑制 DC 成熟
+- 减少 CD8+ T cell 浸润
+
+因此：
+
+PD-1 + VEGF 联合治疗能够同时改善免疫抑制和异常血管，目前已成为重要治疗策略。
+
+# TME 与 ADC
+
+ADC 不仅直接杀伤肿瘤细胞，还可能通过：
+
+- Bystander effect（旁观者效应）
+- 诱导 immunogenic cell death, ICD（免疫原性细胞死亡）
+
+改变 TME，增强免疫治疗效果。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+越来越多 oncology 临床研究将 TME 纳入探索性终点。
+
+常见分析包括：
+
+- CD8+ T cell infiltration
+- PD-L1 expression
+- TAM density
+- Treg proportion
+- Gene expression profiling
+- Immune-related biomarkers
+
+这些指标有助于解释治疗机制并寻找预测性生物标志物。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Biomarker Analysis（生物标志物分析）
+
+TME 相关指标通常作为探索性生物标志物进行分析，例如：
+
+- CD8 density
+- PD-L1 expression
+- Immune gene signature
+- T-cell inflamed score
+
+分析方法包括：
+
+- Logistic regression
+- Cox proportional hazards model
+- Kaplan-Meier analysis
+
+## Subgroup Analysis（亚组分析）
+
+部分研究按 TME 特征进行预设或探索性亚组分析，例如：
+
+- Immune-hot vs immune-cold
+- PD-L1 高表达 vs 低表达
+- High CD8 infiltration vs low CD8 infiltration
+
+## Translational Research（转化研究）
+
+TME 研究通常结合：
+
+- RNA sequencing
+- Spatial transcriptomics
+- Multiplex immunohistochemistry
+- Single-cell RNA sequencing
+
+用于探索治疗反应机制和耐药机制。
+
+# Common Pitfalls（常见误区）
+
+| 误区 | 正确理解 |
+|---|---|
+| TME 只包含免疫细胞 | TME 还包括血管、CAF、ECM、细胞因子等多种成分 |
+| 所有免疫细胞都能杀伤肿瘤 | Treg、MDSC 和 M2 型 TAM 主要发挥免疫抑制作用 |
+| VEGF 只负责血管生成 | VEGF 同时具有重要免疫抑制作用 |
+| 肿瘤治疗只针对癌细胞 | 现代治疗越来越重视调控 TME |
+| TME 在所有患者中相同 | TME 具有高度异质性，是精准治疗的重要基础 |
+
+# Key Takeaways（总结）
+
+1. TME 是由肿瘤细胞、免疫细胞、基质细胞、血管及细胞外基质共同组成的复杂生态系统。
+2. TME 在肿瘤发生、转移、耐药及免疫逃逸中发挥关键作用。
+3. CD8+ T cell、Treg、TAM、MDSC、CAF 和 VEGF 是 TME 中的重要组成部分。
+4. PD-1/PD-L1 抑制剂、VEGF 抑制剂及部分 ADC 的疗效均与 TME 密切相关。
+5. 对 biostatistician 而言，理解 TME 有助于认识生物标志物、亚组分析、联合治疗设计及转化医学研究。
+
+# References
+
+1. Hanahan D, Weinberg RA. Hallmarks of Cancer: The Next Generation. *Cell*. 2011.
+2. Hanahan D. Hallmarks of Cancer: New Dimensions. *Cancer Discovery*. 2022.
+3. Chen DS, Mellman I. Oncology Meets Immunology: The Cancer-Immunity Cycle. *Immunity*. 2013.
+4. Binnewies M, et al. Understanding the Tumor Immune Microenvironment. *Nature Medicine*. 2018.
+5. Joyce JA, Fearon DT. T Cell Exclusion, Immune Privilege, and the Tumor Microenvironment. *Science*. 2015.

@@ -31,7 +31,7 @@ SCLC的特点包括：
 - 容易复发；
 - 预后较差。
 
-与**[non-small cell lung cancer, NSCLC（非小细胞肺癌）](NSCLC.qmd)**相比，SCLC更少依赖单一驱动基因突变，因此目前靶向治疗的发展相对有限，近年来主要突破来自**immune checkpoint inhibitor（免疫检查点抑制剂）**和**antibody-drug conjugate, [ADC](../other/ADC.qmd)（抗体偶联药物）**。
+与**[non-small cell lung cancer, NSCLC（非小细胞肺癌）](NSCLC.qmd)**相比，SCLC更少依赖单一驱动基因突变，因此目前靶向治疗的发展相对有限，近年来主要突破来自**[immune checkpoint inhibitor（免疫检查点抑制剂）](../other/Immune_Checkpoint.qmd)**和**antibody-drug conjugate, [ADC](../other/ADC.qmd)（抗体偶联药物）**。
 
 # Epidemiology（流行病学）
 
@@ -107,7 +107,7 @@ SCLC临床上最常采用**Veterans Administration Lung Study Group, VALSG（退
 
 - 70%。
 
-近年来临床研究也越来越多采用**TNM staging（TNM分期）**，但治疗决策仍主要依据LS-SCLC与ES-SCLC分类。
+近年来临床研究也越来越多采用**[TNM staging（TNM分期）](../other/TNM_Staging.qmd)**，但治疗决策仍主要依据LS-SCLC与ES-SCLC分类。
 
 # Molecular Biology（分子生物学）
 
@@ -225,7 +225,7 @@ III期研究通常采用：
 常见分层因素包括：
 
 - disease stage（LS或ES）；
-- ECOG performance status；
+- [ECOG performance status](../other/ECOG_Performance_Status.qmd)；
 - brain metastasis；
 - geographic region；
 - platinum sensitivity（后线研究）。

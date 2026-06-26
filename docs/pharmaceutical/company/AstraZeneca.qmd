@@ -1,0 +1,21 @@
+---
+title: "AstraZeneca"
+---
+
+# Company Overview
+
+**AstraZeneca** 是一家总部位于英国的全球生物制药公司，业务重点覆盖 oncology、cardiovascular, renal and metabolism、respiratory and immunology、rare disease 等领域。
+
+在肿瘤领域，AstraZeneca 的代表性产品包括 **[Imfinzi](../compound/Imfinzi.qmd)（durvalumab）**、Tagrisso、Lynparza 和 Enhertu 等。Imfinzi 是其核心免疫肿瘤产品之一，覆盖肺癌、胆道癌、肝癌、膀胱癌、子宫内膜癌和胃食管肿瘤等多个方向。
+
+# Selected Products
+
+| Product | Generic name | Area |
+|---|---|---|
+| [Imfinzi](../compound/Imfinzi.qmd) | Durvalumab | Oncology / Immuno-oncology |
+| Tagrisso | Osimertinib | Oncology / EGFR-mutated NSCLC |
+| [Lynparza](../compound/Lynparza.qmd) | Olaparib | Oncology / PARP inhibitor |
+| Enhertu | Trastuzumab deruxtecan | Oncology / HER2 ADC |
+| Farxiga | Dapagliflozin | Cardiovascular, renal and metabolism |
+| Symbicort | Budesonide/formoterol | Respiratory |
+| Crestor | Rosuvastatin | Cardiovascular |

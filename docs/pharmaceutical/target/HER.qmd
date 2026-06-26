@@ -265,7 +265,7 @@ HER靶向研究通常采用富集设计，仅纳入HER2阳性或HER2突变患者
 
 ## Companion Diagnostics（伴随诊断）
 
-HER2检测通常作为伴随诊断（companion diagnostic），应统一检测平台、评分标准及中央实验室，以减少测量误差和患者错分。
+HER2检测通常作为[伴随诊断（companion diagnostic）](../other/Biomarker.qmd#companion-diagnostic伴随诊断)，应统一检测平台、评分标准及中央实验室，以减少测量误差和患者错分。
 
 ## Safety Monitoring（安全性监测）
 

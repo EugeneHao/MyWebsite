@@ -27,6 +27,13 @@
   company: BMS
   indication: | 
     [Melanoma](disease/Melanoma.qmd), renal cell carcinoma, metastatic colorectal cancer.
+
+- drug: COBENFY
+  compound: Xanomeline + trospium chloride / KarXT
+  path: compound/KarXT.html
+  company: BMS
+  indication: |
+    Oral fixed-dose muscarinic receptor-targeting antipsychotic approved by FDA for adults with schizophrenia.
   
 - drug: Comirnaty
   compound: BNT162b2 (mRNA-based vaccine)
@@ -177,6 +184,12 @@
   compound: Dupilumab
   company: Sanofi, Regeneron
   indication: Treats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.
+- drug: Taxotere
+  compound: Docetaxel
+  path: compound/Docetaxel.html
+  company: Sanofi
+  indication: |
+    Taxane chemotherapy used in [breast cancer](disease/Breast_Cancer.qmd), [NSCLC](disease/NSCLC.qmd), prostate cancer, gastric cancer, and head and neck cancer; common active comparator in oncology trials.
 - drug: Lantus
   compound: Insulin glargine
   company: Sanofi
@@ -221,8 +234,10 @@
   indication: Treats non-small cell lung cancer with specific mutations.
 - drug: Imfinzi
   compound: Durvalumab
+  path: compound/Imfinzi.html
   company: AstraZeneca
-  indication: Used for urothelial carcinoma and non-small cell lung cancer.
+  indication: |
+    PD-L1 inhibitor used in [NSCLC](disease/NSCLC.qmd), [SCLC](disease/SCLC.qmd), biliary tract cancer, HCC, endometrial cancer, muscle-invasive bladder cancer, and gastric/GEJ adenocarcinoma settings.
 - drug: Farxiga
   compound: Dapagliflozin
   company: AstraZeneca

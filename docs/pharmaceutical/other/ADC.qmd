@@ -281,7 +281,7 @@ ADC疗效通常与靶点表达水平密切相关，因此试验中常进行：
 
 | 类型 | 靶向性 | 是否携带毒素 | 代表药物 |
 |---|---|---|---|
-| 化疗 | × | 是 | Docetaxel |
+| 化疗 | × | 是 | [Docetaxel](../compound/Docetaxel.qmd) |
 | 单克隆抗体 | 是 | 否 | [Pembrolizumab](../compound/Keytruda.qmd) |
 | 双特异性抗体 | 是 | 否 | [Ivonescimab](../compound/Ivonescimab.qmd)、[Cadonilimab](../compound/Cadonilimab.qmd) |
 | ADC | 是 | 是 | Trastuzumab deruxtecan |

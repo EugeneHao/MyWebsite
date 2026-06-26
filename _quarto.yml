@@ -181,6 +181,8 @@ website:
                 href: docs/pharmaceutical/compound/Breyanzi.qmd  
               - text: Krazati
                 href: docs/pharmaceutical/compound/Krazati.qmd
+              - text: KarXT (COBENFY)
+                href: docs/pharmaceutical/compound/KarXT.qmd
               - text: Pumitamig
                 href: docs/pharmaceutical/compound/Pumitamig.qmd
               - text: Izalontamab Brengitecan
@@ -210,6 +212,13 @@ website:
                 href: docs/pharmaceutical/compound/Lynparza.qmd 
               - text: Pneumovax
                 herf: docs/pharmaceutical/compound/Pneumovax.qmd 
+            - section: AstraZeneca
+              href: docs/pharmaceutical/company/AstraZeneca.qmd
+              contents:
+              - text: Imfinzi
+                href: docs/pharmaceutical/compound/Imfinzi.qmd
+              - text: Lynparza
+                href: docs/pharmaceutical/compound/Lynparza.qmd
             - section: J & J
               href: docs/pharmaceutical/company/J & J.qmd
               contents:        
@@ -274,6 +283,11 @@ website:
               contents: 
               - text: Mekinist
                 href: docs/pharmaceutical/compound/Mekinist.qmd  
+            - section: Sanofi
+              href: docs/pharmaceutical/company/Sanofi.qmd
+              contents:
+              - text: Taxotere
+                href: docs/pharmaceutical/compound/Docetaxel.qmd
             - section: Incyte
               contents: 
               - text: Jakafi
@@ -353,10 +367,14 @@ website:
                 href: docs/pharmaceutical/other/ADC.qmd
               - text: CAR-T
                 href: docs/pharmaceutical/other/CAR-T.qmd
+              - text: Immune Checkpoint
+                href: docs/pharmaceutical/other/Immune_Checkpoint.qmd
               - text: Immunotherapy
                 href: docs/pharmaceutical/other/Immunotherapy.qmd  
               - text: Monoclonal Antibody Therapy (MAT)
                 href: docs/pharmaceutical/other/MAT.qmd  
+              - text: Tumor Microenvironment (TME)
+                href: docs/pharmaceutical/other/TME.qmd
             - section: Clinical Trial
               contents: 
               - text: Adverse Event by SOC and PT
@@ -365,6 +383,12 @@ website:
                 href: docs/pharmaceutical/other/Biomarker.qmd
               - text: Intercurrent Events 
                 href: docs/pharmaceutical/other/Intercurrent_Events.qmd
+              - text: TNM Staging
+                href: docs/pharmaceutical/other/TNM_Staging.qmd
+              - text: ECOG Performance Status
+                href: docs/pharmaceutical/other/ECOG_Performance_Status.qmd
+              - text: RECIST 1.1
+                href: docs/pharmaceutical/other/RECIST_1_1.qmd
             - section: Endpoint
               content: 
               - text: Progression-Free Survival (PFS)
