@@ -28,7 +28,7 @@
 - name: AbbVie
   country: USA
   drug: |
-    [Humira](compound/Humira.qmd), Skyrizi, Rinvoq, Imbruvica, Venclexta
+    [Humira](compound/Humira.qmd), [Skyrizi](compound/Skyrizi.qmd), Rinvoq, Imbruvica, Venclexta
 - name: J \& J
   country: USA
   drug: |

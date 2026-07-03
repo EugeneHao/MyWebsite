@@ -28,7 +28,7 @@ KRAS突变常见于：
 
 - [non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)；
 - colorectal cancer, CRC（结直肠癌）；
-- pancreatic ductal adenocarcinoma, PDAC（胰腺导管腺癌）。
+- [pancreatic ductal adenocarcinoma, PDAC（胰腺导管腺癌）](../disease/Pancreatic_Cancer.qmd)。
 
 # Key Terminology（关键术语）
 
@@ -47,7 +47,7 @@ RAS家族共有三个成员。
 
 | 基因 | 常见肿瘤 |
 |---|---|
-| KRAS | 肺癌、结直肠癌、胰腺癌 |
+| KRAS | 肺癌、结直肠癌、[胰腺癌](../disease/Pancreatic_Cancer.qmd) |
 | NRAS | 黑色素瘤、AML |
 | HRAS | 头颈癌、甲状腺癌 |
 
@@ -82,8 +82,8 @@ KRAS突变会导致蛋白持续处于GTP结合状态，即使没有上游刺激�
 | 突变 | 常见瘤种 |
 |---|---|
 | G12C | NSCLC |
-| G12D | 胰腺癌、CRC |
-| G12V | 胰腺癌、CRC |
+| G12D | [胰腺癌](../disease/Pancreatic_Cancer.qmd)、CRC |
+| G12V | [胰腺癌](../disease/Pancreatic_Cancer.qmd)、CRC |
 | G13D | CRC |
 | Q61H | 黑色素瘤、肺癌 |
 
@@ -91,7 +91,7 @@ KRAS突变会导致蛋白持续处于GTP结合状态，即使没有上游刺激�
 
 | 肿瘤 | KRAS突变率（约） |
 |---|---|
-| PDAC | 90%-95% |
+| [PDAC](../disease/Pancreatic_Cancer.qmd) | 90%-95% |
 | CRC | 35%-45% |
 | NSCLC（肺腺癌） | 25%-35% |
 | Endometrial cancer | 10%-20% |
@@ -209,7 +209,7 @@ KRAS G12C抑制剂需配合经验证的分子检测，以确保患者携带相�
 
 # Key Takeaways（总结）
 
-1. KRAS是最常见的肿瘤驱动基因之一，在肺癌、结直肠癌和胰腺癌中具有重要作用。
+1. KRAS是最常见的肿瘤驱动基因之一，在肺癌、结直肠癌和[胰腺癌](../disease/Pancreatic_Cancer.qmd)中具有重要作用。
 2. KRAS突变导致RAS-MAPK信号持续激活，促进肿瘤生长。
 3. KRAS G12C抑制剂的成功开发使KRAS从“不可成药”靶点转变为重要治疗靶点。
 4. KRAS G12D和pan-KRAS抑制剂是当前全球研发热点。

@@ -64,12 +64,14 @@
     [Lynparza](compound/Lynparza.qmd)
 
 - name: Pancreatic Cancer
+  path: disease/Pancreatic_Cancer.html
   chinese: 胰腺癌
   body part: Pancreas
   drugs: |
     [Lynparza](compound/Lynparza.qmd)
 
 - name: Rheumatoid Arthritis
+  path: disease/Rheumatoid_Arthritis.html
   chinese: 类风湿关节炎
   body part: Joints
   drugs: | 
@@ -79,13 +81,13 @@
   chinese: 银屑病关节炎
   body part: Joints, Skin
   drugs: |
-    [Xeljanz](compound/Xeljanz.qmd), Cosentyx, Skyrizi, Rinvoq
+    [Xeljanz](compound/Xeljanz.qmd), Cosentyx, [Skyrizi](compound/Skyrizi.qmd), Rinvoq
 
 - name: Ulcerative Colitis
   chinese: 溃疡性结肠炎
   body part: Colon
   drugs: |
-    [Xeljanz](compound/Xeljanz.qmd), [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd), Rinvoq
+    [Xeljanz](compound/Xeljanz.qmd), [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd), [Skyrizi](compound/Skyrizi.qmd), Rinvoq
 
 - name: Myeloma
   chinese: 骨髓瘤
@@ -278,7 +280,7 @@
   chinese: 牛皮癣
   body part: Skin
   drugs: |
-    Skyrizi, [Stelara](compound/Stelara.qmd), Cosentyx
+    [Skyrizi](compound/Skyrizi.qmd), [Stelara](compound/Stelara.qmd), Cosentyx
 
 - name: Ankylosing Spondylitis
   chinese: 强直性脊柱炎
@@ -289,7 +291,7 @@
   chinese: 克罗恩病
   body part: Digestive System
   drugs: |
-    [Humira](compound/Humira.qmd), [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd)
+    [Humira](compound/Humira.qmd), [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd), [Skyrizi](compound/Skyrizi.qmd)
 
 - name: Chronic Rhinosinusitis with Nasal Polyposis
   chinese: 鼻息肉伴发的慢性鼻窦炎
@@ -304,7 +306,7 @@
 - name: Psoriatic Arthritis
   chinese: 牛皮癣性关节炎
   body part: Joints, Skin
-  drugs: Cosentyx, Skyrizi, Rinvoq
+  drugs: Cosentyx, [Skyrizi](compound/Skyrizi.qmd), Rinvoq
 
 - name: Pneumococcal Infections
   chinese: 肺炎球菌感染

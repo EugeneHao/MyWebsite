@@ -14,7 +14,7 @@ title: "Humira"
 
 修美乐被批准用于以下疾病的治疗：
 
-1.  类风湿性关节炎（Rheumatoid Arthritis, 类风湿关节炎）
+1.  [类风湿性关节炎（Rheumatoid Arthritis, 类风湿关节炎）](../disease/Rheumatoid_Arthritis.qmd)
 
 2.  脊柱关节炎（Ankylosing Spondylitis, 脊柱关节炎）
 

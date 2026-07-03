@@ -1,0 +1,954 @@
+---
+title: "Skyrizi（Risankizumab）"
+description: "系统介绍Skyrizi的药物机制、获批适应证、给药方案、关键临床试验、安全性，以及临床开发和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Drug Profile
+  - Immunology
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Risankizumab-rzaa（利生奇珠单抗；[AbbVie](../company/Abbvie.qmd)与Boehringer Ingelheim合作开发；Skyrizi / 斯凯奇尤单抗商品名以当地批准信息为准；development codes: BI 655066、ABBV-066）**是一种靶向**interleukin-23, IL-23（白细胞介素-23）**p19亚基的人源化IgG1单克隆抗体。
+
+Skyrizi通过选择性阻断IL-23介导的炎症信号，用于治疗多种慢性免疫介导性疾病。截至2026年7月，Skyrizi在美国的主要获批适应证包括：
+
+- moderate-to-severe plaque psoriasis（中重度斑块状银屑病）；
+- active psoriatic arthritis（活动性银屑病关节炎）；
+- moderately to severely active Crohn’s disease（中重度活动性克罗恩病）；
+- moderately to severely active ulcerative colitis（中重度活动性溃疡性结肠炎）。
+
+Skyrizi于2019年首次在美国获得批准。Boehringer Ingelheim是risankizumab的原始开发方，早期研发代号为BI 655066。2016年，[AbbVie](../company/Abbvie.qmd)与Boehringer Ingelheim建立全球合作，由[AbbVie](../company/Abbvie.qmd)主导后续临床开发和全球商业化。
+
+2026年6月26日，[AbbVie](../company/Abbvie.qmd)宣布美国食品药品监督管理局批准Skyrizi用于6岁及以上儿童的斑块状银屑病和活动性银屑病关节炎，进一步将其psoriatic disease适应证扩展至儿科人群。具体年龄、体重和给药要求应以最新美国处方信息为准。
+
+# Drug Profile（药物信息）
+
+| 项目 | 说明 |
+|---|---|
+| 通用名 | Risankizumab-rzaa |
+| 中文通用名 | 利生奇珠单抗 |
+| 商品名 | Skyrizi |
+| 研发代号 | BI 655066、ABBV-066 |
+| 原始开发方 | Boehringer Ingelheim |
+| 当前主要开发及商业化公司 | [AbbVie](../company/Abbvie.qmd) |
+| 药物类型 | Humanized IgG1 monoclonal antibody（人源化IgG1单克隆抗体） |
+| 药物类别 | IL-23 antagonist（IL-23拮抗剂） |
+| 分子靶点 | IL-23 p19 subunit |
+| 给药方式 | Subcutaneous injection或intravenous infusion，取决于适应证和治疗阶段 |
+| 美国首次批准 | 2019年4月23日 |
+| 主要治疗领域 | Dermatology、Rheumatology、Gastroenterology |
+| 美国主要获批适应证 | Plaque psoriasis、psoriatic arthritis、Crohn’s disease、ulcerative colitis |
+
+# Mechanism of Action（作用机制）
+
+## IL-23信号通路
+
+IL-23是一种由p19和p40两个亚基组成的异源二聚体细胞因子：
+
+$$
+\text{IL-23}
+=
+\text{p19 subunit}
++
+\text{p40 subunit}
+$$
+
+其中：
+
+- p19亚基是IL-23特有的组成部分；
+- p40亚基同时存在于IL-23和IL-12中。
+
+Skyrizi选择性结合IL-23的p19亚基，阻止IL-23与其受体结合，从而抑制下游炎症信号。
+
+## 下游生物学效应
+
+IL-23是维持和扩增**T helper 17, Th17（辅助性T细胞17）**反应的重要细胞因子。IL-23信号可促进多种炎症介质产生，包括：
+
+- IL-17A；
+- IL-17F；
+- IL-22；
+- TNF；
+- 其他趋化因子和炎症介质。
+
+这些通路参与：
+
+- 银屑病角质形成细胞异常增殖；
+- 皮肤炎症和斑块形成；
+- 关节滑膜炎和附着点炎；
+- 肠黏膜炎症；
+- 上皮屏障功能异常。
+
+通过阻断IL-23 p19，risankizumab可以减少Th17相关炎症反应，而不直接阻断IL-12通路。
+
+## 与Ustekinumab的机制区别
+
+**[Ustekinumab（乌司奴单抗；Johnson & Johnson；Stelara / 喜达诺）](Stelara.qmd)**靶向IL-12和IL-23共有的p40亚基，而risankizumab仅靶向IL-23特异性p19亚基。
+
+| 药物 | 靶点 | 主要机制特点 |
+|---|---|---|
+| Risankizumab | IL-23 p19 | 选择性阻断IL-23，不直接阻断IL-12 |
+| Guselkumab | IL-23 p19 | 与risankizumab属于同一机制类别 |
+| Tildrakizumab | IL-23 p19 | 主要用于斑块状银屑病 |
+| Ustekinumab | IL-12/23 p40 | 同时阻断IL-12和IL-23 |
+
+# Approved Indications（获批适应证）
+
+## Plaque Psoriasis（斑块状银屑病）
+
+Skyrizi用于需要systemic therapy或phototherapy的中重度斑块状银屑病患者。
+
+银屑病适应证的主要治疗目标包括：
+
+- 实现皮损完全或接近完全清除；
+- 改善瘙痒、疼痛和脱屑；
+- 改善头皮、生殖器和其他特殊部位皮损；
+- 维持长期疾病控制；
+- 改善生活质量。
+
+常用疗效终点包括：
+
+- **Psoriasis Area and Severity Index 75, PASI 75（PASI较基线改善至少75%）**；
+- PASI 90；
+- PASI 100；
+- **static Physician’s Global Assessment, sPGA（静态医生总体评价）**；
+- Dermatology Life Quality Index。
+
+## Psoriatic Arthritis（银屑病关节炎）
+
+**Psoriatic arthritis, PsA（银屑病关节炎）**是一种可同时累及皮肤、外周关节、脊柱、附着点和手足指趾的炎症性疾病。
+
+Skyrizi用于活动性PsA，可单独使用，也可与非生物类**[disease-modifying antirheumatic drug, DMARD（改善病情抗风湿药）](../disease/Rheumatoid_Arthritis.qmd)**联合使用。
+
+PsA治疗需要同时评估多个疾病领域：
+
+- 外周关节炎；
+- 皮肤银屑病；
+- nail psoriasis（甲银屑病）；
+- enthesitis（附着点炎）；
+- dactylitis（指趾炎）；
+- axial symptoms（中轴症状）；
+- 身体功能；
+- 患者生活质量。
+
+## Crohn’s Disease（克罗恩病）
+
+**Crohn’s disease, CD（克罗恩病）**是一种慢性炎症性肠病，可累及从口腔到肛门的任何胃肠道部位，常呈节段性和全层炎症。
+
+Skyrizi用于成人中重度活动性CD。
+
+CD治疗通常分为：
+
+1. induction therapy（诱导治疗）；
+2. maintenance therapy（维持治疗）。
+
+诱导期使用静脉输注以快速控制活动性炎症，维持期改为皮下注射。
+
+主要治疗目标包括：
+
+- clinical remission（临床缓解）；
+- endoscopic response（内镜应答）；
+- endoscopic remission（内镜缓解）；
+- corticosteroid-free remission（无糖皮质激素缓解）；
+- 减少住院和手术；
+- 改善生活质量。
+
+## Ulcerative Colitis（溃疡性结肠炎）
+
+**Ulcerative colitis, UC（溃疡性结肠炎）**是一种主要累及结肠黏膜的慢性炎症性肠病，通常从直肠开始并连续向近端扩展。
+
+Skyrizi于2024年6月18日获得FDA批准，用于成人中重度活动性UC。
+
+UC治疗同样包括诱导和维持阶段，主要目标包括：
+
+- clinical remission；
+- clinical response；
+- endoscopic improvement；
+- histologic-endoscopic mucosal improvement；
+- corticosteroid-free remission；
+- 维持长期疾病控制。
+
+# Dosage and Administration（给药方案）
+
+不同适应证的Skyrizi剂量和给药方式明显不同，不能相互替代。
+
+## Plaque Psoriasis与Psoriatic Arthritis
+
+成人推荐方案为：
+
+| 治疗时间 | 推荐剂量 | 给药方式 |
+|---|---:|---|
+| Week 0 | 150 mg | Subcutaneous injection |
+| Week 4 | 150 mg | Subcutaneous injection |
+| 此后 | 150 mg every 12 weeks | Subcutaneous injection |
+
+这种每12周一次的维持给药方式是Skyrizi在银屑病治疗中的重要便利性特点。
+
+儿科斑块状银屑病和PsA患者的剂量可能依据体重确定，应参考2026年更新后的处方信息。
+
+## Crohn’s Disease
+
+### Induction
+
+| 治疗时间 | 推荐剂量 | 给药方式 |
+|---|---:|---|
+| Week 0 | 600 mg | Intravenous infusion，至少1小时 |
+| Week 4 | 600 mg | Intravenous infusion，至少1小时 |
+| Week 8 | 600 mg | Intravenous infusion，至少1小时 |
+
+### Maintenance
+
+| 治疗时间 | 推荐剂量 | 给药方式 |
+|---|---:|---|
+| Week 12 | 180 mg或360 mg | Subcutaneous injection |
+| 此后 | 180 mg或360 mg every 8 weeks | Subcutaneous injection |
+
+应使用能够维持治疗反应的最低有效剂量。
+
+## Ulcerative Colitis
+
+### Induction
+
+| 治疗时间 | 推荐剂量 | 给药方式 |
+|---|---:|---|
+| Week 0 | 1,200 mg | Intravenous infusion，至少2小时 |
+| Week 4 | 1,200 mg | Intravenous infusion，至少2小时 |
+| Week 8 | 1,200 mg | Intravenous infusion，至少2小时 |
+
+### Maintenance
+
+| 治疗时间 | 推荐剂量 | 给药方式 |
+|---|---:|---|
+| Week 12 | 180 mg或360 mg | Subcutaneous injection |
+| 此后 | 180 mg或360 mg every 8 weeks | Subcutaneous injection |
+
+CD和UC的诱导剂量不同。CD使用600 mg静脉诱导，而UC使用1,200 mg静脉诱导。
+
+# Clinical Development（临床开发）
+
+## Plaque Psoriasis Program
+
+Skyrizi的成人斑块状银屑病注册项目包括：
+
+- UltIMMa-1；
+- UltIMMa-2；
+- IMMhance；
+- IMMvent。
+
+### UltIMMa-1与UltIMMa-2
+
+两项Phase 3、randomized、double-blind研究比较risankizumab、placebo和ustekinumab。
+
+主要共同终点包括Week 16时：
+
+- PASI 90；
+- sPGA 0或1，即皮肤完全或接近完全清除。
+
+研究显示risankizumab相较placebo具有明显更高的PASI 90和sPGA 0/1应答率，并在多个时间点优于ustekinumab。
+
+### IMMvent
+
+IMMvent是一项risankizumab与**[Adalimumab（阿达木单抗；AbbVie；Humira / 修美乐）](Humira.qmd)**进行比较的Phase 3研究。
+
+研究包括：
+
+1. 初始risankizumab与adalimumab随机比较；
+2. adalimumab中等应答患者重新随机，继续adalimumab或转换至risankizumab。
+
+该设计除评估初始治疗效果外，也评价了从TNF inhibitor转换至IL-23 inhibitor后的疗效。
+
+## Psoriatic Arthritis Program
+
+PsA的主要注册研究为：
+
+- KEEPsAKE 1；
+- KEEPsAKE 2。
+
+| 研究 | 主要人群 | 对照 | Primary endpoint |
+|---|---|---|---|
+| KEEPsAKE 1 | 对一种或多种csDMARD疗效不足或不耐受 | Placebo | Week 24 ACR20 |
+| KEEPsAKE 2 | 包括对biologic therapy疗效不足或不耐受的患者 | Placebo | Week 24 ACR20 |
+
+**[American College of Rheumatology 20% response, ACR20（ACR 20%应答）](../disease/Rheumatoid_Arthritis.qmd)**要求：
+
+- tender joint count改善至少20%；
+- swollen joint count改善至少20%；
+- 其他核心指标中至少3项改善至少20%。
+
+除ACR20外，PsA研究还评估：
+
+- ACR50和ACR70；
+- PASI 90；
+- minimal disease activity；
+- HAQ-DI；
+- enthesitis resolution；
+- dactylitis resolution；
+- radiographic progression。
+
+## Crohn’s Disease Program
+
+CD的核心Phase 3研究包括：
+
+- ADVANCE；
+- MOTIVATE；
+- FORTIFY；
+- SEQUENCE。
+
+### ADVANCE与MOTIVATE
+
+ADVANCE和MOTIVATE是induction studies（诱导研究），评价静脉risankizumab治疗中重度活动性CD。
+
+主要终点通常包括：
+
+- clinical remission；
+- endoscopic response。
+
+两个终点同时体现患者症状改善和肠道黏膜炎症改善。
+
+### FORTIFY
+
+FORTIFY是maintenance study（维持研究）。完成诱导治疗并获得临床反应的患者进入维持阶段，接受皮下risankizumab或withdrawal/placebo。
+
+主要评价：
+
+- clinical remission；
+- endoscopic response；
+- 维持治疗反应；
+- corticosteroid-free remission。
+
+### SEQUENCE
+
+SEQUENCE是一项Phase 3b、head-to-head研究，比较risankizumab与ustekinumab，用于既往对一种或多种anti-TNF therapy疗效不足或不耐受的中重度CD患者。
+
+研究采用两个重要主要终点：
+
+1. Week 24 clinical remission的noninferiority；
+2. Week 48 endoscopic remission的superiority。
+
+该研究设计反映出炎症性肠病药物开发从单纯placebo-controlled trial逐渐向active-comparator和更严格内镜终点转变。
+
+## Ulcerative Colitis Program
+
+UC的核心研究包括：
+
+- INSPIRE induction study；
+- COMMAND maintenance study。
+
+### INSPIRE
+
+INSPIRE评估静脉risankizumab诱导治疗中重度活动性UC。
+
+主要终点是clinical remission，同时评价：
+
+- clinical response；
+- endoscopic improvement；
+- histologic-endoscopic mucosal improvement；
+- symptom improvement。
+
+### COMMAND
+
+COMMAND评估对诱导治疗产生反应的患者接受皮下risankizumab维持治疗的疗效和安全性。
+
+主要终点是Week 52 clinical remission。
+
+# Key Clinical Trials（关键临床试验）
+
+| Trial | Phase | Disease | Population | Treatment comparison | Primary endpoint |
+|---|---:|---|---|---|---|
+| UltIMMa-1 | 3 | Plaque psoriasis | 中重度成人患者 | Risankizumab vs placebo/ustekinumab | PASI 90与sPGA 0/1 at Week 16 |
+| UltIMMa-2 | 3 | Plaque psoriasis | 中重度成人患者 | Risankizumab vs placebo/ustekinumab | PASI 90与sPGA 0/1 at Week 16 |
+| IMMvent | 3 | Plaque psoriasis | 中重度成人患者 | Risankizumab vs adalimumab | PASI 90、sPGA等 |
+| KEEPsAKE 1 | 3 | Psoriatic arthritis | csDMARD-IR | Risankizumab vs placebo | ACR20 at Week 24 |
+| KEEPsAKE 2 | 3 | Psoriatic arthritis | csDMARD-IR及部分bio-IR | Risankizumab vs placebo | ACR20 at Week 24 |
+| ADVANCE | 3 | Crohn’s disease | 中重度活动性CD | IV risankizumab vs placebo | Clinical remission与endoscopic response |
+| MOTIVATE | 3 | Crohn’s disease | 既往biologic failure为主 | IV risankizumab vs placebo | Clinical remission与endoscopic response |
+| FORTIFY | 3 | Crohn’s disease | Induction responder | SC maintenance vs withdrawal | Clinical remission与endoscopic response |
+| SEQUENCE | 3b | Crohn’s disease | Anti-TNF failure | Risankizumab vs ustekinumab | Week 24 clinical remission与Week 48 endoscopic remission |
+| INSPIRE | 3 | Ulcerative colitis | 中重度活动性UC | IV risankizumab vs placebo | Clinical remission |
+| COMMAND | 3 | Ulcerative colitis | Induction responder | SC maintenance vs withdrawal | Clinical remission at Week 52 |
+
+# Safety Profile（安全性）
+
+## 常见不良反应
+
+### Plaque Psoriasis和Psoriatic Arthritis
+
+常见不良反应包括：
+
+- upper respiratory infection（上呼吸道感染）；
+- headache（头痛）；
+- fatigue（疲劳）；
+- injection-site reaction（注射部位反应）；
+- tinea infection（皮肤癣菌感染）。
+
+### Crohn’s Disease
+
+诱导期常见不良反应包括：
+
+- upper respiratory infection；
+- headache；
+- arthralgia（关节痛）。
+
+维持期常见不良反应包括：
+
+- arthralgia；
+- abdominal pain；
+- injection-site reaction；
+- anemia；
+- pyrexia；
+- back pain；
+- urinary tract infection。
+
+### Ulcerative Colitis
+
+UC诱导期和维持期常见不良反应包括：
+
+- arthralgia；
+- pyrexia；
+- injection-site reaction；
+- rash。
+
+## Serious Hypersensitivity Reactions
+
+Skyrizi可能引起严重超敏反应，包括anaphylaxis（过敏性休克）。
+
+既往对risankizumab或其辅料发生严重超敏反应的患者禁用。
+
+如出现以下症状，应立即停止给药并进行处理：
+
+- 呼吸困难；
+- 面部或喉部肿胀；
+- 全身性荨麻疹；
+- 低血压；
+- 严重头晕。
+
+## Infection Risk
+
+Skyrizi通过调节免疫通路，可能增加感染风险。
+
+治疗前和治疗期间应：
+
+- 评估活动性感染；
+- 对严重或具有临床意义的感染进行治疗；
+- 在感染控制前暂缓给药；
+- 监测机会性感染症状；
+- 评估结核风险。
+
+活动性、具有临床意义的感染患者通常不应开始Skyrizi治疗。
+
+## Tuberculosis
+
+开始治疗前应评估**tuberculosis, TB（结核病）**感染。
+
+对于潜伏性结核患者，应根据临床指南考虑抗结核治疗。活动性结核患者不应开始Skyrizi。
+
+## Hepatotoxicity in Inflammatory Bowel Disease
+
+在CD诱导治疗中曾报告drug-induced liver injury（药物性肝损伤）。
+
+对于CD和UC患者，应：
+
+1. 治疗前检测肝酶和bilirubin；
+2. 在诱导治疗期间至少监测至Week 12；
+3. 维持治疗期间根据临床情况继续监测；
+4. 出现肝损伤症状或明显实验室异常时及时评估。
+
+应特别关注：
+
+- alanine aminotransferase；
+- aspartate aminotransferase；
+- alkaline phosphatase；
+- total bilirubin。
+
+## Vaccination
+
+开始Skyrizi前应尽量完成适龄疫苗接种。
+
+治疗期间应避免live vaccines（活疫苗）。非活疫苗通常可以使用，但免疫应答可能受到免疫调节治疗影响。
+
+# Monitoring（治疗前及治疗期间监测）
+
+| 时间 | 建议评估 |
+|---|---|
+| 治疗前 | 活动性感染、TB筛查、疫苗状态、既往超敏反应 |
+| CD或UC治疗前 | Liver enzymes和bilirubin |
+| IBD诱导期 | 至少监测肝功能至Week 12 |
+| 治疗期间 | 感染症状、超敏反应、疾病活动度及药物耐受性 |
+| 长期治疗 | 定期评估疗效、感染风险和继续治疗的必要性 |
+
+Skyrizi通常不需要像methotrexate或[JAK inhibitor](Xeljanz.qmd)一样进行频繁的常规血细胞和血脂监测，但具体监测仍应依据适应证、共病和联合用药决定。
+
+# Special Populations（特殊人群）
+
+## Pregnancy
+
+目前妊娠期risankizumab使用的人体数据有限，尚不能充分确定药物相关风险。
+
+IgG抗体可通过胎盘，尤其是在妊娠中晚期。因此需要综合考虑：
+
+- 母体疾病活动风险；
+- 停药导致疾病复发的风险；
+- 胎儿药物暴露；
+- 分娩后新生儿活疫苗接种时间。
+
+## Lactation
+
+尚不明确risankizumab是否分泌至人乳汁。作为大型蛋白分子，其经婴儿胃肠道吸收预计有限，但缺乏充分临床数据。
+
+## Pediatric Use
+
+截至2026年6月，Skyrizi已在美国获批用于部分6岁及以上儿科斑块状银屑病和PsA患者。
+
+CD和UC的儿科临床开发仍在进行中，尚不应将成人IBD适应证直接外推至儿童患者。
+
+## Older Adults
+
+临床试验中的老年患者数量相对有限。高龄患者使用时应额外关注：
+
+- 感染风险；
+- 合并症；
+- 既往恶性肿瘤；
+- 多重免疫抑制治疗；
+- 肝肾功能；
+- 疫苗接种状态。
+
+# Immunogenicity（免疫原性）
+
+作为治疗性单克隆抗体，risankizumab可能诱导产生：
+
+- **anti-drug antibody, ADA（抗药抗体）**；
+- neutralizing antibody（中和抗体）。
+
+免疫原性发生率受到以下因素影响：
+
+- 检测方法；
+- 样本采集时间；
+- assay sensitivity；
+- drug tolerance；
+- 给药方案；
+- 适应证；
+- 联合免疫抑制剂使用；
+- ADA阳性定义。
+
+部分高滴度ADA可能降低risankizumab暴露，并影响临床反应，但免疫原性结果不能跨试验或跨药物直接比较。
+
+# Competitive Landscape（竞争格局）
+
+## IL-23 p19 Inhibitors
+
+| 药物 | 公司 | 主要适应证特点 |
+|---|---|---|
+| Risankizumab | [AbbVie](../company/Abbvie.qmd)/Boehringer Ingelheim | Psoriasis、PsA、CD、UC |
+| Guselkumab | Johnson & Johnson | Psoriasis、PsA及IBD适应证 |
+| Tildrakizumab | Sun Pharma | 主要用于plaque psoriasis |
+| Mirikizumab | Eli Lilly | 主要用于UC和CD |
+| Brazikumab | 曾由AstraZeneca开发 | IBD开发项目，状态需按最新信息确认 |
+
+Skyrizi的重要竞争优势包括：
+
+- 银屑病中较高的PASI 90和PASI 100应答；
+- 皮肤适应证每12周一次维持给药；
+- 同时覆盖dermatology、rheumatology和IBD；
+- 在CD中具有head-to-head ustekinumab数据。
+
+## 与其他机制比较
+
+| 治疗类别 | 代表药物 | 主要优势 | 主要限制 |
+|---|---|---|---|
+| IL-23 inhibitor | Risankizumab、guselkumab | 皮肤清除率高，维持给药间隔较长 | 起效可能不如部分口服小分子迅速 |
+| TNF inhibitor | Adalimumab、infliximab | 多疾病领域长期经验丰富 | 感染、免疫原性和部分患者继发失效 |
+| IL-17 inhibitor | Secukinumab、ixekizumab | Psoriasis和PsA中起效较快 | 可能诱发或加重IBD，不用于CD治疗 |
+| IL-12/23 inhibitor | Ustekinumab | 跨皮肤、关节和IBD使用经验 | 对IL-23阻断选择性较低 |
+| [JAK inhibitor](Xeljanz.qmd) | Upadacitinib等 | 口服、起效较快 | 严重感染、心血管、血栓和恶性肿瘤风险警示 |
+| S1P modulator | Ozanimod、etrasimod | UC口服治疗选择 | 心脏、眼部和肝脏监测要求 |
+
+# Clinical Trial Endpoints（临床试验终点）
+
+Skyrizi跨越皮肤科、风湿科和胃肠病学多个疾病领域，不同适应证采用完全不同的终点体系。
+
+## Plaque Psoriasis Endpoints
+
+| 终点 | 英文全称 | 说明 |
+|---|---|---|
+| PASI 75 | ≥75% improvement in PASI | 传统皮肤疗效标准 |
+| PASI 90 | ≥90% improvement in PASI | 接近完全皮损清除 |
+| PASI 100 | 100% improvement in PASI | 完全皮损清除 |
+| sPGA 0/1 | Static Physician’s Global Assessment 0 or 1 | 完全或接近完全清除 |
+| DLQI 0/1 | Dermatology Life Quality Index 0 or 1 | 皮肤病对生活质量无或几乎无影响 |
+
+随着高效biologic普及，PASI 90和PASI 100比PASI 75更能区分治疗效果。
+
+## Psoriatic Arthritis Endpoints
+
+| 终点 | 主要评价内容 |
+|---|---|
+| ACR20/50/70 | 关节症状和多个核心领域的综合改善 |
+| Minimal disease activity | 多疾病领域达到低活动度 |
+| HAQ-DI | 身体功能 |
+| PASI 90 | 皮肤银屑病改善 |
+| Enthesitis resolution | 附着点炎消失 |
+| Dactylitis resolution | 指趾炎消失 |
+| mTSS | 影像学结构损伤进展 |
+
+PsA具有明显的多领域异质性。仅使用ACR20可能不能充分体现皮肤、附着点炎或指趾炎方面的获益。
+
+## Crohn’s Disease Endpoints
+
+| 终点 | 主要说明 |
+|---|---|
+| Clinical remission | 通常根据CDAI或患者报告症状定义 |
+| Endoscopic response | 内镜严重度评分较基线达到预定改善 |
+| Endoscopic remission | 内镜炎症降至较低或无活动水平 |
+| Corticosteroid-free remission | 在不使用糖皮质激素的情况下维持缓解 |
+| PRO remission | 根据腹痛和排便频率等患者报告症状定义 |
+| Hospitalization or surgery | 长期疾病并发症终点 |
+
+## Ulcerative Colitis Endpoints
+
+UC注册试验常采用modified Mayo Score相关定义。
+
+| 终点 | 主要说明 |
+|---|---|
+| Clinical response | Mayo组成项目达到预定比例和绝对改善 |
+| Clinical remission | 排便频率、直肠出血和内镜达到严格标准 |
+| Endoscopic improvement | 内镜评分达到预定阈值 |
+| Histologic-endoscopic mucosal improvement | 同时达到组织学和内镜改善 |
+| Corticosteroid-free remission | 无激素状态下达到缓解 |
+| Maintenance of remission | 诱导缓解者在维持期继续保持缓解 |
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## 多适应证开发
+
+Skyrizi属于multi-indication biologic，其临床开发跨越多个疾病领域。每个适应证具有不同的：
+
+- target population；
+- dose regimen；
+- route of administration；
+- induction和maintenance框架；
+- primary endpoint；
+- response timing；
+- placebo response；
+- rescue therapy规则；
+- missing data处理。
+
+不能简单将一个适应证中的剂量或疗效结果外推至另一个适应证。
+
+## Binary Endpoint Analysis
+
+PASI 90、ACR20、clinical remission和endoscopic response均为常见二分类终点。
+
+常用分析方法包括：
+
+- Cochran–Mantel–Haenszel test；
+- logistic regression；
+- generalized linear model；
+- risk difference；
+- relative risk；
+- odds ratio。
+
+除p-value外，建议报告：
+
+- 各治疗组应答率；
+- absolute treatment difference；
+- 95% confidence interval；
+- relative effect；
+- number needed to treat。
+
+## Nonresponder Imputation
+
+免疫炎症疾病试验常使用**nonresponder imputation, NRI（无应答者插补）**。
+
+患者在以下情况可能被定义为nonresponder：
+
+- 缺失目标访视数据；
+- 提前停止研究药物；
+- 使用rescue therapy；
+- 使用禁用药物；
+- 增加背景治疗；
+- 发生某些intercurrent events。
+
+NRI并不天然等同于保守分析。其解释取决于：
+
+- 哪些事件触发NRI；
+- 不同治疗组的停药原因；
+- 缺失比例；
+- 真实未观察结果；
+- estimand定义。
+
+## Induction与Maintenance Enrichment
+
+IBD维持试验通常仅纳入对诱导治疗产生反应的患者，即使用**responder-enriched design（应答者富集设计）**。
+
+该设计估计的是：
+
+> 在对risankizumab诱导治疗产生反应的患者中，继续risankizumab维持治疗相较撤药或对照的效果。
+
+其结果不能直接解释为所有初始入组患者从治疗开始至一年时的总体获益。
+
+为了评价完整治疗策略，可补充：
+
+- treat-through analysis；
+- induction-to-maintenance integrated analysis；
+- 所有初始随机患者的长期结局；
+- composite sustained response。
+
+## Re-Randomization
+
+FORTIFY和其他维持试验可能在诱导应答者中重新随机。
+
+此类设计需要明确：
+
+- 第一阶段随机化的作用；
+- 第二阶段随机化人群；
+- 不同诱导方案是否合并；
+- 维持阶段分析是否根据诱导组分层；
+- estimand针对哪个随机化阶段；
+- 未进入维持期患者如何描述。
+
+不能将第二阶段治疗比较简单解释为从基线开始的随机化治疗比较。
+
+## Co-Primary Endpoints
+
+CD和银屑病研究常采用co-primary endpoints。
+
+例如：
+
+- clinical remission；
+- endoscopic response。
+
+可能要求：
+
+1. 两个终点均达到统计学显著性；
+2. 在不同监管地区使用不同的症状定义；
+3. 通过multiplicity procedure控制整体第一类错误。
+
+如果两个co-primary endpoints必须同时成功，则研究成功概率受较弱终点驱动。
+
+## Multiplicity
+
+Skyrizi试验通常包含：
+
+- 多个剂量；
+- 多个主要或共同主要终点；
+- 多个时间点；
+- 多个疾病活动度定义；
+- 多个次要终点；
+- active comparator和placebo比较；
+- 不同监管地区要求的终点。
+
+常用multiplicity控制策略包括：
+
+- hierarchical testing；
+- graphical testing procedure；
+- gatekeeping；
+- fixed-sequence testing；
+- Hochberg procedure。
+
+试验成功不应仅依据未经调整的nominal p-value。
+
+## Head-to-Head Noninferiority and Superiority
+
+SEQUENCE研究同时包含：
+
+- noninferiority objective；
+- superiority objective；
+- 不同时间点；
+- 不同类型终点。
+
+典型检验逻辑可能为：
+
+1. 先证明Week 24 clinical remission的noninferiority；
+2. 再检验Week 48 endoscopic remission的superiority。
+
+Noninferiority margin需要基于：
+
+- active comparator历史效果；
+- constancy assumption；
+- 临床可接受损失；
+- assay sensitivity；
+- 研究人群和既往治疗一致性。
+
+## Missing Endoscopy Data
+
+IBD内镜终点可能因以下原因缺失：
+
+- 患者拒绝重复内镜；
+- 提前停止治疗；
+- rescue therapy；
+- 临床恶化；
+- 内镜时间窗偏离；
+- 图像质量不足；
+- central reader无法评价。
+
+将所有缺失内镜结果视为nonresponder是一种常见策略，但应通过敏感性分析评估：
+
+- missing at random；
+- missing not at random；
+- tipping-point analysis；
+- multiple imputation；
+- observed-case analysis。
+
+## Central Reading
+
+CD和UC内镜终点通常使用central reading，以减少研究中心之间的评估差异。
+
+需要预先规定：
+
+- single read或dual read；
+- reader disagreement处理；
+- adjudication规则；
+- segment-level missing data；
+- 最差节段或总体评分；
+- central与local reading的使用目的。
+
+中央读片可降低评估偏倚，但不能消除内镜图像获取质量造成的误差。
+
+## Treatment Discontinuation and Rescue
+
+重要intercurrent events包括：
+
+- 因疗效不足停药；
+- 因不良事件停药；
+- 开始其他biologic或small molecule；
+- 增加糖皮质激素；
+- 进行手术；
+- 使用rescue therapy；
+- 剂量调整。
+
+根据临床问题，可采用：
+
+| 策略 | 可能应用 |
+|---|---|
+| Treatment-policy strategy | 不论后续治疗或停药，评价初始治疗策略 |
+| Composite strategy | 将rescue、手术或禁用治疗定义为失败 |
+| Hypothetical strategy | 估计未发生rescue或停药时的结局 |
+| While-on-treatment strategy | 评价持续接受治疗期间的疗效 |
+| Principal stratum strategy | 评价能够耐受或持续治疗的潜在人群 |
+
+## Long-Term Safety
+
+Skyrizi用于慢性疾病，长期安全性评价需要整合：
+
+- randomized controlled period；
+- open-label extension；
+- 不同适应证；
+- postmarketing data；
+- patient-years exposure。
+
+常用指标包括：
+
+**Exposure-adjusted incidence rate, EAIR（暴露校正发生率）**
+
+$$
+\text{EAIR}
+=
+\frac{\text{发生事件的患者数}}
+{\text{总暴露人年}}
+\times 100
+$$
+
+重点事件包括：
+
+- serious infection；
+- opportunistic infection；
+- tuberculosis；
+- malignancy；
+- hypersensitivity；
+- hepatic event；
+- major adverse cardiovascular event；
+- death。
+
+跨适应证整合时需注意不同疾病本身的基础风险不同。例如，IBD患者的感染、住院和肝功能异常背景风险可能不同于银屑病患者。
+
+# Common Pitfalls（常见误区）
+
+1. **将Skyrizi认为是IL-17 inhibitor。**  
+   Skyrizi靶向IL-23 p19，而不是IL-17。
+
+2. **认为Skyrizi同时阻断IL-12和IL-23。**  
+   Risankizumab选择性阻断IL-23 p19；ustekinumab才是靶向IL-12/23共有p40亚基。
+
+3. **在不同适应证之间混用剂量。**  
+   Psoriasis/PsA、CD和UC的剂量、给药途径和给药间隔不同。
+
+4. **将IBD诱导期和维持期视为同一个试验阶段。**  
+   诱导和维持通常具有不同随机化、分析人群和estimand。
+
+5. **认为IBD维持试验结果适用于所有初始患者。**  
+   维持研究通常只纳入诱导应答者，因此属于富集人群。
+
+6. **将临床症状缓解等同于黏膜愈合。**  
+   患者症状与内镜炎症可能不一致，需要同时评估clinical和endoscopic endpoints。
+
+7. **认为没有频繁实验室监测就没有感染风险。**  
+   Skyrizi仍是免疫调节性生物制剂，需要进行感染和结核筛查。
+
+8. **忽视IBD患者的肝功能监测。**  
+   CD和UC诱导期存在药物性肝损伤风险，需要在基线和诱导期监测肝酶与bilirubin。
+
+9. **直接比较不同试验的PASI、ACR或remission比例。**  
+   入组人群、既往治疗、终点定义、缺失处理和时间点可能不同。
+
+10. **认为NRI一定是保守的。**  
+    NRI的偏倚方向取决于组间停药和缺失模式。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| ACR20 | American College of Rheumatology 20% response | ACR 20%应答 |
+| ADA | Anti-drug antibody | 抗药抗体 |
+| CD | Crohn’s disease | 克罗恩病 |
+| DMARD | Disease-modifying antirheumatic drug | 改善病情抗风湿药 |
+| EAIR | Exposure-adjusted incidence rate | 暴露校正发生率 |
+| IBD | Inflammatory bowel disease | 炎症性肠病 |
+| IL-23 | Interleukin-23 | 白细胞介素-23 |
+| IV | Intravenous | 静脉给药 |
+| NRI | Nonresponder imputation | 无应答者插补 |
+| PASI | Psoriasis Area and Severity Index | 银屑病面积和严重程度指数 |
+| PRO | Patient-reported outcome | 患者报告结局 |
+| PsA | Psoriatic arthritis | 银屑病关节炎 |
+| SC | Subcutaneous | 皮下给药 |
+| sPGA | Static Physician’s Global Assessment | 静态医生总体评价 |
+| TB | Tuberculosis | 结核病 |
+| UC | Ulcerative colitis | 溃疡性结肠炎 |
+
+# Key Takeaways（关键总结）
+
+1. Skyrizi是由[AbbVie](../company/Abbvie.qmd)主导开发和商业化的IL-23 p19单克隆抗体，原始研发代号为BI 655066。
+2. Skyrizi已覆盖plaque psoriasis、PsA、CD和UC，是横跨皮肤科、风湿科和胃肠病学的重要免疫治疗药物。
+3. Psoriasis和PsA使用皮下150 mg，Week 0、Week 4给药，此后每12周一次。
+4. CD和UC采用静脉诱导、皮下维持，但两种IBD适应证的诱导剂量不同。
+5. Skyrizi的主要安全性问题包括感染、结核、严重超敏反应，以及IBD治疗中的潜在肝毒性。
+6. CD和UC试验通常采用clinical remission与endoscopic response或remission等终点，强调症状和黏膜炎症的双重控制。
+7. IBD维持试验通常只纳入诱导应答者，因此结果属于responder-enriched population，不能直接外推至全部初始患者。
+8. 截至2026年6月，Skyrizi的美国psoriatic disease适应证已扩展至部分6岁及以上儿科患者。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. [SKYRIZI Prescribing Information](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s042lbl.pdf). Revised March 2026.
+2. [AbbVie](../company/Abbvie.qmd). [SKYRIZI Official Website](https://www.skyrizi.com/).
+3. [AbbVie](../company/Abbvie.qmd). [SKYRIZI Now FDA Approved for Pediatric Use in Psoriatic Disease](https://news.abbvie.com/2026-06-26-SKYRIZI-R-risankizumab-rzaa-Now-FDA-Approved-for-Pediatric-Use-in-Psoriatic-Disease). June 26, 2026.
+4. [AbbVie](../company/Abbvie.qmd) and Boehringer Ingelheim. [Global Collaboration to Develop and Commercialize BI 655066](https://investors.abbvie.com/news-releases/news-release-details/abbvie-and-boehringer-ingelheim-announce-global-collaboration). March 7, 2016.
+5. Gordon KB, Strober B, Lebwohl M, et al. Efficacy and Safety of Risankizumab in Moderate-to-Severe Plaque Psoriasis: UltIMMa-1 and UltIMMa-2. *The Lancet*. 2018;392:650–661.
+6. Reich K, Gooderham M, Thaçi D, et al. Risankizumab Compared with Adalimumab in Patients with Moderate-to-Severe Plaque Psoriasis: IMMvent. *The Lancet*. 2019;394:576–586.
+7. Kristensen LE, Keiserman M, Papp K, et al. Efficacy and Safety of Risankizumab for Active Psoriatic Arthritis: KEEPsAKE 1. *Annals of the Rheumatic Diseases*. 2022;81:225–231.
+8. Östör A, Van den Bosch F, Papp K, et al. Efficacy and Safety of Risankizumab for Active Psoriatic Arthritis: KEEPsAKE 2. *Annals of the Rheumatic Diseases*. 2022;81:351–358.
+9. D’Haens G, Panaccione R, Baert F, et al. Risankizumab as Induction Therapy for Crohn’s Disease: ADVANCE and MOTIVATE. *The Lancet*. 2022;399:2015–2030.
+10. Ferrante M, Panaccione R, Baert F, et al. Risankizumab as Maintenance Therapy for Moderately to Severely Active Crohn’s Disease: FORTIFY. *The Lancet*. 2022;399:2031–2046.
+11. Peyrin-Biroulet L, et al. Risankizumab versus Ustekinumab for Moderate-to-Severe Crohn’s Disease. *New England Journal of Medicine*. 2024.
+12. U.S. Food and Drug Administration. [FDA Approval of SKYRIZI for Ulcerative Colitis](https://news.abbvie.com/2024-06-18-U-S-FDA-Approves-SKYRIZI-R-risankizumab-rzaa-for-Ulcerative-Colitis%2C-Expanding-AbbVies-Portfolio-Across-Inflammatory-Bowel-Disease). June 18, 2024.
+13. ClinicalTrials.gov. [Risankizumab Clinical Studies](https://clinicaltrials.gov/search?intr=Risankizumab).
+14. International Council for Harmonisation. ICH E9(R1): Addendum on Estimands and Sensitivity Analysis in Clinical Trials. 2019.

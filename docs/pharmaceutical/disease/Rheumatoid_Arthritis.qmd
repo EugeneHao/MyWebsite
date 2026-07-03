@@ -1,0 +1,1357 @@
+---
+title: "Rheumatoid Arthritis, RA（类风湿关节炎）"
+description: "系统介绍类风湿关节炎的疾病机制、临床表现、诊断分类、疾病活动度评估、治疗格局，以及临床试验和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Rheumatology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 疾病概述
+
+**Rheumatoid arthritis, RA（类风湿关节炎）**是一种慢性、系统性、免疫介导的炎症性疾病，主要累及滑膜关节。持续的滑膜炎可导致软骨破坏、骨侵蚀、关节畸形和功能丧失，并可能累及肺、心血管系统、眼、皮肤、血管和神经系统。
+
+RA的核心特征包括：
+
+- 持续性炎症性关节炎；
+- 通常呈对称性小关节受累；
+- 晨僵和关节肿胀；
+- 血清自身抗体阳性；
+- 慢性滑膜炎和骨侵蚀；
+- 疾病活动度与缓解交替；
+- 存在关节外表现和系统性并发症。
+
+RA不同于**osteoarthritis, OA（骨关节炎）**。OA主要由软骨退变和机械负荷引起，而RA的主要驱动因素是免疫异常和滑膜炎症。
+
+RA目前不能被彻底治愈，但早期使用**disease-modifying antirheumatic drug, DMARD（改善病情抗风湿药）**并实施**treat-to-target, T2T（目标治疗）**策略，可使许多患者达到持续缓解或低疾病活动度，并显著减少结构性关节损伤。
+
+# Epidemiology（流行病学）
+
+RA是最常见的系统性自身免疫性炎症性关节病之一。全球成人患病率通常约为0.5%–1%，但会因研究方法、疾病定义、年龄、性别、种族和地区而变化。
+
+RA可发生于任何年龄，但通常在中年以后发病。女性患病率约为男性的2–3倍。RA并不是老年人特有的退行性疾病，育龄期和工作年龄人群也可受到明显影响。
+
+美国CDC指出，RA患者除关节症状外，还可能出现心脏、肺和眼部并发症。吸烟、年龄、女性、遗传因素和肥胖与RA风险增加有关。
+
+## 主要危险因素
+
+| 危险因素 | 说明 |
+|---|---|
+| Female sex（女性） | 女性患病率明显高于男性 |
+| Age（年龄） | 发病率随年龄增加，但任何年龄均可发病 |
+| Genetic susceptibility（遗传易感性） | 尤其与某些HLA-DRB1等位基因相关 |
+| Cigarette smoking（吸烟） | 与血清阳性RA及更严重疾病相关 |
+| Family history（家族史） | 一级亲属患RA时风险增加 |
+| Obesity（肥胖） | 可能增加RA风险并影响治疗反应 |
+| Periodontal disease（牙周病） | 可能与黏膜免疫和蛋白瓜氨酸化有关 |
+| Occupational exposure（职业暴露） | 例如长期二氧化硅暴露 |
+| Hormonal and reproductive factors | 可能参与女性RA风险和疾病活动变化 |
+
+遗传易感性并不意味着一定会发生RA。疾病通常由遗传、环境、黏膜免疫和随机免疫事件共同促成。
+
+# Pathophysiology（病理生理机制）
+
+RA的发生通常包括自身免疫形成、临床前阶段、滑膜炎建立和慢性关节破坏等过程。
+
+## 自身免疫的形成
+
+在具有遗传易感性的个体中，吸烟、牙周炎或其他黏膜环境因素可能促进蛋白质发生**citrullination（瓜氨酸化）**。
+
+机体可能将这些修饰蛋白识别为异常抗原，并产生：
+
+- **rheumatoid factor, RF（类风湿因子）**；
+- **anti-citrullinated protein antibody, ACPA（抗瓜氨酸化蛋白抗体）**。
+
+自身抗体可能在临床关节炎发生前数年已经存在。随着免疫耐受进一步破坏，炎症逐渐集中于滑膜组织并形成临床RA。
+
+## 滑膜炎症
+
+RA滑膜中可见多种免疫细胞和炎症介质参与，包括：
+
+- CD4-positive T cells；
+- B cells和浆细胞；
+- 巨噬细胞；
+- 滑膜成纤维细胞；
+- 中性粒细胞；
+- 树突状细胞；
+- 补体系统。
+
+重要细胞因子和信号通路包括：
+
+- **tumor necrosis factor, TNF（肿瘤坏死因子）**；
+- **interleukin-6, IL-6（白细胞介素-6）**；
+- IL-1；
+- granulocyte-macrophage colony-stimulating factor；
+- Janus kinase–signal transducer and activator of transcription通路；
+- T-cell costimulation；
+- B-cell activation。
+
+这些机制也是RA靶向治疗的主要药理基础。
+
+## 关节结构破坏
+
+持续炎症可导致滑膜组织增生并形成**pannus（血管翳）**。血管翳向软骨和骨组织侵入，进一步引起：
+
+- 软骨降解；
+- 破骨细胞活化；
+- 骨侵蚀；
+- 韧带和肌腱损伤；
+- 关节不稳定；
+- 永久性功能障碍。
+
+关节疼痛改善并不一定意味着结构损伤已经停止，因此RA临床试验除症状终点外，也可能评估影像学进展。
+
+# Clinical Presentation（临床表现）
+
+## 典型关节表现
+
+RA通常呈慢性、对称性、炎症性多关节炎。
+
+| 特征 | 典型表现 |
+|---|---|
+| 常见受累关节 | 掌指关节、近端指间关节、腕关节、跖趾关节 |
+| 分布 | 通常双侧、对称性受累 |
+| 晨僵 | 常持续30分钟以上，活动后可能改善 |
+| 疼痛 | 静息和活动时均可出现 |
+| 肿胀 | 由滑膜增生和关节积液引起 |
+| 压痛 | 关节检查时疼痛 |
+| 活动受限 | 与疼痛、肿胀和结构损伤有关 |
+| 病程 | 持续性或反复发作，可逐渐累积结构损伤 |
+
+RA通常累及近端指间关节，但一般不以远端指间关节为主要受累部位。远端指间关节明显受累更常见于OA或psoriatic arthritis。
+
+## 晚期关节畸形
+
+长期控制不佳的RA可能出现：
+
+- ulnar deviation（尺偏）；
+- swan-neck deformity（天鹅颈畸形）；
+- boutonnière deformity（纽扣花畸形）；
+- Z-thumb deformity；
+- wrist subluxation（腕关节半脱位）；
+- metatarsophalangeal joint deformity；
+- 肌腱断裂；
+- 颈椎寰枢关节不稳定。
+
+随着早期诊断和DMARD治疗普及，严重畸形的发生率已经下降，但仍可见于长期未控制的疾病。
+
+## Constitutional Symptoms（全身症状）
+
+活动性RA可能伴随：
+
+- 疲劳；
+- 低热；
+- 食欲下降；
+- 体重减轻；
+- 睡眠障碍；
+- 抑郁或焦虑；
+- 工作能力下降。
+
+疲劳是RA中非常重要的患者体验，但其程度可能与传统炎症指标并不完全一致。
+
+# Extra-Articular Manifestations（关节外表现）
+
+RA是一种系统性疾病，可累及多个器官。
+
+| 器官系统 | 主要表现 |
+|---|---|
+| 皮肤和皮下组织 | Rheumatoid nodules（类风湿结节） |
+| 肺 | Interstitial lung disease、胸膜炎、肺结节、药物相关肺损伤 |
+| 心血管系统 | 动脉粥样硬化、心肌梗死和卒中风险增加，心包炎 |
+| 眼 | 干眼、巩膜炎、上巩膜炎 |
+| 血液系统 | 慢性炎症性贫血、血小板增多、Felty syndrome |
+| 神经系统 | 腕管综合征、周围神经病变、颈髓受压 |
+| 血管 | Rheumatoid vasculitis（类风湿血管炎） |
+| 骨骼 | 骨质疏松和脆性骨折风险增加 |
+| 肾脏 | RA本身直接累及较少见，但药物和继发性淀粉样变可影响肾功能 |
+
+## RA-Associated Interstitial Lung Disease
+
+**RA-associated interstitial lung disease, RA-ILD（RA相关间质性肺病）**是RA的重要关节外并发症，可表现为：
+
+- 干咳；
+- 活动后气短；
+- 肺弥散功能下降；
+- 高分辨率CT异常；
+- 进行性肺纤维化。
+
+高龄、男性、吸烟、RF或ACPA高滴度以及长期活动性疾病可能与RA-ILD风险增加有关。
+
+RA-ILD会影响DMARD选择、临床试验入组标准和安全性监测。
+
+# Diagnosis（诊断）
+
+RA是临床诊断，不能仅依赖单项实验室检查。诊断通常结合：
+
+- 炎症性关节症状；
+- 体格检查确认滑膜炎；
+- 受累关节数量和分布；
+- 自身抗体；
+- 炎症指标；
+- 症状持续时间；
+- 影像学；
+- 对其他疾病的排除。
+
+## 2010 ACR/EULAR Classification Criteria
+
+**American College of Rheumatology, ACR（美国风湿病学会）**与**European Alliance of Associations for Rheumatology, EULAR（欧洲抗风湿病联盟）**于2010年发布RA分类标准。
+
+该标准主要用于识别具有持续性或侵蚀性疾病风险、可能受益于早期DMARD治疗的患者。
+
+应用分类标准前，患者通常需要满足：
+
+1. 至少存在一个经临床确认的滑膜炎关节；
+2. 滑膜炎不能被其他疾病更好地解释。
+
+总分≥6分通常可分类为definite RA。
+
+| 评分领域 | 分类 | 分值 |
+|---|---|---:|
+| 受累关节 | 1个大关节 | 0 |
+| 受累关节 | 2–10个大关节 | 1 |
+| 受累关节 | 1–3个小关节 | 2 |
+| 受累关节 | 4–10个小关节 | 3 |
+| 受累关节 | >10个关节，且至少1个为小关节 | 5 |
+| 血清学 | RF和ACPA均阴性 | 0 |
+| 血清学 | RF或ACPA低滴度阳性 | 2 |
+| 血清学 | RF或ACPA高滴度阳性 | 3 |
+| 急性期反应物 | CRP和ESR均正常 | 0 |
+| 急性期反应物 | CRP或ESR升高 | 1 |
+| 症状持续时间 | <6周 | 0 |
+| 症状持续时间 | ≥6周 | 1 |
+
+分类标准不是绝对的诊断规则。临床医生可根据完整临床资料诊断未达到6分的早期RA，也不能仅凭达到6分而忽略其他可能疾病。
+
+# Laboratory Evaluation（实验室检查）
+
+## Rheumatoid Factor
+
+RF是针对免疫球蛋白Fc片段的自身抗体。
+
+RF阳性支持RA诊断，但并不特异。RF也可能见于：
+
+- Sjögren syndrome；
+- 慢性感染；
+- hepatitis C；
+- 其他自身免疫病；
+- 部分健康老年人。
+
+高滴度RF通常与侵蚀性疾病和关节外表现风险增加有关。
+
+## Anti-Citrullinated Protein Antibody
+
+ACPA通常通过**anti-cyclic citrullinated peptide antibody, anti-CCP antibody（抗环瓜氨酸肽抗体）**检测。
+
+与RF相比，anti-CCP通常具有更高的RA特异性。高滴度anti-CCP与：
+
+- 持续性关节炎；
+- 影像学侵蚀；
+- 更严重疾病；
+- RA-ILD；
+
+存在一定关联。
+
+RF和anti-CCP均阴性不能排除RA。
+
+## Inflammatory Markers
+
+常用炎症指标包括：
+
+- **C-reactive protein, CRP（C反应蛋白）**；
+- **erythrocyte sedimentation rate, ESR（红细胞沉降率）**。
+
+CRP和ESR可用于：
+
+- 支持炎症存在；
+- 评估疾病活动度；
+- 计算复合疾病活动度评分；
+- 监测治疗反应。
+
+部分活动性RA患者的CRP和ESR可以正常，尤其是在疾病早期、关节受累有限或接受特定细胞因子抑制剂后。
+
+## 基线安全性检查
+
+开始DMARD治疗前通常需要评估：
+
+| 检查 | 主要目的 |
+|---|---|
+| Complete blood count | 评估贫血、白细胞和血小板 |
+| Liver function tests | 评估methotrexate、leflunomide等治疗适用性 |
+| Serum creatinine | 评估肾功能和药物剂量 |
+| Hepatitis B and C testing | 评估病毒再激活风险 |
+| Tuberculosis screening | 使用biologic或[JAK inhibitor](../compound/Xeljanz.qmd)前排除潜伏性结核 |
+| Pregnancy testing | 使用具有胚胎毒性或致畸风险的药物前 |
+| Lipid profile | [JAK inhibitor](../compound/Xeljanz.qmd)或IL-6 inhibitor治疗时可能需要 |
+| Vaccination review | 免疫抑制治疗前优化疫苗接种 |
+
+# Imaging（影像学检查）
+
+## Conventional Radiography
+
+手足X线可用于评估：
+
+- 关节间隙变窄；
+- 边缘性骨侵蚀；
+- 关节半脱位；
+- 骨质减少；
+- 基线结构损伤；
+- 随时间的影像学进展。
+
+早期RA患者的X线可以正常。
+
+## Ultrasound
+
+肌肉骨骼超声可检测：
+
+- 滑膜肥厚；
+- 关节积液；
+- power Doppler血流信号；
+- 肌腱腱鞘炎；
+- 早期骨侵蚀。
+
+超声对临床体检难以确定的低度滑膜炎具有较高敏感性，但结果依赖操作者和标准化流程。
+
+## Magnetic Resonance Imaging
+
+MRI可以显示：
+
+- 滑膜炎；
+- 腱鞘炎；
+- 骨髓水肿；
+- 早期骨侵蚀；
+- 软骨损伤。
+
+MRI对早期结构异常敏感，但成本和可及性限制其作为常规疾病活动度监测工具。
+
+# Differential Diagnosis（鉴别诊断）
+
+| 疾病 | 与RA的主要区别 |
+|---|---|
+| Osteoarthritis | 机械性疼痛、晨僵较短、常累及远端指间关节，炎症指标通常正常 |
+| Psoriatic arthritis | 银屑病、指趾炎、附着点炎、远端指间关节受累或不对称分布 |
+| Systemic lupus erythematosus | 可有多系统表现，关节炎通常非侵蚀性 |
+| Crystal arthritis | 急性发作，关节液中可见尿酸盐或焦磷酸钙结晶 |
+| Viral arthritis | 常为急性或自限性，可能伴病毒感染症状 |
+| Reactive arthritis | 常在胃肠道或泌尿生殖道感染后发生 |
+| Polymyalgia rheumatica | 主要累及肩带和髋带，通常发生于50岁以上人群 |
+| Spondyloarthritis | 中轴受累、附着点炎、葡萄膜炎或炎症性肠病相关表现 |
+| Sjögren syndrome | 以眼干和口干为主要表现，也可伴RF阳性 |
+| Hemochromatosis arthropathy | 常累及第二、三掌指关节，可有软骨钙化 |
+| Paraneoplastic arthritis | 与恶性肿瘤相关，临床模式可能类似RA |
+
+在RA临床试验中，错误纳入其他炎症性关节病患者可能降低治疗效应估计并增加终点评估变异。
+
+# Serologic Classification（血清学分类）
+
+| 亚型 | 定义 | 一般临床特点 |
+|---|---|---|
+| Seropositive RA（血清阳性RA） | RF和/或ACPA阳性 | 约占多数RA患者，侵蚀性和关节外表现风险可能更高 |
+| Seronegative RA（血清阴性RA） | RF和ACPA均阴性 | 诊断更依赖临床表现和排除其他疾病，疾病异质性较高 |
+
+血清阴性RA并不意味着病情一定较轻，也不能根据治疗后的抗体变化判断疾病是否缓解。
+
+# Disease Activity Assessment（疾病活动度评估）
+
+RA治疗通常采用T2T策略，即设定缓解或低疾病活动度为目标，并定期根据标准化疾病活动度指标调整治疗。
+
+## Core Outcome Domains
+
+RA疾病活动度评价通常包括：
+
+- tender joint count（压痛关节数）；
+- swollen joint count（肿胀关节数）；
+- patient global assessment；
+- physician global assessment；
+- pain assessment；
+- physical function；
+- CRP或ESR；
+- 影像学结构损伤；
+- 疲劳和生活质量。
+
+肿胀关节数通常比压痛关节数更直接反映滑膜炎，但仍可能存在观察者间差异。
+
+## DAS28
+
+**Disease Activity Score based on 28 joints, DAS28（基于28个关节的疾病活动度评分）**通常整合：
+
+- 28个关节压痛数；
+- 28个关节肿胀数；
+- ESR或CRP；
+- 患者总体评价。
+
+常用DAS28-ESR解释如下：
+
+| DAS28-ESR | 疾病活动度 |
+|---|---|
+| >5.1 | 高疾病活动度 |
+| >3.2至≤5.1 | 中疾病活动度 |
+| ≥2.6至≤3.2 | 低疾病活动度 |
+| <2.6 | DAS28缓解 |
+
+DAS28不评估足部和踝关节，因此DAS28缓解并不一定表示所有关节均无活动性炎症。
+
+DAS28-CRP与DAS28-ESR的数值和阈值不能简单互换。
+
+## SDAI
+
+**Simplified Disease Activity Index, SDAI（简化疾病活动指数）**定义为：
+
+$$
+\text{SDAI}
+=
+\text{TJC}_{28}
++
+\text{SJC}_{28}
++
+\text{PGA}
++
+\text{PhGA}
++
+\text{CRP}
+$$
+
+其中：
+
+- $\text{TJC}_{28}$为28关节压痛数；
+- $\text{SJC}_{28}$为28关节肿胀数；
+- PGA为患者总体评价，范围通常为0–10；
+- PhGA为医生总体评价，范围通常为0–10；
+- CRP通常以mg/dL计。
+
+| SDAI | 疾病活动度 |
+|---|---|
+| >26 | 高疾病活动度 |
+| >11至≤26 | 中疾病活动度 |
+| >3.3至≤11 | 低疾病活动度 |
+| ≤3.3 | 缓解 |
+
+## CDAI
+
+**Clinical Disease Activity Index, CDAI（临床疾病活动指数）**定义为：
+
+$$
+\text{CDAI}
+=
+\text{TJC}_{28}
++
+\text{SJC}_{28}
++
+\text{PGA}
++
+\text{PhGA}
+$$
+
+CDAI不包括实验室指标，因此可在就诊时立即计算。
+
+| CDAI | 疾病活动度 |
+|---|---|
+| >22 | 高疾病活动度 |
+| >10至≤22 | 中疾病活动度 |
+| >2.8至≤10 | 低疾病活动度 |
+| ≤2.8 | 缓解 |
+
+## Boolean Remission
+
+ACR/EULAR Boolean remission通常要求核心指标同时低于严格阈值，例如：
+
+- TJC28≤1；
+- SJC28≤1；
+- CRP≤1 mg/dL；
+- patient global assessment达到规定阈值。
+
+Boolean remission比DAS28 remission更严格，更接近低水平残余疾病状态。
+
+## Physical Function
+
+**Health Assessment Questionnaire–Disability Index, HAQ-DI（健康评估问卷残疾指数）**是RA临床试验中常用的身体功能患者报告结局。
+
+HAQ-DI涵盖：
+
+- 穿衣；
+- 起身；
+- 进食；
+- 行走；
+- 卫生；
+- 伸手取物；
+- 抓握；
+- 日常活动。
+
+评分通常为0–3，分数越高表示功能障碍越严重。
+
+# Treatment Goals（治疗目标）
+
+RA治疗的主要目标包括：
+
+1. 达到持续临床缓解；如无法实现，则达到低疾病活动度；
+2. 消除或尽量减少滑膜炎；
+3. 防止骨侵蚀和关节结构损伤；
+4. 维持身体功能和劳动能力；
+5. 减轻疼痛、晨僵和疲劳；
+6. 降低心血管、肺部和骨骼并发症；
+7. 减少长期glucocorticoid暴露；
+8. 提高生活质量。
+
+T2T策略强调：
+
+- 诊断后尽快开始DMARD；
+- 活动性疾病通常每1–3个月评估一次；
+- 治疗开始后约3个月内应观察到明确改善；
+- 如约6个月仍未达到治疗目标，应调整治疗；
+- 持续缓解后可降低监测频率。
+
+EULAR于2026年发表的2025版更新继续强调早期DMARD治疗、缓解或低疾病活动度目标，以及根据3个月改善和6个月达标情况调整治疗。
+
+# Treatment Landscape（治疗格局）
+
+RA药物治疗可分为：
+
+| 类别 | 英文名称 | 主要作用 |
+|---|---|---|
+| csDMARD | Conventional synthetic DMARD | 传统小分子改善病情药物 |
+| bDMARD | Biologic DMARD | 靶向特定细胞因子、受体或免疫细胞 |
+| tsDMARD | Targeted synthetic DMARD | 靶向细胞内信号通路的小分子药物 |
+| NSAID | Nonsteroidal anti-inflammatory drug | 改善疼痛和炎症症状，但不能防止结构损伤 |
+| Glucocorticoid | 糖皮质激素 | 快速抑制炎症，通常用于短期过渡治疗 |
+
+## Conventional Synthetic DMARDs
+
+| 药物 | 主要特点 | 重要安全性考虑 |
+|---|---|---|
+| Methotrexate | 中高疾病活动度RA的核心一线治疗 | 肝毒性、骨髓抑制、口腔炎、胚胎毒性、肺毒性 |
+| Hydroxychloroquine | 常用于低疾病活动度或联合治疗 | 视网膜毒性，需要眼科监测 |
+| Sulfasalazine | 可作为单药或联合治疗 | 胃肠道反应、皮疹、血细胞减少 |
+| Leflunomide | 疗效可接近methotrexate | 肝毒性、胚胎毒性、高血压、长半衰期 |
+
+### Methotrexate
+
+**Methotrexate（甲氨蝶呤；多家企业；多个商品名）**通常是RA最重要的初始csDMARD。
+
+RA中methotrexate通常每周给药一次，而不是每日给药。常同时补充folic acid，以减少口腔炎、胃肠道不适和部分实验室异常。
+
+在疗效不足但仍可耐受时，可考虑：
+
+- 逐步增加剂量；
+- 从口服转换为皮下注射；
+- 优化folic acid；
+- 联合其他DMARD；
+- 加用bDMARD或tsDMARD。
+
+Methotrexate具有胚胎毒性，妊娠期间禁用。开始治疗前应评估生育计划、肝肾功能、酒精摄入和药物相互作用。
+
+## Glucocorticoids
+
+Glucocorticoid可以快速控制症状，但长期使用与以下风险有关：
+
+- 感染；
+- 骨质疏松；
+- 糖尿病；
+- 高血压；
+- 白内障；
+- 肾上腺抑制；
+- 心血管风险；
+- 体重增加。
+
+因此，应尽量：
+
+- 使用最低有效剂量；
+- 缩短疗程；
+- 将其作为DMARD起效前的bridge therapy；
+- 在疾病控制后尽快减量和停用。
+
+## Biologic DMARDs
+
+### TNF Inhibitors
+
+| 药物 | 分子类型 | 给药方式 |
+|---|---|---|
+| [Adalimumab](../compound/Humira.qmd) | 全人源单克隆抗体 | 皮下注射 |
+| Etanercept | 可溶性TNF受体融合蛋白 | 皮下注射 |
+| [Infliximab](../compound/Remicade.qmd) | 嵌合单克隆抗体 | 静脉输注 |
+| Certolizumab pegol | PEG化Fab片段 | 皮下注射 |
+| Golimumab | 全人源单克隆抗体 | 皮下注射或静脉输注 |
+
+TNF inhibitors是应用最广泛的bDMARD类别之一。使用前通常需要筛查结核和乙型肝炎。
+
+重要风险包括：
+
+- 严重感染；
+- 潜伏性结核再激活；
+- 乙型肝炎再激活；
+- 注射或输注反应；
+- 脱髓鞘疾病；
+- 部分心力衰竭患者病情恶化。
+
+### IL-6 Pathway Inhibitors
+
+| 药物 | 靶点 |
+|---|---|
+| Tocilizumab | IL-6 receptor |
+| Sarilumab | IL-6 receptor |
+
+IL-6 pathway inhibitors可作为单药或与methotrexate联合使用。
+
+重要安全性监测包括：
+
+- 感染；
+- 中性粒细胞减少；
+- 血小板减少；
+- 肝酶升高；
+- 血脂升高；
+- 胃肠道穿孔风险。
+
+由于IL-6抑制可直接降低CRP，包含CRP或ESR的疾病活动度评分可能显示较大的数值改善，而这不一定完全等同于所有临床症状的改善。
+
+### B-Cell Depletion
+
+**Rituximab（利妥昔单抗；Genentech/Biogen及其他企业；[Rituxan](../compound/Rituxan.qmd)等）**靶向CD20阳性B细胞。
+
+Rituximab可用于：
+
+- 对TNF inhibitor疗效不足的RA；
+- 某些既往淋巴增殖性疾病患者；
+- 特定难治性血清阳性RA。
+
+重要风险包括输注反应、感染、乙型肝炎再激活、低免疫球蛋白血症及极少见的进行性多灶性白质脑病。
+
+### T-Cell Costimulation Modulation
+
+**Abatacept（阿巴西普；Bristol Myers Squibb；Orencia / 恩瑞舒）**通过结合CD80和CD86，抑制CD28介导的T-cell costimulation。
+
+Abatacept可静脉或皮下给药。其主要风险包括感染和输注或注射反应。
+
+## Targeted Synthetic DMARDs
+
+### JAK Inhibitors
+
+| 药物 | 常用商品名 | 主要靶向特征 |
+|---|---|---|
+| Tofacitinib | [Xeljanz](../compound/Xeljanz.qmd) | JAK1/JAK3为主 |
+| Baricitinib | Olumiant | JAK1/JAK2 |
+| Upadacitinib | Rinvoq | 相对JAK1选择性 |
+
+[JAK inhibitors](../compound/Xeljanz.qmd)是口服小分子药物，起效通常较快。
+
+FDA要求tofacitinib、baricitinib和upadacitinib的处方信息包含Boxed Warning，提示以下风险：
+
+- serious infections（严重感染）；
+- mortality（死亡）；
+- malignancy（恶性肿瘤）；
+- major adverse cardiovascular events；
+- thrombosis（血栓形成）。
+
+在美国，[JAK inhibitor](../compound/Xeljanz.qmd)通常用于对一种或多种TNF blocker疗效不足或不能耐受的患者。治疗选择应综合考虑：
+
+- 年龄；
+- 吸烟史；
+- 心血管风险；
+- 血栓风险；
+- 恶性肿瘤史；
+- 感染风险；
+- 既往治疗；
+- 患者对口服或注射治疗的偏好。
+
+# Treatment Algorithm（治疗路径）
+
+## DMARD-Naive RA
+
+对于新诊断、DMARD-naive且中高疾病活动度的患者，常见治疗框架为：
+
+1. 尽快开始methotrexate；
+2. 逐步优化methotrexate剂量和给药方式；
+3. 必要时短期使用glucocorticoid控制炎症；
+4. 每1–3个月评估疾病活动度；
+5. 如3个月内改善不足或6个月未达目标，则调整治疗；
+6. 根据预后因素、共病、安全性和患者偏好选择联合csDMARD、bDMARD或tsDMARD。
+
+对于低疾病活动度患者，可根据关节受累、预后因素和共病考虑hydroxychloroquine、sulfasalazine或methotrexate。
+
+## Methotrexate Inadequate Response
+
+Methotrexate疗效不足时，可考虑：
+
+- 优化methotrexate；
+- 联合其他csDMARD；
+- 加用TNF inhibitor；
+- 加用non-TNF biologic；
+- 加用[JAK inhibitor](../compound/Xeljanz.qmd)。
+
+不同指南对bDMARD、tsDMARD和triple csDMARD therapy的优先顺序有所不同。选择通常取决于：
+
+- 疾病活动度；
+- 影像学进展；
+- 血清学状态；
+- 共病；
+- 既往严重感染；
+- 心血管或血栓风险；
+- 妊娠计划；
+- 药物成本和保险覆盖；
+- 给药途径；
+- 患者偏好。
+
+## Biologic或JAK Inhibitor疗效不足
+
+一种靶向治疗失败后，可以：
+
+- 更换为同一机制中的其他药物；
+- 更换至不同作用机制；
+- 检查用药依从性；
+- 重新确认疼痛是否由活动性滑膜炎引起；
+- 排除fibromyalgia、OA、肌腱病或永久结构损伤；
+- 评估药物抗体或药代动力学问题，但不常规要求治疗药物监测。
+
+多次bDMARD或tsDMARD失败通常称为**difficult-to-treat RA（难治性RA）**。此时应重新评估诊断、炎症证据、共病、依从性和非炎症性症状。
+
+## Sustained Remission and Tapering
+
+持续缓解后可考虑谨慎减量，但通常：
+
+- 不建议突然停用全部DMARD；
+- 优先减少或停用glucocorticoid；
+- 应在持续稳定缓解后再考虑DMARD减量；
+- 减量期间需要密切监测复发；
+- 完全停药后复发风险较高。
+
+是否减量应由患者和风湿科医生共同决策。
+
+# Nonpharmacologic Management（非药物管理）
+
+药物治疗是防止结构损伤的基础，但综合管理同样重要。
+
+| 干预 | 主要作用 |
+|---|---|
+| Regular exercise（规律运动） | 改善肌力、体能、疲劳和心血管健康 |
+| Physical therapy（物理治疗） | 改善活动范围、姿势和关节功能 |
+| Occupational therapy（作业治疗） | 提供关节保护和日常活动适应策略 |
+| Smoking cessation（戒烟） | 降低疾病和心血管风险，并可能改善治疗反应 |
+| Weight management（体重管理） | 减轻机械负担和代谢风险 |
+| Vaccination（疫苗接种） | 降低免疫抑制治疗期间可预防感染风险 |
+| Cardiovascular risk management | 管理血压、血脂、糖尿病和吸烟 |
+| Bone health management | 骨密度评估、钙和维生素D、必要时抗骨质疏松治疗 |
+| Mental health support | 管理抑郁、焦虑、睡眠和慢性疼痛 |
+| Patient education | 提高依从性和shared decision-making质量 |
+
+仅依靠饮食、补充剂或运动不能替代DMARD治疗。
+
+# Special Populations（特殊人群）
+
+## Pregnancy and Reproductive Health
+
+RA在妊娠期间可能改善，但并非所有患者均如此，且产后可能复发。
+
+具有胚胎毒性或致畸风险、妊娠期间通常禁用的药物包括：
+
+- methotrexate；
+- leflunomide；
+- 部分其他免疫抑制剂。
+
+Hydroxychloroquine、sulfasalazine以及某些TNF inhibitors在特定情况下可用于妊娠期，但应依据最新风湿病和母胎医学指南个体化决策。
+
+妊娠计划应在受孕前讨论，而不是确认妊娠后才处理。
+
+## Older Adults
+
+老年RA患者常同时存在：
+
+- 感染风险增加；
+- 心血管疾病；
+- 肾功能下降；
+- 恶性肿瘤史；
+- 多重用药；
+- 骨质疏松；
+- 衰弱。
+
+不能仅因年龄而拒绝有效DMARD，但需要更谨慎地选择药物和监测安全性。
+
+## Previous Serious Infection
+
+既往严重感染患者的治疗需考虑：
+
+- 感染发生时间；
+- 感染类型；
+- 是否存在持续危险因素；
+- glucocorticoid剂量；
+- 结核或乙型肝炎状态；
+- 不同DMARD的感染风险。
+
+长期glucocorticoid本身也是重要感染风险因素，不能简单视为比bDMARD更安全。
+
+## Heart Failure
+
+严重心力衰竭患者通常应谨慎使用TNF inhibitor，并考虑其他作用机制。
+
+## Previous Malignancy
+
+既往恶性肿瘤患者的治疗选择取决于：
+
+- 肿瘤类型；
+- 分期；
+- 完成治疗时间；
+- 复发风险；
+- RA严重程度；
+- 拟使用药物的安全性信号。
+
+通常需要风湿科与肿瘤科共同决策。
+
+# Clinical Trial Endpoints（临床试验终点）
+
+## ACR Response Criteria
+
+ACR response衡量多个核心领域相对于基线的改善。
+
+**ACR20 response（ACR20应答）**通常要求：
+
+1. TJC改善至少20%；
+2. SJC改善至少20%；
+3. 下列5项中至少3项改善至少20%：
+   - patient global assessment；
+   - physician global assessment；
+   - pain assessment；
+   - physical function；
+   - acute-phase reactant。
+
+ACR50和ACR70分别要求上述指标改善至少50%和70%。
+
+| 终点 | 临床解释 |
+|---|---|
+| ACR20 | 最低水平的多维临床改善 |
+| ACR50 | 中等程度、通常更具有临床意义的改善 |
+| ACR70 | 较深程度的临床改善 |
+
+ACR20是经典RA注册试验的常见primary endpoint，但现代高效治疗试验越来越关注ACR50、ACR70、低疾病活动度和缓解。
+
+## Disease Activity Endpoints
+
+常见疾病活动度终点包括：
+
+- DAS28 change from baseline；
+- DAS28 low disease activity；
+- DAS28 remission；
+- CDAI low disease activity；
+- CDAI remission；
+- SDAI remission；
+- Boolean remission；
+- EULAR good or moderate response。
+
+EULAR response通常结合DAS28的绝对水平和相对于基线的变化进行分类。
+
+## Structural Damage Endpoints
+
+影像学结构损伤通常使用：
+
+**modified Total Sharp Score, mTSS（改良总Sharp评分）**。
+
+mTSS主要包括：
+
+- erosion score（骨侵蚀评分）；
+- joint space narrowing score（关节间隙变窄评分）。
+
+常见分析包括：
+
+- mTSS相对于基线的变化；
+- erosion score变化；
+- 无影像学进展比例；
+- 进展超过**smallest detectable change, SDC（最小可检测变化）**的比例。
+
+影像学进展通常具有大量零值、正偏分布和少数极端进展者，传统正态模型可能不完全适用。
+
+## Patient-Reported Outcomes
+
+常用**patient-reported outcome, PRO（患者报告结局）**包括：
+
+| PRO | 主要评价内容 |
+|---|---|
+| HAQ-DI | 身体功能 |
+| Patient Global Assessment | 患者对总体疾病活动的评价 |
+| Pain visual analog scale | 疼痛程度 |
+| FACIT-Fatigue | 疲劳 |
+| SF-36 | 健康相关生活质量 |
+| Work Productivity and Activity Impairment | 工作效率和日常活动影响 |
+
+疼痛和疲劳不仅由滑膜炎决定，还可能受到睡眠、情绪、肥胖、fibromyalgia和结构损伤影响。
+
+# Clinical Trial Design（临床试验设计）
+
+## 典型研究人群
+
+RA药物开发通常按照既往治疗经历划分研究人群。
+
+| 研究人群 | 常用定义 |
+|---|---|
+| DMARD-naive | 未接受过DMARD或暴露非常有限 |
+| Methotrexate-naive | 未接受过methotrexate |
+| Methotrexate inadequate responder, MTX-IR | 对methotrexate疗效不足 |
+| csDMARD inadequate responder, csDMARD-IR | 对一种或多种csDMARD疗效不足 |
+| Biologic inadequate responder, bDMARD-IR | 对一种或多种bDMARD疗效不足 |
+| TNF inhibitor inadequate responder, TNFi-IR | 对TNF inhibitor疗效不足或不能耐受 |
+
+bDMARD-IR人群通常更难治疗，安慰剂反应和治疗效应可能与MTX-IR人群明显不同，因此不宜未经考虑将其简单合并。
+
+## 常见研究设计
+
+### Add-On Design
+
+研究药物或安慰剂添加至背景methotrexate：
+
+$$
+\text{Study Drug} + \text{MTX}
+\quad \text{vs} \quad
+\text{Placebo} + \text{MTX}
+$$
+
+这是MTX-IR人群中常见的注册设计。
+
+### Active-Controlled Design
+
+研究药物与已获批bDMARD或tsDMARD直接比较，可用于评估：
+
+- noninferiority；
+- superiority；
+- onset of action；
+- remission；
+- safety；
+- treatment persistence。
+
+### Monotherapy Design
+
+适用于不能耐受methotrexate或评价单药疗效的患者。不同作用机制的药物在单药使用时疗效可能不同。
+
+### Withdrawal或Tapering Design
+
+持续缓解患者可以随机至继续治疗、减量或停药，用于评估：
+
+- flare rate；
+- time to flare；
+- sustained remission；
+- retreatment response。
+
+此类研究需要明确flare定义和rescue therapy策略。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Binary Endpoint Analysis
+
+ACR20、ACR50、ACR70和remission通常为二分类终点。
+
+常用分析方法包括：
+
+- Cochran–Mantel–Haenszel test；
+- logistic regression；
+- generalized linear model；
+- risk difference；
+- relative risk；
+- odds ratio。
+
+推荐同时报告：
+
+- 各组应答率；
+- 绝对治疗差；
+- 95% confidence interval；
+- 相对效应；
+- p-value。
+
+仅报告odds ratio可能不利于临床解释，尤其当应答率较高时。
+
+## Nonresponder Imputation
+
+RA试验传统上常使用**nonresponder imputation, NRI（无应答者插补）**处理二分类终点。
+
+例如，将以下患者视为nonresponder：
+
+- 缺失终点评估；
+- 提前停止研究药物；
+- 使用rescue therapy；
+- 增加背景DMARD；
+- 使用超过允许剂量的glucocorticoid。
+
+NRI操作简单且通常较保守，但“保守性”并不总是成立。其估计目标取决于哪些事件触发NRI，以及这些事件在不同治疗组中的分布。
+
+## Estimand
+
+RA试验中的重要intercurrent events包括：
+
+- 停止研究治疗；
+- 增加或更换背景DMARD；
+- 使用rescue therapy；
+- glucocorticoid剂量超出允许范围；
+- 开始禁用药物；
+- 失访；
+- 死亡。
+
+不同策略回答不同临床问题。
+
+| Estimand策略 | 在RA试验中的可能应用 |
+|---|---|
+| Treatment-policy strategy | 不论是否停药或使用部分后续治疗，评价随机化治疗策略效果 |
+| Composite strategy | 将rescue、禁用药物或停药定义为治疗失败 |
+| Hypothetical strategy | 估计未使用rescue或未停药情况下的治疗效应 |
+| While-on-treatment strategy | 仅考虑患者接受随机治疗期间的结局 |
+| Principal stratum strategy | 评价特定潜在依从或耐受人群中的效果 |
+
+RA试验不能仅以“NRI”或“mixed model”描述estimand；还必须明确研究人群、变量、intercurrent event处理和summary measure。
+
+## Continuous Endpoints and MMRM
+
+DAS28、HAQ-DI和疼痛评分等重复测量连续终点常使用：
+
+**mixed model for repeated measures, MMRM（重复测量混合模型）**。
+
+典型模型可表示为：
+
+$$
+Y_{ij}
+=
+\mu
++
+\beta_1 \text{Treatment}_i
++
+\beta_2 \text{Visit}_j
++
+\beta_3
+\left(
+\text{Treatment}_i \times \text{Visit}_j
+\right)
++
+\beta_4 Y_{i0}
++
+\boldsymbol{\gamma}^{T}\mathbf{Z}_i
++
+\epsilon_{ij}
+$$
+
+其中：
+
+- $Y_{ij}$为患者$i$在访视$j$的结局；
+- $Y_{i0}$为基线值；
+- $\mathbf{Z}_i$可包括随机化分层因素；
+- 访视通常作为分类变量；
+- 患者内相关性由重复测量协方差结构建模。
+
+标准MMRM通常依赖**missing at random, MAR（随机缺失）**假设。对于因疗效不足、毒性或rescue导致的缺失，应使用敏感性分析评估偏离MAR的影响。
+
+## Composite Scores and Mechanism-Specific Effects
+
+RA复合评分中的不同组成部分可能被药物作用机制不成比例地影响。
+
+例如，IL-6 inhibitor可显著降低CRP，因此：
+
+- DAS28-CRP可能快速下降；
+- SDAI包含CRP，但CRP贡献相对有限；
+- CDAI不包含实验室指标；
+- ACR response要求多个领域同时改善。
+
+比较不同作用机制时，应同时考察：
+
+- 肿胀关节数；
+- 压痛关节数；
+- CDAI；
+- SDAI；
+- PRO；
+- 影像学进展；
+- CRP独立变化。
+
+不能仅凭单一复合评分判断不同机制的整体临床优劣。
+
+## Multiplicity
+
+RA Phase 3试验通常包含多个终点和时间点，例如：
+
+- Week 12 ACR20；
+- Week 24 ACR50；
+- Week 24 DAS28 remission；
+- Week 24 HAQ-DI；
+- Week 52 mTSS；
+- 多个研究药物剂量；
+- 与placebo和active comparator的多重比较。
+
+需要使用预先规定的multiplicity控制方法，例如：
+
+- hierarchical testing；
+- graphical testing procedure；
+- Hochberg procedure；
+- Bonferroni adjustment；
+- gatekeeping strategy。
+
+影像学终点可能在较晚时间点分析，而临床症状终点较早成熟，因此testing hierarchy应同时考虑临床重要性和数据成熟时间。
+
+## Randomization Stratification
+
+常见随机化分层因素包括：
+
+- 地理区域；
+- 基线疾病活动度；
+- 既往bDMARD使用；
+- RF或ACPA状态；
+- baseline glucocorticoid use；
+- 既往TNF inhibitor暴露。
+
+分层因素应具有明确的预后或治疗效应意义，并能够可靠收集。过度分层会导致大量小样本层。
+
+## Placebo Response
+
+RA试验的placebo response可能受以下因素影响：
+
+- 背景methotrexate优化；
+- concomitant glucocorticoid；
+- 研究中心和地区；
+- 患者对试验治疗的期望；
+- 关节计数观察者差异；
+- 入组时疾病活动度回归均值；
+- 研究入组标准；
+- rescue规则；
+- 研究访视频率。
+
+全球试验应关注地区间应答差异，以及少数高入组中心对总体结果的影响。
+
+## Joint Count Reliability
+
+TJC和SJC具有一定主观性。减少变异的方法包括：
+
+- 统一培训和认证；
+- 使用独立关节评估者；
+- 尽量由同一评估者完成同一患者的随访；
+- 对异常中心数据进行盲态质量监测；
+- 预先定义无法评价关节的处理方法；
+- 减少治疗信息对评估者的影响。
+
+SJC通常比TJC更客观，但仍可能受到肥胖、OA和解剖差异影响。
+
+## Rescue Therapy
+
+rescue therapy常用于保护placebo组患者，但可能影响：
+
+- 后续临床终点；
+- 治疗暴露；
+- 安全性比较；
+- 缺失数据；
+- 长期结构性终点；
+- estimand解释。
+
+方案需要明确：
+
+- rescue eligibility；
+- rescue时间；
+- rescue药物；
+- rescue后是否继续盲态研究；
+- rescue后数据是否继续收集；
+- 主要分析如何处理rescue。
+
+不应在rescue后停止所有疗效数据收集，否则会限制treatment-policy estimand和敏感性分析。
+
+## Radiographic Progression
+
+mTSS变化通常具有：
+
+- 大量零值；
+- 明显右偏；
+- 少数快速进展者；
+- 读片误差；
+- 因提前退出导致的缺失影像；
+- 图像时间窗口差异。
+
+常见方法包括：
+
+- analysis of covariance；
+- linear extrapolation；
+- rank-based analysis；
+- cumulative probability plot；
+- 无进展者比例；
+- multiple imputation；
+- tipping-point analysis。
+
+线性外推假设结构损伤随时间线性增加，对早期退出患者可能不合理，应通过敏感性分析评估。
+
+## Safety Analysis
+
+RA治疗通常长期使用，因此安全性评价非常重要。
+
+重点事件包括：
+
+- serious infection；
+- opportunistic infection；
+- tuberculosis；
+- herpes zoster；
+- malignancy；
+- major adverse cardiovascular event；
+- venous thromboembolism；
+- gastrointestinal perforation；
+- hepatic event；
+- cytopenia；
+- interstitial lung disease；
+- death。
+
+除了患者发生率，还应考虑**exposure-adjusted incidence rate, EAIR（暴露校正发生率）**：
+
+$$
+\text{EAIR}
+=
+\frac{\text{发生至少一次事件的患者数}}
+{\text{总暴露人年}}
+\times 100
+$$
+
+EAIR通常表示每100 patient-years的事件数。
+
+在开放标签延长期中，暴露时间、患者选择和治疗转换会影响组间安全性比较，因此不能将未经调整的长期EAIR视为随机对照比较。
+
+# Practical Trial Example（临床试验示例）
+
+假设一项Phase 3、randomized、double-blind研究评价新型bDMARD用于MTX-IR RA患者。
+
+## 研究设计
+
+| 项目 | 示例设计 |
+|---|---|
+| 研究人群 | 活动性RA，对稳定剂量methotrexate疗效不足 |
+| 随机化 | 1:1 |
+| 试验组 | Investigational bDMARD + methotrexate |
+| 对照组 | Placebo + methotrexate |
+| Primary endpoint | Week 12 ACR20 |
+| Key secondary endpoints | Week 12 ACR50、HAQ-DI变化、Week 24 CDAI remission |
+| Long-term endpoint | Week 52 mTSS变化 |
+| Rescue | Week 16后疗效不足者可接受预先规定的rescue |
+| Primary population | Intention-to-treat population |
+| Binary analysis | Logistic regression或CMH方法 |
+| Continuous analysis | MMRM |
+| Multiplicity | Hierarchical testing |
+| Binary missing data | Composite failure/NRI，并进行estimand敏感性分析 |
+
+## 结果解释
+
+假设Week 12结果为：
+
+| 治疗组 | ACR20应答率 |
+|---|---:|
+| Investigational bDMARD + MTX | 68% |
+| Placebo + MTX | 42% |
+
+绝对治疗差为：
+
+$$
+68\%-42\%=26\%
+$$
+
+即每治疗约4名患者，可比对照组多产生1名ACR20 responder：
+
+$$
+\text{NNT}
+=
+\frac{1}{0.26}
+\approx 3.8
+$$
+
+但ACR20仅表示最低程度的多维改善。完整解释还应包括：
+
+- ACR50和ACR70；
+- 缓解比例；
+- HAQ-DI；
+- 疼痛和疲劳；
+- 影像学进展；
+- 严重感染及其他重要风险；
+- 治疗持续性。
+
+# Common Pitfalls（常见误区）
+
+1. **将RA与OA混为一谈。**  
+   RA是免疫介导的炎症性疾病，OA主要是结构退变和机械性疾病。
+
+2. **认为RF阳性即可确诊RA。**  
+   RF并不特异，必须结合滑膜炎和完整临床表现。
+
+3. **认为RF和anti-CCP阴性即可排除RA。**  
+   血清阴性RA确实存在。
+
+4. **将classification criteria直接当作诊断标准。**  
+   分类标准主要服务于研究人群一致性，临床诊断需要综合判断。
+
+5. **仅使用止痛药而不使用DMARD。**  
+   NSAID可改善症状，但不能防止骨侵蚀和永久性结构损伤。
+
+6. **长期依赖glucocorticoid控制疾病。**  
+   长期使用会增加感染、骨质疏松和代谢风险，应尽量减量和停用。
+
+7. **认为症状改善后可立即停止DMARD。**  
+   突然停药可能导致疾病复发，减量应在持续缓解后谨慎进行。
+
+8. **将所有关节疼痛视为活动性RA。**  
+   疼痛还可能来自OA、fibromyalgia、肌腱病或永久结构损伤。
+
+9. **将DAS28 remission等同于完全无疾病。**  
+   DAS28不评估足踝关节，且不同组成部分可能受药物机制不同程度影响。
+
+10. **认为NRI在任何情况下都一定保守。**  
+    NRI的偏倚方向取决于缺失原因、组间退出模式和真实未观察结局。
+
+11. **直接比较不同研究中的ACR20应答率。**  
+    既往治疗、背景methotrexate、疾病活动度、地区和rescue规则均可影响应答率。
+
+12. **忽略[JAK inhibitor](../compound/Xeljanz.qmd)的风险分层。**  
+    治疗前需要评估心血管、血栓、恶性肿瘤和感染风险。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| ACPA | Anti-citrullinated protein antibody | 抗瓜氨酸化蛋白抗体 |
+| ACR | American College of Rheumatology | 美国风湿病学会 |
+| bDMARD | Biologic disease-modifying antirheumatic drug | 生物改善病情抗风湿药 |
+| CDAI | Clinical Disease Activity Index | 临床疾病活动指数 |
+| CRP | C-reactive protein | C反应蛋白 |
+| csDMARD | Conventional synthetic disease-modifying antirheumatic drug | 传统合成改善病情抗风湿药 |
+| DAS28 | Disease Activity Score based on 28 joints | 基于28个关节的疾病活动度评分 |
+| DMARD | Disease-modifying antirheumatic drug | 改善病情抗风湿药 |
+| EAIR | Exposure-adjusted incidence rate | 暴露校正发生率 |
+| ESR | Erythrocyte sedimentation rate | 红细胞沉降率 |
+| EULAR | European Alliance of Associations for Rheumatology | 欧洲抗风湿病联盟 |
+| HAQ-DI | Health Assessment Questionnaire–Disability Index | 健康评估问卷残疾指数 |
+| IL-6 | Interleukin-6 | 白细胞介素-6 |
+| JAK | Janus kinase | Janus激酶 |
+| MMRM | Mixed model for repeated measures | 重复测量混合模型 |
+| mTSS | Modified Total Sharp Score | 改良总Sharp评分 |
+| MTX | Methotrexate | 甲氨蝶呤 |
+| NRI | Nonresponder imputation | 无应答者插补 |
+| PRO | Patient-reported outcome | 患者报告结局 |
+| RA | Rheumatoid arthritis | 类风湿关节炎 |
+| RF | Rheumatoid factor | 类风湿因子 |
+| SDAI | Simplified Disease Activity Index | 简化疾病活动指数 |
+| T2T | Treat-to-target | 目标治疗 |
+| TNF | Tumor necrosis factor | 肿瘤坏死因子 |
+| tsDMARD | Targeted synthetic disease-modifying antirheumatic drug | 靶向合成改善病情抗风湿药 |
+
+# Key Takeaways（关键总结）
+
+1. RA是一种慢性、系统性、免疫介导的炎症性关节病，不是普通的关节退化。
+2. 持续滑膜炎可导致不可逆的软骨破坏、骨侵蚀、关节畸形和功能丧失，因此早期治疗非常重要。
+3. RA诊断依赖临床滑膜炎、自身抗体、炎症指标、影像学和鉴别诊断，RF或anti-CCP不能单独确诊或排除RA。
+4. Methotrexate通常是中高疾病活动度RA的核心一线DMARD，治疗目标是持续缓解或低疾病活动度。
+5. 对methotrexate疗效不足的患者，可根据风险和偏好选择其他csDMARD、bDMARD或tsDMARD。
+6. [JAK inhibitors](../compound/Xeljanz.qmd)疗效较强且为口服药物，但需要重点考虑严重感染、心血管事件、恶性肿瘤、血栓和死亡风险。
+7. RA临床试验常使用ACR20/50/70、DAS28、CDAI、SDAI、HAQ-DI和mTSS等终点。
+8. RA试验的核心统计问题包括intercurrent event处理、NRI、复合评分解释、rescue therapy、影像学偏态数据、multiplicity和长期安全性评价。
+
+# References（参考资料）
+
+1. American College of Rheumatology. [Rheumatoid Arthritis Clinical Practice Guidelines](https://rheumatology.org/rheumatoid-arthritis-guideline).
+2. Fraenkel L, Bathon JM, England BR, et al. 2021 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis. *Arthritis Care & Research*. 2021;73:924–939.
+3. Smolen JS, Landewé RBM, Bergstra SA, et al. EULAR Recommendations for the Management of Rheumatoid Arthritis with Synthetic and Biological Disease-Modifying Antirheumatic Drugs: 2022 Update. *Annals of the Rheumatic Diseases*. 2023;82:3–18.
+4. Smolen JS, et al. EULAR Recommendations for the Management of Rheumatoid Arthritis with Synthetic and Biological Disease-Modifying Antirheumatic Drugs: 2025 Update. *Annals of the Rheumatic Diseases*. Published 2026.
+5. Aletaha D, Neogi T, Silman AJ, et al. 2010 Rheumatoid Arthritis Classification Criteria: An American College of Rheumatology/European League Against Rheumatism Collaborative Initiative. *Arthritis & Rheumatism*. 2010;62:2569–2581.
+6. Centers for Disease Control and Prevention. [Rheumatoid Arthritis](https://www.cdc.gov/arthritis/rheumatoid-arthritis/index.html). Updated January 25, 2024.
+7. U.S. Food and Drug Administration. [Janus Kinase Inhibitors: Drug Safety Communication—FDA Requires Warnings About Increased Risk of Serious Heart-Related Events, Cancer, Blood Clots, and Death](https://www.fda.gov/safety/medical-product-safety-information/janus-kinase-jak-inhibitors-drug-safety-communication-fda-requires-warnings-about-increased-risk). September 1, 2021.
+8. Ytterberg SR, Bhatt DL, Mikuls TR, et al. Cardiovascular and Cancer Risk with Tofacitinib in Rheumatoid Arthritis. *New England Journal of Medicine*. 2022;386:316–326.
+9. Felson DT, Anderson JJ, Boers M, et al. American College of Rheumatology Preliminary Definition of Improvement in Rheumatoid Arthritis. *Arthritis & Rheumatism*. 1995;38:727–735.
+10. Felson DT, Smolen JS, Wells G, et al. American College of Rheumatology/European League Against Rheumatism Provisional Definition of Remission in Rheumatoid Arthritis for Clinical Trials. *Arthritis & Rheumatism*. 2011;63:573–586.
+11. Smolen JS, Breedveld FC, Schiff MH, et al. A Simplified Disease Activity Index for Rheumatoid Arthritis for Use in Clinical Practice. *Rheumatology*. 2003;42:244–257.
+12. Prevoo MLL, van ’t Hof MA, Kuper HH, et al. Modified Disease Activity Scores That Include Twenty-Eight-Joint Counts. *Arthritis & Rheumatism*. 1995;38:44–48.
+13. van der Heijde D. How to Read Radiographs According to the Sharp/van der Heijde Method. *Journal of Rheumatology*. 2000;27:261–263.
+14. International Council for Harmonisation. ICH E9(R1): Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials. 2019.

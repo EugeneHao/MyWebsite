@@ -14,7 +14,7 @@ title: "Remicade"
 
 瑞美斯被批准用于治疗以下疾病：
 
-1.  类风湿性关节炎（Rheumatoid Arthritis）：用于治疗中度至重度活动性类风湿性关节炎。
+1.  [类风湿性关节炎（Rheumatoid Arthritis）](../disease/Rheumatoid_Arthritis.qmd)：用于治疗中度至重度活动性类风湿性关节炎。
 
 2.  克罗恩病（Crohn's Disease）：用于治疗中度至重度活动性克罗恩病。
 

@@ -42,11 +42,11 @@
 - Abbr: JAK  
   Full: Janus Kinase
   Description: |
-    是一组酪氨酸激酶，它们在细胞信号转导中发挥关键作用，特别是在介导免疫和炎症反应中。当JAK通路异常激活时，它可以导致各种自身免疫疾病和某些类型的血液病。针对JAK的抑制剂，如托法替尼（[Tofacitinib](compound/Xeljanz.qmd)）和鲁珠替尼（[Ruxolitinib](compound/Jakafi.qmd)），已被开发用于治疗类风湿性关节炎、骨髓增生异常综合征和其他炎症性疾病。
+    是一组酪氨酸激酶，它们在细胞信号转导中发挥关键作用，特别是在介导免疫和炎症反应中。当JAK通路异常激活时，它可以导致各种自身免疫疾病和某些类型的血液病。针对JAK的抑制剂，如托法替尼（[Tofacitinib](compound/Xeljanz.qmd)）和鲁珠替尼（[Ruxolitinib](compound/Jakafi.qmd)），已被开发用于治疗[类风湿性关节炎](disease/Rheumatoid_Arthritis.qmd)、骨髓增生异常综合征和其他炎症性疾病。
 - Abbr: TNF-$\alpha$  
   Full: Tumor Necrosis Factor Alpha
   Description: |
-    是一种重要的炎症性细胞因子，它在调节免疫系统反应、促进炎症、细胞凋亡和细胞增殖方面发挥作用。TNF-$\alpha$在多种自身免疫疾病中过度表达，如类风湿性关节炎、炎性肠病和银屑病，这导致炎症和组织损伤。针对TNF-$\alpha$的生物制剂治疗，如英夫利昔单抗（[Infliximab](compound/Remicade.qmd)）和阿达木单抗（[Adalimumab](compound/Humira.qmd)），已被广泛用于治疗这些疾病，通过阻断TNF-α的作用减少炎症反应。
+    是一种重要的炎症性细胞因子，它在调节免疫系统反应、促进炎症、细胞凋亡和细胞增殖方面发挥作用。TNF-$\alpha$在多种自身免疫疾病中过度表达，如[类风湿性关节炎](disease/Rheumatoid_Arthritis.qmd)、炎性肠病和银屑病，这导致炎症和组织损伤。针对TNF-$\alpha$的生物制剂治疗，如英夫利昔单抗（[Infliximab](compound/Remicade.qmd)）和阿达木单抗（[Adalimumab](compound/Humira.qmd)），已被广泛用于治疗这些疾病，通过阻断TNF-α的作用减少炎症反应。
 - Abbr: c-Myc
   Full: Myc proto-oncogene protein
   Description: |
@@ -55,7 +55,7 @@
   path: target/KRAS.html
   Full: Kirsten Rat Sarcoma Viral Oncogene Homolog
   Description: |
-    [KRAS](target/KRAS.qmd)是一种小GTPase，属于RAS基因家族，在细胞增殖、分化和存活信号传导中起关键作用。KRAS突变是胰腺癌、结直肠癌和非小细胞肺癌中的常见驱动改变，KRAS G12C抑制剂已使其从长期的“不可成药”靶点转变为重要精准治疗方向。
+    [KRAS](target/KRAS.qmd)是一种小GTPase，属于RAS基因家族，在细胞增殖、分化和存活信号传导中起关键作用。KRAS突变是[胰腺癌](disease/Pancreatic_Cancer.qmd)、结直肠癌和非小细胞肺癌中的常见驱动改变，KRAS G12C抑制剂已使其从长期的“不可成药”靶点转变为重要精准治疗方向。
 - Abbr: BCL-2
   Full: B-cell Lymphoma 2
   Description: |
@@ -146,7 +146,7 @@
 - Abbr: IL-23
   Full: Interleukin-23
   Description: |
-    IL-23是一种细胞因子，对于维持特定类型的辅助T细胞（Th17细胞）至关重要。它在多种炎症性和自身免疫性疾病中发挥作用，如银屑病和克罗恩病，针对IL-23的药物有[Stelara](compound/Stelara.qmd), Skyrizi, Tremfya。
+    IL-23是一种细胞因子，对于维持特定类型的辅助T细胞（Th17细胞）至关重要。它在多种炎症性和自身免疫性疾病中发挥作用，如银屑病和克罗恩病，针对IL-23的药物有[Stelara](compound/Stelara.qmd), [Skyrizi](compound/Skyrizi.qmd), Tremfya。
 
 - Abbr: CD38
   Full: Cluster of Differentiation 38
@@ -274,7 +274,7 @@
 - Abbr: IL-17
   Full: Interleukin-17
   Description: |
-    IL-17（Interleukin-17）是由一类特殊的辅助T细胞（称为Th17细胞）分泌的细胞因子。它在诱导和调节炎症反应中发挥关键作用，尤其是在某些自身免疫疾病和慢性炎症疾病中。IL-17的过度表达与多种疾病，如银屑病、类风湿性关节炎和哮喘的发展有关。
+    IL-17（Interleukin-17）是由一类特殊的辅助T细胞（称为Th17细胞）分泌的细胞因子。它在诱导和调节炎症反应中发挥关键作用，尤其是在某些自身免疫疾病和慢性炎症疾病中。IL-17的过度表达与多种疾病，如银屑病、[类风湿性关节炎](disease/Rheumatoid_Arthritis.qmd)和哮喘的发展有关。
 
 - Abbr: PARP
   Full: Poly (ADP-Ribose) Polymerase
@@ -294,4 +294,4 @@
 - Abbr: IL-17A
   Full: Interleukin-17A
   Description: |
-    IL-17A（Interleukin-17A）是IL-17家族中最重要的成员，是由Th17细胞（一种特殊类型的辅助T细胞）主要分泌的炎症性细胞因子。IL-17A在促进炎症反应和细菌感染的防御中发挥重要作用。它通过刺激靶细胞产生促炎细胞因子和趋化因子来增强炎症反应。IL-17A在多种自身免疫性疾病中过度表达，包括银屑病、类风湿性关节炎和强直性脊柱炎，因此成为这些疾病治疗的重要靶点。药物有Cosentyx, Taltz。
+    IL-17A（Interleukin-17A）是IL-17家族中最重要的成员，是由Th17细胞（一种特殊类型的辅助T细胞）主要分泌的炎症性细胞因子。IL-17A在促进炎症反应和细菌感染的防御中发挥重要作用。它通过刺激靶细胞产生促炎细胞因子和趋化因子来增强炎症反应。IL-17A在多种自身免疫性疾病中过度表达，包括银屑病、[类风湿性关节炎](disease/Rheumatoid_Arthritis.qmd)和强直性脊柱炎，因此成为这些疾病治疗的重要靶点。药物有Cosentyx, Taltz。

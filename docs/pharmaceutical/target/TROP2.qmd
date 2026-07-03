@@ -86,7 +86,7 @@ TROP2在多种实体瘤中均有较高表达。
 | Urothelial carcinoma | 高 |
 | Endometrial cancer | 高 |
 | Ovarian cancer | 高 |
-| Pancreatic cancer | 中等至高 |
+| [Pancreatic cancer](../disease/Pancreatic_Cancer.qmd) | 中等至高 |
 | Colorectal cancer | 中等 |
 | Gastric cancer | 中等 |
 

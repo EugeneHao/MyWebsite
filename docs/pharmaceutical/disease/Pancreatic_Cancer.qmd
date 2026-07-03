@@ -1,0 +1,745 @@
+---
+title: "Pancreatic Cancer（胰腺癌）"
+description: "系统介绍胰腺癌的病理分类、临床场景、分期、诊断、分子特征、治疗格局及临床试验与生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 疾病概述
+
+**Pancreatic cancer（胰腺癌）**是起源于胰腺组织的恶性肿瘤。胰腺同时具有外分泌功能和内分泌功能，因此胰腺癌并不是单一疾病，而是包括外分泌肿瘤、神经内分泌肿瘤及其他罕见组织学类型。
+
+临床上所说的“胰腺癌”通常特指**pancreatic ductal adenocarcinoma, PDAC（胰腺导管腺癌）**。PDAC约占胰腺恶性肿瘤的85%–90%，具有早期症状不明显、局部浸润能力强、较早发生远处转移以及对多数系统治疗敏感性有限等特点。
+
+胰腺癌的治疗策略主要取决于：
+
+- 肿瘤是否能够完整切除；
+- 是否侵犯重要血管；
+- 是否存在远处转移；
+- 患者的**Eastern Cooperative Oncology Group performance status, [ECOG PS](../other/ECOG_Performance_Status.qmd)（美国东部肿瘤协作组体能状态评分）**；
+- 胆红素、肝肾功能和营养状态；
+- 胚系或肿瘤分子生物标志物；
+- 患者能否耐受多药联合化疗。
+
+截至2026年，手术仍是获得长期生存或治愈的必要条件，但仅少数患者在确诊时具有明确的可切除疾病。绝大多数患者需要接受系统治疗，临床试验在胰腺癌药物开发中具有特别重要的地位。
+
+# 胰腺的解剖与功能
+
+胰腺位于上腹部、胃的后方，可分为胰头、钩突、胰颈、胰体和胰尾。
+
+| 胰腺功能 | 主要细胞或结构 | 主要作用 |
+|---|---|---|
+| Exocrine function（外分泌功能） | 腺泡细胞和胰管细胞 | 产生并输送消化酶 |
+| Endocrine function（内分泌功能） | 胰岛细胞 | 分泌胰岛素、胰高血糖素及其他激素 |
+
+大多数PDAC发生于胰头。胰头肿瘤更容易压迫胆总管并导致梗阻性黄疸，因此可能相对较早被发现；胰体或胰尾肿瘤通常在体积较大或已经发生转移后才出现明显症状。
+
+# Epidemiology（流行病学）
+
+根据American Cancer Society的估计，2026年美国约有67,530例新诊断胰腺癌和52,740例胰腺癌死亡。胰腺癌约占美国全部新发癌症的3%，但约占癌症死亡的8%，反映出其发病率与死亡率之间的明显不平衡。
+
+美国SEER数据显示，2019–2023年胰腺癌年龄标化发病率约为每10万人13.9例；2020–2024年年龄标化死亡率约为每10万人11.3例。胰腺癌目前是美国癌症死亡的第三大原因。
+
+胰腺癌主要发生于老年人，确诊年龄中位数约为70岁。男性发病率略高于女性，不同种族和地区之间的发病率也存在差异。
+
+## 主要危险因素
+
+| 危险因素 | 说明 |
+|---|---|
+| 年龄 | 风险随年龄增加，大多数患者在65岁以后确诊 |
+| Cigarette smoking（吸烟） | 最明确的可干预危险因素之一 |
+| Obesity（肥胖） | 与胰岛素抵抗和慢性炎症有关 |
+| Chronic pancreatitis（慢性胰腺炎） | 长期慢性炎症可增加PDAC风险 |
+| [Diabetes mellitus（糖尿病）](T2DM.qmd) | 长期糖尿病是危险因素；新发糖尿病也可能是早期表现 |
+| Family history（家族史） | 多名一级亲属患病时风险明显增加 |
+| Hereditary cancer syndrome（遗传性肿瘤综合征） | 包括BRCA1/2、PALB2、ATM、STK11、CDKN2A和错配修复基因相关综合征 |
+| Alcohol use（饮酒） | 重度饮酒可能通过慢性胰腺炎间接增加风险 |
+
+NCI列出的主要危险因素包括家族史、吸烟、肥胖、慢性胰腺炎以及BRCA1、BRCA2、PALB2和ATM等遗传异常。
+
+# Histologic Classification（组织学分类）
+
+## 外分泌与内分泌肿瘤
+
+| 主要类型 | 英文名称 | 大致占比 | 主要特征 |
+|---|---|---:|---|
+| 胰腺导管腺癌 | Pancreatic ductal adenocarcinoma | 约85%–90% | 起源于胰管上皮，是胰腺癌临床试验的主要研究对象 |
+| 腺泡细胞癌 | Acinar cell carcinoma | 约1%–2% | 起源于腺泡细胞，分子特征和治疗敏感性与PDAC不同 |
+| 胰腺神经内分泌肿瘤 | Pancreatic neuroendocrine tumor, pNET | 约1%–2% | 起源于内分泌细胞，应按照神经内分泌肿瘤体系管理 |
+| 实性假乳头状肿瘤 | Solid pseudopapillary neoplasm | 少见 | 多见于年轻女性，通常生物学行为较温和 |
+| 胰腺母细胞瘤 | Pancreatoblastoma | 极少见 | 主要见于儿童 |
+| 其他组织学类型 | Other histologies | 少见 | 包括胶样癌、未分化癌和鳞状细胞癌等 |
+
+PDAC与pNET在疾病生物学、分期、治疗和临床试验设计方面存在显著差异。除非特别说明，本页面后续内容主要讨论PDAC。
+
+## 癌前病变
+
+PDAC通常由癌前病变逐步积累分子异常后发展而来。
+
+| 癌前病变 | 英文名称 | 主要特点 |
+|---|---|---|
+| 胰腺上皮内瘤变 | Pancreatic intraepithelial neoplasia, PanIN | 通常为显微镜下病变，与经典PDAC演化关系密切 |
+| 胰管内乳头状黏液性肿瘤 | Intraductal papillary mucinous neoplasm, IPMN | 可累及主胰管或分支胰管，恶变风险不同 |
+| 黏液性囊性肿瘤 | Mucinous cystic neoplasm, MCN | 多见于中年女性，通常发生于胰体或胰尾 |
+| 浆液性囊性肿瘤 | Serous cystic neoplasm | 多数为良性，恶变极少 |
+
+# Clinical Setting（临床场景）
+
+胰腺癌临床试验通常不是针对所有PDAC患者，而是针对由可切除性、转移状态、既往治疗和分子标志物共同定义的特定临床场景。
+
+| Clinical setting | 中文说明 | 典型治疗目标 | 常见治疗框架 | 常见研究终点 |
+|---|---|---|---|---|
+| Resectable PDAC | 可切除PDAC | 根治并降低复发风险 | Surgery + adjuvant chemotherapy，或perioperative therapy | DFS、OS、R0 resection |
+| Borderline resectable PDAC | 交界可切除PDAC | 缩小或稳定肿瘤，提高R0切除率 | Neoadjuvant chemotherapy ± radiation → surgery | R0 resection、EFS、OS |
+| Locally advanced unresectable PDAC | 局部晚期不可切除PDAC | 延长生存、控制局部进展，部分患者争取转化切除 | Systemic chemotherapy ± consolidative radiation | OS、[PFS](../other/PFS.qmd)、conversion rate |
+| Metastatic first-line PDAC | 转移性一线PDAC | 延长生存、缓解症状和维持生活质量 | Multi-agent chemotherapy | OS、[PFS](../other/PFS.qmd)、ORR、PRO |
+| Previously treated metastatic PDAC | 经治转移性PDAC | 延长生存并控制疾病 | 更换化疗骨架或[biomarker](../other/Biomarker.qmd)-directed therapy | OS、[PFS](../other/PFS.qmd)、ORR |
+| Molecularly selected PDAC | 分子标志物筛选的PDAC | 利用特定肿瘤依赖性获得深度或持久缓解 | Targeted therapy或immunotherapy | ORR、DOR、[PFS](../other/PFS.qmd)、OS |
+
+“可切除性”并不完全等同于AJCC解剖分期。临床决策更重视肿瘤与肠系膜上动脉、腹腔干、肝总动脉、门静脉和肠系膜上静脉之间的关系。
+
+# Staging（分期）
+
+## AJCC [TNM](../other/TNM_Staging.qmd)分期
+
+PDAC通常采用**American Joint Committee on Cancer, AJCC（美国癌症联合委员会）**的**tumor-node-metastasis, [TNM](../other/TNM_Staging.qmd)（肿瘤、淋巴结和远处转移）**系统。
+
+### T分期
+
+| T分类 | 定义 |
+|---|---|
+| T1 | 最大径≤2 cm |
+| T2 | 最大径>2 cm且≤4 cm |
+| T3 | 最大径>4 cm |
+| T4 | 肿瘤侵犯腹腔干、肠系膜上动脉或肝总动脉，与肿瘤大小无关 |
+
+T4通常提示局部晚期疾病，但是否能够手术仍需由多学科团队结合血管受累程度进行判断。
+
+### N分期
+
+| N分类 | 定义 |
+|---|---|
+| N0 | 无区域淋巴结转移 |
+| N1 | 1–3枚区域淋巴结转移 |
+| N2 | ≥4枚区域淋巴结转移 |
+
+### M分期
+
+| M分类 | 定义 |
+|---|---|
+| M0 | 无远处转移 |
+| M1 | 存在远处转移 |
+
+常见远处转移部位包括肝脏、腹膜、肺和远处淋巴结。
+
+## 基于可切除性的临床分类
+
+| 分类 | 主要特征 |
+|---|---|
+| Resectable（可切除） | 无远处转移，主要动脉和静脉未受累或受累程度有限，可预期实现完整切除 |
+| Borderline resectable（交界可切除） | 存在有限血管受累，可能完成切除和血管重建，但R1或R2切除风险较高 |
+| Locally advanced unresectable（局部晚期不可切除） | 广泛包绕重要动脉或存在无法重建的静脉受累，但无远处转移 |
+| Metastatic（转移性） | 存在远处器官、腹膜或非区域淋巴结转移 |
+
+不同研究和指南对血管接触角度、血管狭窄程度以及可重建性的定义可能略有差异，因此临床试验必须在方案中明确可切除性标准和中央影像审查流程。
+
+# Clinical Presentation（临床表现）
+
+早期胰腺癌通常缺乏特异性症状。常见表现包括：
+
+- 无痛性黄疸；
+- 深色尿和浅色粪便；
+- 上腹部或背部疼痛；
+- 不明原因体重下降；
+- 食欲下降和早饱；
+- 疲劳；
+- 恶心或消化不良；
+- 新发糖尿病或原有糖尿病突然恶化；
+- 胰腺外分泌功能不全和脂肪泻；
+- 静脉血栓栓塞。
+
+胰头肿瘤更容易导致胆道梗阻和黄疸；胰体或胰尾肿瘤则更常以腹痛、背痛、体重下降或转移相关症状出现。
+
+# Diagnosis（诊断）
+
+## 影像学检查
+
+**Pancreas-protocol computed tomography, pancreas-protocol CT（胰腺专用增强CT）**是诊断和判断可切除性的核心影像学检查，通常包括薄层、多期增强扫描。
+
+其他检查包括：
+
+| 检查 | 主要用途 |
+|---|---|
+| Magnetic resonance imaging, MRI（磁共振成像） | 进一步评估肝脏病灶、胆胰管和囊性病变 |
+| Magnetic resonance cholangiopancreatography, MRCP（磁共振胰胆管成像） | 显示胆管和胰管结构 |
+| Endoscopic ultrasound, EUS（内镜超声） | 观察胰腺病灶并进行组织取样 |
+| Endoscopic retrograde cholangiopancreatography, ERCP（内镜逆行胰胆管造影） | 主要用于胆道引流和支架置入，而非单纯诊断 |
+| Positron emission tomography, PET（正电子发射断层扫描） | 不是常规基础检查，可用于特定疑难病例 |
+| Diagnostic laparoscopy（诊断性腹腔镜） | 高危局限期患者中用于发现影像学未显示的腹膜或肝表面转移 |
+
+## 病理确认
+
+对于计划直接接受手术且影像学高度符合可切除PDAC的患者，术前不一定必须获得组织学诊断。
+
+以下情况通常需要病理确认：
+
+- 计划接受neoadjuvant therapy；
+- 局部晚期不可切除疾病；
+- 转移性疾病；
+- 影像表现不典型；
+- 需要排除pNET、淋巴瘤、转移癌或自身免疫性胰腺炎。
+
+EUS引导下的细针活检通常优于经皮穿刺，因为其对腹膜播散风险较低，并可获得用于病理和分子检测的组织。
+
+## CA 19-9
+
+**Carbohydrate antigen 19-9, CA 19-9（糖类抗原19-9）**是PDAC最常用的血清肿瘤标志物，但不能单独用于筛查或确诊。
+
+CA 19-9的主要局限包括：
+
+- 胆道梗阻和胆管炎可引起假性升高；
+- 胰腺炎和其他良性胆胰疾病也可升高；
+- 部分Lewis抗原阴性人群不能正常合成CA 19-9；
+- 正常CA 19-9不能排除胰腺癌；
+- 不同患者之间的绝对数值不宜直接比较。
+
+CA 19-9更适合用于评估治疗趋势、辅助判断预后和监测复发。胆道梗阻患者应尽量在引流和胆红素改善后重新测定。
+
+# Molecular Biology（分子生物学）
+
+## 常见驱动基因
+
+PDAC的经典分子演化通常涉及*[KRAS](../target/KRAS.qmd)*激活以及*CDKN2A*、*TP53*和*SMAD4*等抑癌基因失活。
+
+| 分子异常 | 在PDAC中的大致频率 | 主要生物学意义 | 当前临床意义 |
+|---|---:|---|---|
+| *[KRAS](../target/KRAS.qmd)* mutation | 约90% | 激活MAPK和PI3K等信号通路 | 特定KRAS亚型抑制剂和pan-RAS策略正在开发 |
+| *TP53* alteration | 约60%–75% | 破坏DNA损伤应答和细胞周期控制 | 暂无常规直接靶向治疗 |
+| *CDKN2A* alteration | 约30%–50% | 促进细胞周期进展 | CDK通路靶向仍以研究为主 |
+| *SMAD4* alteration | 约30%–50% | 影响TGF-β信号和肿瘤进展 | 可能具有预后和疾病模式相关性 |
+| Homologous recombination repair alteration | 约10%–15% | 影响DNA双链断裂修复 | 可能预测铂类和PARP抑制剂敏感性 |
+| MSI-H或dMMR | 通常<1%–2% | 高新抗原负荷 | 可考虑免疫检查点抑制剂 |
+| *NTRK* fusion | 通常<1% | 驱动TRK信号 | 可使用tumor-agnostic TRK抑制剂 |
+| *NRG1* fusion | 通常<0.5% | 激活HER2–HER3信号 | 经治晚期患者可使用zenocutuzumab-zbco |
+| *BRAF* alteration | 约1%–3% | 激活MAPK信号 | 特定突变或融合可能具有靶向价值 |
+| *HER2/ERBB2* amplification | 约1%–3% | HER2信号激活 | 可考虑临床试验或相应tumor-agnostic策略 |
+
+分子频率会受到检测方法、疾病阶段、人群构成和是否纳入KRAS wild-type肿瘤的影响，因此表中数值应理解为近似范围。
+
+## Germline Testing（胚系检测）
+
+PDAC患者可能携带与遗传性肿瘤综合征相关的胚系变异，例如：
+
+- *BRCA1*；
+- *BRCA2*；
+- *PALB2*；
+- *ATM*；
+- *CDKN2A*；
+- *STK11*；
+- *MLH1*、*MSH2*、*MSH6*和*PMS2*；
+- *TP53*。
+
+胚系检测不仅可能影响患者的系统治疗选择，也会影响家族成员的遗传咨询和癌症筛查。
+
+## Somatic Tumor Profiling（肿瘤体细胞检测）
+
+晚期PDAC通常应考虑**next-generation sequencing, NGS（下一代测序）**。检测应尽量覆盖：
+
+- DNA突变；
+- 基因扩增；
+- 基因融合；
+- **microsatellite instability, MSI（微卫星不稳定性）**；
+- **mismatch repair deficiency, dMMR（错配修复缺陷）**；
+- 必要时的RNA-based fusion testing（基于RNA的融合检测）。
+
+RNA检测对于发现*NRG1*、*NTRK*和其他罕见基因融合尤其重要。
+
+# Treatment Landscape（治疗格局）
+
+## Resectable PDAC（可切除PDAC）
+
+可切除PDAC的核心治疗是手术联合系统化疗。
+
+根据肿瘤位置，常见手术包括：
+
+| 肿瘤位置 | 常见手术 |
+|---|---|
+| 胰头或钩突 | Pancreaticoduodenectomy（胰十二指肠切除术，Whipple procedure） |
+| 胰体或胰尾 | Distal pancreatectomy（胰体尾切除术），通常同时切除脾脏 |
+| 广泛多灶病变 | Total pancreatectomy（全胰切除术），仅用于特定患者 |
+
+手术应在具有较高胰腺手术量和多学科经验的中心完成。
+
+### Adjuvant therapy（辅助治疗）
+
+体能状态良好且术后恢复充分的患者通常接受约6个月的辅助化疗。
+
+| 治疗方案 | 适用人群或特点 |
+|---|---|
+| Modified FOLFIRINOX, mFOLFIRINOX | 体能状态良好的患者，具有较强的辅助治疗证据 |
+| Gemcitabine + capecitabine | 无法耐受mFOLFIRINOX的患者可考虑 |
+| Gemcitabine或fluoropyrimidine单药 | 适用于年龄较大、体能状态较差或耐受性有限的患者 |
+
+**Disease-free survival, DFS（无病生存期）**和**overall survival, OS（总生存期）**是辅助治疗试验的主要终点。
+
+### Neoadjuvant和perioperative strategy
+
+可切除PDAC中是否常规使用neoadjuvant therapy仍需根据患者和中心经验决定。可能支持术前治疗的因素包括：
+
+- CA 19-9明显升高；
+- 原发肿瘤较大；
+- 可疑区域淋巴结；
+- 明显体重下降或疼痛；
+- 影像学存在交界特征；
+- 需要观察肿瘤生物学行为；
+- 担心患者术后无法接受足量辅助治疗。
+
+术前治疗的潜在优势是更早控制微转移，并提高患者实际接受系统治疗的比例；潜在缺点是治疗毒性或疾病进展可能使部分患者失去手术机会。
+
+## Borderline Resectable PDAC（交界可切除PDAC）
+
+交界可切除PDAC通常优先接受neoadjuvant systemic therapy，常用方案包括：
+
+- mFOLFIRINOX；
+- gemcitabine + nab-paclitaxel。
+
+完成一定周期后，通过CT、CA 19-9、临床状态和多学科评估判断是否能够手术。部分患者可能接受chemoradiation或**stereotactic body radiation therapy, SBRT（立体定向体部放射治疗）**。
+
+影像学上肿瘤未明显缩小并不一定意味着治疗无效。PDAC治疗后的纤维化组织可能难以与残余活肿瘤区分，因此手术决策不能仅依据[RECIST](../other/RECIST_1_1.qmd)尺寸变化。
+
+## Locally Advanced Unresectable PDAC（局部晚期不可切除PDAC）
+
+局部晚期PDAC的初始治疗通常以系统化疗为主：
+
+- mFOLFIRINOX；
+- gemcitabine + nab-paclitaxel；
+- 对特定患者采用其他强度较低的方案。
+
+在无远处进展且局部病灶仍为主要问题的患者中，可考虑：
+
+- chemoradiation；
+- SBRT；
+- 在高经验中心重新评估转化切除可能性。
+
+局部晚期和转移性疾病的自然病程不同。部分局部晚期患者主要因局部进展产生严重并发症，因此局部控制具有临床价值；但放疗能否带来OS改善仍取决于患者选择和治疗策略。
+
+## Metastatic First-line PDAC（转移性一线PDAC）
+
+### 体能状态良好的患者
+
+| 治疗方案 | 组成 | 主要特点 |
+|---|---|---|
+| FOLFIRINOX或mFOLFIRINOX | Oxaliplatin、irinotecan、leucovorin和fluorouracil | 疗效较强，但骨髓抑制、胃肠道毒性和神经毒性较明显 |
+| NALIRIFOX | Liposomal irinotecan、oxaliplatin、leucovorin和fluorouracil | 2024年获得FDA批准用于转移性胰腺腺癌一线治疗 |
+| Gemcitabine + nab-paclitaxel | Gemcitabine和白蛋白结合型paclitaxel | 广泛使用，主要毒性包括骨髓抑制和周围神经病变 |
+
+2024年2月13日，FDA批准**irinotecan liposome（伊立替康脂质体；Ipsen；Onivyde）**联合oxaliplatin、fluorouracil和leucovorin，即NALIRIFOX，用于成人转移性胰腺腺癌的一线治疗。
+
+### 体能状态或器官功能受限的患者
+
+可根据患者状况考虑：
+
+- gemcitabine单药；
+- gemcitabine基础的减量联合治疗；
+- fluoropyrimidine基础治疗；
+- 最佳支持治疗。
+
+高龄本身不应成为排除系统治疗的唯一依据，但需要综合评估[ECOG PS](../other/ECOG_Performance_Status.qmd)、合并症、营养状况、认知功能和患者治疗目标。
+
+## Later-line Treatment（后线治疗）
+
+后线方案通常根据既往化疗骨架进行转换。
+
+| 既往治疗 | 可能的后续治疗 |
+|---|---|
+| 既往gemcitabine-based therapy | Liposomal irinotecan + fluorouracil + leucovorin |
+| 既往FOLFIRINOX或NALIRIFOX | Gemcitabine + nab-paclitaxel或gemcitabine单药 |
+| 既往多线治疗且存在可靶向标志物 | Biomarker-directed therapy |
+| 体能状态明显下降 | 单药治疗、症状控制或最佳支持治疗 |
+
+后线治疗选择应考虑残余神经毒性、骨髓储备、胆红素、既往最佳疗效、疾病进展速度和患者偏好。
+
+# [Biomarker](../other/Biomarker.qmd)-Directed Treatment（生物标志物指导治疗）
+
+## BRCA1/2与PALB2
+
+携带胚系*BRCA1*、*BRCA2*或*PALB2*致病变异的PDAC可能对铂类药物更加敏感。
+
+对于胚系*BRCA1/2*突变、接受一线含铂化疗至少16周且疾病未进展的转移性PDAC患者，可考虑：
+
+**[Olaparib（奥拉帕利；AstraZeneca与Merck；Lynparza / 利普卓）](../compound/Lynparza.qmd)**维持治疗。
+
+FDA于2019年12月30日批准olaparib用于该特定人群的维持治疗。
+
+POLO研究显示olaparib改善[PFS](../other/PFS.qmd)，但未明确证明OS获益。该结果强调维持治疗试验中后续治疗、交叉用药和较长生存随访的重要性。
+
+## MSI-H、dMMR与TMB-H
+
+极少数PDAC具有：
+
+- **microsatellite instability-high, MSI-H（微卫星高度不稳定）**；
+- dMMR；
+- **tumor mutational burden-high, TMB-H（高肿瘤突变负荷）**。
+
+符合相应tumor-agnostic适应证时，可考虑[PD-1抑制剂](../other/Immune_Checkpoint.qmd)，例如[pembrolizumab](../compound/Keytruda.qmd)。由于这些标志物在PDAC中非常罕见，单个研究通常难以开展胰腺癌专属随机试验。
+
+## NRG1 Fusion
+
+*NRG1*融合通常见于*[KRAS](../target/KRAS.qmd)* wild-type PDAC，频率一般低于0.5%。
+
+**Zenocutuzumab-zbco（暂无广泛认可的中文通用名；Merus；Bizengri）**是一种[HER2 × HER3](../target/HER.qmd)双特异性抗体。
+
+2024年12月4日，FDA加速批准zenocutuzumab-zbco用于携带*NRG1*融合、经既往系统治疗后进展的晚期不可切除或转移性胰腺腺癌。该批准主要基于eNRGy研究中的**objective response rate, ORR（客观缓解率）**和**duration of response, DOR（缓解持续时间）**。
+
+在用于批准的30例PDAC患者中，经盲态独立中心审评确认的ORR为40%，67%的缓解患者DOR达到至少6个月。该适应证属于accelerated approval，持续批准可能取决于验证性研究。
+
+## 其他罕见靶点
+
+| 分子标志物 | 潜在治疗方向 |
+|---|---|
+| *NTRK1/2/3* fusion | Larotrectinib或entrectinib等TRK抑制剂 |
+| *BRAF V600E* | BRAF与MEK联合抑制 |
+| *RET* fusion | RET抑制剂 |
+| *HER2* amplification | [HER2](../target/HER.qmd)-directed therapy或临床试验 |
+| *[KRAS](../target/KRAS.qmd) G12C* | [KRAS](../target/KRAS.qmd) G12C抑制剂，适用于极少数患者 |
+| 其他*[KRAS](../target/KRAS.qmd)*亚型 | KRAS G12D、pan-[KRAS](../target/KRAS.qmd)、pan-RAS及下游通路抑制剂仍在临床开发中 |
+
+# Supportive and Palliative Care（支持与姑息治疗）
+
+支持治疗应从诊断早期开始，而不应仅限于生命末期。
+
+## 胆道梗阻
+
+对于梗阻性黄疸，可通过ERCP放置胆道支架。金属支架通常具有更长通畅时间，但具体选择取决于预期生存、手术计划和临床场景。
+
+## 疼痛控制
+
+可采用：
+
+- 非阿片类或阿片类镇痛药；
+- 腹腔神经丛阻滞或消融；
+- 姑息性放疗；
+- 针对胆道或胃出口梗阻的介入治疗。
+
+## 营养与胰腺外分泌功能
+
+PDAC患者常发生营养不良和胰腺外分泌功能不全。可考虑：
+
+- **pancreatic enzyme replacement therapy, PERT（胰酶替代治疗）**；
+- 营养师评估；
+- 高能量和高蛋白饮食；
+- 脂溶性维生素监测；
+- 糖尿病管理；
+- 恶心、腹泻和早饱的症状控制。
+
+## 血栓栓塞
+
+PDAC具有较高的**[venous thromboembolism, VTE（静脉血栓栓塞）](Thrombosis.qmd)**风险。是否进行预防性抗凝需要综合评估疾病阶段、化疗方案、出血风险和患者偏好。
+
+# Prognosis（预后）
+
+胰腺癌预后主要受以下因素影响：
+
+- 是否存在远处转移；
+- 是否能够实现R0切除；
+- 区域淋巴结状态；
+- 肿瘤大小和分化程度；
+- [ECOG PS](../other/ECOG_Performance_Status.qmd)；
+- CA 19-9水平及治疗后的变化；
+- 营养状态和体重下降；
+- 是否对初始系统治疗产生反应；
+- 分子亚型和DNA修复异常；
+- 手术和系统治疗完成程度。
+
+根据2015–2021年确诊患者的SEER数据，胰腺癌5年相对生存率如下：
+
+| SEER疾病范围 | 5年相对生存率 |
+|---|---:|
+| Localized（局限性） | 约44% |
+| Regional（区域性） | 约17% |
+| Distant（远处转移） | 约3% |
+| 所有阶段合计 | 约13% |
+
+SEER疾病范围与AJCC [TNM](../other/TNM_Staging.qmd)分期并不完全对应。这些数字是人群层面的历史估计，不能直接用于预测单个患者的结局。
+
+# Clinical Trial Endpoints（临床试验终点）
+
+## 局限期和可切除疾病
+
+| 终点 | 英文名称 | 主要定义或用途 |
+|---|---|---|
+| 总生存期 | Overall survival | 从随机化至任何原因死亡 |
+| 无病生存期 | Disease-free survival | 完成根治性治疗后至复发、第二原发肿瘤或死亡，具体组成需预先定义 |
+| 无事件生存期 | Event-free survival | 可包括局部进展导致无法手术、远处转移、复发或死亡 |
+| R0切除率 | R0 resection rate | 切缘显微镜下无肿瘤，但切缘距离标准可能不同 |
+| 病理完全缓解 | Pathologic complete response, pCR | 切除标本中无残余活肿瘤 |
+| 主要病理缓解 | Major pathologic response, MPR | 残余活肿瘤低于预先规定阈值 |
+| 手术完成率 | Resection rate | 随机化患者中最终完成根治性切除的比例 |
+
+在neoadjuvant试验中，仅分析实际接受手术的患者会产生选择偏倚。主要疗效分析通常应以随机化人群为基础。
+
+## 晚期和转移性疾病
+
+| 终点 | 英文名称 | 主要定义或用途 |
+|---|---|---|
+| 总生存期 | Overall survival, OS | 最具临床意义，受后续治疗影响 |
+| 无进展生存期 | Progression-free survival, [PFS](../other/PFS.qmd) | 从随机化至影像学进展或死亡 |
+| 客观缓解率 | Objective response rate, ORR | 完全缓解和部分缓解的比例 |
+| 缓解持续时间 | Duration of response, DOR | 从首次缓解至进展或死亡 |
+| 疾病控制率 | Disease control rate, DCR | 完全缓解、部分缓解和稳定疾病的比例 |
+| Patient-reported outcome, PRO | 患者报告结局 | 疼痛、体能、食欲和生活质量 |
+| Time to deterioration | 症状或生活质量恶化时间 | 评估治疗是否延迟临床恶化 |
+
+由于转移性PDAC的疾病进展较快，OS通常可以在相对可行的样本量和随访时间内观察，因此常作为Phase 3研究的primary endpoint。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## 研究人群的异质性
+
+胰腺癌试验可能混合以下不同人群：
+
+- 可切除与交界可切除；
+- 局部晚期与转移性；
+- 术后复发与初始转移；
+- [ECOG PS](../other/ECOG_Performance_Status.qmd) 0与1；
+- 肝转移与肺转移为主；
+- 胆道支架存在与否；
+- CA 19-9正常与升高；
+- 不同化疗骨架和既往治疗。
+
+随机化分层因素通常可包括：
+
+- [ECOG PS](../other/ECOG_Performance_Status.qmd)；
+- 疾病范围；
+- 地理区域；
+- 肝转移状态；
+- 既往治疗；
+- 胚系BRCA状态；
+- 基线CA 19-9；
+- 计划使用的化疗方案。
+
+分层因素不宜过多，否则可能产生大量小样本层或随机化执行困难。
+
+## 可切除性与手术相关Intercurrent Events
+
+Neoadjuvant或perioperative试验中的重要**intercurrent event（伴发事件）**包括：
+
+- 治疗期间发现远处转移；
+- 因毒性停止治疗；
+- 未能接受手术；
+- 手术探查后发现不可切除；
+- 术后未能开始辅助治疗；
+- 改用非方案规定治疗；
+- 围手术期死亡。
+
+例如，在比较两种neoadjuvant方案时，“未接受手术”不是普通缺失数据，而是具有临床意义的治疗结果。应根据estimand明确将其作为复合事件、治疗策略的一部分，或通过其他策略处理。
+
+## R0切除的定义差异
+
+不同病理标准可能将R0定义为：
+
+- 切缘表面无肿瘤细胞；
+- 肿瘤距离切缘>1 mm；
+- 其他预先规定的距离标准。
+
+不同定义会显著影响R0切除率。多中心试验应统一标本处理、切缘染色和中央病理审评标准。
+
+## 影像学终点评估
+
+PDAC常表现为边界不清、纤维化明显的浸润性病灶，治疗后活肿瘤与纤维化难以区分。因此：
+
+- [RECIST 1.1](../other/RECIST_1_1.qmd)尺寸变化可能低估生物学反应；
+- 局部血管受累变化不一定与肿瘤最大径变化一致；
+- CA 19-9下降不能代替影像学进展；
+- 新发腹水、腹膜结节和非靶病灶进展可能影响[PFS](../other/PFS.qmd)判定；
+- investigator与**blinded independent central review, BICR（盲态独立中心审评）**之间可能存在差异。
+
+对于开放标签试验，BICR可降低评估偏倚，但其是否作为主要分析取决于研究目的和监管策略。
+
+## CA 19-9分析
+
+CA 19-9分析需要考虑：
+
+- 基线胆红素水平；
+- 胆道支架置入或更换；
+- 胆管炎；
+- Lewis抗原阴性；
+- 检测平台差异；
+- 对数转换；
+- 极端值；
+- 缺失检测；
+- landmark timepoint选择。
+
+CA 19-9 response常定义为相对基线下降一定比例，但阈值、确认要求和分析时间点必须在方案或SAP中预先规定。
+
+## 非比例风险
+
+胰腺癌试验可能出现**non-proportional hazards（非比例风险）**，例如：
+
+- 治疗早期毒性或死亡增加；
+- 免疫治疗在小部分患者中产生延迟且持久的获益；
+- 维持治疗仅影响后期疾病进展；
+- 新辅助治疗的效果在手术后才逐渐体现；
+- 不同分子亚组具有不同治疗反应。
+
+除**hazard ratio, HR（风险比）**外，可考虑补充：
+
+- landmark survival rate；
+- milestone survival；
+- **restricted mean survival time, RMST（限制性平均生存时间）**；
+- 分时段HR；
+- 加权log-rank检验；
+- piecewise exponential model。
+
+## 后续治疗与Treatment Switching
+
+OS可能受到以下因素影响：
+
+- 不同地区的后线治疗可及性；
+- 试验后接受靶向治疗；
+- 对照组交叉使用研究药物；
+- 手术或局部治疗；
+- 分子检测时间不同；
+- 临床试验参与机会不同。
+
+对于允许treatment switching的试验，可根据研究目标考虑：
+
+- treatment-policy estimand；
+- rank-preserving structural failure time model；
+- inverse probability of censoring weighting；
+- two-stage adjustment。
+
+调整分析依赖较强假设，通常应作为敏感性或补充分析，而不是替代主要ITT分析。
+
+## 稀有生物标志物试验
+
+对于*NRG1*、*NTRK*或其他极低频分子亚组，随机对照试验可能不可行。常见设计包括：
+
+- single-arm trial；
+- basket trial；
+- multi-cohort trial；
+- Bayesian hierarchical model；
+- external control；
+- 以ORR和DOR支持accelerated approval。
+
+此类研究需要特别关注：
+
+- 分子检测方法的一致性；
+- 筛选人群的代表性；
+- 可评估人群定义；
+- BICR；
+- ORR的精确置信区间；
+- DOR的删失分布；
+- 小样本结果的不确定性；
+- confirmatory trial的可行性。
+
+## Safety Analysis（安全性分析）
+
+PDAC患者常存在胆道梗阻、感染、营养不良和肝功能异常，这些基础状况可能与治疗毒性混杂。
+
+应特别关注：
+
+- 中性粒细胞减少和发热性中性粒细胞减少；
+- 胆管炎和败血症；
+- 腹泻和脱水；
+- 周围神经病变；
+- 血栓栓塞；
+- 肝功能异常；
+- 体重下降；
+- 疲劳；
+- 治疗相关死亡；
+- 化疗相对剂量强度；
+- 因不良事件导致的治疗中断和减量。
+
+不同治疗组的暴露时间可能不同，因此除患者发生率外，还可考虑暴露校正发生率和累积发生风险。
+
+# Common Pitfalls（常见误区）
+
+1. **将所有胰腺肿瘤视为PDAC。**  
+   pNET、腺泡细胞癌和囊性肿瘤具有不同的疾病生物学和治疗体系。
+
+2. **将AJCC分期直接等同于可切除性。**  
+   可切除性还取决于具体血管受累、血管重建可能性和手术中心经验。
+
+3. **使用CA 19-9进行普通人群筛查。**  
+   CA 19-9敏感性和特异性不足，不适合作为普通人群筛查工具。
+
+4. **忽视胆道梗阻对CA 19-9的影响。**  
+   胆红素升高和胆管炎可导致CA 19-9显著升高。
+
+5. **以影像学缩小作为neoadjuvant therapy成功的必要条件。**  
+   PDAC中的纤维化可能导致[RECIST](../other/RECIST_1_1.qmd)尺寸变化有限，但患者仍可能获得R0切除。
+
+6. **仅在实际接受手术的患者中比较neoadjuvant方案。**  
+   这种分析排除了治疗期间进展或发生毒性的患者，可能产生明显选择偏倚。
+
+7. **认为免疫治疗适用于一般PDAC人群。**  
+   单药免疫检查点抑制剂的明确获益主要局限于MSI-H、dMMR或其他罕见免疫敏感亚组。
+
+8. **忽略胚系检测。**  
+   胚系结果可能影响铂类和PARP抑制剂选择，也涉及患者家属的遗传风险。
+
+9. **将所有KRAS突变视为同一种靶点。**  
+   KRAS G12D、G12V、G12R和G12C等亚型的生物学及药物开发策略不同。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| BICR | Blinded independent central review | 盲态独立中心审评 |
+| CA 19-9 | Carbohydrate antigen 19-9 | 糖类抗原19-9 |
+| DFS | Disease-free survival | 无病生存期 |
+| dMMR | Mismatch repair deficiency | 错配修复缺陷 |
+| DOR | Duration of response | 缓解持续时间 |
+| [ECOG PS](../other/ECOG_Performance_Status.qmd) | Eastern Cooperative Oncology Group performance status | ECOG体能状态评分 |
+| EFS | Event-free survival | 无事件生存期 |
+| HR | Hazard ratio | 风险比 |
+| MSI-H | Microsatellite instability-high | 微卫星高度不稳定 |
+| NGS | Next-generation sequencing | 下一代测序 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| PDAC | Pancreatic ductal adenocarcinoma | 胰腺导管腺癌 |
+| [PFS](../other/PFS.qmd) | Progression-free survival | 无进展生存期 |
+| pNET | Pancreatic neuroendocrine tumor | 胰腺神经内分泌肿瘤 |
+| [RECIST](../other/RECIST_1_1.qmd) | Response Evaluation Criteria in Solid Tumors | 实体瘤疗效评价标准 |
+| RMST | Restricted mean survival time | 限制性平均生存时间 |
+| SBRT | Stereotactic body radiation therapy | 立体定向体部放射治疗 |
+
+# Key Takeaways（关键总结）
+
+1. 胰腺癌主要指PDAC，但必须与pNET和其他罕见胰腺肿瘤区分。
+2. PDAC具有较强的局部浸润和早期转移倾向，确诊时仅少数患者能够直接接受根治性切除。
+3. 临床治疗框架主要由可切除、交界可切除、局部晚期不可切除和转移性四类clinical setting决定。
+4. 可切除PDAC通常需要手术联合辅助化疗；交界可切除疾病通常优先采用neoadjuvant systemic therapy。
+5. 转移性一线主要方案包括FOLFIRINOX、NALIRIFOX和gemcitabine联合nab-paclitaxel。
+6. 胚系检测和肿瘤NGS可发现BRCA1/2、PALB2、MSI-H、NTRK、NRG1和其他罕见可治疗分子亚组。
+7. 胰腺癌试验需要特别处理可切除性定义、未接受手术、病理切缘标准、CA 19-9混杂、非比例风险和后续治疗等问题。
+
+# References（参考资料）
+
+1. National Cancer Institute. [Pancreatic Cancer Treatment (PDQ®)–Health Professional Version](https://www.cancer.gov/types/pancreatic/hp/pancreatic-treatment-pdq). Updated February 12, 2025.
+2. American Cancer Society. [Cancer Facts & Figures 2026](https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2026-cancer-facts-figures.html). 2026.
+3. American Cancer Society. [Key Statistics for Pancreatic Cancer](https://www.cancer.org/cancer/types/pancreatic-cancer/about/key-statistics.html). Updated January 13, 2026.
+4. American Cancer Society. [Survival Rates for Pancreatic Cancer](https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html). Updated January 13, 2026.
+5. National Cancer Institute SEER Program. [Cancer Stat Facts: Pancreatic Cancer](https://seer.cancer.gov/statfacts/html/pancreas.html).
+6. U.S. Food and Drug Administration. [FDA Approves Irinotecan Liposome for First-Line Treatment of Metastatic Pancreatic Adenocarcinoma](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-irinotecan-liposome-first-line-treatment-metastatic-pancreatic-adenocarcinoma). February 13, 2024.
+7. U.S. Food and Drug Administration. [FDA Approves Olaparib for Germline BRCA-Mutated Metastatic Pancreatic Adenocarcinoma](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-olaparib-gbrcam-metastatic-pancreatic-adenocarcinoma). December 30, 2019.
+8. U.S. Food and Drug Administration. [FDA Grants Accelerated Approval to Zenocutuzumab-zbco for NRG1 Fusion-Positive NSCLC and Pancreatic Adenocarcinoma](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zenocutuzumab-zbco-non-small-cell-lung-cancer-and-pancreatic). December 4, 2024.
+9. Conroy T, Hammel P, Hebbar M, et al. FOLFIRINOX or Gemcitabine as Adjuvant Therapy for Pancreatic Cancer. *New England Journal of Medicine*. 2018;379:2395–2406.
+10. Conroy T, Castan F, Lopez A, et al. Five-Year Outcomes of FOLFIRINOX vs Gemcitabine as Adjuvant Therapy for Pancreatic Cancer. *JAMA Oncology*. 2022;8:1571–1578.
+11. Neoptolemos JP, Palmer DH, Ghaneh P, et al. Comparison of Adjuvant Gemcitabine and Capecitabine with Gemcitabine Monotherapy in Patients with Resected Pancreatic Cancer. *The Lancet*. 2017;389:1011–1024.
+12. Golan T, Hammel P, Reni M, et al. Maintenance Olaparib for Germline BRCA-Mutated Metastatic Pancreatic Cancer. *New England Journal of Medicine*. 2019;381:317–327.
+13. Schram AM, Goto K, Kim DW, et al. Efficacy of Zenocutuzumab in NRG1 Fusion–Positive Cancer. *New England Journal of Medicine*. 2025.

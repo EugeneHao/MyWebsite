@@ -273,6 +273,8 @@ website:
               contents:        
               - text: Humira
                 href: docs/pharmaceutical/compound/Humira.qmd  
+              - text: Skyrizi
+                href: docs/pharmaceutical/compound/Skyrizi.qmd
             - section: GSK
               href: docs/pharmaceutical/company/GSK.qmd
               contents:        
@@ -314,7 +316,14 @@ website:
           - section: Disease
             href: docs/pharmaceutical/listing-disease.qmd
             contents:
-            - section: Bone Marrow
+            - section: Lung Cancer
+              href: docs/pharmaceutical/disease/Lung_Cancer.qmd
+              contents:
+              - text: Non-Small Cell Lung Cancer (NSCLC)
+                href: docs/pharmaceutical/disease/NSCLC.qmd
+              - text: Small Cell Lung Cancer (SCLC)
+                href: docs/pharmaceutical/disease/SCLC.qmd
+            - section: Hematologic Malignancies
               contents: 
               - text: Leukemia
                 href: docs/pharmaceutical/disease/Leukemia.qmd
@@ -324,20 +333,24 @@ website:
                 href: docs/pharmaceutical/disease/MDS.qmd
               - text: Multiple Myeloma (MM)
                 href: docs/pharmaceutical/disease/multiple_myeloma.qmd
-            - text: Melanoma
-              href: docs/pharmaceutical/disease/Melanoma.qmd
-            - text: Breast Cancer
-              href: docs/pharmaceutical/disease/Breast_Cancer.qmd
-            - text: Lung Cancer
-              href: docs/pharmaceutical/disease/Lung_Cancer.qmd
-            - text: Non-Small Cell Lung Cancer (NSCLC)
-              href: docs/pharmaceutical/disease/NSCLC.qmd
-            - text: Small Cell Lung Cancer (SCLC)
-              href: docs/pharmaceutical/disease/SCLC.qmd
-            - text: Type 2 Diabete Mellitus (T2DM)
-              href: docs/pharmaceutical/disease/T2DM.qmd
-            - text: Thrombosis
-              href: docs/pharmaceutical/disease/Thrombosis.qmd
+            - section: Other Solid Tumors
+              contents:
+              - text: Breast Cancer
+                href: docs/pharmaceutical/disease/Breast_Cancer.qmd
+              - text: Melanoma
+                href: docs/pharmaceutical/disease/Melanoma.qmd
+              - text: Pancreatic Cancer
+                href: docs/pharmaceutical/disease/Pancreatic_Cancer.qmd
+            - section: Inflammatory and Autoimmune
+              contents:
+              - text: Rheumatoid Arthritis (RA)
+                href: docs/pharmaceutical/disease/Rheumatoid_Arthritis.qmd
+            - section: Metabolic and Cardiovascular
+              contents:
+              - text: Type 2 Diabetes Mellitus (T2DM)
+                href: docs/pharmaceutical/disease/T2DM.qmd
+              - text: Thrombosis
+                href: docs/pharmaceutical/disease/Thrombosis.qmd
           - section: Target
             href: docs/pharmaceutical/listing-target.qmd
             contents:

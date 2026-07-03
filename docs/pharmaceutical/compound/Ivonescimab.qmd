@@ -242,7 +242,7 @@ Ivonescimab的多个关键III期研究采用典型的肿瘤学设计，因此具
 - 中国已完成多个III期研究并获批部分适应症；
 - 美国FDA已受理EGFR突变NSCLC的上市申请，目标审评日期为2026年11月；
 - HARMONi-3、HARMONi-7、HARMONi-GI3等全球III期研究仍在进行；
-- Akeso与Summit正持续扩展至头颈癌、胆道癌、结直肠癌、胰腺癌等多个实体瘤适应症。
+- Akeso与Summit正持续扩展至头颈癌、胆道癌、结直肠癌、[胰腺癌](../disease/Pancreatic_Cancer.qmd)等多个实体瘤适应症。
 
 # Key Takeaways（总结）
 
