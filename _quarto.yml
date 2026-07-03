@@ -394,8 +394,12 @@ website:
                 href: docs/pharmaceutical/AE/AE_SOC_PT.qmd
               - text: Biomarker
                 href: docs/pharmaceutical/other/Biomarker.qmd
+              - text: Biomarker Expression
+                href: docs/pharmaceutical/other/Biomarker_Expression.qmd
               - text: Intercurrent Events 
                 href: docs/pharmaceutical/other/Intercurrent_Events.qmd
+              - text: Cancer Staging
+                href: docs/pharmaceutical/other/Cancer_Staging.qmd
               - text: TNM Staging
                 href: docs/pharmaceutical/other/TNM_Staging.qmd
               - text: ECOG Performance Status

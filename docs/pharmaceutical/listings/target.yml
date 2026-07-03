@@ -22,7 +22,7 @@
   path: target/PD-L1.html
   Full: Programmed Death Protein 1/Programmed Death-Ligand 1
   Description: |
-    它们是一对蛋白质，当[PD-L1](target/PD-L1.qmd)与PD-1结合时，可以阻止免疫系统攻击癌细胞，相当于给肿瘤“隐形斗篷”。针对PD-1或PD-L1的药物，如[Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), Imfinzi，通过阻断这种相互作用来增强免疫系统对癌细胞的攻击，用于治疗多种类型的癌症。
+    它们是一对蛋白质，当[PD-L1](target/PD-L1.qmd)与PD-1结合时，可以阻止免疫系统攻击癌细胞，相当于给肿瘤“隐形斗篷”。针对PD-1或PD-L1的药物，如[Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), [Imfinzi](compound/Imfinzi.qmd)，通过阻断这种相互作用来增强免疫系统对癌细胞的攻击，用于治疗多种类型的癌症。
 - Abbr: BRAF  
   Full: B-Rapidly Accelerated Fibrosarcoma
   Description: |

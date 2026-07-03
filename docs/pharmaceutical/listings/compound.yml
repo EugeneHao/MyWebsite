@@ -554,7 +554,8 @@
   compound: Atezolizumab
   path: compound/Tecentriq.html
   company: Genentech (a subsidiary of Roche)
-  indication: Used for treating urothelial carcinoma, non-small cell lung cancer, triple-negative breast cancer, and more.
+  indication: |
+    PD-L1 inhibitor for [NSCLC](disease/NSCLC.qmd), [ES-SCLC](disease/SCLC.qmd#extensive-stage-sclc), HCC, BRAF V600-positive [melanoma](disease/Melanoma.qmd), ASPS, and ctDNA MRD-positive adjuvant MIBC.
 
 - drug: Breyanzi
   compound: Lisocabtagene Maraleucel

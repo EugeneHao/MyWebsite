@@ -22,6 +22,18 @@
   description: |
     Biomarkers are biological molecules used as indicators of a biological state or condition, crucial in disease diagnosis and therapy assessment.
 
+- name: Biomarker Expression
+  path: other/Biomarker_Expression.html
+  belong: Clinical Trial
+  description: |
+    Biomarker expression describes how much gene or protein signal is detected in tumor or immune cells, including PD-L1 negative, low-expression, and high-expression categories.
+
+- name: Cancer Staging
+  path: other/Cancer_Staging.html
+  belong: Clinical Trial
+  description: |
+    Cancer staging classifies tumor extent and spread, guides oncology treatment strategy, trial eligibility, stratification, endpoint selection, and subgroup analysis.
+
 - name: TNM Staging
   path: other/TNM_Staging.html
   belong: Clinical Trial
@@ -50,7 +62,7 @@
   path: other/TME.html
   belong: Technology
   description: |
-    Tumor microenvironment (TME) describes the immune, stromal, vascular, extracellular matrix, and signaling context surrounding tumor cells.
+    Tumor microenvironment (TME) describes the immune, stromal, vascular, extracellular matrix, and signaling context that shapes tumor progression, drug response, and oncology trial biomarkers.
 
 - name: MAT
   path: other/MAT.html

@@ -1,0 +1,645 @@
+---
+title: "Biomarker Expression（生物标志物表达）"
+description: "介绍临床研究中“表达”的含义、常见检测方法、评分方式，以及PD-L1阴性、低表达和高表达的解释。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Biomarkers
+  - Disease Overview
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+在肿瘤学和临床试验中，**expression（表达）**通常指某个基因或蛋白在细胞中被产生或检测到的程度。
+
+例如，**[programmed death-ligand 1, PD-L1（程序性死亡配体1）表达](../target/PD-L1.qmd)**，通常指肿瘤组织中的肿瘤细胞或免疫细胞表面存在多少PD-L1蛋白。
+
+临床报告中常见的：
+
+- PD-L1 negative（PD-L1阴性）；
+- PD-L1 low expression（PD-L1低表达）；
+- PD-L1 high expression（PD-L1高表达）；
+
+本质上是在根据检测到的PD-L1蛋白比例或评分，将患者分为不同的biomarker subgroup（生物标志物亚组）。
+
+# 什么是“表达”
+
+## 从基因到蛋白
+
+细胞中的遗传信息通常经过以下过程：
+
+$$
+\text{DNA}
+\rightarrow
+\text{RNA}
+\rightarrow
+\text{Protein}
+$$
+
+这个过程包括：
+
+1. **Transcription（转录）**：DNA中的基因信息被转录成RNA；
+2. **Translation（翻译）**：RNA进一步被翻译成蛋白质；
+3. 蛋白质被运输到细胞内部、细胞膜或细胞外发挥功能。
+
+因此，“表达”可以指不同层面：
+
+| 表达类型 | 英文名称 | 主要含义 | 常见检测方法 |
+|---|---|---|---|
+| 基因表达 | Gene expression | 某基因产生了多少RNA | RNA sequencing、RT-PCR |
+| 蛋白表达 | Protein expression | 某蛋白产生了多少或有多少细胞含有该蛋白 | IHC、flow cytometry、Western blot |
+| 细胞膜表达 | Membrane expression | 蛋白是否出现在细胞膜及其染色程度 | IHC |
+| 免疫细胞表达 | Immune-cell expression | 肿瘤周围免疫细胞是否表达该蛋白 | IHC、flow cytometry |
+
+在PD-L1检测中，临床上主要评价的是**protein expression（蛋白表达）**，而不是PD-L1基因是否存在。
+
+# Expression与Mutation的区别
+
+“表达”和“突变”是不同概念。
+
+| 概念 | 英文名称 | 含义 | 示例 |
+|---|---|---|---|
+| 表达 | Expression | 某个基因或蛋白被产生了多少 | PD-L1 high expression |
+| 突变 | Mutation | DNA序列发生改变 | *[EGFR](../target/HER.qmd)* exon 19 deletion |
+| 扩增 | Amplification | 某个基因的拷贝数增加 | *[HER2](../target/HER.qmd)* amplification |
+| 融合 | Fusion | 两个不同基因发生重排并形成融合基因 | *ALK* fusion |
+| 缺失 | Deletion | 某段DNA或基因丢失 | *CDKN2A* deletion |
+
+一个基因可以没有突变，但其蛋白仍然高表达。
+
+例如，肿瘤细胞通常都含有PD-L1相关基因，但不同患者的肿瘤细胞产生PD-L1蛋白的程度不同，因此可表现为阴性、低表达或高表达。
+
+# 如何检测蛋白表达
+
+## Immunohistochemistry
+
+**Immunohistochemistry, IHC（免疫组织化学）**是临床上检测PD-L1等蛋白表达最常见的方法。
+
+IHC的基本过程为：
+
+1. 从手术或活检标本中获得肿瘤组织；
+2. 将组织固定并制作成病理切片；
+3. 使用能够特异性识别PD-L1的抗体进行染色；
+4. 抗体与PD-L1蛋白结合；
+5. 病理医生根据染色细胞的比例、位置和强度进行评分。
+
+染色阳性通常表示相应细胞上检测到了PD-L1蛋白。
+
+## 染色结果的基本解释
+
+| 检测结果 | 含义 |
+|---|---|
+| 无染色 | 未检测到足够的目标蛋白 |
+| 少量细胞染色 | 低水平表达 |
+| 较多细胞染色 | 较高水平表达 |
+| 肿瘤细胞膜染色 | 肿瘤细胞表达目标蛋白 |
+| 免疫细胞染色 | 肿瘤微环境中的免疫细胞表达目标蛋白 |
+
+对于PD-L1，通常重点观察细胞膜染色，因为PD-L1需要位于细胞膜上才能与T细胞上的PD-1发生作用。
+
+# PD-L1 Expression（PD-L1表达）
+
+PD-L1是一种可表达于以下细胞表面的蛋白：
+
+- tumor cells（肿瘤细胞）；
+- macrophages（巨噬细胞）；
+- lymphocytes（淋巴细胞）；
+- 其他[肿瘤微环境](TME.qmd)中的免疫细胞。
+
+PD-L1与T细胞上的**programmed cell death protein 1, PD-1（程序性死亡受体1）**结合后，可抑制T细胞活化，使肿瘤细胞更容易逃避免疫系统攻击。
+
+[PD-1或PD-L1 inhibitor（抑制剂）](Immune_Checkpoint.qmd)可阻断该信号，使部分患者的T细胞重新攻击肿瘤。
+
+## 为什么分为阴性、低表达和高表达
+
+PD-L1表达通常不是简单的“有”或“没有”，而是一个连续变量。
+
+例如，一个肿瘤样本中可能有：
+
+- 0%的肿瘤细胞染色；
+- 5%的肿瘤细胞染色；
+- 30%的肿瘤细胞染色；
+- 80%的肿瘤细胞染色。
+
+为了便于治疗决策和临床试验分层，通常根据预先规定的cutoff（阈值）将表达水平分类。
+
+# Tumor Proportion Score（TPS）
+
+**Tumor proportion score, TPS（肿瘤细胞阳性比例评分）**是PD-L1常见的评分方法，尤其常用于**[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)**。
+
+TPS定义为：
+
+$$
+\text{TPS}
+=
+\frac{
+\text{具有部分或完整膜染色的活肿瘤细胞数}
+}{
+\text{全部可评估活肿瘤细胞数}
+}
+\times 100\%
+$$
+
+例如：
+
+- 样本中有1,000个可评估活肿瘤细胞；
+- 其中600个肿瘤细胞存在PD-L1膜染色；
+
+则：
+
+$$
+\text{TPS}
+=
+\frac{600}{1000}
+\times 100\%
+=
+60\%
+$$
+
+这表示大约60%的活肿瘤细胞表达PD-L1。
+
+它并不表示：
+
+- 每个肿瘤细胞有60%的部分是PD-L1；
+- PD-L1浓度为60%；
+- 肿瘤中有60%的细胞是癌细胞。
+
+## NSCLC中的常见分类
+
+在NSCLC中，经常使用以下分类：
+
+| PD-L1状态 | 常见TPS定义 | 解释 |
+|---|---:|---|
+| Negative（阴性） | TPS <1% | 几乎未检测到PD-L1阳性肿瘤细胞 |
+| Low expression（低表达） | TPS 1%–49% | 一部分肿瘤细胞表达PD-L1 |
+| High expression（高表达） | TPS >=50% | 至少一半可评估肿瘤细胞表达PD-L1 |
+
+这些cutoff常用于NSCLC治疗选择和临床试验分析，但并不是所有癌种都使用相同标准。
+
+# Combined Positive Score（CPS）
+
+**Combined positive score, CPS（联合阳性评分）**同时考虑PD-L1阳性的肿瘤细胞和部分免疫细胞。
+
+CPS通常定义为：
+
+$$
+\text{CPS}
+=
+\frac{
+\text{PD-L1阳性肿瘤细胞}
++
+\text{PD-L1阳性淋巴细胞}
++
+\text{PD-L1阳性巨噬细胞}
+}{
+\text{全部可评估活肿瘤细胞数}
+}
+\times 100
+$$
+
+CPS不是百分比意义上的“阳性细胞占比”，因为分子中还包括免疫细胞，而分母只有肿瘤细胞。
+
+CPS常用于：
+
+- gastric cancer（胃癌）；
+- gastroesophageal junction cancer（胃食管结合部癌）；
+- cervical cancer（宫颈癌）；
+- head and neck squamous cell carcinoma（头颈部鳞状细胞癌）；
+- triple-negative breast cancer（三阴性乳腺癌）；
+- 部分其他癌种。
+
+## TPS与CPS比较
+
+| 特征 | TPS | CPS |
+|---|---|---|
+| 主要评价细胞 | 肿瘤细胞 | 肿瘤细胞和部分免疫细胞 |
+| 分母 | 活肿瘤细胞 | 活肿瘤细胞 |
+| 分子 | PD-L1阳性肿瘤细胞 | PD-L1阳性肿瘤细胞、淋巴细胞和巨噬细胞 |
+| 常见应用 | NSCLC等 | 胃癌、头颈癌、宫颈癌等 |
+| 是否可直接比较 | 否 | 否 |
+
+一个样本的TPS和CPS可能明显不同。
+
+例如，肿瘤细胞本身几乎不表达PD-L1，但周围存在大量PD-L1阳性免疫细胞时：
+
+- TPS可能很低；
+- CPS可能较高。
+
+# Immune Cell Score（免疫细胞评分）
+
+某些癌种或检测方法会评价PD-L1阳性免疫细胞占肿瘤区域的比例。
+
+常见概念包括：
+
+- immune cell score；
+- tumor-infiltrating immune cell expression；
+- percentage of tumor area occupied by PD-L1-positive immune cells。
+
+这种评分与TPS和CPS不同，不能直接互相替代。
+
+# 阴性、低表达和高表达意味着什么
+
+## PD-L1阴性
+
+PD-L1阴性通常表示样本中的PD-L1表达低于规定cutoff。
+
+例如，在TPS框架中：
+
+$$
+\text{TPS}<1\%
+$$
+
+但PD-L1阴性并不意味着：
+
+- 肿瘤完全没有PD-L1；
+- 患者一定不能使用免疫治疗；
+- 免疫治疗一定无效；
+- 肿瘤中不存在免疫细胞。
+
+部分PD-L1阴性患者仍可能从免疫治疗中获益，特别是在免疫治疗与化疗联合使用时。
+
+## PD-L1低表达
+
+低表达通常表示PD-L1达到阳性标准，但未达到高表达cutoff。
+
+例如，在NSCLC TPS框架中：
+
+$$
+1\%
+\leq
+\text{TPS}
+<
+50\%
+$$
+
+低表达患者可能从免疫治疗获益，但平均获益程度通常低于高表达患者，且治疗选择常需要结合：
+
+- disease stage（疾病分期）；
+- histology（组织学）；
+- driver mutation（驱动基因突变）；
+- [ECOG performance status](ECOG_Performance_Status.qmd)；
+- 免疫治疗单药或联合化疗方案；
+- 患者共病和治疗目标。
+
+## PD-L1高表达
+
+高表达表示样本中较多肿瘤细胞或相关细胞表达PD-L1。
+
+例如，在NSCLC TPS框架中：
+
+$$
+\text{TPS}\geq50\%
+$$
+
+PD-L1高表达通常与[免疫检查点抑制剂](Immune_Checkpoint.qmd)产生疗效的概率增加相关，但不是确定性的预测指标。
+
+因此：
+
+> PD-L1高表达表示患者更可能获益，而不是患者一定会获益。
+
+部分高表达患者仍可能出现：
+
+- primary resistance（原发耐药）；
+- early progression（早期进展）；
+- 获得初始缓解后发生acquired resistance（获得性耐药）。
+
+# Expression是连续变量
+
+PD-L1表达本质上是连续变量，而阴性、低表达和高表达是人为设定的分类。
+
+例如：
+
+| TPS | 分类 |
+|---:|---|
+| 0% | 阴性 |
+| 0.5% | 阴性 |
+| 1% | 低表达 |
+| 10% | 低表达 |
+| 49% | 低表达 |
+| 50% | 高表达 |
+| 90% | 高表达 |
+
+TPS为49%和50%的患者在生物学上可能非常相似，但根据cutoff会被划入不同类别。
+
+因此，cutoff附近的患者可能受到：
+
+- 取样误差；
+- 病理评估差异；
+- 检测试剂差异；
+- 四舍五入；
+- 肿瘤异质性；
+
+影响而被划分至不同亚组。
+
+# Predictive与Prognostic Biomarker
+
+PD-L1通常被视为一种不完全的**[predictive biomarker（预测性生物标志物）](Biomarker.qmd)**。
+
+Predictive biomarker用于预测患者从特定治疗中获得相对获益的可能性。
+
+相比之下，**prognostic biomarker（预后性生物标志物）**用于预测患者在不考虑特定治疗时的疾病结局。
+
+| Biomarker类型 | 主要问题 |
+|---|---|
+| Predictive biomarker | 哪些患者更可能从该治疗中获益？ |
+| Prognostic biomarker | 哪些患者本身预后更好或更差？ |
+
+PD-L1表达越高，部分癌种中对PD-1或PD-L1 inhibitor产生反应的概率通常越高，但它不是一个完美的binary marker（二分类标志物）。
+
+# 为什么PD-L1表达并不完美
+
+## Intratumor Heterogeneity（肿瘤内异质性）
+
+同一个肿瘤的不同区域可能具有不同的PD-L1表达。
+
+例如：
+
+- 一部分肿瘤区域TPS为70%；
+- 另一部分区域TPS为5%。
+
+如果活检只取到低表达区域，检测结果可能低估整个肿瘤的PD-L1表达。
+
+## Intertumor Heterogeneity（不同病灶间异质性）
+
+同一患者的：
+
+- 原发肿瘤；
+- 淋巴结转移；
+- 肝转移；
+- 肺转移；
+
+可能具有不同的PD-L1表达水平。
+
+因此，检测哪个病灶可能影响结果。
+
+## Temporal Heterogeneity（时间异质性）
+
+PD-L1表达可能随时间发生变化，尤其是在接受以下治疗后：
+
+- chemotherapy；
+- radiotherapy；
+- targeted therapy；
+- immunotherapy。
+
+早期活检结果可能不完全代表复发或转移时的肿瘤状态。
+
+## Assay Differences（检测方法差异）
+
+不同PD-L1 IHC assay可能使用不同抗体clone，例如：
+
+- 22C3；
+- 28-8；
+- SP263；
+- SP142。
+
+不同检测方法在：
+
+- 染色敏感性；
+- 评分对象；
+- cutoff；
+- 适用癌种；
+- 对应药物；
+
+方面可能不同。
+
+因此，不能假设所有PD-L1 assay完全等价。
+
+## Sample Type（样本类型）
+
+PD-L1结果还可能受到以下因素影响：
+
+- surgical specimen（手术标本）或biopsy specimen（活检标本）；
+- core needle biopsy或fine-needle aspiration；
+- 新鲜样本或存档样本；
+- 原发灶或转移灶；
+- 肿瘤细胞数量是否足够；
+- 固定时间和组织处理方式。
+
+# 表达水平与治疗效果
+
+以NSCLC为例，PD-L1表达通常具有以下总体趋势：
+
+| PD-L1表达 | 免疫治疗总体趋势 |
+|---|---|
+| 阴性 | 单药反应概率相对较低，但联合治疗仍可能获益 |
+| 低表达 | 可能获益，常需结合化疗或其他治疗策略 |
+| 高表达 | 对免疫治疗单药或联合治疗产生反应的概率通常更高 |
+
+但治疗决策不能只看PD-L1，还需要考虑：
+
+- *EGFR*、*ALK*、*ROS1*等driver alterations；
+- 肿瘤组织学；
+- disease stage；
+- [ECOG performance status](ECOG_Performance_Status.qmd)；
+- autoimmune disease history；
+- organ function；
+- 肿瘤负荷和症状；
+- 是否需要快速获得肿瘤缩小；
+- 药物批准适应证。
+
+在存在明确可靶向driver alteration时，即使PD-L1高表达，治疗顺序也可能优先考虑targeted therapy（靶向治疗）。
+
+# Expression与Staining Intensity的区别
+
+蛋白表达可以通过不同维度描述：
+
+- 阳性细胞比例；
+- 染色强度；
+- 细胞膜染色是否完整；
+- 染色位置；
+- 综合评分。
+
+例如：
+
+| 样本 | 阳性细胞比例 | 染色强度 |
+|---|---:|---|
+| A | 80% | 弱 |
+| B | 20% | 强 |
+
+哪个样本“表达更高”取决于具体评分方法。
+
+PD-L1 TPS通常主要依据阳性肿瘤细胞比例，而某些其他biomarker可能同时考虑比例和强度。
+
+# H-Score
+
+**H-score（组织化学评分）**是一种同时考虑阳性细胞比例和染色强度的方法。
+
+常见计算方式为：
+
+$$
+\text{H-score}
+=
+1\times(\%\text{ weak})
++
+2\times(\%\text{ moderate})
++
+3\times(\%\text{ strong})
+$$
+
+分数范围通常为：
+
+$$
+0\text{–}300
+$$
+
+例如：
+
+- 20%的细胞为弱染色；
+- 30%的细胞为中等染色；
+- 10%的细胞为强染色；
+
+则：
+
+$$
+\text{H-score}
+=
+1\times20
++
+2\times30
++
+3\times10
+=
+110
+$$
+
+H-score常用于部分research biomarker，但PD-L1临床治疗决策通常更常采用TPS、CPS或特定immune-cell scoring。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Biomarker Subgroup Definition
+
+临床试验必须预先规定：
+
+- 使用哪种assay；
+- 使用哪个antibody clone；
+- 使用TPS、CPS还是其他评分；
+- 阳性cutoff；
+- 高表达cutoff；
+- 中央实验室或当地实验室检测；
+- 样本不足如何处理；
+- 存档样本是否允许；
+- 原发灶和转移灶是否均可使用。
+
+## Stratification
+
+PD-L1 expression常被用作随机化分层因素，例如：
+
+- TPS <1%；
+- TPS 1%–49%；
+- TPS >=50%。
+
+分层可减少治疗组间PD-L1分布不平衡，并提高治疗比较的可解释性。
+
+## Subgroup Analysis
+
+常见亚组包括：
+
+| 亚组 | 示例 |
+|---|---|
+| PD-L1 negative | TPS <1% |
+| PD-L1 positive | TPS >=1% |
+| PD-L1 low | TPS 1%–49% |
+| PD-L1 high | TPS >=50% |
+
+亚组结果应报告：
+
+- 每组样本量；
+- treatment effect；
+- confidence interval；
+- interaction test；
+- 是否为预设分析；
+- 是否进行multiplicity控制。
+
+不能仅因为某个亚组p-value显著、另一个亚组不显著，就断定两个亚组的治疗效果不同。应重点观察treatment-by-biomarker interaction。
+
+## Cutoff Selection
+
+Biomarker cutoff可能来自：
+
+- 早期临床试验；
+- receiver operating characteristic analysis；
+- biologic rationale；
+- regulatory precedent；
+- companion diagnostic开发；
+- 独立validation cohort。
+
+如果在同一数据集中尝试多个cutoff并选择结果最好的一个，可能产生数据驱动偏倚和type I error inflation。
+
+## Missing Biomarker Data
+
+PD-L1数据缺失的原因可能包括：
+
+- 组织不足；
+- 肿瘤细胞数量不足；
+- 样本质量不合格；
+- 检测失败；
+- 未获得活检；
+- 结果无法评分。
+
+Biomarker-evaluable population可能不同于intention-to-treat population，因此需要比较：
+
+- biomarker-known与biomarker-unknown患者；
+- 样本来源；
+- 基线特征；
+- 治疗组分布；
+- 预后差异。
+
+# Common Pitfalls（常见误区）
+
+1. **把表达理解成基因是否存在。**  
+   大多数细胞都含有相应基因，“表达”指该基因是否被转录或产生了多少蛋白。
+
+2. **把TPS 60%理解成每个细胞中60%是PD-L1。**  
+   TPS 60%表示约60%的可评估活肿瘤细胞存在PD-L1膜染色。
+
+3. **认为PD-L1阴性等于完全没有PD-L1。**  
+   阴性通常只是低于检测或分类cutoff。
+
+4. **认为PD-L1高表达一定对免疫治疗有效。**  
+   高表达仅代表获益概率通常更高，并不能保证治疗有效。
+
+5. **认为PD-L1阴性一定不能使用免疫治疗。**  
+   部分PD-L1阴性患者仍可能从免疫治疗联合方案中获益。
+
+6. **将TPS与CPS直接比较。**  
+   两者的分子不同，不能直接互换。
+
+7. **将不同癌种的cutoff混用。**  
+   不同癌种、药物和检测方法可能使用不同评分和阈值。
+
+8. **忽视肿瘤异质性。**  
+   小块活检可能不能完整代表整个肿瘤或所有转移病灶。
+
+9. **只比较亚组内p-value。**  
+   判断biomarker是否真正具有预测作用，应评估treatment-by-biomarker interaction。
+
+# Key Takeaways（关键总结）
+
+1. Expression指基因或蛋白在细胞中被产生和检测到的程度。
+2. PD-L1 expression通常通过IHC检测肿瘤细胞或免疫细胞表面的PD-L1蛋白。
+3. 在NSCLC中，TPS <1%常称为阴性，1%–49%称为低表达，>=50%称为高表达。
+4. TPS 60%表示约60%的可评估活肿瘤细胞存在PD-L1膜染色。
+5. TPS只计算肿瘤细胞，而CPS同时计算PD-L1阳性肿瘤细胞和部分免疫细胞。
+6. PD-L1高表达增加免疫治疗获益的可能性，但不能保证治疗一定有效。
+7. PD-L1阴性也不等于免疫治疗一定无效。
+8. PD-L1结果会受到取样部位、检测方法、治疗时间和肿瘤异质性的影响。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. FDA-Approved Companion Diagnostic Devices.
+2. International Association for the Study of Lung Cancer. IASLC Atlas of PD-L1 Testing in Lung Cancer.
+3. National Comprehensive Cancer Network. NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer.
+4. Herbst RS, Baas P, Kim DW, et al. Pembrolizumab versus Docetaxel for Previously Treated, PD-L1-Positive, Advanced Non-Small-Cell Lung Cancer. *The Lancet*. 2016;387:1540-1550.
+5. Reck M, Rodriguez-Abreu D, Robinson AG, et al. Pembrolizumab versus Chemotherapy for PD-L1-Positive Non-Small-Cell Lung Cancer. *New England Journal of Medicine*. 2016;375:1823-1833.
+6. Rittmeyer A, Barlesi F, Waterkamp D, et al. Atezolizumab versus Docetaxel in Patients with Previously Treated Non-Small-Cell Lung Cancer. *The Lancet*. 2017;389:255-265.
+7. International Council for Harmonisation. ICH E9(R1): Addendum on Estimands and Sensitivity Analysis in Clinical Trials. 2019.

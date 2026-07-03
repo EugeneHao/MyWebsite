@@ -1776,55 +1776,328 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html",
-    "href": "docs/pharmaceutical/other/Intercurrent_Events.html",
-    "title": "Intercurrent Events",
+    "objectID": "docs/pharmaceutical/other/Cancer_Staging.html",
+    "href": "docs/pharmaceutical/other/Cancer_Staging.html",
+    "title": "Cancer Staging（肿瘤分期）",
     "section": "",
-    "text": "Intercurrent Event (介入事件)： + 在临床试验期间，发生在治疗分配之后的事件，可能影响 治疗效果（treatment effect）的解读或测量。 + ICH E9 (R1) 定义：任何在试验期间发生的、可能影响或阻碍主要结局变量（endpoint）的解释的事件。\n\n\n在 MM 临床试验中，典型的 intercurrent events 包括：\n\nTreatment discontinuation（治疗中止）治疗停药\n\n因 不良事件 (Adverse Events, AE)、毒性 (toxicity)、依从性差 等原因停药。\n\nInitiation of new anti-myeloma therapy（启动新的骨髓瘤治疗）新增救援治疗\n\n病人进展 (progression) 后接受 下一线治疗 (subsequent therapy)。\n\nDeath unrelated to disease progression（与疾病进展无关的死亡）非疾病相关死亡\n\n如感染、心血管事件、其他合并症导致的死亡。\n\nStem cell transplantation（干细胞移植）\n\n特别是自体干细胞移植 (ASCT)，在试验方案内或作为补救治疗。\n\nCrossover（交叉用药）\n\n患者在试验期间从对照组转到实验组（或反之）。\n\nWithdrawal of consent（撤回知情同意）\n\n患者中途退出试验，不再随访。",
+    "text": "Cancer staging（肿瘤分期）是指根据肿瘤的大小、局部侵犯范围、淋巴结受累情况及远处转移情况，对恶性肿瘤进行标准化分类的过程。肿瘤分期是肿瘤诊疗中最重要的基础信息之一，直接影响患者的预后评估、治疗策略选择以及临床试验设计。\n需要注意的是，staging（分期）描述的是疾病扩散程度，而grading（分级）描述的是肿瘤细胞的分化程度，两者属于不同概念。\n目前绝大多数实体瘤均采用Tumor-Node-Metastasis, TNM（肿瘤-淋巴结-远处转移）分期系统，由American Joint Committee on Cancer, AJCC（美国癌症联合委员会）和Union for International Cancer Control, UICC（国际抗癌联盟）共同制定，最新版为AJCC 8th Edition，部分癌种未来将逐步更新。",
     "crumbs": [
       "Other",
       "Wiki",
       "Clinical Trial",
-      "Intercurrent Events"
+      "Cancer Staging"
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html#definition",
-    "href": "docs/pharmaceutical/other/Intercurrent_Events.html#definition",
-    "title": "Intercurrent Events",
+    "objectID": "docs/pharmaceutical/other/Cancer_Staging.html#入组标准",
+    "href": "docs/pharmaceutical/other/Cancer_Staging.html#入组标准",
+    "title": "Cancer Staging（肿瘤分期）",
+    "section": "11.1 入组标准",
+    "text": "11.1 入组标准\n多数试验明确规定允许的Stage，例如：\n\nStage II-III；\nUnresectable Stage III；\nStage IV。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Cancer Staging"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Cancer_Staging.html#分层随机化",
+    "href": "docs/pharmaceutical/other/Cancer_Staging.html#分层随机化",
+    "title": "Cancer Staging（肿瘤分期）",
+    "section": "11.2 分层随机化",
+    "text": "11.2 分层随机化\nStage常作为随机化分层因素（stratification factor）。\n例如：\n\nStage III vs IV；\nEarly vs late stage。\n\n这样可以减少治疗组之间的预后差异。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Cancer Staging"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Cancer_Staging.html#终点选择",
+    "href": "docs/pharmaceutical/other/Cancer_Staging.html#终点选择",
+    "title": "Cancer Staging（肿瘤分期）",
+    "section": "11.3 终点选择",
+    "text": "11.3 终点选择\n不同Stage关注的主要终点不同。\n\n\n\nClinical Setting\n常见主要终点\n\n\n\n\nEarly-stage\nDisease-free survival (DFS)、Event-free survival (EFS)\n\n\nNeoadjuvant\npCR、Major pathologic response (MPR)、EFS\n\n\nStage III\nProgression-free survival (PFS)、Overall survival (OS)\n\n\nStage IV\nPFS、OS、Objective response rate (ORR)、Duration of response (DOR)",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Cancer Staging"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Cancer_Staging.html#生物统计学考虑",
+    "href": "docs/pharmaceutical/other/Cancer_Staging.html#生物统计学考虑",
+    "title": "Cancer Staging（肿瘤分期）",
+    "section": "11.4 生物统计学考虑",
+    "text": "11.4 生物统计学考虑\n分期是肿瘤临床试验中最重要的预后因素之一，因此统计设计通常需要充分考虑其影响：\n\nStage常作为随机化分层因素，提高治疗组间基线平衡。\nCox比例风险模型通常将Stage作为协变量进行调整，以提高估计效率。\n不同Stage患者的事件发生率差异较大，因此样本量估计需结合目标人群的分期构成。\nStage相关亚组分析应预先在统计分析计划（SAP）中定义，避免事后探索性分析导致结果解释困难。\n随着新辅助治疗和围手术期治疗的发展，越来越多试验采用治疗后的ypStage作为预后分析的重要指标。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Cancer Staging"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html",
+    "title": "Biomarker Expression（生物标志物表达）",
     "section": "",
-    "text": "Intercurrent Event (介入事件)： + 在临床试验期间，发生在治疗分配之后的事件，可能影响 治疗效果（treatment effect）的解读或测量。 + ICH E9 (R1) 定义：任何在试验期间发生的、可能影响或阻碍主要结局变量（endpoint）的解释的事件。\n\n\n在 MM 临床试验中，典型的 intercurrent events 包括：\n\nTreatment discontinuation（治疗中止）治疗停药\n\n因 不良事件 (Adverse Events, AE)、毒性 (toxicity)、依从性差 等原因停药。\n\nInitiation of new anti-myeloma therapy（启动新的骨髓瘤治疗）新增救援治疗\n\n病人进展 (progression) 后接受 下一线治疗 (subsequent therapy)。\n\nDeath unrelated to disease progression（与疾病进展无关的死亡）非疾病相关死亡\n\n如感染、心血管事件、其他合并症导致的死亡。\n\nStem cell transplantation（干细胞移植）\n\n特别是自体干细胞移植 (ASCT)，在试验方案内或作为补救治疗。\n\nCrossover（交叉用药）\n\n患者在试验期间从对照组转到实验组（或反之）。\n\nWithdrawal of consent（撤回知情同意）\n\n患者中途退出试验，不再随访。",
+    "text": "在肿瘤学和临床试验中，expression（表达）通常指某个基因或蛋白在细胞中被产生或检测到的程度。\n例如，programmed death-ligand 1, PD-L1（程序性死亡配体1）表达，通常指肿瘤组织中的肿瘤细胞或免疫细胞表面存在多少PD-L1蛋白。\n临床报告中常见的：\n\nPD-L1 negative（PD-L1阴性）；\nPD-L1 low expression（PD-L1低表达）；\nPD-L1 high expression（PD-L1高表达）；\n\n本质上是在根据检测到的PD-L1蛋白比例或评分，将患者分为不同的biomarker subgroup（生物标志物亚组）。",
     "crumbs": [
       "Other",
       "Wiki",
       "Clinical Trial",
-      "Intercurrent Events"
+      "Biomarker Expression"
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html#relation-to-estimand-framework",
-    "href": "docs/pharmaceutical/other/Intercurrent_Events.html#relation-to-estimand-framework",
-    "title": "Intercurrent Events",
-    "section": "Relation to Estimand Framework",
-    "text": "Relation to Estimand Framework\nEstimand 框架的关键就是 如何处理 intercurrent events。不同策略包括：\n\nTreatment Policy Strategy（治疗策略法）治疗策略法：不管发生什么事件，照原计划纳入分析（如 ITT）。\nHypothetical Strategy（假设法）假设法：假设该事件没有发生，推断其结果。\nComposite Strategy（复合法）复合法：将该事件并入主要终点定义（例如 OS 包括所有原因死亡）。\nWhile-on-treatment Strategy（治疗期间法）治疗期间法：只分析事件发生前的数据。\nPrincipal Stratum Strategy（主要亚群法）主要亚群法：仅在不会发生该事件的患者亚群中估计效果。\n\n\n\n\n\n\n\nExamples\n\n\n\n\n\n\n\n\nStrategy (策略)\nPopulation (研究人群)\nVariable (终点)\nIntercurrent Event (介入事件)\nEstimand (估计量)\n\n\n\n\nTreatment Policy 治疗策略法\nR/R MM 患者，接受试验药物或对照\nPFS\nInitiation of new anti-myeloma therapy（启动后续治疗）\n在整个研究人群中，比较试验组与对照组的 PFS 分布，不论是否接受后续治疗\n\n\nHypothetical 假设法\nNDMM 患者，接受 induction + ASCT\nMRD negativity rate at 12 months\nTreatment discontinuation due to AE（因毒性停药）\n在假设所有患者都能完成 12 个月治疗的条件下，比较 MRD negativity rate\n\n\nComposite 复合法\nR/R MM 患者，至少接受过 3 线治疗\nORR\nDeath prior to response assessment / Initiation of new therapy（评估前死亡/新治疗）\nORR 定义中包含死亡/新治疗作为 non-response，比较试验组与对照组的 ORR\n\n\nWhile-on-treatment 治疗期间法\nMM 患者，接受实验药物\nIncidence of Grade ≥3 TEAE\nTreatment discontinuation（治疗停药）\n仅统计在治疗期间发生的 Grade ≥3 AE，比较组间差异\n\n\nPrincipal Stratum 主要亚群法\nR/R MM 患者\nOS\nUse of CAR-T therapy as subsequent line（后续 CAR-T）\n在不会接受 CAR-T 的亚群中，比较试验组与对照组的 OS 差异",
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#从基因到蛋白",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#从基因到蛋白",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "2.1 从基因到蛋白",
+    "text": "2.1 从基因到蛋白\n细胞中的遗传信息通常经过以下过程：\n\\[\n\\text{DNA}\n\\rightarrow\n\\text{RNA}\n\\rightarrow\n\\text{Protein}\n\\]\n这个过程包括：\n\nTranscription（转录）：DNA中的基因信息被转录成RNA；\nTranslation（翻译）：RNA进一步被翻译成蛋白质；\n蛋白质被运输到细胞内部、细胞膜或细胞外发挥功能。\n\n因此，“表达”可以指不同层面：\n\n\n\n\n\n\n\n\n\n表达类型\n英文名称\n主要含义\n常见检测方法\n\n\n\n\n基因表达\nGene expression\n某基因产生了多少RNA\nRNA sequencing、RT-PCR\n\n\n蛋白表达\nProtein expression\n某蛋白产生了多少或有多少细胞含有该蛋白\nIHC、flow cytometry、Western blot\n\n\n细胞膜表达\nMembrane expression\n蛋白是否出现在细胞膜及其染色程度\nIHC\n\n\n免疫细胞表达\nImmune-cell expression\n肿瘤周围免疫细胞是否表达该蛋白\nIHC、flow cytometry\n\n\n\n在PD-L1检测中，临床上主要评价的是protein expression（蛋白表达），而不是PD-L1基因是否存在。",
     "crumbs": [
       "Other",
       "Wiki",
       "Clinical Trial",
-      "Intercurrent Events"
+      "Biomarker Expression"
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html#informative-censoring",
-    "href": "docs/pharmaceutical/other/Intercurrent_Events.html#informative-censoring",
-    "title": "Intercurrent Events",
-    "section": "Informative Censoring",
-    "text": "Informative Censoring\n\nCommon statistical methods\n\nInverse Probability of Censoring Weighting (IPCW): 建模 dropout hazard，调整权重。\nJoint Modeling: for both dropout hazard and PFS/OS\nPattern-Mixture Models/Selection Models\n\nPattern-mixture model：把 IA 前 vs IA 后退出的患者分层建模。\nSelection model：明确 dropout hazard 与 treatment arm/outcome 相关。\n\nMultiple Imputation under MNAR\nRank-Preserving Structural Failure Time Model (RPSFTM)\nSensitivity Analyses: 设定不同的 “退出患者预后更差/相同/更好” 假设，检查结果稳健性。\n\n\n\nRelative Regulatory Guidance\n\nICH E9 (R1): Addendum on Estimands and Sensitivity Analyses\n\n强调要在 estimand framework 中预先定义如何处理 intercurrent events 和 censoring。\n\nFDA Guidance for Industry: Multiple Endpoints in Clinical Trials (2017)\n\n讲到对不同 endpoints 的分析时要考虑 dropout、censoring 的偏倚。\n\nFDA Guidance for Industry: Missing Data in Clinical Trials (2010)\n\n虽然标题是 missing data，但实际上重点就是处理 informative censoring / informative dropout。\n推荐使用 model-based approaches，避免仅依赖 LOCF（last observation carried forward）。\n\nFDA Oncology Review Practices（reviewer often requests sensitivity analysis under different censoring assumptions）\n\n特别是 OS/PFS 研究，FDA reviewer 会要求 sponsor 提供 “sensitivity to censoring assumptions” 的结果。\n\nFDA Draft Guidance: Adjusting for Covariates in Randomized Clinical Trials (2023)\n\n提到在存在 informative censoring 的情况下，建模方法可提供更准确估计。",
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#immunohistochemistry",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#immunohistochemistry",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "4.1 Immunohistochemistry",
+    "text": "4.1 Immunohistochemistry\nImmunohistochemistry, IHC（免疫组织化学）是临床上检测PD-L1等蛋白表达最常见的方法。\nIHC的基本过程为：\n\n从手术或活检标本中获得肿瘤组织；\n将组织固定并制作成病理切片；\n使用能够特异性识别PD-L1的抗体进行染色；\n抗体与PD-L1蛋白结合；\n病理医生根据染色细胞的比例、位置和强度进行评分。\n\n染色阳性通常表示相应细胞上检测到了PD-L1蛋白。",
     "crumbs": [
       "Other",
       "Wiki",
       "Clinical Trial",
-      "Intercurrent Events"
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#染色结果的基本解释",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#染色结果的基本解释",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "4.2 染色结果的基本解释",
+    "text": "4.2 染色结果的基本解释\n\n\n\n检测结果\n含义\n\n\n\n\n无染色\n未检测到足够的目标蛋白\n\n\n少量细胞染色\n低水平表达\n\n\n较多细胞染色\n较高水平表达\n\n\n肿瘤细胞膜染色\n肿瘤细胞表达目标蛋白\n\n\n免疫细胞染色\n肿瘤微环境中的免疫细胞表达目标蛋白\n\n\n\n对于PD-L1，通常重点观察细胞膜染色，因为PD-L1需要位于细胞膜上才能与T细胞上的PD-1发生作用。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#为什么分为阴性低表达和高表达",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#为什么分为阴性低表达和高表达",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "5.1 为什么分为阴性、低表达和高表达",
+    "text": "5.1 为什么分为阴性、低表达和高表达\nPD-L1表达通常不是简单的“有”或“没有”，而是一个连续变量。\n例如，一个肿瘤样本中可能有：\n\n0%的肿瘤细胞染色；\n5%的肿瘤细胞染色；\n30%的肿瘤细胞染色；\n80%的肿瘤细胞染色。\n\n为了便于治疗决策和临床试验分层，通常根据预先规定的cutoff（阈值）将表达水平分类。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#nsclc中的常见分类",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#nsclc中的常见分类",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "6.1 NSCLC中的常见分类",
+    "text": "6.1 NSCLC中的常见分类\n在NSCLC中，经常使用以下分类：\n\n\n\n\n\n\n\n\nPD-L1状态\n常见TPS定义\n解释\n\n\n\n\nNegative（阴性）\nTPS &lt;1%\n几乎未检测到PD-L1阳性肿瘤细胞\n\n\nLow expression（低表达）\nTPS 1%–49%\n一部分肿瘤细胞表达PD-L1\n\n\nHigh expression（高表达）\nTPS &gt;=50%\n至少一半可评估肿瘤细胞表达PD-L1\n\n\n\n这些cutoff常用于NSCLC治疗选择和临床试验分析，但并不是所有癌种都使用相同标准。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#tps与cps比较",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#tps与cps比较",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "7.1 TPS与CPS比较",
+    "text": "7.1 TPS与CPS比较\n\n\n\n特征\nTPS\nCPS\n\n\n\n\n主要评价细胞\n肿瘤细胞\n肿瘤细胞和部分免疫细胞\n\n\n分母\n活肿瘤细胞\n活肿瘤细胞\n\n\n分子\nPD-L1阳性肿瘤细胞\nPD-L1阳性肿瘤细胞、淋巴细胞和巨噬细胞\n\n\n常见应用\nNSCLC等\n胃癌、头颈癌、宫颈癌等\n\n\n是否可直接比较\n否\n否\n\n\n\n一个样本的TPS和CPS可能明显不同。\n例如，肿瘤细胞本身几乎不表达PD-L1，但周围存在大量PD-L1阳性免疫细胞时：\n\nTPS可能很低；\nCPS可能较高。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#pd-l1阴性",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#pd-l1阴性",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "9.1 PD-L1阴性",
+    "text": "9.1 PD-L1阴性\nPD-L1阴性通常表示样本中的PD-L1表达低于规定cutoff。\n例如，在TPS框架中：\n\\[\n\\text{TPS}&lt;1\\%\n\\]\n但PD-L1阴性并不意味着：\n\n肿瘤完全没有PD-L1；\n患者一定不能使用免疫治疗；\n免疫治疗一定无效；\n肿瘤中不存在免疫细胞。\n\n部分PD-L1阴性患者仍可能从免疫治疗中获益，特别是在免疫治疗与化疗联合使用时。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#pd-l1低表达",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#pd-l1低表达",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "9.2 PD-L1低表达",
+    "text": "9.2 PD-L1低表达\n低表达通常表示PD-L1达到阳性标准，但未达到高表达cutoff。\n例如，在NSCLC TPS框架中：\n\\[\n1\\%\n\\leq\n\\text{TPS}\n&lt;\n50\\%\n\\]\n低表达患者可能从免疫治疗获益，但平均获益程度通常低于高表达患者，且治疗选择常需要结合：\n\ndisease stage（疾病分期）；\nhistology（组织学）；\ndriver mutation（驱动基因突变）；\nECOG performance status；\n免疫治疗单药或联合化疗方案；\n患者共病和治疗目标。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#pd-l1高表达",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#pd-l1高表达",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "9.3 PD-L1高表达",
+    "text": "9.3 PD-L1高表达\n高表达表示样本中较多肿瘤细胞或相关细胞表达PD-L1。\n例如，在NSCLC TPS框架中：\n\\[\n\\text{TPS}\\geq50\\%\n\\]\nPD-L1高表达通常与免疫检查点抑制剂产生疗效的概率增加相关，但不是确定性的预测指标。\n因此：\n\nPD-L1高表达表示患者更可能获益，而不是患者一定会获益。\n\n部分高表达患者仍可能出现：\n\nprimary resistance（原发耐药）；\nearly progression（早期进展）；\n获得初始缓解后发生acquired resistance（获得性耐药）。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#intratumor-heterogeneity肿瘤内异质性",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#intratumor-heterogeneity肿瘤内异质性",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "12.1 Intratumor Heterogeneity（肿瘤内异质性）",
+    "text": "12.1 Intratumor Heterogeneity（肿瘤内异质性）\n同一个肿瘤的不同区域可能具有不同的PD-L1表达。\n例如：\n\n一部分肿瘤区域TPS为70%；\n另一部分区域TPS为5%。\n\n如果活检只取到低表达区域，检测结果可能低估整个肿瘤的PD-L1表达。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#intertumor-heterogeneity不同病灶间异质性",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#intertumor-heterogeneity不同病灶间异质性",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "12.2 Intertumor Heterogeneity（不同病灶间异质性）",
+    "text": "12.2 Intertumor Heterogeneity（不同病灶间异质性）\n同一患者的：\n\n原发肿瘤；\n淋巴结转移；\n肝转移；\n肺转移；\n\n可能具有不同的PD-L1表达水平。\n因此，检测哪个病灶可能影响结果。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#temporal-heterogeneity时间异质性",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#temporal-heterogeneity时间异质性",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "12.3 Temporal Heterogeneity（时间异质性）",
+    "text": "12.3 Temporal Heterogeneity（时间异质性）\nPD-L1表达可能随时间发生变化，尤其是在接受以下治疗后：\n\nchemotherapy；\nradiotherapy；\ntargeted therapy；\nimmunotherapy。\n\n早期活检结果可能不完全代表复发或转移时的肿瘤状态。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#assay-differences检测方法差异",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#assay-differences检测方法差异",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "12.4 Assay Differences（检测方法差异）",
+    "text": "12.4 Assay Differences（检测方法差异）\n不同PD-L1 IHC assay可能使用不同抗体clone，例如：\n\n22C3；\n28-8；\nSP263；\nSP142。\n\n不同检测方法在：\n\n染色敏感性；\n评分对象；\ncutoff；\n适用癌种；\n对应药物；\n\n方面可能不同。\n因此，不能假设所有PD-L1 assay完全等价。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#sample-type样本类型",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#sample-type样本类型",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "12.5 Sample Type（样本类型）",
+    "text": "12.5 Sample Type（样本类型）\nPD-L1结果还可能受到以下因素影响：\n\nsurgical specimen（手术标本）或biopsy specimen（活检标本）；\ncore needle biopsy或fine-needle aspiration；\n新鲜样本或存档样本；\n原发灶或转移灶；\n肿瘤细胞数量是否足够；\n固定时间和组织处理方式。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#biomarker-subgroup-definition",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#biomarker-subgroup-definition",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "16.1 Biomarker Subgroup Definition",
+    "text": "16.1 Biomarker Subgroup Definition\n临床试验必须预先规定：\n\n使用哪种assay；\n使用哪个antibody clone；\n使用TPS、CPS还是其他评分；\n阳性cutoff；\n高表达cutoff；\n中央实验室或当地实验室检测；\n样本不足如何处理；\n存档样本是否允许；\n原发灶和转移灶是否均可使用。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#stratification",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#stratification",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "16.2 Stratification",
+    "text": "16.2 Stratification\nPD-L1 expression常被用作随机化分层因素，例如：\n\nTPS &lt;1%；\nTPS 1%–49%；\nTPS &gt;=50%。\n\n分层可减少治疗组间PD-L1分布不平衡，并提高治疗比较的可解释性。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#subgroup-analysis",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#subgroup-analysis",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "16.3 Subgroup Analysis",
+    "text": "16.3 Subgroup Analysis\n常见亚组包括：\n\n\n\n亚组\n示例\n\n\n\n\nPD-L1 negative\nTPS &lt;1%\n\n\nPD-L1 positive\nTPS &gt;=1%\n\n\nPD-L1 low\nTPS 1%–49%\n\n\nPD-L1 high\nTPS &gt;=50%\n\n\n\n亚组结果应报告：\n\n每组样本量；\ntreatment effect；\nconfidence interval；\ninteraction test；\n是否为预设分析；\n是否进行multiplicity控制。\n\n不能仅因为某个亚组p-value显著、另一个亚组不显著，就断定两个亚组的治疗效果不同。应重点观察treatment-by-biomarker interaction。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#cutoff-selection",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#cutoff-selection",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "16.4 Cutoff Selection",
+    "text": "16.4 Cutoff Selection\nBiomarker cutoff可能来自：\n\n早期临床试验；\nreceiver operating characteristic analysis；\nbiologic rationale；\nregulatory precedent；\ncompanion diagnostic开发；\n独立validation cohort。\n\n如果在同一数据集中尝试多个cutoff并选择结果最好的一个，可能产生数据驱动偏倚和type I error inflation。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/other/Biomarker_Expression.html#missing-biomarker-data",
+    "href": "docs/pharmaceutical/other/Biomarker_Expression.html#missing-biomarker-data",
+    "title": "Biomarker Expression（生物标志物表达）",
+    "section": "16.5 Missing Biomarker Data",
+    "text": "16.5 Missing Biomarker Data\nPD-L1数据缺失的原因可能包括：\n\n组织不足；\n肿瘤细胞数量不足；\n样本质量不合格；\n检测失败；\n未获得活检；\n结果无法评分。\n\nBiomarker-evaluable population可能不同于intention-to-treat population，因此需要比较：\n\nbiomarker-known与biomarker-unknown患者；\n样本来源；\n基线特征；\n治疗组分布；\n预后差异。",
+    "crumbs": [
+      "Other",
+      "Wiki",
+      "Clinical Trial",
+      "Biomarker Expression"
     ]
   },
   {
@@ -5822,7 +6095,7 @@
     "href": "docs/pharmaceutical/listing-compound.html",
     "title": "Pharmaceutial",
     "section": "",
-    "text": "Pharmaceutical Notebook\n\n\n\n\n\n Company \n\n\n Regulatory \n\n\n Compound \n\n\n Disease \n\n\n Target \n\n\n SDTM \n\n\n Other \n\n\n\n\n\nCompound\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Drug\n        \n         \n          Compound\n        \n         \n          Company\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDrug\n\n\nCompound\n\n\nCompany\n\n\nIndication\n\n\n\n\n\n\nOpdivo\n\n\nNivolumab\n\n\nBMS\n\n\nPD-1 inhibitor for multiple cancers, including Melanoma, NSCLC, RCC, cHL, urothelial carcinoma, MSI-H/dMMR CRC, and gastric/esophageal cancers. \n\n\n\n\nEliquis\n\n\nApixaban\n\n\nBMS, Pfizer\n\n\nPrevent blood clots, stroke in atrial fibrillation, deep vein thrombosis.\n\n\n\n\nReblozyl\n\n\nLuspatercept\n\n\nBMS, Acceleron Pharma\n\n\nTreat anemia in adults with beta thalassemia or myelodysplastic syndromes. \n\n\n\n\nRevlimid\n\n\nLenalidomide\n\n\nBMS\n\n\nMultiple myeloma, myelodysplastic syndromes, mantle cell lymphoma. \n\n\n\n\nYervoy\n\n\nIpilimumab\n\n\nBMS\n\n\nMelanoma, renal cell carcinoma, metastatic colorectal cancer. \n\n\n\n\nCOBENFY\n\n\nXanomeline + trospium chloride / KarXT\n\n\nBMS\n\n\nOral fixed-dose muscarinic receptor-targeting antipsychotic approved by FDA for adults with schizophrenia. \n\n\n\n\nComirnaty\n\n\nBNT162b2 (mRNA-based vaccine)\n\n\nPfizer, BioNTech\n\n\nCOVID-19 vaccination.\n\n\n\n\nPrevnar\n\n\nPneumococcal vaccine\n\n\nPfizer\n\n\nPneumococcal infections prevention.\n\n\n\n\nIbrance\n\n\nPalbociclib\n\n\nPfizer\n\n\nBreast cancer treatment.\n\n\n\n\nXeljanz\n\n\nTofacitinib\n\n\nPfizer\n\n\nRheumatoid arthritis, psoriatic arthritis, and ulcerative colitis treatment. \n\n\n\n\nKeytruda\n\n\nPembrolizumab\n\n\nMerck & Co.\n\n\nPD-1 immune checkpoint inhibitor used across multiple cancers, including Melanoma, NSCLC, breast cancer, and selected tumor-agnostic settings. \n\n\n\n\nJanuvia\n\n\nSitagliptin\n\n\nMerck & Co.\n\n\nType 2 diabetes. \n\n\n\n\nGardasil\n\n\nHuman Papillomavirus Vaccine\n\n\nMerck & Co.\n\n\nPrevention of HPV-related diseases, including cervical cancer. \n\n\n\n\nLynparza\n\n\nOlaparib\n\n\nAstraZeneca, Merck & Co.\n\n\nTreatment of ovarian, breast, prostate, and pancreatic cancers.\n\n\n\n\nPneumovax\n\n\nPneumococcal Polysaccharide Vaccine\n\n\nMerck & Co.\n\n\nPrevention of pneumococcal infections.\n\n\n\n\nHumira\n\n\nAdalimumab\n\n\nAbbVie\n\n\nTreats autoimmune diseases like rheumatoid arthritis, psoriatic arthritis, and Crohn`s disease. \n\n\n\n\nSkyrizi\n\n\nRisankizumab\n\n\nAbbVie\n\n\nIL-23 p19 inhibitor for plaque psoriasis, psoriatic arthritis, Crohn’s disease, and ulcerative colitis. \n\n\n\n\nRinvoq\n\n\nUpadacitinib\n\n\nAbbVie\n\n\nRheumatoid arthritis, psoriatic arthritis, and ankylosing spondylitis. \n\n\n\n\nImbruvica\n\n\nIbrutinib\n\n\nPharmacyclics(AbbVie), J& J\n\n\nTreats certain types of cancer, such as mantle cell lymphoma and chronic lymphocytic leukemia. \n\n\n\n\nVenclexta\n\n\nVenetoclax\n\n\nAbbVie, Roche\n\n\nUsed in the treatment of chronic lymphocytic leukemia and small lymphocytic lymphoma. \n\n\n\n\nStelara\n\n\nUstekinumab\n\n\nJ& J\n\n\nTreats plaque psoriasis, Crohn’s disease, and ulcerative colitis.\n\n\n\n\nRemicade\n\n\nInfliximab\n\n\nJ& J\n\n\nUsed for Crohn’s disease, ulcerative colitis, rheumatoid arthritis, and other autoimmune diseases. \n\n\n\n\nDarzalex\n\n\nDaratumumab\n\n\nJ& J\n\n\nTreats multiple myeloma.\n\n\n\n\nXarelto\n\n\nRivaroxaban\n\n\nBayer, J& J\n\n\nPrevents blood clots in people with atrial fibrillation, deep vein thrombosis, and pulmonary embolism. \n\n\n\n\nYescarta\n\n\nAxicabtagene Ciloleucel\n\n\nKite Pharma (a Gilead Company)\n\n\nTreats certain types of large B-cell lymphoma, including those that are refractory or have relapsed after at least two other kinds of treatment.\n\n\n\n\nOcrevus\n\n\nOcrelizumab\n\n\nRoche\n\n\nTreats multiple sclerosis.\n\n\n\n\nAvastin\n\n\nBevacizumab\n\n\nRoche\n\n\nUsed for various types of cancers including colorectal, lung, and kidney cancer.\n\n\n\n\nHerceptin\n\n\nTrastuzumab\n\n\nRoche\n\n\nTreats HER2-positive breast cancer and stomach cancer.\n\n\n\n\nRituxan\n\n\nRituximab\n\n\nRoche\n\n\nTreats non-Hodgkin’s lymphoma, chronic lymphocytic leukemia and rheumatoid arthritis. \n\n\n\n\nHemlibra\n\n\nEmicizumab\n\n\nRoche\n\n\nPrevents bleeding in people with hemophilia A.\n\n\n\n\nCosentyx\n\n\nSecukinumab\n\n\nNovartis\n\n\nUsed to treat plaque psoriasis, ankylosing spondylitis, and psoriatic arthritis.\n\n\n\n\nEntresto\n\n\nSacubitril/Valsartan\n\n\nNovartis\n\n\nUsed for treating heart failure.\n\n\n\n\nGilenya\n\n\nFingolimod\n\n\nNovartis\n\n\nTreats multiple sclerosis.\n\n\n\n\nLucentis\n\n\nRanibizumab\n\n\nNovartis\n\n\nUsed for age-related macular degeneration and other eye conditions.\n\n\n\n\nZolgensma\n\n\nOnasemnogene abeparvovec\n\n\nNovartis\n\n\nGene therapy for spinal muscular atrophy.\n\n\n\n\nDupixent\n\n\nDupilumab\n\n\nSanofi, Regeneron\n\n\nTreats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.\n\n\n\n\nTaxotere\n\n\nDocetaxel\n\n\nSanofi\n\n\nTaxane chemotherapy used in breast cancer, NSCLC, prostate cancer, gastric cancer, and head and neck cancer; common active comparator in oncology trials. \n\n\n\n\nLantus\n\n\nInsulin glargine\n\n\nSanofi\n\n\nLong-acting insulin used for diabetes mellitus.\n\n\n\n\nAubagio\n\n\nTeriflunomide\n\n\nSanofi\n\n\nTreats relapsing forms of multiple sclerosis.\n\n\n\n\nToujeo\n\n\nInsulin glargine\n\n\nSanofi\n\n\nLong-acting insulin for managing blood sugar levels in diabetes.\n\n\n\n\nPraluent\n\n\nAlirocumab\n\n\nSanofi, Regeneron\n\n\nUsed in lowering LDL cholesterol.\n\n\n\n\nShingrix\n\n\nRecombinant Zoster Vaccine\n\n\nGSK\n\n\nPrevents shingles (herpes zoster) in adults.\n\n\n\n\nTrelegy\n\n\nFluticasone furoate/Umeclidinium/Vilanterol\n\n\nGSK\n\n\nUsed for chronic obstructive pulmonary disease (COPD).\n\n\n\n\nNucala\n\n\nMepolizumab\n\n\nGSK\n\n\nTreats severe eosinophilic asthma and EGPA.\n\n\n\n\nZejula\n\n\nNiraparib\n\n\nGSK\n\n\nUsed for ovarian, fallopian tube, or peritoneal cancer.\n\n\n\n\nBenlysta\n\n\nBelimumab\n\n\nGSK\n\n\nTreats systemic lupus erythematosus (SLE).\n\n\n\n\nTagrisso\n\n\nOsimertinib\n\n\nAstraZeneca\n\n\nTreats non-small cell lung cancer with specific mutations.\n\n\n\n\nImfinzi\n\n\nDurvalumab\n\n\nAstraZeneca\n\n\nPD-L1 inhibitor used in NSCLC, SCLC, biliary tract cancer, HCC, endometrial cancer, muscle-invasive bladder cancer, and gastric/GEJ adenocarcinoma settings. \n\n\n\n\nFarxiga\n\n\nDapagliflozin\n\n\nAstraZeneca\n\n\nTreats Type 2 diabetes and heart failure.\n\n\n\n\nSymbicort\n\n\nBudesonide/Formoterol\n\n\nAstraZeneca\n\n\nUsed for asthma and chronic obstructive pulmonary disease (COPD).\n\n\n\n\nCrestor\n\n\nRosuvastatin\n\n\nAstraZeneca\n\n\nLowers high cholesterol and triglyceride levels.\n\n\n\n\nEnbrel\n\n\nEtanercept\n\n\nAmgen\n\n\nTreats rheumatoid arthritis, psoriatic arthritis, and plaque psoriasis. \n\n\n\n\nProlia\n\n\nDenosumab\n\n\nAmgen\n\n\nUsed for osteoporosis in postmenopausal women and men at high risk of fracture.\n\n\n\n\nOtezla\n\n\nApremilast\n\n\nAmgen\n\n\nTreats plaque psoriasis and psoriatic arthritis.\n\n\n\n\nRepatha\n\n\nEvolocumab\n\n\nAmgen\n\n\nLowers LDL cholesterol levels.\n\n\n\n\nNeulasta\n\n\nPegfilgrastim\n\n\nAmgen\n\n\nHelps reduce the risk of infection in cancer patients undergoing chemotherapy.\n\n\n\n\nBiktarvy\n\n\nBictegravir, Emtricitabine, Tenofovir Alafenamide\n\n\nGilead\n\n\nTreats HIV-1 infection.\n\n\n\n\nTruvada\n\n\nEmtricitabine, Tenofovir Disoproxil Fumarate\n\n\nGilead\n\n\nUsed for HIV-1 prevention and treatment.\n\n\n\n\nVeklury\n\n\nRemdesivir\n\n\nGilead\n\n\nTreats COVID-19 in hospitalized patients.\n\n\n\n\nDescovy\n\n\nEmtricitabine, Tenofovir Alafenamide\n\n\nGilead\n\n\nHIV-1 pre-exposure prophylaxis (PrEP) and treatment.\n\n\n\n\nEpclusa\n\n\nSofosbuvir, Velpatasvir\n\n\nGilead\n\n\nTreats chronic hepatitis C virus (HCV) infection.\n\n\n\n\nEylea\n\n\nAflibercept\n\n\nBayer and Regeneron Pharmaceuticals\n\n\nTreats age-related macular degeneration and other eye conditions.\n\n\n\n\nMirena\n\n\nLevonorgestrel-releasing intrauterine system\n\n\nBayer\n\n\nBirth control and treatment of heavy menstrual bleeding.\n\n\n\n\nNexavar\n\n\nSorafenib\n\n\nBayer\n\n\nTreats liver, kidney, and thyroid cancer.\n\n\n\n\nKogenate\n\n\nRecombinant Factor VIII\n\n\nBayer\n\n\nTreats hemophilia A.\n\n\n\n\nCopaxone\n\n\nGlatiramer Acetate\n\n\nTeva\n\n\nTreats multiple sclerosis.\n\n\n\n\nAjovy\n\n\nFremanezumab\n\n\nTeva\n\n\nPreventive treatment of migraine.\n\n\n\n\nAustedo\n\n\nDeutetrabenazine\n\n\nTeva\n\n\nTreats chorea associated with Huntington’s disease and tardive dyskinesia.\n\n\n\n\nProAir\n\n\nAlbuterol Sulfate\n\n\nTeva\n\n\nTreats or prevents bronchospasm.\n\n\n\n\nQvar\n\n\nBeclomethasone Dipropionate\n\n\nTeva\n\n\nTreats asthma.\n\n\n\n\nEntyvio\n\n\nVedolizumab\n\n\nTakeda\n\n\nTreats ulcerative colitis and Crohn’s disease.\n\n\n\n\nNinlaro\n\n\nIxazomib\n\n\nTakeda\n\n\nTreats multiple myeloma.\n\n\n\n\nVyvanse\n\n\nLisdexamfetamine\n\n\nTakeda\n\n\nTreats ADHD and binge eating disorder.\n\n\n\n\nDexilant\n\n\nDexlansoprazole\n\n\nTakeda\n\n\nTreats gastroesophageal reflux disease (GERD).\n\n\n\n\nTrintellix\n\n\nVortioxetine\n\n\nTakeda\n\n\nTreats major depressive disorder.\n\n\n\n\nTrulicity\n\n\nDulaglutide\n\n\nEli Lilly\n\n\nTreats Type 2 diabetes.\n\n\n\n\nHumalog\n\n\nInsulin lispro\n\n\nEli Lilly\n\n\nRapid-acting insulin for diabetes.\n\n\n\n\nAlimta\n\n\nPemetrexed\n\n\nEli Lilly\n\n\nTreats non-small cell lung cancer and mesothelioma.\n\n\n\n\nTaltz\n\n\nIxekizumab\n\n\nEli Lilly\n\n\nTreats plaque psoriasis and psoriatic arthritis.\n\n\n\n\nVerzenio\n\n\nAbemaciclib\n\n\nEli Lilly\n\n\nTreats HR-positive, HER2-negative breast cancer.\n\n\n\n\nSpiriva\n\n\nTiotropium bromide\n\n\nBoehringer Ingelheim\n\n\nTreats COPD and asthma.\n\n\n\n\nJardiance\n\n\nEmpagliflozin\n\n\nBoehringer Ingelheim\n\n\nTreats Type 2 diabetes and heart failure.\n\n\n\n\nPradaxa\n\n\nDabigatran\n\n\nBoehringer Ingelheim\n\n\nPrevents blood clots and strokes.\n\n\n\n\nOfev\n\n\nNintedanib\n\n\nBoehringer Ingelheim\n\n\nTreats idiopathic pulmonary fibrosis.\n\n\n\n\nTrajenta\n\n\nLinagliptin\n\n\nBoehringer Ingelheim\n\n\nTreats Type 2 diabetes.\n\n\n\n\nTecfidera\n\n\nDimethyl fumarate\n\n\nBiogen\n\n\nTreats multiple sclerosis.\n\n\n\n\nSpinraza\n\n\nNusinersen\n\n\nBiogen\n\n\nTreats spinal muscular atrophy.\n\n\n\n\nTysabri\n\n\nNatalizumab\n\n\nBiogen\n\n\nTreats multiple sclerosis and Crohn’s disease. \n\n\n\n\nVumerity\n\n\nDiroximel fumarate\n\n\nBiogen\n\n\nTreats multiple sclerosis.\n\n\n\n\nAvonex\n\n\nInterferon beta-1a\n\n\nBiogen\n\n\nTreats multiple sclerosis.\n\n\n\n\nVictoza\n\n\nLiraglutide\n\n\nNovo Nordisk\n\n\nTreats Type 2 diabetes.\n\n\n\n\nLevemir\n\n\nInsulin detemir\n\n\nNovo Nordisk\n\n\nLong-acting insulin for diabetes.\n\n\n\n\nOzempic\n\n\nSemaglutide\n\n\nNovo Nordisk\n\n\nTreats Type 2 diabetes.\n\n\n\n\nTresiba\n\n\nInsulin degludec\n\n\nNovo Nordisk\n\n\nLong-acting insulin for diabetes.\n\n\n\n\nSaxenda\n\n\nLiraglutide\n\n\nNovo Nordisk\n\n\nWeight management.\n\n\n\n\nBotox\n\n\nBotulinum toxin\n\n\nAllergan\n\n\nTreats wrinkles, muscle spasms, and certain medical conditions.\n\n\n\n\nRestasis\n\n\nCyclosporine\n\n\nAllergan\n\n\nIncreases tear production in dry eye disease.\n\n\n\n\nJuvederm\n\n\nHyaluronic acid\n\n\nAllergan\n\n\nDermal filler for facial wrinkles.\n\n\n\n\nLinzess\n\n\nLinaclotide\n\n\nAllergan\n\n\nTreats irritable bowel syndrome with constipation.\n\n\n\n\nVraylar\n\n\nCariprazine\n\n\nAllergan\n\n\nTreats schizophrenia and bipolar disorder.\n\n\n\n\nLixiana\n\n\nEdoxaban\n\n\nDaiichi Sankyo\n\n\nPrevents blood clots and stroke.\n\n\n\n\nMovantik\n\n\nNaloxegol\n\n\nDaiichi Sankyo\n\n\nTreats opioid-induced constipation.\n\n\n\n\nWelchol\n\n\nColesevelam\n\n\nDaiichi Sankyo\n\n\nLowers cholesterol and improves glycemic control.\n\n\n\n\nSevikar\n\n\nOlmesartan medoxomil/Amlodipine\n\n\nDaiichi Sankyo\n\n\nTreats high blood pressure.\n\n\n\n\nNexium\n\n\nEsomeprazole\n\n\nDaiichi Sankyo\n\n\nTreats gastroesophageal reflux disease (GERD).\n\n\n\n\nEylea\n\n\nAflibercept\n\n\nRegeneron\n\n\nTreats age-related macular degeneration and other eye conditions.\n\n\n\n\nDupixent\n\n\nDupilumab\n\n\nRegeneron\n\n\nTreats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.\n\n\n\n\nLibtayo\n\n\nCemiplimab\n\n\nRegeneron\n\n\nTreats cutaneous squamous cell carcinoma.\n\n\n\n\nKevzara\n\n\nSarilumab\n\n\nRegeneron\n\n\nTreats rheumatoid arthritis. \n\n\n\n\nPraluent\n\n\nAlirocumab\n\n\nRegeneron\n\n\nLowers LDL cholesterol.\n\n\n\n\nXtandi\n\n\nEnzalutamide\n\n\nAstellas\n\n\nTreats prostate cancer.\n\n\n\n\nPrograf\n\n\nTacrolimus\n\n\nAstellas\n\n\nPrevents organ transplant rejection.\n\n\n\n\nVesicare\n\n\nSolifenacin\n\n\nAstellas\n\n\nTreats overactive bladder.\n\n\n\n\nMyrbetriq\n\n\nMirabegron\n\n\nAstellas\n\n\nTreats overactive bladder.\n\n\n\n\nXospata\n\n\nGilteritinib\n\n\nAstellas\n\n\nTreats acute myeloid leukemia. \n\n\n\n\nAbilify\n\n\nAripiprazole\n\n\nOtsuka\n\n\nTreats schizophrenia, bipolar disorder, and major depressive disorder.\n\n\n\n\nRexulti\n\n\nBrexpiprazole\n\n\nOtsuka\n\n\nTreats schizophrenia and adjunctive therapy for major depressive disorder.\n\n\n\n\nSamsca\n\n\nTolvaptan\n\n\nOtsuka\n\n\nTreats hyponatremia.\n\n\n\n\nJinarc\n\n\nTolvaptan\n\n\nOtsuka\n\n\nTreats polycystic kidney disease.\n\n\n\n\nAbilify Maintena\n\n\nAripiprazole\n\n\nOtsuka\n\n\nLong-acting injectable for schizophrenia.\n\n\n\n\nTecentriq\n\n\nAtezolizumab\n\n\nGenentech (a subsidiary of Roche)\n\n\nUsed for treating urothelial carcinoma, non-small cell lung cancer, triple-negative breast cancer, and more.\n\n\n\n\nBreyanzi\n\n\nLisocabtagene Maraleucel\n\n\nBMS\n\n\nTreats relapsed or refractory large B-cell lymphoma, including diffuse large B-cell lymphoma, after two or more lines of systemic therapy.\n\n\n\n\nPumitamig\n\n\nBNT327 / BMS-986545 / PM8002\n\n\nBMS, BioNTech\n\n\nInvestigational PD-L1 × VEGF-A bispecific antibody in development for lung cancer, NSCLC, triple-negative breast cancer, colorectal cancer, and gastric cancer. \n\n\n\n\nIzalontamab Brengitecan\n\n\nBL-B01D1 / BMS-986507 / Iza-bren\n\n\nBMS, SystImmune, Sichuan Biokin\n\n\nInvestigational EGFR × HER3 bispecific ADC in development for lung cancer, NSCLC, triple-negative breast cancer, esophageal squamous cell carcinoma, nasopharyngeal carcinoma, urothelial carcinoma, and other solid tumors. \n\n\n\n\nIvonescimab\n\n\nAK112\n\n\nAkeso, Summit Therapeutics\n\n\nPD-1 × VEGF bispecific antibody approved in China for selected NSCLC settings and in global development for lung cancer, CRC, BTC, HNSCC, and other solid tumors. \n\n\n\n\nCadonilimab\n\n\nAK104\n\n\nAkeso\n\n\nPD-1 × CTLA-4 bispecific antibody approved in China for cervical cancer and gastric or gastroesophageal junction adenocarcinoma, with continued development across solid tumors. \n\n\n\n\nAbecma\n\n\nIdecabtagene Vicleucel\n\n\nBMS and bluebird bio\n\n\nTreats relapsed or refractory multiple myeloma in adults who have received at least four prior therapies, including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody.\n\n\n\n\nTecvayli\n\n\nTeclistamab\n\n\nJanssen Pharmaceuticals (Johnson & Johnson)\n\n\nTreats adult patients with relapsed or refractory multiple myeloma.\n\n\n\n\nCarvykti\n\n\nCiltacabtagene Autoleucel\n\n\nJanssen Pharmaceuticals (Johnson & Johnson)\n\n\nApproved for the treatment of adult patients with relapsed or refractory multiple myeloma.\n\n\n\n\n\nNo matching items",
+    "text": "Pharmaceutical Notebook\n\n\n\n\n\n Company \n\n\n Regulatory \n\n\n Compound \n\n\n Disease \n\n\n Target \n\n\n SDTM \n\n\n Other \n\n\n\n\n\nCompound\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Drug\n        \n         \n          Compound\n        \n         \n          Company\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDrug\n\n\nCompound\n\n\nCompany\n\n\nIndication\n\n\n\n\n\n\nOpdivo\n\n\nNivolumab\n\n\nBMS\n\n\nPD-1 inhibitor for multiple cancers, including Melanoma, NSCLC, RCC, cHL, urothelial carcinoma, MSI-H/dMMR CRC, and gastric/esophageal cancers. \n\n\n\n\nEliquis\n\n\nApixaban\n\n\nBMS, Pfizer\n\n\nPrevent blood clots, stroke in atrial fibrillation, deep vein thrombosis.\n\n\n\n\nReblozyl\n\n\nLuspatercept\n\n\nBMS, Acceleron Pharma\n\n\nTreat anemia in adults with beta thalassemia or myelodysplastic syndromes. \n\n\n\n\nRevlimid\n\n\nLenalidomide\n\n\nBMS\n\n\nMultiple myeloma, myelodysplastic syndromes, mantle cell lymphoma. \n\n\n\n\nYervoy\n\n\nIpilimumab\n\n\nBMS\n\n\nMelanoma, renal cell carcinoma, metastatic colorectal cancer. \n\n\n\n\nCOBENFY\n\n\nXanomeline + trospium chloride / KarXT\n\n\nBMS\n\n\nOral fixed-dose muscarinic receptor-targeting antipsychotic approved by FDA for adults with schizophrenia. \n\n\n\n\nComirnaty\n\n\nBNT162b2 (mRNA-based vaccine)\n\n\nPfizer, BioNTech\n\n\nCOVID-19 vaccination.\n\n\n\n\nPrevnar\n\n\nPneumococcal vaccine\n\n\nPfizer\n\n\nPneumococcal infections prevention.\n\n\n\n\nIbrance\n\n\nPalbociclib\n\n\nPfizer\n\n\nBreast cancer treatment.\n\n\n\n\nXeljanz\n\n\nTofacitinib\n\n\nPfizer\n\n\nRheumatoid arthritis, psoriatic arthritis, and ulcerative colitis treatment. \n\n\n\n\nKeytruda\n\n\nPembrolizumab\n\n\nMerck & Co.\n\n\nPD-1 immune checkpoint inhibitor used across multiple cancers, including Melanoma, NSCLC, breast cancer, and selected tumor-agnostic settings. \n\n\n\n\nJanuvia\n\n\nSitagliptin\n\n\nMerck & Co.\n\n\nType 2 diabetes. \n\n\n\n\nGardasil\n\n\nHuman Papillomavirus Vaccine\n\n\nMerck & Co.\n\n\nPrevention of HPV-related diseases, including cervical cancer. \n\n\n\n\nLynparza\n\n\nOlaparib\n\n\nAstraZeneca, Merck & Co.\n\n\nTreatment of ovarian, breast, prostate, and pancreatic cancers.\n\n\n\n\nPneumovax\n\n\nPneumococcal Polysaccharide Vaccine\n\n\nMerck & Co.\n\n\nPrevention of pneumococcal infections.\n\n\n\n\nHumira\n\n\nAdalimumab\n\n\nAbbVie\n\n\nTreats autoimmune diseases like rheumatoid arthritis, psoriatic arthritis, and Crohn`s disease. \n\n\n\n\nSkyrizi\n\n\nRisankizumab\n\n\nAbbVie\n\n\nIL-23 p19 inhibitor for plaque psoriasis, psoriatic arthritis, Crohn’s disease, and ulcerative colitis. \n\n\n\n\nRinvoq\n\n\nUpadacitinib\n\n\nAbbVie\n\n\nRheumatoid arthritis, psoriatic arthritis, and ankylosing spondylitis. \n\n\n\n\nImbruvica\n\n\nIbrutinib\n\n\nPharmacyclics(AbbVie), J& J\n\n\nTreats certain types of cancer, such as mantle cell lymphoma and chronic lymphocytic leukemia. \n\n\n\n\nVenclexta\n\n\nVenetoclax\n\n\nAbbVie, Roche\n\n\nUsed in the treatment of chronic lymphocytic leukemia and small lymphocytic lymphoma. \n\n\n\n\nStelara\n\n\nUstekinumab\n\n\nJ& J\n\n\nTreats plaque psoriasis, Crohn’s disease, and ulcerative colitis.\n\n\n\n\nRemicade\n\n\nInfliximab\n\n\nJ& J\n\n\nUsed for Crohn’s disease, ulcerative colitis, rheumatoid arthritis, and other autoimmune diseases. \n\n\n\n\nDarzalex\n\n\nDaratumumab\n\n\nJ& J\n\n\nTreats multiple myeloma.\n\n\n\n\nXarelto\n\n\nRivaroxaban\n\n\nBayer, J& J\n\n\nPrevents blood clots in people with atrial fibrillation, deep vein thrombosis, and pulmonary embolism. \n\n\n\n\nYescarta\n\n\nAxicabtagene Ciloleucel\n\n\nKite Pharma (a Gilead Company)\n\n\nTreats certain types of large B-cell lymphoma, including those that are refractory or have relapsed after at least two other kinds of treatment.\n\n\n\n\nOcrevus\n\n\nOcrelizumab\n\n\nRoche\n\n\nTreats multiple sclerosis.\n\n\n\n\nAvastin\n\n\nBevacizumab\n\n\nRoche\n\n\nUsed for various types of cancers including colorectal, lung, and kidney cancer.\n\n\n\n\nHerceptin\n\n\nTrastuzumab\n\n\nRoche\n\n\nTreats HER2-positive breast cancer and stomach cancer.\n\n\n\n\nRituxan\n\n\nRituximab\n\n\nRoche\n\n\nTreats non-Hodgkin’s lymphoma, chronic lymphocytic leukemia and rheumatoid arthritis. \n\n\n\n\nHemlibra\n\n\nEmicizumab\n\n\nRoche\n\n\nPrevents bleeding in people with hemophilia A.\n\n\n\n\nCosentyx\n\n\nSecukinumab\n\n\nNovartis\n\n\nUsed to treat plaque psoriasis, ankylosing spondylitis, and psoriatic arthritis.\n\n\n\n\nEntresto\n\n\nSacubitril/Valsartan\n\n\nNovartis\n\n\nUsed for treating heart failure.\n\n\n\n\nGilenya\n\n\nFingolimod\n\n\nNovartis\n\n\nTreats multiple sclerosis.\n\n\n\n\nLucentis\n\n\nRanibizumab\n\n\nNovartis\n\n\nUsed for age-related macular degeneration and other eye conditions.\n\n\n\n\nZolgensma\n\n\nOnasemnogene abeparvovec\n\n\nNovartis\n\n\nGene therapy for spinal muscular atrophy.\n\n\n\n\nDupixent\n\n\nDupilumab\n\n\nSanofi, Regeneron\n\n\nTreats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.\n\n\n\n\nTaxotere\n\n\nDocetaxel\n\n\nSanofi\n\n\nTaxane chemotherapy used in breast cancer, NSCLC, prostate cancer, gastric cancer, and head and neck cancer; common active comparator in oncology trials. \n\n\n\n\nLantus\n\n\nInsulin glargine\n\n\nSanofi\n\n\nLong-acting insulin used for diabetes mellitus.\n\n\n\n\nAubagio\n\n\nTeriflunomide\n\n\nSanofi\n\n\nTreats relapsing forms of multiple sclerosis.\n\n\n\n\nToujeo\n\n\nInsulin glargine\n\n\nSanofi\n\n\nLong-acting insulin for managing blood sugar levels in diabetes.\n\n\n\n\nPraluent\n\n\nAlirocumab\n\n\nSanofi, Regeneron\n\n\nUsed in lowering LDL cholesterol.\n\n\n\n\nShingrix\n\n\nRecombinant Zoster Vaccine\n\n\nGSK\n\n\nPrevents shingles (herpes zoster) in adults.\n\n\n\n\nTrelegy\n\n\nFluticasone furoate/Umeclidinium/Vilanterol\n\n\nGSK\n\n\nUsed for chronic obstructive pulmonary disease (COPD).\n\n\n\n\nNucala\n\n\nMepolizumab\n\n\nGSK\n\n\nTreats severe eosinophilic asthma and EGPA.\n\n\n\n\nZejula\n\n\nNiraparib\n\n\nGSK\n\n\nUsed for ovarian, fallopian tube, or peritoneal cancer.\n\n\n\n\nBenlysta\n\n\nBelimumab\n\n\nGSK\n\n\nTreats systemic lupus erythematosus (SLE).\n\n\n\n\nTagrisso\n\n\nOsimertinib\n\n\nAstraZeneca\n\n\nTreats non-small cell lung cancer with specific mutations.\n\n\n\n\nImfinzi\n\n\nDurvalumab\n\n\nAstraZeneca\n\n\nPD-L1 inhibitor used in NSCLC, SCLC, biliary tract cancer, HCC, endometrial cancer, muscle-invasive bladder cancer, and gastric/GEJ adenocarcinoma settings. \n\n\n\n\nFarxiga\n\n\nDapagliflozin\n\n\nAstraZeneca\n\n\nTreats Type 2 diabetes and heart failure.\n\n\n\n\nSymbicort\n\n\nBudesonide/Formoterol\n\n\nAstraZeneca\n\n\nUsed for asthma and chronic obstructive pulmonary disease (COPD).\n\n\n\n\nCrestor\n\n\nRosuvastatin\n\n\nAstraZeneca\n\n\nLowers high cholesterol and triglyceride levels.\n\n\n\n\nEnbrel\n\n\nEtanercept\n\n\nAmgen\n\n\nTreats rheumatoid arthritis, psoriatic arthritis, and plaque psoriasis. \n\n\n\n\nProlia\n\n\nDenosumab\n\n\nAmgen\n\n\nUsed for osteoporosis in postmenopausal women and men at high risk of fracture.\n\n\n\n\nOtezla\n\n\nApremilast\n\n\nAmgen\n\n\nTreats plaque psoriasis and psoriatic arthritis.\n\n\n\n\nRepatha\n\n\nEvolocumab\n\n\nAmgen\n\n\nLowers LDL cholesterol levels.\n\n\n\n\nNeulasta\n\n\nPegfilgrastim\n\n\nAmgen\n\n\nHelps reduce the risk of infection in cancer patients undergoing chemotherapy.\n\n\n\n\nBiktarvy\n\n\nBictegravir, Emtricitabine, Tenofovir Alafenamide\n\n\nGilead\n\n\nTreats HIV-1 infection.\n\n\n\n\nTruvada\n\n\nEmtricitabine, Tenofovir Disoproxil Fumarate\n\n\nGilead\n\n\nUsed for HIV-1 prevention and treatment.\n\n\n\n\nVeklury\n\n\nRemdesivir\n\n\nGilead\n\n\nTreats COVID-19 in hospitalized patients.\n\n\n\n\nDescovy\n\n\nEmtricitabine, Tenofovir Alafenamide\n\n\nGilead\n\n\nHIV-1 pre-exposure prophylaxis (PrEP) and treatment.\n\n\n\n\nEpclusa\n\n\nSofosbuvir, Velpatasvir\n\n\nGilead\n\n\nTreats chronic hepatitis C virus (HCV) infection.\n\n\n\n\nEylea\n\n\nAflibercept\n\n\nBayer and Regeneron Pharmaceuticals\n\n\nTreats age-related macular degeneration and other eye conditions.\n\n\n\n\nMirena\n\n\nLevonorgestrel-releasing intrauterine system\n\n\nBayer\n\n\nBirth control and treatment of heavy menstrual bleeding.\n\n\n\n\nNexavar\n\n\nSorafenib\n\n\nBayer\n\n\nTreats liver, kidney, and thyroid cancer.\n\n\n\n\nKogenate\n\n\nRecombinant Factor VIII\n\n\nBayer\n\n\nTreats hemophilia A.\n\n\n\n\nCopaxone\n\n\nGlatiramer Acetate\n\n\nTeva\n\n\nTreats multiple sclerosis.\n\n\n\n\nAjovy\n\n\nFremanezumab\n\n\nTeva\n\n\nPreventive treatment of migraine.\n\n\n\n\nAustedo\n\n\nDeutetrabenazine\n\n\nTeva\n\n\nTreats chorea associated with Huntington’s disease and tardive dyskinesia.\n\n\n\n\nProAir\n\n\nAlbuterol Sulfate\n\n\nTeva\n\n\nTreats or prevents bronchospasm.\n\n\n\n\nQvar\n\n\nBeclomethasone Dipropionate\n\n\nTeva\n\n\nTreats asthma.\n\n\n\n\nEntyvio\n\n\nVedolizumab\n\n\nTakeda\n\n\nTreats ulcerative colitis and Crohn’s disease.\n\n\n\n\nNinlaro\n\n\nIxazomib\n\n\nTakeda\n\n\nTreats multiple myeloma.\n\n\n\n\nVyvanse\n\n\nLisdexamfetamine\n\n\nTakeda\n\n\nTreats ADHD and binge eating disorder.\n\n\n\n\nDexilant\n\n\nDexlansoprazole\n\n\nTakeda\n\n\nTreats gastroesophageal reflux disease (GERD).\n\n\n\n\nTrintellix\n\n\nVortioxetine\n\n\nTakeda\n\n\nTreats major depressive disorder.\n\n\n\n\nTrulicity\n\n\nDulaglutide\n\n\nEli Lilly\n\n\nTreats Type 2 diabetes.\n\n\n\n\nHumalog\n\n\nInsulin lispro\n\n\nEli Lilly\n\n\nRapid-acting insulin for diabetes.\n\n\n\n\nAlimta\n\n\nPemetrexed\n\n\nEli Lilly\n\n\nTreats non-small cell lung cancer and mesothelioma.\n\n\n\n\nTaltz\n\n\nIxekizumab\n\n\nEli Lilly\n\n\nTreats plaque psoriasis and psoriatic arthritis.\n\n\n\n\nVerzenio\n\n\nAbemaciclib\n\n\nEli Lilly\n\n\nTreats HR-positive, HER2-negative breast cancer.\n\n\n\n\nSpiriva\n\n\nTiotropium bromide\n\n\nBoehringer Ingelheim\n\n\nTreats COPD and asthma.\n\n\n\n\nJardiance\n\n\nEmpagliflozin\n\n\nBoehringer Ingelheim\n\n\nTreats Type 2 diabetes and heart failure.\n\n\n\n\nPradaxa\n\n\nDabigatran\n\n\nBoehringer Ingelheim\n\n\nPrevents blood clots and strokes.\n\n\n\n\nOfev\n\n\nNintedanib\n\n\nBoehringer Ingelheim\n\n\nTreats idiopathic pulmonary fibrosis.\n\n\n\n\nTrajenta\n\n\nLinagliptin\n\n\nBoehringer Ingelheim\n\n\nTreats Type 2 diabetes.\n\n\n\n\nTecfidera\n\n\nDimethyl fumarate\n\n\nBiogen\n\n\nTreats multiple sclerosis.\n\n\n\n\nSpinraza\n\n\nNusinersen\n\n\nBiogen\n\n\nTreats spinal muscular atrophy.\n\n\n\n\nTysabri\n\n\nNatalizumab\n\n\nBiogen\n\n\nTreats multiple sclerosis and Crohn’s disease. \n\n\n\n\nVumerity\n\n\nDiroximel fumarate\n\n\nBiogen\n\n\nTreats multiple sclerosis.\n\n\n\n\nAvonex\n\n\nInterferon beta-1a\n\n\nBiogen\n\n\nTreats multiple sclerosis.\n\n\n\n\nVictoza\n\n\nLiraglutide\n\n\nNovo Nordisk\n\n\nTreats Type 2 diabetes.\n\n\n\n\nLevemir\n\n\nInsulin detemir\n\n\nNovo Nordisk\n\n\nLong-acting insulin for diabetes.\n\n\n\n\nOzempic\n\n\nSemaglutide\n\n\nNovo Nordisk\n\n\nTreats Type 2 diabetes.\n\n\n\n\nTresiba\n\n\nInsulin degludec\n\n\nNovo Nordisk\n\n\nLong-acting insulin for diabetes.\n\n\n\n\nSaxenda\n\n\nLiraglutide\n\n\nNovo Nordisk\n\n\nWeight management.\n\n\n\n\nBotox\n\n\nBotulinum toxin\n\n\nAllergan\n\n\nTreats wrinkles, muscle spasms, and certain medical conditions.\n\n\n\n\nRestasis\n\n\nCyclosporine\n\n\nAllergan\n\n\nIncreases tear production in dry eye disease.\n\n\n\n\nJuvederm\n\n\nHyaluronic acid\n\n\nAllergan\n\n\nDermal filler for facial wrinkles.\n\n\n\n\nLinzess\n\n\nLinaclotide\n\n\nAllergan\n\n\nTreats irritable bowel syndrome with constipation.\n\n\n\n\nVraylar\n\n\nCariprazine\n\n\nAllergan\n\n\nTreats schizophrenia and bipolar disorder.\n\n\n\n\nLixiana\n\n\nEdoxaban\n\n\nDaiichi Sankyo\n\n\nPrevents blood clots and stroke.\n\n\n\n\nMovantik\n\n\nNaloxegol\n\n\nDaiichi Sankyo\n\n\nTreats opioid-induced constipation.\n\n\n\n\nWelchol\n\n\nColesevelam\n\n\nDaiichi Sankyo\n\n\nLowers cholesterol and improves glycemic control.\n\n\n\n\nSevikar\n\n\nOlmesartan medoxomil/Amlodipine\n\n\nDaiichi Sankyo\n\n\nTreats high blood pressure.\n\n\n\n\nNexium\n\n\nEsomeprazole\n\n\nDaiichi Sankyo\n\n\nTreats gastroesophageal reflux disease (GERD).\n\n\n\n\nEylea\n\n\nAflibercept\n\n\nRegeneron\n\n\nTreats age-related macular degeneration and other eye conditions.\n\n\n\n\nDupixent\n\n\nDupilumab\n\n\nRegeneron\n\n\nTreats eczema, asthma, and chronic rhinosinusitis with nasal polyposis.\n\n\n\n\nLibtayo\n\n\nCemiplimab\n\n\nRegeneron\n\n\nTreats cutaneous squamous cell carcinoma.\n\n\n\n\nKevzara\n\n\nSarilumab\n\n\nRegeneron\n\n\nTreats rheumatoid arthritis. \n\n\n\n\nPraluent\n\n\nAlirocumab\n\n\nRegeneron\n\n\nLowers LDL cholesterol.\n\n\n\n\nXtandi\n\n\nEnzalutamide\n\n\nAstellas\n\n\nTreats prostate cancer.\n\n\n\n\nPrograf\n\n\nTacrolimus\n\n\nAstellas\n\n\nPrevents organ transplant rejection.\n\n\n\n\nVesicare\n\n\nSolifenacin\n\n\nAstellas\n\n\nTreats overactive bladder.\n\n\n\n\nMyrbetriq\n\n\nMirabegron\n\n\nAstellas\n\n\nTreats overactive bladder.\n\n\n\n\nXospata\n\n\nGilteritinib\n\n\nAstellas\n\n\nTreats acute myeloid leukemia. \n\n\n\n\nAbilify\n\n\nAripiprazole\n\n\nOtsuka\n\n\nTreats schizophrenia, bipolar disorder, and major depressive disorder.\n\n\n\n\nRexulti\n\n\nBrexpiprazole\n\n\nOtsuka\n\n\nTreats schizophrenia and adjunctive therapy for major depressive disorder.\n\n\n\n\nSamsca\n\n\nTolvaptan\n\n\nOtsuka\n\n\nTreats hyponatremia.\n\n\n\n\nJinarc\n\n\nTolvaptan\n\n\nOtsuka\n\n\nTreats polycystic kidney disease.\n\n\n\n\nAbilify Maintena\n\n\nAripiprazole\n\n\nOtsuka\n\n\nLong-acting injectable for schizophrenia.\n\n\n\n\nTecentriq\n\n\nAtezolizumab\n\n\nGenentech (a subsidiary of Roche)\n\n\nPD-L1 inhibitor for NSCLC, ES-SCLC, HCC, BRAF V600-positive melanoma, ASPS, and ctDNA MRD-positive adjuvant MIBC. \n\n\n\n\nBreyanzi\n\n\nLisocabtagene Maraleucel\n\n\nBMS\n\n\nTreats relapsed or refractory large B-cell lymphoma, including diffuse large B-cell lymphoma, after two or more lines of systemic therapy.\n\n\n\n\nPumitamig\n\n\nBNT327 / BMS-986545 / PM8002\n\n\nBMS, BioNTech\n\n\nInvestigational PD-L1 × VEGF-A bispecific antibody in development for lung cancer, NSCLC, triple-negative breast cancer, colorectal cancer, and gastric cancer. \n\n\n\n\nIzalontamab Brengitecan\n\n\nBL-B01D1 / BMS-986507 / Iza-bren\n\n\nBMS, SystImmune, Sichuan Biokin\n\n\nInvestigational EGFR × HER3 bispecific ADC in development for lung cancer, NSCLC, triple-negative breast cancer, esophageal squamous cell carcinoma, nasopharyngeal carcinoma, urothelial carcinoma, and other solid tumors. \n\n\n\n\nIvonescimab\n\n\nAK112\n\n\nAkeso, Summit Therapeutics\n\n\nPD-1 × VEGF bispecific antibody approved in China for selected NSCLC settings and in global development for lung cancer, CRC, BTC, HNSCC, and other solid tumors. \n\n\n\n\nCadonilimab\n\n\nAK104\n\n\nAkeso\n\n\nPD-1 × CTLA-4 bispecific antibody approved in China for cervical cancer and gastric or gastroesophageal junction adenocarcinoma, with continued development across solid tumors. \n\n\n\n\nAbecma\n\n\nIdecabtagene Vicleucel\n\n\nBMS and bluebird bio\n\n\nTreats relapsed or refractory multiple myeloma in adults who have received at least four prior therapies, including an immunomodulatory agent, a proteasome inhibitor, and an anti-CD38 monoclonal antibody.\n\n\n\n\nTecvayli\n\n\nTeclistamab\n\n\nJanssen Pharmaceuticals (Johnson & Johnson)\n\n\nTreats adult patients with relapsed or refractory multiple myeloma.\n\n\n\n\nCarvykti\n\n\nCiltacabtagene Autoleucel\n\n\nJanssen Pharmaceuticals (Johnson & Johnson)\n\n\nApproved for the treatment of adult patients with relapsed or refractory multiple myeloma.\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Pharmaceutical Content",
       "Compound"
@@ -8265,7 +8538,7 @@
     "href": "docs/pharmaceutical/other/TME.html",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
     "section": "",
-    "text": "Tumor microenvironment, TME（肿瘤微环境） 是指肿瘤细胞周围所有非肿瘤成分共同组成的复杂生态系统，包括免疫细胞、基质细胞、血管、细胞外基质及各种细胞因子。\n过去，人们认为肿瘤主要由癌细胞本身驱动；如今认为，肿瘤的发展、转移、耐药以及免疫逃逸都受到 TME 的深刻影响。因此，现代肿瘤治疗不仅针对癌细胞本身，也越来越多地针对肿瘤微环境。\n近年来的免疫治疗，例如 PD-1/PD-L1 inhibitor，抗血管生成治疗，例如 VEGF inhibitor，以及部分双特异性抗体和 ADC，均通过改变 TME 来发挥抗肿瘤作用。",
+    "text": "Tumor microenvironment, TME（肿瘤微环境）是指肿瘤细胞周围所有非肿瘤成分所组成的复杂生态系统，包括免疫细胞、基质细胞、血管、淋巴管、细胞外基质（Extracellular Matrix, ECM）以及各种细胞因子和生长因子。\n现代肿瘤学认为，癌症并不仅仅是肿瘤细胞本身的疾病，而是肿瘤细胞与其微环境共同演化（co-evolution）的结果。TME不仅影响肿瘤发生、侵袭和转移，也决定了患者对化疗、靶向治疗及免疫治疗的反应，因此已成为当前抗肿瘤药物研发的重要靶点。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8274,11 +8547,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#tumor-cells肿瘤细胞",
-    "href": "docs/pharmaceutical/other/TME.html#tumor-cells肿瘤细胞",
+    "objectID": "docs/pharmaceutical/other/TME.html#细胞组成",
+    "href": "docs/pharmaceutical/other/TME.html#细胞组成",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.1 Tumor Cells（肿瘤细胞）",
-    "text": "4.1 Tumor Cells（肿瘤细胞）\n肿瘤细胞是 TME 的核心。\n它们能够：\n\n分泌 VEGF\n表达 PD-L1\n招募免疫抑制细胞\n重塑周围组织\n\n最终形成有利于自身生存的微环境。",
+    "section": "3.1 细胞组成",
+    "text": "3.1 细胞组成\n\n\n\n成分\n主要作用\n\n\n\n\nTumor cells\n肿瘤主体\n\n\nCytotoxic T cells (CD8+ T cells)\n杀伤肿瘤细胞\n\n\nHelper T cells (CD4+ T cells)\n调节免疫反应\n\n\nRegulatory T cells (Treg)\n抑制免疫反应\n\n\nNatural killer cells (NK cells)\n非特异性杀伤肿瘤\n\n\nB cells\n抗体产生及抗原呈递\n\n\nDendritic cells (DCs)\n抗原呈递，启动T细胞免疫\n\n\nTumor-associated macrophages (TAMs)\n可促进或抑制肿瘤\n\n\nMyeloid-derived suppressor cells (MDSCs)\n抑制免疫反应\n\n\nCancer-associated fibroblasts (CAFs)\n促进肿瘤生长及纤维化\n\n\nEndothelial cells\n构成肿瘤血管",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8287,11 +8560,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#cytotoxic-t-cellscd8-t-细胞",
-    "href": "docs/pharmaceutical/other/TME.html#cytotoxic-t-cellscd8-t-细胞",
+    "objectID": "docs/pharmaceutical/other/TME.html#非细胞组成",
+    "href": "docs/pharmaceutical/other/TME.html#非细胞组成",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.2 Cytotoxic T Cells（CD8+ T 细胞）",
-    "text": "4.2 Cytotoxic T Cells（CD8+ T 细胞）\nCD8+ T 细胞是主要抗肿瘤效应细胞。\n功能包括：\n\n识别肿瘤抗原\n杀伤肿瘤细胞\n分泌 IFN-gamma、TNF-alpha 等细胞因子\n\n多数免疫治疗的目标都是增强 CD8+ T 细胞功能。",
+    "section": "3.2 非细胞组成",
+    "text": "3.2 非细胞组成\n\n\n\n成分\n功能\n\n\n\n\nExtracellular Matrix (ECM)\n组织支架、细胞迁移\n\n\nCollagen\n支撑组织结构\n\n\nFibronectin\n细胞黏附\n\n\nHyaluronic acid\n影响药物渗透\n\n\nCytokines\n细胞间信号传递\n\n\nChemokines\n招募免疫细胞\n\n\nGrowth factors\n促进细胞增殖\n\n\nBlood vessels\n提供氧气及营养\n\n\nLymphatic vessels\n转移通路",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8300,11 +8573,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#helper-t-cellscd4-t-细胞",
-    "href": "docs/pharmaceutical/other/TME.html#helper-t-cellscd4-t-细胞",
+    "objectID": "docs/pharmaceutical/other/TME.html#促进肿瘤生长",
+    "href": "docs/pharmaceutical/other/TME.html#促进肿瘤生长",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.3 Helper T Cells（CD4+ T 细胞）",
-    "text": "4.3 Helper T Cells（CD4+ T 细胞）\nCD4+ T 细胞可调节免疫反应。\n不同亚群具有不同作用，例如：\n\nTh1：促进抗肿瘤免疫\nTh2：促进体液免疫\nTh17：参与炎症反应",
+    "section": "4.1 促进肿瘤生长",
+    "text": "4.1 促进肿瘤生长\n肿瘤细胞通过释放多种生长因子，刺激周围基质细胞和免疫细胞，共同形成有利于肿瘤生长的环境。\n例如：\n\nVEGF促进血管生成；\nTGF-beta促进纤维化；\nIL-6促进炎症反应；\nPDGF促进CAF活化。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8313,11 +8586,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#regulatory-t-cellstreg",
-    "href": "docs/pharmaceutical/other/TME.html#regulatory-t-cellstreg",
+    "objectID": "docs/pharmaceutical/other/TME.html#血管生成angiogenesis",
+    "href": "docs/pharmaceutical/other/TME.html#血管生成angiogenesis",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.4 Regulatory T Cells（Treg）",
-    "text": "4.4 Regulatory T Cells（Treg）\nTreg 是典型免疫抑制细胞。\n主要功能：\n\n抑制 CD8+ T cell\n抑制 NK cell\n抑制 dendritic cell\n\n多数肿瘤中：\n\nTreg 越多，预后通常越差。",
+    "section": "4.2 血管生成（Angiogenesis）",
+    "text": "4.2 血管生成（Angiogenesis）\n随着肿瘤体积增大，原有血管无法满足营养需求。\n肿瘤会分泌：\n\nVEGF；\nFGF；\nPDGF；\n\n刺激新生血管形成。\n但这些血管通常：\n\n结构异常；\n渗漏严重；\n血流紊乱；\n导致低氧（Hypoxia）。\n\n低氧又进一步刺激VEGF形成正反馈。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8326,11 +8599,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#tumor-associated-macrophagestam",
-    "href": "docs/pharmaceutical/other/TME.html#tumor-associated-macrophagestam",
+    "objectID": "docs/pharmaceutical/other/TME.html#免疫逃逸immune-evasion",
+    "href": "docs/pharmaceutical/other/TME.html#免疫逃逸immune-evasion",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.5 Tumor-Associated Macrophages（TAM）",
-    "text": "4.5 Tumor-Associated Macrophages（TAM）\n巨噬细胞通常分为：\n\n\n\n类型\n功能\n\n\n\n\nM1\n抗肿瘤、促进炎症\n\n\nM2\n促进肿瘤生长、免疫抑制\n\n\n\n多数实体瘤中：\nTAM 主要表现为 M2-like phenotype。",
+    "section": "4.3 免疫逃逸（Immune Evasion）",
+    "text": "4.3 免疫逃逸（Immune Evasion）\n这是目前免疫治疗最重要的理论基础。\n正常情况下：\nCancer cell\n      ↓\nAntigen presentation\n      ↓\nCD8 T cell activation\n      ↓\nTumor killing\n但是肿瘤会建立免疫抑制环境：\n\nPD-L1高表达；\nTreg增加；\nMDSC聚集；\nTAM向M2型极化；\n抑制DC成熟；\n分泌IL-10、TGF-beta。\n\n最终导致：\n\nT细胞进入肿瘤后逐渐失去杀伤能力（T cell exhaustion）。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8339,11 +8612,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#myeloid-derived-suppressor-cellsmdsc",
-    "href": "docs/pharmaceutical/other/TME.html#myeloid-derived-suppressor-cellsmdsc",
+    "objectID": "docs/pharmaceutical/other/TME.html#肿瘤转移",
+    "href": "docs/pharmaceutical/other/TME.html#肿瘤转移",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.6 Myeloid-Derived Suppressor Cells（MDSC）",
-    "text": "4.6 Myeloid-Derived Suppressor Cells（MDSC）\nMDSC 是近年来重要研究热点。\n功能包括：\n\n抑制 T cell\n抑制 NK cell\n分泌免疫抑制因子\n促进肿瘤血管生成\n\nVEGF 可明显促进 MDSC 聚集。",
+    "section": "4.4 肿瘤转移",
+    "text": "4.4 肿瘤转移\nTME可促进：\n\n上皮-间质转化（Epithelial-mesenchymal transition, EMT）；\n基底膜降解；\n新生血管形成；\n淋巴转移；\n肿瘤细胞进入循环。\n\n因此，TME也是肿瘤转移的重要驱动力。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8352,11 +8625,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#dendritic-cellsdc",
-    "href": "docs/pharmaceutical/other/TME.html#dendritic-cellsdc",
+    "objectID": "docs/pharmaceutical/other/TME.html#immune-checkpoint-inhibitors",
+    "href": "docs/pharmaceutical/other/TME.html#immune-checkpoint-inhibitors",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.7 Dendritic Cells（DC）",
-    "text": "4.7 Dendritic Cells（DC）\nDC 是最重要的抗原呈递细胞，英文为 antigen-presenting cell, APC。\n功能：\n\n摄取肿瘤抗原\n激活初始 T cell\n启动适应性免疫\n\nPD-1、CTLA-4 等免疫检查点相关治疗均依赖完整的抗原呈递过程。",
+    "section": "8.1 Immune Checkpoint Inhibitors",
+    "text": "8.1 Immune Checkpoint Inhibitors\n代表药物：\n\nPembrolizumab；\nNivolumab；\nAtezolizumab；\nDurvalumab。\n\n作用：\n解除T细胞抑制。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8365,11 +8638,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#natural-killer-cellsnk-cells",
-    "href": "docs/pharmaceutical/other/TME.html#natural-killer-cellsnk-cells",
+    "objectID": "docs/pharmaceutical/other/TME.html#anti-vegf-therapy",
+    "href": "docs/pharmaceutical/other/TME.html#anti-vegf-therapy",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.8 Natural Killer Cells（NK Cells）",
-    "text": "4.8 Natural Killer Cells（NK Cells）\nNK 细胞属于先天免疫系统。\n特点：\n\n无需抗原特异性识别\n可直接杀伤肿瘤细胞\n分泌 IFN-gamma\n\n近年来 NK cell therapy 也是新的研发方向。",
+    "section": "8.2 Anti-VEGF Therapy",
+    "text": "8.2 Anti-VEGF Therapy\n代表药物：\n\nBevacizumab；\nIvonescimab。\n\n抗VEGF治疗不仅减少血管生成，同时可以：\n\n改善T细胞进入；\n降低免疫抑制；\n增强PD-1疗效。\n\n因此目前大量研究采用：\n\nAnti-PD-1 + Anti-VEGF\n\n联合治疗。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8378,11 +8651,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#cancer-associated-fibroblastscaf",
-    "href": "docs/pharmaceutical/other/TME.html#cancer-associated-fibroblastscaf",
+    "objectID": "docs/pharmaceutical/other/TME.html#car-t",
+    "href": "docs/pharmaceutical/other/TME.html#car-t",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "4.9 Cancer-Associated Fibroblasts（CAF）",
-    "text": "4.9 Cancer-Associated Fibroblasts（CAF）\nCAF 是肿瘤基质的重要组成部分。\n主要作用：\n\n分泌细胞因子\n促进 ECM 重塑\n阻碍免疫细胞浸润\n促进耐药",
+    "section": "8.3 CAR-T",
+    "text": "8.3 CAR-T\nCAR-T不仅需要识别肿瘤，还必须克服：\n\nCAF屏障；\nECM阻碍；\nTGF-beta；\nMDSC。\n\n因此实体瘤CAR-T最大的困难实际上来自TME。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8391,11 +8664,11 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#blood-vessels肿瘤血管",
-    "href": "docs/pharmaceutical/other/TME.html#blood-vessels肿瘤血管",
+    "objectID": "docs/pharmaceutical/other/TME.html#adc",
+    "href": "docs/pharmaceutical/other/TME.html#adc",
     "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "5.1 Blood Vessels（肿瘤血管）",
-    "text": "5.1 Blood Vessels（肿瘤血管）\n肿瘤血管通常具有：\n\n结构异常\n通透性增加\n灌注不足\n缺氧\n\n异常血管导致：\n\nT cell 难以进入肿瘤\n药物递送效率下降\n\nVEGF 抑制剂可通过 vascular normalization（血管正常化） 改善上述问题。",
+    "section": "8.4 ADC",
+    "text": "8.4 ADC\nADC释放毒素后：\n\n可直接杀伤肿瘤；\n可诱导免疫原性细胞死亡（Immunogenic Cell Death, ICD）；\n增加抗原释放；\n激活TME。\n\n因此ADC与IO联合也是当前热点方向。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -8404,55 +8677,55 @@
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#extracellular-matrixecm",
-    "href": "docs/pharmaceutical/other/TME.html#extracellular-matrixecm",
-    "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "5.2 Extracellular Matrix（ECM）",
-    "text": "5.2 Extracellular Matrix（ECM）\nECM 包括：\n\nCollagen\nFibronectin\nLaminin\nProteoglycan\n\nECM 不仅提供结构支持，还影响：\n\n肿瘤迁移\n药物渗透\n免疫细胞浸润",
+    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html",
+    "href": "docs/pharmaceutical/other/Intercurrent_Events.html",
+    "title": "Intercurrent Events",
+    "section": "",
+    "text": "Intercurrent Event (介入事件)： + 在临床试验期间，发生在治疗分配之后的事件，可能影响 治疗效果（treatment effect）的解读或测量。 + ICH E9 (R1) 定义：任何在试验期间发生的、可能影响或阻碍主要结局变量（endpoint）的解释的事件。\n\n\n在 MM 临床试验中，典型的 intercurrent events 包括：\n\nTreatment discontinuation（治疗中止）治疗停药\n\n因 不良事件 (Adverse Events, AE)、毒性 (toxicity)、依从性差 等原因停药。\n\nInitiation of new anti-myeloma therapy（启动新的骨髓瘤治疗）新增救援治疗\n\n病人进展 (progression) 后接受 下一线治疗 (subsequent therapy)。\n\nDeath unrelated to disease progression（与疾病进展无关的死亡）非疾病相关死亡\n\n如感染、心血管事件、其他合并症导致的死亡。\n\nStem cell transplantation（干细胞移植）\n\n特别是自体干细胞移植 (ASCT)，在试验方案内或作为补救治疗。\n\nCrossover（交叉用药）\n\n患者在试验期间从对照组转到实验组（或反之）。\n\nWithdrawal of consent（撤回知情同意）\n\n患者中途退出试验，不再随访。",
     "crumbs": [
       "Other",
       "Wiki",
-      "Biotechnology",
-      "Tumor Microenvironment (TME)"
+      "Clinical Trial",
+      "Intercurrent Events"
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#biomarker-analysis生物标志物分析",
-    "href": "docs/pharmaceutical/other/TME.html#biomarker-analysis生物标志物分析",
-    "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "11.1 Biomarker Analysis（生物标志物分析）",
-    "text": "11.1 Biomarker Analysis（生物标志物分析）\nTME 相关指标通常作为探索性生物标志物进行分析，例如：\n\nCD8 density\nPD-L1 expression\nImmune gene signature\nT-cell inflamed score\n\n分析方法包括：\n\nLogistic regression\nCox proportional hazards model\nKaplan-Meier analysis",
+    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html#definition",
+    "href": "docs/pharmaceutical/other/Intercurrent_Events.html#definition",
+    "title": "Intercurrent Events",
+    "section": "",
+    "text": "Intercurrent Event (介入事件)： + 在临床试验期间，发生在治疗分配之后的事件，可能影响 治疗效果（treatment effect）的解读或测量。 + ICH E9 (R1) 定义：任何在试验期间发生的、可能影响或阻碍主要结局变量（endpoint）的解释的事件。\n\n\n在 MM 临床试验中，典型的 intercurrent events 包括：\n\nTreatment discontinuation（治疗中止）治疗停药\n\n因 不良事件 (Adverse Events, AE)、毒性 (toxicity)、依从性差 等原因停药。\n\nInitiation of new anti-myeloma therapy（启动新的骨髓瘤治疗）新增救援治疗\n\n病人进展 (progression) 后接受 下一线治疗 (subsequent therapy)。\n\nDeath unrelated to disease progression（与疾病进展无关的死亡）非疾病相关死亡\n\n如感染、心血管事件、其他合并症导致的死亡。\n\nStem cell transplantation（干细胞移植）\n\n特别是自体干细胞移植 (ASCT)，在试验方案内或作为补救治疗。\n\nCrossover（交叉用药）\n\n患者在试验期间从对照组转到实验组（或反之）。\n\nWithdrawal of consent（撤回知情同意）\n\n患者中途退出试验，不再随访。",
     "crumbs": [
       "Other",
       "Wiki",
-      "Biotechnology",
-      "Tumor Microenvironment (TME)"
+      "Clinical Trial",
+      "Intercurrent Events"
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#subgroup-analysis亚组分析",
-    "href": "docs/pharmaceutical/other/TME.html#subgroup-analysis亚组分析",
-    "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "11.2 Subgroup Analysis（亚组分析）",
-    "text": "11.2 Subgroup Analysis（亚组分析）\n部分研究按 TME 特征进行预设或探索性亚组分析，例如：\n\nImmune-hot vs immune-cold\nPD-L1 高表达 vs 低表达\nHigh CD8 infiltration vs low CD8 infiltration",
+    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html#relation-to-estimand-framework",
+    "href": "docs/pharmaceutical/other/Intercurrent_Events.html#relation-to-estimand-framework",
+    "title": "Intercurrent Events",
+    "section": "Relation to Estimand Framework",
+    "text": "Relation to Estimand Framework\nEstimand 框架的关键就是 如何处理 intercurrent events。不同策略包括：\n\nTreatment Policy Strategy（治疗策略法）治疗策略法：不管发生什么事件，照原计划纳入分析（如 ITT）。\nHypothetical Strategy（假设法）假设法：假设该事件没有发生，推断其结果。\nComposite Strategy（复合法）复合法：将该事件并入主要终点定义（例如 OS 包括所有原因死亡）。\nWhile-on-treatment Strategy（治疗期间法）治疗期间法：只分析事件发生前的数据。\nPrincipal Stratum Strategy（主要亚群法）主要亚群法：仅在不会发生该事件的患者亚群中估计效果。\n\n\n\n\n\n\n\nExamples\n\n\n\n\n\n\n\n\nStrategy (策略)\nPopulation (研究人群)\nVariable (终点)\nIntercurrent Event (介入事件)\nEstimand (估计量)\n\n\n\n\nTreatment Policy 治疗策略法\nR/R MM 患者，接受试验药物或对照\nPFS\nInitiation of new anti-myeloma therapy（启动后续治疗）\n在整个研究人群中，比较试验组与对照组的 PFS 分布，不论是否接受后续治疗\n\n\nHypothetical 假设法\nNDMM 患者，接受 induction + ASCT\nMRD negativity rate at 12 months\nTreatment discontinuation due to AE（因毒性停药）\n在假设所有患者都能完成 12 个月治疗的条件下，比较 MRD negativity rate\n\n\nComposite 复合法\nR/R MM 患者，至少接受过 3 线治疗\nORR\nDeath prior to response assessment / Initiation of new therapy（评估前死亡/新治疗）\nORR 定义中包含死亡/新治疗作为 non-response，比较试验组与对照组的 ORR\n\n\nWhile-on-treatment 治疗期间法\nMM 患者，接受实验药物\nIncidence of Grade ≥3 TEAE\nTreatment discontinuation（治疗停药）\n仅统计在治疗期间发生的 Grade ≥3 AE，比较组间差异\n\n\nPrincipal Stratum 主要亚群法\nR/R MM 患者\nOS\nUse of CAR-T therapy as subsequent line（后续 CAR-T）\n在不会接受 CAR-T 的亚群中，比较试验组与对照组的 OS 差异",
     "crumbs": [
       "Other",
       "Wiki",
-      "Biotechnology",
-      "Tumor Microenvironment (TME)"
+      "Clinical Trial",
+      "Intercurrent Events"
     ]
   },
   {
-    "objectID": "docs/pharmaceutical/other/TME.html#translational-research转化研究",
-    "href": "docs/pharmaceutical/other/TME.html#translational-research转化研究",
-    "title": "Tumor Microenvironment, TME（肿瘤微环境）",
-    "section": "11.3 Translational Research（转化研究）",
-    "text": "11.3 Translational Research（转化研究）\nTME 研究通常结合：\n\nRNA sequencing\nSpatial transcriptomics\nMultiplex immunohistochemistry\nSingle-cell RNA sequencing\n\n用于探索治疗反应机制和耐药机制。",
+    "objectID": "docs/pharmaceutical/other/Intercurrent_Events.html#informative-censoring",
+    "href": "docs/pharmaceutical/other/Intercurrent_Events.html#informative-censoring",
+    "title": "Intercurrent Events",
+    "section": "Informative Censoring",
+    "text": "Informative Censoring\n\nCommon statistical methods\n\nInverse Probability of Censoring Weighting (IPCW): 建模 dropout hazard，调整权重。\nJoint Modeling: for both dropout hazard and PFS/OS\nPattern-Mixture Models/Selection Models\n\nPattern-mixture model：把 IA 前 vs IA 后退出的患者分层建模。\nSelection model：明确 dropout hazard 与 treatment arm/outcome 相关。\n\nMultiple Imputation under MNAR\nRank-Preserving Structural Failure Time Model (RPSFTM)\nSensitivity Analyses: 设定不同的 “退出患者预后更差/相同/更好” 假设，检查结果稳健性。\n\n\n\nRelative Regulatory Guidance\n\nICH E9 (R1): Addendum on Estimands and Sensitivity Analyses\n\n强调要在 estimand framework 中预先定义如何处理 intercurrent events 和 censoring。\n\nFDA Guidance for Industry: Multiple Endpoints in Clinical Trials (2017)\n\n讲到对不同 endpoints 的分析时要考虑 dropout、censoring 的偏倚。\n\nFDA Guidance for Industry: Missing Data in Clinical Trials (2010)\n\n虽然标题是 missing data，但实际上重点就是处理 informative censoring / informative dropout。\n推荐使用 model-based approaches，避免仅依赖 LOCF（last observation carried forward）。\n\nFDA Oncology Review Practices（reviewer often requests sensitivity analysis under different censoring assumptions）\n\n特别是 OS/PFS 研究，FDA reviewer 会要求 sponsor 提供 “sensitivity to censoring assumptions” 的结果。\n\nFDA Draft Guidance: Adjusting for Covariates in Randomized Clinical Trials (2023)\n\n提到在存在 informative censoring 的情况下，建模方法可提供更准确估计。",
     "crumbs": [
       "Other",
       "Wiki",
-      "Biotechnology",
-      "Tumor Microenvironment (TME)"
+      "Clinical Trial",
+      "Intercurrent Events"
     ]
   },
   {
@@ -8967,7 +9240,7 @@
     "href": "docs/pharmaceutical/other/TNM_Staging.html",
     "title": "TNM Staging（TNM 分期）",
     "section": "",
-    "text": "TNM staging（TNM分期）是目前全球应用最广泛的恶性肿瘤分期系统，由American Joint Committee on Cancer, AJCC（美国癌症联合委员会）和Union for International Cancer Control, UICC（国际抗癌联盟）共同制定和更新。\nTNM分期通过评价：\n\nT（primary tumor，原发肿瘤）；\nN（regional lymph nodes，区域淋巴结）；\nM（distant metastasis，远处转移）；\n\n三个维度，描述肿瘤扩散程度，并进一步划分为Stage I-IV。\nTNM分期不仅影响患者预后，也是决定治疗策略、临床试验入组标准和统计分析的重要依据。",
+    "text": "TNM staging（TNM分期）是肿瘤分期中目前全球应用最广泛的实体瘤分期系统，由American Joint Committee on Cancer, AJCC（美国癌症联合委员会）和Union for International Cancer Control, UICC（国际抗癌联盟）共同制定和更新。\nTNM分期通过评价：\n\nT（primary tumor，原发肿瘤）；\nN（regional lymph nodes，区域淋巴结）；\nM（distant metastasis，远处转移）；\n\n三个维度，描述肿瘤扩散程度，并进一步划分为Stage I-IV。\nTNM分期不仅影响患者预后，也是决定治疗策略、临床试验入组标准和统计分析的重要依据。",
     "crumbs": [
       "Other",
       "Wiki",
@@ -9123,7 +9396,7 @@
     "href": "docs/pharmaceutical/other/Biomarker.html#按生物学来源分类",
     "title": "Biomarker（生物标志物）",
     "section": "3.1 按生物学来源分类",
-    "text": "3.1 按生物学来源分类\n\n\n\n类型\n例子\n\n\n\n\nDNA\nEGFR mutation、KRAS mutation、BRCA1/2 mutation\n\n\nRNA\nGene expression、RNA sequencing\n\n\nProtein\nPD-L1、HER2\n\n\nCirculating biomarker\nCirculating tumor DNA, ctDNA（循环肿瘤 DNA）、circulating tumor cell, CTC（循环肿瘤细胞）\n\n\nImmune biomarker\nTumor-infiltrating lymphocytes, TIL；免疫细胞亚群\n\n\nImaging biomarker\nPET、MRI、CT 定量参数",
+    "text": "3.1 按生物学来源分类\n\n\n\n类型\n例子\n\n\n\n\nDNA\nEGFR mutation、KRAS mutation、BRCA1/2 mutation\n\n\nRNA\nGene expression、RNA sequencing\n\n\nProtein\nPD-L1、HER2、biomarker expression\n\n\nCirculating biomarker\nCirculating tumor DNA, ctDNA（循环肿瘤 DNA）、circulating tumor cell, CTC（循环肿瘤细胞）\n\n\nImmune biomarker\nTumor-infiltrating lymphocytes, TIL；免疫细胞亚群\n\n\nImaging biomarker\nPET、MRI、CT 定量参数",
     "crumbs": [
       "Other",
       "Wiki",
@@ -9312,7 +9585,7 @@
     "href": "docs/pharmaceutical/listing-other.html",
     "title": "Pharmaceutial",
     "section": "",
-    "text": "Pharmaceutical Notebook\n\n\n\n\n\n Company \n\n\n Regulatory \n\n\n Compound \n\n\n Disease \n\n\n Target \n\n\n SDTM \n\n\n Other \n\n\n\n\n\nOther\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\nName\n\n\nBelong\n\n\nDescription\n\n\n\n\n\n\nADC\n\n\nTechnology\n\n\nAntibody-Drug Conjugates (ADCs) are targeted cancer therapies that combine antibodies with cytotoxic drugs. \n\n\n\n\nCAR-T\n\n\nTechnology\n\n\nChimeric Antigen Receptor T-cell Therapy (CAR-T) is a revolutionary cancer treatment that genetically engineers T-cells to fight cancer. \n\n\n\n\nImmune Checkpoint\n\n\nTechnology\n\n\nImmune checkpoints are regulatory immune pathways such as PD-1, PD-L1, and CTLA-4 that maintain tolerance and are targeted by cancer immunotherapy. \n\n\n\n\nBiomarker\n\n\nClinical Trial\n\n\nBiomarkers are biological molecules used as indicators of a biological state or condition, crucial in disease diagnosis and therapy assessment. \n\n\n\n\nTNM Staging\n\n\nClinical Trial\n\n\nTNM staging describes tumor extent using primary tumor, regional lymph node, and distant metastasis categories, and is central to oncology treatment decisions and trial design. \n\n\n\n\nECOG Performance Status\n\n\nClinical Trial\n\n\nECOG Performance Status is a standard oncology functional status scale used for treatment decisions, trial eligibility, stratification, and prognosis. \n\n\n\n\nRECIST 1.1\n\n\nClinical Trial\n\n\nRECIST 1.1 is the standard imaging-based response assessment framework for solid tumor trials and supports ORR, BOR, DOR, and PFS derivations. \n\n\n\n\nImmunotherapy\n\n\nTechnology\n\n\nImmunotherapy is a treatment modality that harnesses the body’s immune system to detect and combat diseases, particularly cancer. \n\n\n\n\nTME\n\n\nTechnology\n\n\nTumor microenvironment (TME) describes the immune, stromal, vascular, extracellular matrix, and signaling context surrounding tumor cells. \n\n\n\n\nMAT\n\n\nTechnology\n\n\nMonoclonal Antibody Therapy (MAT) involves the use of monoclonal antibodies to specifically target and treat various diseases, including cancer and autoimmune disorders. \n\n\n\n\nPFS\n\n\nEndpoint\n\n\nProgression-Free Survival (PFS) is a measure of the time patients remain in remission without their disease progressing after treatment. \n\n\n\n\n\nNo matching items",
+    "text": "Pharmaceutical Notebook\n\n\n\n\n\n Company \n\n\n Regulatory \n\n\n Compound \n\n\n Disease \n\n\n Target \n\n\n SDTM \n\n\n Other \n\n\n\n\n\nOther\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\nName\n\n\nBelong\n\n\nDescription\n\n\n\n\n\n\nADC\n\n\nTechnology\n\n\nAntibody-Drug Conjugates (ADCs) are targeted cancer therapies that combine antibodies with cytotoxic drugs. \n\n\n\n\nCAR-T\n\n\nTechnology\n\n\nChimeric Antigen Receptor T-cell Therapy (CAR-T) is a revolutionary cancer treatment that genetically engineers T-cells to fight cancer. \n\n\n\n\nImmune Checkpoint\n\n\nTechnology\n\n\nImmune checkpoints are regulatory immune pathways such as PD-1, PD-L1, and CTLA-4 that maintain tolerance and are targeted by cancer immunotherapy. \n\n\n\n\nBiomarker\n\n\nClinical Trial\n\n\nBiomarkers are biological molecules used as indicators of a biological state or condition, crucial in disease diagnosis and therapy assessment. \n\n\n\n\nBiomarker Expression\n\n\nClinical Trial\n\n\nBiomarker expression describes how much gene or protein signal is detected in tumor or immune cells, including PD-L1 negative, low-expression, and high-expression categories. \n\n\n\n\nCancer Staging\n\n\nClinical Trial\n\n\nCancer staging classifies tumor extent and spread, guides oncology treatment strategy, trial eligibility, stratification, endpoint selection, and subgroup analysis. \n\n\n\n\nTNM Staging\n\n\nClinical Trial\n\n\nTNM staging describes tumor extent using primary tumor, regional lymph node, and distant metastasis categories, and is central to oncology treatment decisions and trial design. \n\n\n\n\nECOG Performance Status\n\n\nClinical Trial\n\n\nECOG Performance Status is a standard oncology functional status scale used for treatment decisions, trial eligibility, stratification, and prognosis. \n\n\n\n\nRECIST 1.1\n\n\nClinical Trial\n\n\nRECIST 1.1 is the standard imaging-based response assessment framework for solid tumor trials and supports ORR, BOR, DOR, and PFS derivations. \n\n\n\n\nImmunotherapy\n\n\nTechnology\n\n\nImmunotherapy is a treatment modality that harnesses the body’s immune system to detect and combat diseases, particularly cancer. \n\n\n\n\nTME\n\n\nTechnology\n\n\nTumor microenvironment (TME) describes the immune, stromal, vascular, extracellular matrix, and signaling context that shapes tumor progression, drug response, and oncology trial biomarkers. \n\n\n\n\nMAT\n\n\nTechnology\n\n\nMonoclonal Antibody Therapy (MAT) involves the use of monoclonal antibodies to specifically target and treat various diseases, including cancer and autoimmune disorders. \n\n\n\n\nPFS\n\n\nEndpoint\n\n\nProgression-Free Survival (PFS) is a measure of the time patients remain in remission without their disease progressing after treatment. \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Other"
     ]
@@ -10319,9 +10592,672 @@
   {
     "objectID": "docs/pharmaceutical/compound/Tecentriq.html",
     "href": "docs/pharmaceutical/compound/Tecentriq.html",
-    "title": "Tecentriq",
+    "title": "Atezolizumab（阿替利珠单抗）",
     "section": "",
-    "text": "关于德沙替尼（Tecentriq，通用名：阿替利珠单抗 Atezolizumab），以下是其详细介绍，包括治疗原理和适应症的详细信息：\n\n药物简介（Drug Overview）\n德沙替尼（Tecentriq，通用名为阿替利珠单抗 Atezolizumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于免疫检查点抑制剂（Immune Checkpoint Inhibitor）。它用于治疗多种类型的癌症，包括非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC）、三阴性乳腺癌（Triple-Negative Breast Cancer, TNBC）和泌尿系统癌症等。\n\n\n治疗原理（Treatment Mechanism）\n阿替利珠单抗的作用机制是靶向PD-L1（程序性死亡配体-1，Programmed Death-Ligand 1），一种在一些癌细胞以及免疫系统细胞表面表达的蛋白。通过阻断PD-L1与其受体PD-1的结合，阿替利珠单抗能够激活T细胞，增强免疫系统对癌细胞的攻击能力。\n\n\n适应症（Indications）\n德沙替尼被批准用于治疗以下疾病：\n\n非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC，非小细胞肺癌）\n三阴性乳腺癌（Triple-Negative Breast Cancer, TNBC，三阴性乳腺癌）\n泌尿上皮癌（Urothelial Carcinoma，泌尿上皮癌）\n肝细胞癌（Hepatocellular Carcinoma, HCC，肝细胞癌）\n广泛期小细胞肺癌（Extensive-Stage Small Cell Lung Cancer, ES-SCLC）\n\n\n\n副作用（Side Effects）\n德沙替尼的常见副作用包括疲劳、食欲减退、恶心、腹泻、皮疹和发热。较为严重的副作用可能包括肺炎、肝脏问题、内分泌问题和肾脏问题。由于德沙替尼是一种免疫疗法，它可能导致免疫系统过度活跃并攻击正常组织和器官。\n德沙替尼作为一种免疫治疗药物，在多种癌症的治疗中展现了显著的疗效。然而，考虑到其潜在的副作用，使用时应在医疗专业人员的指导下进行。",
+    "text": "Atezolizumab（阿替利珠单抗；Genentech/Roche；Tecentriq / 泰圣奇；development code: MPDL3280A）是一种靶向programmed death-ligand 1, PD-L1（程序性死亡配体1）的人源化、Fc工程化IgG1单克隆抗体。\nAtezolizumab通过阻断PD-L1与PD-1和B7.1的结合，解除肿瘤微环境对T细胞的抑制，从而恢复抗肿瘤免疫反应。它属于immune checkpoint inhibitor, ICI（免疫检查点抑制剂），也是较早获得全球监管批准的抗PD-L1抗体之一。\nAtezolizumab最初由Genentech开发。Genentech属于Roche集团，因此临床开发和商业化资料中可能同时出现Genentech和Roche。\n截至2026年5月，美国批准的主要适应证覆盖：\n\nnon-small cell lung cancer, NSCLC（非小细胞肺癌）；\nextensive-stage small cell lung cancer, ES-SCLC（广泛期小细胞肺癌）；\nhepatocellular carcinoma, HCC（肝细胞癌）；\nBRAF V600突变阳性的晚期melanoma（黑色素瘤）；\nalveolar soft part sarcoma, ASPS（腺泡状软组织肉瘤）；\nmuscle-invasive bladder cancer, MIBC（肌层浸润性膀胱癌）术后ctDNA MRD阳性患者。\n\n此外，皮下固定复方制剂atezolizumab and hyaluronidase-tqjs（阿替利珠单抗与透明质酸酶；Genentech；Tecentriq Hybreza）已在美国获批，可在多个适应证中替代静脉atezolizumab给药。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#pd-1pd-l1免疫检查点",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#pd-1pd-l1免疫检查点",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "3.1 PD-1/PD-L1免疫检查点",
+    "text": "3.1 PD-1/PD-L1免疫检查点\nProgrammed cell death protein 1, PD-1（程序性死亡受体1）主要表达于活化的T细胞表面。PD-L1可表达于肿瘤细胞、巨噬细胞、树突状细胞和其他肿瘤浸润免疫细胞。\nPD-L1与PD-1结合后，可抑制T细胞增殖、细胞因子产生、细胞毒性T细胞活性和抗肿瘤免疫记忆：\n\\[\n\\text{PD-L1}\n+\n\\text{PD-1}\n\\longrightarrow\n\\text{T-cell inhibition}\n\\]\n肿瘤可以通过上调PD-L1表达，利用这一生理性免疫调节机制逃避免疫系统攻击。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#atezolizumab的作用",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#atezolizumab的作用",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "3.2 Atezolizumab的作用",
+    "text": "3.2 Atezolizumab的作用\nAtezolizumab与PD-L1结合，阻断PD-L1与PD-1以及B7.1（CD80）之间的相互作用：\n\\[\n\\text{Atezolizumab}\n+\n\\text{PD-L1}\n\\longrightarrow\n\\text{PD-L1 blockade}\n\\longrightarrow\n\\text{T-cell reactivation}\n\\]\n恢复活性的T细胞可以识别肿瘤抗原、释放细胞因子、杀伤肿瘤细胞、招募其他免疫细胞，并建立一定程度的免疫记忆。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#fc工程化",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#fc工程化",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "3.3 Fc工程化",
+    "text": "3.3 Fc工程化\nAtezolizumab的Fc区域经过工程化处理，以尽量减少antibody-dependent cellular cytotoxicity, ADCC（抗体依赖性细胞介导的细胞毒作用）和对表达PD-L1免疫细胞的非预期清除。\n这使其主要通过免疫检查点阻断发挥作用，而不是通过Fc介导的细胞杀伤发挥作用。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#与pd-1抑制剂的区别",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#与pd-1抑制剂的区别",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "3.4 与PD-1抑制剂的区别",
+    "text": "3.4 与PD-1抑制剂的区别\n\n\n\n药物类别\n代表药物\n结合靶点\n主要阻断作用\n\n\n\n\nPD-L1 inhibitor\nAtezolizumab、durvalumab、avelumab\nPD-L1\n阻断PD-L1与PD-1及部分其他受体的相互作用\n\n\nPD-1 inhibitor\nPembrolizumab、nivolumab、cemiplimab\nPD-1\n阻断PD-1与PD-L1及PD-L2的相互作用\n\n\n\n两类药物均可恢复T细胞抗肿瘤活性，但其结合位置、部分受体相互作用和临床开发项目不同。目前不能仅根据PD-1或PD-L1靶点类别，直接认定其中一类药物在所有癌种中更有效或更安全。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#静脉制剂tecentriq",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#静脉制剂tecentriq",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "4.1 静脉制剂Tecentriq",
+    "text": "4.1 静脉制剂Tecentriq\n成人常用静脉剂量包括：\n\n\n\n给药方案\n给药间隔\n\n\n\n\n840 mg\nEvery 2 weeks\n\n\n1,200 mg\nEvery 3 weeks\n\n\n1,680 mg\nEvery 4 weeks\n\n\n\n首次静脉输注通常持续60分钟。如果首次输注耐受良好，后续输注可缩短至30分钟。在联合化疗或bevacizumab时，同一天通常先给予atezolizumab，再给予其他静脉药物。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#皮下制剂tecentriq-hybreza",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#皮下制剂tecentriq-hybreza",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "4.2 皮下制剂Tecentriq Hybreza",
+    "text": "4.2 皮下制剂Tecentriq Hybreza\nTecentriq Hybreza为atezolizumab与重组人透明质酸酶的固定复方制剂。\n\n\n\n成分\n推荐剂量\n\n\n\n\nAtezolizumab\n1,875 mg\n\n\nHyaluronidase-tqjs\n30,000 units\n\n\n\n该制剂每3周在大腿皮下注射一次，给药时间约为7分钟。Tecentriq和Tecentriq Hybreza不是按毫克数直接一一替换，而应按照各自获批的固定给药方案使用。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#non-small-cell-lung-cancer非小细胞肺癌",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#non-small-cell-lung-cancer非小细胞肺癌",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "5.1 Non-Small Cell Lung Cancer（非小细胞肺癌）",
+    "text": "5.1 Non-Small Cell Lung Cancer（非小细胞肺癌）\n\n5.1.1 可切除NSCLC辅助治疗\nAtezolizumab单药用于已完整切除、已接受platinum-based adjuvant chemotherapy、Stage II-IIIA、肿瘤细胞PD-L1表达&gt;=1%且由FDA授权检测确定的成人NSCLC患者辅助治疗。\n治疗通常持续最长1年，除非发生疾病复发或不可接受的毒性。该适应证主要基于IMpower010研究。\n\n\n5.1.2 转移性NSCLC一线单药\nAtezolizumab可单药用于转移性NSCLC、PD-L1高表达、无EGFR或ALK驱动基因异常的成人一线治疗。\n美国处方信息中的PD-L1高表达定义为：\n\ntumor cell, TC（肿瘤细胞）PD-L1染色&gt;=50%；或\ntumor-infiltrating immune cell, IC（肿瘤浸润免疫细胞）PD-L1染色覆盖&gt;=10%的肿瘤区域。\n\n该适应证主要基于IMpower110研究。\n\n\n5.1.3 转移性非鳞状NSCLC一线联合治疗\nAtezolizumab可与下列方案联合用于无EGFR或ALK驱动异常的转移性非鳞状NSCLC：\n\nBevacizumab + paclitaxel + carboplatin；\nNab-paclitaxel + carboplatin。\n\n第一种组合常简称为：\n\\[\n\\text{ABCP}\n=\n\\text{Atezolizumab}\n+\n\\text{Bevacizumab}\n+\n\\text{Carboplatin}\n+\n\\text{Paclitaxel}\n\\]\n主要支持性研究分别为IMpower150和IMpower130。\n\n\n5.1.4 经治转移性NSCLC\nAtezolizumab单药也可用于在platinum-containing chemotherapy治疗期间或之后进展的转移性NSCLC。存在EGFR或ALK基因异常的患者，应先在相应获批靶向治疗后发生疾病进展。\n该适应证主要基于OAK等研究。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#extensive-stage-small-cell-lung-cancer广泛期小细胞肺癌",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#extensive-stage-small-cell-lung-cancer广泛期小细胞肺癌",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "5.2 Extensive-Stage Small Cell Lung Cancer（广泛期小细胞肺癌）",
+    "text": "5.2 Extensive-Stage Small Cell Lung Cancer（广泛期小细胞肺癌）\n\n5.2.1 一线治疗\nAtezolizumab联合carboplatin和etoposide用于成人ES-SCLC一线治疗。典型治疗框架为诱导期atezolizumab + carboplatin + etoposide，随后atezolizumab maintenance。\n该适应证基于IMpower133研究，是免疫治疗首次改变ES-SCLC一线标准治疗的重要结果之一。\n\n\n5.2.2 Lurbinectedin联合维持治疗\n2025年10月2日，FDA批准lurbinectedin（芦比替定；Jazz Pharmaceuticals与PharmaMar；Zepzelca）联合atezolizumab，用于完成atezolizumab、carboplatin和etoposide一线诱导治疗后疾病未进展的成人ES-SCLC患者维持治疗。\n该适应证主要基于IMforte研究，是一种maintenance intensification strategy（强化维持治疗策略）。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#hepatocellular-carcinoma肝细胞癌",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#hepatocellular-carcinoma肝细胞癌",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "5.3 Hepatocellular Carcinoma（肝细胞癌）",
+    "text": "5.3 Hepatocellular Carcinoma（肝细胞癌）\nAtezolizumab联合bevacizumab（贝伐珠单抗；Genentech/Roche；Avastin / 安维汀）用于既往未接受系统治疗的unresectable或metastatic HCC成人患者。\n该适应证主要基于IMbrave150研究。治疗前通常需要评估食管或胃底静脉曲张、出血风险、肝功能、门静脉高压、尿蛋白、血压和近期出血史，因为bevacizumab可增加出血、高血压、蛋白尿和血栓相关风险。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#melanoma黑色素瘤",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#melanoma黑色素瘤",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "5.4 Melanoma（黑色素瘤）",
+    "text": "5.4 Melanoma（黑色素瘤）\nAtezolizumab联合cobimetinib和vemurafenib，用于BRAF V600 mutation-positive、unresectable或metastatic melanoma成人患者。开始治疗前必须使用FDA授权检测确认BRAF V600突变。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#alveolar-soft-part-sarcoma腺泡状软组织肉瘤",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#alveolar-soft-part-sarcoma腺泡状软组织肉瘤",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "5.5 Alveolar Soft Part Sarcoma（腺泡状软组织肉瘤）",
+    "text": "5.5 Alveolar Soft Part Sarcoma（腺泡状软组织肉瘤）\nAtezolizumab单药用于成人和2岁及以上儿童的unresectable或metastatic ASPS。ASPS是一种罕见软组织肉瘤，通常生长相对缓慢，但容易发生肺、脑和骨等部位转移。\n儿童推荐静脉剂量通常为：\n\\[\n15\\ \\text{mg/kg every 3 weeks}\n\\]\n最高剂量为1,200 mg。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#muscle-invasive-bladder-cancer肌层浸润性膀胱癌",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#muscle-invasive-bladder-cancer肌层浸润性膀胱癌",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "5.6 Muscle-Invasive Bladder Cancer（肌层浸润性膀胱癌）",
+    "text": "5.6 Muscle-Invasive Bladder Cancer（肌层浸润性膀胱癌）\n2026年5月15日，FDA批准atezolizumab用于已接受radical cystectomy（根治性膀胱切除术）后，通过连续血浆检测发现circulating tumor DNA molecular residual disease, ctDNA MRD（循环肿瘤DNA分子残留病灶）的成人MIBC患者辅助治疗。\n患者选择使用FDA授权的Signatera CDx检测。ctDNA检测通常在膀胱切除术后至少6周开始，并在术后一年内进行连续监测。治疗可持续最长一年，除非出现疾病复发或不可接受毒性。\n该适应证主要基于IMvigor011研究，是首批以术后ctDNA MRD阳性作为治疗选择条件的实体瘤药物适应证之一。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#oak",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#oak",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "8.1 OAK",
+    "text": "8.1 OAK\nOAK是一项randomized、open-label、Phase 3研究，比较atezolizumab与docetaxel，用于既往接受过治疗的晚期NSCLC患者。\nPrimary endpoint为overall survival, OS（总生存期）。该研究显示atezolizumab相较docetaxel改善OS。疗效并不完全局限于PD-L1高表达人群，但PD-L1表达较高患者通常表现出更大的治疗效果。\nOAK体现了免疫治疗中一个重要现象：\n\nORR改善幅度可能有限，但缓解持续时间和生存曲线后期分离可带来OS获益。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#impower110",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#impower110",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "8.2 IMpower110",
+    "text": "8.2 IMpower110\nIMpower110纳入未经化疗的转移性NSCLC患者，并根据肿瘤细胞和免疫细胞PD-L1表达进行分层。\n研究比较atezolizumab monotherapy与platinum-based chemotherapy。在高PD-L1表达、无EGFR或ALK驱动异常的人群中，atezolizumab改善OS。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#impower150",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#impower150",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "8.3 IMpower150",
+    "text": "8.3 IMpower150\nIMpower150比较多个含atezolizumab和bevacizumab的方案。最具临床影响的方案为ABCP：atezolizumab、bevacizumab、carboplatin和paclitaxel。\n该研究的关键特点包括免疫治疗与化疗联合、同时使用抗VEGF治疗、纳入部分肝转移患者，并探索EGFR或ALK异常患者靶向治疗后的疗效。VEGF抑制可能通过改善肿瘤血管和免疫微环境，增强免疫治疗活性。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#impower010",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#impower010",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "8.4 IMpower010",
+    "text": "8.4 IMpower010\nIMpower010纳入完全切除Stage IB-IIIA NSCLC患者。患者完成最多4个周期cisplatin-based adjuvant chemotherapy后，被随机分配至atezolizumab或best supportive care。\n主要分析采用层级结构，重点人群包括Stage II-IIIA且PD-L1 TC&gt;=1%、所有随机Stage II-IIIA患者和intention-to-treat population。该研究显示，在PD-L1 TC&gt;=1%的Stage II-IIIA人群中，atezolizumab改善disease-free survival, DFS（无病生存期）。\n辅助治疗中的临床问题不同于转移性治疗：患者可能已经通过手术治愈，所有患者均暴露于免疫毒性，DFS获益需要与长期OS、复发模式和永久性毒性共同解释。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#impower133",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#impower133",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "9.1 IMpower133",
+    "text": "9.1 IMpower133\nIMpower133比较atezolizumab + carboplatin + etoposide与placebo + carboplatin + etoposide，用于未经治疗的ES-SCLC。\nCo-primary endpoints为OS和progression-free survival, PFS（无进展生存期）。研究显示atezolizumab联合方案改善OS和PFS，确立了化疗联合免疫治疗的ES-SCLC一线框架。\n与NSCLC不同，PD-L1 expression在SCLC中并未成为可靠的常规患者选择标志物。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#imforte",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#imforte",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "9.2 IMforte",
+    "text": "9.2 IMforte\nIMforte纳入完成一线atezolizumab、carboplatin和etoposide诱导治疗后疾病未进展的ES-SCLC患者。患者随机接受lurbinectedin + atezolizumab或atezolizumab alone。\n研究采用维持期随机设计，因此主要估计：\n\n在完成标准诱导治疗且未进展的患者中，增加lurbinectedin强化维持治疗的效果。\n\n该结果不能直接解释为从一线治疗开始时，对所有ES-SCLC患者实施该策略的无条件治疗效果。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#imbrave150",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#imbrave150",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "10.1 IMbrave150",
+    "text": "10.1 IMbrave150\nIMbrave150是一项global、open-label、Phase 3研究，比较atezolizumab + bevacizumab与sorafenib，用于既往未接受系统治疗的不可切除HCC患者。\nCo-primary endpoints为OS和PFS by independent review。研究显示联合治疗显著改善OS和PFS，并改变了晚期HCC一线治疗格局。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#hcc试验的特殊问题",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#hcc试验的特殊问题",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "10.2 HCC试验的特殊问题",
+    "text": "10.2 HCC试验的特殊问题\nHCC疗效评价需要同时考虑肿瘤进展、基础肝硬化、肝功能恶化、门静脉高压、静脉曲张出血、病毒性肝炎和非肿瘤相关死亡。\n死亡可能由肿瘤进展、肝衰竭、出血或感染等不同机制导致，但OS通常仍采用all-cause death定义。Child-Pugh class、Barcelona Clinic Liver Cancer stage、macrovascular invasion和alpha-fetoprotein水平是常见预后或分层因素。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#pd-l1-expression",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#pd-l1-expression",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "11.1 PD-L1 Expression",
+    "text": "11.1 PD-L1 Expression\nAtezolizumab项目中常使用VENTANA PD-L1 IHC assays，包括SP142和SP263。不同研究可能评价tumor-cell expression、immune-cell expression或tumor area中的免疫细胞覆盖比例。\n例如，在一线转移性NSCLC单药适应证中，高表达定义为：\n\\[\n\\text{TC}\\geq50\\%\n\\quad\\text{or}\\quad\n\\text{IC}\\geq10\\%\n\\]\n这里的IC&gt;=10%表示PD-L1阳性肿瘤浸润免疫细胞覆盖至少10%的肿瘤区域，并不是免疫细胞中有10%染色阳性。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#不同pd-l1评分不可直接互换",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#不同pd-l1评分不可直接互换",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "11.2 不同PD-L1评分不可直接互换",
+    "text": "11.2 不同PD-L1评分不可直接互换\n\n\n\n评分\n主要计算对象\n常见应用\n\n\n\n\nTumor proportion score, TPS\nPD-L1阳性肿瘤细胞占活肿瘤细胞的比例\n常见于pembrolizumab NSCLC项目\n\n\nTumor cell score, TC\nPD-L1阳性肿瘤细胞比例\nAtezolizumab部分研究\n\n\nImmune cell score, IC\nPD-L1阳性免疫细胞覆盖肿瘤区域的比例\nAtezolizumab部分研究\n\n\nCombined positive score, CPS\n阳性肿瘤细胞及特定免疫细胞除以活肿瘤细胞\n多种其他癌种\n\n\n\n不同assay、抗体clone、评分算法和cutoff不能简单转换。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#driver-alterations",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#driver-alterations",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "11.3 Driver Alterations",
+    "text": "11.3 Driver Alterations\n对于转移性NSCLC，还需优先检测EGFR mutation、ALK fusion、ROS1 fusion、BRAF V600E、MET exon 14 skipping、RET fusion、NTRK fusion、KRAS G12C和HER2 mutation。\n即使PD-L1高表达，存在明确可靶向驱动异常时，治疗顺序通常仍优先考虑相应targeted therapy。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#ctdna-mrd",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#ctdna-mrd",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "11.4 ctDNA MRD",
+    "text": "11.4 ctDNA MRD\nMIBC辅助治疗中的ctDNA MRD用于识别影像学尚未发现复发、但血液中已经存在肿瘤特异性DNA、具有较高临床复发风险的患者。\n这是一种enrichment biomarker（富集型生物标志物），可避免将辅助免疫治疗暴露于所有术后患者。但ctDNA MRD阴性不等于绝对没有残留肿瘤，检测结果受肿瘤DNA释放量、检测灵敏度、取血时间、肿瘤负荷、生物学复发模式和assay设计影响。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#常见不良反应",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#常见不良反应",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "12.1 常见不良反应",
+    "text": "12.1 常见不良反应\n单药治疗中常见不良反应可能包括fatigue、decreased appetite、nausea、cough、dyspnea、pyrexia、musculoskeletal pain、rash和pruritus。联合治疗时，不良反应还受到化疗、bevacizumab、BRAF/MEK inhibitor或lurbinectedin影响。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#重要免疫相关毒性",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#重要免疫相关毒性",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "12.2 重要免疫相关毒性",
+    "text": "12.2 重要免疫相关毒性\n\n\n\n\n\n\n\n器官系统\n可能事件或表现\n\n\n\n\n肺\nImmune-mediated pneumonitis，新发或加重咳嗽、呼吸困难、低氧、影像学浸润\n\n\n肠道\nColitis，腹泻、腹痛、黏液或血便、少见肠穿孔\n\n\n肝脏\nHepatitis，ALT/AST或bilirubin升高，HCC患者因果判断更复杂\n\n\n内分泌\nThyroiditis、hypothyroidism、hyperthyroidism、adrenal insufficiency、hypophysitis、type 1 diabetes\n\n\n肾脏\nNephritis、renal dysfunction\n\n\n皮肤\nSevere rash、Stevens-Johnson syndrome、toxic epidermal necrolysis\n\n\n神经系统\nMyasthenia gravis、Guillain-Barre syndrome、encephalitis、neuropathy\n\n\n心脏\nMyocarditis、pericarditis、arrhythmia\n\n\n血液系统\nHemolytic anemia、aplastic anemia、immune thrombocytopenia\n\n\n肌肉骨骼\nMyositis、arthritis、polymyalgia rheumatica\n\n\n眼\nUveitis、iritis、视力改变\n\n\n胰腺\nPancreatitis\n\n\n移植相关\nSolid organ transplant rejection\n\n\n\nMyocarditis、myositis和myasthenia gravis可形成重叠综合征，即使发生率较低，也可能迅速危及生命。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#infusion-related-reactions",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#infusion-related-reactions",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "12.3 Infusion-Related Reactions",
+    "text": "12.3 Infusion-Related Reactions\n静脉输注可能引起发热、寒战、面部潮红、皮疹、呼吸困难、低血压或过敏反应。根据严重程度，可采取减慢输注速度、暂停输注、对症治疗或永久停药。皮下Tecentriq Hybreza还可能导致局部注射反应。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#embryo-fetal-toxicity",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#embryo-fetal-toxicity",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "12.4 Embryo-Fetal Toxicity",
+    "text": "12.4 Embryo-Fetal Toxicity\n基于PD-1/PD-L1通路在母胎免疫耐受中的作用，atezolizumab可能对胎儿造成伤害。具有生育能力的女性在治疗期间及末次给药后一定时间内应采取有效避孕措施，治疗期间通常不建议哺乳。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#治疗前评估",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#治疗前评估",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "14.1 治疗前评估",
+    "text": "14.1 治疗前评估\n\n\n\n评估\n主要目的\n\n\n\n\n完整病史和体检\n识别自身免疫病和器官基础异常\n\n\nCBC\n评估血细胞，特别是联合化疗时\n\n\nLiver function tests\n识别基础肝病和后续肝炎\n\n\nRenal function\n识别基础肾功能和免疫性肾炎\n\n\nTSH和free T4\n评估甲状腺功能\n\n\nBlood glucose\n识别糖尿病和免疫性高血糖\n\n\nViral hepatitis testing\nHCC或肝功能异常患者尤其重要\n\n\nPregnancy assessment\n评估胚胎-胎儿风险\n\n\nBaseline imaging\n建立肿瘤负荷和肺部影像基线\n\n\nAutoimmune disease history\n评估疾病复发或恶化风险",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#治疗期间",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#治疗期间",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "14.2 治疗期间",
+    "text": "14.2 治疗期间\n治疗期间应持续评估新发呼吸道症状、腹泻和腹痛、黄疸和肝功能、皮疹、头痛、视力变化和肌无力、心悸、胸痛和肌钙蛋白异常、甲状腺和肾上腺功能、血糖、肾功能、输注反应及联合药物特异性毒性。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#durable-response",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#durable-response",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "15.1 Durable Response",
+    "text": "15.1 Durable Response\n部分患者可获得持续时间较长的缓解，即使治疗已经停止，免疫系统仍可能维持一定抗肿瘤活性。因此，免疫治疗试验通常同时评价objective response rate, ORR（客观缓解率）、duration of response, DOR（缓解持续时间）、PFS和OS。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#pseudoprogression",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#pseudoprogression",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "15.2 Pseudoprogression",
+    "text": "15.2 Pseudoprogression\n少数患者在治疗早期可能出现肿瘤病灶暂时增大或新病灶出现，随后肿瘤缩小。这可能由免疫细胞浸润或炎症反应引起，称为pseudoprogression（假性进展）。\n但在临床实践中，大多数影像学进展仍然是真实进展。不能因可能存在假性进展而无条件继续无效治疗。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#hyperprogression",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#hyperprogression",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "15.3 Hyperprogression",
+    "text": "15.3 Hyperprogression\n部分患者在开始免疫治疗后可能出现异常快速的肿瘤进展，通常称为hyperprogressive disease（超进展疾病）。其定义尚未完全统一，可能基于tumor growth rate、tumor growth kinetics、time to treatment failure或肿瘤负荷快速增加。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#metastatic-setting",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#metastatic-setting",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "16.1 Metastatic Setting",
+    "text": "16.1 Metastatic Setting\n\n\n\n终点\n英文名称\n主要意义\n\n\n\n\nOS\nOverall survival\n从随机化至任何原因死亡\n\n\nPFS\nProgression-free survival\n从随机化至进展或死亡\n\n\nORR\nObjective response rate\nCR和PR患者比例\n\n\nDOR\nDuration of response\n从首次缓解至进展或死亡\n\n\nDisease control rate\n疾病控制率\nCR、PR和SD的比例\n\n\nPatient-reported outcome\n患者报告结局\n症状、功能和生活质量\n\n\n\n免疫治疗中，OS通常是最具临床意义的终点，但可能受后续治疗和治疗转换影响。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#adjuvant-setting",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#adjuvant-setting",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "16.2 Adjuvant Setting",
+    "text": "16.2 Adjuvant Setting\n\n\n\n\n\n\n\n\n终点\n英文名称\n主要意义\n\n\n\n\nDFS\nDisease-free survival\n从随机化至复发、第二原发癌或死亡，具体定义依方案而定\n\n\nOS\nOverall survival\n最终临床获益的重要指标\n\n\nDistant DFS\nDistant disease-free survival\n重点评价远处转移或死亡\n\n\nLung cancer-specific survival\n肺癌特异性生存\n可能受死因判定误差影响\n\n\nctDNA clearance\nctDNA清除\n探索分子层面的治疗反应\n\n\n\n在辅助治疗中，DFS可比OS更早成熟，但DFS改善并不总能保证OS改善。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#rare-tumor-setting",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#rare-tumor-setting",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "16.3 Rare Tumor Setting",
+    "text": "16.3 Rare Tumor Setting\nASPS等罕见癌种难以开展大型随机试验，因此常使用single-arm study、ORR by independent review、DOR、PFS和long-term response rate。在单臂研究中，无法通过随机对照完全排除自然病程、患者选择和评价偏倚。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#non-proportional-hazards",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#non-proportional-hazards",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.1 Non-Proportional Hazards",
+    "text": "17.1 Non-Proportional Hazards\n免疫治疗试验可能出现生存曲线延迟分离、早期无明显差异、后期出现长期生存平台，或少数长期应答者产生明显尾部效应。此时proportional hazards assumption, PH assumption（比例风险假设）可能不成立。\n仅报告单一hazard ratio, HR（风险比）可能无法完整描述治疗效果。可补充Kaplan-Meier curves、landmark survival rates、milestone survival、restricted mean survival time, RMST（限制性平均生存时间）、piecewise HR、weighted log-rank test和cure model或mixture model探索。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#delayed-treatment-effect",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#delayed-treatment-effect",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.2 Delayed Treatment Effect",
+    "text": "17.2 Delayed Treatment Effect\n如果预期治疗效果延迟出现，传统log-rank检验的power可能下降。样本量和事件数设计需要考虑延迟长度、早期风险、后期HR、accrual pattern、dropout、follow-up duration和weighted testing strategy。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#hierarchical-testing",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#hierarchical-testing",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.3 Hierarchical Testing",
+    "text": "17.3 Hierarchical Testing\nAtezolizumab的多个Phase 3项目使用hierarchical testing，例如先检验PD-L1富集人群，再检验更广泛人群；先检验DFS，再检验OS；同时考虑PFS和OS；或对不同组合治疗进行比较。\n预先规定的层级可以控制family-wise type I error rate, FWER（族系第一类错误率）。若较早的检验失败，后续终点即使nominal p-value显著，也可能不能正式宣称统计学显著。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#biomarker-subgroup-analysis",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#biomarker-subgroup-analysis",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.4 Biomarker Subgroup Analysis",
+    "text": "17.4 Biomarker Subgroup Analysis\nPD-L1亚组分析应区分predictive effect、prognostic effect、assay差异、cutoff差异、样本缺失、存档与新鲜组织、原发灶与转移灶、TC与IC评分。\n不能通过“PD-L1高表达组p&lt;0.05，而低表达组p&gt;0.05”判定存在亚组差异。应评价treatment-by-biomarker interaction、各亚组effect estimate、confidence interval、生物学合理性、是否预设和multiplicity adjustment。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#pd-l1作为连续变量",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#pd-l1作为连续变量",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.5 PD-L1作为连续变量",
+    "text": "17.5 PD-L1作为连续变量\nPD-L1 expression本质上是连续变量。将其划分为negative、low和high会造成信息损失和cutoff附近患者的分类不稳定。\n探索性分析可考虑spline model、continuous interaction model、response probability curve和assay-adjusted model。但监管决策通常仍需要可操作的分类cutoff和companion diagnostic。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#independent-review与investigator-assessment",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#independent-review与investigator-assessment",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.6 Independent Review与Investigator Assessment",
+    "text": "17.6 Independent Review与Investigator Assessment\nPFS和ORR可由investigator或independent review committee, IRC（独立审评委员会）评价。开放标签研究可能存在assessment timing bias、informative censoring、investigator对治疗组知情和因毒性提前安排影像检查等问题。\nIRC可降低部分评估偏倚，但也可能出现central reader与临床信息脱节、missing scan、reader disagreement和pseudo-progression判定困难。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#recist与irecist",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#recist与irecist",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.7 RECIST与iRECIST",
+    "text": "17.7 RECIST与iRECIST\n传统Response Evaluation Criteria in Solid Tumors version 1.1, RECIST 1.1（实体瘤疗效评价标准1.1版）将新病灶或明显增大通常判定为疾病进展。\nImmune RECIST, iRECIST（免疫治疗RECIST）引入immune unconfirmed progressive disease和immune confirmed progressive disease。iRECIST主要用于标准化免疫治疗试验中的数据收集和探索性分析，通常不自动替代注册试验的RECIST 1.1主要分析。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#treatment-beyond-progression",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#treatment-beyond-progression",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.8 Treatment Beyond Progression",
+    "text": "17.8 Treatment Beyond Progression\n部分临床试验允许临床稳定患者在RECIST进展后继续治疗。继续治疗条件可能包括无快速临床恶化、无关键器官威胁、患者仍可能获得临床获益，以及能够完成确认性扫描。\n这会产生重要intercurrent events，并可能影响PFS、treatment duration、subsequent therapy、safety exposure和OS解释。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#treatment-discontinuation-and-subsequent-therapy",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#treatment-discontinuation-and-subsequent-therapy",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.9 Treatment Discontinuation and Subsequent Therapy",
+    "text": "17.9 Treatment Discontinuation and Subsequent Therapy\n免疫治疗可能因radiographic progression、clinical progression、immune-mediated toxicity、完成固定疗程、患者决定、开始其他抗肿瘤治疗、手术或局部治疗而停止。\nOS可能受到对照组后续使用其他ICI、试验组后续接受targeted therapy、crossover和不同国家后线治疗可及性的影响。主要ITT分析通常采用treatment-policy strategy，不因后续治疗进行删失。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#ctdna-mrd-enriched-design",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#ctdna-mrd-enriched-design",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.10 ctDNA MRD-Enriched Design",
+    "text": "17.10 ctDNA MRD-Enriched Design\nIMvigor011属于biomarker-enriched、MRD-guided设计。只有术后ctDNA MRD阳性的患者被随机化，因此研究回答：\n\n对于术后已经检测到ctDNA MRD的MIBC患者，atezolizumab相较placebo是否改善结局？\n\n它不直接回答所有术后MIBC患者是否均应接受atezolizumab、ctDNA MRD阴性患者是否完全无获益，或不同ctDNA assay是否具有相同治疗选择能力。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#serial-screening-and-landmark-bias",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#serial-screening-and-landmark-bias",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.11 Serial Screening and Landmark Bias",
+    "text": "17.11 Serial Screening and Landmark Bias\nctDNA MRD可以在术后6周至1年内通过连续检测发现。患者必须存活、未发生临床复发、完成检测并最终转为ctDNA阳性，才能进入随机化。\n因此，分析和报告必须明确screening cohort、randomized cohort、ctDNA-positive timepoint、从手术还是从随机化开始计时，以及检测期间发生复发的患者如何处理。不能将随机化后DFS与从手术开始的自然历史数据直接比较。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#competing-risks",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#competing-risks",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.12 Competing Risks",
+    "text": "17.12 Competing Risks\n辅助治疗研究中可能出现肿瘤复发、第二原发肿瘤和非癌症死亡。如果研究关注特定复发类型，可采用cumulative incidence function、cause-specific hazard model或Fine-Gray model。\n但DFS通常将预先规定的多个事件合并为composite endpoint，并使用标准time-to-event方法分析。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#safety-analysis",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#safety-analysis",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "17.13 Safety Analysis",
+    "text": "17.13 Safety Analysis\n免疫治疗安全性分析需要同时考虑常规TEAE、immune-mediated AE、serious AE、treatment-related AE、corticosteroid use、hospitalization、treatment discontinuation、death和late-onset toxicity。\n对不同治疗暴露时间的比较，可补充exposure-adjusted incidence rate, EAIR（暴露校正发生率）：\n\\[\n\\text{EAIR}\n=\n\\frac{\\text{发生至少一次事件的患者数}}\n{\\text{总暴露人年}}\n\\times100\n\\]\n但EAIR不能完全恢复随机化比较，尤其当治疗暴露时间受疗效和毒性共同影响时。",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#主要pd-l1抑制剂",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#主要pd-l1抑制剂",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "19.1 主要PD-L1抑制剂",
+    "text": "19.1 主要PD-L1抑制剂\n\n\n\n药物\n公司\n代表性开发领域\n\n\n\n\nAtezolizumab\nRoche/Genentech\nNSCLC、SCLC、HCC、melanoma、ASPS、MIBC\n\n\nDurvalumab\nAstraZeneca\nStage III NSCLC、SCLC、biliary tract cancer等\n\n\nAvelumab\nMerck KGaA/Pfizer\nUrothelial carcinoma、Merkel cell carcinoma",
+    "crumbs": [
+      "Pharmaceutical Content",
+      "Company",
+      "Roche",
+      "Tecentriq"
+    ]
+  },
+  {
+    "objectID": "docs/pharmaceutical/compound/Tecentriq.html#主要pd-1抑制剂",
+    "href": "docs/pharmaceutical/compound/Tecentriq.html#主要pd-1抑制剂",
+    "title": "Atezolizumab（阿替利珠单抗）",
+    "section": "19.2 主要PD-1抑制剂",
+    "text": "19.2 主要PD-1抑制剂\n\n\n\n药物\n公司\n代表性特点\n\n\n\n\nPembrolizumab\nMerck & Co.\n广泛肿瘤适应证和多个tumor-agnostic approval\n\n\nNivolumab\nBristol Myers Squibb\n多癌种单药及与ipilimumab联合\n\n\nCemiplimab\nRegeneron\n皮肤肿瘤及NSCLC\n\n\nDostarlimab\nGSK\ndMMR肿瘤和endometrial cancer\n\n\n\n不同药物的适应证来自各自临床试验，不应将同一作用机制视为自动可互换。",
     "crumbs": [
       "Pharmaceutical Content",
       "Company",

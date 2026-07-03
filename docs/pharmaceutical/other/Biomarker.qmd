@@ -55,7 +55,7 @@ Biomarker 可以来源于：
 |---|---|
 | DNA | *EGFR* mutation、*[KRAS](../target/KRAS.qmd)* mutation、*BRCA1/2* mutation |
 | RNA | Gene expression、RNA sequencing |
-| Protein | [PD-L1](../target/PD-L1.qmd)、[HER2](../target/HER.qmd) |
+| Protein | [PD-L1](../target/PD-L1.qmd)、[HER2](../target/HER.qmd)、[biomarker expression](Biomarker_Expression.qmd) |
 | Circulating biomarker | Circulating tumor DNA, ctDNA（循环肿瘤 DNA）、circulating tumor cell, CTC（循环肿瘤细胞） |
 | Immune biomarker | Tumor-infiltrating lymphocytes, TIL；免疫细胞亚群 |
 | Imaging biomarker | PET、MRI、CT 定量参数 |
@@ -87,8 +87,8 @@ Biomarker 可以来源于：
 
 | Biomarker | 临床意义 |
 |---|---|
-| [PD-L1](../target/PD-L1.qmd) TPS | 判断部分 NSCLC 患者是否适合 PD-1/PD-L1 单药治疗 |
-| [PD-L1](../target/PD-L1.qmd) CPS | 胃癌、头颈癌、宫颈癌等常用评分 |
+| [PD-L1](../target/PD-L1.qmd) [TPS](Biomarker_Expression.qmd#tumor-proportion-scoretps) | 判断部分 NSCLC 患者是否适合 PD-1/PD-L1 单药治疗 |
+| [PD-L1](../target/PD-L1.qmd) [CPS](Biomarker_Expression.qmd#combined-positive-scorecps) | 胃癌、头颈癌、宫颈癌等常用评分 |
 | Microsatellite instability-high, MSI-H（微卫星高度不稳定） | 预测部分肿瘤从免疫治疗获益 |
 | Mismatch repair deficiency, dMMR（错配修复缺陷） | 与 MSI-H 密切相关 |
 | Tumor mutational burden, TMB（肿瘤突变负荷） | 部分研究中用于预测免疫治疗获益 |

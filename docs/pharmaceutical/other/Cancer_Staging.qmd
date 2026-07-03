@@ -1,0 +1,304 @@
+---
+title: "Cancer Staging（肿瘤分期）"
+description: "系统介绍肿瘤分期的基本概念、TNM分期系统、临床应用及其在临床试验中的重要作用。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Disease Overview
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Cancer staging（肿瘤分期）**是指根据肿瘤的大小、局部侵犯范围、淋巴结受累情况及远处转移情况，对恶性肿瘤进行标准化分类的过程。肿瘤分期是肿瘤诊疗中最重要的基础信息之一，直接影响患者的预后评估、治疗策略选择以及临床试验设计。
+
+需要注意的是，**staging（分期）**描述的是疾病扩散程度，而**grading（分级）**描述的是肿瘤细胞的分化程度，两者属于不同概念。
+
+目前绝大多数实体瘤均采用**[Tumor-Node-Metastasis, TNM（肿瘤-淋巴结-远处转移）](TNM_Staging.qmd)**分期系统，由**American Joint Committee on Cancer, AJCC（美国癌症联合委员会）**和**Union for International Cancer Control, UICC（国际抗癌联盟）**共同制定，最新版为AJCC 8th Edition，部分癌种未来将逐步更新。
+
+# 为什么分期如此重要？
+
+肿瘤分期几乎决定了整个患者管理流程。
+
+主要作用包括：
+
+- 判断疾病严重程度；
+- 预测患者预后；
+- 制定治疗方案；
+- 判断是否具有手术机会；
+- 临床试验入组；
+- 分层随机化（stratification）；
+- 亚组分析（subgroup analysis）；
+- 结果解释。
+
+例如，同样都是[NSCLC](../disease/NSCLC.qmd)患者：
+
+- Stage I通常接受手术治疗；
+- Stage III通常接受同步放化疗（cCRT）±免疫治疗；
+- Stage IV通常接受全身治疗。
+
+因此，大多数临床试验首先限定患者所处的clinical stage。
+
+# TNM分期系统
+
+TNM由三个独立维度组成。
+
+| 组成 | 英文 | 含义 |
+|---|---|---|
+| T | Tumor | 原发肿瘤大小及局部侵犯 |
+| N | Node | 区域淋巴结受累情况 |
+| M | Metastasis | 是否存在远处转移 |
+
+三者组合后即可确定最终Stage。
+
+例如：
+
+| TNM | Overall Stage |
+|---|---|
+| T1N0M0 | Stage I |
+| T2N1M0 | Stage II |
+| T3N2M0 | Stage III |
+| Any T Any N M1 | Stage IV（绝大多数实体瘤） |
+
+不同癌种的具体对应关系有所不同，因此最终Stage需依据相应AJCC癌种分期标准确定。
+
+# T（Tumor）
+
+T反映原发肿瘤的局部情况。
+
+通常考虑：
+
+- 肿瘤最大径；
+- 是否侵犯邻近组织；
+- 是否侵犯重要器官；
+- 是否侵犯血管；
+- 是否侵犯胸壁等。
+
+一般分为：
+
+| 分类 | 含义 |
+|---|---|
+| TX | 无法评估 |
+| T0 | 未发现原发灶 |
+| Tis | 原位癌（carcinoma in situ） |
+| T1 | 较小局限肿瘤 |
+| T2 | 中等大小 |
+| T3 | 较大或局部侵犯 |
+| T4 | 广泛侵犯邻近结构 |
+
+不同癌种的尺寸标准不同。
+
+例如肺癌：
+
+- T1 <=3 cm；
+- T2 >3-5 cm；
+- T3 >5-7 cm；
+- T4 >7 cm或侵犯重要结构。
+
+乳腺癌则主要依据肿瘤直径划分。
+
+# N（Node）
+
+N表示区域淋巴结是否发生转移。
+
+一般包括：
+
+| 分类 | 含义 |
+|---|---|
+| NX | 无法评估 |
+| N0 | 无淋巴结转移 |
+| N1 | 少量区域淋巴结 |
+| N2 | 更多区域淋巴结 |
+| N3 | 广泛区域淋巴结受累 |
+
+不同癌种中，淋巴结数量、解剖位置、是否锁骨上、是否纵隔等定义均不同。
+
+例如NSCLC：
+
+- N1：同侧肺门；
+- N2：同侧纵隔；
+- N3：对侧纵隔或锁骨上。
+
+# M（Metastasis）
+
+M描述是否存在远处转移。
+
+通常最简单：
+
+| 分类 | 含义 |
+|---|---|
+| M0 | 无远处转移 |
+| M1 | 存在远处转移 |
+
+很多癌种进一步细分：
+
+| 分类 | 含义 |
+|---|---|
+| M1a | 局限远处转移 |
+| M1b | 单个远处器官 |
+| M1c | 多器官转移 |
+
+例如NSCLC中，M1a包括对侧肺结节、恶性胸水和恶性心包积液；M1b表示单一远处转移灶；M1c表示多发远处转移。
+
+# Overall Stage（总体分期）
+
+TNM最终合成为Stage。
+
+大多数实体瘤包括：
+
+| Stage | 一般特点 |
+|---|---|
+| Stage 0 | 原位癌 |
+| Stage I | 局限性疾病 |
+| Stage II | 局部进展 |
+| Stage III | 区域扩散 |
+| Stage IV | 远处转移 |
+
+应注意：不同癌种Stage定义完全不同。
+
+不能简单比较：
+
+> Stage III lung cancer
+
+与
+
+> Stage III colon cancer
+
+因为其预后差异很大。
+
+# Clinical Stage 与 Pathologic Stage
+
+这是临床试验中非常重要的两个概念。
+
+| 类型 | 缩写 | 获得时间 | 数据来源 |
+|---|---|---|---|
+| Clinical Stage | cStage | 治疗前 | 影像、体检、活检 |
+| Pathologic Stage | pStage | 手术后 | 手术标本病理 |
+
+例如，cT2N1M0表示治疗前根据CT、PET及穿刺判断；pT1N0M0表示术后发现实际病灶更小且无淋巴结转移。
+
+因此，pathologic staging通常更准确。
+
+# Restaging（重新分期）
+
+患者治疗后可再次进行评估，例如新辅助治疗（neoadjuvant therapy）、放疗后或化疗后。
+
+此时原始Stage通常不会改变，但会增加前缀表示治疗后的分期。
+
+| 表示方式 | 含义 |
+|---|---|
+| ycTNM | 新辅助治疗后临床分期 |
+| ypTNM | 新辅助治疗后病理分期 |
+| rTNM | 复发后重新分期 |
+| aTNM | 尸检分期 |
+
+例如，ypT0N0通常意味着达到**pathologic complete response, pCR（病理完全缓解）**。
+
+# Staging与Clinical Setting
+
+在现代肿瘤学中，临床试验通常不会仅根据Stage招募患者，而是根据更具体的**clinical setting（临床场景）**。
+
+例如NSCLC：
+
+| Clinical Setting | 典型Stage |
+|---|---|
+| Early-stage resectable | Stage I-II，部分IIIA |
+| Locally advanced resectable | 部分Stage III |
+| Unresectable Stage III | Stage III |
+| Metastatic first-line | Stage IV |
+| Post-surgery adjuvant | 已手术切除 |
+| Neoadjuvant | 手术前治疗 |
+| Relapsed disease | 复发疾病 |
+
+因此，Stage只是clinical setting的一部分，还需结合：
+
+- 是否可切除（resectability）；
+- [biomarker](Biomarker.qmd)状态；
+- 既往治疗；
+- [ECOG Performance Status](ECOG_Performance_Status.qmd)；
+- 治疗线数（line of therapy）。
+
+# Staging与临床试验
+
+肿瘤分期几乎影响临床试验设计的所有环节。
+
+## 入组标准
+
+多数试验明确规定允许的Stage，例如：
+
+- Stage II-III；
+- Unresectable Stage III；
+- Stage IV。
+
+## 分层随机化
+
+Stage常作为随机化分层因素（stratification factor）。
+
+例如：
+
+- Stage III vs IV；
+- Early vs late stage。
+
+这样可以减少治疗组之间的预后差异。
+
+## 终点选择
+
+不同Stage关注的主要终点不同。
+
+| Clinical Setting | 常见主要终点 |
+|---|---|
+| Early-stage | Disease-free survival (DFS)、Event-free survival (EFS) |
+| Neoadjuvant | pCR、Major pathologic response (MPR)、EFS |
+| Stage III | [Progression-free survival (PFS)](PFS.qmd)、Overall survival (OS) |
+| Stage IV | PFS、OS、Objective response rate (ORR)、Duration of response (DOR) |
+
+## 生物统计学考虑
+
+分期是肿瘤临床试验中最重要的预后因素之一，因此统计设计通常需要充分考虑其影响：
+
+- Stage常作为随机化分层因素，提高治疗组间基线平衡。
+- Cox比例风险模型通常将Stage作为协变量进行调整，以提高估计效率。
+- 不同Stage患者的事件发生率差异较大，因此样本量估计需结合目标人群的分期构成。
+- Stage相关亚组分析应预先在统计分析计划（SAP）中定义，避免事后探索性分析导致结果解释困难。
+- 随着新辅助治疗和围手术期治疗的发展，越来越多试验采用治疗后的ypStage作为预后分析的重要指标。
+
+# 常见误区
+
+1. **Stage并不代表组织学恶性程度。**  
+   分期描述疾病范围，而不是肿瘤细胞的分化程度。
+
+2. **相同Stage不代表预后完全相同。**  
+   预后还受到分子标志物、治疗方式、ECOG评分及患者基础情况等因素影响。
+
+3. **不同癌种不能直接比较相同Stage。**  
+   Stage III肺癌与Stage III结直肠癌的生物学行为和生存率差异显著。
+
+4. **临床试验通常依据Clinical Setting，而不仅仅依据Stage。**  
+   分期只是患者特征的一部分。
+
+# Key Takeaways
+
+1. TNM是目前实体瘤最广泛采用的国际标准分期系统。
+2. T、N、M分别描述原发肿瘤、区域淋巴结及远处转移情况。
+3. Clinical Stage和Pathologic Stage分别用于治疗前和手术后的疾病评估。
+4. 肿瘤分期决定治疗策略、预后评估及临床试验入组。
+5. 现代肿瘤临床试验更强调Clinical Setting，而不仅仅是AJCC分期。
+6. Stage是临床试验设计、随机化分层及统计分析中最重要的预后因素之一。
+
+# References
+
+1. Amin MB, et al. *AJCC Cancer Staging Manual*. 8th Edition.
+2. Union for International Cancer Control (UICC). *TNM Classification of Malignant Tumours*. 8th Edition.
+3. National Comprehensive Cancer Network (NCCN) Clinical Practice Guidelines in Oncology.
+4. American Joint Committee on Cancer (AJCC). Cancer Staging Resources.
+5. Edge SB, et al. AJCC Cancer Staging Manual. Springer.

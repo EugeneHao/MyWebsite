@@ -20,7 +20,7 @@ bibliography: ../../../references.bib
 
 # 概述
 
-**TNM staging（TNM分期）**是目前全球应用最广泛的恶性肿瘤分期系统，由**American Joint Committee on Cancer, AJCC（美国癌症联合委员会）**和**Union for International Cancer Control, UICC（国际抗癌联盟）**共同制定和更新。
+**TNM staging（TNM分期）**是[肿瘤分期](Cancer_Staging.qmd)中目前全球应用最广泛的实体瘤分期系统，由**American Joint Committee on Cancer, AJCC（美国癌症联合委员会）**和**Union for International Cancer Control, UICC（国际抗癌联盟）**共同制定和更新。
 
 TNM分期通过评价：
 

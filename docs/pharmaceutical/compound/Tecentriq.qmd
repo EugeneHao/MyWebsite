@@ -1,33 +1,726 @@
 ---
-title: "Tecentriq"
+title: "Atezolizumab（阿替利珠单抗）"
+description: "系统介绍Atezolizumab的PD-L1抑制机制、获批适应证、关键临床试验、安全性，以及免疫肿瘤临床开发和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
 ---
 
-关于德沙替尼（Tecentriq，通用名：阿替利珠单抗 Atezolizumab），以下是其详细介绍，包括治疗原理和适应症的详细信息：
+# 药物概述
 
-### **药物简介（Drug Overview）**
+**Atezolizumab（阿替利珠单抗；Genentech/[Roche](../company/Roche.qmd)；Tecentriq / 泰圣奇；development code: MPDL3280A）**是一种靶向**[programmed death-ligand 1, PD-L1（程序性死亡配体1）](../target/PD-L1.qmd)**的人源化、Fc工程化IgG1单克隆抗体。
 
-德沙替尼（Tecentriq，通用名为阿替利珠单抗 Atezolizumab）是一种人源化单克隆抗体（Humanized Monoclonal Antibody），属于[免疫检查点抑制剂（Immune Checkpoint Inhibitor）](../other/Immune_Checkpoint.qmd)。它用于治疗多种类型的癌症，包括非小细胞肺癌（Non-Small Cell Lung Cancer, [NSCLC](../disease/NSCLC.qmd)）、[三阴性乳腺癌](../disease/Breast_Cancer.qmd)（Triple-Negative Breast Cancer, TNBC）和泌尿系统癌症等。
+Atezolizumab通过阻断PD-L1与PD-1和B7.1的结合，解除肿瘤微环境对T细胞的抑制，从而恢复抗肿瘤免疫反应。它属于**[immune checkpoint inhibitor, ICI（免疫检查点抑制剂）](../other/Immune_Checkpoint.qmd)**，也是较早获得全球监管批准的抗PD-L1抗体之一。
 
-### **治疗原理（Treatment Mechanism）**
+Atezolizumab最初由Genentech开发。Genentech属于Roche集团，因此临床开发和商业化资料中可能同时出现Genentech和Roche。
 
-阿替利珠单抗的作用机制是靶向[PD-L1（程序性死亡配体-1，Programmed Death-Ligand 1）](../target/PD-L1.qmd)，一种在一些癌细胞以及免疫系统细胞表面表达的蛋白。通过阻断PD-L1与其受体PD-1的结合，阿替利珠单抗能够激活T细胞，增强免疫系统对癌细胞的攻击能力。
+截至2026年5月，美国批准的主要适应证覆盖：
 
-### **适应症（Indications）**
+- **[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)**；
+- **[extensive-stage small cell lung cancer, ES-SCLC（广泛期小细胞肺癌）](../disease/SCLC.qmd#extensive-stage-sclc)**；
+- **hepatocellular carcinoma, HCC（肝细胞癌）**；
+- BRAF V600突变阳性的晚期[melanoma（黑色素瘤）](../disease/Melanoma.qmd)；
+- **alveolar soft part sarcoma, ASPS（腺泡状软组织肉瘤）**；
+- **muscle-invasive bladder cancer, MIBC（肌层浸润性膀胱癌）**术后ctDNA MRD阳性患者。
 
-德沙替尼被批准用于治疗以下疾病：
+此外，皮下固定复方制剂**atezolizumab and hyaluronidase-tqjs（阿替利珠单抗与透明质酸酶；Genentech；Tecentriq Hybreza）**已在美国获批，可在多个适应证中替代静脉atezolizumab给药。
 
-1.  非小细胞肺癌（Non-Small Cell Lung Cancer, NSCLC，非小细胞肺癌）
+# Drug Profile（药物信息）
 
-2.  三阴性乳腺癌（Triple-Negative Breast Cancer, TNBC，三阴性乳腺癌）
+| 项目 | 说明 |
+|---|---|
+| Generic name | Atezolizumab |
+| 中文通用名 | 阿替利珠单抗 |
+| Brand name | Tecentriq / 泰圣奇 |
+| Development code | MPDL3280A |
+| 原始开发方 | Genentech |
+| 当前开发及商业化公司 | Genentech/Roche |
+| 药物类型 | Fc-engineered humanized IgG1 monoclonal antibody |
+| 药物类别 | PD-L1 inhibitor |
+| 分子靶点 | PD-L1 |
+| 主要阻断相互作用 | PD-L1-PD-1和PD-L1-B7.1 |
+| 静脉给药 | Tecentriq |
+| 皮下复方制剂 | Tecentriq Hybreza |
+| 美国首次批准 | 2016年5月18日 |
+| 主要治疗领域 | Lung cancer、HCC、melanoma、sarcoma和bladder cancer |
 
-3.  泌尿上皮癌（Urothelial Carcinoma，泌尿上皮癌）
+# Mechanism of Action（作用机制）
 
-4.  肝细胞癌（Hepatocellular Carcinoma, HCC，肝细胞癌）
+## PD-1/PD-L1免疫检查点
 
-5.  [广泛期小细胞肺癌（Extensive-Stage Small Cell Lung Cancer, ES-SCLC）](../disease/SCLC.qmd#extensive-stage-sclc)
+**Programmed cell death protein 1, PD-1（程序性死亡受体1）**主要表达于活化的T细胞表面。PD-L1可表达于肿瘤细胞、巨噬细胞、树突状细胞和其他肿瘤浸润免疫细胞。
 
-### **副作用（Side Effects）**
+PD-L1与PD-1结合后，可抑制T细胞增殖、细胞因子产生、细胞毒性T细胞活性和抗肿瘤免疫记忆：
 
-德沙替尼的常见副作用包括疲劳、食欲减退、恶心、腹泻、皮疹和发热。较为严重的副作用可能包括肺炎、肝脏问题、内分泌问题和肾脏问题。由于德沙替尼是一种免疫疗法，它可能导致免疫系统过度活跃并攻击正常组织和器官。
+$$
+\text{PD-L1}
++
+\text{PD-1}
+\longrightarrow
+\text{T-cell inhibition}
+$$
 
-德沙替尼作为一种免疫治疗药物，在多种癌症的治疗中展现了显著的疗效。然而，考虑到其潜在的副作用，使用时应在医疗专业人员的指导下进行。
+肿瘤可以通过上调[PD-L1表达](../other/Biomarker_Expression.qmd)，利用这一生理性免疫调节机制逃避免疫系统攻击。
+
+## Atezolizumab的作用
+
+Atezolizumab与PD-L1结合，阻断PD-L1与PD-1以及B7.1（CD80）之间的相互作用：
+
+$$
+\text{Atezolizumab}
++
+\text{PD-L1}
+\longrightarrow
+\text{PD-L1 blockade}
+\longrightarrow
+\text{T-cell reactivation}
+$$
+
+恢复活性的T细胞可以识别肿瘤抗原、释放细胞因子、杀伤肿瘤细胞、招募其他免疫细胞，并建立一定程度的免疫记忆。
+
+## Fc工程化
+
+Atezolizumab的Fc区域经过工程化处理，以尽量减少**antibody-dependent cellular cytotoxicity, ADCC（抗体依赖性细胞介导的细胞毒作用）**和对表达PD-L1免疫细胞的非预期清除。
+
+这使其主要通过免疫检查点阻断发挥作用，而不是通过Fc介导的细胞杀伤发挥作用。
+
+## 与PD-1抑制剂的区别
+
+| 药物类别 | 代表药物 | 结合靶点 | 主要阻断作用 |
+|---|---|---|---|
+| PD-L1 inhibitor | Atezolizumab、[durvalumab](Imfinzi.qmd)、avelumab | PD-L1 | 阻断PD-L1与PD-1及部分其他受体的相互作用 |
+| PD-1 inhibitor | [Pembrolizumab](Keytruda.qmd)、[nivolumab](Opdivo.qmd)、cemiplimab | PD-1 | 阻断PD-1与PD-L1及PD-L2的相互作用 |
+
+两类药物均可恢复T细胞抗肿瘤活性，但其结合位置、部分受体相互作用和临床开发项目不同。目前不能仅根据PD-1或PD-L1靶点类别，直接认定其中一类药物在所有癌种中更有效或更安全。
+
+# Dosage and Administration（剂量与给药）
+
+## 静脉制剂Tecentriq
+
+成人常用静脉剂量包括：
+
+| 给药方案 | 给药间隔 |
+|---:|---|
+| 840 mg | Every 2 weeks |
+| 1,200 mg | Every 3 weeks |
+| 1,680 mg | Every 4 weeks |
+
+首次静脉输注通常持续60分钟。如果首次输注耐受良好，后续输注可缩短至30分钟。在联合化疗或[bevacizumab](Avastin.qmd)时，同一天通常先给予atezolizumab，再给予其他静脉药物。
+
+## 皮下制剂Tecentriq Hybreza
+
+Tecentriq Hybreza为atezolizumab与重组人透明质酸酶的固定复方制剂。
+
+| 成分 | 推荐剂量 |
+|---|---:|
+| Atezolizumab | 1,875 mg |
+| Hyaluronidase-tqjs | 30,000 units |
+
+该制剂每3周在大腿皮下注射一次，给药时间约为7分钟。Tecentriq和Tecentriq Hybreza不是按毫克数直接一一替换，而应按照各自获批的固定给药方案使用。
+
+# Approved Indications（美国获批适应证）
+
+## Non-Small Cell Lung Cancer（非小细胞肺癌）
+
+### 可切除NSCLC辅助治疗
+
+Atezolizumab单药用于已完整切除、已接受platinum-based adjuvant chemotherapy、Stage II-IIIA、肿瘤细胞PD-L1表达>=1%且由FDA授权检测确定的成人NSCLC患者辅助治疗。
+
+治疗通常持续最长1年，除非发生疾病复发或不可接受的毒性。该适应证主要基于IMpower010研究。
+
+### 转移性NSCLC一线单药
+
+Atezolizumab可单药用于转移性NSCLC、PD-L1高表达、无*EGFR*或*ALK*驱动基因异常的成人一线治疗。
+
+美国处方信息中的PD-L1高表达定义为：
+
+- **tumor cell, TC（肿瘤细胞）**PD-L1染色>=50%；或
+- **tumor-infiltrating immune cell, IC（肿瘤浸润免疫细胞）**PD-L1染色覆盖>=10%的肿瘤区域。
+
+该适应证主要基于IMpower110研究。
+
+### 转移性非鳞状NSCLC一线联合治疗
+
+Atezolizumab可与下列方案联合用于无*EGFR*或*ALK*驱动异常的转移性非鳞状NSCLC：
+
+1. Bevacizumab + paclitaxel + carboplatin；
+2. Nab-paclitaxel + carboplatin。
+
+第一种组合常简称为：
+
+$$
+\text{ABCP}
+=
+\text{Atezolizumab}
++
+\text{Bevacizumab}
++
+\text{Carboplatin}
++
+\text{Paclitaxel}
+$$
+
+主要支持性研究分别为IMpower150和IMpower130。
+
+### 经治转移性NSCLC
+
+Atezolizumab单药也可用于在platinum-containing chemotherapy治疗期间或之后进展的转移性NSCLC。存在*EGFR*或*ALK*基因异常的患者，应先在相应获批靶向治疗后发生疾病进展。
+
+该适应证主要基于OAK等研究。
+
+## Extensive-Stage Small Cell Lung Cancer（广泛期小细胞肺癌）
+
+### 一线治疗
+
+Atezolizumab联合carboplatin和etoposide用于成人ES-SCLC一线治疗。典型治疗框架为诱导期atezolizumab + carboplatin + etoposide，随后atezolizumab maintenance。
+
+该适应证基于IMpower133研究，是免疫治疗首次改变ES-SCLC一线标准治疗的重要结果之一。
+
+### Lurbinectedin联合维持治疗
+
+2025年10月2日，FDA批准**lurbinectedin（芦比替定；Jazz Pharmaceuticals与PharmaMar；Zepzelca）**联合atezolizumab，用于完成atezolizumab、carboplatin和etoposide一线诱导治疗后疾病未进展的成人ES-SCLC患者维持治疗。
+
+该适应证主要基于IMforte研究，是一种maintenance intensification strategy（强化维持治疗策略）。
+
+## Hepatocellular Carcinoma（肝细胞癌）
+
+Atezolizumab联合**bevacizumab（贝伐珠单抗；Genentech/Roche；[Avastin / 安维汀](Avastin.qmd)）**用于既往未接受系统治疗的unresectable或metastatic HCC成人患者。
+
+该适应证主要基于IMbrave150研究。治疗前通常需要评估食管或胃底静脉曲张、出血风险、肝功能、门静脉高压、尿蛋白、血压和近期出血史，因为bevacizumab可增加出血、高血压、蛋白尿和血栓相关风险。
+
+## Melanoma（黑色素瘤）
+
+Atezolizumab联合[cobimetinib](Cotellic.qmd)和[vemurafenib](Zelboraf.qmd)，用于BRAF V600 mutation-positive、unresectable或metastatic melanoma成人患者。开始治疗前必须使用FDA授权检测确认BRAF V600突变。
+
+## Alveolar Soft Part Sarcoma（腺泡状软组织肉瘤）
+
+Atezolizumab单药用于成人和2岁及以上儿童的unresectable或metastatic ASPS。ASPS是一种罕见软组织肉瘤，通常生长相对缓慢，但容易发生肺、脑和骨等部位转移。
+
+儿童推荐静脉剂量通常为：
+
+$$
+15\ \text{mg/kg every 3 weeks}
+$$
+
+最高剂量为1,200 mg。
+
+## Muscle-Invasive Bladder Cancer（肌层浸润性膀胱癌）
+
+2026年5月15日，FDA批准atezolizumab用于已接受radical cystectomy（根治性膀胱切除术）后，通过连续血浆检测发现**circulating tumor DNA molecular residual disease, ctDNA MRD（循环肿瘤DNA分子残留病灶）**的成人MIBC患者辅助治疗。
+
+患者选择使用FDA授权的Signatera CDx检测。ctDNA检测通常在膀胱切除术后至少6周开始，并在术后一年内进行连续监测。治疗可持续最长一年，除非出现疾病复发或不可接受毒性。
+
+该适应证主要基于IMvigor011研究，是首批以术后ctDNA MRD阳性作为治疗选择条件的实体瘤药物适应证之一。
+
+# Historical Indications and Withdrawals（历史适应证与撤回）
+
+Atezolizumab曾在美国获得部分accelerated approval适应证，随后因验证性研究结果、治疗格局变化或商业决策而撤回。
+
+| 历史适应证 | 当前美国状态 | 说明 |
+|---|---|---|
+| 局部晚期或转移性urothelial carcinoma | 已撤回 | 早期基于单臂研究获得加速批准 |
+| PD-L1阳性metastatic triple-negative breast cancer联合nab-paclitaxel | 已撤回 | 美国适应证于2021年撤回 |
+| 部分一线cisplatin-ineligible urothelial carcinoma | 不在2026年美国标签中 | 不应按照旧资料视为当前适应证 |
+
+讨论atezolizumab适应证时，应明确国家或地区、具体日期、当前标签，以及历史批准是否已经撤回。
+
+# Key Clinical Trials（关键临床试验）
+
+| Trial | Phase | Disease setting | Treatment comparison | 主要终点或结论 |
+|---|---:|---|---|---|
+| OAK | 3 | 经治转移性NSCLC | Atezolizumab vs [docetaxel](Docetaxel.qmd) | OS改善 |
+| IMpower110 | 3 | PD-L1筛选的转移性NSCLC一线 | Atezolizumab vs platinum chemotherapy | 高PD-L1人群OS改善 |
+| IMpower130 | 3 | 转移性非鳞状NSCLC一线 | Atezolizumab + carboplatin + nab-paclitaxel vs chemotherapy | PFS和OS改善 |
+| IMpower150 | 3 | 转移性非鳞状NSCLC一线 | ABCP vs bevacizumab + chemotherapy | PFS和OS改善 |
+| IMpower010 | 3 | 完全切除NSCLC辅助治疗 | Atezolizumab vs best supportive care | PD-L1阳性Stage II-IIIA人群DFS改善 |
+| IMpower133 | 1/3 | ES-SCLC一线 | Atezolizumab + carboplatin/etoposide vs chemotherapy | OS和PFS改善 |
+| IMforte | 3 | ES-SCLC一线治疗后维持 | Lurbinectedin + atezolizumab vs atezolizumab | PFS和OS改善 |
+| IMbrave150 | 3 | 未经系统治疗的不可切除HCC | Atezolizumab + bevacizumab vs sorafenib | OS和PFS改善 |
+| IMspire150 | 3 | BRAF V600阳性晚期melanoma | Atezolizumab + vemurafenib + cobimetinib vs placebo combination | PFS改善 |
+| ML39345 | 2 | 不可切除或转移性ASPS | Single-arm atezolizumab | ORR和DOR支持批准 |
+| IMvigor011 | 3 | 膀胱切除术后ctDNA MRD阳性MIBC | Atezolizumab vs placebo | DFS和OS改善 |
+| IMscin001 | 1b/3 | 多种atezolizumab适应证 | SC vs IV atezolizumab | PK comparability及安全性支持皮下制剂 |
+
+# Lung Cancer Clinical Development（肺癌临床开发）
+
+## OAK
+
+OAK是一项randomized、open-label、Phase 3研究，比较atezolizumab与docetaxel，用于既往接受过治疗的晚期NSCLC患者。
+
+Primary endpoint为**overall survival, OS（总生存期）**。该研究显示atezolizumab相较docetaxel改善OS。疗效并不完全局限于PD-L1高表达人群，但PD-L1表达较高患者通常表现出更大的治疗效果。
+
+OAK体现了免疫治疗中一个重要现象：
+
+> ORR改善幅度可能有限，但缓解持续时间和生存曲线后期分离可带来OS获益。
+
+## IMpower110
+
+IMpower110纳入未经化疗的转移性NSCLC患者，并根据肿瘤细胞和免疫细胞PD-L1表达进行分层。
+
+研究比较atezolizumab monotherapy与platinum-based chemotherapy。在高PD-L1表达、无*EGFR*或*ALK*驱动异常的人群中，atezolizumab改善OS。
+
+## IMpower150
+
+IMpower150比较多个含atezolizumab和bevacizumab的方案。最具临床影响的方案为ABCP：atezolizumab、bevacizumab、carboplatin和paclitaxel。
+
+该研究的关键特点包括免疫治疗与化疗联合、同时使用抗[VEGF](../target/VEGF.qmd)治疗、纳入部分肝转移患者，并探索*EGFR*或*ALK*异常患者靶向治疗后的疗效。VEGF抑制可能通过改善肿瘤血管和[免疫微环境](../other/TME.qmd)，增强免疫治疗活性。
+
+## IMpower010
+
+IMpower010纳入完全切除Stage IB-IIIA NSCLC患者。患者完成最多4个周期cisplatin-based adjuvant chemotherapy后，被随机分配至atezolizumab或best supportive care。
+
+主要分析采用层级结构，重点人群包括Stage II-IIIA且PD-L1 TC>=1%、所有随机Stage II-IIIA患者和intention-to-treat population。该研究显示，在PD-L1 TC>=1%的Stage II-IIIA人群中，atezolizumab改善**disease-free survival, DFS（无病生存期）**。
+
+辅助治疗中的临床问题不同于转移性治疗：患者可能已经通过手术治愈，所有患者均暴露于免疫毒性，DFS获益需要与长期OS、复发模式和永久性毒性共同解释。
+
+# Small Cell Lung Cancer Development（小细胞肺癌开发）
+
+## IMpower133
+
+IMpower133比较atezolizumab + carboplatin + etoposide与placebo + carboplatin + etoposide，用于未经治疗的ES-SCLC。
+
+Co-primary endpoints为OS和**[progression-free survival, PFS（无进展生存期）](../other/PFS.qmd)**。研究显示atezolizumab联合方案改善OS和PFS，确立了化疗联合免疫治疗的ES-SCLC一线框架。
+
+与NSCLC不同，PD-L1 expression在SCLC中并未成为可靠的常规患者选择标志物。
+
+## IMforte
+
+IMforte纳入完成一线atezolizumab、carboplatin和etoposide诱导治疗后疾病未进展的ES-SCLC患者。患者随机接受lurbinectedin + atezolizumab或atezolizumab alone。
+
+研究采用维持期随机设计，因此主要估计：
+
+> 在完成标准诱导治疗且未进展的患者中，增加lurbinectedin强化维持治疗的效果。
+
+该结果不能直接解释为从一线治疗开始时，对所有ES-SCLC患者实施该策略的无条件治疗效果。
+
+# Hepatocellular Carcinoma Development（肝细胞癌开发）
+
+## IMbrave150
+
+IMbrave150是一项global、open-label、Phase 3研究，比较atezolizumab + bevacizumab与sorafenib，用于既往未接受系统治疗的不可切除HCC患者。
+
+Co-primary endpoints为OS和PFS by independent review。研究显示联合治疗显著改善OS和PFS，并改变了晚期HCC一线治疗格局。
+
+## HCC试验的特殊问题
+
+HCC疗效评价需要同时考虑肿瘤进展、基础肝硬化、肝功能恶化、门静脉高压、静脉曲张出血、病毒性肝炎和非肿瘤相关死亡。
+
+死亡可能由肿瘤进展、肝衰竭、出血或感染等不同机制导致，但OS通常仍采用all-cause death定义。Child-Pugh class、Barcelona Clinic Liver Cancer stage、macrovascular invasion和alpha-fetoprotein水平是常见预后或分层因素。
+
+# Biomarker Strategy（生物标志物策略）
+
+## PD-L1 Expression
+
+Atezolizumab项目中常使用VENTANA PD-L1 IHC assays，包括SP142和SP263。不同研究可能评价tumor-cell expression、immune-cell expression或tumor area中的免疫细胞覆盖比例。
+
+例如，在一线转移性NSCLC单药适应证中，高表达定义为：
+
+$$
+\text{TC}\geq50\%
+\quad\text{or}\quad
+\text{IC}\geq10\%
+$$
+
+这里的IC>=10%表示PD-L1阳性肿瘤浸润免疫细胞覆盖至少10%的肿瘤区域，并不是免疫细胞中有10%染色阳性。
+
+## 不同PD-L1评分不可直接互换
+
+| 评分 | 主要计算对象 | 常见应用 |
+|---|---|---|
+| [Tumor proportion score, TPS](../other/Biomarker_Expression.qmd#tumor-proportion-scoretps) | PD-L1阳性肿瘤细胞占活肿瘤细胞的比例 | 常见于pembrolizumab NSCLC项目 |
+| Tumor cell score, TC | PD-L1阳性肿瘤细胞比例 | Atezolizumab部分研究 |
+| Immune cell score, IC | PD-L1阳性免疫细胞覆盖肿瘤区域的比例 | Atezolizumab部分研究 |
+| [Combined positive score, CPS](../other/Biomarker_Expression.qmd#combined-positive-scorecps) | 阳性肿瘤细胞及特定免疫细胞除以活肿瘤细胞 | 多种其他癌种 |
+
+不同assay、抗体clone、评分算法和cutoff不能简单转换。
+
+## Driver Alterations
+
+对于转移性NSCLC，还需优先检测*EGFR* mutation、*ALK* fusion、*ROS1* fusion、*BRAF V600E*、*MET* exon 14 skipping、*RET* fusion、*NTRK* fusion、*[KRAS](../target/KRAS.qmd) G12C*和*[HER2](../target/HER.qmd)* mutation。
+
+即使PD-L1高表达，存在明确可靶向驱动异常时，治疗顺序通常仍优先考虑相应targeted therapy。
+
+## ctDNA MRD
+
+MIBC辅助治疗中的ctDNA MRD用于识别影像学尚未发现复发、但血液中已经存在肿瘤特异性DNA、具有较高临床复发风险的患者。
+
+这是一种**enrichment biomarker（富集型生物标志物）**，可避免将辅助免疫治疗暴露于所有术后患者。但ctDNA MRD阴性不等于绝对没有残留肿瘤，检测结果受肿瘤DNA释放量、检测灵敏度、取血时间、肿瘤负荷、生物学复发模式和assay设计影响。
+
+# Safety Profile（安全性）
+
+Atezolizumab可引起广泛的**immune-mediated adverse event, imAE（免疫介导不良事件）**。免疫相关毒性可以在治疗期间出现、在停止治疗后出现、同时累及多个器官，并可由轻度快速进展为危及生命的事件。
+
+## 常见不良反应
+
+单药治疗中常见不良反应可能包括fatigue、decreased appetite、nausea、cough、dyspnea、pyrexia、musculoskeletal pain、rash和pruritus。联合治疗时，不良反应还受到化疗、bevacizumab、BRAF/MEK inhibitor或lurbinectedin影响。
+
+## 重要免疫相关毒性
+
+| 器官系统 | 可能事件或表现 |
+|---|---|
+| 肺 | Immune-mediated pneumonitis，新发或加重咳嗽、呼吸困难、低氧、影像学浸润 |
+| 肠道 | Colitis，腹泻、腹痛、黏液或血便、少见肠穿孔 |
+| 肝脏 | Hepatitis，ALT/AST或bilirubin升高，HCC患者因果判断更复杂 |
+| 内分泌 | Thyroiditis、hypothyroidism、hyperthyroidism、adrenal insufficiency、hypophysitis、type 1 diabetes |
+| 肾脏 | Nephritis、renal dysfunction |
+| 皮肤 | Severe rash、Stevens-Johnson syndrome、toxic epidermal necrolysis |
+| 神经系统 | Myasthenia gravis、Guillain-Barre syndrome、encephalitis、neuropathy |
+| 心脏 | Myocarditis、pericarditis、arrhythmia |
+| 血液系统 | Hemolytic anemia、aplastic anemia、immune thrombocytopenia |
+| 肌肉骨骼 | Myositis、arthritis、polymyalgia rheumatica |
+| 眼 | Uveitis、iritis、视力改变 |
+| 胰腺 | Pancreatitis |
+| 移植相关 | Solid organ transplant rejection |
+
+Myocarditis、myositis和myasthenia gravis可形成重叠综合征，即使发生率较低，也可能迅速危及生命。
+
+## Infusion-Related Reactions
+
+静脉输注可能引起发热、寒战、面部潮红、皮疹、呼吸困难、低血压或过敏反应。根据严重程度，可采取减慢输注速度、暂停输注、对症治疗或永久停药。皮下Tecentriq Hybreza还可能导致局部注射反应。
+
+## Embryo-Fetal Toxicity
+
+基于PD-1/PD-L1通路在母胎免疫耐受中的作用，atezolizumab可能对胎儿造成伤害。具有生育能力的女性在治疗期间及末次给药后一定时间内应采取有效避孕措施，治疗期间通常不建议哺乳。
+
+# Management of Immune-Related Toxicity（免疫毒性管理）
+
+免疫毒性的基本处理原则包括：
+
+1. 尽早识别症状；
+2. 排除感染、肿瘤进展和其他原因；
+3. 根据毒性级别暂停或永久停止atezolizumab；
+4. 对中重度免疫毒性使用systemic corticosteroid；
+5. 严重或激素难治性毒性考虑其他免疫抑制剂；
+6. 缓慢减量糖皮质激素；
+7. 持续监测复发；
+8. 多学科会诊。
+
+Atezolizumab通常不进行传统意义上的剂量降低。发生毒性时主要采取withhold treatment（暂停治疗）或permanently discontinue（永久停药）。
+
+# Monitoring（治疗监测）
+
+## 治疗前评估
+
+| 评估 | 主要目的 |
+|---|---|
+| 完整病史和体检 | 识别自身免疫病和器官基础异常 |
+| CBC | 评估血细胞，特别是联合化疗时 |
+| Liver function tests | 识别基础肝病和后续肝炎 |
+| Renal function | 识别基础肾功能和免疫性肾炎 |
+| TSH和free T4 | 评估甲状腺功能 |
+| Blood glucose | 识别糖尿病和免疫性高血糖 |
+| Viral hepatitis testing | HCC或肝功能异常患者尤其重要 |
+| Pregnancy assessment | 评估胚胎-胎儿风险 |
+| Baseline imaging | 建立肿瘤负荷和肺部影像基线 |
+| Autoimmune disease history | 评估疾病复发或恶化风险 |
+
+## 治疗期间
+
+治疗期间应持续评估新发呼吸道症状、腹泻和腹痛、黄疸和肝功能、皮疹、头痛、视力变化和肌无力、心悸、胸痛和肌钙蛋白异常、甲状腺和肾上腺功能、血糖、肾功能、输注反应及联合药物特异性毒性。
+
+# Response Patterns（免疫治疗反应模式）
+
+## Durable Response
+
+部分患者可获得持续时间较长的缓解，即使治疗已经停止，免疫系统仍可能维持一定抗肿瘤活性。因此，免疫治疗试验通常同时评价**objective response rate, ORR（客观缓解率）**、**duration of response, DOR（缓解持续时间）**、PFS和OS。
+
+## Pseudoprogression
+
+少数患者在治疗早期可能出现肿瘤病灶暂时增大或新病灶出现，随后肿瘤缩小。这可能由免疫细胞浸润或炎症反应引起，称为**pseudoprogression（假性进展）**。
+
+但在临床实践中，大多数影像学进展仍然是真实进展。不能因可能存在假性进展而无条件继续无效治疗。
+
+## Hyperprogression
+
+部分患者在开始免疫治疗后可能出现异常快速的肿瘤进展，通常称为**hyperprogressive disease（超进展疾病）**。其定义尚未完全统一，可能基于tumor growth rate、tumor growth kinetics、time to treatment failure或肿瘤负荷快速增加。
+
+# Clinical Trial Endpoints（临床试验终点）
+
+## Metastatic Setting
+
+| 终点 | 英文名称 | 主要意义 |
+|---|---|---|
+| OS | Overall survival | 从随机化至任何原因死亡 |
+| PFS | Progression-free survival | 从随机化至进展或死亡 |
+| ORR | Objective response rate | CR和PR患者比例 |
+| DOR | Duration of response | 从首次缓解至进展或死亡 |
+| Disease control rate | 疾病控制率 | CR、PR和SD的比例 |
+| Patient-reported outcome | 患者报告结局 | 症状、功能和生活质量 |
+
+免疫治疗中，OS通常是最具临床意义的终点，但可能受后续治疗和治疗转换影响。
+
+## Adjuvant Setting
+
+| 终点 | 英文名称 | 主要意义 |
+|---|---|---|
+| DFS | Disease-free survival | 从随机化至复发、第二原发癌或死亡，具体定义依方案而定 |
+| OS | Overall survival | 最终临床获益的重要指标 |
+| Distant DFS | Distant disease-free survival | 重点评价远处转移或死亡 |
+| Lung cancer-specific survival | 肺癌特异性生存 | 可能受死因判定误差影响 |
+| ctDNA clearance | ctDNA清除 | 探索分子层面的治疗反应 |
+
+在辅助治疗中，DFS可比OS更早成熟，但DFS改善并不总能保证OS改善。
+
+## Rare Tumor Setting
+
+ASPS等罕见癌种难以开展大型随机试验，因此常使用single-arm study、ORR by independent review、DOR、PFS和long-term response rate。在单臂研究中，无法通过随机对照完全排除自然病程、患者选择和评价偏倚。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Non-Proportional Hazards
+
+免疫治疗试验可能出现生存曲线延迟分离、早期无明显差异、后期出现长期生存平台，或少数长期应答者产生明显尾部效应。此时**proportional hazards assumption, PH assumption（比例风险假设）**可能不成立。
+
+仅报告单一**hazard ratio, HR（风险比）**可能无法完整描述治疗效果。可补充Kaplan-Meier curves、landmark survival rates、milestone survival、**restricted mean survival time, RMST（限制性平均生存时间）**、piecewise HR、weighted log-rank test和cure model或mixture model探索。
+
+## Delayed Treatment Effect
+
+如果预期治疗效果延迟出现，传统log-rank检验的power可能下降。样本量和事件数设计需要考虑延迟长度、早期风险、后期HR、accrual pattern、dropout、follow-up duration和weighted testing strategy。
+
+## Hierarchical Testing
+
+Atezolizumab的多个Phase 3项目使用hierarchical testing，例如先检验PD-L1富集人群，再检验更广泛人群；先检验DFS，再检验OS；同时考虑PFS和OS；或对不同组合治疗进行比较。
+
+预先规定的层级可以控制**family-wise type I error rate, FWER（族系第一类错误率）**。若较早的检验失败，后续终点即使nominal p-value显著，也可能不能正式宣称统计学显著。
+
+## Biomarker Subgroup Analysis
+
+PD-L1亚组分析应区分predictive effect、prognostic effect、assay差异、cutoff差异、样本缺失、存档与新鲜组织、原发灶与转移灶、TC与IC评分。
+
+不能通过“PD-L1高表达组p<0.05，而低表达组p>0.05”判定存在亚组差异。应评价treatment-by-biomarker interaction、各亚组effect estimate、confidence interval、生物学合理性、是否预设和multiplicity adjustment。
+
+## PD-L1作为连续变量
+
+PD-L1 expression本质上是连续变量。将其划分为negative、low和high会造成信息损失和cutoff附近患者的分类不稳定。
+
+探索性分析可考虑spline model、continuous interaction model、response probability curve和assay-adjusted model。但监管决策通常仍需要可操作的分类cutoff和companion diagnostic。
+
+## Independent Review与Investigator Assessment
+
+PFS和ORR可由investigator或**independent review committee, IRC（独立审评委员会）**评价。开放标签研究可能存在assessment timing bias、informative censoring、investigator对治疗组知情和因毒性提前安排影像检查等问题。
+
+IRC可降低部分评估偏倚，但也可能出现central reader与临床信息脱节、missing scan、reader disagreement和pseudo-progression判定困难。
+
+## RECIST与iRECIST
+
+传统**[Response Evaluation Criteria in Solid Tumors version 1.1, RECIST 1.1（实体瘤疗效评价标准1.1版）](../other/RECIST_1_1.qmd)**将新病灶或明显增大通常判定为疾病进展。
+
+**Immune RECIST, iRECIST（免疫治疗RECIST）**引入immune unconfirmed progressive disease和immune confirmed progressive disease。iRECIST主要用于标准化免疫治疗试验中的数据收集和探索性分析，通常不自动替代注册试验的RECIST 1.1主要分析。
+
+## Treatment Beyond Progression
+
+部分临床试验允许临床稳定患者在RECIST进展后继续治疗。继续治疗条件可能包括无快速临床恶化、无关键器官威胁、患者仍可能获得临床获益，以及能够完成确认性扫描。
+
+这会产生重要intercurrent events，并可能影响PFS、treatment duration、subsequent therapy、safety exposure和OS解释。
+
+## Treatment Discontinuation and Subsequent Therapy
+
+免疫治疗可能因radiographic progression、clinical progression、immune-mediated toxicity、完成固定疗程、患者决定、开始其他抗肿瘤治疗、手术或局部治疗而停止。
+
+OS可能受到对照组后续使用其他ICI、试验组后续接受targeted therapy、crossover和不同国家后线治疗可及性的影响。主要ITT分析通常采用treatment-policy strategy，不因后续治疗进行删失。
+
+## ctDNA MRD-Enriched Design
+
+IMvigor011属于biomarker-enriched、MRD-guided设计。只有术后ctDNA MRD阳性的患者被随机化，因此研究回答：
+
+> 对于术后已经检测到ctDNA MRD的MIBC患者，atezolizumab相较placebo是否改善结局？
+
+它不直接回答所有术后MIBC患者是否均应接受atezolizumab、ctDNA MRD阴性患者是否完全无获益，或不同ctDNA assay是否具有相同治疗选择能力。
+
+## Serial Screening and Landmark Bias
+
+ctDNA MRD可以在术后6周至1年内通过连续检测发现。患者必须存活、未发生临床复发、完成检测并最终转为ctDNA阳性，才能进入随机化。
+
+因此，分析和报告必须明确screening cohort、randomized cohort、ctDNA-positive timepoint、从手术还是从随机化开始计时，以及检测期间发生复发的患者如何处理。不能将随机化后DFS与从手术开始的自然历史数据直接比较。
+
+## Competing Risks
+
+辅助治疗研究中可能出现肿瘤复发、第二原发肿瘤和非癌症死亡。如果研究关注特定复发类型，可采用cumulative incidence function、cause-specific hazard model或Fine-Gray model。
+
+但DFS通常将预先规定的多个事件合并为composite endpoint，并使用标准time-to-event方法分析。
+
+## Safety Analysis
+
+免疫治疗安全性分析需要同时考虑常规TEAE、immune-mediated AE、serious AE、treatment-related AE、corticosteroid use、hospitalization、treatment discontinuation、death和late-onset toxicity。
+
+对不同治疗暴露时间的比较，可补充**exposure-adjusted incidence rate, EAIR（暴露校正发生率）**：
+
+$$
+\text{EAIR}
+=
+\frac{\text{发生至少一次事件的患者数}}
+{\text{总暴露人年}}
+\times100
+$$
+
+但EAIR不能完全恢复随机化比较，尤其当治疗暴露时间受疗效和毒性共同影响时。
+
+# Estimand Considerations（Estimand考虑）
+
+Atezolizumab试验中的重要intercurrent events包括停止研究治疗、开始其他抗肿瘤治疗、接受rescue therapy、手术或放疗、RECIST进展后继续治疗、因毒性使用高剂量糖皮质激素、treatment switching和死亡。
+
+| Estimand策略 | 可能应用 |
+|---|---|
+| Treatment-policy strategy | 不论停药或后续治疗，评价随机化治疗策略的整体效果 |
+| Composite strategy | 将开始新抗癌治疗或特定事件纳入终点定义 |
+| Hypothetical strategy | 估计未发生treatment switching时的治疗效果 |
+| While-on-treatment strategy | 评价接受随机治疗期间的结局 |
+| Principal stratum strategy | 评价潜在能够持续治疗或不会发生特定事件的人群 |
+
+OS主要分析通常采用treatment-policy strategy。对于PFS，开始新抗癌治疗后的处理、缺失肿瘤评估和死亡时间窗口必须在方案和SAP中明确。
+
+# Competitive Landscape（竞争格局）
+
+## 主要PD-L1抑制剂
+
+| 药物 | 公司 | 代表性开发领域 |
+|---|---|---|
+| Atezolizumab | Roche/Genentech | NSCLC、SCLC、HCC、melanoma、ASPS、MIBC |
+| [Durvalumab](Imfinzi.qmd) | [AstraZeneca](../company/AstraZeneca.qmd) | Stage III NSCLC、SCLC、biliary tract cancer等 |
+| Avelumab | Merck KGaA/Pfizer | Urothelial carcinoma、Merkel cell carcinoma |
+
+## 主要PD-1抑制剂
+
+| 药物 | 公司 | 代表性特点 |
+|---|---|---|
+| [Pembrolizumab](Keytruda.qmd) | [Merck & Co.](../company/Merck.qmd) | 广泛肿瘤适应证和多个tumor-agnostic approval |
+| [Nivolumab](Opdivo.qmd) | [Bristol Myers Squibb](../company/BMS.qmd) | 多癌种单药及与ipilimumab联合 |
+| Cemiplimab | [Regeneron](../company/Regeneron.qmd) | 皮肤肿瘤及NSCLC |
+| Dostarlimab | [GSK](../company/GSK.qmd) | dMMR肿瘤和endometrial cancer |
+
+不同药物的适应证来自各自临床试验，不应将同一作用机制视为自动可互换。
+
+# Practical Example（实际例子）
+
+假设一名患者患有完全切除的Stage IIIA NSCLC，并已完成4个周期cisplatin-based adjuvant chemotherapy。
+
+病理检测显示：
+
+$$
+\text{PD-L1 TC}=60\%
+$$
+
+且未发现*EGFR*或*ALK*驱动异常。在美国标签框架下，该患者符合atezolizumab辅助治疗的PD-L1条件，因为：
+
+$$
+60\%\geq1\%
+$$
+
+患者可接受最长1年的atezolizumab辅助治疗。
+
+但治疗决策仍需要考虑手术恢复情况、既往化疗毒性、自身免疫病、间质性肺病、器官功能、复发风险，以及患者对DFS获益和免疫毒性的权衡。
+
+PD-L1 60%表示大约60%的可评估肿瘤细胞存在符合检测标准的PD-L1膜染色，并不表示atezolizumab一定能够防止复发。
+
+# Common Pitfalls（常见误区）
+
+1. **把Atezolizumab认为是PD-1抑制剂。**  
+   Atezolizumab结合PD-L1，而不是PD-1。
+
+2. **认为所有PD-L1抑制剂可以互换。**  
+   每种药物具有独立的临床试验、剂量和批准适应证。
+
+3. **将PD-L1高表达理解为一定有效。**  
+   高表达只能提高平均获益概率，不能保证个体患者产生缓解。
+
+4. **认为PD-L1阴性患者一定不能使用Atezolizumab。**  
+   某些联合治疗适应证并不要求PD-L1阳性。
+
+5. **混用TPS、TC和IC评分。**  
+   不同评分的计算对象和cutoff不同。
+
+6. **忽视NSCLC中的driver alterations。**  
+   即使PD-L1高表达，存在可靶向驱动基因时也需要考虑靶向治疗顺序。
+
+7. **认为免疫治疗毒性只在治疗期间发生。**  
+   Immune-mediated toxicity可在停药后出现。
+
+8. **出现免疫毒性后尝试降低Atezolizumab剂量。**  
+   Atezolizumab通常不进行剂量降低，而是暂停或永久停药。
+
+9. **把所有影像学进展视为假性进展。**  
+   大多数影像学进展是真实进展，继续治疗需要临床依据。
+
+10. **使用旧资料判断当前适应证。**  
+    Atezolizumab的部分urothelial carcinoma和triple-negative breast cancer适应证已在美国撤回。
+
+11. **将IMvigor011结果外推至所有术后MIBC患者。**  
+    该研究和适应证针对术后ctDNA MRD阳性患者。
+
+12. **将皮下制剂理解为普通Atezolizumab自行改为皮下注射。**  
+    Tecentriq Hybreza是含透明质酸酶的皮下固定复方制剂，不是将普通静脉Tecentriq直接改为皮下注射。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| ADCC | Antibody-dependent cellular cytotoxicity | 抗体依赖性细胞介导的细胞毒作用 |
+| ASPS | Alveolar soft part sarcoma | 腺泡状软组织肉瘤 |
+| ctDNA | Circulating tumor DNA | 循环肿瘤DNA |
+| DFS | Disease-free survival | 无病生存期 |
+| DOR | Duration of response | 缓解持续时间 |
+| EAIR | Exposure-adjusted incidence rate | 暴露校正发生率 |
+| ES-SCLC | Extensive-stage small cell lung cancer | 广泛期小细胞肺癌 |
+| FWER | Family-wise type I error rate | 族系第一类错误率 |
+| HCC | Hepatocellular carcinoma | 肝细胞癌 |
+| HR | Hazard ratio | 风险比 |
+| IC | Tumor-infiltrating immune cell score | 肿瘤浸润免疫细胞评分 |
+| ICI | Immune checkpoint inhibitor | 免疫检查点抑制剂 |
+| IRC | Independent review committee | 独立审评委员会 |
+| MIBC | Muscle-invasive bladder cancer | 肌层浸润性膀胱癌 |
+| MRD | Molecular residual disease | 分子残留病灶 |
+| NSCLC | Non-small cell lung cancer | 非小细胞肺癌 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| PD-1 | Programmed cell death protein 1 | 程序性死亡受体1 |
+| PD-L1 | Programmed death-ligand 1 | 程序性死亡配体1 |
+| PFS | Progression-free survival | 无进展生存期 |
+| RECIST | Response Evaluation Criteria in Solid Tumors | 实体瘤疗效评价标准 |
+| RMST | Restricted mean survival time | 限制性平均生存时间 |
+| SCLC | Small cell lung cancer | 小细胞肺癌 |
+| TC | Tumor cell score | 肿瘤细胞评分 |
+| TEAE | Treatment-emergent adverse event | 治疗期间出现的不良事件 |
+
+# Key Takeaways（关键总结）
+
+1. Atezolizumab是由Genentech/Roche开发的Fc工程化抗PD-L1单克隆抗体，商品名为Tecentriq。
+2. Atezolizumab阻断PD-L1与PD-1和B7.1结合，从而解除对T细胞抗肿瘤活性的抑制。
+3. 截至2026年5月，美国适应证包括NSCLC、ES-SCLC、HCC、BRAF V600阳性melanoma、ASPS和ctDNA MRD阳性的术后MIBC。
+4. NSCLC部分适应证要求PD-L1表达或无特定driver alteration，但部分化疗联合方案不要求PD-L1阳性。
+5. Atezolizumab联合bevacizumab是既往未接受系统治疗的不可切除HCC的重要治疗方案。
+6. ES-SCLC中，atezolizumab可与carboplatin和etoposide用于一线治疗，并可与lurbinectedin用于诱导治疗后维持。
+7. 免疫相关不良事件可累及肺、肠、肝、内分泌、心脏、神经和其他系统，并可能在停药后发生。
+8. 免疫治疗试验需要重点考虑non-proportional hazards、延迟效应、长期缓解、PD-L1亚组、treatment beyond progression和后续治疗。
+9. 2026年获批的MIBC适应证采用ctDNA MRD富集策略，不能外推至所有膀胱切除术后患者。
+10. Tecentriq Hybreza是含透明质酸酶的皮下固定复方制剂，不是将普通静脉Tecentriq直接改为皮下注射。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. *Tecentriq (Atezolizumab) Prescribing Information*. Revised May 2026.
+2. U.S. Food and Drug Administration. *Tecentriq Hybreza (Atezolizumab and Hyaluronidase-tqjs) Prescribing Information*. Revised May 2026.
+3. U.S. Food and Drug Administration. FDA Approves Atezolizumab for Adjuvant Treatment of Muscle-Invasive Bladder Cancer in Patients with Molecular Residual Disease. May 15, 2026.
+4. U.S. Food and Drug Administration. FDA Approves Lurbinectedin in Combination with Atezolizumab for Extensive-Stage Small Cell Lung Cancer. October 2, 2025.
+5. U.S. Food and Drug Administration. FDA Approves Atezolizumab and Hyaluronidase-tqjs for Subcutaneous Injection. September 12, 2024.
+6. Rittmeyer A, Barlesi F, Waterkamp D, et al. Atezolizumab versus Docetaxel in Patients with Previously Treated Non-Small-Cell Lung Cancer: OAK. *The Lancet*. 2017;389:255-265.
+7. Herbst RS, Giaccone G, de Marinis F, et al. Atezolizumab for First-Line Treatment of PD-L1-Selected Patients with NSCLC. *New England Journal of Medicine*. 2020;383:1328-1339.
+8. West H, McCleod M, Hussein M, et al. Atezolizumab in Combination with Carboplatin plus Nab-Paclitaxel in Advanced Nonsquamous NSCLC: IMpower130. *The Lancet Oncology*. 2019;20:924-937.
+9. Socinski MA, Jotte RM, Cappuzzo F, et al. Atezolizumab for First-Line Treatment of Metastatic Nonsquamous NSCLC: IMpower150. *New England Journal of Medicine*. 2018;378:2288-2301.
+10. Felip E, Altorki N, Zhou C, et al. Adjuvant Atezolizumab after Adjuvant Chemotherapy in Resected Stage IB-IIIA NSCLC: IMpower010. *The Lancet*. 2021;398:1344-1357.
+11. Horn L, Mansfield AS, Szczesna A, et al. First-Line Atezolizumab plus Chemotherapy in Extensive-Stage Small-Cell Lung Cancer: IMpower133. *New England Journal of Medicine*. 2018;379:2220-2229.
+12. Finn RS, Qin S, Ikeda M, et al. Atezolizumab plus Bevacizumab in Unresectable Hepatocellular Carcinoma: IMbrave150. *New England Journal of Medicine*. 2020;382:1894-1905.
+13. Gutzmer R, Stroyakovskiy D, Gogas H, et al. Atezolizumab, Vemurafenib, and Cobimetinib as First-Line Treatment for Unresectable Advanced BRAF V600 Mutation-Positive Melanoma: IMspire150. *The Lancet*. 2020;395:1835-1844.
+14. ClinicalTrials.gov. IMvigor011: A Study of Atezolizumab versus Placebo in Participants with ctDNA-Positive Muscle-Invasive Bladder Cancer after Cystectomy. NCT04660344.
+15. International Council for Harmonisation. *ICH E9(R1): Addendum on Estimands and Sensitivity Analysis in Clinical Trials*. 2019.
+16. Seymour L, Bogaerts J, Perrone A, et al. iRECIST: Guidelines for Response Criteria for Use in Trials Testing Immunotherapeutics. *The Lancet Oncology*. 2017;18:e143-e152.

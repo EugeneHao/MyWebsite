@@ -24,7 +24,7 @@ bibliography: ../../../references.bib
 
 PD-L1是一种跨膜蛋白，可与**programmed death-1, PD-1（程序性死亡受体1）**结合，抑制T cell（T细胞）的活化，从而帮助肿瘤细胞逃避免疫系统攻击。
 
-目前，PD-L1表达水平已被广泛用于指导**PD-1/PD-L1 inhibitor（PD-1/PD-L1抑制剂）**的治疗选择，尤其是在[Non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)、尿路上皮癌、头颈鳞癌、胃癌及食管癌等多个瘤种中。
+目前，[PD-L1表达水平](../other/Biomarker_Expression.qmd)已被广泛用于指导**PD-1/PD-L1 inhibitor（PD-1/PD-L1抑制剂）**的治疗选择，尤其是在[Non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)、尿路上皮癌、头颈鳞癌、胃癌及食管癌等多个瘤种中。
 
 # Key Terminology（关键术语）
 
@@ -114,7 +114,7 @@ PD-L1的表达具有动态变化特点，可受到：
 
 ## Tumor Proportion Score（TPS）
 
-**Tumor Proportion Score, TPS（肿瘤比例评分）**是NSCLC中最常用的方法。
+**[Tumor Proportion Score, TPS（肿瘤比例评分）](../other/Biomarker_Expression.qmd#tumor-proportion-scoretps)**是NSCLC中最常用的方法。
 
 计算公式：
 
@@ -134,7 +134,7 @@ Pembrolizumab单药一线治疗NSCLC通常要求TPS ≥50%。
 
 ## Combined Positive Score（CPS）
 
-**Combined Positive Score, CPS（综合阳性评分）**常用于胃癌、宫颈癌和头颈癌。
+**[Combined Positive Score, CPS（综合阳性评分）](../other/Biomarker_Expression.qmd#combined-positive-scorecps)**常用于胃癌、宫颈癌和头颈癌。
 
 计算公式：
 
@@ -178,7 +178,7 @@ $$
 | [Pembrolizumab](../compound/Keytruda.qmd) | PD-1 | NSCLC、[Melanoma](../disease/Melanoma.qmd)、HNSCC等 |
 | [Nivolumab](../compound/Opdivo.qmd) | PD-1 | 多种实体瘤 |
 | Cemiplimab | PD-1 | NSCLC、CSCC |
-| [Atezolizumab](../compound/Tecentriq.qmd) | PD-L1 | 尿路上皮癌、NSCLC |
+| [Atezolizumab](../compound/Tecentriq.qmd) | PD-L1 | NSCLC、SCLC、HCC、melanoma、ASPS、MIBC |
 | [Durvalumab](../compound/Imfinzi.qmd) | PD-L1 | Stage III NSCLC、[SCLC](../disease/SCLC.qmd) |
 | [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1×[VEGF](VEGF.qmd) | NSCLC |
 | [Cadonilimab](../compound/Cadonilimab.qmd) | PD-1×CTLA-4 | 宫颈癌、胃癌 |
