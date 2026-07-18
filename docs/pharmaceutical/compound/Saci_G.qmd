@@ -1,0 +1,666 @@
+---
+title: "Sacituzumab Govitecan, Saci-G（戈沙妥珠单抗）"
+description: "系统介绍TROP2靶向抗体偶联药物Sacituzumab Govitecan的药物结构、作用机制、获批适应证、关键临床试验、安全性及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Sacituzumab govitecan, Saci-G（戈沙妥珠单抗；[Gilead Sciences](../company/Gilead.qmd)；Trodelvy / 拓达维；美国正式通用名：sacituzumab govitecan-hziy）**是一种靶向**[trophoblast cell-surface antigen 2, TROP2（滋养层细胞表面抗原2）](../target/TROP2.qmd)**的**[antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Saci-G由抗TROP2单克隆抗体、可水解连接子和细胞毒性payload SN-38组成。SN-38是irinotecan的活性代谢产物，属于**topoisomerase I inhibitor（拓扑异构酶I抑制剂）**。Saci-G通过抗体将SN-38优先递送至TROP2表达的肿瘤细胞，同时其可水解连接子也允许一定程度的payload在肿瘤微环境中释放，从而产生**bystander effect（旁观者效应）**。
+
+Saci-G最初由Immunomedics开发。[Gilead Sciences](../company/Gilead.qmd)于2020年收购Immunomedics后成为该药的开发和商业化公司。该药于2020年4月首次获得美国FDA批准。
+
+截至2026年7月13日，Saci-G在美国已获批用于多个不可切除局部晚期或转移性[乳腺癌](../disease/Breast_Cancer.qmd)场景，包括既往经治的TNBC、既往经治的HR-positive/HER2-negative breast cancer，以及部分一线TNBC患者。其既往用于尿路上皮癌的美国accelerated approval已于2024年11月22日撤回。
+
+# Drug Profile（药物信息）
+
+| 项目 | 说明 |
+|---|---|
+| 英文通用名 | Sacituzumab govitecan |
+| 美国正式通用名 | Sacituzumab govitecan-hziy |
+| 中文通用名 | 戈沙妥珠单抗 |
+| 常用简称 | Saci-G、SG |
+| 早期研发代号 | IMMU-132 |
+| 商品名 | Trodelvy / 拓达维 |
+| 原始开发公司 | Immunomedics |
+| 当前公司 | Gilead Sciences |
+| 药物类型 | TROP2-directed ADC |
+| 抗体部分 | Humanized anti-TROP2 IgG1 monoclonal antibody |
+| 靶点 | TROP2 |
+| Payload | SN-38，irinotecan的活性代谢产物 |
+| Payload类别 | Topoisomerase I inhibitor |
+| Linker | Hydrolyzable CL2A linker |
+| Drug-to-antibody ratio, DAR（药物抗体比） | 约7.6 |
+| 给药方式 | Intravenous infusion（静脉输注） |
+| 推荐剂量 | 10 mg/kg，在每个21天周期的第1天和第8天给药 |
+| 美国首次批准日期 | 2020年4月22日 |
+| 主要获批领域 | Breast cancer |
+
+# Molecular Structure（分子结构）
+
+Saci-G由三个核心部分组成：
+
+| 组成部分 | 功能 |
+|---|---|
+| Anti-TROP2 antibody | 识别并结合肿瘤细胞表面的TROP2 |
+| CL2A linker | 将抗体与SN-38连接；具有可水解特性 |
+| SN-38 payload | 抑制topoisomerase I，引起DNA损伤和细胞死亡 |
+
+与部分采用高度稳定连接子的ADC不同，Saci-G的CL2A linker具有一定可水解性。其设计目的不仅是依赖肿瘤细胞内化后释放payload，也允许部分SN-38在肿瘤微环境中释放。
+
+Saci-G的DAR约为7.6，高于[Dato-DXd](Dato_DXd.qmd)约为4的DAR。这意味着每个抗体分子平均携带更多payload，但药物活性、毒性和疗效不能仅根据DAR进行比较。
+
+# Target Biology（靶点生物学）
+
+## TROP2
+
+**[Trophoblast cell-surface antigen 2, TROP2（滋养层细胞表面抗原2）](../target/TROP2.qmd)**是一种由*TACSTD2*基因编码的跨膜糖蛋白。
+
+TROP2可参与：
+
+- Cell proliferation（细胞增殖）
+- Cell survival（细胞存活）
+- Cell migration（细胞迁移）
+- Calcium signaling（钙信号传导）
+- Tumor invasion and metastasis（肿瘤侵袭和转移）
+
+TROP2在多种上皮来源肿瘤中高表达，包括[乳腺癌](../disease/Breast_Cancer.qmd)、[肺癌](../disease/Lung_Cancer.qmd)、尿路上皮癌、卵巢癌和其他实体瘤。
+
+## 是否需要进行TROP2检测
+
+目前Saci-G在[乳腺癌](../disease/Breast_Cancer.qmd)中的获批适应证不要求患者根据TROP2 IHC表达水平进行筛选。
+
+这说明TROP2 expression并不是当前临床使用Saci-G的伴随诊断标志物。可能原因包括：
+
+1. TROP2在相关乳腺癌中的表达较为普遍；
+2. Saci-G的bystander effect可能降低对均一高表达的依赖；
+3. 单纯的TROP2 IHC表达水平可能不足以预测疗效；
+4. Payload敏感性、内化、肿瘤异质性和DNA修复能力也会影响疗效。
+
+# Mechanism of Action（作用机制）
+
+Saci-G的主要作用过程为：
+
+1. Anti-TROP2 antibody与肿瘤细胞表面的TROP2结合；
+2. ADC-TROP2复合物发生internalization（内化）；
+3. Linker在细胞内或肿瘤微环境中水解；
+4. SN-38被释放；
+5. SN-38抑制topoisomerase I；
+6. DNA复制过程中形成不可逆的DNA损伤；
+7. 肿瘤细胞发生cell-cycle arrest和apoptosis；
+8. 游离SN-38可进入邻近细胞，产生bystander effect。
+
+```text
+Sacituzumab govitecan
+        ↓ binds TROP2
+TROP2-expressing tumor cell
+        ↓ internalization and linker hydrolysis
+Release of SN-38
+        ↓
+Topoisomerase I inhibition
+        ↓
+DNA damage
+        ↓
+Tumor-cell death
+```
+
+# Regulatory Status（监管状态）
+
+## 美国当前获批适应证
+
+截至2026年7月13日，Saci-G在美国的主要适应证如下：
+
+| FDA批准日期 | 疾病场景 | 用药方式 | 适用人群 |
+|---|---|---|---|
+| 2020年4月22日；后转为regular approval | 经治TNBC | Saci-G单药 | 不可切除局部晚期或转移性TNBC，既往接受过至少两种系统治疗，其中至少一种用于转移性疾病 |
+| 2023年2月3日 | 经治HR-positive/HER2-negative breast cancer | Saci-G单药 | 不可切除局部晚期或转移性疾病，既往接受过endocrine-based therapy及至少两种用于转移性疾病的其他系统治疗 |
+| 2026年6月24日 | 一线TNBC，不适合PD-1/[PD-L1](../target/PD-L1.qmd) inhibitor | Saci-G单药 | 不可切除局部晚期或转移性TNBC，既往未接受晚期疾病系统治疗，且不适合PD-1或PD-L1 inhibitor |
+| 2026年6月24日 | 一线PD-L1阳性TNBC | Saci-G联合[pembrolizumab](Keytruda.qmd) | 不可切除局部晚期或转移性TNBC，PD-L1 CPS ≥10，且由FDA授权检测确认 |
+
+## 已撤回的尿路上皮癌适应证
+
+Saci-G曾于2021年4月13日获得美国accelerated approval，用于既往接受platinum-containing chemotherapy和PD-1/PD-L1 inhibitor的局部晚期或转移性尿路上皮癌。
+
+该适应证于2024年11月22日撤回。其撤回说明：
+
+- Accelerated approval基于替代终点；
+- 后续confirmatory evidence未能支持继续保留该适应证；
+- Saci-G当前不应再被描述为在美国获批用于尿路上皮癌。
+
+# Dose and Administration（剂量与给药）
+
+推荐剂量为：
+
+$$
+10\ \text{mg/kg}
+$$
+
+在每个21天治疗周期的：
+
+- Day 1；
+- Day 8；
+
+进行静脉输注。
+
+首次输注通常持续约3小时。如果既往输注耐受良好，后续输注可在1至2小时内完成。
+
+治疗持续至：
+
+- Disease progression；
+- Unacceptable toxicity；
+- Withdrawal of consent；
+- 或其他方案规定的停药条件。
+
+## Dose Reduction（剂量下调）
+
+| 剂量水平 | 剂量 |
+|---|---:|
+| 起始剂量 | 10 mg/kg |
+| 第一次下调 | 7.5 mg/kg |
+| 第二次下调 | 5 mg/kg |
+| 仍需进一步下调 | 永久停药 |
+
+剂量下调后通常不应重新增加剂量。
+
+# Key Clinical Trials（关键临床试验）
+
+# ASCENT
+
+## Study Design（研究设计）
+
+ASCENT是一项multicenter、open-label、randomized Phase III trial，比较Saci-G与treatment of physician’s choice, TPC（医生选择的单药化疗），用于既往接受过治疗的不可切除局部晚期或转移性TNBC。
+
+患者按1:1随机接受：
+
+- Saci-G；
+- TPC，包括eribulin、vinorelbine、capecitabine或gemcitabine。
+
+主要终点为无脑转移主要分析人群中由independent review committee评估的PFS。
+
+## 主要结果
+
+| 指标 | Saci-G | TPC | 治疗效应 |
+|---|---:|---:|---|
+| Median PFS | 5.6个月 | 1.7个月 | HR 0.41 |
+| Median OS | 12.1个月 | 6.7个月 | HR 0.48 |
+| ORR | 35% | 5% | — |
+
+ASCENT同时显示了PFS、OS和ORR的显著改善，确立了Saci-G在经治mTNBC中的标准治疗地位。
+
+## 统计学特点
+
+ASCENT最初对存在brain metastases的患者进行了单独处理，主要分析集中在无已知脑转移人群。解读结果时需要明确主要分析人群与总体随机人群之间的区别。
+
+# TROPiCS-02
+
+## Study Design（研究设计）
+
+TROPiCS-02是一项multicenter、open-label、randomized Phase III trial，评估Saci-G用于经治、endocrine-resistant的HR-positive/HER2-negative metastatic breast cancer。
+
+患者既往通常接受过：
+
+- Endocrine therapy；
+- CDK4/6 inhibitor；
+- Taxane；
+- 至少两种、但不超过四种用于转移性疾病的化疗方案。
+
+患者按1:1随机接受Saci-G或TPC。
+
+## 主要结果
+
+| 指标 | Saci-G | TPC | 治疗效应 |
+|---|---:|---:|---|
+| Median PFS | 5.5个月 | 4.0个月 | HR 0.66；95% CI 0.53–0.83 |
+| Median OS | 14.4个月 | 11.2个月 | HR 0.79；95% CI 0.65–0.96 |
+| PFS p-value | — | — | 0.0003 |
+| OS p-value | — | — | 0.0200 |
+
+TROPiCS-02的median PFS绝对改善约1.5个月，但HR显示整体进展或死亡风险下降约34%。这说明median difference不能单独代表完整的time-to-event treatment effect。
+
+# ASCENT-03
+
+## Study Design（研究设计）
+
+ASCENT-03是一项multicenter、open-label、randomized Phase III trial，评估Saci-G单药用于一线不可切除局部晚期或转移性TNBC，研究对象为不适合接受PD-1或PD-L1 inhibitor的患者。
+
+共558例患者按1:1随机接受：
+
+- Saci-G；
+- TPC，包括nab-paclitaxel、paclitaxel或gemcitabine加carboplatin。
+
+主要终点为由**blinded independent central review, BICR（盲态独立中心审评）**根据RECIST 1.1评估的PFS。
+
+## 主要结果
+
+| 指标 | Saci-G | TPC | 治疗效应 |
+|---|---:|---:|---|
+| Median PFS | 9.7个月 | 6.9个月 | HR 0.62；95% CI 0.50–0.77 |
+| PFS p-value | — | — | <0.0001 |
+| Confirmed ORR | 50% | 47% | — |
+| OS | 数据尚不成熟 | 数据尚不成熟 | — |
+
+ASCENT-03显示Saci-G显著延长PFS，但ORR差异较小。这提示治疗获益可能更多体现在response durability和disease control，而不仅是缓解比例。
+
+# ASCENT-04 / KEYNOTE-D19
+
+## Study Design（研究设计）
+
+ASCENT-04/KEYNOTE-D19是一项multicenter、open-label、randomized Phase III trial，用于未经晚期疾病系统治疗、[PD-L1](../target/PD-L1.qmd) CPS ≥10的不可切除局部晚期或转移性TNBC。
+
+共443例患者按1:1随机接受：
+
+- Saci-G + [pembrolizumab](Keytruda.qmd)；
+- TPC chemotherapy + pembrolizumab。
+
+主要终点为BICR评估的PFS。
+
+## 主要结果
+
+| 指标 | Saci-G + pembrolizumab | TPC + pembrolizumab | 治疗效应 |
+|---|---:|---:|---|
+| Median PFS | 11.2个月 | 7.8个月 | HR 0.65；95% CI 0.51–0.84 |
+| PFS p-value | — | — | 0.0009 |
+| Confirmed ORR | 61% | 55% | — |
+| OS | 数据尚不成熟 | 数据尚不成熟 | — |
+
+该试验支持Saci-G联合[pembrolizumab](Keytruda.qmd)用于一线PD-L1阳性TNBC。
+
+# EVOKE-01
+
+EVOKE-01是一项randomized Phase III trial，比较Saci-G与[docetaxel](Docetaxel.qmd)用于既往接受含铂化疗和PD-1/[PD-L1](../target/PD-L1.qmd) inhibitor后的晚期[NSCLC](../disease/NSCLC.qmd)。
+
+该研究未达到OS主要终点。虽然部分亚组中观察到潜在信号，但总体结果未证明Saci-G优于docetaxel。
+
+这一结果说明：
+
+- TROP2在多种肿瘤中表达，并不意味着TROP2 ADC在所有癌种中均有效；
+- [Breast cancer](../disease/Breast_Cancer.qmd)中的成功不能直接外推至[NSCLC](../disease/NSCLC.qmd)；
+- Histology、肿瘤生物学、既往治疗和payload敏感性均可能影响疗效。
+
+# Safety Profile（安全性）
+
+Saci-G具有明显的细胞毒性药物安全性特征。美国prescribing information包含关于neutropenia和diarrhea的boxed warning。
+
+| 安全性事件 | 临床特点 |
+|---|---|
+| Neutropenia | 最重要的血液学毒性，可严重、危及生命或致死 |
+| Febrile neutropenia | 需及时抗感染治疗和G-CSF管理 |
+| Diarrhea | 可严重，并导致脱水、电解质紊乱或急性肾损伤 |
+| Nausea/vomiting | 较常见，通常需要预防性止吐治疗 |
+| Anemia | 常见血液学毒性 |
+| Leukopenia/lymphopenia | 常见实验室异常 |
+| Fatigue | 常见，可能影响生活质量 |
+| Alopecia | 较常见 |
+| Hypersensitivity/infusion-related reaction | 可出现严重过敏反应 |
+| Embryo-fetal toxicity | 可能对胎儿造成伤害 |
+
+## Neutropenia
+
+根据美国prescribing information，Saci-G治疗患者中：
+
+- Neutropenia发生率约64%；
+- Grade 3–4 neutropenia约49%；
+- Febrile neutropenia约6%。
+
+临床管理包括：
+
+- 每周期监测absolute neutrophil count, ANC（绝对中性粒细胞计数）；
+- Day 1时ANC低于1500/mm³应暂停给药；
+- Day 8时ANC低于1000/mm³应暂停给药；
+- 对高风险患者从第一个周期开始考虑primary G-CSF prophylaxis；
+- 发生febrile neutropenia或持续Grade 3–4 neutropenia时进行dose reduction。
+
+## Diarrhea
+
+Diarrhea发生率约64%，Grade 3–4 diarrhea约11%。
+
+管理原则包括：
+
+1. 排除感染性原因；
+2. 及时补液和纠正电解质；
+3. 若无感染，尽快使用loperamide；
+4. Grade 3–4 diarrhea时暂停给药；
+5. 恢复至Grade 1或以下后再考虑继续治疗；
+6. 反复发生时进行dose reduction。
+
+## UGT1A1
+
+SN-38主要通过**uridine diphosphate glucuronosyltransferase 1A1, UGT1A1（尿苷二磷酸葡萄糖醛酸转移酶1A1）**代谢。
+
+UGT1A1活性降低的患者，特别是*UGT1A1* *28/*28基因型患者，可能更早或更严重地出现：
+
+- Neutropenia；
+- Febrile neutropenia；
+- Anemia；
+- 其他SN-38相关毒性。
+
+目前并非所有患者都需要常规进行UGT1A1基因检测，但对于发生异常严重或早发毒性的患者，应考虑UGT1A1活性降低的可能性。
+
+# Potential Resistance Mechanisms（潜在耐药机制）
+
+| 耐药机制 | 可能影响 |
+|---|---|
+| TROP2表达下降 | 减少ADC结合 |
+| TROP2内化不足 | 降低payload递送 |
+| Linker处理改变 | 减少SN-38释放 |
+| ABC transporter上调 | 增加SN-38外排 |
+| TOP1表达或结构改变 | 降低topoisomerase I inhibitor敏感性 |
+| DNA damage repair增强 | 提高对DNA损伤的耐受 |
+| Tumor heterogeneity | 形成TROP2低表达或payload耐药克隆 |
+| Prior topoisomerase I inhibitor exposure | 可能产生交叉耐药 |
+
+对于接受过另一种topoisomerase I inhibitor ADC的患者，Saci-G是否仍具有相同疗效，需要结合ADC序贯治疗研究判断。
+
+# Competitive Landscape（竞争格局）
+
+## 主要TROP2 ADC比较
+
+| 药物 | Payload | DAR | 主要特点 | 典型毒性 |
+|---|---|---:|---|---|
+| Sacituzumab govitecan | SN-38 | 约7.6 | 较高DAR；可水解linker | Neutropenia、diarrhea |
+| [Datopotamab deruxtecan](Dato_DXd.qmd) | DXd | 约4 | Protease-cleavable linker | Stomatitis、ocular toxicity、ILD |
+| Sacituzumab tirumotecan | Topoisomerase I inhibitor | 不同平台 | 处于广泛临床开发阶段 | 依具体试验而定 |
+
+## Saci-G与Dato-DXd
+
+Saci-G和[Dato-DXd](Dato_DXd.qmd)均为[TROP2](../target/TROP2.qmd) ADC，但并不是同一种药物。
+
+| 特征 | Saci-G | [Dato-DXd](Dato_DXd.qmd) |
+|---|---|---|
+| Payload | SN-38 | DXd |
+| DAR | 约7.6 | 约4 |
+| Linker | Hydrolyzable CL2A linker | Protease-cleavable tetrapeptide linker |
+| 代表性毒性 | Neutropenia、diarrhea | Stomatitis、ocular toxicity、ILD |
+| 典型给药 | Day 1和Day 8，每21天 | 每3周一次 |
+| 主要获批领域 | Breast cancer | Breast cancer及EGFR-mutated NSCLC |
+
+不能仅依据不同试验中的ORR、median PFS或HR直接判断两种药物孰优孰劣。有效比较需要head-to-head randomized trial或经过严格调整的间接比较。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## PFS与OS的解释
+
+在TROPiCS-02中，Saci-G的median PFS仅增加约1.5个月，但PFS HR为0.66，OS HR为0.79。
+
+这说明：
+
+- Median PFS只反映生存曲线达到50%事件率时的一个时间点；
+- HR利用了整个随访期间的事件信息；
+- Median difference与HR衡量的是不同维度；
+- 不能因为median PFS差异较小就断定治疗效果缺乏临床意义；
+- 也不能只依据HR而忽略绝对获益、毒性和患者体验。
+
+## Open-label Design（开放标签设计）
+
+Saci-G与化疗的给药方式和毒性差异明显，因此主要Phase III试验多采用open-label design。
+
+Open-label设计可能影响：
+
+- Investigator-assessed progression；
+- AE attribution；
+- Treatment discontinuation；
+- Patient-reported outcomes；
+- Subsequent therapy选择。
+
+因此，PFS通常采用BICR作为主要评估方法，以降低assessment bias。
+
+## Multiple Comparisons（多重性）
+
+在同时评估：
+
+- PFS；
+- OS；
+- ORR；
+- 不同分析人群；
+- 不同PD-L1亚组；
+- Brain metastasis亚组；
+- 其他biomarker亚组；
+
+时，需要预先规定multiplicity control strategy。
+
+常见方法包括：
+
+- Hierarchical testing；
+- Fixed-sequence testing；
+- Alpha allocation；
+- Gatekeeping procedure。
+
+未经预先控制的探索性亚组结果，不应被解释为confirmatory evidence。
+
+## Brain Metastases
+
+在ASCENT等研究中，脑转移患者的纳入和主要分析方式需要特别关注。
+
+统计分析中应明确：
+
+- 是否允许stable brain metastases；
+- 是否将脑转移患者纳入primary analysis population；
+- 是否进行stratification；
+- CNS progression如何定义；
+- 缺失脑部影像如何处理；
+- Intracranial response是否独立评估。
+
+## Treatment of Physician’s Choice
+
+Saci-G试验常使用TPC作为对照。
+
+TPC的优点是符合临床实践，但也会增加异质性：
+
+- 不同药物疗效不同；
+- 毒性谱不同；
+- 地区选择不同；
+- 既往治疗可能影响TPC选择；
+- 对照药物分布可能影响总体结果。
+
+通常应在随机前确定TPC药物，并在随机化和分析中考虑关键分层因素。
+
+## Subsequent Therapy
+
+ADC治疗快速发展后，患者在疾病进展后可能接受：
+
+- 另一种TROP2 ADC；
+- HER2-directed ADC；
+- Chemotherapy；
+- Immunotherapy；
+- Clinical trial therapy。
+
+这些后续治疗可能稀释或改变OS差异。因此，应系统收集：
+
+- First subsequent therapy；
+- Subsequent ADC exposure；
+- Time to subsequent therapy；
+- Treatment sequence；
+- Crossover；
+- Post-progression survival。
+
+## Safety Analysis
+
+Saci-G安全性分析不应仅报告“任何Grade AE”。
+
+对neutropenia和diarrhea等关键风险，建议报告：
+
+- Any-grade incidence；
+- Grade 3–4 incidence；
+- Serious adverse event；
+- Time to first onset；
+- Duration；
+- Recurrence；
+- Dose interruption；
+- Dose reduction；
+- Treatment discontinuation；
+- G-CSF use；
+- Hospitalization；
+- Exposure-adjusted incidence rate。
+
+## UGT1A1 Subgroup
+
+若研究收集UGT1A1 genotype，可比较：
+
+- *1/*1；
+- *1/*28；
+- *28/*28；
+
+患者中的：
+
+- Grade 3–4 neutropenia；
+- Febrile neutropenia；
+- Dose modification；
+- Relative dose intensity；
+- Treatment exposure。
+
+但应避免在样本量较小的基因亚组中进行过度解释，并应考虑multiplicity和selection bias。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Estimand
+
+在Saci-G试验中，常见intercurrent events包括：
+
+- Treatment discontinuation due to toxicity；
+- Dose reduction；
+- Missed Day 8 dose；
+- Initiation of subsequent therapy；
+- Death before documented progression；
+- Withdrawal of consent；
+- Missing tumor assessment。
+
+PFS通常采用treatment-policy strategy，即停药后仍继续收集肿瘤评估，直至进展或死亡。
+
+对于PRO endpoint，可考虑：
+
+- Treatment-policy strategy；
+- While-on-treatment strategy；
+- Composite strategy；
+- Hypothetical strategy。
+
+## Day 1 / Day 8给药模式
+
+Saci-G在每个21天周期的Day 1和Day 8给药。Day 8剂量可能因neutropenia、diarrhea或其他毒性被延迟或跳过。
+
+因此应分析：
+
+- Day 8 dose omission rate；
+- Dose delay；
+- Relative dose intensity；
+- Cumulative dose；
+- Time-varying exposure；
+- Dose modification与疗效之间的关系。
+
+仅使用randomized treatment assignment进行ITT分析仍然是疗效主要分析原则，但exposure analysis可帮助解释安全性和耐受性。
+
+## ADC Sequencing（ADC序贯）
+
+在HER2-low、HER2-ultralow和TROP2 ADC快速发展的背景下，越来越多患者可能连续接受多个ADC。
+
+研究设计中需要记录：
+
+- Prior ADC type；
+- Prior payload；
+- Prior target；
+- Time since prior ADC；
+- Best response to prior ADC；
+- Reason for discontinuation；
+- 是否存在相同payload类别暴露。
+
+分析时可按prior ADC exposure进行预设亚组，但需要防止样本量不足和选择偏倚。
+
+# Common Pitfalls（常见误区）
+
+1. **Saci-G不是普通单克隆抗体。**  
+   其主要细胞毒性来自SN-38 payload。
+
+2. **Saci-G与[Dato-DXd](Dato_DXd.qmd)不是同一种TROP2 ADC。**  
+   两者在payload、linker、DAR、给药方案和毒性谱方面均不同。
+
+3. **TROP2高表达不是当前使用Saci-G的必要条件。**  
+   目前乳腺癌适应证并不要求常规TROP2检测。
+
+4. **Saci-G目前不再获批用于美国尿路上皮癌。**  
+   该accelerated approval已于2024年11月22日撤回。
+
+5. **Median PFS差异较小不等同于没有治疗获益。**  
+   应结合HR、完整生存曲线、OS、ORR、DOR和毒性综合判断。
+
+6. **高DAR不自动意味着疗效更好。**  
+   ADC疗效取决于靶点、linker、payload、内化、肿瘤生物学和患者人群。
+
+7. **Saci-G并非没有传统化疗毒性。**  
+   Neutropenia和diarrhea是其最重要的boxed-warning风险。
+
+8. **不同TROP2 ADC的跨试验比较容易误导。**  
+   患者人群、治疗线次、对照组和终点定义可能不同。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| ADC | Antibody-drug conjugate | 抗体偶联药物 |
+| ANC | Absolute neutrophil count | 绝对中性粒细胞计数 |
+| BICR | Blinded independent central review | 盲态独立中心审评 |
+| CI | Confidence interval | 置信区间 |
+| CPS | Combined positive score | 联合阳性评分 |
+| DAR | Drug-to-antibody ratio | 药物抗体比 |
+| DOR | Duration of response | 缓解持续时间 |
+| HR | Hazard ratio或hormone receptor | 风险比或激素受体，需结合语境判断 |
+| mTNBC | Metastatic triple-negative breast cancer | 转移性三阴性乳腺癌 |
+| NSCLC | Non-small cell lung cancer | 非小细胞肺癌 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| PD-L1 | Programmed death-ligand 1 | 程序性死亡配体1 |
+| PFS | Progression-free survival | 无进展生存期 |
+| Saci-G | Sacituzumab govitecan | 戈沙妥珠单抗 |
+| TNBC | Triple-negative breast cancer | 三阴性乳腺癌 |
+| TPC | Treatment of physician’s choice | 医生选择的治疗 |
+| TROP2 | Trophoblast cell-surface antigen 2 | 滋养层细胞表面抗原2 |
+| UGT1A1 | Uridine diphosphate glucuronosyltransferase 1A1 | 尿苷二磷酸葡萄糖醛酸转移酶1A1 |
+
+# Key Takeaways（核心要点）
+
+1. Saci-G是一种靶向TROP2的ADC，由抗TROP2抗体、CL2A linker和SN-38 payload组成。
+2. Saci-G最初由Immunomedics开发，现由Gilead Sciences开发和商业化，商品名为Trodelvy。
+3. 截至2026年7月，美国已批准Saci-G用于经治TNBC、经治HR-positive/HER2-negative breast cancer，以及部分一线TNBC患者。
+4. ASCENT证明Saci-G可显著改善经治TNBC患者的PFS和OS。
+5. TROPiCS-02支持其用于经多线治疗的HR-positive/HER2-negative metastatic breast cancer。
+6. ASCENT-03和ASCENT-04分别支持Saci-G单药和联合pembrolizumab用于不同的一线TNBC人群。
+7. Neutropenia和diarrhea是Saci-G最重要的安全性风险，并列入美国boxed warning。
+8. 尿路上皮癌适应证已撤回，当前不应再描述为美国获批适应证。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. [FDA approves sacituzumab govitecan-hziy as monotherapy and in combination with pembrolizumab for first-line treatment of triple-negative breast cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line). June 24, 2026.
+
+2. U.S. Food and Drug Administration. [FDA approves sacituzumab govitecan-hziy for HR-positive breast cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-hr-positive-breast-cancer). February 3, 2023.
+
+3. U.S. Food and Drug Administration. [TRODELVY prescribing information](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761115s059lbl.pdf).
+
+4. U.S. Food and Drug Administration. [Withdrawn cancer accelerated approvals](https://www.fda.gov/drugs/resources-information-approved-drugs/withdrawn-cancer-accelerated-approvals).
+
+5. Bardia A, Hurvitz SA, Tolaney SM, et al. Sacituzumab govitecan in metastatic triple-negative breast cancer. *New England Journal of Medicine*. 2021;384:1529–1541.
+
+6. Rugo HS, Bardia A, Marmé F, et al. Overall survival with sacituzumab govitecan in hormone receptor-positive and human epidermal growth factor receptor 2-negative metastatic breast cancer. *Lancet*. 2023.
+
+7. ClinicalTrials.gov. [ASCENT: NCT02574455](https://clinicaltrials.gov/study/NCT02574455).
+
+8. ClinicalTrials.gov. [TROPiCS-02: NCT03901339](https://clinicaltrials.gov/study/NCT03901339).
+
+9. ClinicalTrials.gov. [ASCENT-03: NCT05382299](https://clinicaltrials.gov/study/NCT05382299).
+
+10. ClinicalTrials.gov. [ASCENT-04/KEYNOTE-D19: NCT05382286](https://clinicaltrials.gov/study/NCT05382286).
+
+11. ClinicalTrials.gov. [EVOKE-01: NCT05089734](https://clinicaltrials.gov/study/NCT05089734).

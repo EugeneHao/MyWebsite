@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/docs/pharmaceutical/listing-disease.html",
-    "items": []
-  },
-  {
     "listing": "/docs/pharmaceutical/index.html",
     "items": []
   },
@@ -46,6 +42,10 @@
   },
   {
     "listing": "/docs/pharmaceutical/listing-SDTM.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-disease.html",
     "items": []
   }
 ]

@@ -110,7 +110,7 @@ TROP2在多种实体瘤中均有较高表达。
 
 ## 已上市药物
 
-### Sacituzumab govitecan（戈沙妥珠单抗；Gilead；Trodelvy）
+### [Sacituzumab govitecan](../compound/Saci_G.qmd)（戈沙妥珠单抗；Gilead；Trodelvy）
 
 特点：
 
@@ -124,7 +124,7 @@ TROP2在多种实体瘤中均有较高表达。
 - HR+/HER2-乳腺癌；
 - 部分尿路上皮癌。
 
-## Datopotamab Deruxtecan（Datroway；AstraZeneca/Daiichi Sankyo；development code: Dato-DXd）
+## [Datopotamab Deruxtecan](../compound/Dato_DXd.qmd)（Datroway；AstraZeneca/Daiichi Sankyo；development code: Dato-DXd）
 
 特点：
 
@@ -145,8 +145,8 @@ TROP2在多种实体瘤中均有较高表达。
 
 | 药物 | Payload | Linker | 主要适应证 |
 |---|---|---|---|
-| Sacituzumab govitecan | SN-38 | Cleavable | TNBC、HR+/HER2-乳腺癌、尿路上皮癌 |
-| Datopotamab deruxtecan | DXd | Cleavable | NSCLC、乳腺癌 |
+| [Sacituzumab govitecan](../compound/Saci_G.qmd) | SN-38 | Cleavable | TNBC、HR+/HER2-乳腺癌、尿路上皮癌 |
+| [Datopotamab deruxtecan](../compound/Dato_DXd.qmd) | DXd | Cleavable | NSCLC、乳腺癌 |
 | SKB264（sacituzumab tirumotecan） | KL610023 | Cleavable | NSCLC、TNBC等，开发中 |
 
 # TROP2与HER2 ADC比较
@@ -155,7 +155,7 @@ TROP2在多种实体瘤中均有较高表达。
 |---|---|---|
 | 表达范围 | 广泛 | 相对局限 |
 | 是否需要高表达 | 通常不需要严格筛选 | 多数需要HER2检测 |
-| 主要药物 | Sacituzumab govitecan、datopotamab deruxtecan | Trastuzumab deruxtecan、trastuzumab emtansine |
+| 主要药物 | [Sacituzumab govitecan](../compound/Saci_G.qmd)、[datopotamab deruxtecan](../compound/Dato_DXd.qmd) | Trastuzumab deruxtecan、trastuzumab emtansine |
 | 热门瘤种 | 乳腺癌、NSCLC | 乳腺癌、胃癌 |
 
 近年来，TROP2 ADC在NSCLC中取得积极结果，使其成为肺癌药物开发的重要方向。
@@ -251,7 +251,7 @@ TROP2 ADC的安全性主要由payload决定。
 
 1. TROP2是一种广泛表达于实体瘤的跨膜糖蛋白，也是当前最重要的ADC靶点之一。
 2. TROP2具有肿瘤高表达、易内吞和正常组织表达较低等特点，非常适合作为ADC靶点。
-3. Sacituzumab govitecan和datopotamab deruxtecan是目前最具代表性的TROP2 ADC。
+3. [Sacituzumab govitecan](../compound/Saci_G.qmd)和[datopotamab deruxtecan](../compound/Dato_DXd.qmd)是目前最具代表性的TROP2 ADC。
 4. 与HER2不同，目前TROP2尚未发展为成熟的[伴随诊断生物标志物](../other/Biomarker.qmd#companion-diagnostic伴随诊断)，大多数研究无需按TROP2表达筛选患者。
 5. 生物统计学上需重点关注全人群设计、探索性生物标志物分析、PFS/OS终点及ADC特有安全性分析。
 

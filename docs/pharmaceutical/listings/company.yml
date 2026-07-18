@@ -36,7 +36,7 @@
 - name: Roche
   country: Switzerland
   drug: |
-    Ocrevus, [Avastin](compound/Avastin.qmd), [Herceptin](compound/Herceptin.qmd), [Rituxan](compound/Rituxan.qmd), Hemlibra, [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Sirolimus](compound/Sirolimus.qmd), 
+    Ocrevus, [Avastin](compound/Avastin.qmd), [Herceptin](compound/Herceptin.qmd), [Pertuzumab](compound/Pertuzumab.qmd), [Rituxan](compound/Rituxan.qmd), Hemlibra, [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Sirolimus](compound/Sirolimus.qmd), 
     [Cotellic](compound/Cotellic.qmd)
 - name: Novartis
   path: company/Novartis.html
@@ -56,7 +56,7 @@
   path: company/AstraZeneca.html
   country: UK
   drug: |
-    Tagrisso, [Imfinzi](compound/Imfinzi.qmd), Farxiga, Symbicort, Crestor, [Lynparza](compound/Lynparza.qmd)
+    Tagrisso, [Imfinzi](compound/Imfinzi.qmd), Farxiga, Symbicort, Crestor, [Lynparza](compound/Lynparza.qmd), [Datroway / Dato-DXd](compound/Dato_DXd.qmd)
 - name: Amgen
   country: USA
   drug: |
@@ -65,7 +65,7 @@
   path: company/Gilead.html
   country: USA
   drug: |
-    Biktarvy, Truvada, Veklury, Descovy, Epclusa, [Yescarta](compound/Yescarta.qmd)
+    Biktarvy, Truvada, Veklury, Descovy, Epclusa, [Yescarta](compound/Yescarta.qmd), [Trodelvy / Saci-G](compound/Saci_G.qmd)
 - name: Bayer
   country: Germany
   drug: |
@@ -99,9 +99,10 @@
   drug: |
     Botox, Restasis, Juvederm, Linzess, Vraylar
 - name: Daiichi Sankyo
+  path: company/Daiichi_Sankyo.html
   country: Japan
   drug: |
-    Lixiana, Movantik, Welchol, Sevikar, Nexium
+    Lixiana, Movantik, Welchol, Sevikar, Nexium, [Datroway / Dato-DXd](compound/Dato_DXd.qmd)
 - name: Regeneron
   path: company/Regeneron.html
   country: USA

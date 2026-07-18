@@ -7,12 +7,12 @@
   path: target/HER.html
   Full: Human Epidermal Growth Factor Receptor 2
   Description: |
-    [HER2](target/HER.qmd)是HER/ErbB家族成员之一，在部分癌细胞类型中过度表达或扩增，尤其见于乳腺癌和胃癌。HER2过度表达与癌症侵袭性和治疗选择密切相关。针对HER2的治疗，如Perjeta、Enhertu、Kadcyla、[Herceptin](compound/Herceptin.qmd)等药物，已经成为HER2阳性乳腺癌的重要标准治疗方法。
+    [HER2](target/HER.qmd)是HER/ErbB家族成员之一，在部分癌细胞类型中过度表达或扩增，尤其见于乳腺癌和胃癌。HER2过度表达与癌症侵袭性和治疗选择密切相关。针对HER2的治疗，如[Perjeta / Pertuzumab](compound/Pertuzumab.qmd)、Enhertu、Kadcyla、[Herceptin](compound/Herceptin.qmd)等药物，已经成为HER2阳性乳腺癌的重要标准治疗方法。
 - Abbr: TROP2
   path: target/TROP2.html
   Full: Trophoblast Cell Surface Antigen 2
   Description: |
-    [TROP2](target/TROP2.qmd)是一种跨膜糖蛋白，在多种实体瘤中过表达，并已成为ADC开发的重要靶点。代表性TROP2 ADC包括sacituzumab govitecan和datopotamab deruxtecan，主要覆盖乳腺癌、NSCLC和尿路上皮癌等方向。
+    [TROP2](target/TROP2.qmd)是一种跨膜糖蛋白，在多种实体瘤中过表达，并已成为ADC开发的重要靶点。代表性TROP2 ADC包括[sacituzumab govitecan / Saci-G](compound/Saci_G.qmd)和[datopotamab deruxtecan / Dato-DXd](compound/Dato_DXd.qmd)，主要覆盖乳腺癌、NSCLC和尿路上皮癌等方向。
 - Abbr: VEGFR  
   path: target/VEGF.html
   Full: Vascular Endothelial Growth Factor Receptor
@@ -264,12 +264,12 @@
 - Abbr: CDK4
   Full: Cyclin-Dependent Kinase 4
   Description: |
-    CDK4（Cyclin-Dependent Kinase 4）是细胞周期调控的关键酶之一。它与特定的周期蛋白（如D型周期蛋白）结合，促进细胞从G1期进入S期，从而推动细胞周期的进展。在许多类型的癌症中，CDK4的异常活化与肿瘤的增殖和生长相关，使得CDK4成为癌症治疗的潜在药物靶点。针对CDK4/CDK6的药物有Ibrance, Verzenio, Kisqali。
+    CDK4（Cyclin-Dependent Kinase 4）是细胞周期调控的关键酶之一。它与特定的周期蛋白（如D型周期蛋白）结合，促进细胞从G1期进入S期，从而推动细胞周期的进展。在许多类型的癌症中，CDK4的异常活化与肿瘤的增殖和生长相关，使得CDK4成为癌症治疗的潜在药物靶点。针对CDK4/CDK6的药物有[Ibrance](compound/Ibrance.qmd), Verzenio, Kisqali。
 
 - Abbr: CDK6
   Full: Cyclin-Dependent Kinase 6
   Description: |
-    CDK6（Cyclin-Dependent Kinase 6）与CDK4功能类似，也是调节细胞周期的关键酶之一。CDK6与D型周期蛋白结合，协助调控细胞从G1期到S期的过渡。CDK6的异常表达或活化在某些癌症中常见，例如某些类型的白血病，这使得CDK6也成为了癌症治疗的一个重要靶点。针对CDK4/CDK6的药物有Ibrance, Verzenio, Kisqali。
+    CDK6（Cyclin-Dependent Kinase 6）与CDK4功能类似，也是调节细胞周期的关键酶之一。CDK6与D型周期蛋白结合，协助调控细胞从G1期到S期的过渡。CDK6的异常表达或活化在某些癌症中常见，例如某些类型的白血病，这使得CDK6也成为了癌症治疗的一个重要靶点。针对CDK4/CDK6的药物有[Ibrance](compound/Ibrance.qmd), Verzenio, Kisqali。
 
 - Abbr: IL-17
   Full: Interleukin-17

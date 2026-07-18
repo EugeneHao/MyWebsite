@@ -1,135 +1,280 @@
 ---
-title: "Immunotherapy"
+title: "Immunotherapy（肿瘤免疫治疗）"
+description: "系统介绍肿瘤免疫治疗的基本原理、主要治疗策略、临床应用及其在肿瘤药物研发中的重要地位。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Development
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
 ---
 
-## **免疫疗法：定义和历史背景**
+# 概述
+
+**Immunotherapy（肿瘤免疫治疗）**是利用或增强人体免疫系统识别并清除肿瘤细胞的一类治疗方法。与化疗（chemotherapy）或靶向治疗（targeted therapy）直接作用于肿瘤细胞不同，免疫治疗主要通过调节宿主免疫系统，使其恢复或增强抗肿瘤能力。
 
-### 免疫疗法的定义
+过去十余年，免疫治疗已成为继手术、放疗、化疗和靶向治疗之后的重要肿瘤治疗支柱。尤其是**[immune checkpoint inhibitors（免疫检查点抑制剂）](Immune_Checkpoint.qmd)**的出现，彻底改变了包括**[Non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)**、**[Melanoma（黑色素瘤）](../disease/Melanoma.qmd)**、renal cell carcinoma, RCC（肾细胞癌）等多种恶性肿瘤的治疗格局。
+
+# 为什么免疫治疗能够发挥作用？
 
-免疫疗法（Immunotherapy）是一种利用人体免疫系统的力量来治疗疾病，特别是癌症的医疗方法。这种治疗策略旨在增强或恢复免疫系统的自然能力，以便更有效地识别和攻击癌细胞或其他病原体。免疫疗法的形式多样，包括但不限于使用单克隆抗体、[免疫检查点抑制剂](Immune_Checkpoint.qmd)、癌症疫苗和细胞治疗（如[CAR-T](CAR-T.qmd)细胞疗法）。
+正常情况下，人体免疫系统能够识别并清除异常细胞，这一过程称为**immune surveillance（免疫监视）**。
 
-### 免疫疗法在现代医学中的重要性
+肿瘤细胞在长期进化过程中形成了多种**immune evasion（免疫逃逸）**机制，例如：
 
-在现代医学中，免疫疗法的重要性日益凸显，特别是在癌症治疗领域。传统的癌症治疗方法，如手术、化疗和放疗，虽然有效，但常常伴随着严重的副作用。免疫疗法提供了一种更为精准的治疗方式，能够针对性地攻击癌细胞，同时最大限度地减少对正常细胞的损伤。此外，某些免疫疗法还显示出长期控制癌症的潜力，引领了癌症治疗的新时代。
+- 表达[PD-L1](../target/PD-L1.qmd)抑制T细胞活化；
+- 招募regulatory T cells（Treg）；
+- 招募myeloid-derived suppressor cells（MDSCs）；
+- 建立免疫抑制性的**[tumor microenvironment, TME（肿瘤微环境）](TME.qmd)**；
+- 降低抗原表达；
+- 下调MHC分子。
 
-### 免疫疗法的历史背景
+免疫治疗的核心目标就是解除这些免疫抑制，使免疫系统重新识别并攻击肿瘤。
 
-免疫疗法的历史可以追溯到19世纪末。最早的尝试之一是由威廉·柯利（William B. Coley）进行的，他在1890年代使用被称为“柯利毒素”的细菌制品治疗癌症。这种方法基于观察到感染有时会导致肿瘤的缩小。尽管早期的免疫疗法效果不一，但它们为后来的研究奠定了基础。到了20世纪末和21世纪初，随着分子生物学和免疫学的飞速发展，免疫疗法取得了显著的进步。特别是在癌症治疗领域，免疫疗法已经成为最前沿和最有希望的治疗方法之一。
+# 肿瘤免疫循环（Cancer-Immunity Cycle）
 
-## **人体免疫系统基础**
+目前最经典的理论模型为Cancer-Immunity Cycle。
 
-### 免疫系统的基本组成
+```text
+Tumor cell death
+        ↓
+Tumor antigen release
+        ↓
+Antigen presentation
+        ↓
+T-cell activation
+        ↓
+T-cell trafficking
+        ↓
+Tumor infiltration
+        ↓
+Tumor recognition
+        ↓
+Tumor killing
+        ↓
+（循环再次开始）
+```
 
-人体的免疫系统是一个复杂且精密的防御机制，它包含多种细胞和器官，共同工作以保护身体免受病原体的侵害。免疫系统主要分为两个部分：先天性免疫系统（Innate Immune System）和适应性免疫系统（Adaptive Immune System）。
+免疫治疗可以作用于循环中的不同环节，因此不同类型的免疫治疗具有不同机制。
 
--   **先天性免疫系统**：是体内第一道防线，提供立即但非特异性的防御。它包括皮肤、黏膜、吞噬细胞（如巨噬细胞和中性粒细胞）、树突状细胞、天然杀伤细胞（NK Cells）等。
+# Immunotherapy的主要分类
 
--   **适应性免疫系统**：提供更为特异性的保护，它是对特定病原体的针对性反应。适应性免疫系统主要由两种类型的白血球构成：B细胞和T细胞。B细胞负责产生针对特定抗原的抗体，而T细胞则参与细胞介导的免疫反应。
+| 类型 | 英文名称 | 主要作用机制 | 代表药物/疗法 |
+|---|---|---|---|
+| Immune checkpoint inhibitors | 免疫检查点抑制剂 | 解除T细胞抑制 | [Pembrolizumab](../compound/Keytruda.qmd)、[Nivolumab](../compound/Opdivo.qmd)、[Atezolizumab](../compound/Tecentriq.qmd)、[Durvalumab](../compound/Imfinzi.qmd) |
+| [CAR-T cell therapy](CAR-T.qmd) | CAR-T细胞治疗 | 改造患者T细胞 | [Axicabtagene ciloleucel](../compound/Yescarta.qmd)、tisagenlecleucel |
+| Cancer vaccines | 肿瘤疫苗 | 激活肿瘤特异性免疫 | Sipuleucel-T、mRNA疫苗（研究中） |
+| Bispecific antibodies | 双特异性抗体 | 同时结合T细胞和肿瘤细胞 | Tarlatamab、blinatumomab |
+| Cytokine therapy | 细胞因子治疗 | 激活免疫细胞 | IL-2、IFN-alpha |
+| Oncolytic viruses | 溶瘤病毒 | 裂解肿瘤并激活免疫 | Talimogene laherparepvec (T-VEC) |
+| Tumor-infiltrating lymphocyte therapy | TIL治疗 | 扩增患者自身肿瘤浸润T细胞 | Lifileucel |
 
-### 免疫系统的功能
+# Immune Checkpoint Inhibitors（免疫检查点抑制剂）
 
-免疫系统的主要功能是识别和清除外来病原体（如细菌、病毒和真菌）以及异常变化的自身细胞（如癌细胞）。
+这是目前应用最广泛的免疫治疗策略。
 
--   **识别外来病原体**：通过识别病原体表面的特定分子（抗原），免疫系统能够区分自身组织和外来入侵者。一旦识别出病原体，免疫系统便启动一系列反应来消灭它们。
+## PD-1/PD-L1通路
 
--   **攻击癌细胞**：免疫系统能够识别并攻击癌细胞。癌细胞通常会表达异常的蛋白质或过度表达正常蛋白质，免疫系统通过识别这些变化来消除癌细胞。然而，癌细胞有时能逃避免疫系统的监视，这是癌症治疗中的一个主要挑战。
+正常情况下：
 
-## **免疫疗法的类型**
+```text
+Tumor Cell
+     │
+   PD-L1
+     │
+     ▼
+PD-1 on T cell
+     │
+T-cell inhibition
+```
 
-### 单克隆抗体（Monoclonal Antibodies）
+PD-1或PD-L1抗体可阻断这一抑制信号，使T细胞重新恢复杀伤功能。
 
-单克隆抗体是一种特制的抗体，能够特异性地识别和结合到体内的特定抗原。在癌症治疗中，这些抗体可被设计为识别和结合到癌细胞表面的特定分子，从而直接靶向癌细胞或者标记它们供免疫系统识别和摧毁。例如，赫赛汀（[Herceptin](../compound/Herceptin.qmd)）是一种针对[HER2](../target/HER.qmd)阳性乳腺癌的单克隆抗体。
+### 常见PD-1抗体
 
-### [免疫检查点抑制剂（Checkpoint Inhibitors）](Immune_Checkpoint.qmd)
+| 通用名 | 公司 | 商品名 |
+|---|---|---|
+| [Pembrolizumab](../compound/Keytruda.qmd) | [Merck](../company/Merck.qmd) | Keytruda |
+| [Nivolumab](../compound/Opdivo.qmd) | [Bristol Myers Squibb](../company/BMS.qmd) | Opdivo |
+| Cemiplimab | [Regeneron](../company/Regeneron.qmd) | Libtayo |
+| Toripalimab | Junshi Biosciences / Coherus | Loqtorzi |
+| Sintilimab | Innovent Biologics | 达伯舒（中国） |
 
-[免疫检查点抑制剂](Immune_Checkpoint.qmd)是一类药物，它们作用于免疫系统的检查点分子，如PD-1或CTLA-4。这些分子通常帮助防止免疫系统过度激活，但癌细胞可以利用它们来逃避免疫系统的攻击。通过抑制这些检查点分子，免疫检查点抑制剂可以解除对T细胞的“制动”，使其能够更有效地攻击癌细胞。例子包括纳武利尤单抗（[Nivolumab](../compound/Opdivo.qmd)）和帕博利珠单抗（[Pembrolizumab](../compound/Keytruda.qmd)）。
+### 常见PD-L1抗体
 
-### CAR-T细胞疗法（CAR-T Cell Therapy）
+| 通用名 | 公司 | 商品名 |
+|---|---|---|
+| [Atezolizumab](../compound/Tecentriq.qmd) | [Roche](../company/Roche.qmd) / Genentech | Tecentriq |
+| [Durvalumab](../compound/Imfinzi.qmd) | [AstraZeneca](../company/AstraZeneca.qmd) | Imfinzi |
+| Avelumab | Merck KGaA / [Pfizer](../company/Pfizer.qmd) | Bavencio |
 
-[CAR-T细胞疗法](CAR-T.qmd)涉及重新编程患者的T细胞以使它们能够识别并攻击癌细胞。这是通过在实验室中将合成的嵌合抗原受体（CAR）引入到T细胞中实现的。这些改造的T细胞随后被重新注入患者体内，以识别和消灭癌细胞。CAR-T细胞疗法在某些类型的血液癌症治疗中已显示出显著效果。
+## CTLA-4抑制剂
 
-### 癌症疫苗（Cancer Vaccines）
+CTLA-4主要作用于T细胞初始激活阶段。
 
-癌症疫苗旨在激活免疫系统对特定癌症的反应。这些疫苗可以是预防性的，旨在预防癌症发生，例如针对人乳头瘤病毒（HPV）的疫苗，也可以是治疗性的，旨在治疗已存在的癌症。治疗性癌症疫苗通过提高免疫系统对癌细胞的识别能力来工作，有时是通过呈递特定癌症相关抗原来实现。
+| 通用名 | 公司 | 商品名 |
+|---|---|---|
+| Ipilimumab | [Bristol Myers Squibb](../company/BMS.qmd) | [Yervoy](../compound/Yervoy.qmd) |
+| Tremelimumab | [AstraZeneca](../company/AstraZeneca.qmd) | Imjudo |
 
-## **免疫疗法的应用**
+PD-1主要作用于肿瘤局部，而CTLA-4更多作用于淋巴结中的T细胞激活，因此二者联合可进一步增强免疫反应，但毒性也明显增加。
 
-### 在癌症治疗中的应用
+# 其他新型免疫检查点
 
-免疫疗法已成为许多类型癌症治疗的重要组成部分，特别是在传统治疗（如手术、化疗、放疗）无效或疾病复发的情况下。
+随着PD-1时代的发展，越来越多新型检查点进入临床研究。
 
--   **黑色素瘤**：[免疫检查点抑制剂](Immune_Checkpoint.qmd)，如纳武利尤单抗（[Nivolumab](../compound/Opdivo.qmd)）和帕博利珠单抗（[Pembrolizumab](../compound/Keytruda.qmd)），已成为晚期黑色素瘤治疗的标准治疗方法。
+| 靶点 | 功能 | 研发进展 |
+|---|---|---|
+| LAG-3 | 抑制T细胞活性 | 已有产品获批 |
+| TIGIT | 抑制T细胞和NK细胞 | III期研究 |
+| TIM-3 | T细胞耗竭 | 临床研究 |
+| VISTA | 免疫抑制 | 临床早期 |
+| BTLA | 免疫调节 | 临床早期 |
 
--   **非小细胞肺癌**：某些[免疫检查点抑制剂](Immune_Checkpoint.qmd)也被用于治疗非小细胞肺癌，尤其是那些表达[PD-L1](../target/PD-L1.qmd)蛋白的癌症。
+# CAR-T Cell Therapy（CAR-T细胞治疗）
 
--   **血液癌症**：CAR-T细胞疗法，如Tisagenlecleucel，已被批准用于治疗某些类型的急性淋巴细胞性白血病和弥漫大B细胞淋巴瘤。
+[CAR-T](CAR-T.qmd)治疗流程包括：
 
-### 在其他疾病中的应用
+1. 采集患者T细胞；
+2. 基因工程改造表达CAR；
+3. 体外扩增；
+4. 回输患者体内；
+5. CAR-T识别并杀伤肿瘤。
 
-除了癌症，免疫疗法还在其他疾病的治疗中展现出潜力。
+目前CAR-T主要用于：
 
--   **自身免疫性疾病**：如利用特定的免疫调节剂治疗类风湿性关节炎和多发性硬化症。
+- B细胞急性淋巴细胞白血病（B-ALL）；
+- 大B细胞淋巴瘤（DLBCL）；
+- [多发性骨髓瘤](../disease/multiple_myeloma.qmd)（MM）。
 
--   **传染病**：如疫苗的使用在预防和治疗某些病毒性疾病（例如HPV和乙型肝炎）中扮演着关键角色。
+实体瘤CAR-T仍面临TME、抗原异质性及细胞浸润不足等挑战。
 
-### 免疫疗法的成功案例
+# 双特异性抗体（Bispecific Antibodies）
 
--   **黑色素瘤患者的治疗**：使用帕博利珠单抗治疗的晚期黑色素瘤患者中，部分患者实现了长期存活，这在过去是难以想象的。
+双抗可同时结合：
 
--   **急性淋巴细胞性白血病患者的CAR-T治疗**：在接受CAR-T细胞疗法的儿童和年轻成人患者中，许多患者实现了完全缓解，这些患者此前对传统治疗无响应。
+- CD3（T细胞）；
+- 肿瘤抗原。
 
-## **免疫疗法的挑战和副作用**
+从而直接将T细胞募集到肿瘤附近并诱导细胞毒作用。
 
-### 常见挑战
+典型代表包括：
 
-#### 耐药性发展
+| 药物 | 靶点 |
+|---|---|
+| Blinatumomab | CD19 × CD3 |
+| Tarlatamab | DLL3 × CD3 |
+| [Cadonilimab](../compound/Cadonilimab.qmd) | PD-1 × CTLA-4 |
+| [Ivonescimab](../compound/Ivonescimab.qmd) | PD-1 × [VEGF](../target/VEGF.qmd) |
+| [Pumitamig](../compound/Pumitamig.qmd) | PD-L1 × VEGF-A |
 
--   **描述**：和许多癌症治疗方法一样，免疫疗法也面临着癌细胞可能发展出耐药性的问题。这可能是由于癌细胞的遗传变异或免疫逃逸机制，使得原本有效的治疗方法变得无效。
+# Immunotherapy联合治疗
 
--   **影响**：耐药性的发展限制了免疫疗法的长期有效性，需要不断研发新的疗法或治疗策略来应对。
+目前越来越多研究采用联合治疗策略。
 
-#### 治疗成本
+| 联合方案 | 理论基础 |
+|---|---|
+| PD-1 + Chemotherapy | 增加抗原释放 |
+| PD-1 + VEGF | 改善TME，提高T细胞浸润 |
+| PD-1 + CTLA-4 | 增强不同阶段T细胞活化 |
+| PD-1 + [ADC](ADC.qmd) | 诱导免疫原性细胞死亡 |
+| PD-1 + Radiotherapy | 放疗促进抗原释放 |
+| PD-1 + Targeted Therapy | 提高免疫敏感性（部分癌种） |
 
--   **描述**：许多免疫疗法，特别是新型疗法如[CAR-T细胞疗法](CAR-T.qmd)，都需要高昂的成本。这主要是由于它们复杂的制备过程和需要个性化的治疗方案。
+近年来，**PD-1 + VEGF**及**PD-1 + ADC**成为实体瘤的重要研发方向。
 
--   **影响**：高昂的成本使得这些治疗方法对许多患者来说难以承受，限制了它们的普及和可接受性。
+# Biomarkers（生物标志物）
 
-### 副作用和管理方法
+并非所有患者都能从免疫治疗中获益，因此需要[生物标志物](Biomarker.qmd)帮助筛选患者。
 
-#### 免疫相关副作用
+| Biomarker | 临床意义 |
+|---|---|
+| [PD-L1表达](Biomarker_Expression.qmd) | 最常用预测指标 |
+| Tumor mutational burden, TMB（肿瘤突变负荷） | 新抗原水平 |
+| Microsatellite instability-high, MSI-H（微卫星高度不稳定） | 高度预测获益 |
+| Mismatch repair deficiency, dMMR（错配修复缺陷） | FDA组织无关适应证 |
+| CD8浸润 | 反映Hot tumor |
+| IFN-gamma signature | 反映免疫激活状态 |
+| Gene expression profile, GEP | 综合免疫评分 |
 
--   **描述**：免疫疗法可能导致一系列免疫相关的副作用，包括但不限于皮肤反应、肠道炎症、肝脏和内分泌系统的异常。例如，[免疫检查点抑制剂](Immune_Checkpoint.qmd)可能导致自身免疫反应。
+需要注意，单一生物标志物预测能力有限，多标志物联合评估逐渐成为趋势。
 
--   **管理方法**：副作用的管理包括及时识别、使用皮质类固醇或其他免疫抑制剂进行治疗，以及必要时暂停或停止免疫疗法。
+# 常见不良反应
 
-#### 细胞因子释放综合征（CRS）
+免疫治疗最具特点的是**immune-related adverse events, irAEs（免疫相关不良事件）**，主要由免疫系统过度激活所致。
 
--   **描述**：在CAR-T细胞疗法中，一个特别严重的副作用是细胞因子释放综合征，这是由于大量免疫细胞的激活和细胞因子的释放引起的。
+| 系统 | 常见irAE |
+|---|---|
+| 皮肤 | 皮疹、瘙痒、白癜风 |
+| 消化道 | 免疫性结肠炎 |
+| 肺 | 免疫性肺炎 |
+| 肝 | 肝炎 |
+| 内分泌 | 甲状腺炎、垂体炎、肾上腺功能不全 |
+| 肾 | 肾炎 |
+| 心脏 | 心肌炎（少见但严重） |
 
--   **管理方法**：CRS的管理可能包括使用托珠单抗（Tocilizumab）等免疫抑制剂和密切监测患者的症状。
+多数轻中度irAE可通过暂停治疗及糖皮质激素控制。
 
-## **和Targeted Therapy以及Chemotherapy的区别**
+# Immunotherapy在临床试验中的特点
 
-### 免疫疗法 (Immunotherapy)
+免疫治疗具有与传统抗肿瘤药物不同的疗效特征，因此试验设计需特别考虑：
 
--   **作用机制**：免疫疗法通过激活或增强患者自身的免疫系统来攻击癌细胞。它包括使用单克隆抗体、[免疫检查点抑制剂](Immune_Checkpoint.qmd)、CAR-T细胞疗法和癌症疫苗等。
+- 部分患者可出现**delayed response（延迟应答）**。
+- 少数患者可能发生**pseudoprogression（假性进展）**，即影像学短暂增大后出现肿瘤缩小。
+- 生存曲线常表现为**delayed separation（延迟分离）**，违反比例风险假设。
+- 部分患者获得长期缓解，形成**long-tail effect（长尾效应）**。
 
--   **目标**：免疫疗法主要针对免疫系统的组成部分，而不是直接针对癌细胞。
+因此，传统[RECIST 1.1](RECIST_1_1.qmd)评价标准有时需结合**iRECIST（免疫RECIST）**进行疗效评估。
 
--   **副作用**：可能包括免疫相关的副作用，如皮肤反应、消化道炎症、肝脏和内分泌系统异常。
+# 生物统计学考虑
 
-### 靶向治疗 (Targeted Therapy)
+免疫治疗临床试验具有一些特殊统计学挑战：
 
--   **作用机制**：靶向治疗通过专门针对癌细胞特有的分子和信号通路来抑制癌症的生长和扩散。这些治疗通常针对特定的基因突变或蛋白质。
+- **Overall survival, OS（总生存期）**通常仍是最重要终点，但**[progression-free survival, PFS（无进展生存期）](PFS.qmd)**可能低估长期获益。
+- 由于存在延迟治疗效应，Cox比例风险模型的**proportional hazards assumption（比例风险假设）**可能不成立，可考虑使用**restricted mean survival time, RMST（限制性平均生存时间）**、加权log-rank检验或其他非比例风险分析方法。
+- 假性进展可能影响PFS事件判定，因此需明确RECIST或iRECIST的应用原则。
+- Biomarker阳性亚组分析应预先定义，并控制多重比较导致的第一类错误。
+- 长期生存平台效应使长期随访及成熟OS分析尤为重要。
 
--   **目标**：靶向特定的癌细胞特征，如特定的基因突变或细胞表面蛋白。
+# 常见误区
 
--   **副作用**：与化疗相比副作用通常较轻，但可能包括疲劳、皮肤问题、高血压等。
+1. **免疫治疗并非所有患者都有效。**  
+   不同肿瘤类型及不同患者之间疗效差异显著。
 
-### 化疗 (Chemotherapy)
+2. **PD-L1阴性并不意味着一定无效。**  
+   PD-L1只是预测指标之一，并非绝对标准。
 
--   **作用机制**：化疗使用化学药物杀死快速分裂的细胞，包括癌细胞。由于它不具备区分正常细胞和癌细胞的能力，因此也可能损害快速增长的正常细胞。
+3. **免疫治疗起效通常较慢。**  
+   部分患者在早期影像学评估时可能未表现出明显缩瘤。
 
--   **目标**：广泛攻击快速分裂的细胞，不仅限于癌细胞。
+4. **免疫治疗副作用通常不是传统化疗毒性。**  
+   其核心特点是免疫相关炎症反应，而非骨髓抑制或脱发。
 
--   **副作用**：副作用较为严重，包括脱发、恶心、疲劳、免疫系统抑制等。
+5. **免疫治疗并不局限于PD-1/PD-L1。**  
+   CAR-T、双抗、肿瘤疫苗、溶瘤病毒及新型免疫检查点均属于广义免疫治疗。
+
+# Key Takeaways
+
+1. Immunotherapy通过激活或恢复人体免疫系统发挥抗肿瘤作用，是现代肿瘤治疗的重要支柱。
+2. Immune checkpoint inhibitors是目前应用最广泛的免疫治疗，包括PD-1、PD-L1和CTLA-4抑制剂。
+3. CAR-T、双特异性抗体、肿瘤疫苗及溶瘤病毒等代表了免疫治疗的重要发展方向。
+4. TME和免疫逃逸机制是免疫治疗研发的重要理论基础。
+5. PD-L1、MSI-H/dMMR、TMB及CD8浸润等生物标志物有助于预测治疗获益，但目前尚无完美预测指标。
+6. 免疫治疗具有延迟应答、假性进展及长尾生存等特点，对临床试验设计和统计分析提出了新的要求。
+
+# References
+
+1. Chen DS, Mellman I. Oncology Meets Immunology: The Cancer-Immunity Cycle. *Immunity*. 2013.
+2. Ribas A, Wolchok JD. Cancer Immunotherapy Using Checkpoint Blockade. *Science*. 2018.
+3. Sharma P, Siddiqui BA, et al. The Next Decade of Immune Checkpoint Therapy. *Cancer Discovery*. 2021.
+4. National Comprehensive Cancer Network (NCCN). Clinical Practice Guidelines in Oncology.
+5. European Society for Medical Oncology (ESMO). Clinical Practice Guidelines.
+6. U.S. Food and Drug Administration (FDA). Oncology Center of Excellence Resources.

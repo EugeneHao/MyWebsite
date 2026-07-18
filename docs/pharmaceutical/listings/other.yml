@@ -56,7 +56,7 @@
   path: other/Immunotherapy.html
   belong: Technology
   description: |
-    Immunotherapy is a treatment modality that harnesses the body's immune system to detect and combat diseases, particularly cancer.
+    Cancer immunotherapy activates or restores antitumor immunity through checkpoint inhibitors, CAR-T cells, bispecific antibodies, vaccines, and other immune-based strategies.
 
 - name: TME
   path: other/TME.html

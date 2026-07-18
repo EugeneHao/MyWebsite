@@ -99,7 +99,7 @@ Biomarker 可以来源于：
 | Biomarker | 对应 ADC 或治疗方向 |
 |---|---|
 | [HER2](../target/HER.qmd) | Trastuzumab deruxtecan |
-| [TROP2](../target/TROP2.qmd) | Datopotamab deruxtecan、sacituzumab govitecan |
+| [TROP2](../target/TROP2.qmd) | [Datopotamab deruxtecan](../compound/Dato_DXd.qmd)、[sacituzumab govitecan](../compound/Saci_G.qmd) |
 | Nectin-4 | Enfortumab vedotin |
 | BCMA | 多发性骨髓瘤 ADC、CAR-T 和双特异性抗体 |
 

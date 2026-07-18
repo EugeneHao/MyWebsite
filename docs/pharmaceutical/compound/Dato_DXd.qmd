@@ -1,0 +1,462 @@
+---
+title: "Datopotamab Deruxtecan, Dato-DXd（德达博妥单抗）"
+description: "系统介绍TROP2靶向抗体偶联药物Dato-DXd的药物结构、作用机制、获批适应证、关键临床试验、安全性及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Datopotamab deruxtecan, Dato-DXd（德达博妥单抗；[Daiichi Sankyo](../company/Daiichi_Sankyo.qmd)与[AstraZeneca](../company/AstraZeneca.qmd)；Datroway）**是一种靶向**[trophoblast cell-surface antigen 2, TROP2（滋养层细胞表面抗原2）](../target/TROP2.qmd)**的**[antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Dato-DXd的研发代号为**DS-1062a**。该药最初由Daiichi Sankyo开发，目前由Daiichi Sankyo与AstraZeneca共同开发和商业化。在美国，正式通用名为**datopotamab deruxtecan-dlnk**，商品名为**Datroway**。
+
+Dato-DXd通过抗TROP2单克隆抗体将高活性的**topoisomerase I inhibitor（拓扑异构酶I抑制剂）**DXd递送至肿瘤细胞，在肿瘤细胞内释放细胞毒性payload，从而造成DNA损伤和细胞死亡。
+
+截至2026年7月13日，用户提供资料显示Dato-DXd已在美国获批用于部分晚期[breast cancer（乳腺癌）](../disease/Breast_Cancer.qmd)和[EGFR](../target/HER.qmd)突变[non-small cell lung cancer, NSCLC（非小细胞肺癌）](../disease/NSCLC.qmd)患者，不再属于完全研究性的药物。具体适应证应以最新获批标签为准。
+
+# Drug Profile（药物信息）
+
+| 项目 | 说明 |
+|---|---|
+| Generic name | Datopotamab deruxtecan |
+| U.S. generic name | Datopotamab deruxtecan-dlnk |
+| 中文通用名 | 德达博妥单抗 |
+| Common abbreviation | Dato-DXd |
+| Development code | DS-1062a |
+| Brand name | Datroway |
+| Original developer | Daiichi Sankyo |
+| Current developers | Daiichi Sankyo与AstraZeneca |
+| Drug class | TROP2-directed ADC |
+| Antibody component | Humanized anti-TROP2 IgG1 monoclonal antibody |
+| Payload | DXd，exatecan衍生的topoisomerase I inhibitor |
+| Linker | Protease-cleavable tetrapeptide linker |
+| Drug-to-antibody ratio, DAR | 约4 |
+| Route | Intravenous infusion（静脉输注） |
+| Recommended dose | 6 mg/kg，每3周一次；体重至少90 kg时单次最高540 mg |
+| Major development areas | Breast cancer、NSCLC |
+| Initial U.S. approval | 2025年1月17日 |
+
+# Molecular Structure（分子结构）
+
+Dato-DXd由三个核心部分组成：
+
+| 组成部分 | 功能 |
+|---|---|
+| Anti-TROP2 antibody | 识别并结合肿瘤细胞表面的TROP2 |
+| Cleavable linker | 在血液循环中保持相对稳定，在细胞内被溶酶体蛋白酶裂解 |
+| DXd payload | 抑制topoisomerase I，引起DNA单链损伤、复制障碍和细胞凋亡 |
+
+DXd属于高活性的exatecan衍生物。由于其具有一定的细胞膜通透性，释放后可能扩散至相邻细胞，产生**bystander effect（旁观者效应）**。因此，即使肿瘤内部TROP2表达并不完全均一，也可能产生抗肿瘤作用。
+
+# Target Biology（靶点生物学）
+
+## TROP2
+
+TROP2是一种跨膜糖蛋白，由*TACSTD2*基因编码。
+
+TROP2在多种上皮来源肿瘤中高表达，包括breast cancer、NSCLC、urothelial cancer、ovarian cancer、endometrial cancer和gastrointestinal cancers。
+
+TROP2参与细胞增殖、存活、迁移和肿瘤进展。许多正常组织也可表达一定水平的TROP2，因此TROP2并不是严格的肿瘤特异性抗原。
+
+## 是否需要进行TROP2检测
+
+Dato-DXd当前获批适应证通常不要求根据常规TROP2 immunohistochemistry, IHC（免疫组化）结果筛选患者。
+
+这说明：
+
+1. TROP2在相关肿瘤中的表达较为普遍；
+2. 简单的TROP2表达水平可能不是充分的predictive biomarker（预测性生物标志物）；
+3. ADC疗效还受到药物内化、linker裂解、payload敏感性和肿瘤异质性等因素影响。
+
+研究中也在探索更复杂的TROP2定量指标，例如同时考虑TROP2表达强度及其在细胞膜上的分布，但尚未形成广泛应用的伴随诊断标准。
+
+# Mechanism of Action（作用机制）
+
+Dato-DXd的作用过程可概括为：
+
+1. anti-TROP2 antibody与肿瘤细胞表面的TROP2结合；
+2. ADC-TROP2复合物被肿瘤细胞internalization（内化）；
+3. 复合物进入lysosome（溶酶体）；
+4. 连接子被溶酶体蛋白酶裂解；
+5. DXd payload在细胞内释放；
+6. DXd抑制topoisomerase I；
+7. DNA复制过程中产生DNA损伤；
+8. 肿瘤细胞发生cell-cycle arrest（细胞周期阻滞）及apoptosis（细胞凋亡）；
+9. 部分DXd可进入邻近肿瘤细胞，形成bystander effect。
+
+```text
+Dato-DXd
+   |
+   v
+Binds TROP2-positive tumor cell
+   |
+   v
+Internalization and lysosomal linker cleavage
+   |
+   v
+Release of DXd payload
+   |
+   v
+Topoisomerase I inhibition
+   |
+   v
+DNA damage and apoptosis
+```
+
+# Regulatory Status（监管状态）
+
+## 美国获批适应证
+
+截至2026年7月13日，用户提供资料列出的Dato-DXd美国主要获批适应证包括：
+
+| FDA批准日期 | 疾病场景 | 适用人群 | 批准类型 |
+|---|---|---|---|
+| 2025年1月17日 | HR-positive/HER2-negative breast cancer | 不可切除或转移性疾病，既往接受过endocrine-based therapy及晚期疾病化疗 | Regular approval |
+| 2025年6月23日 | EGFR-mutated NSCLC | 局部晚期或转移性疾病，既往接受EGFR靶向治疗和含铂化疗 | Accelerated approval |
+| 2026年5月22日 | Triple-negative breast cancer, TNBC（三阴性乳腺癌） | 不可切除或转移性TNBC，一线治疗且不适合接受PD-1/PD-L1 inhibitor | Regular approval；应以最新标签为准 |
+
+EGFR突变NSCLC适应证基于**objective response rate, ORR（客观缓解率）**和**duration of response, DOR（缓解持续时间）**获得accelerated approval（加速批准）。该适应证的持续批准可能取决于后续confirmatory trial（确证性试验）对临床获益的验证。
+
+## 欧洲监管状态
+
+Dato-DXd已在欧盟获批用于既往接受endocrine therapy和至少一线晚期化疗的不可切除或转移性HR-positive/HER2-negative breast cancer。
+
+2026年6月，European Medicines Agency, EMA（欧洲药品管理局）发布了扩展至一线不可切除或转移性TNBC、且不适合PD-1/PD-L1 inhibitor患者的积极监管意见。不同国家的实际上市和报销状态可能存在差异。
+
+# Clinical Development（临床开发）
+
+## 主要临床项目
+
+Dato-DXd的临床开发项目主要使用“TROPION”命名，覆盖breast cancer、NSCLC及其他实体瘤。
+
+| Trial | Phase | 研究人群 | 试验设计 | 主要终点 |
+|---|---:|---|---|---|
+| TROPION-Breast01 | 3 | 经治HR-positive/HER2-negative晚期乳腺癌 | Dato-DXd vs investigator's choice chemotherapy | PFS和OS |
+| TROPION-Breast02 | 3 | 一线TNBC且不适合免疫治疗 | Dato-DXd vs investigator's choice chemotherapy | PFS和OS |
+| TROPION-Breast03 | 3 | 新辅助治疗后存在残余病灶的TNBC | Dato-DXd ± durvalumab vs标准治疗 | iDFS |
+| TROPION-Breast04 | 3 | 未经治疗的局部晚期或转移性TNBC | Dato-DXd + durvalumab vs标准治疗 | PFS和OS |
+| TROPION-Lung01 | 3 | 既往接受系统治疗的晚期NSCLC | Dato-DXd vs [docetaxel](Docetaxel.qmd) | PFS和OS |
+| TROPION-Lung05 | 2 | 经治、存在可靶向基因改变的晚期NSCLC | Single-arm Dato-DXd | ORR |
+| TROPION-Lung07 | 3 | 无actionable genomic alteration的晚期非鳞NSCLC一线治疗 | Dato-DXd + [pembrolizumab](Keytruda.qmd) ± chemotherapy | PFS和OS |
+| TROPION-Lung08 | 3 | PD-L1高表达晚期NSCLC一线治疗 | Dato-DXd + pembrolizumab vs pembrolizumab | PFS和OS |
+
+# Key Clinical Trials（关键临床试验）
+
+## TROPION-Breast01
+
+TROPION-Breast01是一项multicenter、open-label、randomized Phase 3 trial，入组不可切除或转移性**hormone receptor-positive, HR-positive（激素受体阳性）**、**human epidermal growth factor receptor 2-negative, HER2-negative（HER2阴性）**乳腺癌患者。
+
+患者既往接受过endocrine-based therapy，并接受过一至两线晚期化疗。试验将732例患者按1:1随机分配至Dato-DXd 6 mg/kg每3周一次，或investigator's choice chemotherapy，包括eribulin、capecitabine、vinorelbine或gemcitabine。
+
+| 指标 | Dato-DXd | 化疗 | 治疗效应 |
+|---|---:|---:|---|
+| Median PFS | 6.9个月 | 4.9个月 | HR 0.63；95% CI 0.52-0.76 |
+| Median OS | 18.6个月 | 18.3个月 | HR 1.01；95% CI 0.83-1.22 |
+| ORR | 36% | 23% | - |
+| Median DOR | 6.7个月 | 5.7个月 | - |
+
+Dato-DXd显著改善了由**blinded independent central review, BICR（盲态独立中心审评）**评估的PFS，但OS未达到统计学显著性。因此，该研究表明Dato-DXd能够延缓疾病进展，但并未证明相对于化疗存在OS获益。
+
+## TROPION-Breast02
+
+TROPION-Breast02是一项multicenter、open-label、randomized Phase 3 trial，评估Dato-DXd用于一线不可切除或转移性TNBC。
+
+研究入组644例未接受过晚期疾病系统治疗、且不适合PD-1/PD-L1 inhibitor的患者，按1:1随机接受Dato-DXd或investigator's choice chemotherapy，包括paclitaxel、nab-paclitaxel、capecitabine、eribulin或carboplatin。
+
+| 指标 | Dato-DXd | 化疗 | 治疗效应 |
+|---|---:|---:|---|
+| Median PFS | 10.8个月 | 5.6个月 | HR 0.57；95% CI 0.47-0.69；p<0.0001 |
+| Median OS | 23.7个月 | 18.7个月 | HR 0.79；95% CI 0.64-0.98；p=0.0290 |
+| ORR | 64% | 30% | - |
+
+Dato-DXd同时改善PFS和OS，并显著提高ORR。需要注意，该适应证限于不适合PD-1/PD-L1 inhibitor的患者。对于符合免疫治疗条件的PD-L1阳性TNBC患者，免疫治疗联合化疗仍是重要的一线治疗框架。
+
+## TROPION-Lung01
+
+TROPION-Lung01是一项open-label、randomized Phase 3 trial，比较Dato-DXd与docetaxel用于既往接受过至少一线系统治疗的局部晚期或转移性NSCLC。
+
+研究设置dual primary endpoints（双主要终点）：BICR评估的PFS和OS。
+
+总体研究结果显示，Dato-DXd改善了PFS，但OS未达到统计学显著性。疗效在nonsquamous NSCLC中较明显，而在squamous NSCLC中的获益有限。
+
+这提示NSCLC的histology（组织学类型）可能具有重要的treatment-effect heterogeneity（治疗效应异质性）。
+
+## TROPION-Lung05及EGFR突变NSCLC
+
+美国FDA对EGFR突变NSCLC的accelerated approval基于TROPION-Lung05和TROPION-Lung01中符合条件患者的pooled analysis（汇总分析）。
+
+分析包括114例患者，均具有局部晚期或转移性EGFR突变NSCLC，并既往接受过EGFR-directed therapy和platinum-based chemotherapy。
+
+| 指标 | 结果 |
+|---|---:|
+| Confirmed ORR | 45% |
+| 95% CI | 35%-54% |
+| Median DOR | 6.5个月 |
+| DOR 95% CI | 4.2-8.4个月 |
+
+由于批准主要基于单臂或汇总人群中的ORR和DOR，而不是随机对照试验中得到确认的OS获益，因此仍需要后续研究验证其长期临床获益。
+
+# Safety Profile（安全性）
+
+Dato-DXd的主要安全性风险包括：
+
+| 安全性事件 | 临床特点 |
+|---|---|
+| Stomatitis/oral mucositis | 最具代表性的毒性之一，可能影响进食及给药强度 |
+| Ocular adverse reactions | 包括dry eye、keratitis、blurred vision和其他角膜相关事件 |
+| Nausea和vomiting | 较常见，通常需要预防性止吐治疗 |
+| Interstitial lung disease, ILD/pneumonitis | 发生率相对较低，但可能严重或致命 |
+| Fatigue | 常见，可能影响生活质量 |
+| Alopecia | 与细胞毒性payload相关 |
+| Hematologic toxicity | 包括neutropenia、anemia、leukopenia和lymphopenia |
+| Infusion-related reaction | 需要输注期间监测 |
+| Embryo-fetal toxicity | 可能对胎儿造成伤害 |
+
+## Stomatitis管理
+
+Stomatitis是Dato-DXd最常见且具有临床特征性的毒性之一。
+
+常用预防和管理措施包括使用不含酒精的steroid-containing mouthwash（含类固醇漱口水）、保持良好的口腔卫生、避免辛辣酸性或过热食物、必要时进行dose interruption或dose reduction，以及对持续或较高级别口腔炎进行专科评估。
+
+Stomatitis可能造成dose interruption、dose reduction或treatment discontinuation，因此其评估不仅应关注发生率，也应关注持续时间、复发情况及对relative dose intensity的影响。
+
+## Ocular Toxicity（眼部毒性）
+
+Dato-DXd可能引起dry eye、keratitis、blepharitis、conjunctivitis、increased lacrimation、blurred vision和meibomian gland dysfunction。
+
+治疗前和治疗期间可能需要进行眼科评估。通常建议使用不含防腐剂的人工泪液，并避免在治疗期间佩戴contact lenses，除非眼科医生认为可以使用。
+
+## ILD/Pneumonitis
+
+**Interstitial lung disease, ILD（间质性肺病）**或pneumonitis是DXd类ADC需要重点关注的class-related risk（类别相关风险）。
+
+出现新的咳嗽、呼吸困难、发热或影像学肺部改变时，应立即评估并暂停用药。对于确认的Grade 2或更高级别ILD/pneumonitis，通常需要永久停用Dato-DXd，并及时给予systemic corticosteroids（全身性糖皮质激素）。
+
+# Dose Administration（剂量与给药）
+
+推荐剂量为：
+
+$$
+6\ \text{mg/kg}
+$$
+
+每3周静脉输注一次，即一个21天治疗周期。对于体重至少90 kg的患者，每次给药剂量最高为540 mg。
+
+治疗通常持续至disease progression、unacceptable toxicity、withdrawal of consent或其他方案规定的停药条件。
+
+首次输注通常持续约90分钟。如果患者耐受良好，后续输注可缩短至约30分钟。由于恶心、呕吐和infusion-related reaction风险，给药前通常需要预防性用药。
+
+# Potential Resistance Mechanisms（潜在耐药机制）
+
+| 耐药机制 | 可能影响 |
+|---|---|
+| TROP2表达下降或缺失 | 减少ADC与肿瘤细胞结合 |
+| TROP2内化不足 | 降低ADC进入肿瘤细胞的效率 |
+| Lysosomal processing异常 | 减少linker裂解和payload释放 |
+| Drug efflux transporter上调 | 促进DXd排出细胞 |
+| Topoisomerase I改变 | 降低payload敏感性 |
+| DNA damage repair增强 | 提高肿瘤细胞对DNA损伤的耐受 |
+| Tumor heterogeneity | 部分肿瘤克隆缺乏足够的药物暴露 |
+| ADC trafficking改变 | 影响细胞内运输和降解 |
+
+TROP2表达水平本身可能不足以完整预测疗效。抗体结合、内化、payload释放和肿瘤细胞对DXd的敏感性共同决定治疗效果。
+
+# Competitive Landscape（竞争格局）
+
+## TROP2 ADC比较
+
+| 药物 | 靶点 | Payload | 代表性适应证 | 主要特点 |
+|---|---|---|---|---|
+| Datopotamab deruxtecan | TROP2 | DXd，topoisomerase I inhibitor | HR-positive/HER2-negative breast cancer、TNBC、EGFR-mutated NSCLC | DAR约4；stomatitis和ocular toxicity较突出 |
+| Sacituzumab govitecan | TROP2 | SN-38，topoisomerase I inhibitor | TNBC、HR-positive/HER2-negative breast cancer | DAR较高；neutropenia和diarrhea较突出 |
+| Sacituzumab tirumotecan | TROP2 | Topoisomerase I inhibitor | 多种乳腺癌和肺癌场景持续开发 | 正处于广泛Phase 3开发阶段 |
+
+## 与Sacituzumab Govitecan的差异
+
+**Sacituzumab govitecan（戈沙妥珠单抗；[Gilead](../company/Gilead.qmd)；Trodelvy / 拓达维）**同样靶向TROP2，但其payload为SN-38。
+
+两者均通过topoisomerase I inhibition产生抗肿瘤作用，但在ADC结构、DAR、linker特征和毒性谱方面存在差异：Dato-DXd更需要关注stomatitis和ocular toxicity；sacituzumab govitecan更需要关注neutropenia和diarrhea。
+
+不同试验入组人群和治疗线次不同，不能仅依据跨试验ORR或median PFS直接判断药物优劣。目前尚不能根据非随机的cross-trial comparison（跨试验比较）确定两种TROP2 ADC的相对疗效。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Dual Primary Endpoints（双主要终点）
+
+多个Dato-DXd Phase 3试验同时将PFS和OS设为主要终点。
+
+双主要终点设计需要预先规定overall type I error allocation（总体第一类错误分配）、PFS与OS之间的alpha分配、是否采用gatekeeping procedure（门控程序）、IA与FA的分析时点、OS成熟度及所需死亡事件数，以及PFS成功后是否可将alpha传递至OS。
+
+出现PFS显著而OS不显著时，应分别解释两个终点，而不能将PFS获益自动解释为overall survival benefit（总生存获益）。
+
+## PFS与OS不一致
+
+TROPION-Breast01中Dato-DXd显著改善PFS，但OS HR接近1。
+
+可能原因包括PFS获益幅度不足以转化为OS获益、post-progression therapy（进展后治疗）造成治疗组间稀释、control arm后续接受有效ADC、disease setting中的post-progression survival较长，以及trial power主要针对特定OS效应量而实际效应低于设计假设。
+
+在解读结果时，应避免使用“PFS阳性，因此试验整体完全成功”这样的过度概括。
+
+## Accelerated Approval中的单臂证据
+
+EGFR突变NSCLC适应证主要基于ORR和DOR。
+
+在single-arm trial（单臂试验）中，ORR可描述肿瘤缩小的比例，DOR可描述缓解的持久性，但无法通过随机比较排除患者选择、自然病程和既往治疗差异的影响，也不能直接估计相对于standard of care的因果治疗效应。
+
+因此，accelerated approval通常需要confirmatory randomized trial验证PFS或OS等长期临床获益。
+
+## Pooled Analysis（汇总分析）
+
+EGFR突变NSCLC批准整合了不同研究中的患者。
+
+| 问题 | 统计学影响 |
+|---|---|
+| 不同研究设计 | Single-arm与randomized trial的患者选择机制不同 |
+| 入排标准差异 | 可能形成clinical heterogeneity |
+| 既往治疗差异 | 影响治疗敏感性和预后 |
+| 评估频率不同 | 影响ORR确认和DOR估计 |
+| 随访时间不同 | 可能造成DOR数据成熟度不一致 |
+| 数据截止日期不同 | 影响可比性和估计稳定性 |
+
+汇总分析应预先定义目标人群、剂量、response criteria和分析规则，并通过研究分层或敏感性分析评估异质性。
+
+## Histology Subgroup（组织学亚组）
+
+TROPION-Lung01提示Dato-DXd的疗效可能在nonsquamous和squamous NSCLC之间不同。
+
+亚组分析需要区分prespecified subgroup analysis（预设亚组分析）、exploratory subgroup analysis（探索性亚组分析）、within-subgroup confidence interval和treatment-by-subgroup interaction test（治疗与亚组交互检验）。
+
+不能仅根据一个亚组显著、另一个亚组不显著，就直接推断存在真实的亚组差异。判断heterogeneity时，应重点参考interaction effect及其不确定性。
+
+## Open-Label Design（开放标签设计）
+
+Dato-DXd与化疗的给药方式、毒性和管理方式差异明显，因此许多Phase 3试验采用open-label design。
+
+Open-label可能影响investigator-assessed progression、adverse-event attribution、treatment discontinuation、patient-reported outcomes和subsequent therapy decision。
+
+因此，PFS通常使用BICR作为主要评估，以减少assessment bias（评估偏倚）。但BICR也可能产生informative censoring、missing scan、investigator与BICR进展时间不一致，以及不同评估时间表造成的interval censoring。
+
+## Treatment Discontinuation
+
+ADC治疗中，毒性可能导致dose interruption、dose reduction、permanent discontinuation、treatment beyond progression或initiation of subsequent therapy。
+
+在estimand framework中，需要明确这些事件属于intercurrent event、endpoint event，还是仅影响治疗暴露。PFS通常使用treatment-policy strategy处理停药，即患者停药后继续进行疾病评估，直至进展或死亡。
+
+## Safety Analysis
+
+仅比较“任何级别AE发生率”可能不足以全面评价Dato-DXd的安全性。
+
+更有价值的分析包括Grade 3或更高级别TEAE、serious adverse event、treatment-related adverse event、dose interruption和dose reduction、permanent discontinuation、time to first onset、event duration、recurrent-event pattern、cumulative incidence和exposure-adjusted incidence rate。
+
+对于stomatitis、ocular toxicity和ILD，应进行专门的**adverse event of special interest, AESI（特殊关注不良事件）**分析。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Biomarker Strategy（生物标志物策略）
+
+虽然Dato-DXd靶向TROP2，但当前临床开发并未普遍要求TROP2高表达。
+
+未来研究可进一步评估TROP2 membrane expression、TROP2 expression intensity、TROP2-positive tumor-cell proportion、spatial heterogeneity、tumor mutation profile、DNA damage repair biomarkers和**circulating tumor DNA, ctDNA（循环肿瘤DNA）**。
+
+Biomarker分析应避免仅根据observed responder与non-responder进行post hoc cutoff selection，否则可能产生严重的overfitting和multiplicity问题。
+
+## Comparator Selection（对照组选择）
+
+Dato-DXd试验常使用investigator's choice chemotherapy作为对照。
+
+这种设计能够反映实际临床中的多种标准治疗选择，但也可能引入异质性，包括不同化疗药物疗效不同、地区治疗习惯不同、患者既往治疗影响对照药物选择，以及对照药物使用比例影响总体治疗效应。
+
+随机化时通常需要根据关键预后因素分层，并在主要分析中纳入stratification factors。
+
+## Subsequent Therapy（后续治疗）
+
+在ADC快速发展的治疗环境中，后续接受其他ADC可能影响OS。
+
+建议系统收集subsequent anticancer therapy、subsequent ADC exposure、time to first subsequent therapy、treatment sequence、post-progression response及crossover或off-protocol Dato-DXd使用。
+
+必要时可使用rank-preserving structural failure time model、inverse probability of censoring weighting或其他方法探索treatment switching的影响，但这些分析依赖较强假设，通常应作为sensitivity analysis。
+
+# Common Pitfalls（常见误区）
+
+1. **Dato-DXd并非仍然完全处于研究阶段。**  
+   截至2026年7月，用户提供资料显示该药已在美国获得多个乳腺癌和EGFR突变NSCLC适应证。
+
+2. **Dato-DXd不是普通单克隆抗体。**  
+   其主要细胞杀伤作用来自抗体递送的DXd payload。
+
+3. **TROP2高表达并不是当前所有适应证的必要入组条件。**  
+   TROP2 expression尚未建立为常规患者筛选biomarker。
+
+4. **PFS显著不代表OS必然获益。**  
+   TROPION-Breast01改善PFS，但OS未达到统计学显著性。
+
+5. **Accelerated approval不等同于临床获益已经完全确认。**  
+   EGFR突变NSCLC适应证仍需confirmatory evidence。
+
+6. **不同TROP2 ADC之间不能直接进行简单的跨试验比较。**  
+   患者人群、治疗线次、对照组和终点评估均可能不同。
+
+7. **ADC并不意味着没有化疗毒性。**  
+   Payload仍可引起口腔炎、骨髓抑制、恶心、脱发、ILD和其他系统性不良反应。
+
+# Abbreviations（缩写）
+
+| 缩写 | 英文全称 | 中文解释 |
+|---|---|---|
+| ADC | Antibody-drug conjugate | 抗体偶联药物 |
+| AESI | Adverse event of special interest | 特殊关注不良事件 |
+| BICR | Blinded independent central review | 盲态独立中心审评 |
+| CI | Confidence interval | 置信区间 |
+| DAR | Drug-to-antibody ratio | 药物抗体比 |
+| Dato-DXd | Datopotamab deruxtecan | 德达博妥单抗 |
+| DOR | Duration of response | 缓解持续时间 |
+| EGFR | Epidermal growth factor receptor | 表皮生长因子受体 |
+| HER2 | Human epidermal growth factor receptor 2 | 人表皮生长因子受体2 |
+| HR | Hazard ratio或hormone receptor | 风险比或激素受体，需根据语境判断 |
+| ILD | Interstitial lung disease | 间质性肺病 |
+| NSCLC | Non-small cell lung cancer | 非小细胞肺癌 |
+| ORR | Objective response rate | 客观缓解率 |
+| OS | Overall survival | 总生存期 |
+| PFS | Progression-free survival | 无进展生存期 |
+| TNBC | Triple-negative breast cancer | 三阴性乳腺癌 |
+| TROP2 | Trophoblast cell-surface antigen 2 | 滋养层细胞表面抗原2 |
+
+# Key Takeaways（核心要点）
+
+1. Dato-DXd是一种由Daiichi Sankyo开发、目前与AstraZeneca共同开发的TROP2-directed ADC。
+2. Dato-DXd由抗TROP2抗体、可裂解linker和DXd topoisomerase I inhibitor payload组成，DAR约为4。
+3. 截至2026年7月，美国已批准Dato-DXd用于经治HR-positive/HER2-negative breast cancer、经治EGFR突变NSCLC，以及不适合免疫治疗的一线晚期TNBC，具体应以最新标签为准。
+4. TROPION-Breast01显示PFS获益，但未显示OS获益；TROPION-Breast02则同时显示PFS和OS改善。
+5. EGFR突变NSCLC适应证属于accelerated approval，主要基于45%的ORR和6.5个月的median DOR。
+6. Stomatitis、ocular toxicity和ILD/pneumonitis是Dato-DXd临床使用和安全性分析中的重点风险。
+7. TROP2表达尚未建立为常规患者筛选标准，Dato-DXd的疗效可能受到靶点表达、内化、payload释放和肿瘤敏感性等多种因素共同影响。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. *FDA approves datopotamab deruxtecan-dlnk for unresectable or metastatic HR-positive, HER2-negative breast cancer*. January 17, 2025.  
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-hr-positive-her2-negative-breast>
+2. U.S. Food and Drug Administration. *FDA grants accelerated approval to datopotamab deruxtecan-dlnk for EGFR-mutated non-small cell lung cancer*. June 23, 2025.  
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-datopotamab-deruxtecan-dlnk-egfr-mutated-non-small-cell-lung-cancer>
+3. U.S. Food and Drug Administration. FDA approval information for datopotamab deruxtecan-dlnk in unresectable or metastatic triple-negative breast cancer. May 22, 2026.
+4. U.S. Food and Drug Administration. *DATROWAY Prescribing Information*.
+5. European Medicines Agency. *Datroway: European public assessment report*.
+6. Bardia A, et al. Datopotamab deruxtecan versus chemotherapy in previously treated inoperable or metastatic hormone-receptor-positive, HER2-negative breast cancer: TROPION-Breast01. *Journal of Clinical Oncology*.
+7. Ahn MJ, et al. Datopotamab deruxtecan versus docetaxel in previously treated advanced or metastatic non-small-cell lung cancer: TROPION-Lung01. *Journal of Clinical Oncology*. 2025.
+8. ClinicalTrials.gov. TROPION-Breast01: NCT05104866.
+9. ClinicalTrials.gov. TROPION-Breast02: NCT05374512.
+10. ClinicalTrials.gov. TROPION-Lung01: NCT04656652.
+11. ClinicalTrials.gov. TROPION-Lung05: NCT04484142.

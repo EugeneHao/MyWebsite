@@ -1,0 +1,272 @@
+---
+title: "Pertuzumab（帕妥珠单抗）"
+description: "系统介绍Pertuzumab的药物特性、作用机制、临床开发、关键研究、疗效、安全性及生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Pertuzumab（帕妥珠单抗；Genentech/[Roche](../company/Roche.qmd)；Perjeta）**是一种靶向**[human epidermal growth factor receptor 2, HER2（人表皮生长因子受体2）](../target/HER.qmd)**的重组人源化单克隆抗体，由Genentech开发，目前由Roche/Genentech负责全球商业化。
+
+Pertuzumab是首个通过阻断**HER2 dimerization（HER2二聚化）**发挥作用的HER2靶向药物。它与**[trastuzumab（曲妥珠单抗；Herceptin）](Herceptin.qmd)**的结合位点不同，因此两者具有互补机制。Dual HER2 blockade（双HER2阻断）已成为HER2阳性[breast cancer（乳腺癌）](../disease/Breast_Cancer.qmd)治疗的重要组成部分。
+
+截至2026年，pertuzumab已在多个国家和地区获批用于HER2阳性乳腺癌的新辅助、辅助及转移性治疗。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Pertuzumab |
+| 中文通用名 | 帕妥珠单抗 |
+| Brand name | Perjeta |
+| Sponsor | Roche / Genentech |
+| Original developer | Genentech |
+| Drug type | Humanized monoclonal antibody |
+| Drug class | HER2-targeted monoclonal antibody |
+| Molecular type | IgG1 monoclonal antibody |
+| Target | HER2 extracellular domain II |
+| Route | Intravenous infusion（静脉输注） |
+| Initial FDA approval | 2012年 |
+| Core indication | HER2-positive breast cancer |
+
+# Mechanism of Action（作用机制）
+
+HER2属于HER/ERBB receptor family，可与HER3、EGFR和HER4形成heterodimer。其中HER2/HER3二聚体通常具有很强的促肿瘤信号活性。
+
+Pertuzumab结合HER2胞外结构域Domain II，主要作用包括：
+
+- 阻断HER2与HER3形成异源二聚体；
+- 抑制PI3K/AKT及MAPK信号通路；
+- 抑制肿瘤细胞增殖和存活；
+- 激活**antibody-dependent cellular cytotoxicity, ADCC（抗体依赖性细胞介导的细胞毒作用）**。
+
+Trastuzumab和pertuzumab的作用位点不同：
+
+| 药物 | 主要结合位点 | 主要作用 |
+|---|---|---|
+| Trastuzumab | HER2 Domain IV | 抑制HER2信号并介导ADCC |
+| Pertuzumab | HER2 Domain II | 阻断HER2二聚化，尤其是HER2/HER3二聚体 |
+
+两者联合可实现更全面的HER2信号阻断。
+
+# Approved Indications（获批适应证）
+
+Pertuzumab主要用于HER2阳性乳腺癌，常与trastuzumab和化疗联合。
+
+| 临床场景 | 常见联合方案 | 主要目的 |
+|---|---|---|
+| HER2-positive early breast cancer neoadjuvant treatment | Pertuzumab + trastuzumab + chemotherapy | 提高pathologic complete response |
+| HER2-positive early breast cancer adjuvant treatment | Pertuzumab + trastuzumab + chemotherapy | 降低复发风险，尤其在较高风险患者中 |
+| HER2-positive metastatic breast cancer first-line treatment | Pertuzumab + trastuzumab + taxane | 延长PFS和OS |
+
+Pertuzumab还可作为固定剂量皮下注射复方制剂PHESGO的一部分。PHESGO由pertuzumab、trastuzumab和hyaluronidase组成，用于简化给药流程。
+
+# Clinical Development（临床开发）
+
+## 关键研究
+
+| Trial | Phase | 人群 | Experimental arm | Comparator | Primary endpoint | 主要结果 |
+|---|---:|---|---|---|---|---|
+| CLEOPATRA | 3 | HER2+ metastatic breast cancer一线 | Pertuzumab + trastuzumab + [docetaxel](Docetaxel.qmd) | Trastuzumab + docetaxel | [PFS](../other/PFS.qmd) | PFS和OS均显著改善 |
+| NEOSPHERE | 2 | HER2+ early breast cancer新辅助 | Dual HER2 blockade方案 | 多治疗组 | pCR | pCR明显提高 |
+| APHINITY | 3 | HER2+ early breast cancer辅助 | Pertuzumab + trastuzumab + chemotherapy | Trastuzumab + chemotherapy | iDFS | iDFS改善，淋巴结阳性患者获益更明显 |
+| FeDeriCa | 3 | HER2+ breast cancer | PHESGO | IV pertuzumab + trastuzumab | PK及非劣效 | 达到非劣效 |
+
+## CLEOPATRA
+
+CLEOPATRA是一项randomized、double-blind、Phase 3研究，评价pertuzumab加入trastuzumab和docetaxel用于一线HER2阳性转移性乳腺癌。
+
+治疗组：
+
+- pertuzumab；
+- trastuzumab；
+- docetaxel。
+
+对照组：
+
+- placebo；
+- trastuzumab；
+- docetaxel。
+
+该研究显示pertuzumab联合方案显著延长PFS和overall survival, OS（总生存期），并提高客观缓解率。CLEOPATRA确立了pertuzumab加trastuzumab和taxane作为HER2阳性转移性乳腺癌一线标准方案之一。
+
+## NEOSPHERE
+
+NEOSPHERE研究在HER2阳性早期乳腺癌新辅助治疗中评估不同HER2靶向组合。
+
+该研究显示，在新辅助阶段加入pertuzumab可明显提高**pathologic complete response, pCR（病理完全缓解）**，推动dual HER2 blockade进入早期乳腺癌治疗。
+
+## APHINITY
+
+APHINITY纳入HER2阳性可手术早期乳腺癌患者，比较：
+
+- pertuzumab + trastuzumab + chemotherapy；
+- placebo + trastuzumab + chemotherapy。
+
+主要终点为**invasive disease-free survival, iDFS（侵袭性无病生存期）**。
+
+研究显示pertuzumab联合方案改善iDFS，其中淋巴结阳性等较高复发风险患者获益更明显。辅助治疗场景下，绝对获益需要结合复发风险、毒性和治疗负担综合解释。
+
+## FeDeriCa
+
+FeDeriCa研究支持PHESGO皮下固定复方制剂的开发。研究主要关注pertuzumab和trastuzumab皮下给药相较静脉给药的药代动力学非劣效性，以及疗效和安全性的整体一致性。
+
+# Safety Profile（安全性）
+
+Pertuzumab常与trastuzumab和化疗联合，因此不良反应既包括HER2靶向治疗相关风险，也包括化疗相关毒性。
+
+| 不良事件 | 特点 |
+|---|---|
+| Diarrhea | 常见，尤其联合化疗时 |
+| Rash | 常见 |
+| Nausea | 常见 |
+| Fatigue | 常见 |
+| Infusion-related reaction | 输注相关反应 |
+| Neutropenia | 与化疗联合时增加 |
+| Left ventricular dysfunction | 少见但重要，需要心功能监测 |
+
+## Cardiac Monitoring（心功能监测）
+
+HER2靶向治疗可能影响心功能。治疗前及治疗期间通常需要定期监测：
+
+- left ventricular ejection fraction, LVEF（左心室射血分数）；
+- 心衰症状；
+- 既往蒽环类药物暴露；
+- 既往心血管疾病；
+- 其他心脏毒性药物。
+
+若LVEF明显下降或出现症状性心功能不全，通常需要暂停或停止HER2靶向治疗，并进行心脏专科评估。
+
+# 与其他HER2靶向药比较
+
+| 药物 | 靶点或结构 | 类型 | 主要特点 |
+|---|---|---|---|
+| [Trastuzumab](Herceptin.qmd) | HER2 Domain IV | HER2 monoclonal antibody | HER2治疗基础药物 |
+| Pertuzumab | HER2 Domain II | HER2 monoclonal antibody | 阻断HER2二聚化，与trastuzumab协同 |
+| Trastuzumab emtansine, T-DM1 | HER2 | [ADC](../other/ADC.qmd) | HER2 ADC |
+| Trastuzumab deruxtecan, T-DXd | HER2 | ADC | 具有bystander effect，适应证持续扩展 |
+| Margetuximab | HER2 | Fc-optimized antibody | 设计上增强Fc介导免疫效应 |
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## 新辅助研究
+
+HER2阳性乳腺癌新辅助研究常使用pCR作为主要终点。
+
+pCR的优势包括：
+
+- 事件发生快；
+- 样本量相对较小；
+- 可较早反映治疗活性；
+- 在HER2阳性和triple-negative breast cancer等亚型中与长期预后存在相关性。
+
+但pCR不是所有情况下都能完全替代长期终点，仍需结合event-free survival, EFS（无事件生存期）、iDFS和OS解释。
+
+## 辅助治疗研究
+
+辅助治疗研究常见终点包括：
+
+- iDFS；
+- disease-free survival, DFS（无病生存期）；
+- distant recurrence-free interval；
+- OS。
+
+由于早期乳腺癌OS事件较少，辅助治疗研究通常需要长期随访。治疗效应也常随患者基线复发风险而变化，因此淋巴结状态、HR状态和肿瘤大小等亚组非常重要。
+
+## 转移性研究
+
+转移性HER2阳性乳腺癌研究常见终点包括：
+
+- PFS；
+- OS；
+- objective response rate, ORR（客观缓解率）；
+- duration of response, DOR（缓解持续时间）；
+- safety；
+- patient-reported outcomes。
+
+多数研究采用Kaplan-Meier曲线、stratified log-rank test和Cox proportional hazards model进行主要time-to-event分析。
+
+## 亚组分析
+
+Pertuzumab研究中的常见亚组包括：
+
+- hormone receptor status；
+- lymph node status；
+- visceral disease；
+- geographic region；
+- prior therapy；
+- [ECOG performance status](../other/ECOG_Performance_Status.qmd)；
+- chemotherapy partner。
+
+亚组结果应结合hazard ratio、confidence interval、interaction test和生物学合理性解释。
+
+# Competitive Landscape（竞争格局）
+
+HER2阳性乳腺癌治疗已经形成完整治疗体系：
+
+| 治疗类别 | 代表药物 |
+|---|---|
+| HER2 monoclonal antibodies | Trastuzumab、Pertuzumab |
+| HER2 ADC | T-DM1、T-DXd |
+| HER2 TKI | Tucatinib、lapatinib、neratinib |
+| Fixed-dose combination | PHESGO |
+| Investigational strategies | HER2 bispecific antibodies、HER2 vaccines、new ADCs |
+
+Pertuzumab仍是一线dual HER2 blockade的重要组成部分，而ADC已成为后线治疗的重要标准方案。
+
+# Current Development Status（当前开发状态）
+
+截至2026年：
+
+- Pertuzumab已成为HER2阳性乳腺癌标准治疗的重要组成部分；
+- pertuzumab + trastuzumab仍是多种HER2阳性乳腺癌治疗方案的核心框架；
+- PHESGO进一步提升了给药便利性；
+- 当前研究重点包括与ADC、免疫治疗及新型HER2靶向药物的联合治疗。
+
+# Common Pitfalls（常见误区）
+
+1. **认为Pertuzumab和Trastuzumab作用完全相同。**  
+   两者都靶向HER2，但结合结构域不同，机制互补。
+
+2. **把dual HER2 blockade理解为单纯增加药物数量。**  
+   Pertuzumab主要阻断HER2二聚化，加入trastuzumab后可更全面抑制HER2信号。
+
+3. **忽视心功能监测。**  
+   HER2靶向治疗需要基线和治疗期间LVEF监测。
+
+4. **把新辅助pCR直接等同于OS获益。**  
+   pCR具有重要预测价值，但仍需长期EFS、iDFS和OS数据支持完整临床解释。
+
+5. **认为所有HER2阳性患者辅助治疗获益相同。**  
+   APHINITY提示较高风险患者，特别是淋巴结阳性患者，绝对获益更明显。
+
+# Key Takeaways（关键总结）
+
+1. Pertuzumab是靶向HER2 Domain II的人源化单克隆抗体，商品名Perjeta。
+2. 它通过阻断HER2二聚化，与trastuzumab形成互补机制，实现dual HER2 blockade。
+3. CLEOPATRA研究确立了其在HER2阳性转移性乳腺癌一线治疗中的标准地位。
+4. NEOSPHERE和APHINITY支持其在早期乳腺癌新辅助及辅助治疗中的应用。
+5. 心功能监测是pertuzumab治疗期间的重要安全管理措施。
+
+# References（参考文献）
+
+1. Baselga J, Cortes J, Kim SB, et al. Pertuzumab plus trastuzumab plus docetaxel for metastatic breast cancer. *New England Journal of Medicine*. 2012.
+2. Swain SM, Baselga J, Kim SB, et al. Pertuzumab, trastuzumab, and docetaxel in HER2-positive metastatic breast cancer. *New England Journal of Medicine*. 2015.
+3. Gianni L, Pienkowski T, Im YH, et al. Efficacy and safety of neoadjuvant pertuzumab and trastuzumab in women with HER2-positive breast cancer: NeoSphere. *The Lancet Oncology*. 2012.
+4. von Minckwitz G, Procter M, de Azambuja E, et al. Adjuvant pertuzumab and trastuzumab in early HER2-positive breast cancer. *New England Journal of Medicine*. 2017.
+5. U.S. Food and Drug Administration. *Perjeta (pertuzumab) Prescribing Information*.
+6. National Comprehensive Cancer Network. *NCCN Clinical Practice Guidelines in Oncology: Breast Cancer*.

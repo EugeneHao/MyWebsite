@@ -219,6 +219,13 @@ website:
                 href: docs/pharmaceutical/compound/Imfinzi.qmd
               - text: Lynparza
                 href: docs/pharmaceutical/compound/Lynparza.qmd
+              - text: Dato-DXd
+                href: docs/pharmaceutical/compound/Dato_DXd.qmd
+            - section: Daiichi Sankyo
+              href: docs/pharmaceutical/company/Daiichi_Sankyo.qmd
+              contents:
+              - text: Dato-DXd
+                href: docs/pharmaceutical/compound/Dato_DXd.qmd
             - section: J & J
               href: docs/pharmaceutical/company/J & J.qmd
               contents:        
@@ -262,6 +269,8 @@ website:
                 href: docs/pharmaceutical/compound/Rituxan.qmd   
               - text: Herceptin
                 href: docs/pharmaceutical/compound/Herceptin.qmd
+              - text: Pertuzumab
+                href: docs/pharmaceutical/compound/Pertuzumab.qmd
               - text: Avastin
                 href: docs/pharmaceutical/compound/Avastin.qmd
               - text: Zelboraf
@@ -300,8 +309,11 @@ website:
                 href: docs/pharmaceutical/compound/Kalydeco.qmd  
             - text: Regeneron
               href: docs/pharmaceutical/company/Regeneron.qmd
-            - text: Gilead
+            - section: Gilead
               href: docs/pharmaceutical/company/Gilead.qmd
+              contents:
+              - text: Trodelvy
+                href: docs/pharmaceutical/compound/Saci_G.qmd
             - section: Amgen 
               contents: 
               - text: Carfilzomib

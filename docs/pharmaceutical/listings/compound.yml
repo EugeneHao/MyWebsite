@@ -49,7 +49,8 @@
   compound: Palbociclib
   path: compound/Ibrance.html
   company: Pfizer
-  indication: Breast cancer treatment.
+  indication: |
+    CDK4/6 inhibitor for HR+/HER2- [breast cancer](disease/Breast_Cancer.qmd), with newer use in HR+/HER2+ maintenance therapy combined with anti-HER2 and endocrine therapy.
 - drug: Xeljanz
   compound: Tofacitinib
   path: compound/Xeljanz.html
@@ -78,6 +79,12 @@
   compound: Olaparib
   company: AstraZeneca, Merck & Co.
   indication: Treatment of ovarian, breast, prostate, and [pancreatic cancers](disease/Pancreatic_Cancer.qmd).
+- drug: Datroway
+  compound: Datopotamab deruxtecan / Dato-DXd
+  path: compound/Dato_DXd.html
+  company: Daiichi Sankyo, AstraZeneca
+  indication: |
+    TROP2-directed ADC for selected [breast cancer](disease/Breast_Cancer.qmd) and [NSCLC](disease/NSCLC.qmd) settings.
 - drug: Pneumovax
   compound: Pneumococcal Polysaccharide Vaccine
   company: Merck & Co.
@@ -154,6 +161,12 @@
   compound: Trastuzumab
   company: Roche
   indication: Treats HER2-positive breast cancer and stomach cancer.
+- drug: Perjeta
+  compound: Pertuzumab
+  path: compound/Pertuzumab.html
+  company: Roche
+  indication: |
+    HER2-targeted monoclonal antibody used with trastuzumab and chemotherapy for HER2-positive [breast cancer](disease/Breast_Cancer.qmd).
 - drug: Rituxan
   compound: Rituximab
   company: Roche
@@ -298,6 +311,12 @@
   compound: Sofosbuvir, Velpatasvir
   company: Gilead
   indication: Treats chronic hepatitis C virus (HCV) infection.
+- drug: Trodelvy
+  compound: Sacituzumab govitecan / Saci-G
+  path: compound/Saci_G.html
+  company: Gilead
+  indication: |
+    TROP2-directed ADC for selected [breast cancer](disease/Breast_Cancer.qmd) settings, including TNBC and HR+/HER2- disease.
 
 - drug: Eylea
   compound: Aflibercept

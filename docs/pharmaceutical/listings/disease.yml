@@ -248,7 +248,7 @@
   chinese: 非小细胞肺癌
   body part: Lungs
   drugs: |
-    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd), [Ivonescimab](compound/Ivonescimab.qmd), Tagrisso, Imfinzi
+    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd), [Ivonescimab](compound/Ivonescimab.qmd), [Dato-DXd](compound/Dato_DXd.qmd), Tagrisso, Imfinzi
 
 - name: Small Cell Lung Cancer (SCLC)
   path: disease/SCLC.html
@@ -262,7 +262,7 @@
   chinese: 乳腺癌
   body part: Breast
   drugs: |
-    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd), [Lynparza](compound/Lynparza.qmd), [Keytruda](compound/Keytruda.qmd), [Tecentriq](compound/Tecentriq.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd)
+    [Ibrance](compound/Ibrance.qmd), [Herceptin](compound/Herceptin.qmd), [Pertuzumab](compound/Pertuzumab.qmd), [Lynparza](compound/Lynparza.qmd), [Trodelvy / Saci-G](compound/Saci_G.qmd), [Dato-DXd](compound/Dato_DXd.qmd), [Keytruda](compound/Keytruda.qmd), [Tecentriq](compound/Tecentriq.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd)
 
 - name: Stomach Cancer
   chinese: 胃癌

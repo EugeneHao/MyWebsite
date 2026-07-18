@@ -2,7 +2,23 @@
 title: "Gilead"
 ---
 
-## Introduction
+# Company Overview
+
+**Gilead Sciences** 是一家总部位于美国的全球生物制药公司，业务重点覆盖HIV、viral hepatitis、COVID-19、oncology和cell therapy等领域。
+
+在肿瘤领域，Gilead的重要产品包括**[Trodelvy / Saci-G](../compound/Saci_G.qmd)（sacituzumab govitecan）**和Kite旗下的**[Yescarta](../compound/Yescarta.qmd)**。Trodelvy是一种[TROP2](../target/TROP2.qmd)-directed [ADC](../other/ADC.qmd)，主要用于特定[乳腺癌](../disease/Breast_Cancer.qmd)场景。
+
+# Selected Products
+
+| Product | Generic name | Area |
+|---|---|---|
+| [Trodelvy](../compound/Saci_G.qmd) | Sacituzumab govitecan | Oncology / TROP2 ADC |
+| [Yescarta](../compound/Yescarta.qmd) | Axicabtagene ciloleucel | Cell therapy / CAR-T |
+| Biktarvy | Bictegravir / emtricitabine / tenofovir alafenamide | HIV |
+| Truvada | Emtricitabine / tenofovir disoproxil fumarate | HIV |
+| Veklury | Remdesivir | COVID-19 |
+| Descovy | Emtricitabine / tenofovir alafenamide | HIV |
+| Epclusa | Sofosbuvir / velpatasvir | Hepatitis C |
 
 ### Financial Statements
 

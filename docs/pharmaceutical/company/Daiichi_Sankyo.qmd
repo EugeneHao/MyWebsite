@@ -1,0 +1,18 @@
+---
+title: "Daiichi Sankyo"
+---
+
+# Company Overview
+
+**Daiichi Sankyo** 是一家总部位于日本的全球制药公司，业务覆盖oncology、cardiovascular disease、specialty medicine等领域。
+
+在肿瘤领域，Daiichi Sankyo以DXd ADC平台最具代表性。该平台包括HER2-directed ADC trastuzumab deruxtecan以及TROP2-directed ADC **[Datopotamab deruxtecan, Dato-DXd](../compound/Dato_DXd.qmd)**。Dato-DXd由Daiichi Sankyo与[AstraZeneca](AstraZeneca.qmd)共同开发和商业化。
+
+# Selected Products and Programs
+
+| Product or program | Generic name | Area |
+|---|---|---|
+| Enhertu | Trastuzumab deruxtecan | Oncology / HER2 ADC |
+| [Datroway](../compound/Dato_DXd.qmd) | Datopotamab deruxtecan | Oncology / TROP2 ADC |
+| Lixiana | Edoxaban | Cardiovascular |
+| Injectafer / Ferinject | Ferric carboxymaltose | Iron deficiency |

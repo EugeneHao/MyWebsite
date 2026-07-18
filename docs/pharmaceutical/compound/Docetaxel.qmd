@@ -142,7 +142,7 @@ Docetaxel常作为以下方案组成部分：
 | CheckMate 057 | Nonsquamous NSCLC | Nivolumab | Docetaxel | OS |
 | KEYNOTE-010 | PD-L1+ NSCLC | [Pembrolizumab](Keytruda.qmd) | Docetaxel | OS |
 | OAK | NSCLC | [Atezolizumab](Tecentriq.qmd) | Docetaxel | OS |
-| TROPION-Lung01 | NSCLC | Datopotamab deruxtecan | Docetaxel | PFS、OS |
+| TROPION-Lung01 | NSCLC | [Datopotamab deruxtecan](Dato_DXd.qmd) | Docetaxel | PFS、OS |
 
 Docetaxel已成为肺癌III期研究中最经典的active comparator。
 

@@ -169,7 +169,7 @@ HER3 ADC目前主要开发方向包括：
 | 药物 | 类型 |
 |---|---|
 | [Trastuzumab](../compound/Herceptin.qmd) | HER2单抗 |
-| Pertuzumab | HER2单抗 |
+| [Pertuzumab](../compound/Pertuzumab.qmd) | HER2单抗 |
 
 二者联合已成为HER2阳性乳腺癌标准治疗。
 
