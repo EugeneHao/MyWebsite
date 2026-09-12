@@ -129,7 +129,7 @@ Docetaxel是以下疾病的重要标准治疗之一：
 
 Docetaxel常作为以下方案组成部分：
 
-- DCF（docetaxel + cisplatin + 5-FU）；
+- DCF（docetaxel + [cisplatin](../AE/Toxicity_Cisplatin.qmd) + 5-FU）；
 - FLOT（5-FU + leucovorin + oxaliplatin + docetaxel）。
 
 # 重要临床研究

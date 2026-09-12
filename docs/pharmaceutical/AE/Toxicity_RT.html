@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hao Sun">
+<meta name="dcterms.date" content="2026-09-11">
+<meta name="description" content="介绍放疗相关毒性的正确分类、常见器官系统表现、CTCAE记录、剂量体积因素、联合治疗归因及临床试验分析考虑。">
+
+<title>Radiotherapy Toxicity, Toxicity - RT（放疗相关毒性） – Hao Sun</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/pharmaceutical/AE/Toxicity_Cisplatin.html" rel="next">
+<link href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" rel="prev">
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-40bff128ebd1d07c10ce41ee10634112.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Radiotherapy Toxicity, Toxicity - RT（放疗相关毒性） – Hao Sun">
+<meta property="og:description" content="介绍放疗相关毒性的正确分类、常见器官系统表现、CTCAE记录、剂量体积因素、联合治疗归因及临床试验分析考虑。">
+<meta property="og:image" content="BMS.png">
+<meta property="og:site_name" content="Hao Sun">
+<meta name="twitter:title" content="Radiotherapy Toxicity, Toxicity - RT（放疗相关毒性） – Hao Sun">
+<meta name="twitter:description" content="介绍放疗相关毒性的正确分类、常见器官系统表现、CTCAE记录、剂量体积因素、联合治疗归因及临床试验分析考虑。">
+<meta name="twitter:image" content="BMS.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../BMS.png" alt="BMS logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/statistics/index.html"> 
+<span class="menu-text">Statistics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/programming/index.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/pharmaceutical/index.html"> 
+<span class="menu-text">Pharmaceutical</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docs/blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com/eugenesun14" title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/EugeneHao" title="Quarto GitHub" class="quarto-navigation-tool px-1" aria-label="Quarto GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/hao-sun-13207/" title="Quarto Linkedin" class="quarto-navigation-tool px-1" aria-label="Quarto Linkedin"><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Clinical Trial</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/Toxicity_RT.html">Toxicity - RT</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharmaceutical Content</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-company.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Company</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/BMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BMS</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Eliquis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eliquis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Opdivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Opdivo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Reblozyl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reblozyl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Revlimid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Revlimid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Yervoy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Yervoy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Onureg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onureg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Inrebic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inrebic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Iberdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iberdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mezigdomide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mezigdomide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Alnuctamab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alnuctamab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Abecma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abecma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Breyanzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breyanzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Krazati.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Krazati</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/KarXT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KarXT (COBENFY)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Pumitamig.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pumitamig</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Izalontamab_Brengitecan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Izalontamab Brengitecan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Akeso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Akeso</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cadonilimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cadonilimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Summit_Therapeutics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summit Therapeutics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ivonescimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ivonescimab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Merck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merck</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Keytruda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keytruda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Januvia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Januvia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Gardasil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gardasil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Pneumovax</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/AstraZeneca.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AstraZeneca</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Imfinzi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Imfinzi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Lynparza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lynparza</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Dato_DXd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dato-DXd</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Daiichi_Sankyo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daiichi Sankyo</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Dato_DXd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dato-DXd</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/J &amp; J.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">J &amp; J</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carvykti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carvykti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecvayli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecvayli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Darzalex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Darzalex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Remicade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Remicade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Stelara.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stelara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xarelto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xarelto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Bortezomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bortezomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Pfizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pfizer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mylotarg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mylotarg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Comirnaty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comirnaty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Prevnar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prevnar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Ibrance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ibrance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xeljanz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xeljanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Xalkori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Xalkori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Sirolimus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sirolimus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Roche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roche</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tecentriq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tecentriq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Rituxan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rituxan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Herceptin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Herceptin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Pertuzumab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pertuzumab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Avastin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Avastin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Zelboraf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zelboraf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Cotellic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cotellic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Abbvie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbvie</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Humira.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Humira</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Skyrizi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Skyrizi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/GSK.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GSK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Dostarlimab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jemperli</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Tafinlar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tafinlar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Novartis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Novartis</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Mekinist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mekinist</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Sanofi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sanofi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Docetaxel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taxotere</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Incyte</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Jakafi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jakafi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vertex</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Kalydeco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kalydeco</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/company/Regeneron.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regeneron</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/company/Gilead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gilead</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Saci_G.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trodelvy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
+ <span class="menu-text">Amgen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Carfilzomib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carfilzomib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Regulatory</span></span>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-compound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Compound</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/compound/Venclexta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Venclexta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lung Cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/NSCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-Small Cell Lung Cancer (NSCLC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/SCLC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Cell Lung Cancer (SCLC)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
+ <span class="menu-text">Hematologic Malignancies</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Leukemia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Leukemia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Lymphoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/MDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Myelodysplastic Syndromes (MDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/multiple_myeloma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiple Myeloma (MM)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false">
+ <span class="menu-text">Other Solid Tumors</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Breast_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Breast Cancer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Melanoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Melanoma</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Pancreatic_Cancer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pancreatic Cancer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false">
+ <span class="menu-text">Inflammatory and Autoimmune</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Rheumatoid_Arthritis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rheumatoid Arthritis (RA)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" role="navigation" aria-expanded="false">
+ <span class="menu-text">Metabolic and Cardiovascular</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-27" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/T2DM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Type 2 Diabetes Mellitus (T2DM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/disease/Thrombosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Thrombosis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-target.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-28" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/PD-L1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PD-L1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/VEGF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VEGF</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/HER.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HER Family</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/TROP2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TROP2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/target/KRAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/listing-SDTM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDTM</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/pharmaceutical/listing-other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-29" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-29" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-30" role="navigation" aria-expanded="true">
+ <span class="menu-text">Wiki</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-30" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-30" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-31" role="navigation" aria-expanded="false">
+ <span class="menu-text">Biotechnology</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-31" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-31" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Drug.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Drug Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ADC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Antibody-Drug Conjugates (ADC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/CAR-T.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CAR-T</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immune Checkpoint</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunotherapy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/MAT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monoclonal Antibody Therapy (MAT)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/TME.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tumor Microenvironment (TME)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-32" role="navigation" aria-expanded="true">
+ <span class="menu-text">Clinical Trial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-32" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-32" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adverse Event by SOC and PT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/Toxicity_RT.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Toxicity - RT</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/AE/Toxicity_Cisplatin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Toxicity - Cisplatin（顺铂）</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Biomarker_Expression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biomarker Expression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intercurrent Events</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/Cancer_Staging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cancer Staging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/TNM_Staging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TNM Staging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/ECOG_Performance_Status.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ECOG Performance Status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/other/RECIST_1_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RECIST 1.1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Endpoint</span></span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/pharma_note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pharma Note</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/pharmaceutical/wiki/Naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drug Naming Rules</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#概述" id="toc-概述" class="nav-link active" data-scroll-target="#概述"><span class="header-section-number">1</span> 概述</a></li>
+  <li><a href="#正确分类框架" id="toc-正确分类框架" class="nav-link" data-scroll-target="#正确分类框架"><span class="header-section-number">2</span> 正确分类框架</a>
+  <ul class="collapse">
+  <li><a href="#按发生时间分类" id="toc-按发生时间分类" class="nav-link" data-scroll-target="#按发生时间分类"><span class="header-section-number">2.1</span> 按发生时间分类</a></li>
+  <li><a href="#按器官系统分类" id="toc-按器官系统分类" class="nav-link" data-scroll-target="#按器官系统分类"><span class="header-section-number">2.2</span> 按器官系统分类</a></li>
+  <li><a href="#按照治疗部位分类" id="toc-按照治疗部位分类" class="nav-link" data-scroll-target="#按照治疗部位分类"><span class="header-section-number">2.3</span> 按照治疗部位分类</a></li>
+  </ul></li>
+  <li><a href="#常见放疗毒性" id="toc-常见放疗毒性" class="nav-link" data-scroll-target="#常见放疗毒性"><span class="header-section-number">3</span> 常见放疗毒性</a>
+  <ul class="collapse">
+  <li><a href="#radiation-dermatitis放射性皮炎" id="toc-radiation-dermatitis放射性皮炎" class="nav-link" data-scroll-target="#radiation-dermatitis放射性皮炎"><span class="header-section-number">3.1</span> Radiation Dermatitis（放射性皮炎）</a></li>
+  <li><a href="#mucositis-and-dysphagia黏膜炎与吞咽困难" id="toc-mucositis-and-dysphagia黏膜炎与吞咽困难" class="nav-link" data-scroll-target="#mucositis-and-dysphagia黏膜炎与吞咽困难"><span class="header-section-number">3.2</span> Mucositis and Dysphagia（黏膜炎与吞咽困难）</a></li>
+  <li><a href="#radiation-pneumonitis放射性肺炎" id="toc-radiation-pneumonitis放射性肺炎" class="nav-link" data-scroll-target="#radiation-pneumonitis放射性肺炎"><span class="header-section-number">3.3</span> Radiation Pneumonitis（放射性肺炎）</a></li>
+  <li><a href="#cardiac-toxicity心脏毒性" id="toc-cardiac-toxicity心脏毒性" class="nav-link" data-scroll-target="#cardiac-toxicity心脏毒性"><span class="header-section-number">3.4</span> Cardiac Toxicity（心脏毒性）</a></li>
+  <li><a href="#gi-toxicity胃肠道毒性" id="toc-gi-toxicity胃肠道毒性" class="nav-link" data-scroll-target="#gi-toxicity胃肠道毒性"><span class="header-section-number">3.5</span> GI Toxicity（胃肠道毒性）</a></li>
+  <li><a href="#genitourinary-toxicity泌尿生殖系统毒性" id="toc-genitourinary-toxicity泌尿生殖系统毒性" class="nav-link" data-scroll-target="#genitourinary-toxicity泌尿生殖系统毒性"><span class="header-section-number">3.6</span> Genitourinary Toxicity（泌尿生殖系统毒性）</a></li>
+  <li><a href="#cns-and-spinal-cord-toxicity中枢神经与脊髓毒性" id="toc-cns-and-spinal-cord-toxicity中枢神经与脊髓毒性" class="nav-link" data-scroll-target="#cns-and-spinal-cord-toxicity中枢神经与脊髓毒性"><span class="header-section-number">3.7</span> CNS and Spinal Cord Toxicity（中枢神经与脊髓毒性）</a></li>
+  </ul></li>
+  <li><a href="#与治疗技术有关的风险" id="toc-与治疗技术有关的风险" class="nav-link" data-scroll-target="#与治疗技术有关的风险"><span class="header-section-number">4</span> 与治疗技术有关的风险</a>
+  <ul class="collapse">
+  <li><a href="#conventional-fractionation" id="toc-conventional-fractionation" class="nav-link" data-scroll-target="#conventional-fractionation"><span class="header-section-number">4.1</span> Conventional Fractionation</a></li>
+  <li><a href="#sbrt-sabr" id="toc-sbrt-sabr" class="nav-link" data-scroll-target="#sbrt-sabr"><span class="header-section-number">4.2</span> SBRT / SABR</a></li>
+  <li><a href="#concurrent-chemoradiotherapy同步放化疗" id="toc-concurrent-chemoradiotherapy同步放化疗" class="nav-link" data-scroll-target="#concurrent-chemoradiotherapy同步放化疗"><span class="header-section-number">4.3</span> Concurrent Chemoradiotherapy（同步放化疗）</a></li>
+  </ul></li>
+  <li><a href="#ctcae记录与ae归因" id="toc-ctcae记录与ae归因" class="nav-link" data-scroll-target="#ctcae记录与ae归因"><span class="header-section-number">5</span> CTCAE记录与AE归因</a>
+  <ul class="collapse">
+  <li><a href="#记录原则" id="toc-记录原则" class="nav-link" data-scroll-target="#记录原则"><span class="header-section-number">5.1</span> 记录原则</a></li>
+  <li><a href="#attribution归因" id="toc-attribution归因" class="nav-link" data-scroll-target="#attribution归因"><span class="header-section-number">5.2</span> Attribution（归因）</a></li>
+  </ul></li>
+  <li><a href="#dose-volume-considerations剂量体积考虑" id="toc-dose-volume-considerations剂量体积考虑" class="nav-link" data-scroll-target="#dose-volume-considerations剂量体积考虑"><span class="header-section-number">6</span> Dose-Volume Considerations（剂量体积考虑）</a></li>
+  <li><a href="#clinical-trial-considerations临床试验考虑" id="toc-clinical-trial-considerations临床试验考虑" class="nav-link" data-scroll-target="#clinical-trial-considerations临床试验考虑"><span class="header-section-number">7</span> Clinical Trial Considerations（临床试验考虑）</a>
+  <ul class="collapse">
+  <li><a href="#endpoint-and-safety-set" id="toc-endpoint-and-safety-set" class="nav-link" data-scroll-target="#endpoint-and-safety-set"><span class="header-section-number">7.1</span> Endpoint and Safety Set</a></li>
+  <li><a href="#time-window时间窗" id="toc-time-window时间窗" class="nav-link" data-scroll-target="#time-window时间窗"><span class="header-section-number">7.2</span> Time Window（时间窗）</a></li>
+  <li><a href="#competing-risks竞争风险" id="toc-competing-risks竞争风险" class="nav-link" data-scroll-target="#competing-risks竞争风险"><span class="header-section-number">7.3</span> Competing Risks（竞争风险）</a></li>
+  <li><a href="#patient-reported-outcomes" id="toc-patient-reported-outcomes" class="nav-link" data-scroll-target="#patient-reported-outcomes"><span class="header-section-number">7.4</span> Patient-Reported Outcomes</a></li>
+  </ul></li>
+  <li><a href="#与免疫治疗毒性的区别" id="toc-与免疫治疗毒性的区别" class="nav-link" data-scroll-target="#与免疫治疗毒性的区别"><span class="header-section-number">8</span> 与免疫治疗毒性的区别</a></li>
+  <li><a href="#common-pitfalls常见误区" id="toc-common-pitfalls常见误区" class="nav-link" data-scroll-target="#common-pitfalls常见误区"><span class="header-section-number">9</span> Common Pitfalls（常见误区）</a></li>
+  <li><a href="#key-takeaways关键总结" id="toc-key-takeaways关键总结" class="nav-link" data-scroll-target="#key-takeaways关键总结"><span class="header-section-number">10</span> Key Takeaways（关键总结）</a></li>
+  <li><a href="#references参考资料" id="toc-references参考资料" class="nav-link" data-scroll-target="#references参考资料"><span class="header-section-number">11</span> References（参考资料）</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/listing-other.html">Other</a></li><li class="breadcrumb-item">Wiki</li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">Clinical Trial</a></li><li class="breadcrumb-item"><a href="../../../docs/pharmaceutical/AE/Toxicity_RT.html">Toxicity - RT</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Radiotherapy Toxicity, Toxicity - RT（放疗相关毒性）</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Oncology</div>
+    <div class="quarto-category">Safety</div>
+    <div class="quarto-category">Clinical Trials</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    介绍放疗相关毒性的正确分类、常见器官系统表现、CTCAE记录、剂量体积因素、联合治疗归因及临床试验分析考虑。
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hao Sun </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 11, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="概述" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 概述</h1>
+<p><strong>Radiotherapy toxicity, toxicity - RT（放疗相关毒性）</strong>是指患者接受<strong>radiation therapy, RT（放射治疗/放疗）</strong>后，由正常组织受到电离辐射影响而产生的不良反应。</p>
+<p>放疗毒性和药物毒性不同。药物毒性通常与全身暴露、药物机制和代谢有关；放疗毒性更强烈依赖：</p>
+<ul>
+<li>照射部位；</li>
+<li>正常器官接受的dose（剂量）；</li>
+<li>irradiated volume（受照体积）；</li>
+<li>fractionation（分割方式）；</li>
+<li>concurrent systemic therapy（同步系统治疗）；</li>
+<li>既往治疗史；</li>
+<li>患者基础器官功能。</li>
+</ul>
+<p>因此，RT毒性不应只写成“有无radiation injury”。在<a href="../../../docs/pharmaceutical/other/Intercurrent_Events.html">临床试验</a>和安全性分析中，通常需要同时按照<strong>发生时间、解剖部位、器官系统、严重程度和归因</strong>进行分类。</p>
+</section>
+<section id="正确分类框架" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 正确分类框架</h1>
+<section id="按发生时间分类" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="按发生时间分类"><span class="header-section-number">2.1</span> 按发生时间分类</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>分类</th>
+<th>常见时间</th>
+<th>机制特点</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Acute toxicity（急性毒性）</td>
+<td>放疗期间至治疗后约90天内</td>
+<td>主要影响更新较快的组织，如黏膜、皮肤和骨髓</td>
+<td>dermatitis radiation、esophagitis、mucositis、diarrhea、fatigue</td>
+</tr>
+<tr class="even">
+<td>Subacute toxicity（亚急性毒性）</td>
+<td>治疗后数周至数月</td>
+<td>炎症反应、血管损伤和组织修复异常</td>
+<td>radiation pneumonitis、Lhermitte syndrome</td>
+</tr>
+<tr class="odd">
+<td>Late toxicity（晚期毒性）</td>
+<td>治疗后数月至数年</td>
+<td>纤维化、血管狭窄、组织萎缩和器官功能下降</td>
+<td>pulmonary fibrosis、cardiac toxicity、radiation myelopathy、secondary malignancy</td>
+</tr>
+</tbody>
+</table>
+<p>90天并不是绝对生物学边界，但在研究报告和安全性汇总中常作为acute与late toxicity的实用分界。</p>
+</section>
+<section id="按器官系统分类" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="按器官系统分类"><span class="header-section-number">2.2</span> 按器官系统分类</h2>
+<p>RT toxicity应尽量映射到<a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">CTCAE和AE SOC/PT</a>框架，而不是只用非标准术语描述。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>器官系统</th>
+<th>常见PT或临床表现</th>
+<th>典型治疗部位</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Skin and subcutaneous tissue</td>
+<td>Dermatitis radiation、skin hyperpigmentation、fibrosis</td>
+<td>乳腺、头颈、胸壁、皮肤肿瘤</td>
+</tr>
+<tr class="even">
+<td>Gastrointestinal</td>
+<td>Esophagitis、mucositis oral、diarrhea、proctitis、enteritis</td>
+<td>头颈、胸部、腹盆腔</td>
+</tr>
+<tr class="odd">
+<td>Respiratory</td>
+<td>Radiation pneumonitis、pulmonary fibrosis、dyspnea、cough</td>
+<td><a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html">肺癌</a>、乳腺癌、纵隔肿瘤</td>
+</tr>
+<tr class="even">
+<td>Cardiac</td>
+<td>Pericarditis、cardiomyopathy、coronary artery disease、arrhythmia</td>
+<td>左侧乳腺、肺、食管、纵隔</td>
+</tr>
+<tr class="odd">
+<td>Nervous system</td>
+<td>Cognitive decline、radiation necrosis、myelopathy、neuropathy</td>
+<td>脑、脊髓、头颈、椎旁肿瘤</td>
+</tr>
+<tr class="even">
+<td>Genitourinary</td>
+<td>Cystitis noninfective、hematuria、urinary frequency</td>
+<td>前列腺、膀胱、妇科肿瘤</td>
+</tr>
+<tr class="odd">
+<td>Reproductive system</td>
+<td>Ovarian failure、infertility、sexual dysfunction</td>
+<td>盆腔、睾丸、全身照射</td>
+</tr>
+<tr class="even">
+<td>Blood and lymphatic system</td>
+<td>Lymphopenia、anemia、thrombocytopenia</td>
+<td>大范围骨髓受照、同步放化疗</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="按照治疗部位分类" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="按照治疗部位分类"><span class="header-section-number">2.3</span> 按照治疗部位分类</h2>
+<p>实际临床中，最有用的分类常常是“照哪里，就重点看哪个正常器官”。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>RT field</th>
+<th>重点关注毒性</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Brain / CNS</td>
+<td>alopecia、fatigue、cognitive impairment、radiation necrosis、endocrine dysfunction</td>
+</tr>
+<tr class="even">
+<td>Head and neck</td>
+<td>oral mucositis、xerostomia、dysphagia、dermatitis、hypothyroidism、osteoradionecrosis</td>
+</tr>
+<tr class="odd">
+<td>Thorax</td>
+<td>esophagitis、radiation pneumonitis、pulmonary fibrosis、cardiac toxicity</td>
+</tr>
+<tr class="even">
+<td>Breast / chest wall</td>
+<td>dermatitis radiation、fatigue、breast pain、pneumonitis、cardiac exposure（尤其左侧）</td>
+</tr>
+<tr class="odd">
+<td>Abdomen</td>
+<td>nausea、vomiting、gastritis、enteritis、liver injury、kidney injury</td>
+</tr>
+<tr class="even">
+<td>Pelvis</td>
+<td>diarrhea、proctitis、cystitis、sexual dysfunction、infertility、pelvic fracture</td>
+</tr>
+<tr class="odd">
+<td>Spine / paraspinal</td>
+<td>esophagitis或enteritis取决于部位；spinal cord myelopathy为严重晚期风险</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="常见放疗毒性" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 常见放疗毒性</h1>
+<section id="radiation-dermatitis放射性皮炎" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="radiation-dermatitis放射性皮炎"><span class="header-section-number">3.1</span> Radiation Dermatitis（放射性皮炎）</h2>
+<p>Radiation dermatitis是最常见的RT急性毒性之一，尤其见于乳腺、头颈、胸壁和皮肤相关放疗。</p>
+<p>常见表现包括：</p>
+<ul>
+<li>erythema（红斑）；</li>
+<li>dry desquamation（干性脱屑）；</li>
+<li>moist desquamation（湿性脱屑）；</li>
+<li>pain、burning或pruritus；</li>
+<li>severe ulceration或necrosis，较少见。</li>
+</ul>
+<p>记录时应尽量使用CTCAE术语<strong>dermatitis radiation</strong>，并记录grade、发生日期、照射区域、是否需要敷料或止痛，以及是否导致RT interruption。</p>
+</section>
+<section id="mucositis-and-dysphagia黏膜炎与吞咽困难" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="mucositis-and-dysphagia黏膜炎与吞咽困难"><span class="header-section-number">3.2</span> Mucositis and Dysphagia（黏膜炎与吞咽困难）</h2>
+<p>头颈部放疗和胸部放疗常累及黏膜。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>毒性</th>
+<th>常见部位</th>
+<th>临床影响</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Oral mucositis</td>
+<td>口腔、咽部</td>
+<td>疼痛、进食困难、感染风险、体重下降</td>
+</tr>
+<tr class="even">
+<td>Dysphagia</td>
+<td>咽喉、食管</td>
+<td>吞咽困难、营养不足、误吸风险</td>
+</tr>
+<tr class="odd">
+<td>Esophagitis</td>
+<td>胸部放疗食管受照</td>
+<td>胸骨后疼痛、吞咽痛、需要止痛或营养支持</td>
+</tr>
+</tbody>
+</table>
+<p>在<a href="../../../docs/pharmaceutical/disease/NSCLC.html">NSCLC</a>不可切除Stage III同步放化疗中，esophagitis是最重要的急性毒性之一。</p>
+</section>
+<section id="radiation-pneumonitis放射性肺炎" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="radiation-pneumonitis放射性肺炎"><span class="header-section-number">3.3</span> Radiation Pneumonitis（放射性肺炎）</h2>
+<p>Radiation pneumonitis通常发生于胸部RT后数周至数月，是<a href="../../../docs/pharmaceutical/disease/Lung_Cancer.html">肺癌</a>、乳腺癌和纵隔肿瘤放疗中最重要的安全性事件之一。</p>
+<p>典型表现包括：</p>
+<ul>
+<li>新发或加重cough；</li>
+<li>dyspnea；</li>
+<li>low-grade fever；</li>
+<li>hypoxia；</li>
+<li>CT出现照射野相关磨玻璃影或浸润。</li>
+</ul>
+<p>需要与以下情况鉴别：</p>
+<ul>
+<li>infection；</li>
+<li>tumor progression；</li>
+<li>pulmonary embolism；</li>
+<li>heart failure；</li>
+<li>immune-mediated pneumonitis，尤其是接受<a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html">immune checkpoint inhibitor</a>者；</li>
+<li>drug-induced ILD/pneumonitis，例如某些<a href="../../../docs/pharmaceutical/other/ADC.html">ADC</a>或靶向治疗。</li>
+</ul>
+<p>在接受胸部RT后再使用<a href="../../../docs/pharmaceutical/compound/Imfinzi.html">Imfinzi</a>、<a href="../../../docs/pharmaceutical/compound/Keytruda.html">Keytruda</a>、<a href="../../../docs/pharmaceutical/compound/Opdivo.html">Opdivo</a>或<a href="../../../docs/pharmaceutical/compound/Tecentriq.html">Tecentriq</a>等免疫治疗时，pneumonitis的归因尤其重要。</p>
+</section>
+<section id="cardiac-toxicity心脏毒性" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="cardiac-toxicity心脏毒性"><span class="header-section-number">3.4</span> Cardiac Toxicity（心脏毒性）</h2>
+<p>RT相关心脏毒性通常属于晚期毒性，可能在治疗后数年出现。风险与心脏受照剂量、既往心血管疾病、年龄、吸烟、化疗和靶向药物共同相关。</p>
+<p>常见表现包括：</p>
+<ul>
+<li>pericarditis；</li>
+<li>coronary artery disease；</li>
+<li>cardiomyopathy；</li>
+<li>valvular disease；</li>
+<li>arrhythmia；</li>
+<li>heart failure。</li>
+</ul>
+<p>左侧<a href="../../../docs/pharmaceutical/disease/Breast_Cancer.html">breast cancer</a>、肺癌、食管癌和纵隔淋巴瘤患者需要特别关注心脏dose constraint和长期随访。</p>
+</section>
+<section id="gi-toxicity胃肠道毒性" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="gi-toxicity胃肠道毒性"><span class="header-section-number">3.5</span> GI Toxicity（胃肠道毒性）</h2>
+<p>腹部和盆腔RT可导致：</p>
+<ul>
+<li>nausea和vomiting；</li>
+<li>diarrhea；</li>
+<li>enteritis；</li>
+<li>proctitis；</li>
+<li>rectal bleeding；</li>
+<li>bowel obstruction；</li>
+<li>fistula或perforation，较少见但严重。</li>
+</ul>
+<p>在<a href="../../../docs/pharmaceutical/disease/Pancreatic_Cancer.html">pancreatic cancer</a> chemoradiation或SBRT中，胃、十二指肠和小肠是关键organs at risk。</p>
+</section>
+<section id="genitourinary-toxicity泌尿生殖系统毒性" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="genitourinary-toxicity泌尿生殖系统毒性"><span class="header-section-number">3.6</span> Genitourinary Toxicity（泌尿生殖系统毒性）</h2>
+<p>盆腔RT常见泌尿系统毒性包括：</p>
+<ul>
+<li>urinary frequency；</li>
+<li>dysuria；</li>
+<li>cystitis noninfective；</li>
+<li>hematuria；</li>
+<li>urinary incontinence；</li>
+<li>sexual dysfunction。</li>
+</ul>
+<p>盆腔、睾丸或卵巢受照还可能导致fertility impairment。对于年轻患者，治疗前应考虑fertility preservation counseling。</p>
+</section>
+<section id="cns-and-spinal-cord-toxicity中枢神经与脊髓毒性" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="cns-and-spinal-cord-toxicity中枢神经与脊髓毒性"><span class="header-section-number">3.7</span> CNS and Spinal Cord Toxicity（中枢神经与脊髓毒性）</h2>
+<p>CNS RT的毒性取决于照射范围和剂量分割。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>部位</th>
+<th>重要毒性</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole brain RT</td>
+<td>fatigue、alopecia、cognitive decline、endocrine dysfunction</td>
+</tr>
+<tr class="even">
+<td>Stereotactic radiosurgery</td>
+<td>radiation necrosis、edema、seizure</td>
+</tr>
+<tr class="odd">
+<td>Spine RT</td>
+<td>pain flare、esophagitis或enteritis、radiation myelopathy</td>
+</tr>
+</tbody>
+</table>
+<p>Radiation myelopathy虽然罕见，但后果严重，因此spinal cord dose constraint是计划审核中的关键限制。</p>
+</section>
+</section>
+<section id="与治疗技术有关的风险" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 与治疗技术有关的风险</h1>
+<section id="conventional-fractionation" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="conventional-fractionation"><span class="header-section-number">4.1</span> Conventional Fractionation</h2>
+<p>常规分割通常为每日1.8-2.0 Gy，每周5次。它对晚反应组织较为温和，但治疗时间较长。</p>
+</section>
+<section id="sbrt-sabr" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sbrt-sabr"><span class="header-section-number">4.2</span> SBRT / SABR</h2>
+<p><strong>Stereotactic body radiation therapy, SBRT（立体定向体部放疗）</strong>使用少数分次给予较高单次剂量，常用于早期<a href="../../../docs/pharmaceutical/disease/NSCLC.html#sbrt">NSCLC</a>、局部复发病灶、寡转移或部分<a href="../../../docs/pharmaceutical/disease/Pancreatic_Cancer.html#locally-advanced-unresectable-pdac局部晚期不可切除pdac">胰腺癌</a>患者。</p>
+<p>SBRT的风险重点不只是总剂量，而是：</p>
+<ul>
+<li>tumor是否central或ultracentral；</li>
+<li>与bronchus、esophagus、heart、great vessels、bowel等serial organs距离；</li>
+<li>是否有既往RT；</li>
+<li>每分次剂量；</li>
+<li>organ at risk最大点剂量。</li>
+</ul>
+</section>
+<section id="concurrent-chemoradiotherapy同步放化疗" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="concurrent-chemoradiotherapy同步放化疗"><span class="header-section-number">4.3</span> Concurrent Chemoradiotherapy（同步放化疗）</h2>
+<p>同步放化疗可提高局部控制，但毒性通常高于单独RT。</p>
+<p>常见增加风险包括：</p>
+<ul>
+<li>esophagitis；</li>
+<li>mucositis；</li>
+<li>diarrhea；</li>
+<li>hematologic toxicity；</li>
+<li>infection；</li>
+<li>fatigue；</li>
+<li>treatment interruption。</li>
+</ul>
+<p>在不可切除Stage III <a href="../../../docs/pharmaceutical/disease/NSCLC.html#unresectable-stage-iii-nsclc不可切除stage-iii-nsclc">NSCLC</a>中，concurrent chemoradiotherapy是重要治疗框架；后续可能接续<a href="../../../docs/pharmaceutical/compound/Imfinzi.html">durvalumab</a> consolidation。</p>
+</section>
+</section>
+<section id="ctcae记录与ae归因" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> CTCAE记录与AE归因</h1>
+<section id="记录原则" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="记录原则"><span class="header-section-number">5.1</span> 记录原则</h2>
+<p>RT毒性在临床试验中通常按<a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html">AE SOC/PT</a>记录，重点包括：</p>
+<ul>
+<li>reported term；</li>
+<li>MedDRA preferred term；</li>
+<li>CTCAE grade；</li>
+<li>start date和end date；</li>
+<li>seriousness；</li>
+<li>是否导致RT interruption、dose change或discontinuation；</li>
+<li>是否需要住院、steroid、抗生素、营养支持、氧疗或手术；</li>
+<li>relationship to RT、systemic therapy或both。</li>
+</ul>
+</section>
+<section id="attribution归因" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="attribution归因"><span class="header-section-number">5.2</span> Attribution（归因）</h2>
+<p>当RT与药物联合时，归因不能只按时间判断。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>场景</th>
+<th>归因难点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Thoracic RT + immune checkpoint inhibitor</td>
+<td>radiation pneumonitis和immune-mediated pneumonitis可高度重叠</td>
+</tr>
+<tr class="even">
+<td>Chemoradiation</td>
+<td>mucositis、esophagitis、diarrhea和cytopenia可能由RT与化疗共同导致</td>
+</tr>
+<tr class="odd">
+<td>RT + ADC</td>
+<td>pneumonitis或mucositis可能存在叠加风险</td>
+</tr>
+<tr class="even">
+<td>Re-irradiation</td>
+<td>既往RT导致的组织储备下降会增加晚期毒性风险</td>
+</tr>
+</tbody>
+</table>
+<p>分析时可设立<strong>radiation-related AE（放疗相关AE）</strong>、<strong>immune-mediated AE（免疫介导AE）</strong>和<strong>treatment-related AE（治疗相关AE）</strong>等不同分析集合，但定义必须在protocol或SAP中预先说明。</p>
+</section>
+</section>
+<section id="dose-volume-considerations剂量体积考虑" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Dose-Volume Considerations（剂量体积考虑）</h1>
+<p>RT毒性高度依赖organ at risk的剂量体积分布。常见指标包括：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>指标</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean dose</td>
+<td>器官平均剂量</td>
+</tr>
+<tr class="even">
+<td>Dmax</td>
+<td>最大剂量</td>
+</tr>
+<tr class="odd">
+<td>D0.03cc / D1cc / D2cc</td>
+<td>最热点小体积剂量，常用于serial organ</td>
+</tr>
+<tr class="even">
+<td>V5 / V10 / V20 / V30</td>
+<td>器官接受至少某剂量的体积比例</td>
+</tr>
+<tr class="odd">
+<td>EQD2</td>
+<td>等效2 Gy分割剂量，用于比较不同分割方案</td>
+</tr>
+<tr class="even">
+<td>BED</td>
+<td>biologically effective dose，生物有效剂量</td>
+</tr>
+</tbody>
+</table>
+<p>例如胸部RT中，lung V20和mean lung dose常用于评估radiation pneumonitis风险；头颈RT中，parotid mean dose与xerostomia风险相关；盆腔RT中，rectum和bladder dose-volume参数与晚期出血、尿路症状相关。</p>
+<p>这些指标不能脱离癌种、技术、分割方式和患者特征机械套用。</p>
+</section>
+<section id="clinical-trial-considerations临床试验考虑" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Clinical Trial Considerations（临床试验考虑）</h1>
+<section id="endpoint-and-safety-set" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="endpoint-and-safety-set"><span class="header-section-number">7.1</span> Endpoint and Safety Set</h2>
+<p>RT试验或含RT治疗臂的试验通常需要单独定义：</p>
+<ul>
+<li>acute RT toxicity；</li>
+<li>late RT toxicity；</li>
+<li>grade &gt;=3 RT-related AE；</li>
+<li>RT interruption due to toxicity；</li>
+<li>failure to complete planned RT；</li>
+<li>hospitalization due to RT toxicity；</li>
+<li>treatment-related death；</li>
+<li>patient-reported symptoms。</li>
+</ul>
+</section>
+<section id="time-window时间窗" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="time-window时间窗"><span class="header-section-number">7.2</span> Time Window（时间窗）</h2>
+<p>RT毒性的时间窗需要预先定义。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>分析</th>
+<th>常见窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Acute toxicity</td>
+<td>从RT开始至RT结束后30、60或90天</td>
+</tr>
+<tr class="even">
+<td>Subacute pneumonitis</td>
+<td>常延伸至RT后6个月</td>
+</tr>
+<tr class="odd">
+<td>Late toxicity</td>
+<td>RT后90天以后，常需1-5年或更久随访</td>
+</tr>
+</tbody>
+</table>
+<p>如果只看treatment-emergent AE窗口，可能低估晚期RT毒性。</p>
+</section>
+<section id="competing-risks竞争风险" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="competing-risks竞争风险"><span class="header-section-number">7.3</span> Competing Risks（竞争风险）</h2>
+<p>晚期RT毒性常发生较晚，而肿瘤进展、死亡或后续治疗可能阻止毒性被观察到。</p>
+<p>因此，对于late toxicity可考虑：</p>
+<ul>
+<li>cumulative incidence function；</li>
+<li>death without toxicity作为competing event；</li>
+<li>landmark analysis；</li>
+<li>sensitivity analysis。</li>
+</ul>
+</section>
+<section id="patient-reported-outcomes" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="patient-reported-outcomes"><span class="header-section-number">7.4</span> Patient-Reported Outcomes</h2>
+<p>部分RT毒性非常依赖患者主观体验，例如：</p>
+<ul>
+<li>pain；</li>
+<li>dry mouth；</li>
+<li>dysphagia；</li>
+<li>dyspnea；</li>
+<li>diarrhea urgency；</li>
+<li>urinary frequency；</li>
+<li>fatigue；</li>
+<li>sexual dysfunction。</li>
+</ul>
+<p>因此，PRO或PRO-CTCAE可以补充传统CTCAE记录，避免低估症状负担。</p>
+</section>
+</section>
+<section id="与免疫治疗毒性的区别" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 与免疫治疗毒性的区别</h1>
+<p>RT pneumonitis与免疫治疗pneumonitis是最常见的混淆点。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>特征</th>
+<th>Radiation pneumonitis</th>
+<th>Immune-mediated pneumonitis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>典型范围</td>
+<td>常与照射野相关</td>
+<td>可超出照射野，分布更弥漫</td>
+</tr>
+<tr class="even">
+<td>时间</td>
+<td>RT后数周至数月</td>
+<td>免疫治疗期间或停药后均可发生</td>
+</tr>
+<tr class="odd">
+<td>相关治疗</td>
+<td>胸部RT、SBRT、re-irradiation</td>
+<td><a href="../../../docs/pharmaceutical/other/Immune_Checkpoint.html">PD-1/PD-L1 inhibitor</a></td>
+</tr>
+<tr class="even">
+<td>诊断重点</td>
+<td>RT plan、dose distribution、影像与照射野匹配</td>
+<td>药物暴露、排除感染、影像模式</td>
+</tr>
+<tr class="odd">
+<td>治疗</td>
+<td>根据严重程度支持治疗、steroid、暂停RT或系统治疗</td>
+<td>暂停/停止免疫治疗、systemic corticosteroid、必要时免疫抑制</td>
+</tr>
+</tbody>
+</table>
+<p>实际患者中两者可能同时存在，尤其是在胸部RT和免疫治疗序贯或联合使用时。</p>
+</section>
+<section id="common-pitfalls常见误区" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Common Pitfalls（常见误区）</h1>
+<ol type="1">
+<li><p><strong>把RT toxicity全部写成radiation injury。</strong><br>
+具体记录应尽量映射到CTCAE PT，如dermatitis radiation、esophagitis、pneumonitis、proctitis等。</p></li>
+<li><p><strong>只记录急性毒性，忽略晚期毒性。</strong><br>
+心脏毒性、肺纤维化、认知下降、脊髓损伤和继发肿瘤可能在治疗后很久出现。</p></li>
+<li><p><strong>把所有胸部影像炎症都归因于免疫治疗。</strong><br>
+胸部RT后需要结合照射野、剂量分布和时间关系判断radiation pneumonitis。</p></li>
+<li><p><strong>只看总剂量，不看受照体积。</strong><br>
+RT毒性常由dose-volume共同决定，mean dose、Dmax和Vx都很重要。</p></li>
+<li><p><strong>忽视治疗中断。</strong><br>
+RT interruption既是安全性结果，也可能影响局部控制和疗效解释。</p></li>
+<li><p><strong>不同分割方案直接比较Gy数。</strong><br>
+常规分割、hypofractionation和SBRT的生物学效应不同，应考虑BED或EQD2。</p></li>
+</ol>
+</section>
+<section id="key-takeaways关键总结" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Key Takeaways（关键总结）</h1>
+<ol type="1">
+<li>RT toxicity应按时间、器官系统、照射部位、CTCAE grade和治疗归因共同分类。</li>
+<li>急性毒性常见于皮肤、黏膜、食管和肠道；晚期毒性更多涉及纤维化、心肺功能、神经系统和继发肿瘤。</li>
+<li>胸部RT中的radiation pneumonitis需要与immune-mediated pneumonitis、感染和肿瘤进展鉴别。</li>
+<li>Dose-volume参数是RT毒性的核心解释变量，不能只看处方剂量。</li>
+<li>临床试验中应预先定义acute、subacute和late toxicity窗口，并记录RT interruption、dose modification和长期随访事件。</li>
+</ol>
+</section>
+<section id="references参考资料" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> References（参考资料）</h1>
+<ol type="1">
+<li><p>National Cancer Institute. <em>Common Terminology Criteria for Adverse Events (CTCAE) and AE Reporting Resources</em>.<br>
+<a href="https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events" class="uri">https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events</a></p></li>
+<li><p>National Cancer Institute. <em>PRO-CTCAE Symptom Terms and Corresponding CTCAE Version 5.0 Terms</em>.<br>
+<a href="https://healthcaredelivery.cancer.gov/pro-ctcae/terms.html" class="uri">https://healthcaredelivery.cancer.gov/pro-ctcae/terms.html</a></p></li>
+<li><p>QUANTEC Radiation. <em>Evidence-Based Toxicity Risk Metrics</em>.<br>
+<a href="https://quantecradiation.org/" class="uri">https://quantecradiation.org/</a></p></li>
+<li><p>Marks LB, Yorke ED, Jackson A, et al.&nbsp;Use of normal tissue complication probability models in the clinic. <em>International Journal of Radiation Oncology Biology Physics</em>. 2010;76(3 Suppl):S10-S19.</p></li>
+<li><p>American Society for Radiation Oncology. <em>Safety is No Accident: A Framework for Quality Radiation Oncology and Care</em>. 2019.<br>
+<a href="https://www.astro.org/practice-support/quality-and-safety/safety-is-no-accident" class="uri">https://www.astro.org/practice-support/quality-and-safety/safety-is-no-accident</a></p></li>
+</ol>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script type="text/javascript">
+
+// replace cmd keyboard shortcut w/ control on non-Mac platforms
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+// tweak headings in pymd
+document.querySelectorAll(".pymd span.co").forEach(el => {
+   if (!el.innerText.startsWith("#|")) {
+      el.style.fontWeight = 1000;
+   }
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../docs/pharmaceutical/AE/AE_SOC_PT.html" class="pagination-link" aria-label="Adverse Event by SOC and PT">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Adverse Event by SOC and PT</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../docs/pharmaceutical/AE/Toxicity_Cisplatin.html" class="pagination-link" aria-label="Toxicity - Cisplatin（顺铂）">
+        <span class="nav-page-text">Toxicity - Cisplatin（顺铂）</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Radiotherapy Toxicity, Toxicity - RT（放疗相关毒性）"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "介绍放疗相关毒性的正确分类、常见器官系统表现、CTCAE记录、剂量体积因素、联合治疗归因及临床试验分析考虑。"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Hao Sun"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Oncology</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Safety</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Clinical Trials</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> ../../../references.bib</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu"># 概述</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>**Radiotherapy toxicity, toxicity - RT（放疗相关毒性）**是指患者接受**radiation therapy, RT（放射治疗/放疗）**后，由正常组织受到电离辐射影响而产生的不良反应。</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>放疗毒性和药物毒性不同。药物毒性通常与全身暴露、药物机制和代谢有关；放疗毒性更强烈依赖：</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>照射部位；</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>正常器官接受的dose（剂量）；</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>irradiated volume（受照体积）；</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fractionation（分割方式）；</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>concurrent systemic therapy（同步系统治疗）；</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>既往治疗史；</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>患者基础器官功能。</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>因此，RT毒性不应只写成“有无radiation injury”。在<span class="co">[</span><span class="ot">临床试验</span><span class="co">](../other/Intercurrent_Events.qmd)</span>和安全性分析中，通常需要同时按照**发生时间、解剖部位、器官系统、严重程度和归因**进行分类。</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu"># 正确分类框架</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## 按发生时间分类</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>| 分类 | 常见时间 | 机制特点 | 示例 |</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>|---|---|---|---|</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>| Acute toxicity（急性毒性） | 放疗期间至治疗后约90天内 | 主要影响更新较快的组织，如黏膜、皮肤和骨髓 | dermatitis radiation、esophagitis、mucositis、diarrhea、fatigue |</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>| Subacute toxicity（亚急性毒性） | 治疗后数周至数月 | 炎症反应、血管损伤和组织修复异常 | radiation pneumonitis、Lhermitte syndrome |</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>| Late toxicity（晚期毒性） | 治疗后数月至数年 | 纤维化、血管狭窄、组织萎缩和器官功能下降 | pulmonary fibrosis、cardiac toxicity、radiation myelopathy、secondary malignancy |</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>90天并不是绝对生物学边界，但在研究报告和安全性汇总中常作为acute与late toxicity的实用分界。</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## 按器官系统分类</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>RT toxicity应尽量映射到<span class="co">[</span><span class="ot">CTCAE和AE SOC/PT</span><span class="co">](AE_SOC_PT.qmd)</span>框架，而不是只用非标准术语描述。</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>| 器官系统 | 常见PT或临床表现 | 典型治疗部位 |</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>| Skin and subcutaneous tissue | Dermatitis radiation、skin hyperpigmentation、fibrosis | 乳腺、头颈、胸壁、皮肤肿瘤 |</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>| Gastrointestinal | Esophagitis、mucositis oral、diarrhea、proctitis、enteritis | 头颈、胸部、腹盆腔 |</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>| Respiratory | Radiation pneumonitis、pulmonary fibrosis、dyspnea、cough | <span class="co">[</span><span class="ot">肺癌</span><span class="co">](../disease/Lung_Cancer.qmd)</span>、乳腺癌、纵隔肿瘤 |</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>| Cardiac | Pericarditis、cardiomyopathy、coronary artery disease、arrhythmia | 左侧乳腺、肺、食管、纵隔 |</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>| Nervous system | Cognitive decline、radiation necrosis、myelopathy、neuropathy | 脑、脊髓、头颈、椎旁肿瘤 |</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>| Genitourinary | Cystitis noninfective、hematuria、urinary frequency | 前列腺、膀胱、妇科肿瘤 |</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>| Reproductive system | Ovarian failure、infertility、sexual dysfunction | 盆腔、睾丸、全身照射 |</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>| Blood and lymphatic system | Lymphopenia、anemia、thrombocytopenia | 大范围骨髓受照、同步放化疗 |</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## 按照治疗部位分类</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>实际临床中，最有用的分类常常是“照哪里，就重点看哪个正常器官”。</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>| RT field | 重点关注毒性 |</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>| Brain / CNS | alopecia、fatigue、cognitive impairment、radiation necrosis、endocrine dysfunction |</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>| Head and neck | oral mucositis、xerostomia、dysphagia、dermatitis、hypothyroidism、osteoradionecrosis |</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>| Thorax | esophagitis、radiation pneumonitis、pulmonary fibrosis、cardiac toxicity |</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>| Breast / chest wall | dermatitis radiation、fatigue、breast pain、pneumonitis、cardiac exposure（尤其左侧） |</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>| Abdomen | nausea、vomiting、gastritis、enteritis、liver injury、kidney injury |</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>| Pelvis | diarrhea、proctitis、cystitis、sexual dysfunction、infertility、pelvic fracture |</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>| Spine / paraspinal | esophagitis或enteritis取决于部位；spinal cord myelopathy为严重晚期风险 |</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu"># 常见放疗毒性</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">## Radiation Dermatitis（放射性皮炎）</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Radiation dermatitis是最常见的RT急性毒性之一，尤其见于乳腺、头颈、胸壁和皮肤相关放疗。</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>常见表现包括：</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>erythema（红斑）；</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>dry desquamation（干性脱屑）；</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>moist desquamation（湿性脱屑）；</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pain、burning或pruritus；</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>severe ulceration或necrosis，较少见。</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>记录时应尽量使用CTCAE术语**dermatitis radiation**，并记录grade、发生日期、照射区域、是否需要敷料或止痛，以及是否导致RT interruption。</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mucositis and Dysphagia（黏膜炎与吞咽困难）</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>头颈部放疗和胸部放疗常累及黏膜。</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>| 毒性 | 常见部位 | 临床影响 |</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>| Oral mucositis | 口腔、咽部 | 疼痛、进食困难、感染风险、体重下降 |</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>| Dysphagia | 咽喉、食管 | 吞咽困难、营养不足、误吸风险 |</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>| Esophagitis | 胸部放疗食管受照 | 胸骨后疼痛、吞咽痛、需要止痛或营养支持 |</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>在<span class="co">[</span><span class="ot">NSCLC</span><span class="co">](../disease/NSCLC.qmd)</span>不可切除Stage III同步放化疗中，esophagitis是最重要的急性毒性之一。</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="fu">## Radiation Pneumonitis（放射性肺炎）</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>Radiation pneumonitis通常发生于胸部RT后数周至数月，是<span class="co">[</span><span class="ot">肺癌</span><span class="co">](../disease/Lung_Cancer.qmd)</span>、乳腺癌和纵隔肿瘤放疗中最重要的安全性事件之一。</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>典型表现包括：</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>新发或加重cough；</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>dyspnea；</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>low-grade fever；</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>hypoxia；</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CT出现照射野相关磨玻璃影或浸润。</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>需要与以下情况鉴别：</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>infection；</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>tumor progression；</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pulmonary embolism；</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>heart failure；</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>immune-mediated pneumonitis，尤其是接受<span class="co">[</span><span class="ot">immune checkpoint inhibitor</span><span class="co">](../other/Immune_Checkpoint.qmd)</span>者；</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>drug-induced ILD/pneumonitis，例如某些<span class="co">[</span><span class="ot">ADC</span><span class="co">](../other/ADC.qmd)</span>或靶向治疗。</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>在接受胸部RT后再使用<span class="co">[</span><span class="ot">Imfinzi</span><span class="co">](../compound/Imfinzi.qmd)</span>、<span class="co">[</span><span class="ot">Keytruda</span><span class="co">](../compound/Keytruda.qmd)</span>、<span class="co">[</span><span class="ot">Opdivo</span><span class="co">](../compound/Opdivo.qmd)</span>或<span class="co">[</span><span class="ot">Tecentriq</span><span class="co">](../compound/Tecentriq.qmd)</span>等免疫治疗时，pneumonitis的归因尤其重要。</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cardiac Toxicity（心脏毒性）</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>RT相关心脏毒性通常属于晚期毒性，可能在治疗后数年出现。风险与心脏受照剂量、既往心血管疾病、年龄、吸烟、化疗和靶向药物共同相关。</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>常见表现包括：</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pericarditis；</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>coronary artery disease；</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>cardiomyopathy；</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>valvular disease；</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>arrhythmia；</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>heart failure。</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>左侧<span class="co">[</span><span class="ot">breast cancer</span><span class="co">](../disease/Breast_Cancer.qmd)</span>、肺癌、食管癌和纵隔淋巴瘤患者需要特别关注心脏dose constraint和长期随访。</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu">## GI Toxicity（胃肠道毒性）</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>腹部和盆腔RT可导致：</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>nausea和vomiting；</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>diarrhea；</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>enteritis；</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>proctitis；</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>rectal bleeding；</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>bowel obstruction；</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fistula或perforation，较少见但严重。</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>在<span class="co">[</span><span class="ot">pancreatic cancer</span><span class="co">](../disease/Pancreatic_Cancer.qmd)</span> chemoradiation或SBRT中，胃、十二指肠和小肠是关键organs at risk。</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## Genitourinary Toxicity（泌尿生殖系统毒性）</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>盆腔RT常见泌尿系统毒性包括：</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>urinary frequency；</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>dysuria；</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>cystitis noninfective；</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>hematuria；</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>urinary incontinence；</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sexual dysfunction。</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>盆腔、睾丸或卵巢受照还可能导致fertility impairment。对于年轻患者，治疗前应考虑fertility preservation counseling。</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="fu">## CNS and Spinal Cord Toxicity（中枢神经与脊髓毒性）</span></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>CNS RT的毒性取决于照射范围和剂量分割。</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>| 部位 | 重要毒性 |</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>| Whole brain RT | fatigue、alopecia、cognitive decline、endocrine dysfunction |</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>| Stereotactic radiosurgery | radiation necrosis、edema、seizure |</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>| Spine RT | pain flare、esophagitis或enteritis、radiation myelopathy |</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>Radiation myelopathy虽然罕见，但后果严重，因此spinal cord dose constraint是计划审核中的关键限制。</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu"># 与治疗技术有关的风险</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conventional Fractionation</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>常规分割通常为每日1.8-2.0 Gy，每周5次。它对晚反应组织较为温和，但治疗时间较长。</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="fu">## SBRT / SABR</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>**Stereotactic body radiation therapy, SBRT（立体定向体部放疗）**使用少数分次给予较高单次剂量，常用于早期<span class="co">[</span><span class="ot">NSCLC</span><span class="co">](../disease/NSCLC.qmd#sbrt)</span>、局部复发病灶、寡转移或部分<span class="co">[</span><span class="ot">胰腺癌</span><span class="co">](../disease/Pancreatic_Cancer.qmd#locally-advanced-unresectable-pdac局部晚期不可切除pdac)</span>患者。</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>SBRT的风险重点不只是总剂量，而是：</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>tumor是否central或ultracentral；</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>与bronchus、esophagus、heart、great vessels、bowel等serial organs距离；</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否有既往RT；</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>每分次剂量；</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>organ at risk最大点剂量。</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="fu">## Concurrent Chemoradiotherapy（同步放化疗）</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>同步放化疗可提高局部控制，但毒性通常高于单独RT。</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>常见增加风险包括：</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>esophagitis；</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>mucositis；</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>diarrhea；</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>hematologic toxicity；</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>infection；</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fatigue；</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>treatment interruption。</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>在不可切除Stage III <span class="co">[</span><span class="ot">NSCLC</span><span class="co">](../disease/NSCLC.qmd#unresectable-stage-iii-nsclc不可切除stage-iii-nsclc)</span>中，concurrent chemoradiotherapy是重要治疗框架；后续可能接续<span class="co">[</span><span class="ot">durvalumab</span><span class="co">](../compound/Imfinzi.qmd)</span> consolidation。</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="fu"># CTCAE记录与AE归因</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="fu">## 记录原则</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>RT毒性在临床试验中通常按<span class="co">[</span><span class="ot">AE SOC/PT</span><span class="co">](AE_SOC_PT.qmd)</span>记录，重点包括：</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>reported term；</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>MedDRA preferred term；</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>CTCAE grade；</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>start date和end date；</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>seriousness；</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否导致RT interruption、dose change或discontinuation；</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>是否需要住院、steroid、抗生素、营养支持、氧疗或手术；</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>relationship to RT、systemic therapy或both。</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="fu">## Attribution（归因）</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>当RT与药物联合时，归因不能只按时间判断。</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>| 场景 | 归因难点 |</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>| Thoracic RT + immune checkpoint inhibitor | radiation pneumonitis和immune-mediated pneumonitis可高度重叠 |</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>| Chemoradiation | mucositis、esophagitis、diarrhea和cytopenia可能由RT与化疗共同导致 |</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>| RT + ADC | pneumonitis或mucositis可能存在叠加风险 |</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>| Re-irradiation | 既往RT导致的组织储备下降会增加晚期毒性风险 |</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>分析时可设立**radiation-related AE（放疗相关AE）**、**immune-mediated AE（免疫介导AE）**和**treatment-related AE（治疗相关AE）**等不同分析集合，但定义必须在protocol或SAP中预先说明。</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="fu"># Dose-Volume Considerations（剂量体积考虑）</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>RT毒性高度依赖organ at risk的剂量体积分布。常见指标包括：</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>| 指标 | 含义 |</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>| Mean dose | 器官平均剂量 |</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>| Dmax | 最大剂量 |</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>| D0.03cc / D1cc / D2cc | 最热点小体积剂量，常用于serial organ |</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>| V5 / V10 / V20 / V30 | 器官接受至少某剂量的体积比例 |</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>| EQD2 | 等效2 Gy分割剂量，用于比较不同分割方案 |</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>| BED | biologically effective dose，生物有效剂量 |</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>例如胸部RT中，lung V20和mean lung dose常用于评估radiation pneumonitis风险；头颈RT中，parotid mean dose与xerostomia风险相关；盆腔RT中，rectum和bladder dose-volume参数与晚期出血、尿路症状相关。</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>这些指标不能脱离癌种、技术、分割方式和患者特征机械套用。</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="fu"># Clinical Trial Considerations（临床试验考虑）</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="fu">## Endpoint and Safety Set</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>RT试验或含RT治疗臂的试验通常需要单独定义：</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>acute RT toxicity；</span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>late RT toxicity；</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>grade &gt;=3 RT-related AE；</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>RT interruption due to toxicity；</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>failure to complete planned RT；</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>hospitalization due to RT toxicity；</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>treatment-related death；</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>patient-reported symptoms。</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="fu">## Time Window（时间窗）</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>RT毒性的时间窗需要预先定义。</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>| 分析 | 常见窗口 |</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>| Acute toxicity | 从RT开始至RT结束后30、60或90天 |</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>| Subacute pneumonitis | 常延伸至RT后6个月 |</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>| Late toxicity | RT后90天以后，常需1-5年或更久随访 |</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>如果只看treatment-emergent AE窗口，可能低估晚期RT毒性。</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="fu">## Competing Risks（竞争风险）</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>晚期RT毒性常发生较晚，而肿瘤进展、死亡或后续治疗可能阻止毒性被观察到。</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>因此，对于late toxicity可考虑：</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>cumulative incidence function；</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>death without toxicity作为competing event；</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>landmark analysis；</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sensitivity analysis。</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="fu">## Patient-Reported Outcomes</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>部分RT毒性非常依赖患者主观体验，例如：</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pain；</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>dry mouth；</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>dysphagia；</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>dyspnea；</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>diarrhea urgency；</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>urinary frequency；</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>fatigue；</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>sexual dysfunction。</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>因此，PRO或PRO-CTCAE可以补充传统CTCAE记录，避免低估症状负担。</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="fu"># 与免疫治疗毒性的区别</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>RT pneumonitis与免疫治疗pneumonitis是最常见的混淆点。</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>| 特征 | Radiation pneumonitis | Immune-mediated pneumonitis |</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>|---|---|---|</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>| 典型范围 | 常与照射野相关 | 可超出照射野，分布更弥漫 |</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>| 时间 | RT后数周至数月 | 免疫治疗期间或停药后均可发生 |</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>| 相关治疗 | 胸部RT、SBRT、re-irradiation | <span class="co">[</span><span class="ot">PD-1/PD-L1 inhibitor</span><span class="co">](../other/Immune_Checkpoint.qmd)</span> |</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>| 诊断重点 | RT plan、dose distribution、影像与照射野匹配 | 药物暴露、排除感染、影像模式 |</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>| 治疗 | 根据严重程度支持治疗、steroid、暂停RT或系统治疗 | 暂停/停止免疫治疗、systemic corticosteroid、必要时免疫抑制 |</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>实际患者中两者可能同时存在，尤其是在胸部RT和免疫治疗序贯或联合使用时。</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="fu"># Common Pitfalls（常见误区）</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**把RT toxicity全部写成radiation injury。**  </span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>   具体记录应尽量映射到CTCAE PT，如dermatitis radiation、esophagitis、pneumonitis、proctitis等。</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**只记录急性毒性，忽略晚期毒性。**  </span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>   心脏毒性、肺纤维化、认知下降、脊髓损伤和继发肿瘤可能在治疗后很久出现。</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**把所有胸部影像炎症都归因于免疫治疗。**  </span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>   胸部RT后需要结合照射野、剂量分布和时间关系判断radiation pneumonitis。</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**只看总剂量，不看受照体积。**  </span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>   RT毒性常由dose-volume共同决定，mean dose、Dmax和Vx都很重要。</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**忽视治疗中断。**  </span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>   RT interruption既是安全性结果，也可能影响局部控制和疗效解释。</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**不同分割方案直接比较Gy数。**  </span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>   常规分割、hypofractionation和SBRT的生物学效应不同，应考虑BED或EQD2。</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="fu"># Key Takeaways（关键总结）</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>RT toxicity应按时间、器官系统、照射部位、CTCAE grade和治疗归因共同分类。</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>急性毒性常见于皮肤、黏膜、食管和肠道；晚期毒性更多涉及纤维化、心肺功能、神经系统和继发肿瘤。</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>胸部RT中的radiation pneumonitis需要与immune-mediated pneumonitis、感染和肿瘤进展鉴别。</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Dose-volume参数是RT毒性的核心解释变量，不能只看处方剂量。</span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>临床试验中应预先定义acute、subacute和late toxicity窗口，并记录RT interruption、dose modification和长期随访事件。</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="fu"># References（参考资料）</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>National Cancer Institute. *Common Terminology Criteria for Adverse Events (CTCAE) and AE Reporting Resources*.  </span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>   <span class="ot">&lt;https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events&gt;</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>National Cancer Institute. *PRO-CTCAE Symptom Terms and Corresponding CTCAE Version 5.0 Terms*.  </span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>   <span class="ot">&lt;https://healthcaredelivery.cancer.gov/pro-ctcae/terms.html&gt;</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>QUANTEC Radiation. *Evidence-Based Toxicity Risk Metrics*.  </span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>   <span class="ot">&lt;https://quantecradiation.org/&gt;</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Marks LB, Yorke ED, Jackson A, et al. Use of normal tissue complication probability models in the clinic. *International Journal of Radiation Oncology Biology Physics*. 2010;76(3 Suppl):S10-S19.</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>American Society for Radiation Oncology. *Safety is No Accident: A Framework for Quality Radiation Oncology and Care*. 2019.  </span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>   <span class="ot">&lt;https://www.astro.org/practice-support/quality-and-safety/safety-is-no-accident&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/eugenesun14">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/EugeneHao">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hao-sun-13207/">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Linkedin">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -245,6 +245,12 @@
   compound: Belimumab
   company: GSK
   indication: Treats systemic lupus erythematosus (SLE).
+- drug: Jemperli
+  compound: Dostarlimab
+  path: compound/Dostarlimab.html
+  company: GSK
+  indication: |
+    PD-1 inhibitor for primary advanced or recurrent endometrial cancer and selected dMMR recurrent or advanced solid tumors.
 
 - drug: Tagrisso
   compound: Osimertinib

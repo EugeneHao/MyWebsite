@@ -88,7 +88,7 @@ Nivolumab的适应证非常广，既可作为单药，也可与其他治疗联�
 | Malignant pleural mesothelioma | Nivolumab + ipilimumab | 不可切除疾病的一线治疗选择之一 |
 | RCC | Nivolumab + ipilimumab；nivolumab + cabozantinib | 晚期RCC标准方案之一 |
 | cHL | Nivolumab；nivolumab + AVD | 复发/难治及部分一线晚期cHL |
-| Urothelial carcinoma | Nivolumab + cisplatin/gemcitabine；或辅助治疗 | 用于晚期或高危患者 |
+| Urothelial carcinoma | Nivolumab + [cisplatin](../AE/Toxicity_Cisplatin.qmd)/gemcitabine；或辅助治疗 | 用于晚期或高危患者 |
 | Gastric/GEJ/esophageal adenocarcinoma | Nivolumab + fluoropyrimidine/platinum chemotherapy | 一线晚期治疗 |
 | Esophageal squamous cell carcinoma | Nivolumab-based regimen | 与化疗或ipilimumab联合 |
 | MSI-H/dMMR colorectal cancer | Nivolumab ± ipilimumab | Biomarker-defined population |

@@ -8,6 +8,8 @@ editor_options:
     canonical: true
 ---
 
+For a focused discussion of radiotherapy-related adverse events, see [Radiotherapy Toxicity, Toxicity - RT](Toxicity_RT.qmd). For platinum chemotherapy safety, see [Cisplatin-Related Toxicity, Toxicity - Cisplatin](Toxicity_Cisplatin.qmd).
+
 ## Blood and lymphatic system disorders {.unnumbered}
 
 | **PT** | **中文翻译** | **Severity (CTCAE Grade)** | **Impact on QoL** | **Black Box Warning** | **Manageable (Y/N)** | **Typical Management / Medication** |

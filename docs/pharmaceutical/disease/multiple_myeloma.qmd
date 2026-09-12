@@ -768,7 +768,7 @@ Corticosteroids，尤其是 **glucocorticosteroids**，由肾上腺分泌，在 
     + 心肌损伤（Myocardial damage）  
     + 手足综合征（Hand-Foot syndrome）  
 
-+ **Etoposide（依托泊苷）与 Cisplatin（顺铂）**  
++ **Etoposide（依托泊苷）与 [Cisplatin（顺铂）](../AE/Toxicity_Cisplatin.qmd)**  
   + Etoposide 抑制拓扑异构酶 II，阻断 DNA 复制  
   + 常与多药联合使用（例如 DT-PACE, VTD-PACE, DCEP）  
   + **常见不良反应**：  

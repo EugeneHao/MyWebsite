@@ -78,13 +78,13 @@ Durvalumab 能够特异性结合 **PD-L1**，阻断其与：
 | 疾病 | 适应症或治疗场景 |
 |---|---|
 | Unresectable Stage III [NSCLC](../disease/NSCLC.qmd) | 同步含铂放化疗后无进展患者的巩固治疗，PACIFIC regimen |
-| Extensive-stage [SCLC](../disease/SCLC.qmd#extensive-stage-sclc), ES-SCLC | 一线联合 etoposide 和 carboplatin 或 cisplatin，CASPIAN |
+| Extensive-stage [SCLC](../disease/SCLC.qmd#extensive-stage-sclc), ES-SCLC | 一线联合 etoposide 和 carboplatin 或 [cisplatin](../AE/Toxicity_Cisplatin.qmd)，CASPIAN |
 | Limited-stage [SCLC](../disease/SCLC.qmd#limited-stage-sclc), LS-SCLC | 同步含铂放化疗后无进展患者的巩固治疗，ADRIATIC |
 | Resectable [NSCLC](../disease/NSCLC.qmd) | 与含铂化疗联合新辅助治疗，术后继续单药辅助治疗，AEGEAN |
-| Biliary tract cancer, BTC（胆道癌） | 联合 gemcitabine/cisplatin 用于局部晚期或转移性疾病，TOPAZ-1 |
+| Biliary tract cancer, BTC（胆道癌） | 联合 gemcitabine/[cisplatin](../AE/Toxicity_Cisplatin.qmd) 用于局部晚期或转移性疾病，TOPAZ-1 |
 | Hepatocellular carcinoma, HCC（肝细胞癌） | 与 tremelimumab 联合，HIMALAYA/STRIDE regimen |
 | Endometrial cancer（子宫内膜癌） | 与 carboplatin/paclitaxel 联合，随后 durvalumab 维持，用于 dMMR primary advanced or recurrent disease |
-| Muscle-invasive bladder cancer, MIBC（肌层浸润性膀胱癌） | 与 gemcitabine/cisplatin 新辅助治疗，根治性膀胱切除后单药辅助治疗，NIAGARA |
+| Muscle-invasive bladder cancer, MIBC（肌层浸润性膀胱癌） | 与 gemcitabine/[cisplatin](../AE/Toxicity_Cisplatin.qmd) 新辅助治疗，根治性膀胱切除后单药辅助治疗，NIAGARA |
 | Resectable gastric or gastroesophageal junction adenocarcinoma | 围手术期联合 FLOT 化疗，随后 durvalumab 单药 |
 
 不同国家或地区批准范围可能不同，具体使用应以当地 approved label 为准。

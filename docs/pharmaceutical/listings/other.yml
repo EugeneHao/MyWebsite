@@ -22,6 +22,18 @@
   description: |
     Biomarkers are biological molecules used as indicators of a biological state or condition, crucial in disease diagnosis and therapy assessment.
 
+- name: Toxicity - RT
+  path: AE/Toxicity_RT.html
+  belong: Clinical Trial
+  description: |
+    Radiotherapy toxicity covers acute and late radiation-related adverse events, classified by timing, organ system, treatment field, CTCAE terms, dose-volume factors, and attribution in oncology trials.
+
+- name: Toxicity - Cisplatin（顺铂）
+  path: AE/Toxicity_Cisplatin.html
+  belong: Clinical Trial
+  description: |
+    顺铂（cisplatin）相关毒性 covers nephrotoxicity, nausea and vomiting, myelosuppression, peripheral neuropathy, ototoxicity, electrolyte abnormalities, hypersensitivity, and trial safety analysis.
+
 - name: Biomarker Expression
   path: other/Biomarker_Expression.html
   belong: Clinical Trial

@@ -104,6 +104,7 @@ PD-1或PD-L1抗体可阻断这一抑制信号，使T细胞重新恢复杀伤功�
 |---|---|---|
 | [Pembrolizumab](../compound/Keytruda.qmd) | [Merck](../company/Merck.qmd) | Keytruda |
 | [Nivolumab](../compound/Opdivo.qmd) | [Bristol Myers Squibb](../company/BMS.qmd) | Opdivo |
+| [Dostarlimab](../compound/Dostarlimab.qmd) | [GSK](../company/GSK.qmd) | Jemperli |
 | Cemiplimab | [Regeneron](../company/Regeneron.qmd) | Libtayo |
 | Toripalimab | Junshi Biosciences / Coherus | Loqtorzi |
 | Sintilimab | Innovent Biologics | 达伯舒（中国） |

@@ -461,7 +461,7 @@ SBRT试验和临床实践需要考虑：
 - 与支气管、食管和大血管的距离；
 - 既往放疗；
 - 基线肺功能；
-- radiation pneumonitis风险。
+- [radiation pneumonitis](../AE/Toxicity_RT.qmd#radiation-pneumonitis放射性肺炎)风险。
 
 ## Perioperative Therapy（围手术期治疗）
 
@@ -524,12 +524,12 @@ SBRT试验和临床实践需要考虑：
 
 常见毒性包括：
 
-- esophagitis；
-- radiation pneumonitis；
+- [esophagitis](../AE/Toxicity_RT.qmd#mucositis-and-dysphagia黏膜炎与吞咽困难)；
+- [radiation pneumonitis](../AE/Toxicity_RT.qmd#radiation-pneumonitis放射性肺炎)；
 - hematologic toxicity；
 - infection；
 - fatigue；
-- cardiac toxicity。
+- [cardiac toxicity](../AE/Toxicity_RT.qmd#cardiac-toxicity心脏毒性)。
 
 ## Stage III中的关键分类问题
 

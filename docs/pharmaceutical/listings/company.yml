@@ -51,7 +51,7 @@
 - name: GSK
   country: UK
   drug: |
-    Shingrix, Trelegy, Nucala, Zejula, Benlysta, [Tafinlar](compound/Tafinlar.qmd)
+    Shingrix, Trelegy, Nucala, Zejula, Benlysta, [Jemperli](compound/Dostarlimab.qmd), [Tafinlar](compound/Tafinlar.qmd)
 - name: AstraZeneca
   path: company/AstraZeneca.html
   country: UK

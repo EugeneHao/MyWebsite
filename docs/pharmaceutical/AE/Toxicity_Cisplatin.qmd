@@ -1,0 +1,397 @@
+---
+title: "Cisplatin-Related Toxicity, Toxicity - Cisplatin（顺铂相关毒性）"
+description: "介绍顺铂相关毒性的机制、正确分类、重点不良反应、预防与监测，以及肿瘤临床试验中的安全性分析考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Safety
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Cisplatin（顺铂）**是一种经典**platinum-based chemotherapy（铂类化疗）**药物，通过形成DNA交联、阻碍DNA复制和转录，诱导肿瘤细胞死亡。它广泛用于[NSCLC](../disease/NSCLC.qmd)、[SCLC](../disease/SCLC.qmd)、膀胱癌、卵巢癌、睾丸癌、头颈癌、食管癌、胃癌和胆道癌等实体瘤。
+
+常见检索词包括：顺铂、顺铂毒性、顺铂相关毒性、Cisplatin、Cisplatin toxicity、platinum chemotherapy toxicity。
+
+**Cisplatin-related toxicity（顺铂相关毒性）**具有鲜明的器官特异性。最需要关注的是：
+
+- nephrotoxicity（肾毒性）；
+- nausea and vomiting（恶心和呕吐）；
+- myelosuppression（骨髓抑制）；
+- peripheral neuropathy（外周神经病变）；
+- ototoxicity（耳毒性）；
+- hypersensitivity reaction（超敏反应）；
+- electrolyte abnormalities（电解质异常）。
+
+美国处方信息对nephrotoxicity、peripheral neuropathy、nausea and vomiting、myelosuppression设有boxed warning。Ototoxicity、ocular toxicity、secondary leukemia和embryo-fetal toxicity也是重要警示。
+
+# 正确分类框架
+
+顺铂毒性不宜只归为“chemotherapy toxicity”。在[AE SOC/PT](AE_SOC_PT.qmd)记录、医学监测和统计分析中，建议按以下维度分类。
+
+## 按器官系统分类
+
+| SOC或器官系统 | 代表性毒性 | 常用临床关注点 |
+|---|---|---|
+| Renal and urinary disorders | Acute kidney injury、renal failure、creatinine increased | 水化、尿量、肌酐、CrCl/eGFR |
+| Metabolism and nutrition disorders | Hypomagnesemia、hypokalemia、hyponatremia | 镁、钾、钠、补液和补电解质 |
+| Gastrointestinal disorders | Nausea、vomiting、anorexia、diarrhea | 高致吐风险、预防性止吐 |
+| Blood and lymphatic system disorders | Anemia、neutropenia、thrombocytopenia | CBC、感染、输血或G-CSF |
+| Nervous system disorders | Peripheral sensory neuropathy、paresthesia | 累积剂量、功能影响、不可逆风险 |
+| Ear and labyrinth disorders | Tinnitus、hearing impaired、deafness、vestibular toxicity | 听力图、儿童和老年患者风险 |
+| Immune system disorders | Hypersensitivity、anaphylaxis | 既往铂类暴露、输注期间监测 |
+| Reproductive system | Infertility、gonadal dysfunction | 生育力保存咨询 |
+
+## 按时间分类
+
+| 时间模式 | 常见毒性 | 说明 |
+|---|---|---|
+| Immediate / early | nausea、vomiting、hypersensitivity、electrolyte shift | 可在给药当天或数小时内出现 |
+| Days to weeks | nephrotoxicity、myelosuppression、fatigue、infection | 常需周期内实验室监测 |
+| Cumulative | peripheral neuropathy、ototoxicity、renal impairment | 与累积剂量和既往暴露相关 |
+| Late / long-term | persistent hearing loss、chronic neuropathy、renal dysfunction、infertility、secondary leukemia | 可在停药后持续或延迟发现 |
+
+## 按可预防性分类
+
+| 分类 | 示例 | 管理重点 |
+|---|---|---|
+| 可明显降低风险 | nephrotoxicity、nausea/vomiting | 水化、利尿策略、预防性止吐、剂量调整 |
+| 可监测但不一定可完全预防 | ototoxicity、peripheral neuropathy | baseline与随访检查、早停或换药 |
+| 发生后需立即处理 | hypersensitivity、severe AKI、febrile neutropenia | 暂停治疗、急救、住院或专科处理 |
+| 可能不可逆 | hearing loss、chronic neuropathy、infertility | 治疗前风险沟通和长期随访 |
+
+# 主要毒性
+
+## Nephrotoxicity（肾毒性）
+
+Nephrotoxicity是顺铂最经典、最重要的dose-limiting toxicity之一，可表现为：
+
+- serum creatinine升高；
+- creatinine clearance下降；
+- acute kidney injury；
+- renal tubular dysfunction；
+- magnesium、potassium或sodium丢失；
+- 严重时发生renal failure。
+
+风险因素包括：
+
+- baseline renal impairment；
+- older age；
+- dehydration；
+- 高累积剂量；
+- concurrent nephrotoxic drugs，如aminoglycosides、NSAIDs或IV contrast；
+- inadequate hydration；
+- prior cisplatin exposure。
+
+预防与管理重点：
+
+1. 给药前评估serum creatinine、CrCl或eGFR；
+2. 给药前后充分IV hydration；
+3. 监测urine output；
+4. 定期检查magnesium和potassium；
+5. 避免或减少其他nephrotoxic exposure；
+6. 根据肾功能进行dose delay、dose reduction或改用carboplatin等替代方案。
+
+## Nausea and Vomiting（恶心和呕吐）
+
+Cisplatin属于**highly emetogenic chemotherapy, HEC（高致吐性化疗）**。如果没有充分预防，恶心和呕吐可非常严重，并可能导致：
+
+- dehydration；
+- electrolyte imbalance；
+- acute kidney injury加重；
+- poor oral intake；
+- weight loss；
+- treatment discontinuation。
+
+顺铂相关恶心呕吐可分为：
+
+| 类型 | 时间 | 说明 |
+|---|---|---|
+| Acute CINV | 给药后0-24小时 | 与serotonin释放关系密切 |
+| Delayed CINV | 给药后24-120小时 | 顺铂特别常见，需延迟期预防 |
+| Anticipatory nausea | 下一周期治疗前 | 与既往严重恶心呕吐体验有关 |
+| Breakthrough CINV | 预防后仍出现 | 需追加救援止吐药 |
+
+管理上通常需要多药预防性止吐方案，而不是等患者呕吐后再治疗。
+
+## Myelosuppression（骨髓抑制）
+
+顺铂可导致：
+
+- anemia；
+- neutropenia；
+- thrombocytopenia；
+- leukopenia；
+- febrile neutropenia；
+- infection。
+
+骨髓抑制在联合治疗中更常见，例如顺铂联合etoposide、gemcitabine、pemetrexed、paclitaxel或放疗时。
+
+临床试验中应记录：
+
+- nadir blood counts；
+- grade >=3 cytopenia；
+- febrile neutropenia；
+- infection和sepsis；
+- transfusion；
+- G-CSF use；
+- dose delay和dose reduction。
+
+## Peripheral Neuropathy（外周神经病变）
+
+顺铂可导致剂量相关的sensory neuropathy，典型表现包括：
+
+- numbness；
+- tingling；
+- paresthesia；
+- decreased vibration sensation；
+- gait instability；
+- fine motor difficulty；
+- neuropathic pain。
+
+顺铂神经毒性可在治疗期间逐渐出现，也可能在停药后继续加重，称为coasting phenomenon。部分患者神经病变可能长期持续或不可逆。
+
+监测重点包括：
+
+- baseline neurological exam；
+- 每周期询问手足麻木、疼痛和平衡问题；
+- 记录CTCAE grade；
+- 评估日常功能影响；
+- 达到临床显著症状时考虑暂停、减量或停用顺铂。
+
+## Ototoxicity（耳毒性）
+
+顺铂耳毒性通常表现为：
+
+- tinnitus（耳鸣）；
+- high-frequency hearing loss；
+- decreased speech discrimination；
+- vestibular symptoms；
+- unilateral或bilateral hearing impairment。
+
+耳毒性具有累积性，儿童患者尤其重要，也可因cranial irradiation、其他ototoxic drugs或肾功能损伤而加重。
+
+临床研究中可考虑：
+
+- baseline audiogram；
+- treatment-period audiometry；
+- post-treatment hearing assessment；
+- patient-reported hearing difficulty；
+- 分析pediatric、older adults和既往颅脑/头颈放疗患者亚组。
+
+## Electrolyte Abnormalities（电解质异常）
+
+顺铂可损伤肾小管功能，常见：
+
+- hypomagnesemia；
+- hypokalemia；
+- hyponatremia；
+- hypocalcemia，部分与低镁相关。
+
+其中hypomagnesemia常被低估，可能导致：
+
+- muscle cramps；
+- weakness；
+- arrhythmia；
+- refractory hypokalemia。
+
+因此，顺铂治疗期间不应只监测creatinine，也应关注magnesium和potassium。
+
+## Hypersensitivity Reaction（超敏反应）
+
+Platinum hypersensitivity可表现为：
+
+- rash或urticaria；
+- pruritus；
+- flushing；
+- fever；
+- bronchospasm；
+- hypotension；
+- anaphylaxis。
+
+风险通常随既往铂类暴露增加。发生严重反应时应立即停止输注并进行急救处理。后续是否rechallenge、desensitization或换用其他药物，需要结合反应严重程度和替代治疗选择。
+
+## Ocular Toxicity（眼毒性）
+
+顺铂可少见导致optic neuritis、papilledema或cortical blindness等严重眼毒性。出现视力下降、视野改变或眼痛时，应及时眼科评估，并考虑停药。
+
+## Reproductive and Embryo-Fetal Toxicity（生殖与胚胎胎儿毒性）
+
+顺铂可能造成：
+
+- embryo-fetal harm；
+- amenorrhea；
+- impaired spermatogenesis；
+- infertility；
+- premature ovarian insufficiency。
+
+具有生育需求的患者应在治疗前讨论fertility preservation。治疗期间和治疗后一段时间内需采取有效避孕。
+
+## Secondary Leukemia（二次白血病）
+
+接受含铂化疗后，少数患者可能发生secondary acute leukemia。该风险较低，但在长期随访和辅助治疗场景中需要纳入风险获益讨论。
+
+# 联合治疗中的毒性归因
+
+顺铂很少孤立使用，常与其他药物或放疗联合。归因时应结合机制、时间和合并治疗。
+
+| 联合方案 | 重点重叠毒性 | 归因提示 |
+|---|---|---|
+| Cisplatin + etoposide | myelosuppression、nausea/vomiting、infection | 常见于[SCLC](../disease/SCLC.qmd)和部分肺癌方案 |
+| Cisplatin + pemetrexed | myelosuppression、renal toxicity、fatigue | 常见于非鳞状[NSCLC](../disease/NSCLC.qmd) |
+| Cisplatin + gemcitabine | myelosuppression、renal toxicity、nausea | 胆道癌、膀胱癌等常见 |
+| Cisplatin + paclitaxel | neuropathy、myelosuppression、hypersensitivity | 神经毒性可能叠加 |
+| Cisplatin + radiotherapy | mucositis、esophagitis、diarrhea、cytopenia | 需区分药物毒性与[RT toxicity](Toxicity_RT.qmd) |
+| Cisplatin + immunotherapy | nephritis vs nephrotoxicity、pneumonitis、hepatitis | 需区分顺铂器官毒性与[immune-related AE](../other/Immune_Checkpoint.qmd#immune-related-adverse-eventsiraes) |
+
+# CTCAE与AE记录
+
+顺铂毒性在临床试验中应使用标准AE术语和CTCAE grade记录。
+
+| 毒性领域 | 常用PT或记录项 |
+|---|---|
+| Renal | Creatinine increased、acute kidney injury、renal failure |
+| Electrolyte | Hypomagnesemia、hypokalemia、hyponatremia、hypocalcemia |
+| GI | Nausea、vomiting、diarrhea、anorexia |
+| Hematologic | Anemia、neutropenia、platelet count decreased、febrile neutropenia |
+| Neurologic | Peripheral sensory neuropathy、paresthesia、dysesthesia |
+| Ear | Tinnitus、hearing impaired、deafness、vertigo |
+| Immune | Infusion related reaction、hypersensitivity、anaphylaxis |
+| Reproductive | Infertility、amenorrhea、azoospermia |
+
+除了grade，还应记录：
+
+- onset和resolution；
+- seriousness；
+- relationship to cisplatin；
+- dose delay、dose reduction或drug discontinuation；
+- hydration、antiemetic、electrolyte replacement、G-CSF等concomitant medication；
+- hospitalization；
+- recovery status；
+- rechallenge outcome。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Eligibility Criteria
+
+含顺铂试验通常需要设定器官功能门槛，例如：
+
+- adequate renal function；
+- adequate bone marrow function；
+- no clinically significant hearing impairment；
+- no grade >=2 peripheral neuropathy；
+- no uncontrolled vomiting或dehydration风险；
+- no severe hypersensitivity to platinum agents。
+
+对于cisplatin-ineligible人群，应预先定义标准，例如CrCl阈值、ECOG performance status、听力损害、神经病变或心功能限制。
+
+## Safety Endpoints
+
+含顺铂方案的重点安全性终点包括：
+
+- grade >=3 TEAE；
+- treatment-related AE；
+- serious AE；
+- AE leading to cisplatin discontinuation；
+- cisplatin dose intensity；
+- renal AE；
+- grade >=3 nausea/vomiting；
+- grade >=3 cytopenia；
+- febrile neutropenia；
+- ototoxicity；
+- peripheral neuropathy。
+
+## Exposure and Dose Intensity
+
+顺铂毒性常与cumulative dose相关，因此建议分析：
+
+- planned vs received cycles；
+- cumulative cisplatin dose；
+- relative dose intensity；
+- missed dose；
+- switch from cisplatin to carboplatin；
+- reason for discontinuation。
+
+只报告“任意AE发生率”通常不足以解释治疗可耐受性。
+
+## Competing Risks and Long-Term Follow-Up
+
+Ototoxicity、neuropathy、infertility和secondary malignancy可能发生较晚或长期持续。若患者早期进展或死亡，晚期毒性可能没有机会被观察到。
+
+因此，长期安全性可考虑：
+
+- cumulative incidence；
+- patient-reported outcome；
+- hearing-specific quality of life；
+- neuropathy-specific questionnaires；
+- survivorship follow-up。
+
+# 与其他铂类药物比较
+
+| 特征 | Cisplatin | Carboplatin | Oxaliplatin |
+|---|---|---|---|
+| 肾毒性 | 更明显 | 较轻 | 较轻 |
+| 恶心呕吐 | 更明显 | 中等 | 中等 |
+| 骨髓抑制 | 中等 | 更明显，尤其thrombocytopenia | 中等 |
+| 神经毒性 | 累积性感觉神经病变 | 较轻 | 明显，常有冷诱发症状 |
+| 耳毒性 | 更明显 | 较少 | 较少 |
+| 常见使用 | 肺癌、膀胱癌、睾丸癌、头颈癌、妇科肿瘤 | cisplatin-ineligible或替代方案 | 结直肠癌、胃肠道肿瘤 |
+
+不能简单认为“carboplatin就是低毒版cisplatin”。两者毒性谱、剂量计算、疗效证据和适用人群均不同。
+
+# Common Pitfalls（常见误区）
+
+1. **只关注肾毒性，忽视耳毒性和神经毒性。**  
+   Hearing loss和peripheral neuropathy可能长期持续，且对生活质量影响很大。
+
+2. **认为肌酐正常就没有肾毒性风险。**  
+   需要结合CrCl/eGFR、尿量、电解质和患者水化状态。
+
+3. **没有预防性止吐。**  
+   Cisplatin是高致吐性化疗，应在给药前进行预防，而不是出现呕吐后才处理。
+
+4. **把所有肾功能异常都归因于顺铂。**  
+   还需排除脱水、感染、梗阻、造影剂、NSAIDs、免疫相关肾炎和其他肾毒性药物。
+
+5. **忽略累积剂量。**  
+   Neuropathy、ototoxicity和部分肾毒性与累积暴露密切相关。
+
+6. **联合治疗中归因过于简单。**  
+   顺铂、放疗、免疫治疗和其他化疗药物常有重叠毒性，应预先定义归因规则。
+
+# Key Takeaways（关键总结）
+
+1. Cisplatin toxicity最重要的类别包括nephrotoxicity、nausea/vomiting、myelosuppression、peripheral neuropathy和ototoxicity。
+2. 顺铂毒性应按器官系统、时间模式、CTCAE grade和治疗归因共同分类。
+3. 肾毒性可通过水化、肾功能和电解质监测显著降低风险，但不能完全消除。
+4. Nausea/vomiting需要按照高致吐性化疗进行预防性管理。
+5. Ototoxicity和peripheral neuropathy可能不可逆，临床试验应纳入长期随访和患者报告结局。
+6. 含顺铂方案应分析cumulative dose、relative dose intensity、dose modification和switch to carboplatin等暴露信息。
+
+# References（参考资料）
+
+1. DailyMed. *Cisplatin Injection, USP Prescribing Information*.  
+   <https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=a60c5173-6bc0-4c9d-9674-b3f4d68f79ba>
+
+2. DailyMed. *Cisplatin Injection Prescribing Information: warnings, ototoxicity, nausea and vomiting*.  
+   <https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b2b029f5-0d7e-4e7f-accc-b722aec34c68&type=display>
+
+3. National Cancer Institute. *Common Terminology Criteria for Adverse Events (CTCAE) and AE Reporting Resources*.  
+   <https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events>
+
+4. National Cancer Institute. *Side Effects of Cancer Treatment*.  
+   <https://www.cancer.gov/about-cancer/treatment/side-effects>
+
+5. National Cancer Institute. *Nerve Problems (Peripheral Neuropathy) and Cancer Treatment*.  
+   <https://www.cancer.gov/about-cancer/treatment/side-effects/nerve-problems>

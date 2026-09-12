@@ -101,7 +101,7 @@ Atezolizumab的Fc区域经过工程化处理，以尽量减少**antibody-depende
 | 药物类别 | 代表药物 | 结合靶点 | 主要阻断作用 |
 |---|---|---|---|
 | PD-L1 inhibitor | Atezolizumab、[durvalumab](Imfinzi.qmd)、avelumab | PD-L1 | 阻断PD-L1与PD-1及部分其他受体的相互作用 |
-| PD-1 inhibitor | [Pembrolizumab](Keytruda.qmd)、[nivolumab](Opdivo.qmd)、cemiplimab | PD-1 | 阻断PD-1与PD-L1及PD-L2的相互作用 |
+| PD-1 inhibitor | [Pembrolizumab](Keytruda.qmd)、[nivolumab](Opdivo.qmd)、[dostarlimab](Dostarlimab.qmd)、cemiplimab | PD-1 | 阻断PD-1与PD-L1及PD-L2的相互作用 |
 
 两类药物均可恢复T细胞抗肿瘤活性，但其结合位置、部分受体相互作用和临床开发项目不同。目前不能仅根据PD-1或PD-L1靶点类别，直接认定其中一类药物在所有癌种中更有效或更安全。
 
@@ -598,7 +598,7 @@ OS主要分析通常采用treatment-policy strategy。对于PFS，开始新抗�
 | [Pembrolizumab](Keytruda.qmd) | [Merck & Co.](../company/Merck.qmd) | 广泛肿瘤适应证和多个tumor-agnostic approval |
 | [Nivolumab](Opdivo.qmd) | [Bristol Myers Squibb](../company/BMS.qmd) | 多癌种单药及与ipilimumab联合 |
 | Cemiplimab | [Regeneron](../company/Regeneron.qmd) | 皮肤肿瘤及NSCLC |
-| Dostarlimab | [GSK](../company/GSK.qmd) | dMMR肿瘤和endometrial cancer |
+| [Dostarlimab](Dostarlimab.qmd) | [GSK](../company/GSK.qmd) | dMMR肿瘤和endometrial cancer |
 
 不同药物的适应证来自各自临床试验，不应将同一作用机制视为自动可互换。
 

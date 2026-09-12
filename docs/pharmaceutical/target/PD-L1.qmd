@@ -177,6 +177,7 @@ $$
 |---|---|---|
 | [Pembrolizumab](../compound/Keytruda.qmd) | PD-1 | NSCLC、[Melanoma](../disease/Melanoma.qmd)、HNSCC等 |
 | [Nivolumab](../compound/Opdivo.qmd) | PD-1 | 多种实体瘤 |
+| [Dostarlimab](../compound/Dostarlimab.qmd) | PD-1 | Endometrial cancer和dMMR实体瘤 |
 | Cemiplimab | PD-1 | NSCLC、CSCC |
 | [Atezolizumab](../compound/Tecentriq.qmd) | PD-L1 | NSCLC、SCLC、HCC、melanoma、ASPS、MIBC |
 | [Durvalumab](../compound/Imfinzi.qmd) | PD-L1 | Stage III NSCLC、[SCLC](../disease/SCLC.qmd) |

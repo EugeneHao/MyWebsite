@@ -150,7 +150,7 @@ SCLC临床上最常采用**Veterans Administration Lung Study Group, VALSG（退
 标准治疗：
 
 - concurrent chemoradiotherapy（同步放化疗）；
-- platinum + etoposide；
+- platinum，包括[cisplatin](../AE/Toxicity_Cisplatin.qmd)或carboplatin + etoposide；
 - 必要时prophylactic cranial irradiation, PCI（预防性脑照射）。
 
 部分患者可接受手术，但仅限极早期病例。

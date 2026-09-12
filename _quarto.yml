@@ -287,6 +287,8 @@ website:
             - section: GSK
               href: docs/pharmaceutical/company/GSK.qmd
               contents:        
+              - text: Jemperli
+                href: docs/pharmaceutical/compound/Dostarlimab.qmd
               - text: Tafinlar
                 href: docs/pharmaceutical/compound/Tafinlar.qmd  
             - section: Novartis
@@ -404,6 +406,10 @@ website:
               contents: 
               - text: Adverse Event by SOC and PT
                 href: docs/pharmaceutical/AE/AE_SOC_PT.qmd
+              - text: Toxicity - RT
+                href: docs/pharmaceutical/AE/Toxicity_RT.qmd
+              - text: Toxicity - Cisplatin（顺铂）
+                href: docs/pharmaceutical/AE/Toxicity_Cisplatin.qmd
               - text: Biomarker
                 href: docs/pharmaceutical/other/Biomarker.qmd
               - text: Biomarker Expression

@@ -282,7 +282,7 @@ TNM版本会定期更新。实际试验方案和分析报告应明确注明所�
 主要治疗方式包括：
 
 - 手术切除
-- **Stereotactic body radiation therapy, SBRT（立体定向体部放疗）**
+- **[Stereotactic body radiation therapy, SBRT（立体定向体部放疗）](../AE/Toxicity_RT.qmd#sbrt-sabr)**
 - 辅助铂类化疗
 - 新辅助或围手术期免疫治疗
 - 特定分子亚组的辅助靶向治疗

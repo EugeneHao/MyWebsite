@@ -119,7 +119,7 @@ Keytruda在美国具有大量适应证。下表按癌种概括其主要应用范
 | Esophageal cancer（食管癌） | 部分局部晚期、复发或转移性疾病 |
 | Cervical cancer（宫颈癌） | 与放化疗或系统治疗联合，以及部分PD-L1阳性疾病 |
 | Hepatocellular carcinoma（肝细胞癌） | 特定既往治疗后的患者 |
-| Biliary tract cancer（胆道癌） | 与gemcitabine和cisplatin联合 |
+| Biliary tract cancer（胆道癌） | 与gemcitabine和[cisplatin](../AE/Toxicity_Cisplatin.qmd)联合 |
 | Renal cell carcinoma（肾细胞癌） | 晚期一线联合治疗，以及部分肾切除后的辅助治疗 |
 | Endometrial carcinoma（子宫内膜癌） | 与化疗或lenvatinib联合，以及部分MSI-H或dMMR疾病 |
 | Triple-negative [breast cancer](../disease/Breast_Cancer.qmd), TNBC（三阴性乳腺癌） | 部分高风险早期疾病的围手术期治疗及PD-L1阳性晚期疾病 |
@@ -477,7 +477,7 @@ PD-L1高表达只能表示获益概率可能增加，并不能保证治疗有效
 | Pembrolizumab | PD-1 | [Merck](../company/Merck.qmd) | Keytruda |
 | [Nivolumab](Opdivo.qmd) | PD-1 | [Bristol Myers Squibb](../company/BMS.qmd) | Opdivo |
 | Cemiplimab | PD-1 | [Regeneron](../company/Regeneron.qmd) / Sanofi | Libtayo |
-| Dostarlimab | PD-1 | [GSK](../company/GSK.qmd) | Jemperli |
+| [Dostarlimab](Dostarlimab.qmd) | PD-1 | [GSK](../company/GSK.qmd) | Jemperli |
 | [Atezolizumab](Tecentriq.qmd) | PD-L1 | [Roche](../company/Roche.qmd) / Genentech | Tecentriq |
 | [Durvalumab](Imfinzi.qmd) | PD-L1 | [AstraZeneca](../company/AstraZeneca.qmd) | Imfinzi |
 | Avelumab | PD-L1 | Merck KGaA / [Pfizer](../company/Pfizer.qmd)相关开发历史 | Bavencio |

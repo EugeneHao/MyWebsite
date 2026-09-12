@@ -1,0 +1,330 @@
+---
+title: "Dostarlimab（多塔利单抗，Jemperli）"
+description: "介绍PD-1 inhibitor Dostarlimab/Jemperli的作用机制、获批适应证、关键临床研究、安全性、生物标志物及临床试验统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Immuno-Oncology
+  - Drug Profile
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Dostarlimab（多塔利单抗；[GSK](../company/GSK.qmd)；Jemperli；美国通用名后缀：dostarlimab-gxly）**是一种靶向**programmed death-1, PD-1（程序性死亡受体1）**的**[immune checkpoint inhibitor（免疫检查点抑制剂）](../other/Immune_Checkpoint.qmd)**。
+
+Dostarlimab与PD-1结合，阻断PD-1与**[programmed death-ligand 1, PD-L1（程序性死亡配体1）](../target/PD-L1.qmd)**及PD-L2的相互作用，从而解除T cell（T细胞）抑制并恢复抗肿瘤免疫反应。
+
+截至2026年9月，美国Jemperli的核心适应证包括：
+
+- 与carboplatin和paclitaxel联合，随后dostarlimab单药维持，用于成人primary advanced或recurrent endometrial cancer；
+- 单药用于既往接受platinum-containing regimen后进展、且不适合curative surgery或radiation的dMMR recurrent或advanced endometrial cancer；
+- 单药用于既往治疗后进展、且无满意替代治疗选择的dMMR recurrent或advanced solid tumors；该不限瘤种适应证为accelerated approval。
+
+它与[Keytruda](Keytruda.qmd)和[Opdivo](Opdivo.qmd)同属PD-1 inhibitor，但适应证、剂量、开发证据和监管状态不能直接互换。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Dostarlimab |
+| 中文通用名 | 多塔利单抗 |
+| U.S. proper name | Dostarlimab-gxly |
+| Brand name | Jemperli |
+| Company | [GSK](../company/GSK.qmd) |
+| Drug class | PD-1 immune checkpoint inhibitor |
+| Molecular type | Humanized IgG4 monoclonal antibody |
+| Target | PD-1 |
+| Route | Intravenous infusion |
+| Core mechanism | 阻断PD-1与PD-L1及PD-L2结合，恢复T细胞抗肿瘤活性 |
+| Main clinical focus | Endometrial cancer和dMMR/MSI-H实体瘤 |
+| Regulatory status | 多个适应证已获批；部分基于accelerated approval |
+
+# Mechanism of Action（作用机制）
+
+PD-1主要表达于活化T细胞表面。肿瘤细胞或[肿瘤微环境](../other/TME.qmd)中的免疫细胞可表达PD-L1或PD-L2，并通过PD-1通路抑制T细胞功能。
+
+```text
+Tumor cell / immune cell
+        |
+      PD-L1 / PD-L2
+        |
+       PD-1
+        |
+ T-cell inhibition
+```
+
+Dostarlimab结合PD-1后，可以：
+
+- 阻断PD-1/PD-L1信号；
+- 阻断PD-1/PD-L2信号；
+- 增强T cell activation；
+- 增加细胞毒T细胞对肿瘤细胞的杀伤；
+- 在部分患者中产生较持久的缓解。
+
+由于PD-1通路也参与正常免疫耐受，解除该通路后可能出现immune-mediated adverse reactions（免疫介导不良反应）。
+
+# Approved Indications（美国获批适应证）
+
+## Endometrial Cancer一线联合治疗
+
+Jemperli可与：
+
+- carboplatin；
+- paclitaxel；
+
+联合，随后dostarlimab单药维持，用于成人primary advanced或recurrent endometrial cancer。
+
+该适应证最初在dMMR/MSI-H人群中获批，随后扩展至更广泛的primary advanced或recurrent endometrial cancer人群。关键证据来自RUBY研究。
+
+## dMMR Endometrial Cancer单药治疗
+
+Dostarlimab单药可用于：
+
+- dMMR recurrent或advanced endometrial cancer；
+- 既往接受platinum-containing regimen后进展；
+- 不适合curative surgery或radiation；
+
+的成人患者。
+
+这里的dMMR通常需要通过经验证检测确认。该适应证的关键证据来自GARNET研究。
+
+## dMMR Solid Tumors不限瘤种适应证
+
+Dostarlimab单药也可用于部分：
+
+- dMMR recurrent或advanced solid tumors；
+- 既往治疗后进展；
+- 无满意替代治疗选择；
+
+的成人患者。
+
+该适应证基于overall response rate, ORR（客观缓解率）和duration of response, DOR（缓解持续时间）获得accelerated approval。持续批准可能取决于后续验证性研究对临床获益的确认。
+
+# Biomarker Strategy（生物标志物策略）
+
+## dMMR和MSI-H
+
+**Mismatch repair deficient, dMMR（错配修复缺陷）**表示细胞修复DNA复制错误的系统受损。常见相关蛋白包括：
+
+- MLH1；
+- PMS2；
+- MSH2；
+- MSH6。
+
+dMMR肿瘤通常会出现**microsatellite instability-high, MSI-H（微卫星高度不稳定）**，并积累较多突变。这可能增加neoantigen数量，使肿瘤更容易被免疫系统识别。
+
+因此，dMMR/MSI-H是PD-1 inhibitor开发中最重要的[biomarker](../other/Biomarker.qmd)之一。
+
+## 与PD-L1 Expression的区别
+
+dMMR/MSI-H与[PD-L1 expression](../other/Biomarker_Expression.qmd)不是同一个概念：
+
+| Biomarker | 检测内容 | 常见意义 |
+|---|---|---|
+| dMMR | 错配修复蛋白缺失或功能缺陷 | 识别高突变负荷、可能对PD-1治疗敏感的肿瘤 |
+| MSI-H | 微卫星序列不稳定 | 与dMMR高度相关 |
+| PD-L1 expression | 肿瘤或免疫细胞PD-L1蛋白表达 | 预测部分免疫治疗方案获益概率 |
+
+一个肿瘤可以dMMR但PD-L1不高，也可以PD-L1高但pMMR/MSS。治疗决策必须结合具体适应证和检测方法。
+
+# Key Clinical Trials（关键临床研究）
+
+## RUBY
+
+RUBY是一项randomized、double-blind、Phase 3研究，评估dostarlimab联合carboplatin和paclitaxel，随后dostarlimab维持治疗，用于primary advanced或recurrent endometrial cancer。
+
+主要终点包括：
+
+- progression-free survival, PFS（无进展生存期）；
+- overall survival, OS（总生存期）。
+
+研究按MMR/MSI状态、既往盆腔放疗和疾病状态等因素分层。FDA 2024年扩展适应证时，报告全人群OS和PFS均显示获益。
+
+## GARNET
+
+GARNET是一项多队列、single-arm研究，用于评估dostarlimab在多种晚期实体瘤中的抗肿瘤活性。
+
+在dMMR recurrent或advanced endometrial cancer队列中，dostarlimab显示出较高ORR和较持久DOR，支持其在platinum治疗后dMMR endometrial cancer中的单药应用。
+
+由于GARNET部分队列为单臂设计，解释疗效时需要注意：
+
+- 缺少随机对照；
+- 入组患者选择；
+- 既往治疗差异；
+- ORR和DOR不能完整替代OS获益。
+
+# Dosage and Administration（剂量与给药）
+
+Jemperli为静脉输注制剂。
+
+常见给药框架包括：
+
+| 场景 | 常见给药方式 |
+|---|---|
+| 与carboplatin和paclitaxel联合 | Dostarlimab 500 mg every 3 weeks，与化疗联合给药 |
+| 维持治疗 | Dostarlimab 1000 mg every 6 weeks |
+| 单药治疗 | 500 mg every 3 weeks共4次，随后1000 mg every 6 weeks |
+
+实际给药应以对应国家或地区最新approved label为准。
+
+Dostarlimab通常不通过降低剂量处理免疫相关毒性。发生中重度毒性时，临床上更常采用：
+
+- 暂停治疗；
+- corticosteroid或其他免疫抑制治疗；
+- 症状恢复后评估是否恢复给药；
+- 对严重或危及生命毒性永久停药。
+
+# Safety Profile（安全性）
+
+Dostarlimab的不良反应包括免疫治疗相关毒性，以及在联合化疗时由carboplatin和paclitaxel带来的骨髓抑制、神经毒性和胃肠道毒性。
+
+## 常见不良反应
+
+单药治疗中常见不良反应包括：
+
+- fatigue或asthenia；
+- anemia；
+- rash；
+- nausea；
+- diarrhea；
+- constipation；
+- vomiting。
+
+联合化疗时还需关注：
+
+- neutropenia；
+- thrombocytopenia；
+- peripheral neuropathy；
+- alopecia；
+- infection；
+- nausea和vomiting。
+
+其中platinum相关毒性可参见[Toxicity - Cisplatin](../AE/Toxicity_Cisplatin.qmd)，但carboplatin与cisplatin的毒性谱并不完全相同。
+
+## Immune-Mediated Adverse Reactions
+
+重要免疫相关不良反应包括：
+
+| 器官系统 | 可能事件 |
+|---|---|
+| Lung | Pneumonitis |
+| Colon | Colitis |
+| Liver | Hepatitis |
+| Endocrine | Hypothyroidism、hyperthyroidism、adrenal insufficiency、type 1 diabetes |
+| Kidney | Nephritis和renal dysfunction |
+| Skin | Severe skin reactions |
+| Other | 神经、心脏、血液和肌肉骨骼免疫毒性 |
+
+既往或计划接受[radiation therapy](../AE/Toxicity_RT.qmd)的患者出现肺部症状时，需要区分免疫性肺炎、放射性肺炎、感染和肿瘤进展。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | 靶点 | 公司 | 常见商品名 |
+|---|---|---|---|
+| [Pembrolizumab](Keytruda.qmd) | PD-1 | Merck | Keytruda |
+| [Nivolumab](Opdivo.qmd) | PD-1 | Bristol Myers Squibb | Opdivo |
+| Dostarlimab | PD-1 | [GSK](../company/GSK.qmd) | Jemperli |
+| Cemiplimab | PD-1 | Regeneron / Sanofi | Libtayo |
+| [Atezolizumab](Tecentriq.qmd) | PD-L1 | Roche / Genentech | Tecentriq |
+| [Durvalumab](Imfinzi.qmd) | PD-L1 | AstraZeneca | Imfinzi |
+
+Dostarlimab的差异化重点不在于它“也是PD-1抗体”，而在于：
+
+- endometrial cancer中的一线联合和维持治疗证据；
+- dMMR/MSI-H biomarker-driven开发；
+- 与化疗联合后在RUBY研究中对PFS和OS的影响；
+- 作为GSK肿瘤免疫治疗管线中的核心药物之一。
+
+# Clinical Trial and Biostatistical Considerations（临床试验与统计学考虑）
+
+## Endpoint Selection
+
+不同开发场景关注不同终点：
+
+| 场景 | 常见主要终点 |
+|---|---|
+| 单臂dMMR实体瘤研究 | ORR、DOR |
+| 一线endometrial cancer随机研究 | PFS、OS |
+| 维持治疗阶段 | PFS、OS、treatment duration和后续治疗 |
+
+在单臂研究中，ORR和DOR可支持accelerated approval，但不能像随机OS研究一样直接估计相对治疗效果。
+
+## Biomarker-Enriched Design
+
+dMMR/MSI-H研究属于典型biomarker-enriched design。统计分析中应预先定义：
+
+- dMMR或MSI-H检测方法；
+- central testing或local testing；
+- biomarker-evaluable population；
+- 检测失败或样本不足的处理；
+- dMMR/MSI-H与pMMR/MSS人群的分析层级。
+
+## Multiplicity
+
+RUBY等随机研究涉及：
+
+- dMMR/MSI-H人群；
+- overall population；
+- PFS；
+- OS；
+- interim analysis；
+
+因此需要预设hierarchical testing或alpha allocation，以控制family-wise type I error rate, FWER（族系第一类错误率）。
+
+## Response Assessment
+
+实体瘤研究通常使用[RECIST 1.1](../other/RECIST_1_1.qmd)评价肿瘤缓解和进展。免疫治疗中可能出现少数pseudoprogression，但注册研究主要分析通常仍以RECIST 1.1为核心。
+
+# Common Pitfalls（常见误区）
+
+1. **把dostarlimab与所有PD-1抗体视为完全可互换。**  
+   同类药物的适应证、剂量和证据基础不同。
+
+2. **把dMMR/MSI-H与PD-L1阳性混为一谈。**  
+   二者检测对象和临床意义不同。
+
+3. **认为accelerated approval等同于最终临床获益已完全确认。**  
+   加速批准通常仍需验证性研究确认获益。
+
+4. **忽视联合化疗带来的毒性。**  
+   Dostarlimab联合carboplatin和paclitaxel时，安全性不仅来自PD-1抑制。
+
+5. **出现免疫毒性后尝试常规减量。**  
+   PD-1抗体通常通过暂停或永久停药管理毒性，而不是常规剂量递减。
+
+# Key Takeaways（关键总结）
+
+1. Dostarlimab是GSK开发的PD-1 immune checkpoint inhibitor，商品名为Jemperli。
+2. 它通过阻断PD-1与PD-L1/PD-L2相互作用，恢复T细胞抗肿瘤免疫。
+3. 美国核心适应证集中在primary advanced或recurrent endometrial cancer，以及dMMR recurrent或advanced tumors。
+4. dMMR/MSI-H是dostarlimab开发中最重要的biomarker，但不同于PD-L1 expression。
+5. RUBY研究支持一线联合化疗和维持治疗，GARNET研究支持部分dMMR单药适应证。
+6. 统计学上需关注biomarker-enriched design、PFS/OS多重性控制、单臂研究局限和免疫治疗的长期随访。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. *FDA expands endometrial cancer indication for dostarlimab-gxly with chemotherapy*. August 1, 2024.  
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-expands-endometrial-cancer-indication-dostarlimab-gxly-chemotherapy>
+
+2. U.S. Food and Drug Administration. *FDA grants regular approval to dostarlimab-gxly for dMMR endometrial cancer*. February 9, 2023.  
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-regular-approval-dostarlimab-gxly-dmmr-endometrial-cancer>
+
+3. DailyMed. *JEMPERLI (dostarlimab-gxly) injection, prescribing information*. Updated September 2, 2025.  
+   <https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=095eab9f-545a-4f12-bfb7-19477fb901a5&version=14>
+
+4. GSK. *GSK receives FDA accelerated approval for Jemperli for adult patients with dMMR recurrent or advanced solid tumors*. August 17, 2021.  
+   <https://us.gsk.com/en-us/media/press-releases/gsk-receives-fda-accelerated-approval-for-jemperli-dostarlimab-gxly-for-adult-patients-with-mismatch-repair-deficient-dmmr-recurrent-or-advanced-solid-tumors/>
+
+5. European Medicines Agency. *Jemperli EPAR*. Updated June 10, 2026.  
+   <https://www.ema.europa.eu/en/medicines/human/EPAR/jemperli>

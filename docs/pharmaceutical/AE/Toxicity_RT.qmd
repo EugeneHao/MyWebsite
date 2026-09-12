@@ -1,0 +1,371 @@
+---
+title: "Radiotherapy Toxicity, Toxicity - RT（放疗相关毒性）"
+description: "介绍放疗相关毒性的正确分类、常见器官系统表现、CTCAE记录、剂量体积因素、联合治疗归因及临床试验分析考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Safety
+  - Clinical Trials
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Radiotherapy toxicity, toxicity - RT（放疗相关毒性）**是指患者接受**radiation therapy, RT（放射治疗/放疗）**后，由正常组织受到电离辐射影响而产生的不良反应。
+
+放疗毒性和药物毒性不同。药物毒性通常与全身暴露、药物机制和代谢有关；放疗毒性更强烈依赖：
+
+- 照射部位；
+- 正常器官接受的dose（剂量）；
+- irradiated volume（受照体积）；
+- fractionation（分割方式）；
+- concurrent systemic therapy（同步系统治疗）；
+- 既往治疗史；
+- 患者基础器官功能。
+
+因此，RT毒性不应只写成“有无radiation injury”。在[临床试验](../other/Intercurrent_Events.qmd)和安全性分析中，通常需要同时按照**发生时间、解剖部位、器官系统、严重程度和归因**进行分类。
+
+# 正确分类框架
+
+## 按发生时间分类
+
+| 分类 | 常见时间 | 机制特点 | 示例 |
+|---|---|---|---|
+| Acute toxicity（急性毒性） | 放疗期间至治疗后约90天内 | 主要影响更新较快的组织，如黏膜、皮肤和骨髓 | dermatitis radiation、esophagitis、mucositis、diarrhea、fatigue |
+| Subacute toxicity（亚急性毒性） | 治疗后数周至数月 | 炎症反应、血管损伤和组织修复异常 | radiation pneumonitis、Lhermitte syndrome |
+| Late toxicity（晚期毒性） | 治疗后数月至数年 | 纤维化、血管狭窄、组织萎缩和器官功能下降 | pulmonary fibrosis、cardiac toxicity、radiation myelopathy、secondary malignancy |
+
+90天并不是绝对生物学边界，但在研究报告和安全性汇总中常作为acute与late toxicity的实用分界。
+
+## 按器官系统分类
+
+RT toxicity应尽量映射到[CTCAE和AE SOC/PT](AE_SOC_PT.qmd)框架，而不是只用非标准术语描述。
+
+| 器官系统 | 常见PT或临床表现 | 典型治疗部位 |
+|---|---|---|
+| Skin and subcutaneous tissue | Dermatitis radiation、skin hyperpigmentation、fibrosis | 乳腺、头颈、胸壁、皮肤肿瘤 |
+| Gastrointestinal | Esophagitis、mucositis oral、diarrhea、proctitis、enteritis | 头颈、胸部、腹盆腔 |
+| Respiratory | Radiation pneumonitis、pulmonary fibrosis、dyspnea、cough | [肺癌](../disease/Lung_Cancer.qmd)、乳腺癌、纵隔肿瘤 |
+| Cardiac | Pericarditis、cardiomyopathy、coronary artery disease、arrhythmia | 左侧乳腺、肺、食管、纵隔 |
+| Nervous system | Cognitive decline、radiation necrosis、myelopathy、neuropathy | 脑、脊髓、头颈、椎旁肿瘤 |
+| Genitourinary | Cystitis noninfective、hematuria、urinary frequency | 前列腺、膀胱、妇科肿瘤 |
+| Reproductive system | Ovarian failure、infertility、sexual dysfunction | 盆腔、睾丸、全身照射 |
+| Blood and lymphatic system | Lymphopenia、anemia、thrombocytopenia | 大范围骨髓受照、同步放化疗 |
+
+## 按照治疗部位分类
+
+实际临床中，最有用的分类常常是“照哪里，就重点看哪个正常器官”。
+
+| RT field | 重点关注毒性 |
+|---|---|
+| Brain / CNS | alopecia、fatigue、cognitive impairment、radiation necrosis、endocrine dysfunction |
+| Head and neck | oral mucositis、xerostomia、dysphagia、dermatitis、hypothyroidism、osteoradionecrosis |
+| Thorax | esophagitis、radiation pneumonitis、pulmonary fibrosis、cardiac toxicity |
+| Breast / chest wall | dermatitis radiation、fatigue、breast pain、pneumonitis、cardiac exposure（尤其左侧） |
+| Abdomen | nausea、vomiting、gastritis、enteritis、liver injury、kidney injury |
+| Pelvis | diarrhea、proctitis、cystitis、sexual dysfunction、infertility、pelvic fracture |
+| Spine / paraspinal | esophagitis或enteritis取决于部位；spinal cord myelopathy为严重晚期风险 |
+
+# 常见放疗毒性
+
+## Radiation Dermatitis（放射性皮炎）
+
+Radiation dermatitis是最常见的RT急性毒性之一，尤其见于乳腺、头颈、胸壁和皮肤相关放疗。
+
+常见表现包括：
+
+- erythema（红斑）；
+- dry desquamation（干性脱屑）；
+- moist desquamation（湿性脱屑）；
+- pain、burning或pruritus；
+- severe ulceration或necrosis，较少见。
+
+记录时应尽量使用CTCAE术语**dermatitis radiation**，并记录grade、发生日期、照射区域、是否需要敷料或止痛，以及是否导致RT interruption。
+
+## Mucositis and Dysphagia（黏膜炎与吞咽困难）
+
+头颈部放疗和胸部放疗常累及黏膜。
+
+| 毒性 | 常见部位 | 临床影响 |
+|---|---|---|
+| Oral mucositis | 口腔、咽部 | 疼痛、进食困难、感染风险、体重下降 |
+| Dysphagia | 咽喉、食管 | 吞咽困难、营养不足、误吸风险 |
+| Esophagitis | 胸部放疗食管受照 | 胸骨后疼痛、吞咽痛、需要止痛或营养支持 |
+
+在[NSCLC](../disease/NSCLC.qmd)不可切除Stage III同步放化疗中，esophagitis是最重要的急性毒性之一。
+
+## Radiation Pneumonitis（放射性肺炎）
+
+Radiation pneumonitis通常发生于胸部RT后数周至数月，是[肺癌](../disease/Lung_Cancer.qmd)、乳腺癌和纵隔肿瘤放疗中最重要的安全性事件之一。
+
+典型表现包括：
+
+- 新发或加重cough；
+- dyspnea；
+- low-grade fever；
+- hypoxia；
+- CT出现照射野相关磨玻璃影或浸润。
+
+需要与以下情况鉴别：
+
+- infection；
+- tumor progression；
+- pulmonary embolism；
+- heart failure；
+- immune-mediated pneumonitis，尤其是接受[immune checkpoint inhibitor](../other/Immune_Checkpoint.qmd)者；
+- drug-induced ILD/pneumonitis，例如某些[ADC](../other/ADC.qmd)或靶向治疗。
+
+在接受胸部RT后再使用[Imfinzi](../compound/Imfinzi.qmd)、[Keytruda](../compound/Keytruda.qmd)、[Opdivo](../compound/Opdivo.qmd)或[Tecentriq](../compound/Tecentriq.qmd)等免疫治疗时，pneumonitis的归因尤其重要。
+
+## Cardiac Toxicity（心脏毒性）
+
+RT相关心脏毒性通常属于晚期毒性，可能在治疗后数年出现。风险与心脏受照剂量、既往心血管疾病、年龄、吸烟、化疗和靶向药物共同相关。
+
+常见表现包括：
+
+- pericarditis；
+- coronary artery disease；
+- cardiomyopathy；
+- valvular disease；
+- arrhythmia；
+- heart failure。
+
+左侧[breast cancer](../disease/Breast_Cancer.qmd)、肺癌、食管癌和纵隔淋巴瘤患者需要特别关注心脏dose constraint和长期随访。
+
+## GI Toxicity（胃肠道毒性）
+
+腹部和盆腔RT可导致：
+
+- nausea和vomiting；
+- diarrhea；
+- enteritis；
+- proctitis；
+- rectal bleeding；
+- bowel obstruction；
+- fistula或perforation，较少见但严重。
+
+在[pancreatic cancer](../disease/Pancreatic_Cancer.qmd) chemoradiation或SBRT中，胃、十二指肠和小肠是关键organs at risk。
+
+## Genitourinary Toxicity（泌尿生殖系统毒性）
+
+盆腔RT常见泌尿系统毒性包括：
+
+- urinary frequency；
+- dysuria；
+- cystitis noninfective；
+- hematuria；
+- urinary incontinence；
+- sexual dysfunction。
+
+盆腔、睾丸或卵巢受照还可能导致fertility impairment。对于年轻患者，治疗前应考虑fertility preservation counseling。
+
+## CNS and Spinal Cord Toxicity（中枢神经与脊髓毒性）
+
+CNS RT的毒性取决于照射范围和剂量分割。
+
+| 部位 | 重要毒性 |
+|---|---|
+| Whole brain RT | fatigue、alopecia、cognitive decline、endocrine dysfunction |
+| Stereotactic radiosurgery | radiation necrosis、edema、seizure |
+| Spine RT | pain flare、esophagitis或enteritis、radiation myelopathy |
+
+Radiation myelopathy虽然罕见，但后果严重，因此spinal cord dose constraint是计划审核中的关键限制。
+
+# 与治疗技术有关的风险
+
+## Conventional Fractionation
+
+常规分割通常为每日1.8-2.0 Gy，每周5次。它对晚反应组织较为温和，但治疗时间较长。
+
+## SBRT / SABR
+
+**Stereotactic body radiation therapy, SBRT（立体定向体部放疗）**使用少数分次给予较高单次剂量，常用于早期[NSCLC](../disease/NSCLC.qmd#sbrt)、局部复发病灶、寡转移或部分[胰腺癌](../disease/Pancreatic_Cancer.qmd#locally-advanced-unresectable-pdac局部晚期不可切除pdac)患者。
+
+SBRT的风险重点不只是总剂量，而是：
+
+- tumor是否central或ultracentral；
+- 与bronchus、esophagus、heart、great vessels、bowel等serial organs距离；
+- 是否有既往RT；
+- 每分次剂量；
+- organ at risk最大点剂量。
+
+## Concurrent Chemoradiotherapy（同步放化疗）
+
+同步放化疗可提高局部控制，但毒性通常高于单独RT。
+
+常见增加风险包括：
+
+- esophagitis；
+- mucositis；
+- diarrhea；
+- hematologic toxicity；
+- infection；
+- fatigue；
+- treatment interruption。
+
+在不可切除Stage III [NSCLC](../disease/NSCLC.qmd#unresectable-stage-iii-nsclc不可切除stage-iii-nsclc)中，concurrent chemoradiotherapy是重要治疗框架；后续可能接续[durvalumab](../compound/Imfinzi.qmd) consolidation。
+
+# CTCAE记录与AE归因
+
+## 记录原则
+
+RT毒性在临床试验中通常按[AE SOC/PT](AE_SOC_PT.qmd)记录，重点包括：
+
+- reported term；
+- MedDRA preferred term；
+- CTCAE grade；
+- start date和end date；
+- seriousness；
+- 是否导致RT interruption、dose change或discontinuation；
+- 是否需要住院、steroid、抗生素、营养支持、氧疗或手术；
+- relationship to RT、systemic therapy或both。
+
+## Attribution（归因）
+
+当RT与药物联合时，归因不能只按时间判断。
+
+| 场景 | 归因难点 |
+|---|---|
+| Thoracic RT + immune checkpoint inhibitor | radiation pneumonitis和immune-mediated pneumonitis可高度重叠 |
+| Chemoradiation | mucositis、esophagitis、diarrhea和cytopenia可能由RT与化疗共同导致 |
+| RT + ADC | pneumonitis或mucositis可能存在叠加风险 |
+| Re-irradiation | 既往RT导致的组织储备下降会增加晚期毒性风险 |
+
+分析时可设立**radiation-related AE（放疗相关AE）**、**immune-mediated AE（免疫介导AE）**和**treatment-related AE（治疗相关AE）**等不同分析集合，但定义必须在protocol或SAP中预先说明。
+
+# Dose-Volume Considerations（剂量体积考虑）
+
+RT毒性高度依赖organ at risk的剂量体积分布。常见指标包括：
+
+| 指标 | 含义 |
+|---|---|
+| Mean dose | 器官平均剂量 |
+| Dmax | 最大剂量 |
+| D0.03cc / D1cc / D2cc | 最热点小体积剂量，常用于serial organ |
+| V5 / V10 / V20 / V30 | 器官接受至少某剂量的体积比例 |
+| EQD2 | 等效2 Gy分割剂量，用于比较不同分割方案 |
+| BED | biologically effective dose，生物有效剂量 |
+
+例如胸部RT中，lung V20和mean lung dose常用于评估radiation pneumonitis风险；头颈RT中，parotid mean dose与xerostomia风险相关；盆腔RT中，rectum和bladder dose-volume参数与晚期出血、尿路症状相关。
+
+这些指标不能脱离癌种、技术、分割方式和患者特征机械套用。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Endpoint and Safety Set
+
+RT试验或含RT治疗臂的试验通常需要单独定义：
+
+- acute RT toxicity；
+- late RT toxicity；
+- grade >=3 RT-related AE；
+- RT interruption due to toxicity；
+- failure to complete planned RT；
+- hospitalization due to RT toxicity；
+- treatment-related death；
+- patient-reported symptoms。
+
+## Time Window（时间窗）
+
+RT毒性的时间窗需要预先定义。
+
+| 分析 | 常见窗口 |
+|---|---|
+| Acute toxicity | 从RT开始至RT结束后30、60或90天 |
+| Subacute pneumonitis | 常延伸至RT后6个月 |
+| Late toxicity | RT后90天以后，常需1-5年或更久随访 |
+
+如果只看treatment-emergent AE窗口，可能低估晚期RT毒性。
+
+## Competing Risks（竞争风险）
+
+晚期RT毒性常发生较晚，而肿瘤进展、死亡或后续治疗可能阻止毒性被观察到。
+
+因此，对于late toxicity可考虑：
+
+- cumulative incidence function；
+- death without toxicity作为competing event；
+- landmark analysis；
+- sensitivity analysis。
+
+## Patient-Reported Outcomes
+
+部分RT毒性非常依赖患者主观体验，例如：
+
+- pain；
+- dry mouth；
+- dysphagia；
+- dyspnea；
+- diarrhea urgency；
+- urinary frequency；
+- fatigue；
+- sexual dysfunction。
+
+因此，PRO或PRO-CTCAE可以补充传统CTCAE记录，避免低估症状负担。
+
+# 与免疫治疗毒性的区别
+
+RT pneumonitis与免疫治疗pneumonitis是最常见的混淆点。
+
+| 特征 | Radiation pneumonitis | Immune-mediated pneumonitis |
+|---|---|---|
+| 典型范围 | 常与照射野相关 | 可超出照射野，分布更弥漫 |
+| 时间 | RT后数周至数月 | 免疫治疗期间或停药后均可发生 |
+| 相关治疗 | 胸部RT、SBRT、re-irradiation | [PD-1/PD-L1 inhibitor](../other/Immune_Checkpoint.qmd) |
+| 诊断重点 | RT plan、dose distribution、影像与照射野匹配 | 药物暴露、排除感染、影像模式 |
+| 治疗 | 根据严重程度支持治疗、steroid、暂停RT或系统治疗 | 暂停/停止免疫治疗、systemic corticosteroid、必要时免疫抑制 |
+
+实际患者中两者可能同时存在，尤其是在胸部RT和免疫治疗序贯或联合使用时。
+
+# Common Pitfalls（常见误区）
+
+1. **把RT toxicity全部写成radiation injury。**  
+   具体记录应尽量映射到CTCAE PT，如dermatitis radiation、esophagitis、pneumonitis、proctitis等。
+
+2. **只记录急性毒性，忽略晚期毒性。**  
+   心脏毒性、肺纤维化、认知下降、脊髓损伤和继发肿瘤可能在治疗后很久出现。
+
+3. **把所有胸部影像炎症都归因于免疫治疗。**  
+   胸部RT后需要结合照射野、剂量分布和时间关系判断radiation pneumonitis。
+
+4. **只看总剂量，不看受照体积。**  
+   RT毒性常由dose-volume共同决定，mean dose、Dmax和Vx都很重要。
+
+5. **忽视治疗中断。**  
+   RT interruption既是安全性结果，也可能影响局部控制和疗效解释。
+
+6. **不同分割方案直接比较Gy数。**  
+   常规分割、hypofractionation和SBRT的生物学效应不同，应考虑BED或EQD2。
+
+# Key Takeaways（关键总结）
+
+1. RT toxicity应按时间、器官系统、照射部位、CTCAE grade和治疗归因共同分类。
+2. 急性毒性常见于皮肤、黏膜、食管和肠道；晚期毒性更多涉及纤维化、心肺功能、神经系统和继发肿瘤。
+3. 胸部RT中的radiation pneumonitis需要与immune-mediated pneumonitis、感染和肿瘤进展鉴别。
+4. Dose-volume参数是RT毒性的核心解释变量，不能只看处方剂量。
+5. 临床试验中应预先定义acute、subacute和late toxicity窗口，并记录RT interruption、dose modification和长期随访事件。
+
+# References（参考资料）
+
+1. National Cancer Institute. *Common Terminology Criteria for Adverse Events (CTCAE) and AE Reporting Resources*.  
+   <https://dctd.cancer.gov/research/ctep-trials/for-sites/adverse-events>
+
+2. National Cancer Institute. *PRO-CTCAE Symptom Terms and Corresponding CTCAE Version 5.0 Terms*.  
+   <https://healthcaredelivery.cancer.gov/pro-ctcae/terms.html>
+
+3. QUANTEC Radiation. *Evidence-Based Toxicity Risk Metrics*.  
+   <https://quantecradiation.org/>
+
+4. Marks LB, Yorke ED, Jackson A, et al. Use of normal tissue complication probability models in the clinic. *International Journal of Radiation Oncology Biology Physics*. 2010;76(3 Suppl):S10-S19.
+
+5. American Society for Radiation Oncology. *Safety is No Accident: A Framework for Quality Radiation Oncology and Care*. 2019.  
+   <https://www.astro.org/practice-support/quality-and-safety/safety-is-no-accident>

@@ -316,7 +316,7 @@ RNA检测对于发现*NRG1*、*NTRK*和其他罕见基因融合尤其重要。
 - mFOLFIRINOX；
 - gemcitabine + nab-paclitaxel。
 
-完成一定周期后，通过CT、CA 19-9、临床状态和多学科评估判断是否能够手术。部分患者可能接受chemoradiation或**stereotactic body radiation therapy, SBRT（立体定向体部放射治疗）**。
+完成一定周期后，通过CT、CA 19-9、临床状态和多学科评估判断是否能够手术。部分患者可能接受chemoradiation或**[stereotactic body radiation therapy, SBRT（立体定向体部放射治疗）](../AE/Toxicity_RT.qmd#sbrt-sabr)**。
 
 影像学上肿瘤未明显缩小并不一定意味着治疗无效。PDAC治疗后的纤维化组织可能难以与残余活肿瘤区分，因此手术决策不能仅依据[RECIST](../other/RECIST_1_1.qmd)尺寸变化。
 

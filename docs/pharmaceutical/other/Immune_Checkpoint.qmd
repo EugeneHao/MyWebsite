@@ -220,7 +220,7 @@ ICI 通过解除免疫抑制，使 T cell 恢复杀伤能力。
 
 | 类型 | 代表药物 |
 |---|---|
-| PD-1 inhibitor | [Pembrolizumab](../compound/Keytruda.qmd)、[Nivolumab](../compound/Opdivo.qmd) |
+| PD-1 inhibitor | [Pembrolizumab](../compound/Keytruda.qmd)、[Nivolumab](../compound/Opdivo.qmd)、[Dostarlimab](../compound/Dostarlimab.qmd) |
 | PD-L1 inhibitor | [Durvalumab](../compound/Imfinzi.qmd)、[Atezolizumab](../compound/Tecentriq.qmd)、Avelumab |
 | CTLA-4 inhibitor | [Ipilimumab](../compound/Yervoy.qmd)、Tremelimumab |
 | LAG-3 inhibitor | Relatlimab |
