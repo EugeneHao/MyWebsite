@@ -1,0 +1,371 @@
+---
+title: "B7-H3, CD276（B7 同源物3）"
+description: "介绍 B7-H3/CD276 的生物学功能、肿瘤表达、作为 ADC 和免疫治疗靶点的开发价值，以及临床试验和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Biomarkers
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**B7-H3（B7 homolog 3；gene symbol: CD276）**是B7免疫调节分子家族成员之一，也是一种跨膜糖蛋白。它在正常组织中的蛋白表达相对有限，但在多种实体瘤中明显上调，因此成为近年来重要的新兴肿瘤治疗靶点。
+
+B7-H3最初被归入**immune checkpoint（免疫检查点）**相关分子，但其真实生物学功能比经典[PD-L1](PD-L1.qmd)或CTLA-4更复杂。公开研究提示，B7-H3可能同时参与：
+
+- T cell和NK cell功能调节；
+- 肿瘤免疫逃逸；
+- tumor microenvironment, [TME（肿瘤微环境）](../other/TME.qmd)重塑；
+- 肿瘤细胞增殖、侵袭和转移；
+- 血管生成和治疗耐药。
+
+截至2026年9月，尚无B7-H3-directed medicine在美国正式获批用于癌症治疗，但多个B7-H3靶向药物已经进入临床开发。代表性资产包括**[ifinatamab deruxtecan, I-DXd](../compound/Ifinatamab_Deruxtecan.qmd)（DS-7300/MK-2400）**和**[elfetabart drozuntecan, Elfe-D](../compound/Elfe_D.qmd)（DB-1311/BNT324）**等B7-H3-directed [ADC](../other/ADC.qmd)。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| B7-H3 | B7 homolog 3，B7家族免疫调节分子 |
+| CD276 | 编码B7-H3的基因名称，也常作为蛋白名称使用 |
+| B7 family | 一组参与T cell共刺激或共抑制信号的免疫调节分子 |
+| Immune checkpoint | 调节免疫细胞活化和耐受的分子机制 |
+| ADC | Antibody-drug conjugate，抗体偶联药物 |
+| I-DXd | [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)，B7-H3-directed DXd ADC |
+| Elfe-D | [Elfetabart drozuntecan](../compound/Elfe_D.qmd)，B7-H3-targeted ADC |
+
+# 分子结构与表达
+
+B7-H3是一种type I transmembrane protein，通常包括：
+
+```text
+Extracellular Ig-like domains
+        |
+Transmembrane domain
+        |
+Short intracellular domain
+```
+
+在人类中，B7-H3蛋白可存在含有多个Ig-like domain的形式。其胞外结构域位于细胞表面，可被抗体药物识别，因此适合作为抗体、ADC、双特异性抗体、CAR-T或放射免疫治疗的靶点。
+
+## 正常组织表达
+
+B7-H3 mRNA可在多种组织中检测到，但蛋白水平通常受到更严格调控。多数正常组织中的B7-H3蛋白表达较低或有限，这一点提高了其作为肿瘤靶点的开发吸引力。
+
+但B7-H3并不是绝对肿瘤特异性抗原。内皮细胞、抗原呈递细胞和部分活化免疫细胞在特定条件下也可能表达B7-H3，因此靶向治疗仍需要关注正常组织毒性。
+
+## 肿瘤表达
+
+B7-H3在多种实体瘤中可高表达，包括：
+
+| 肿瘤 | 开发意义 |
+|---|---|
+| [Small cell lung cancer, SCLC](../disease/SCLC.qmd) | B7-H3 ADC开发最领先的方向之一 |
+| [Non-small cell lung cancer, NSCLC](../disease/NSCLC.qmd) | 与免疫治疗耐药和ADC开发相关 |
+| Prostate cancer | 适合B7-H3 ADC和放射性配体治疗探索 |
+| [Breast cancer](../disease/Breast_Cancer.qmd) | 表达较常见，可能与侵袭性和预后相关 |
+| [Pancreatic cancer](../disease/Pancreatic_Cancer.qmd) | 免疫冷肿瘤和TME靶向开发相关 |
+| Melanoma | 免疫治疗耐药场景中具有探索价值 |
+| Ovarian cancer | 多种B7-H3靶向策略探索中 |
+
+B7-H3表达通常与更高肿瘤侵袭性、晚期分期、转移和较差预后相关，但这种关联会受到癌种、检测方法、cutoff和样本来源影响。
+
+# 生物学功能
+
+## 免疫调节
+
+B7-H3属于B7家族。B7家族中最熟悉的成员包括：
+
+- B7-1, CD80；
+- B7-2, CD86；
+- B7-H1, [PD-L1](PD-L1.qmd)；
+- B7-DC, PD-L2；
+- B7-H3, CD276；
+- B7-H4。
+
+与PD-L1不同，B7-H3的受体和信号机制尚未完全明确。多数肿瘤研究认为B7-H3在TME中偏向免疫抑制，可减少抗肿瘤免疫活性，但其在不同模型中也可能表现出复杂的共刺激或共抑制作用。
+
+可能的免疫效应包括：
+
+- 抑制T cell activation；
+- 降低cytotoxic T-cell function；
+- 影响NK cell杀伤；
+- 促进M2-like tumor-associated macrophage polarization；
+- 增强免疫抑制性TME。
+
+## 非免疫功能
+
+B7-H3还可能通过非免疫机制促进肿瘤进展，包括：
+
+- tumor-cell proliferation；
+- migration and invasion；
+- epithelial-mesenchymal transition, EMT；
+- angiogenesis；
+- glycolysis和代谢重编程；
+- DNA damage response和治疗耐药；
+- metastatic potential。
+
+因此，B7-H3既可以被理解为免疫调节分子，也可以被理解为肿瘤进展相关的表面抗原。
+
+# 为什么B7-H3适合ADC开发
+
+ADC靶点通常希望具备以下特点：
+
+| 理想条件 | B7-H3特点 |
+|---|---|
+| 肿瘤高表达 | 多种实体瘤中上调 |
+| 正常组织低表达 | 蛋白表达相对有限，但并非完全缺失 |
+| 细胞表面定位 | 胞外结构域可被抗体识别 |
+| 可发生内化 | 支持payload递送 |
+| 与疾病侵袭性相关 | 常与不良预后和进展相关 |
+
+B7-H3的核心开发逻辑与[TROP2](TROP2.qmd)和[HER2](HER.qmd)类似：抗体部分识别肿瘤细胞表面抗原，随后通过ADC递送细胞毒payload。
+
+# B7-H3靶向治疗策略
+
+## Antibody-Drug Conjugate
+
+最受关注的B7-H3 ADC包括**[ifinatamab deruxtecan, I-DXd](../compound/Ifinatamab_Deruxtecan.qmd)（DS-7300/MK-2400）**和**[elfetabart drozuntecan, Elfe-D](../compound/Elfe_D.qmd)（DB-1311/BNT324）**。
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Ifinatamab deruxtecan |
+| Short name | I-DXd |
+| Development codes | DS-7300、MK-2400 |
+| Target | B7-H3 / CD276 |
+| Payload | DXd topoisomerase I inhibitor |
+| Original developer | [Daiichi Sankyo](../company/Daiichi_Sankyo.qmd) |
+| Global collaborator | [Merck & Co.](../company/Merck.qmd) / MSD |
+| Most advanced setting | Previously treated extensive-stage [SCLC](../disease/SCLC.qmd) |
+| U.S. status | BLA accepted with Priority Review；PDUFA date: October 10, 2026 |
+
+I-DXd由humanized anti-B7-H3 IgG1 monoclonal antibody、tetrapeptide-based cleavable linker和DXd payload组成，属于Daiichi Sankyo DXd ADC平台。
+
+截至2026年9月，I-DXd在美国仍处于审评阶段，尚未正式获批。若获批，它将可能成为首个B7-H3-directed ADC。
+
+Elfe-D是由[DualityBio](../company/DualityBio.qmd)与[BioNTech](../company/BioNTech.qmd)合作开发的B7-H3 ADC，已进入mCRPC global randomized Phase 3研究，并在肺癌、卵巢癌、宫颈癌及与[pumitamig](../compound/Pumitamig.qmd)联合治疗中继续开发。
+
+## Monoclonal Antibody
+
+早期B7-H3单抗开发包括enoblituzumab等药物。单抗开发思路主要依赖：
+
+- checkpoint blockade；
+- antibody-dependent cellular cytotoxicity, ADCC；
+- 与其他免疫治疗联合。
+
+但由于B7-H3受体机制尚不完全清楚，单纯阻断B7-H3信号的临床开发比ADC更复杂。
+
+## Bispecific Antibody
+
+B7-H3也可用于双特异性抗体设计，例如：
+
+- B7-H3 × CD3 T-cell engager；
+- B7-H3 × 其他免疫调节靶点；
+- B7-H3与肿瘤抗原或免疫细胞靶点组合。
+
+这些策略希望把T cell重新定向至B7-H3阳性肿瘤细胞，但需要重点控制cytokine release syndrome和on-target/off-tumor toxicity。
+
+## CAR-T and Radioimmunotherapy
+
+B7-H3 CAR-T和B7-H3 radioimmunotherapy也在探索中，尤其适用于：
+
+- pediatric solid tumors；
+- CNS tumors；
+- prostate cancer；
+- 其他B7-H3高表达肿瘤。
+
+实体瘤CAR-T仍需面对TME抑制、肿瘤异质性、细胞进入肿瘤困难和安全性窗口等挑战。
+
+# 临床开发重点
+
+## Small Cell Lung Cancer
+
+B7-H3在SCLC中的表达较常见，因此SCLC成为I-DXd最领先的开发方向之一。
+
+2026年4月13日，Daiichi Sankyo和Merck宣布FDA已接受I-DXd的BLA并授予Priority Review，用于：
+
+- adult patients；
+- extensive-stage SCLC；
+- platinum-based chemotherapy期间或之后疾病进展。
+
+该申请主要基于IDeate-Lung01 Phase 2研究，并由IDeate-PanTumor01 Phase 1/2研究支持。PDUFA目标日期为2026年10月10日。
+
+需要注意：
+
+- Priority Review不等于批准；
+- BLA accepted不等于上市；
+- 截至2026年9月，美国尚无B7-H3-directed cancer medicine获批。
+
+## Prostate Cancer
+
+B7-H3在前列腺癌中表达较常见，并与晚期疾病和侵袭性有关。I-DXd已进入mCRPC Phase 3研究，比较I-DXd与docetaxel，用于接受过androgen receptor pathway inhibitor后进展的患者。
+
+该方向的关键问题包括：
+
+- B7-H3表达是否需要作为入组条件；
+- prior taxane exposure；
+- radiographic progression-free survival；
+- pain和patient-reported outcomes；
+- 与PSMA-directed therapy的治疗顺序。
+
+## Pan-Tumor Development
+
+B7-H3也在多种实体瘤中进行basket或pan-tumor研究，包括：
+
+- endometrial cancer；
+- hepatocellular carcinoma；
+- head and neck squamous cell carcinoma；
+- melanoma；
+- ovarian cancer；
+- [pancreatic cancer](../disease/Pancreatic_Cancer.qmd)；
+- esophageal cancer；
+- [NSCLC](../disease/NSCLC.qmd)。
+
+不同癌种中B7-H3表达水平、内化能力、payload敏感性和TME状态不同，因此不能简单假设所有B7-H3阳性肿瘤均会对同一种治疗敏感。
+
+# Biomarker Considerations（生物标志物考虑）
+
+## B7-H3 Expression
+
+B7-H3既是治疗靶点，也可能是patient selection biomarker。
+
+常见检测方式包括：
+
+- immunohistochemistry, IHC；
+- RNA expression；
+- flow cytometry；
+- spatial profiling；
+- circulating tumor DNA或其他多组学探索。
+
+目前多数B7-H3靶向研究仍在探索最佳检测方法、抗体clone、评分体系和cutoff。不同研究中的B7-H3-positive定义不能直接互换。
+
+## Predictive vs Prognostic
+
+B7-H3高表达常与较差预后相关，因此它可能是**prognostic biomarker（预后性生物标志物）**。
+
+但“B7-H3高表达是否预测B7-H3-directed therapy获益更多”属于**predictive biomarker（预测性生物标志物）**问题，需要随机研究或预设交互分析支持。
+
+不能仅凭B7-H3高表达与差预后相关，就认定其一定是治疗选择标志物。
+
+## Heterogeneity
+
+B7-H3表达可能存在：
+
+- intratumor heterogeneity；
+- primary tumor和metastasis之间差异；
+- 治疗前后动态变化；
+- 肿瘤细胞与血管/基质细胞表达差异。
+
+这些因素都会影响IHC判读、患者筛选和亚组分析。
+
+# Safety Considerations（安全性考虑）
+
+B7-H3靶向治疗的毒性取决于具体药物类型。
+
+| 药物类型 | 主要安全性关注 |
+|---|---|
+| ADC | 骨髓抑制、胃肠道毒性、ILD/pneumonitis、payload相关毒性 |
+| T-cell engager | Cytokine release syndrome、神经毒性、免疫激活相关毒性 |
+| CAR-T | CRS、ICANS、on-target/off-tumor toxicity |
+| Radioimmunotherapy | 骨髓抑制、器官辐射暴露、长期安全性 |
+
+对于B7-H3 ADC，安全性不能只由靶点判断，还必须结合linker、payload、DAR、剂量、给药频率和患者既往治疗。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+## Endpoint Selection
+
+不同开发阶段常见终点包括：
+
+| 场景 | 常见终点 |
+|---|---|
+| Phase 1 | DLT、MTD/RP2D、安全性、PK、初步ORR |
+| Single-arm Phase 2 | ORR、DOR、PFS、安全性 |
+| Randomized Phase 2/3 | PFS、OS、ORR、PRO |
+| Biomarker-enriched study | B7-H3 expression subgroup efficacy |
+
+SCLC后线治疗中，ORR和DOR可用于支持早期开发，但确证性价值通常仍需结合PFS、OS和随机对照证据。
+
+## Biomarker Strategy
+
+B7-H3研究可能采用：
+
+- all-comer design；
+- B7-H3-positive enriched design；
+- prespecified expression subgroup；
+- continuous expression-response analysis；
+- paired biopsy或serial sampling。
+
+若使用B7-H3 IHC入组，protocol和SAP应明确：
+
+- assay平台；
+- 抗体clone；
+- 评分细胞类型；
+- cutoff；
+- 中央实验室或当地实验室；
+- 样本不足如何处理；
+- 是否允许存档组织。
+
+## Multiplicity
+
+如果同时评价多个癌种、多个B7-H3表达cutoff、多个终点或多个剂量，需要控制multiplicity。探索性pan-tumor研究尤其容易出现数据驱动cutoff和偶然阳性信号。
+
+## Cross-Trial Comparison
+
+B7-H3 ADC与[TROP2 ADC](TROP2.qmd)、HER2 ADC或传统化疗之间的跨试验比较很容易误导，因为不同研究的人群、治疗线次、既往免疫治疗、B7-H3检测和终点定义不同。
+
+# Common Pitfalls（常见误区）
+
+1. **把B7-H3当成已经成熟的PD-L1式伴随诊断。**  
+   B7-H3检测仍在探索中，尚未形成广泛统一的临床cutoff。
+
+2. **认为B7-H3只是一种免疫检查点。**  
+   它还可能通过非免疫机制促进肿瘤增殖、侵袭、转移和耐药。
+
+3. **认为B7-H3高表达就一定对B7-H3 ADC有效。**  
+   ADC疗效还取决于内化、payload释放、DNA损伤敏感性和肿瘤异质性。
+
+4. **认为I-DXd已经获批。**  
+   截至2026年9月，I-DXd在美国处于Priority Review阶段，尚未正式获批。
+
+5. **把所有B7-H3靶向药物视为同类。**  
+   单抗、ADC、T-cell engager、CAR-T和放射免疫治疗的机制和毒性完全不同。
+
+# Key Takeaways（关键总结）
+
+1. B7-H3/CD276是B7家族跨膜蛋白，在多种实体瘤中高表达，常与侵袭性和差预后相关。
+2. B7-H3兼具免疫调节和非免疫促肿瘤功能，是TME和肿瘤表面抗原开发中的重要靶点。
+3. B7-H3适合ADC开发，因为其在肿瘤中表达较高、位于细胞表面，并可用于payload递送。
+4. [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)和[Elfe-D](../compound/Elfe_D.qmd)是目前B7-H3 ADC开发中的代表性资产。
+5. B7-H3 expression仍不是成熟伴随诊断，临床研究需要明确assay、cutoff、样本来源和亚组分析策略。
+6. B7-H3靶向治疗仍处于快速发展阶段，不同药物类型的疗效和安全性不能简单互相外推。
+
+# References（参考资料）
+
+1. Daiichi Sankyo and Merck & Co. *Ifinatamab Deruxtecan Granted Priority Review in the U.S. for Adult Patients with Previously Treated Extensive-Stage Small Cell Lung Cancer*. April 13, 2026.  
+   <https://www.merck.com/news/ifinatamab-deruxtecan-granted-priority-review-in-the-u-s-for-adult-patients-with-previously-treated-extensive-stage-small-cell-lung-cancer-who-experienced-disease-progression-on-or-after-platinum-bas/>
+
+2. Daiichi Sankyo and Merck & Co. *Ifinatamab Deruxtecan Granted Breakthrough Therapy Designation by U.S. FDA for Patients with Pretreated Extensive-Stage Small Cell Lung Cancer*. August 18, 2025.  
+   <https://daiichisankyo.us/press-releases/-/article/ifinatamab-deruxtecan-granted-breakthrough-therapy-designation-by-us-fda-for-patients-with-pretreated-extensive-stage-small-cell-lung-cancer>
+
+3. Merck & Co. *Product Pipeline: ifinatamab deruxtecan (MK-2400)*. Accessed September 13, 2026.  
+   <https://www.merck.com/research/product-pipeline/>
+
+4. Daiichi Sankyo and Merck & Co. *IDeate-Lung02 Phase 3 Trial of Ifinatamab Deruxtecan Initiated in Patients with Relapsed Small Cell Lung Cancer*. August 1, 2024.  
+   <https://daiichisankyo.us/press-releases/-/article/ideate-lung02-phase-3-trial-of-ifinatamab-deruxtecan-initiated-in-patients-with-relapsed-small-cell-lung-cancer>
+
+5. Li Y, et al. Tumor Immunotherapy Targeting B7-H3: From Mechanisms to Clinical Applications. *Frontiers in Immunology*. 2025.  
+   <https://pmc.ncbi.nlm.nih.gov/articles/PMC11960814/>
+
+6. Kontos F, et al. New Emerging Targets in Cancer Immunotherapy: The Role of B7-H3. *Cancers*. 2024.  
+   <https://pmc.ncbi.nlm.nih.gov/articles/PMC10820813/>

@@ -1,0 +1,254 @@
+---
+title: "Ifinatamab Deruxtecan, I-DXd（DS-7300/MK-2400）"
+description: "介绍B7-H3靶向DXd ADC ifinatamab deruxtecan的结构、作用机制、临床开发、监管状态、安全性和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Ifinatamab deruxtecan, I-DXd（[Daiichi Sankyo](../company/Daiichi_Sankyo.qmd)与[Merck & Co.](../company/Merck.qmd) / MSD；development codes: DS-7300、MK-2400）**是一种靶向**[B7-H3, CD276](../target/B7-H3.qmd)**的**[antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+I-DXd由anti-B7-H3 humanized IgG1 monoclonal antibody、可酶切tetrapeptide-based linker和DXd topoisomerase I inhibitor payload组成，属于Daiichi Sankyo DXd ADC平台。
+
+截至2026年9月，I-DXd尚未在美国正式获批。2026年4月13日，FDA接受其BLA并授予Priority Review，用于既往接受platinum-based chemotherapy期间或之后进展的成人extensive-stage [small cell lung cancer, ES-SCLC](../disease/SCLC.qmd#extensive-stage-sclc)患者。PDUFA目标日期为2026年10月10日。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Ifinatamab deruxtecan |
+| Short name | I-DXd |
+| Development codes | DS-7300、DS-7300a、MK-2400 |
+| Original developer | [Daiichi Sankyo](../company/Daiichi_Sankyo.qmd) |
+| Global collaborator | [Merck & Co.](../company/Merck.qmd) / MSD |
+| Drug class | [B7-H3](../target/B7-H3.qmd)-directed ADC |
+| Antibody component | Humanized anti-B7-H3 IgG1 monoclonal antibody |
+| Linker | Enzymatically cleavable tetrapeptide-based linker |
+| Payload | DXd，exatecan-derived topoisomerase I inhibitor |
+| Route | Intravenous infusion |
+| Most advanced indication | Previously treated ES-SCLC |
+| U.S. status | BLA accepted with Priority Review；not yet approved as of September 2026 |
+
+# Mechanism of Action（作用机制）
+
+I-DXd的作用过程包括：
+
+1. anti-B7-H3 antibody结合B7-H3-expressing tumor cell；
+2. ADC-B7-H3复合物发生internalization；
+3. linker在细胞内被裂解释放DXd payload；
+4. DXd抑制topoisomerase I；
+5. DNA损伤积累，导致cell-cycle arrest和apoptosis。
+
+```text
+I-DXd
+  |
+  v
+B7-H3 binding
+  |
+  v
+Internalization
+  |
+  v
+DXd release
+  |
+  v
+Topoisomerase I inhibition
+  |
+  v
+DNA damage and tumor-cell death
+```
+
+DXd payload具有较高细胞毒活性，并可能产生一定bystander effect。因此，即使肿瘤内部B7-H3表达不完全均一，也可能影响邻近肿瘤细胞。
+
+# Target Biology（靶点生物学）
+
+[B7-H3](../target/B7-H3.qmd)是B7免疫调节分子家族成员，也称CD276。它在多种实体瘤中高表达，而正常组织蛋白表达相对有限。
+
+B7-H3可能参与：
+
+- immune evasion；
+- [tumor microenvironment, TME](../other/TME.qmd) remodeling；
+- tumor-cell proliferation；
+- invasion and metastasis；
+- angiogenesis；
+- treatment resistance。
+
+由于B7-H3位于细胞表面，并且可在多种实体瘤中表达，因此它适合作为ADC递送靶点。
+
+# Regulatory Status（监管状态）
+
+## United States
+
+截至2026年9月，I-DXd在美国尚未正式获批。
+
+FDA于2025年8月授予I-DXd Breakthrough Therapy Designation，用于既往接受platinum-based chemotherapy期间或之后进展的成人ES-SCLC患者。
+
+2026年4月13日，Daiichi Sankyo和Merck宣布FDA接受I-DXd的BLA并授予Priority Review，用于同一ES-SCLC治疗场景。该申请基于IDeate-Lung01 Phase 2研究，并由IDeate-PanTumor01 Phase 1/2研究支持。
+
+该BLA同时纳入：
+
+- Real-Time Oncology Review, RTOR；
+- Project Orbis。
+
+Priority Review、RTOR和Project Orbis均代表审评路径加速或协同审评，并不等同于正式批准。
+
+## Other Markets
+
+Merck pipeline显示I-DXd也在欧洲SCLC、esophageal cancer、prostate cancer、NSCLC、biliary tract cancer、bladder cancer、breast cancer、cervical cancer、endometrial cancer、HCC、head and neck cancer、melanoma、ovarian cancer、pancreatic cancer及其他solid tumors中开发。
+
+# Key Clinical Development（关键临床开发）
+
+## Extensive-Stage SCLC
+
+I-DXd最领先的开发场景是既往接受platinum-based chemotherapy后进展的ES-SCLC。
+
+主要研究包括：
+
+| Trial | Phase | Disease setting | 主要作用 |
+|---|---:|---|---|
+| IDeate-Lung01, NCT05280470 | Phase 2 | Relapsed ES-SCLC | 支持美国BLA |
+| IDeate-PanTumor01 | Phase 1/2 | Advanced solid tumors | 支持剂量、安全性和初步疗效 |
+| IDeate-Lung02, NCT06203210 | Phase 3 | Relapsed SCLC | 与physician's choice治疗比较 |
+| IDeate-Lung03 | Phase 3/combination strategy | First-line ES-SCLC | 与atezolizumab或化疗相关联合策略探索 |
+
+SCLC中B7-H3表达较常见，且后线治疗选择有限，因此B7-H3 ADC具有明确开发逻辑。
+
+## Prostate Cancer
+
+I-DXd也在metastatic castration-resistant prostate cancer, mCRPC中开发。
+
+关键问题包括：
+
+- B7-H3 expression是否需要作为患者筛选标准；
+- prior androgen receptor pathway inhibitor；
+- prior taxane exposure；
+- radiographic PFS；
+- OS；
+- pain response和patient-reported outcomes；
+- 与PSMA-directed therapy或docetaxel的治疗顺序。
+
+## Pan-Tumor Development
+
+I-DXd还在多种实体瘤中评估，包括：
+
+- [NSCLC](../disease/NSCLC.qmd)；
+- esophageal cancer；
+- endometrial cancer；
+- cervical cancer；
+- ovarian cancer；
+- [pancreatic cancer](../disease/Pancreatic_Cancer.qmd)；
+- HCC；
+- melanoma；
+- head and neck cancer；
+- bladder cancer；
+- breast cancer。
+
+不同癌种的B7-H3表达、payload敏感性、既往治疗和标准对照不同，因此不能直接跨癌种外推疗效。
+
+# Safety Profile（安全性）
+
+I-DXd的安全性由B7-H3靶点表达、ADC结构、linker、DXd payload和剂量共同决定。
+
+需要重点关注：
+
+| 毒性类别 | 可能表现 |
+|---|---|
+| Hematologic toxicity | Neutropenia、anemia、thrombocytopenia、leukopenia |
+| Gastrointestinal toxicity | Nausea、vomiting、diarrhea、decreased appetite |
+| General disorders | Fatigue、pyrexia、weight loss |
+| Pulmonary toxicity | Interstitial lung disease, ILD或pneumonitis |
+| Liver laboratory abnormalities | ALT/AST升高 |
+| Infusion-related reaction | 发热、寒战、皮疹、呼吸困难、低血压 |
+
+由于DXd ADC平台中ILD/pneumonitis是重要风险，I-DXd临床开发中也需要持续监测肺部症状和影像学变化。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | 靶点 | 公司 | Payload | 状态 |
+|---|---|---|---|---|
+| Ifinatamab deruxtecan | [B7-H3](../target/B7-H3.qmd) | Daiichi Sankyo / Merck | DXd | ES-SCLC美国BLA Priority Review |
+| [Elfetabart drozuntecan](Elfe_D.qmd) | [B7-H3](../target/B7-H3.qmd) | DualityBio / BioNTech | Topoisomerase I inhibitor | mCRPC Phase 3；多癌种开发 |
+
+两者同属B7-H3 ADC，但抗体、linker、payload、DAR、剂量、开发策略和安全性均不同，不应仅按靶点进行简单等同。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Single-Arm Evidence and Regulatory Review
+
+若后线SCLC适应证以Phase 2数据支持监管申请，需要重点解释：
+
+- ORR；
+- DOR；
+- PFS；
+- OS；
+- response assessment by independent review；
+- historical control的可比性；
+- subsequent therapy影响；
+- safety follow-up。
+
+单臂研究可支持高未满足需求场景中的加速路径，但不能完全替代随机对照研究对相对疗效的估计。
+
+## Biomarker Strategy
+
+B7-H3 expression可作为探索性或潜在筛选biomarker。统计分析中应明确：
+
+- assay和cutoff；
+- tumor cell或stromal/vascular expression是否计入；
+- biomarker-evaluable population；
+- missing biomarker data；
+- treatment-by-biomarker interaction。
+
+## Multiplicity
+
+I-DXd开发覆盖多个癌种和多个终点。若在同一研究中评价多个队列、剂量和B7-H3 cutoff，需要控制multiplicity或将分析定位为探索性。
+
+# Common Pitfalls（常见误区）
+
+1. **认为I-DXd已经获批。**  
+   截至2026年9月，美国仍处于Priority Review阶段。
+
+2. **把BLA accepted理解为上市。**  
+   BLA被接受表示FDA开始正式审评，不等于批准。
+
+3. **认为B7-H3高表达一定预测疗效。**  
+   ADC疗效还取决于内化、payload释放、DNA损伤敏感性和肿瘤异质性。
+
+4. **把I-DXd和Elfe-D混为一谈。**  
+   两者都是B7-H3 ADC，但来自不同公司和平台。
+
+# Key Takeaways（关键总结）
+
+1. I-DXd是由Daiichi Sankyo发现、与Merck/MSD共同开发的B7-H3-directed DXd ADC。
+2. 该药由anti-B7-H3 antibody、cleavable linker和DXd topoisomerase I inhibitor payload组成。
+3. 最领先开发方向是既往platinum-based chemotherapy后进展的ES-SCLC。
+4. 截至2026年9月，I-DXd在美国处于BLA Priority Review阶段，PDUFA日期为2026年10月10日。
+5. I-DXd开发还覆盖mCRPC、NSCLC、esophageal cancer、gynecologic cancers和多种其他实体瘤。
+6. 关键统计问题包括单臂证据解释、B7-H3 biomarker strategy、多癌种开发中的multiplicity和长期安全性随访。
+
+# References（参考资料）
+
+1. Daiichi Sankyo and Merck & Co. *Ifinatamab Deruxtecan Granted Priority Review in the U.S. for Adult Patients with Previously Treated Extensive-Stage Small Cell Lung Cancer*. April 13, 2026.  
+   <https://www.merck.com/news/ifinatamab-deruxtecan-granted-priority-review-in-the-u-s-for-adult-patients-with-previously-treated-extensive-stage-small-cell-lung-cancer-who-experienced-disease-progression-on-or-after-platinum-bas/>
+
+2. National Cancer Institute. *Definition of ifinatamab deruxtecan*. Accessed September 13, 2026.  
+   <https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ifinatamab-deruxtecan>
+
+3. Merck & Co. *Product Pipeline: ifinatamab deruxtecan (MK-2400)*. Accessed September 13, 2026.  
+   <https://www.merck.com/research/product-pipeline/>
+
+4. Daiichi Sankyo and Merck & Co. *IDeate-Lung02 Phase 3 Trial of Ifinatamab Deruxtecan Initiated in Patients with Relapsed Small Cell Lung Cancer*. August 1, 2024.  
+   <https://daiichisankyo.us/press-releases/-/article/ideate-lung02-phase-3-trial-of-ifinatamab-deruxtecan-initiated-in-patients-with-relapsed-small-cell-lung-cancer>

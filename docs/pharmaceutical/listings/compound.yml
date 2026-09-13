@@ -64,6 +64,18 @@
   company: Merck & Co.
   indication: |
     PD-1 immune checkpoint inhibitor used across multiple cancers, including [Melanoma](disease/Melanoma.qmd), [NSCLC](disease/NSCLC.qmd), [breast cancer](disease/Breast_Cancer.qmd), and selected tumor-agnostic settings.
+- drug: Sac-TMT
+  compound: Sacituzumab tirumotecan
+  path: compound/Sac_TMT.html
+  company: Kelun-Biotech, Merck & Co.
+  indication: |
+    [TROP2](target/TROP2.qmd)-directed ADC approved in China for selected [breast cancer](disease/Breast_Cancer.qmd) and EGFR-mutant [NSCLC](disease/NSCLC.qmd) settings; investigational in the U.S. and many markets outside China.
+- drug: Ifinatamab Deruxtecan
+  compound: I-DXd / DS-7300 / MK-2400
+  path: compound/Ifinatamab_Deruxtecan.html
+  company: Daiichi Sankyo, Merck & Co.
+  indication: |
+    [B7-H3](target/B7-H3.qmd)-directed DXd ADC under FDA Priority Review for previously treated extensive-stage [SCLC](disease/SCLC.qmd), with broader development in prostate cancer and other solid tumors.
 - drug: Januvia
   compound: Sitagliptin
   path: compound/Januvia.html
@@ -85,6 +97,12 @@
   company: Daiichi Sankyo, AstraZeneca
   indication: |
     TROP2-directed ADC for selected [breast cancer](disease/Breast_Cancer.qmd) and [NSCLC](disease/NSCLC.qmd) settings.
+- drug: Elfe-D
+  compound: Elfetabart drozuntecan / DB-1311 / BNT324
+  path: compound/Elfe_D.html
+  company: DualityBio, BioNTech
+  indication: |
+    Investigational [B7-H3](target/B7-H3.qmd)-targeted ADC in global Phase 3 development for mCRPC and broader development in [SCLC](disease/SCLC.qmd), [NSCLC](disease/NSCLC.qmd), gynecologic cancers, and ADC + IO combinations with [pumitamig](compound/Pumitamig.qmd).
 - drug: Pneumovax
   compound: Pneumococcal Polysaccharide Vaccine
   company: Merck & Co.

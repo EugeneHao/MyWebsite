@@ -28,11 +28,11 @@
   description: |
     Radiotherapy toxicity covers acute and late radiation-related adverse events, classified by timing, organ system, treatment field, CTCAE terms, dose-volume factors, and attribution in oncology trials.
 
-- name: Toxicity - Cisplatin（顺铂）
+- name: Toxicity - Cisplatin
   path: AE/Toxicity_Cisplatin.html
   belong: Clinical Trial
   description: |
-    顺铂（cisplatin）相关毒性 covers nephrotoxicity, nausea and vomiting, myelosuppression, peripheral neuropathy, ototoxicity, electrolyte abnormalities, hypersensitivity, and trial safety analysis.
+    Cisplatin-related toxicity covers nephrotoxicity, nausea and vomiting, myelosuppression, peripheral neuropathy, ototoxicity, electrolyte abnormalities, hypersensitivity, and trial safety analysis.
 
 - name: Biomarker Expression
   path: other/Biomarker_Expression.html

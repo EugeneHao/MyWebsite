@@ -6,7 +6,7 @@ title: "Daiichi Sankyo"
 
 **Daiichi Sankyo** 是一家总部位于日本的全球制药公司，业务覆盖oncology、cardiovascular disease、specialty medicine等领域。
 
-在肿瘤领域，Daiichi Sankyo以DXd ADC平台最具代表性。该平台包括HER2-directed ADC trastuzumab deruxtecan以及TROP2-directed ADC **[Datopotamab deruxtecan, Dato-DXd](../compound/Dato_DXd.qmd)**。Dato-DXd由Daiichi Sankyo与[AstraZeneca](AstraZeneca.qmd)共同开发和商业化。
+在肿瘤领域，Daiichi Sankyo以DXd ADC平台最具代表性。该平台包括HER2-directed ADC trastuzumab deruxtecan、TROP2-directed ADC **[Datopotamab deruxtecan, Dato-DXd](../compound/Dato_DXd.qmd)**，以及[B7-H3](../target/B7-H3.qmd)-directed ADC [ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)。Dato-DXd由Daiichi Sankyo与[AstraZeneca](AstraZeneca.qmd)共同开发和商业化；ifinatamab deruxtecan由Daiichi Sankyo与[Merck](Merck.qmd)共同开发。
 
 # Selected Products and Programs
 
@@ -14,5 +14,6 @@ title: "Daiichi Sankyo"
 |---|---|---|
 | Enhertu | Trastuzumab deruxtecan | Oncology / HER2 ADC |
 | [Datroway](../compound/Dato_DXd.qmd) | Datopotamab deruxtecan | Oncology / TROP2 ADC |
+| [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd) | I-DXd / DS-7300 / MK-2400 | Oncology / [B7-H3](../target/B7-H3.qmd) ADC |
 | Lixiana | Edoxaban | Cardiovascular |
 | Injectafer / Ferinject | Ferric carboxymaltose | Iron deficiency |

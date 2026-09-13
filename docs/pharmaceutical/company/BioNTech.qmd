@@ -1,0 +1,20 @@
+---
+title: "BioNTech"
+---
+
+# Company Overview
+
+**BioNTech**是一家总部位于德国Mainz的生物技术公司，最初因mRNA疫苗平台和Comirnaty广为人知，目前也在肿瘤免疫治疗、ADC和细胞治疗领域积极布局。
+
+在肿瘤领域，BioNTech的重要项目包括：
+
+- [Pumitamig](../compound/Pumitamig.qmd)，PD-L1 × VEGF-A双特异性抗体，与[Bristol Myers Squibb](BMS.qmd)共同开发；
+- [Elfetabart drozuntecan / Elfe-D](../compound/Elfe_D.qmd)，[B7-H3](../target/B7-H3.qmd)-targeted [ADC](../other/ADC.qmd)，与[DualityBio](DualityBio.qmd)合作开发。
+
+# Selected Products and Programs
+
+| Product or program | Modality | Area |
+|---|---|---|
+| Comirnaty | mRNA vaccine | Infectious disease |
+| [Pumitamig](../compound/Pumitamig.qmd) | PD-L1 × VEGF-A bispecific antibody | Oncology |
+| [Elfe-D](../compound/Elfe_D.qmd) | [B7-H3](../target/B7-H3.qmd)-targeted ADC | Oncology |

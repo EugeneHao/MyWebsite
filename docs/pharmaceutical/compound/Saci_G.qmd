@@ -375,7 +375,7 @@ UGT1A1活性降低的患者，特别是*UGT1A1* *28/*28基因型患者，可能�
 |---|---|---:|---|---|
 | Sacituzumab govitecan | SN-38 | 约7.6 | 较高DAR；可水解linker | Neutropenia、diarrhea |
 | [Datopotamab deruxtecan](Dato_DXd.qmd) | DXd | 约4 | Protease-cleavable linker | Stomatitis、ocular toxicity、ILD |
-| Sacituzumab tirumotecan | Topoisomerase I inhibitor | 不同平台 | 处于广泛临床开发阶段 | 依具体试验而定 |
+| [Sacituzumab tirumotecan](Sac_TMT.qmd) | KL610023 | 约7.4 | Kelun-Biotech/Merck合作开发；中国已有部分适应证获批 | 骨髓抑制、胃肠道毒性等 |
 
 ## Saci-G与Dato-DXd
 

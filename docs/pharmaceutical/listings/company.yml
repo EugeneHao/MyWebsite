@@ -24,7 +24,22 @@
   path: company/Merck.html
   country: USA
   drug: |
-    [Keytruda](compound/Keytruda.qmd), [Januvia](compound/Januvia.qmd) [Gardasil](compound/Gardasil.qmd), [Lynparza](compound/Lynparza.qmd), [Pneumovax](compound/Pneumovax.qmd)
+    [Keytruda](compound/Keytruda.qmd), [Sac-TMT](compound/Sac_TMT.qmd), [Ifinatamab Deruxtecan](compound/Ifinatamab_Deruxtecan.qmd), [Januvia](compound/Januvia.qmd), [Gardasil](compound/Gardasil.qmd), [Lynparza](compound/Lynparza.qmd), [Pneumovax](compound/Pneumovax.qmd)
+- name: BioNTech
+  path: company/BioNTech.html
+  country: Germany
+  drug: |
+    [Comirnaty](compound/Comirnaty.qmd), [Pumitamig](compound/Pumitamig.qmd), [Elfe-D](compound/Elfe_D.qmd)
+- name: DualityBio
+  path: company/DualityBio.html
+  country: China
+  drug: |
+    [Elfe-D / Elfetabart drozuntecan](compound/Elfe_D.qmd)
+- name: Kelun-Biotech
+  path: company/Kelun_Biotech.html
+  country: China
+  drug: |
+    [Sac-TMT / Sacituzumab tirumotecan](compound/Sac_TMT.qmd)
 - name: AbbVie
   country: USA
   drug: |
@@ -102,7 +117,7 @@
   path: company/Daiichi_Sankyo.html
   country: Japan
   drug: |
-    Lixiana, Movantik, Welchol, Sevikar, Nexium, [Datroway / Dato-DXd](compound/Dato_DXd.qmd)
+    Lixiana, Movantik, Welchol, Sevikar, Nexium, [Datroway / Dato-DXd](compound/Dato_DXd.qmd), [Ifinatamab Deruxtecan](compound/Ifinatamab_Deruxtecan.qmd)
 - name: Regeneron
   path: company/Regeneron.html
   country: USA

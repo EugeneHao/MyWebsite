@@ -12,7 +12,12 @@
   path: target/TROP2.html
   Full: Trophoblast Cell Surface Antigen 2
   Description: |
-    [TROP2](target/TROP2.qmd)是一种跨膜糖蛋白，在多种实体瘤中过表达，并已成为ADC开发的重要靶点。代表性TROP2 ADC包括[sacituzumab govitecan / Saci-G](compound/Saci_G.qmd)和[datopotamab deruxtecan / Dato-DXd](compound/Dato_DXd.qmd)，主要覆盖乳腺癌、NSCLC和尿路上皮癌等方向。
+    [TROP2](target/TROP2.qmd)是一种跨膜糖蛋白，在多种实体瘤中过表达，并已成为ADC开发的重要靶点。代表性TROP2 ADC包括[sacituzumab govitecan / Saci-G](compound/Saci_G.qmd)、[datopotamab deruxtecan / Dato-DXd](compound/Dato_DXd.qmd)和[sacituzumab tirumotecan / Sac-TMT](compound/Sac_TMT.qmd)，主要覆盖乳腺癌、NSCLC和尿路上皮癌等方向。
+- Abbr: B7-H3
+  path: target/B7-H3.html
+  Full: B7 homolog 3 / CD276
+  Description: |
+    [B7-H3](target/B7-H3.qmd)是B7免疫调节分子家族成员，在多种实体瘤中高表达，并与肿瘤免疫逃逸、TME重塑和不良预后相关。代表性开发资产包括[ifinatamab deruxtecan](compound/Ifinatamab_Deruxtecan.qmd)和[elfetabart drozuntecan / Elfe-D](compound/Elfe_D.qmd)等B7-H3-directed ADC。
 - Abbr: VEGFR  
   path: target/VEGF.html
   Full: Vascular Endothelial Growth Factor Receptor

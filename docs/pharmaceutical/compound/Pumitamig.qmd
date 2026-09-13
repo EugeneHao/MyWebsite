@@ -21,7 +21,7 @@ bibliography: ../../../references.bib
 
 # 疾病与药物概述
 
-**Pumitamig（暂无广泛认可的中文通用名；BioNTech和[Bristol Myers Squibb](../company/BMS.qmd)共同开发；尚无获批商品名；development codes: BNT327、BMS-986545、PM8002）**是一种研究性**[programmed death-ligand 1, PD-L1（程序性死亡配体1）](../target/PD-L1.qmd) × [vascular endothelial growth factor A, VEGF-A（血管内皮生长因子A）](../target/VEGF.qmd)**双特异性抗体。
+**Pumitamig（暂无广泛认可的中文通用名；[BioNTech](../company/BioNTech.qmd)和[Bristol Myers Squibb](../company/BMS.qmd)共同开发；尚无获批商品名；development codes: BNT327、BMS-986545、PM8002）**是一种研究性**[programmed death-ligand 1, PD-L1（程序性死亡配体1）](../target/PD-L1.qmd) × [vascular endothelial growth factor A, VEGF-A（血管内皮生长因子A）](../target/VEGF.qmd)**双特异性抗体。
 
 Pumitamig通过一个分子同时实现：
 
@@ -41,7 +41,7 @@ Pumitamig通过一个分子同时实现：
 | Development codes | BNT327、BMS-986545、PM8002 |
 | Original development code | PM8002 |
 | Original developer | Biotheus |
-| Current developers | BioNTech和Bristol Myers Squibb |
+| Current developers | [BioNTech](../company/BioNTech.qmd)和[Bristol Myers Squibb](../company/BMS.qmd) |
 | Drug class | PD-L1 × VEGF-A bispecific antibody |
 | Molecular type | 重组双特异性单克隆抗体 |
 | Targets | PD-L1和VEGF-A |

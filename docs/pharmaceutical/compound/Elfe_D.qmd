@@ -1,0 +1,294 @@
+---
+title: "Elfetabart Drozuntecan, Elfe-D（DB-1311/BNT324）"
+description: "介绍B7-H3 ADC elfetabart drozuntecan（Elfe-D/DB-1311/BNT324）的结构、作用机制、临床开发、联合策略和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Elfetabart drozuntecan, Elfe-D（[DualityBio](../company/DualityBio.qmd)与[BioNTech](../company/BioNTech.qmd)；development codes: DB-1311、BNT324）**是一种研究性**[B7-H3, CD276](../target/B7-H3.qmd)-targeted [antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Elfe-D是一种topoisomerase I inhibitor-based ADC，利用抗B7-H3抗体将细胞毒payload递送至B7-H3表达的肿瘤细胞。B7-H3在多种实体瘤中高表达，并与肿瘤免疫逃逸、TME重塑和不良预后相关。
+
+截至2026年9月，Elfe-D尚未获得美国、欧盟或中国正式上市批准。该药已进入global randomized Phase 3开发，首个Phase 3方向为metastatic castration-resistant prostate cancer, mCRPC；同时在肺癌、卵巢癌、宫颈癌和其他实体瘤中进行单药及与[pumitamig](Pumitamig.qmd)联合开发。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Elfetabart drozuntecan |
+| Short name | Elfe-D |
+| Development codes | DB-1311、BNT324 |
+| Original developer | [DualityBio](../company/DualityBio.qmd) |
+| Global partner | [BioNTech](../company/BioNTech.qmd) |
+| Drug class | [B7-H3](../target/B7-H3.qmd)-targeted ADC |
+| Payload class | Topoisomerase I inhibitor |
+| Linker | Cleavable linker |
+| Fc engineering | Fc-silenced design reported in public materials |
+| Route | Intravenous infusion |
+| Current status | Investigational；global Phase 3 and Phase 1/2 development |
+| Most advanced development | mCRPC Phase 3 versus docetaxel |
+
+# Mechanism of Action（作用机制）
+
+Elfe-D的基本作用过程为：
+
+1. 抗B7-H3抗体结合B7-H3-positive tumor cell；
+2. ADC被细胞内化并进入lysosome；
+3. cleavable linker释放topoisomerase I inhibitor payload；
+4. payload诱导DNA损伤；
+5. 肿瘤细胞发生cell-cycle arrest和apoptosis。
+
+```text
+Elfe-D
+  |
+  v
+B7-H3 binding
+  |
+  v
+Endocytosis and lysosomal trafficking
+  |
+  v
+Payload release
+  |
+  v
+Topoisomerase I inhibition
+  |
+  v
+DNA damage and tumor-cell death
+```
+
+公开资料提示Elfe-D具有bystander antitumor effect，这可能帮助覆盖B7-H3表达不均一的肿瘤区域。
+
+# Target Biology（靶点生物学）
+
+[B7-H3](../target/B7-H3.qmd)是一种B7 family transmembrane glycoprotein，也称CD276。它在多种实体瘤中高表达，而正常组织表达相对有限。
+
+B7-H3可能参与：
+
+- immune checkpoint regulation；
+- T cell和NK cell功能抑制；
+- [tumor microenvironment, TME](../other/TME.qmd) shaping；
+- tumor growth；
+- invasion and metastasis；
+- treatment resistance。
+
+因此，B7-H3既是免疫相关靶点，也是ADC递送靶点。
+
+# Development History（开发历史）
+
+Elfe-D由DualityBio开发，BioNTech获得合作开发权益后赋予BNT324代号。DualityBio和BioNTech正在推进单药和联合治疗策略。
+
+2026年上半年，DualityBio披露Elfe-D已在超过1,000名患者中研究，覆盖超过10种肿瘤类型，其中超过500名患者接受过Elfe-D与pumitamig联合治疗。
+
+BioNTech和DualityBio还在探索ADC + next-generation immuno-oncology combination strategy，其中重要组合为：
+
+$$
+\text{Elfe-D}
++
+\text{Pumitamig}
+$$
+
+Pumitamig是一种PD-L1 × VEGF-A双特异性抗体，正在由BioNTech与[Bristol Myers Squibb](../company/BMS.qmd)共同开发。
+
+# Clinical Development（临床开发）
+
+## mCRPC
+
+mCRPC是Elfe-D首个global randomized Phase 3开发方向。
+
+2026年5月，Elfe-D首个global randomized Phase 3 trial启动，用于taxane-naive mCRPC患者，比较Elfe-D与docetaxel。该研究计划入组约736名患者。
+
+2026年7月，中国NMPA CDE授予Elfe-D Breakthrough Therapy Designation，用于既往接受androgen receptor pathway inhibitor和taxane-based chemotherapy后进展的mCRPC患者。
+
+mCRPC开发中需要重点考虑：
+
+- prior androgen receptor pathway inhibitor；
+- prior taxane；
+- prior radioligand therapy；
+- rPFS；
+- OS；
+- pain response；
+- quality of life；
+- B7-H3 expression subgroup。
+
+## Lung Cancer
+
+Elfe-D正在肺癌中进行单药和联合策略开发，包括：
+
+- [SCLC](../disease/SCLC.qmd)；
+- [NSCLC](../disease/NSCLC.qmd)；
+- Elfe-D + [pumitamig](Pumitamig.qmd) advanced lung cancer trial。
+
+肺癌开发的关键问题包括：
+
+- B7-H3 expression是否预测疗效；
+- 既往PD-1/PD-L1 inhibitor暴露；
+- 既往topoisomerase I inhibitor ADC暴露；
+- 与化疗或免疫治疗的联合顺序；
+- SCLC和NSCLC的不同疾病生物学。
+
+## Gynecologic Cancers
+
+Elfe-D也在妇科肿瘤中开发，包括：
+
+- platinum-resistant ovarian cancer, PROC；
+- cervical cancer；
+- 其他advanced gynecologic malignancies。
+
+2026年DualityBio披露，Elfe-D在既往治疗的cervical cancer和PROC中显示初步活性，后续数据计划在学术会议继续更新。
+
+## Combination With Pumitamig
+
+Elfe-D与[pumitamig](Pumitamig.qmd)联合是其重要差异化策略。
+
+理论基础包括：
+
+- Elfe-D通过ADC payload直接杀伤肿瘤细胞；
+- ADC可能释放肿瘤抗原并改变TME；
+- pumitamig阻断PD-L1并中和VEGF-A；
+- VEGF-A阻断可能改善血管正常化和免疫细胞浸润；
+- 二者可能形成ADC + IO + anti-angiogenesis的联合治疗框架。
+
+但联合治疗需要重点评估：
+
+- overlapping toxicity；
+- dose optimization；
+- attribution of adverse events；
+- additive或synergistic efficacy；
+- 是否优于现有IO + chemotherapy标准方案。
+
+# Safety Profile（安全性）
+
+Elfe-D安全性目前主要来自临床试验公开资料，最终风险描述需等待完整研究和未来获批标签。
+
+需要关注：
+
+| 毒性类别 | 可能表现 |
+|---|---|
+| Hematologic toxicity | Neutropenia、anemia、thrombocytopenia、leukopenia |
+| Gastrointestinal toxicity | Nausea、vomiting、diarrhea、decreased appetite、stomatitis |
+| General disorders | Fatigue、pyrexia、weight loss |
+| Pulmonary toxicity | ILD或pneumonitis需要持续监测 |
+| Liver laboratory abnormalities | ALT/AST升高 |
+| Infusion-related reaction | 发热、寒战、皮疹、呼吸困难、低血压 |
+
+在与pumitamig联合时，还需同时关注：
+
+- immune-mediated adverse events；
+- hypertension；
+- proteinuria；
+- bleeding；
+- thromboembolic events；
+- ADC payload-related toxicity。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | 靶点 | 公司 | Payload | 主要开发方向 |
+|---|---|---|---|---|
+| [Ifinatamab deruxtecan](Ifinatamab_Deruxtecan.qmd) | [B7-H3](../target/B7-H3.qmd) | Daiichi Sankyo / Merck | DXd | ES-SCLC；mCRPC；pan-tumor |
+| Elfetabart drozuntecan | [B7-H3](../target/B7-H3.qmd) | DualityBio / BioNTech | Topoisomerase I inhibitor | mCRPC；lung cancer；gynecologic cancers |
+
+Elfe-D和I-DXd同属B7-H3 ADC，但来自不同平台。两者不能因为靶点相同就直接互换或进行简单跨试验比较。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Phase 3 Design
+
+mCRPC Phase 3研究比较Elfe-D与docetaxel，关键设计问题包括：
+
+- primary endpoint选择，如rPFS或OS；
+- stratification factors，如prior therapy、visceral metastasis、baseline pain、geographic region；
+- treatment switching；
+- subsequent therapy；
+- multiplicity control；
+- PRO和疼痛终点解释。
+
+## Dose Optimization
+
+ADC剂量需要在疗效和毒性之间取得平衡。Elfe-D开发覆盖单药和联合治疗，因此应分别评估：
+
+- monotherapy RP2D；
+- combination dose；
+- exposure-response；
+- exposure-safety；
+- dose interruption和dose reduction；
+- treatment discontinuation。
+
+## Biomarker Strategy
+
+B7-H3 expression可作为探索性biomarker。分析时应明确：
+
+- assay；
+- cutoff；
+- tumor cell expression和stromal/vascular expression；
+- 是否按连续变量建模；
+- missing biomarker data；
+- treatment-by-biomarker interaction。
+
+## Combination Strategy
+
+Elfe-D + pumitamig联合研究需要明确estimand，尤其是：
+
+- 因毒性停止某一组成药物；
+- 继续另一个组成药物；
+- 开始新抗癌治疗；
+- radiographic progression后继续治疗；
+- overlapping adverse event attribution。
+
+# Common Pitfalls（常见误区）
+
+1. **把Elfe-D写成已获批药物。**  
+   截至2026年9月，它仍是研究性药物。
+
+2. **把Elfe-D和I-DXd混为一谈。**  
+   二者都是B7-H3 ADC，但开发公司、平台和临床策略不同。
+
+3. **认为B7-H3高表达自动等于疗效更好。**  
+   ADC疗效还受内化、payload释放、payload敏感性和肿瘤异质性影响。
+
+4. **忽略联合pumitamig后的毒性归因。**  
+   联合治疗同时包含ADC payload毒性、免疫相关毒性和抗VEGF相关毒性。
+
+5. **用跨试验ORR直接比较B7-H3 ADC。**  
+   不同研究的人群、剂量、既往治疗和疗效评估不同，简单比较容易误导。
+
+# Key Takeaways（关键总结）
+
+1. Elfe-D即elfetabart drozuntecan，研发代号DB-1311/BNT324，是DualityBio与BioNTech合作开发的B7-H3 ADC。
+2. Elfe-D使用topoisomerase I inhibitor payload，主要通过B7-H3介导的ADC递送杀伤肿瘤细胞。
+3. 截至2026年9月，Elfe-D尚未获批，但已进入mCRPC global Phase 3研究。
+4. Elfe-D还在SCLC、NSCLC、PROC、cervical cancer和其他实体瘤中开发。
+5. Elfe-D + pumitamig体现ADC + IO + anti-angiogenesis的联合开发思路，但需要严谨评估疗效、剂量和毒性归因。
+6. B7-H3 expression仍不是成熟伴随诊断，相关分析应预设assay、cutoff和亚组策略。
+
+# References（参考资料）
+
+1. DualityBio. *DualityBio Announces 2026 Interim Results and Corporate Updates*. August 28, 2026.  
+   <https://en.dualitybiologics.com/news/615.html>
+
+2. DualityBio. *DualityBio and BioNTech to showcase new data for B7-H3 ADC Elfe-D and HER3 ADC DB-1310 at the 2026 ESMO Congress*. July 20, 2026.  
+   <https://en.dualitybiologics.com/news/610.html>
+
+3. ClinicalTrials.gov. *A Study of DB-1311 in Advanced/Metastatic Solid Tumors*. NCT05914116.  
+   <https://clinicaltrials.gov/study/NCT05914116>
+
+4. ClinicalTrials.gov. *A Clinical Study of Elfetabart Drozuntecan in People With Metastatic Prostate Cancer*. NCT07365995.  
+   <https://clinicaltrials.gov/study/NCT07365995>
+
+5. ClinicalTrials.gov. *Elfetabart Drozuntecan in Combination With Pumitamig in Advanced Lung Cancers*. NCT06892548.  
+   <https://clinicaltrials.gov/study/NCT06892548>

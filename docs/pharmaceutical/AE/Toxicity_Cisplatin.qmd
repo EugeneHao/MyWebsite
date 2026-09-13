@@ -22,8 +22,6 @@ bibliography: ../../../references.bib
 
 **Cisplatin（顺铂）**是一种经典**platinum-based chemotherapy（铂类化疗）**药物，通过形成DNA交联、阻碍DNA复制和转录，诱导肿瘤细胞死亡。它广泛用于[NSCLC](../disease/NSCLC.qmd)、[SCLC](../disease/SCLC.qmd)、膀胱癌、卵巢癌、睾丸癌、头颈癌、食管癌、胃癌和胆道癌等实体瘤。
 
-常见检索词包括：顺铂、顺铂毒性、顺铂相关毒性、Cisplatin、Cisplatin toxicity、platinum chemotherapy toxicity。
-
 **Cisplatin-related toxicity（顺铂相关毒性）**具有鲜明的器官特异性。最需要关注的是：
 
 - nephrotoxicity（肾毒性）；

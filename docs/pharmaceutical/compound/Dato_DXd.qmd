@@ -283,7 +283,7 @@ TROP2表达水平本身可能不足以完整预测疗效。抗体结合、内化
 |---|---|---|---|---|
 | Datopotamab deruxtecan | TROP2 | DXd，topoisomerase I inhibitor | HR-positive/HER2-negative breast cancer、TNBC、EGFR-mutated NSCLC | DAR约4；stomatitis和ocular toxicity较突出 |
 | Sacituzumab govitecan | TROP2 | SN-38，topoisomerase I inhibitor | TNBC、HR-positive/HER2-negative breast cancer | DAR较高；neutropenia和diarrhea较突出 |
-| Sacituzumab tirumotecan | TROP2 | Topoisomerase I inhibitor | 多种乳腺癌和肺癌场景持续开发 | 正处于广泛Phase 3开发阶段 |
+| [Sacituzumab tirumotecan](Sac_TMT.qmd) | TROP2 | Topoisomerase I inhibitor | 多种乳腺癌和肺癌场景持续开发 | 中国已有部分适应证获批，全球仍在广泛开发 |
 
 ## 与Sacituzumab Govitecan的差异
 

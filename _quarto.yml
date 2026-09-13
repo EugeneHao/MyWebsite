@@ -187,6 +187,18 @@ website:
                 href: docs/pharmaceutical/compound/Pumitamig.qmd
               - text: Izalontamab Brengitecan
                 href: docs/pharmaceutical/compound/Izalontamab_Brengitecan.qmd
+            - section: BioNTech
+              href: docs/pharmaceutical/company/BioNTech.qmd
+              contents:
+              - text: Pumitamig
+                href: docs/pharmaceutical/compound/Pumitamig.qmd
+              - text: Elfe-D
+                href: docs/pharmaceutical/compound/Elfe_D.qmd
+            - section: DualityBio
+              href: docs/pharmaceutical/company/DualityBio.qmd
+              contents:
+              - text: Elfe-D
+                href: docs/pharmaceutical/compound/Elfe_D.qmd
             - section: Akeso
               href: docs/pharmaceutical/company/Akeso.qmd
               contents:
@@ -199,11 +211,20 @@ website:
               contents:
               - text: Ivonescimab
                 href: docs/pharmaceutical/compound/Ivonescimab.qmd
+            - section: Kelun-Biotech
+              href: docs/pharmaceutical/company/Kelun_Biotech.qmd
+              contents:
+              - text: Sac-TMT
+                href: docs/pharmaceutical/compound/Sac_TMT.qmd
             - section: Merck
               href: docs/pharmaceutical/company/Merck.qmd
               contents:                  
               - text: Keytruda
                 href: docs/pharmaceutical/compound/Keytruda.qmd
+              - text: Sac-TMT
+                href: docs/pharmaceutical/compound/Sac_TMT.qmd
+              - text: Ifinatamab Deruxtecan
+                href: docs/pharmaceutical/compound/Ifinatamab_Deruxtecan.qmd
               - text: Januvia
                 href: docs/pharmaceutical/compound/Januvia.qmd  
               - text: Gardasil
@@ -226,6 +247,8 @@ website:
               contents:
               - text: Dato-DXd
                 href: docs/pharmaceutical/compound/Dato_DXd.qmd
+              - text: Ifinatamab Deruxtecan
+                href: docs/pharmaceutical/compound/Ifinatamab_Deruxtecan.qmd
             - section: J & J
               href: docs/pharmaceutical/company/J & J.qmd
               contents:        
@@ -376,6 +399,8 @@ website:
               href: docs/pharmaceutical/target/HER.qmd
             - text: TROP2
               href: docs/pharmaceutical/target/TROP2.qmd
+            - text: B7-H3
+              href: docs/pharmaceutical/target/B7-H3.qmd
             - text: KRAS
               href: docs/pharmaceutical/target/KRAS.qmd
           - text: SDTM
@@ -408,7 +433,7 @@ website:
                 href: docs/pharmaceutical/AE/AE_SOC_PT.qmd
               - text: Toxicity - RT
                 href: docs/pharmaceutical/AE/Toxicity_RT.qmd
-              - text: Toxicity - Cisplatin（顺铂）
+              - text: Toxicity - Cisplatin
                 href: docs/pharmaceutical/AE/Toxicity_Cisplatin.qmd
               - text: Biomarker
                 href: docs/pharmaceutical/other/Biomarker.qmd

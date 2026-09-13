@@ -1,0 +1,15 @@
+---
+title: "Kelun-Biotech（科伦博泰）"
+---
+
+# Company Overview
+
+**Sichuan Kelun-Biotech Biopharmaceutical（科伦博泰）**是一家以创新生物药、小分子药物和ADC平台为核心的中国生物制药公司，也是科伦药业的控股子公司。
+
+在肿瘤领域，Kelun-Biotech的重要资产包括**[sacituzumab tirumotecan, Sac-TMT](../compound/Sac_TMT.qmd)**（SKB264/MK-2870；佳泰莱），一种[TROP2](../target/TROP2.qmd)-directed [ADC](../other/ADC.qmd)。该药由Kelun-Biotech开发，并与[Merck & Co.](Merck.qmd) / MSD在大中华区以外市场合作开发。
+
+# Key Oncology Assets
+
+| Asset | Modality | Main Development Area |
+|---|---|---|
+| [Sacituzumab tirumotecan](../compound/Sac_TMT.qmd) | [TROP2](../target/TROP2.qmd)-directed ADC | Breast cancer, NSCLC, endometrial cancer and other solid tumors |

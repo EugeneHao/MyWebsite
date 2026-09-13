@@ -147,7 +147,7 @@ TROP2在多种实体瘤中均有较高表达。
 |---|---|---|---|
 | [Sacituzumab govitecan](../compound/Saci_G.qmd) | SN-38 | Cleavable | TNBC、HR+/HER2-乳腺癌、尿路上皮癌 |
 | [Datopotamab deruxtecan](../compound/Dato_DXd.qmd) | DXd | Cleavable | NSCLC、乳腺癌 |
-| SKB264（sacituzumab tirumotecan） | KL610023 | Cleavable | NSCLC、TNBC等，开发中 |
+| [Sacituzumab tirumotecan / Sac-TMT](../compound/Sac_TMT.qmd) | KL610023 | Cleavable | NSCLC、TNBC、HR+/HER2-乳腺癌等 |
 
 # TROP2与HER2 ADC比较
 
@@ -251,7 +251,7 @@ TROP2 ADC的安全性主要由payload决定。
 
 1. TROP2是一种广泛表达于实体瘤的跨膜糖蛋白，也是当前最重要的ADC靶点之一。
 2. TROP2具有肿瘤高表达、易内吞和正常组织表达较低等特点，非常适合作为ADC靶点。
-3. [Sacituzumab govitecan](../compound/Saci_G.qmd)和[datopotamab deruxtecan](../compound/Dato_DXd.qmd)是目前最具代表性的TROP2 ADC。
+3. [Sacituzumab govitecan](../compound/Saci_G.qmd)、[datopotamab deruxtecan](../compound/Dato_DXd.qmd)和[sacituzumab tirumotecan](../compound/Sac_TMT.qmd)是目前最具代表性的TROP2 ADC。
 4. 与HER2不同，目前TROP2尚未发展为成熟的[伴随诊断生物标志物](../other/Biomarker.qmd#companion-diagnostic伴随诊断)，大多数研究无需按TROP2表达筛选患者。
 5. 生物统计学上需重点关注全人群设计、探索性生物标志物分析、PFS/OS终点及ADC特有安全性分析。
 

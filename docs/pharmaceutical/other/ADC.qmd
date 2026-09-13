@@ -105,7 +105,8 @@ Payload可作用于不同靶点，例如：
 | 靶点 | 代表药物 |
 |---|---|
 | [HER2](../target/HER.qmd) | Trastuzumab deruxtecan、Trastuzumab emtansine |
-| [TROP2](../target/TROP2.qmd) | [Sacituzumab govitecan](../compound/Saci_G.qmd)、[Datopotamab deruxtecan](../compound/Dato_DXd.qmd) |
+| [TROP2](../target/TROP2.qmd) | [Sacituzumab govitecan](../compound/Saci_G.qmd)、[Datopotamab deruxtecan](../compound/Dato_DXd.qmd)、[Sacituzumab tirumotecan](../compound/Sac_TMT.qmd) |
+| [B7-H3](../target/B7-H3.qmd) | [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)、[Elfetabart drozuntecan / Elfe-D](../compound/Elfe_D.qmd) |
 | Nectin-4 | Enfortumab vedotin |
 | CD30 | Brentuximab vedotin |
 | CD22 | Inotuzumab ozogamicin |
@@ -184,6 +185,9 @@ DAR是ADC设计中的关键参数，会影响：
 | Trastuzumab deruxtecan (T-DXd) | [HER2](../target/HER.qmd) | DXd | HER2阳性乳腺癌、胃癌、[NSCLC](../disease/NSCLC.qmd)等 |
 | [Sacituzumab govitecan](../compound/Saci_G.qmd) | [TROP2](../target/TROP2.qmd) | SN-38 | TNBC、HR+/HER2-乳腺癌 |
 | [Datopotamab deruxtecan](../compound/Dato_DXd.qmd) | [TROP2](../target/TROP2.qmd) | DXd | NSCLC、乳腺癌 |
+| [Sacituzumab tirumotecan](../compound/Sac_TMT.qmd) | [TROP2](../target/TROP2.qmd) | KL610023 | NSCLC、乳腺癌等 |
+| [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd) | [B7-H3](../target/B7-H3.qmd) | DXd | SCLC等，审评或临床开发中 |
+| [Elfetabart drozuntecan](../compound/Elfe_D.qmd) | [B7-H3](../target/B7-H3.qmd) | Topoisomerase I inhibitor | mCRPC、肺癌和妇科肿瘤等，临床开发中 |
 | Enfortumab vedotin | Nectin-4 | MMAE | 尿路上皮癌 |
 | Brentuximab vedotin | CD30 | MMAE | 霍奇金[淋巴瘤](../disease/Lymphoma.qmd) |
 | [Gemtuzumab ozogamicin](../compound/Mylotarg.qmd) | CD33 | Calicheamicin | [AML](../disease/Leukemia.qmd#acute-myeloid-leukemia) |

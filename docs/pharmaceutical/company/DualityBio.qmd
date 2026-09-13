@@ -1,0 +1,15 @@
+---
+title: "DualityBio（映恩生物）"
+---
+
+# Company Overview
+
+**Duality Biotherapeutics, Inc.（DualityBio，映恩生物）**是一家以next-generation ADC平台为核心的创新生物制药公司，重点开发实体瘤和其他疾病领域的抗体偶联药物。
+
+DualityBio的代表性资产包括**[elfetabart drozuntecan / Elfe-D](../compound/Elfe_D.qmd)**（DB-1311/BNT324），一种[B7-H3](../target/B7-H3.qmd)-targeted [ADC](../other/ADC.qmd)。该项目由DualityBio开发，并与[BioNTech](BioNTech.qmd)合作推进全球开发。
+
+# Key Oncology Assets
+
+| Asset | Modality | Main Development Area |
+|---|---|---|
+| [Elfetabart drozuntecan / Elfe-D](../compound/Elfe_D.qmd) | [B7-H3](../target/B7-H3.qmd)-targeted ADC | mCRPC, lung cancer, gynecologic cancers and other solid tumors |

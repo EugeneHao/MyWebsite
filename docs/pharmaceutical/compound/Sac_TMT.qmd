@@ -1,0 +1,295 @@
+---
+title: "Sacituzumab Tirumotecan, Sac-TMT（SKB264/MK-2870，佳泰莱）"
+description: "介绍TROP2 ADC sacituzumab tirumotecan（Sac-TMT/SKB264/MK-2870）的结构、作用机制、临床开发、监管状态、安全性和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Sacituzumab tirumotecan, Sac-TMT（[Kelun-Biotech / 科伦博泰](../company/Kelun_Biotech.qmd)；中国商品名：佳泰莱；development codes: SKB264、MK-2870）**是一种靶向**[trophoblast cell-surface antigen 2, TROP2（滋养层细胞表面抗原2）](../target/TROP2.qmd)**的**[antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Sac-TMT由抗TROP2单克隆抗体、连接子和topoisomerase I inhibitor payload组成。它的基本思路是利用TROP2将细胞毒payload递送至肿瘤细胞，释放payload后造成DNA损伤、cell-cycle arrest和肿瘤细胞死亡。
+
+Sac-TMT最初由Kelun-Biotech开发。[Merck & Co.](../company/Merck.qmd)（美国和加拿大以外称MSD）获得大中华区以外地区的独家开发、生产和商业化权利。因此，资料中可能同时看到SKB264、MK-2870、Sac-TMT和sacituzumab tirumotecan。
+
+截至2026年9月，Sac-TMT已在中国获批多个适应证，覆盖经治TNBC、EGFR-mutant nonsquamous NSCLC及HR+/HER2- breast cancer等场景；在美国和多数中国以外市场仍属于investigational therapy，尚未正式获批上市。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Sacituzumab tirumotecan |
+| 常用简称 | Sac-TMT |
+| Development codes | SKB264、MK-2870 |
+| 中国商品名 | 佳泰莱 |
+| Original developer | [Kelun-Biotech](../company/Kelun_Biotech.qmd) |
+| Global partner | [Merck & Co.](../company/Merck.qmd) / MSD，大中华区以外 |
+| Drug class | TROP2-directed ADC |
+| Target | [TROP2](../target/TROP2.qmd) |
+| Payload class | Topoisomerase I inhibitor |
+| Payload | KL610023，belotecan-derived topoisomerase I inhibitor |
+| Linker | Novel irreversible but hydrolyzable linker |
+| Drug-to-antibody ratio, DAR | 约7.4 |
+| Route | Intravenous infusion |
+| China status | 已获批多个适应证 |
+| U.S. status | Investigational；FDA已授予部分EGFR-mutant NSCLC人群Breakthrough Therapy Designation |
+
+# Molecular Structure（分子结构）
+
+Sac-TMT包含三个核心部分：
+
+| 组成部分 | 作用 |
+|---|---|
+| Anti-TROP2 antibody | 识别并结合肿瘤细胞表面TROP2 |
+| Linker | 连接抗体和payload，影响血液中稳定性和肿瘤内释放 |
+| KL610023 payload | Topoisomerase I inhibitor，诱导DNA损伤 |
+
+Merck和Kelun资料均描述Sac-TMT使用belotecan-derived topoisomerase I inhibitor payload，平均DAR约为7.4。与[Saci-G](Saci_G.qmd)和[Dato-DXd](Dato_DXd.qmd)一样，它属于TROP2 ADC，但三者不是同一种药物。
+
+# Mechanism of Action（作用机制）
+
+Sac-TMT的作用过程可以概括为：
+
+1. 抗TROP2抗体结合TROP2-positive tumor cell；
+2. ADC-TROP2复合物发生internalization；
+3. Linker在细胞内或肿瘤微环境中释放KL610023；
+4. KL610023抑制topoisomerase I；
+5. DNA复制过程中损伤累积；
+6. 肿瘤细胞发生cell-cycle arrest和apoptosis。
+
+```text
+Sac-TMT
+  |
+  v
+TROP2 binding
+  |
+  v
+Internalization / payload release
+  |
+  v
+Topoisomerase I inhibition
+  |
+  v
+DNA damage and tumor-cell death
+```
+
+由于KL610023具有一定膜通透性，公开资料也强调Sac-TMT可能产生**bystander effect（旁观者效应）**，即payload可影响邻近肿瘤细胞。这一点对于TROP2表达异质性较强的肿瘤尤其重要。
+
+# Target Biology（靶点生物学）
+
+TROP2是一种上皮来源肿瘤中常见的细胞表面糖蛋白，可参与：
+
+- tumor-cell proliferation；
+- survival signaling；
+- invasion and metastasis；
+- epithelial-mesenchymal transition；
+- 肿瘤进展和不良预后。
+
+TROP2在[breast cancer（乳腺癌）](../disease/Breast_Cancer.qmd)、[NSCLC](../disease/NSCLC.qmd)、urothelial cancer、endometrial cancer、ovarian cancer和gastrointestinal cancers中常见表达。
+
+目前Sac-TMT的开发更多基于疾病场景和TROP2生物学，而不是要求所有患者按TROP2 IHC高表达筛选。TROP2 expression仍更多是探索性[biomarker](../other/Biomarker.qmd)，尚未成为统一的companion diagnostic。
+
+# Regulatory Status（监管状态）
+
+## 中国
+
+截至2026年9月，Sac-TMT在中国已获批多个适应证，主要包括：
+
+| 适应证方向 | 典型人群 |
+|---|---|
+| Triple-negative breast cancer, TNBC | 不可切除局部晚期或转移性TNBC，既往接受至少两线系统治疗，其中至少一线用于晚期或转移性疾病 |
+| EGFR-mutant nonsquamous NSCLC | EGFR-TKI和platinum-based chemotherapy后进展 |
+| EGFR-mutant nonsquamous NSCLC | EGFR-TKI治疗后进展 |
+| HR+/HER2- breast cancer | 不可切除或转移性HR+/HER2-乳腺癌，既往接受endocrine therapy和至少一线晚期化疗 |
+
+此外，Sac-TMT联合[pembrolizumab](Keytruda.qmd)的一线NSCLC和一线TNBC等适应证仍在中国进行注册性开发或审评。
+
+## 美国和中国以外市场
+
+截至2026年9月，Sac-TMT在美国尚未正式获批。FDA于2024年授予Sac-TMT Breakthrough Therapy Designation，用于部分既往接受EGFR TKI和platinum-based chemotherapy后进展的EGFR-mutant nonsquamous advanced或metastatic [NSCLC](../disease/NSCLC.qmd)患者。
+
+Merck正在通过TroFuse临床开发项目在多个实体瘤中评估Sac-TMT，包括：
+
+- breast cancer；
+- endometrial cancer；
+- lung cancer；
+- cervical cancer；
+- ovarian cancer；
+- gastric cancer；
+- bladder cancer；
+- biliary tract cancer；
+- esophageal cancer。
+
+Breakthrough Therapy Designation和positive Phase 3 readout均不等同于FDA批准。
+
+# Key Clinical Development（关键临床开发）
+
+## TNBC
+
+Sac-TMT在经治TNBC中通过中国注册性研究支持上市。该场景与[Saci-G](Saci_G.qmd)和[Dato-DXd](Dato_DXd.qmd)的开发方向存在重叠，因此解读时需要注意：
+
+- 不同国家和地区的获批状态不同；
+- 治疗线次不同；
+- comparator不同；
+- 是否既往接受PD-1/PD-L1 inhibitor不同；
+- 跨试验比较不能直接判断药物优劣。
+
+## EGFR-Mutant NSCLC
+
+Sac-TMT在EGFR-mutant nonsquamous NSCLC中的开发是其重要差异化方向之一。
+
+关键研究场景包括：
+
+- EGFR-TKI后进展；
+- EGFR-TKI和platinum chemotherapy后进展；
+- 与osimertinib联合用于更早线治疗；
+- 与[pembrolizumab](Keytruda.qmd)联合用于部分EGFR-wild type或PD-L1 defined NSCLC场景。
+
+Sac-TMT并不是EGFR TKI。它利用TROP2进行payload递送，因此理论上可绕开部分EGFR激酶抑制剂耐药机制，但疗效仍取决于TROP2表达、内化、payload敏感性和疾病生物学。
+
+## HR+/HER2- Breast Cancer
+
+Sac-TMT已在中国获批用于部分经治HR+/HER2- breast cancer。该场景中患者通常已接受：
+
+- endocrine therapy；
+- CDK4/6 inhibitor；
+- chemotherapy；
+- 多线系统治疗。
+
+在HER2-low、HER2-ultralow、TROP2 ADC和传统化疗并存的治疗格局中，后续治疗顺序和ADC交叉耐药会成为重要问题。
+
+## Endometrial Cancer and Other Solid Tumors
+
+Merck的TroFuse-005研究在既往接受platinum-based chemotherapy和anti-PD-1/L1 immunotherapy后进展的advanced或recurrent endometrial cancer中达到OS和PFS主要终点。
+
+Sac-TMT也在多种妇科肿瘤、胃癌、胆道癌和膀胱癌中开发。不同肿瘤的TROP2表达、既往治疗和标准治疗不同，不能把一个瘤种的结果直接外推到其他瘤种。
+
+# Safety Profile（安全性）
+
+Sac-TMT安全性主要与ADC结构、TROP2靶点表达和topoisomerase I inhibitor payload相关。
+
+公开研究中需要重点关注：
+
+| 毒性类别 | 可能表现 |
+|---|---|
+| Hematologic toxicity | Neutropenia、anemia、thrombocytopenia、leukopenia |
+| Gastrointestinal toxicity | Nausea、vomiting、diarrhea、decreased appetite、stomatitis |
+| General disorders | Fatigue、pyrexia、weight loss |
+| Liver laboratory abnormalities | ALT/AST升高 |
+| Pulmonary toxicity | Interstitial lung disease或pneumonitis需要持续监测 |
+| Infusion-related reaction | 发热、寒战、皮疹、呼吸困难、低血压等 |
+
+由于同类TROP2 ADC的payload和linker不同，不能简单套用[Saci-G](Saci_G.qmd)或[Dato-DXd](Dato_DXd.qmd)的毒性排序。最终dose modification和警示应以当地approved label或临床试验protocol为准。
+
+# Competitive Landscape（竞争格局）
+
+| 药物 | 公司 | Payload | 状态和特点 |
+|---|---|---|---|
+| [Sacituzumab govitecan](Saci_G.qmd) | Gilead | SN-38 | 已获批多个乳腺癌适应证；neutropenia和diarrhea较突出 |
+| [Datopotamab deruxtecan](Dato_DXd.qmd) | Daiichi Sankyo / AstraZeneca | DXd | 已在乳腺癌和NSCLC等方向推进；stomatitis、ocular toxicity和ILD需关注 |
+| Sacituzumab tirumotecan | Kelun-Biotech / Merck | KL610023 | 中国已获批多个适应证；全球TroFuse项目广泛开发 |
+
+三种药物同属TROP2 ADC，但抗体、linker、payload、DAR、剂量、给药频率、适应证和安全性均不同。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Endpoint Selection（终点选择）
+
+Sac-TMT开发覆盖后线单药、更早线联合治疗和多个癌种，因此主要终点随场景变化：
+
+| 场景 | 常见主要终点 |
+|---|---|
+| 后线随机研究 | PFS、OS、ORR |
+| 单臂或早期扩展队列 | ORR、DOR、安全性 |
+| 一线联合免疫治疗 | PFS和/或OS |
+| 辅助或新辅助探索 | EFS、pCR、MPR等 |
+
+## Comparator Selection（对照选择）
+
+后线研究常用physician's choice chemotherapy或标准化疗作为对照。不同地区的标准治疗、后续治疗可及性和既往ADC暴露会显著影响OS解释。
+
+## Biomarker Strategy（生物标志物策略）
+
+Sac-TMT研究可探索：
+
+- TROP2 expression；
+- TROP2 membrane localization；
+- tumor histology；
+- EGFR mutation；
+- PD-L1 expression；
+- prior immune checkpoint inhibitor exposure；
+- ctDNA dynamics；
+- DNA damage response biomarkers。
+
+如果TROP2表达作为连续变量，应避免事后选择最有利cutoff造成type I error inflation。
+
+## Multiplicity（多重性）
+
+跨癌种、多队列和多终点项目需要预先规定：
+
+- analysis population；
+- alpha allocation；
+- interim analysis；
+- subgroup hierarchy；
+- OS和PFS检验顺序；
+- biomarker subgroup的解释边界。
+
+# Common Pitfalls（常见误区）
+
+1. **把Sac-TMT和Saci-G混为一谈。**  
+   二者名称都含sacituzumab，也都靶向TROP2，但payload、linker、DAR和开发公司不同。
+
+2. **认为Sac-TMT已经在美国获批。**  
+   截至2026年9月，美国仍未正式批准Sac-TMT，BTD不等于上市。
+
+3. **把EGFR-mutant NSCLC中的疗效理解为EGFR靶向。**  
+   Sac-TMT靶向TROP2，EGFR mutation定义的是疾病人群，不是药物靶点。
+
+4. **只根据TROP2表达判断疗效。**  
+   ADC疗效还取决于内化、payload释放、DNA损伤敏感性、bystander effect和既往治疗。
+
+5. **用跨试验结果直接比较TROP2 ADC。**  
+   不同研究的人群、线次、地区、对照和终点不同，简单比较median PFS或ORR容易误导。
+
+# Key Takeaways（关键总结）
+
+1. Sac-TMT即sacituzumab tirumotecan，研发代号SKB264/MK-2870，中国商品名佳泰莱。
+2. 它是一种TROP2-directed ADC，携带belotecan-derived topoisomerase I inhibitor payload KL610023。
+3. Kelun-Biotech开发Sac-TMT，Merck/MSD负责大中华区以外的开发和商业化。
+4. 中国已批准多个乳腺癌和EGFR-mutant NSCLC适应证；美国截至2026年9月尚未批准。
+5. Sac-TMT与Saci-G和Dato-DXd同属TROP2 ADC，但不是同一种药物。
+6. 统计学上需关注跨癌种开发、多重性控制、TROP2 biomarker策略、对照选择和既往ADC暴露。
+
+# References（参考资料）
+
+1. Merck & Co. *Merck Enters into Research and Development Funding Agreement with Blackstone Life Sciences for Sacituzumab Tirumotecan (sac-TMT)*. November 4, 2025.  
+   <https://www.merck.com/news/merck-enters-into-research-and-development-funding-agreement-with-blackstone-life-sciences-for-sacituzumab-tirumotecan-sac-tmt/>
+
+2. Merck & Co. *FDA Grants Breakthrough Therapy Designation to Sacituzumab Tirumotecan for Previously Treated Advanced or Metastatic Nonsquamous NSCLC With EGFR Mutations*. December 3, 2024.  
+   <https://www.merck.com/news/fda-grants-breakthrough-therapy-designation-to-sacituzumab-tirumotecan-sac-tmt-for-the-treatment-of-certain-patients-with-previously-treated-advanced-or-metastatic-nonsquamous-non-small-cell-lung-ca/>
+
+3. Merck & Co. *Product Pipeline: sacituzumab tirumotecan (MK-2870)*. Accessed September 13, 2026.  
+   <https://www.merck.com/research/product-pipeline/>
+
+4. Kelun-Biotech. *Technology & Product Pipeline: Sacituzumab Tirumotecan Injection, 佳泰莱 (sac-TMT/SKB264/MK-2870)*. Accessed September 13, 2026.  
+   <https://en.kelun-biotech.com/product.aspx?mid=197>
+
+5. Kelun-Biotech. *Sac-TMT Approved by NMPA for HR+/HER2- Breast Cancer*. February 2026.  
+   <https://en.kelun-biotech.com/newsCenter.aspx?mid=18&page=3>
+
+6. Kelun-Biotech. *Third Indication for Sac-TMT Approved by NMPA in EGFR-mutant NSCLC Following Progression on EGFR-TKI Therapy*. October 2025.  
+   <https://en.kelun-biotech.com/newsCenter.aspx?mid=18&page=5>
