@@ -1,0 +1,186 @@
+---
+title: "Delta-Like Ligand 3, DLL3（δ样配体3）"
+description: "介绍DLL3的Notch通路生物学、在SCLC和神经内分泌肿瘤中的表达、治疗开发策略及临床试验考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Biomarkers
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 概述
+
+**Delta-like ligand 3, DLL3（δ样配体3）**是Notch signaling pathway相关的抑制性配体样蛋白。与经典Notch配体不同，DLL3主要位于细胞内高尔基体区域，在正常成人组织中的细胞表面表达较低；但在**[small cell lung cancer, SCLC（小细胞肺癌）](../disease/SCLC.qmd)**和其他高等级神经内分泌肿瘤中，DLL3可在肿瘤细胞表面高表达。
+
+DLL3已经成为SCLC最重要的新兴治疗靶点之一。代表性药物包括**[tarlatamab](../compound/Tarlatamab.qmd)（Imdelltra；AMG 757）**，一种DLL3 × CD3 bispecific T-cell engager；此外，DLL3 ADC、CAR-T、TriTAC和放射性配体治疗也在开发中。
+
+# Key Terminology（关键术语）
+
+| 名称 | 解释 |
+|---|---|
+| DLL3 | Delta-like ligand 3，Notch通路相关蛋白 |
+| Notch signaling | 调节细胞命运、分化和神经内分泌发育的重要通路 |
+| SCLC | 小细胞肺癌，DLL3表达最具临床开发价值的癌种之一 |
+| T-cell engager | 同时结合肿瘤抗原和CD3，使T细胞靠近并杀伤肿瘤细胞的双特异性抗体 |
+| BiTE | Bispecific T-cell engager，Amgen平台双特异性T细胞衔接分子 |
+| ADC | Antibody-drug conjugate，抗体偶联药物 |
+
+# DLL3与Notch通路
+
+Notch通路参与细胞分化和组织发育。经典Notch信号通常需要Notch receptor与细胞膜上的配体结合。
+
+DLL3比较特殊：
+
+- 它不是典型的激活型Notch配体；
+- 多数情况下表现为Notch signaling的负向调节因子；
+- 在正常成人组织中细胞表面表达有限；
+- 在SCLC等神经内分泌肿瘤中可异常上调。
+
+SCLC常伴随ASCL1等神经内分泌谱系转录程序活化，DLL3表达也常与这种神经内分泌状态相关。
+
+# 肿瘤表达
+
+DLL3最重要的临床开发场景是SCLC。
+
+| 肿瘤 | DLL3开发意义 |
+|---|---|
+| [SCLC](../disease/SCLC.qmd) | 表达常见，是tarlatamab等药物的核心开发方向 |
+| Large-cell neuroendocrine carcinoma | 可能表达DLL3，正在探索 |
+| Neuroendocrine prostate cancer | 去分化或治疗诱导神经内分泌表型中具有探索价值 |
+| Pulmonary carcinoid | 部分病例表达DLL3，已有早期临床观察 |
+| Other neuroendocrine tumors | 取决于肿瘤谱系和DLL3表达 |
+
+DLL3并不是所有SCLC患者都均一高表达。不同病灶、治疗前后和耐药时的表达水平可能不同，因此后续开发需要关注检测方法、cutoff和样本来源。
+
+# 为什么DLL3适合靶向治疗
+
+DLL3具有几个适合药物开发的特点：
+
+| 特点 | 意义 |
+|---|---|
+| SCLC中表达较常见 | 覆盖高未满足需求人群 |
+| 正常组织表面表达较低 | 提供一定治疗窗 |
+| 细胞表面可被抗体识别 | 支持T-cell engager、ADC和CAR-T |
+| 与神经内分泌肿瘤谱系相关 | 可用于SCLC和其他神经内分泌癌探索 |
+
+早期DLL3 ADC rovalpituzumab tesirine未能成功上市，提示靶点本身有吸引力，但药物平台、linker-payload、安全性窗口和患者选择同样关键。
+
+# DLL3靶向治疗策略
+
+## T-Cell Engager
+
+**[Tarlatamab](../compound/Tarlatamab.qmd)**是目前DLL3靶向治疗中最成功的代表。
+
+它同时结合：
+
+- SCLC细胞表面的DLL3；
+- T细胞表面的CD3。
+
+这使T细胞与DLL3阳性肿瘤细胞形成免疫突触，并诱导T细胞介导的肿瘤杀伤。
+
+## Antibody-Drug Conjugate
+
+DLL3 ADC使用抗DLL3抗体递送细胞毒payload。其潜在优势是：
+
+- 不需要依赖患者已有T细胞功能；
+- 可直接通过payload杀伤肿瘤细胞；
+- 可能与免疫治疗或T-cell engager形成组合策略。
+
+但DLL3 ADC需要克服：
+
+- 正常组织安全性窗口；
+- payload相关毒性；
+- 肿瘤内DLL3表达异质性；
+- 既往失败项目带来的开发风险。
+
+## CAR-T和其他平台
+
+DLL3 CAR-T、DLL3 × CD3 × albumin TriTAC、放射免疫治疗等也在探索中。这些策略的共同挑战是实体瘤TME、CRS/神经毒性、肿瘤异质性和耐药。
+
+# Biomarker Considerations（生物标志物考虑）
+
+DLL3可作为：
+
+- 治疗靶点；
+- 患者选择生物标志物；
+- 神经内分泌肿瘤谱系标志物；
+- 耐药监测指标。
+
+检测方式包括：
+
+| 方法 | 用途 |
+|---|---|
+| IHC | 评估肿瘤组织DLL3蛋白表达 |
+| RNA expression | 研究神经内分泌谱系和DLL3转录水平 |
+| Circulating tumor cells, CTC | 探索液体活检和动态监测 |
+| ctDNA或NGS | 主要用于整体分子分型，不直接等同于DLL3蛋白表达 |
+
+目前tarlatamab的获批适应证不要求常规DLL3 companion diagnostic，但未来新药和组合研究可能进一步探索DLL3表达与疗效的关系。
+
+# Clinical Trial Considerations（临床试验考虑）
+
+DLL3项目常见终点包括：
+
+- **overall survival, OS（总生存期）**；
+- **progression-free survival, PFS（无进展生存期）**；
+- **objective response rate, ORR（客观缓解率）**；
+- **duration of response, DOR（缓解持续时间）**；
+- CNS response或CNS PFS；
+- patient-reported outcomes。
+
+在SCLC中，研究设计需要特别关注：
+
+- platinum-sensitive vs platinum-resistant relapse；
+- prior PD-L1 inhibitor exposure；
+- brain metastasis；
+- baseline tumor burden；
+- 神经内分泌亚型；
+- CRS和ICANS管理能力；
+- 对照组topotecan、lurbinectedin或amrubicin的地区差异。
+
+# Common Pitfalls（常见误区）
+
+1. **DLL3不是PD-L1这类经典免疫检查点。**  
+   DLL3与Notch和神经内分泌谱系更相关，目前最成熟的开发策略是T-cell engager。
+
+2. **DLL3阳性不等于所有DLL3药物都有效。**  
+   药物平台、亲和力、剂量、TME和毒性窗口都影响疗效。
+
+3. **Tarlatamab不是ADC。**  
+   它是DLL3 × CD3 T-cell engager，不携带细胞毒payload。
+
+4. **DLL3表达可能变化。**  
+   治疗压力和肿瘤异质性可能导致DLL3下降或出现DLL3-low克隆。
+
+# Key Takeaways（关键总结）
+
+1. DLL3是SCLC和部分神经内分泌肿瘤中的重要表面靶点。
+2. DLL3在正常成人组织细胞表面表达较低，为靶向治疗提供治疗窗。
+3. Tarlatamab是DLL3靶向治疗的代表性成功案例。
+4. DLL3 ADC、CAR-T、TriTAC和放射性治疗仍在继续开发。
+5. 统计设计上需关注OS、PFS、ORR/DOR、脑转移亚组、CRS/ICANS安全性和DLL3表达异质性。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. *FDA grants accelerated approval to tarlatamab-dlle for extensive stage small cell lung cancer*. May 16, 2024.  
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer>
+
+2. National Cancer Institute. *Tarlatamab-dlle*.  
+   <https://www.cancer.gov/about-cancer/treatment/drugs/tarlatamab-dlle>
+
+3. Rudin CM, et al. *Tarlatamab in Small-Cell Lung Cancer after Platinum-Based Chemotherapy*. *New England Journal of Medicine*. 2025.  
+   <https://www.nejm.org/doi/10.1056/NEJMoa2502099>
+
+4. Mishra A, et al. *Circulating Tumor Cells Predict Response to the DLL3-Targeting Bispecific Antibody Tarlatamab*. *Cancer Discovery*. 2026.  
+   <https://pmc.ncbi.nlm.nih.gov/articles/PMC13067943/>
+

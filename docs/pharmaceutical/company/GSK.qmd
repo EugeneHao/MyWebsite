@@ -8,6 +8,7 @@ title: "GSK"
 
 - [Jemperli / Dostarlimab](../compound/Dostarlimab.qmd)
 - [Tafinlar](../compound/Tafinlar.qmd)
+- [Ris-Rez / Risvutatug rezetecan](../compound/Ris_Rez.qmd)，与[Hansoh Pharma](Hansoh.qmd)合作开发的[B7-H3](../target/B7-H3.qmd)-directed [ADC](../other/ADC.qmd)
 
 ### Financial Statement
 

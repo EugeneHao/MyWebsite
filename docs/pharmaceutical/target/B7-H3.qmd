@@ -30,7 +30,7 @@ B7-H3最初被归入**immune checkpoint（免疫检查点）**相关分子，但
 - 肿瘤细胞增殖、侵袭和转移；
 - 血管生成和治疗耐药。
 
-截至2026年9月，尚无B7-H3-directed medicine在美国正式获批用于癌症治疗，但多个B7-H3靶向药物已经进入临床开发。代表性资产包括**[ifinatamab deruxtecan, I-DXd](../compound/Ifinatamab_Deruxtecan.qmd)（DS-7300/MK-2400）**和**[elfetabart drozuntecan, Elfe-D](../compound/Elfe_D.qmd)（DB-1311/BNT324）**等B7-H3-directed [ADC](../other/ADC.qmd)。
+截至2026年9月，尚无B7-H3-directed medicine在美国正式获批用于癌症治疗，但多个B7-H3靶向药物已经进入临床开发。代表性资产包括**[ifinatamab deruxtecan, I-DXd](../compound/Ifinatamab_Deruxtecan.qmd)（DS-7300/MK-2400）**、**[elfetabart drozuntecan, Elfe-D](../compound/Elfe_D.qmd)（DB-1311/BNT324）**、**[tambotatug pelitecan, Tam-Peli](../compound/Tam_Peli.qmd)（YL201/RG6919）**和**[risvutatug rezetecan, Ris-Rez](../compound/Ris_Rez.qmd)（HS-20093/GSK5764227）**等B7-H3-directed [ADC](../other/ADC.qmd)。
 
 # Key Terminology（关键术语）
 
@@ -43,6 +43,8 @@ B7-H3最初被归入**immune checkpoint（免疫检查点）**相关分子，但
 | ADC | Antibody-drug conjugate，抗体偶联药物 |
 | I-DXd | [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)，B7-H3-directed DXd ADC |
 | Elfe-D | [Elfetabart drozuntecan](../compound/Elfe_D.qmd)，B7-H3-targeted ADC |
+| Tam-Peli | [Tambotatug pelitecan](../compound/Tam_Peli.qmd)，B7-H3-targeted ADC |
+| Ris-Rez | [Risvutatug rezetecan](../compound/Ris_Rez.qmd)，B7-H3-targeted ADC |
 
 # 分子结构与表达
 
@@ -135,7 +137,7 @@ B7-H3的核心开发逻辑与[TROP2](TROP2.qmd)和[HER2](HER.qmd)类似：抗体
 
 ## Antibody-Drug Conjugate
 
-最受关注的B7-H3 ADC包括**[ifinatamab deruxtecan, I-DXd](../compound/Ifinatamab_Deruxtecan.qmd)（DS-7300/MK-2400）**和**[elfetabart drozuntecan, Elfe-D](../compound/Elfe_D.qmd)（DB-1311/BNT324）**。
+最受关注的B7-H3 ADC包括**[ifinatamab deruxtecan, I-DXd](../compound/Ifinatamab_Deruxtecan.qmd)（DS-7300/MK-2400）**、**[elfetabart drozuntecan, Elfe-D](../compound/Elfe_D.qmd)（DB-1311/BNT324）**、**[tambotatug pelitecan, Tam-Peli](../compound/Tam_Peli.qmd)（YL201/RG6919）**和**[risvutatug rezetecan, Ris-Rez](../compound/Ris_Rez.qmd)（HS-20093/GSK5764227）**。
 
 | 项目 | 内容 |
 |---|---|
@@ -154,6 +156,10 @@ I-DXd由humanized anti-B7-H3 IgG1 monoclonal antibody、tetrapeptide-based cleav
 截至2026年9月，I-DXd在美国仍处于审评阶段，尚未正式获批。若获批，它将可能成为首个B7-H3-directed ADC。
 
 Elfe-D是由[DualityBio](../company/DualityBio.qmd)与[BioNTech](../company/BioNTech.qmd)合作开发的B7-H3 ADC，已进入mCRPC global randomized Phase 3研究，并在肺癌、卵巢癌、宫颈癌及与[pumitamig](../compound/Pumitamig.qmd)联合治疗中继续开发。
+
+[Tam-Peli](../compound/Tam_Peli.qmd)由[MediLink Therapeutics](../company/MediLink.qmd)开发，并由[Roche](../company/Roche.qmd)获得大中华区以外全球权利。截至2026年9月，中国监管机构已受理其鼻咽癌和SCLC适应证上市申请。
+
+[Ris-Rez](../compound/Ris_Rez.qmd)由[Hansoh Pharma](../company/Hansoh.qmd)开发，并由[GSK](../company/GSK.qmd)获得中国大陆及港澳台以外全球权利。截至2026年9月，中国监管机构已受理其SCLC适应证BLA，全球SCLC Phase 3研究也在进行中。
 
 ## Monoclonal Antibody
 
@@ -346,7 +352,7 @@ B7-H3 ADC与[TROP2 ADC](TROP2.qmd)、HER2 ADC或传统化疗之间的跨试验�
 1. B7-H3/CD276是B7家族跨膜蛋白，在多种实体瘤中高表达，常与侵袭性和差预后相关。
 2. B7-H3兼具免疫调节和非免疫促肿瘤功能，是TME和肿瘤表面抗原开发中的重要靶点。
 3. B7-H3适合ADC开发，因为其在肿瘤中表达较高、位于细胞表面，并可用于payload递送。
-4. [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)和[Elfe-D](../compound/Elfe_D.qmd)是目前B7-H3 ADC开发中的代表性资产。
+4. [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)、[Elfe-D](../compound/Elfe_D.qmd)、[Tam-Peli](../compound/Tam_Peli.qmd)和[Ris-Rez](../compound/Ris_Rez.qmd)是目前B7-H3 ADC开发中的代表性资产。
 5. B7-H3 expression仍不是成熟伴随诊断，临床研究需要明确assay、cutoff、样本来源和亚组分析策略。
 6. B7-H3靶向治疗仍处于快速发展阶段，不同药物类型的疗效和安全性不能简单互相外推。
 
@@ -369,3 +375,9 @@ B7-H3 ADC与[TROP2 ADC](TROP2.qmd)、HER2 ADC或传统化疗之间的跨试验�
 
 6. Kontos F, et al. New Emerging Targets in Cancer Immunotherapy: The Role of B7-H3. *Cancers*. 2024.  
    <https://pmc.ncbi.nlm.nih.gov/articles/PMC10820813/>
+
+7. MediLink Therapeutics. *MediLink Therapeutics Announces NDA Acceptance for Tam-Peli (Injection) in Recurrent Small Cell Lung Cancer by China NMPA*. September 2, 2026.  
+   <https://medilinkthera.com/news-details/61>
+
+8. Hansoh Pharma. *Biologics License Application of Risvutatug Rezetecan (HS-20093) for Injection for Small Cell Lung Cancer Accepted by the NMPA*. September 7, 2026.  
+   <https://www.hansoh.cn/en/news/news-detail-514074.htm>

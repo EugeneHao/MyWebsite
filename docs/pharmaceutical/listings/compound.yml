@@ -76,6 +76,24 @@
   company: Daiichi Sankyo, Merck & Co.
   indication: |
     [B7-H3](target/B7-H3.qmd)-directed DXd ADC under FDA Priority Review for previously treated extensive-stage [SCLC](disease/SCLC.qmd), with broader development in prostate cancer and other solid tumors.
+- drug: Imdelltra
+  compound: Tarlatamab-dlle / AMG 757
+  path: compound/Tarlatamab.html
+  company: Amgen
+  indication: |
+    [DLL3](target/DLL3.qmd) × CD3 bispecific T-cell engager approved in the U.S. for adult extensive-stage [SCLC](disease/SCLC.qmd) with disease progression on or after platinum-based chemotherapy.
+- drug: Tam-Peli
+  compound: Tambotatug pelitecan / YL201 / RG6919
+  path: compound/Tam_Peli.html
+  company: MediLink Therapeutics, Roche
+  indication: |
+    Investigational [B7-H3](target/B7-H3.qmd)-targeted ADC with China NDA acceptances for recurrent/metastatic nasopharyngeal carcinoma and recurrent [SCLC](disease/SCLC.qmd).
+- drug: Ris-Rez
+  compound: Risvutatug rezetecan / HS-20093 / GSK5764227
+  path: compound/Ris_Rez.html
+  company: Hansoh Pharma, GSK
+  indication: |
+    Investigational [B7-H3](target/B7-H3.qmd)-targeted ADC with China BLA accepted for [SCLC](disease/SCLC.qmd) and global Phase 3 development in relapsed SCLC.
 - drug: Januvia
   compound: Sitagliptin
   path: compound/Januvia.html

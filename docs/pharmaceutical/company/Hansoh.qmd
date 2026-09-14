@@ -1,0 +1,12 @@
+---
+title: "Hansoh Pharma（翰森制药）"
+---
+
+# Oncology Pipeline
+
+- [Ris-Rez / Risvutatug rezetecan](../compound/Ris_Rez.qmd)，[B7-H3](../target/B7-H3.qmd)-targeted [ADC](../other/ADC.qmd)
+
+# Notes
+
+Hansoh Pharma是一家中国制药公司，业务覆盖肿瘤、中枢神经、感染、代谢和自身免疫等领域。Ris-Rez / HS-20093由Hansoh发现和开发；2023年，Hansoh将中国大陆及港澳台以外全球权利授权给[GSK](GSK.qmd)。
+

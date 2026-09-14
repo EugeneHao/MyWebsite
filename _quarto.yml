@@ -199,6 +199,16 @@ website:
               contents:
               - text: Elfe-D
                 href: docs/pharmaceutical/compound/Elfe_D.qmd
+            - section: MediLink Therapeutics
+              href: docs/pharmaceutical/company/MediLink.qmd
+              contents:
+              - text: Tam-Peli
+                href: docs/pharmaceutical/compound/Tam_Peli.qmd
+            - section: Hansoh Pharma
+              href: docs/pharmaceutical/company/Hansoh.qmd
+              contents:
+              - text: Ris-Rez
+                href: docs/pharmaceutical/compound/Ris_Rez.qmd
             - section: Akeso
               href: docs/pharmaceutical/company/Akeso.qmd
               contents:
@@ -300,6 +310,8 @@ website:
                 href: docs/pharmaceutical/compound/Zelboraf.qmd
               - text: Cotellic
                 href: docs/pharmaceutical/compound/Cotellic.qmd
+              - text: Tam-Peli
+                href: docs/pharmaceutical/compound/Tam_Peli.qmd
             - section: Abbvie
               href: docs/pharmaceutical/company/Abbvie.qmd
               contents:        
@@ -314,6 +326,8 @@ website:
                 href: docs/pharmaceutical/compound/Dostarlimab.qmd
               - text: Tafinlar
                 href: docs/pharmaceutical/compound/Tafinlar.qmd  
+              - text: Ris-Rez
+                href: docs/pharmaceutical/compound/Ris_Rez.qmd
             - section: Novartis
               href: docs/pharmaceutical/company/Novartis.qmd
               contents: 
@@ -340,7 +354,10 @@ website:
               - text: Trodelvy
                 href: docs/pharmaceutical/compound/Saci_G.qmd
             - section: Amgen 
+              href: docs/pharmaceutical/company/Amgen.qmd
               contents: 
+              - text: Imdelltra / Tarlatamab
+                href: docs/pharmaceutical/compound/Tarlatamab.qmd
               - text: Carfilzomib
                 href: docs/pharmaceutical/compound/Carfilzomib.qmd
           - section: Regulatory
@@ -401,6 +418,8 @@ website:
               href: docs/pharmaceutical/target/TROP2.qmd
             - text: B7-H3
               href: docs/pharmaceutical/target/B7-H3.qmd
+            - text: DLL3
+              href: docs/pharmaceutical/target/DLL3.qmd
             - text: KRAS
               href: docs/pharmaceutical/target/KRAS.qmd
           - text: SDTM

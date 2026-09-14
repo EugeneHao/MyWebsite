@@ -1,14 +1,16 @@
 listing: 
   type: table
-  sort-ui: [Abbr]
+  sort-ui: [Area, Abbr]
   fields: 
     - Abbr
+    - Area
     - Full
     - Description
   field-links: 
     - Abbr
   field-display-names: 
     Abbr: Abbreviation
+    Area: Therapeutic Area
     Full: Full Name
 format:
   html:

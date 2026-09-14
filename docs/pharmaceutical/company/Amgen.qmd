@@ -1,0 +1,13 @@
+---
+title: "Amgen"
+---
+
+# Oncology and Hematology Products
+
+- [Tarlatamab / Imdelltra](../compound/Tarlatamab.qmd)，[DLL3](../target/DLL3.qmd) × CD3 bispecific T-cell engager，用于经platinum-based chemotherapy后进展的extensive-stage [SCLC](../disease/SCLC.qmd)
+- [Carfilzomib](../compound/Carfilzomib.qmd)
+
+# Notes
+
+Amgen在肿瘤领域同时布局双特异性T-cell engager、蛋白降解、免疫肿瘤和血液肿瘤治疗。Tarlatamab是其BiTE平台在实体瘤中的代表性产品之一。
+

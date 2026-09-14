@@ -1,0 +1,196 @@
+---
+title: "Risvutatug Rezetecan, Ris-Rez（HS-20093/GSK5764227）"
+description: "介绍B7-H3 ADC Ris-Rez的结构、作用机制、临床开发、监管状态、安全性和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Risvutatug rezetecan, Ris-Rez（[Hansoh Pharma / 翰森制药](../company/Hansoh.qmd)；development codes: HS-20093、GSK5764227）**是一种靶向**[B7-H3, CD276](../target/B7-H3.qmd)**的**[antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Ris-Rez由全人源anti-B7-H3 monoclonal antibody与topoisomerase I inhibitor payload通过tetrapeptide-based cleavable linker连接而成。2023年12月，Hansoh将中国大陆、香港、澳门和台湾以外的全球独家开发、生产和商业化权利授予[GSK](../company/GSK.qmd)。
+
+截至2026年9月，Ris-Rez尚未获得正式上市批准。2026年9月7日，Hansoh宣布中国NMPA已受理HS-20093用于既往platinum-based chemotherapy失败后成人SCLC的BLA。该申请基于ARTEMIS-008 Phase 3研究，据公司公告该研究已在2026年7月达到OS主要终点。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Risvutatug rezetecan |
+| Short name | Ris-Rez |
+| Development codes | HS-20093、GSK5764227 |
+| Original developer | [Hansoh Pharma](../company/Hansoh.qmd) |
+| Global partner | [GSK](../company/GSK.qmd)，不含中国大陆及港澳台 |
+| Drug class | [B7-H3](../target/B7-H3.qmd)-targeted ADC |
+| Antibody | Fully human anti-B7-H3 monoclonal antibody |
+| Payload class | Topoisomerase I inhibitor |
+| Linker | Tetrapeptide-based cleavable linker |
+| Route | Intravenous infusion |
+| Current status | BLA accepted by China NMPA for SCLC；global Phase 3 and Phase 1 development ongoing |
+
+# Molecular Design（分子设计）
+
+Ris-Rez的三个组成部分：
+
+| 组成 | 作用 |
+|---|---|
+| Anti-B7-H3 antibody | 识别B7-H3表达肿瘤细胞 |
+| Cleavable linker | 连接抗体与payload，影响稳定性和释放 |
+| Topoisomerase I inhibitor payload | 抑制DNA复制相关修复，诱导细胞死亡 |
+
+它与[Ifinatamab deruxtecan](Ifinatamab_Deruxtecan.qmd)、[Elfe-D](Elfe_D.qmd)和[Tam-Peli](Tam_Peli.qmd)同属B7-H3 ADC，但不是同一种药物。
+
+# Mechanism of Action（作用机制）
+
+Ris-Rez作用流程：
+
+```text
+B7-H3 binding
+      |
+ADC internalization
+      |
+Linker cleavage
+      |
+TOP1 inhibitor payload release
+      |
+DNA damage
+      |
+Tumor-cell death
+```
+
+由于payload属于TOP1 inhibitor类，疗效和毒性均可能受到肿瘤增殖状态、DNA damage response、drug efflux和正常组织暴露影响。
+
+# Clinical Development（临床开发）
+
+## Small Cell Lung Cancer
+
+Ris-Rez在SCLC中处于最领先开发阶段之一。
+
+中国ARTEMIS-008 Phase 3研究用于既往platinum-based therapy后进展的advanced或relapsed SCLC患者。Hansoh公告称，该研究于2026年7月达到OS主要终点，并支持2026年9月中国NMPA BLA受理。
+
+全球EMBOLD SCLC-301研究是一项Phase 3、multicenter、randomized、open-label研究，比较Ris-Rez与topotecan，用于relapsed SCLC。
+
+## Sarcoma and Other Solid Tumors
+
+Ris-Rez也在骨肉瘤和其他肉瘤中开发。Hansoh披露其已进入中国骨肉瘤Phase 3开发，并在复发或难治性肉瘤中报告Phase 2数据。
+
+其他探索方向包括：
+
+- [NSCLC](../disease/NSCLC.qmd)；
+- head and neck cancer；
+- prostate cancer；
+- esophageal squamous cell carcinoma；
+- colorectal cancer；
+- other advanced solid tumors。
+
+# Regulatory Status（监管状态）
+
+截至2026年9月：
+
+- 尚未获得FDA、EMA或NMPA正式上市批准；
+- 中国NMPA已受理SCLC适应证BLA；
+- 已获得多项监管认定，包括Breakthrough Therapy Designation、Orphan Drug Designation和PRIME等；
+- GSK负责中国大陆及港澳台以外的全球开发。
+
+监管认定和BLA受理均不等同于上市批准。
+
+# Safety Profile（安全性）
+
+Ris-Rez安全性仍以临床试验数据为主。公开资料显示，重点毒性包括：
+
+| 毒性类别 | 可能表现 |
+|---|---|
+| Hematologic toxicity | neutropenia、leukopenia、anemia、thrombocytopenia |
+| Gastrointestinal toxicity | nausea、vomiting、diarrhea、decreased appetite |
+| Fatigue | 乏力 |
+| Liver laboratory abnormality | ALT/AST升高 |
+| ILD/pneumonitis | TOP1 ADC需重点监测，具体发生率取决于成熟数据 |
+| Infusion reaction | 发热、寒战、过敏样反应 |
+
+Hansoh公开资料中提到，经治肺癌患者最常见的≥Grade 3 treatment-related adverse events包括中性粒细胞计数降低、白细胞计数降低和贫血。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Randomized Phase 3 Design
+
+SCLC Phase 3研究以OS为主要终点，能够直接支持临床获益评价。需要关注：
+
+- treatment line；
+- platinum-sensitive vs refractory relapse；
+- prior immunotherapy；
+- brain metastasis；
+- topotecan作为对照的地区适用性；
+- subsequent therapy对OS的影响。
+
+## Biomarker Strategy
+
+B7-H3表达可能影响疗效，但目前B7-H3 ADC开发中常见问题包括：
+
+- 是否采用all-comer design；
+- 是否预设B7-H3 high/low亚组；
+- IHC assay和cutoff是否统一；
+- 原发灶与转移灶表达差异；
+- 治疗后B7-H3表达是否改变。
+
+## Safety Analysis
+
+TOP1 ADC安全性分析应重点呈现：
+
+- hematologic toxicity；
+- dose interruption；
+- dose reduction；
+- treatment discontinuation；
+- ILD/pneumonitis；
+- exposure-adjusted incidence；
+- 与对照化疗的毒性谱差异。
+
+# Common Pitfalls（常见误区）
+
+1. **Ris-Rez不是DLL3药物。**  
+   它靶向B7-H3；DLL3代表药物是tarlatamab。
+
+2. **Ris-Rez和I-DXd不能视为同一种B7-H3 ADC。**  
+   二者来自不同平台，linker、payload、剂量和临床证据不同。
+
+3. **BLA受理不等于获批。**  
+   截至2026年9月，Ris-Rez仍处于审评和临床开发阶段。
+
+4. **SCLC结果不能直接外推到所有实体瘤。**  
+   不同癌种B7-H3表达、payload敏感性和毒性窗口均可能不同。
+
+# Key Takeaways（关键总结）
+
+1. Ris-Rez即risvutatug rezetecan，研发代号HS-20093/GSK5764227。
+2. 它是Hansoh开发、GSK获得海外权利的B7-H3 ADC。
+3. Ris-Rez在SCLC、骨肉瘤和其他实体瘤中处于后期或早期临床开发。
+4. 中国NMPA已受理其SCLC BLA，但截至2026年9月尚未正式获批。
+5. 统计学上应重点关注OS、B7-H3 biomarker strategy、对照组选择和TOP1 ADC安全性。
+
+# References（参考资料）
+
+1. Hansoh Pharma. *Biologics License Application of Risvutatug Rezetecan (HS-20093) for Injection for Small Cell Lung Cancer Accepted by the NMPA*. September 7, 2026.  
+   <https://www.hansoh.cn/en/news/news-detail-514074.htm>
+
+2. Hansoh Pharma. *ESMO TAT Asia 2026: Risvutatug Rezetecan Phase 2 Data in Relapsed or Refractory Sarcomas*. June 2026.  
+   <https://www.hspharm.com/news/news-detail-513477.htm>
+
+3. ClinicalTrials.gov. *A Study of GSK5764227 in Participants With Relapsed Small Cell Lung Cancer*. NCT07099898.  
+   <https://clinicaltrials.gov/study/NCT07099898>
+
+4. GSK. *GSK enters exclusive license agreement with Hansoh for HS-20093*. December 20, 2023.  
+   <https://jp.gsk.com/ja-jp/news/press-releases/20240117-gsk-enters-exclusive-license-agreement-with-hs-20093/>
+

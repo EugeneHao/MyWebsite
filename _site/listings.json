@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/docs/pharmaceutical/listing-disease.html",
-    "items": []
-  },
-  {
     "listing": "/docs/pharmaceutical/listing-SDTM.html",
     "items": []
   },
@@ -12,7 +8,19 @@
     "items": []
   },
   {
-    "listing": "/docs/pharmaceutical/listing-target.html",
+    "listing": "/docs/pharmaceutical/listing-regulatory.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-compound.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/courses/index.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/visualization/index.html",
     "items": []
   },
   {
@@ -25,19 +33,7 @@
     ]
   },
   {
-    "listing": "/docs/visualization/index.html",
-    "items": []
-  },
-  {
-    "listing": "/docs/courses/index.html",
-    "items": []
-  },
-  {
-    "listing": "/docs/pharmaceutical/listing-compound.html",
-    "items": []
-  },
-  {
-    "listing": "/docs/pharmaceutical/listing-regulatory.html",
+    "listing": "/docs/pharmaceutical/listing-target.html",
     "items": []
   },
   {
@@ -46,6 +42,10 @@
   },
   {
     "listing": "/docs/pharmaceutical/index.html",
+    "items": []
+  },
+  {
+    "listing": "/docs/pharmaceutical/listing-disease.html",
     "items": []
   }
 ]

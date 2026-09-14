@@ -174,8 +174,8 @@ SCLC临床上最常采用**Veterans Administration Lung Study Group, VALSG（退
 |---|---|
 | Topotecan | 化疗 |
 | Lurbinectedin | 转录抑制剂 |
-| Tarlatamab | DLL3 × CD3双特异性T-cell engager, TCE |
-| 临床试验 | ADC、DLL3靶向药物等 |
+| [Tarlatamab](../compound/Tarlatamab.qmd) | [DLL3](../target/DLL3.qmd) × CD3双特异性T-cell engager, TCE |
+| 临床试验 | ADC、[DLL3](../target/DLL3.qmd)靶向药物等 |
 
 # 新兴治疗方向
 
@@ -183,14 +183,14 @@ SCLC临床上最常采用**Veterans Administration Lung Study Group, VALSG（退
 
 | 靶点 | 药物类型 |
 |---|---|
-| DLL3 | T-cell engager、ADC |
-| [B7-H3](../target/B7-H3.qmd) | [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)、[Elfe-D](../compound/Elfe_D.qmd)等ADC |
+| [DLL3](../target/DLL3.qmd) | [Tarlatamab](../compound/Tarlatamab.qmd)等T-cell engager、ADC |
+| [B7-H3](../target/B7-H3.qmd) | [Ifinatamab deruxtecan](../compound/Ifinatamab_Deruxtecan.qmd)、[Elfe-D](../compound/Elfe_D.qmd)、[Tam-Peli](../compound/Tam_Peli.qmd)、[Ris-Rez](../compound/Ris_Rez.qmd)等ADC |
 | [TROP2](../target/TROP2.qmd) | ADC |
 | PARP | PARP inhibitor |
 | TIGIT | 免疫治疗 |
 | Aurora kinase | 小分子抑制剂 |
 
-其中**DLL3**是目前最受关注的新靶点之一，因为约80%-90%的SCLC表达DLL3，而正常组织表达极低。
+其中**[DLL3](../target/DLL3.qmd)**是目前最受关注的新靶点之一，因为约80%-90%的SCLC表达DLL3，而正常组织表达极低。
 
 # Clinical Trial Endpoints（临床试验终点）
 
@@ -278,7 +278,7 @@ III期研究通常采用：
 1. SCLC是高度恶性、快速进展的神经内分泌肺癌，与吸烟高度相关。
 2. 临床主要分为LS-SCLC和ES-SCLC，两者治疗策略不同。
 3. 一线ES-SCLC标准治疗为platinum + etoposide联合PD-L1抑制剂。
-4. DLL3是目前最具潜力的新靶点，TCE和ADC是未来研发重点。
+4. [DLL3](../target/DLL3.qmd)是目前最具潜力的新靶点，TCE和ADC是未来研发重点。
 5. 生物统计学上，SCLC研究以OS为核心终点，并需关注免疫治疗中的非比例风险及新型生物标志物开发。
 
 # References

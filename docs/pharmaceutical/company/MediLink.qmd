@@ -1,0 +1,12 @@
+---
+title: "MediLink Therapeutics（宜联生物）"
+---
+
+# Oncology Pipeline
+
+- [Tam-Peli / Tambotatug pelitecan](../compound/Tam_Peli.qmd)，[B7-H3](../target/B7-H3.qmd)-targeted [ADC](../other/ADC.qmd)
+
+# Notes
+
+MediLink Therapeutics是一家专注于创新ADC平台和肿瘤靶向治疗的中国生物技术公司。其TMALIN平台强调tumor microenvironment-activable linker-payload设计。2026年，MediLink与[Roche](Roche.qmd)就YL201/Tam-Peli达成大中华区以外全球授权合作。
+

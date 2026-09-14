@@ -35,6 +35,16 @@
   country: China
   drug: |
     [Elfe-D / Elfetabart drozuntecan](compound/Elfe_D.qmd)
+- name: MediLink Therapeutics
+  path: company/MediLink.html
+  country: China
+  drug: |
+    [Tam-Peli / Tambotatug pelitecan](compound/Tam_Peli.qmd)
+- name: Hansoh Pharma
+  path: company/Hansoh.html
+  country: China
+  drug: |
+    [Ris-Rez / Risvutatug rezetecan](compound/Ris_Rez.qmd)
 - name: Kelun-Biotech
   path: company/Kelun_Biotech.html
   country: China
@@ -49,10 +59,11 @@
   drug: |
     [Stelara](compound/Stelara.qmd), [Remicade](compound/Remicade.qmd), [Darzalex](compound/Darzalex.qmd), Imbruvica, [Xarelto](compound/Xarelto.qmd), [Carvykti](compound/Carvykti.qmd), [Tecvayli](compound/Tecvayli.qmd), [Darzalex](compound/Darzalex.qmd)
 - name: Roche
+  path: company/Roche.html
   country: Switzerland
   drug: |
     Ocrevus, [Avastin](compound/Avastin.qmd), [Herceptin](compound/Herceptin.qmd), [Pertuzumab](compound/Pertuzumab.qmd), [Rituxan](compound/Rituxan.qmd), Hemlibra, [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Sirolimus](compound/Sirolimus.qmd), 
-    [Cotellic](compound/Cotellic.qmd)
+    [Cotellic](compound/Cotellic.qmd), [Tam-Peli](compound/Tam_Peli.qmd)
 - name: Novartis
   path: company/Novartis.html
   country: Switzerland
@@ -64,18 +75,20 @@
   drug: |
     [Taxotere](compound/Docetaxel.qmd), Dupixent, Lantus, Aubagio, Toujeo, Praluent
 - name: GSK
+  path: company/GSK.html
   country: UK
   drug: |
-    Shingrix, Trelegy, Nucala, Zejula, Benlysta, [Jemperli](compound/Dostarlimab.qmd), [Tafinlar](compound/Tafinlar.qmd)
+    Shingrix, Trelegy, Nucala, Zejula, Benlysta, [Jemperli](compound/Dostarlimab.qmd), [Tafinlar](compound/Tafinlar.qmd), [Ris-Rez](compound/Ris_Rez.qmd)
 - name: AstraZeneca
   path: company/AstraZeneca.html
   country: UK
   drug: |
     Tagrisso, [Imfinzi](compound/Imfinzi.qmd), Farxiga, Symbicort, Crestor, [Lynparza](compound/Lynparza.qmd), [Datroway / Dato-DXd](compound/Dato_DXd.qmd)
 - name: Amgen
+  path: company/Amgen.html
   country: USA
   drug: |
-    Enbrel, Prolia, Otezla, Repatha, Neulasta
+    Enbrel, Prolia, Otezla, Repatha, Neulasta, [Imdelltra / Tarlatamab](compound/Tarlatamab.qmd), [Carfilzomib](compound/Carfilzomib.qmd)
 - name: Gilead
   path: company/Gilead.html
   country: USA

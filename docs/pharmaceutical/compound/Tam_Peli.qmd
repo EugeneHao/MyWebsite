@@ -1,0 +1,194 @@
+---
+title: "Tambotatug Pelitecan, Tam-Peli（YL201/RG6919）"
+description: "介绍B7-H3 ADC Tam-Peli的结构、作用机制、临床开发、监管状态、安全性和统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Drug Development
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Tambotatug pelitecan, Tam-Peli（[MediLink Therapeutics / 宜联生物](../company/MediLink.qmd)；development codes: YL201、RG6919）**是一种靶向**[B7-H3, CD276](../target/B7-H3.qmd)**的**[antibody-drug conjugate, ADC（抗体偶联药物）](../other/ADC.qmd)**。
+
+Tam-Peli使用MediLink的TMALIN平台，将抗B7-H3抗体与camptothecin/topoisomerase I inhibitor类linker-payload连接。其核心开发逻辑是利用B7-H3在多种实体瘤中的高表达，将细胞毒payload递送至肿瘤细胞或肿瘤微环境中释放。
+
+2026年1月，MediLink与[Roche](../company/Roche.qmd)达成YL201独家许可协议，Roche获得大中华区以外的全球开发、生产和商业化权利。
+
+截至2026年9月，Tam-Peli尚未获得正式上市批准；但中国NMPA/CDE已接受其用于复发或转移性鼻咽癌和复发性SCLC的上市申请，其中SCLC申请基于TAISHAN-302 Phase 3研究达到OS主要终点。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Tambotatug pelitecan |
+| Short name | Tam-Peli |
+| Development codes | YL201、YL-201、RG6919 |
+| Original developer | [MediLink Therapeutics](../company/MediLink.qmd) |
+| Global partner | [Roche](../company/Roche.qmd)，大中华区以外 |
+| Drug class | [B7-H3](../target/B7-H3.qmd)-targeted ADC |
+| Antibody | Anti-B7-H3 monoclonal antibody |
+| Payload class | Topoisomerase I inhibitor / camptothecin-derived payload |
+| Platform | TMALIN tumor microenvironment-activable linker-payload platform |
+| Route | Intravenous infusion |
+| Current status | NDA accepted in China for NPC and SCLC；investigational elsewhere |
+
+# Molecular Design（分子设计）
+
+Tam-Peli包含三个核心部分：
+
+| 组成 | 作用 |
+|---|---|
+| Anti-B7-H3 antibody | 识别B7-H3阳性肿瘤细胞 |
+| Tumor-cleavable linker | 在肿瘤环境或细胞内释放payload |
+| Topoisomerase I inhibitor payload | 诱导DNA损伤和肿瘤细胞死亡 |
+
+TMALIN平台强调tumor microenvironment-activable linker-payload设计，目标是在维持血液循环稳定性的同时，在肿瘤区域释放细胞毒payload并产生bystander effect。
+
+# Mechanism of Action（作用机制）
+
+Tam-Peli作用过程可以概括为：
+
+```text
+B7-H3-positive tumor cell
+        |
+    Tam-Peli binding
+        |
+Internalization / tumor microenvironment activation
+        |
+Payload release
+        |
+Topoisomerase I inhibition
+        |
+DNA damage and tumor-cell death
+```
+
+与[tarlatamab](Tarlatamab.qmd)不同，Tam-Peli不是T-cell engager；它依赖ADC递送payload产生细胞毒作用。
+
+# Clinical Development（临床开发）
+
+## Small Cell Lung Cancer
+
+Tam-Peli在SCLC中已进入注册性开发。2026年9月2日，MediLink宣布Tam-Peli用于复发性SCLC的NDA已获中国NMPA/CDE受理，并拟纳入priority review。
+
+该申请基于TAISHAN-302 Phase 3研究。公司公告称该研究已达到OS主要终点，完整疗效和安全性数据计划在2026 World Conference on Lung Cancer公布。
+
+## Nasopharyngeal Carcinoma
+
+2026年7月，Tam-Peli用于三线及以上复发或转移性鼻咽癌的NDA获CDE受理。该申请基于TAISHAN-301，研究比较YL201与investigator's choice chemotherapy，并在预设期中分析中达到由BICR评估的ORR共同主要终点。
+
+## Combination Development
+
+DeLLphi-310正在评估：
+
+- [tarlatamab](Tarlatamab.qmd)；
+- Tam-Peli / YL201；
+- 可选PD-L1 inhibitor [durvalumab](Imfinzi.qmd)；
+
+用于extensive-stage [SCLC](../disease/SCLC.qmd)。
+
+这种组合同时覆盖：
+
+- [DLL3](../target/DLL3.qmd) T-cell engager；
+- [B7-H3](../target/B7-H3.qmd) ADC；
+- PD-L1免疫检查点抑制。
+
+其主要挑战是重叠毒性、治疗顺序、剂量优化和患者耐受性。
+
+# Safety Profile（安全性）
+
+Tam-Peli尚未上市，安全性认识主要来自临床试验和公司披露。作为B7-H3 ADC，重点关注：
+
+| 毒性类别 | 可能表现 |
+|---|---|
+| Hematologic toxicity | neutropenia、anemia、thrombocytopenia |
+| Gastrointestinal toxicity | nausea、vomiting、diarrhea、stomatitis |
+| Fatigue | 乏力、体力下降 |
+| Liver function abnormality | ALT/AST或bilirubin升高 |
+| ILD/pneumonitis | ADC开发中需重点监测，具体风险需等待完整数据 |
+| Infusion reaction | 发热、寒战、皮疹、低血压等 |
+
+若与tarlatamab或PD-L1 inhibitor联合，还需叠加监测CRS、ICANS和免疫相关不良反应。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## ORR与OS共同终点
+
+NPC研究中ORR达到预设期中分析标准，但OS尚未成熟。解释时应区分：
+
+- ORR可较早反映抗肿瘤活性；
+- DOR决定反应是否具有临床意义；
+- OS更受后续治疗影响，但证据层级更强；
+- 若采用共同主要终点，需要明确alpha分配和层级检验。
+
+## SCLC OS终点
+
+TAISHAN-302以OS作为主要终点更直接反映临床获益。分析需关注：
+
+- prior platinum therapy；
+- prior PD-L1 inhibitor；
+- chemotherapy-free interval；
+- brain metastasis；
+- subsequent therapy；
+- 中国人群数据向全球人群外推的限制。
+
+## Combination Trial
+
+Tam-Peli与tarlatamab组合研究需要特别关注：
+
+- dose-escalation和dose-optimization；
+- DLT window；
+- attribution of adverse events；
+- CRS/ICANS和ADC毒性的时间重叠；
+- 是否需要lead-in或step-up dosing。
+
+# Common Pitfalls（常见误区）
+
+1. **Tam-Peli不是DLL3药物。**  
+   它靶向B7-H3；DLL3药物是tarlatamab等。
+
+2. **NDA受理不等于获批。**  
+   截至2026年9月，Tam-Peli仍未正式上市。
+
+3. **B7-H3 ADC之间不能直接互换。**  
+   Tam-Peli、I-DXd、Elfe-D和Ris-Rez的抗体、payload、linker、DAR和证据均不同。
+
+4. **ORR阳性不等于OS必然阳性。**  
+   尤其在单臂或期中分析场景中，需要等待成熟OS和完整安全性数据。
+
+# Key Takeaways（关键总结）
+
+1. Tam-Peli即tambotatug pelitecan，研发代号YL201/RG6919。
+2. 它是MediLink开发、Roche获得大中华区以外权利的B7-H3 ADC。
+3. Tam-Peli已在中国进入NPC和SCLC上市申请审评阶段。
+4. SCLC项目TAISHAN-302据公司公告已达到OS主要终点。
+5. 与tarlatamab联合代表了B7-H3 ADC + DLL3 T-cell engager的组合探索方向。
+
+# References（参考资料）
+
+1. MediLink Therapeutics. *MediLink Therapeutics Announces NDA Acceptance for Tam-Peli (Injection) in Recurrent Small Cell Lung Cancer by China NMPA*. September 2, 2026.  
+   <https://medilinkthera.com/news-details/61>
+
+2. MediLink Therapeutics. *Medilink Announces Formal Acceptance by NMPA of Marketing Application for Tam-Peli (YL201) for Third-Line and Beyond Treatment of Nasopharyngeal Carcinoma*. July 18, 2026.  
+   <https://www.medilinkthera.com/news-details/58>
+
+3. National Cancer Institute. *Anti-B7-H3 antibody-drug conjugate YL201*.  
+   <https://www.cancer.gov/publications/dictionaries/cancer-drug/def/anti-b7-h3-antibody-drug-conjugate-yl201>
+
+4. U.S. Food and Drug Administration. *Global Substance Registration System: Tambotatug Pelitecan*.  
+   <https://precision.fda.gov/ginas/app/ui/substances/38fd15f1-0c40-4a4b-92c1-77e9e00e3c72>
+
+5. ClinicalTrials.gov. *Study of Tarlatamab in Combination With YL201 With or Without Anti-PD-L1 in ES-SCLC*. NCT06898957.  
+   <https://clinicaltrials.gov/study/NCT06898957>
+

@@ -241,7 +241,7 @@
   chinese: 肺癌
   body part: Lungs
   drugs: |
-    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Tafinlar](compound/Tafinlar.qmd), [Mekinist](compound/Mekinist.qmd), [Krazati](compound/Krazati.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd), [Ivonescimab](compound/Ivonescimab.qmd), [Ifinatamab Deruxtecan](compound/Ifinatamab_Deruxtecan.qmd), [Elfe-D](compound/Elfe_D.qmd), Tagrisso, Imfinzi
+    [Keytruda](compound/Keytruda.qmd), [Opdivo](compound/Opdivo.qmd), [Tecentriq](compound/Tecentriq.qmd), [Xalkori](compound/Xalkori.qmd), [Tafinlar](compound/Tafinlar.qmd), [Mekinist](compound/Mekinist.qmd), [Krazati](compound/Krazati.qmd), [Pumitamig](compound/Pumitamig.qmd), [Izalontamab Brengitecan](compound/Izalontamab_Brengitecan.qmd), [Ivonescimab](compound/Ivonescimab.qmd), [Ifinatamab Deruxtecan](compound/Ifinatamab_Deruxtecan.qmd), [Elfe-D](compound/Elfe_D.qmd), [Tarlatamab](compound/Tarlatamab.qmd), [Tam-Peli](compound/Tam_Peli.qmd), [Ris-Rez](compound/Ris_Rez.qmd), Tagrisso, Imfinzi
 
 - name: Non-Small Cell Lung Cancer (NSCLC)
   path: disease/NSCLC.html
@@ -255,7 +255,7 @@
   chinese: 小细胞肺癌
   body part: Lungs
   drugs: |
-    [Tecentriq](compound/Tecentriq.qmd), [Pumitamig](compound/Pumitamig.qmd), [Ifinatamab Deruxtecan](compound/Ifinatamab_Deruxtecan.qmd), [Elfe-D](compound/Elfe_D.qmd), Durvalumab, Topotecan, Lurbinectedin, Tarlatamab
+    [Tecentriq](compound/Tecentriq.qmd), [Pumitamig](compound/Pumitamig.qmd), [Ifinatamab Deruxtecan](compound/Ifinatamab_Deruxtecan.qmd), [Elfe-D](compound/Elfe_D.qmd), [Tarlatamab](compound/Tarlatamab.qmd), [Tam-Peli](compound/Tam_Peli.qmd), [Ris-Rez](compound/Ris_Rez.qmd), Durvalumab, Topotecan, Lurbinectedin
 
 - name: Breast Cancer
   path: disease/Breast_Cancer.html

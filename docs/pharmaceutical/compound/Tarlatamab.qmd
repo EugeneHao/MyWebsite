@@ -1,0 +1,286 @@
+---
+title: "Tarlatamab（Imdelltra，AMG 757）"
+description: "介绍DLL3×CD3 BiTE tarlatamab的作用机制、SCLC适应证、关键临床研究、安全性和生物统计学考虑。"
+author: "Hao Sun"
+date: last-modified
+categories:
+  - Oncology
+  - Drug Profile
+  - Immuno-Oncology
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    df-print: paged
+bibliography: ../../../references.bib
+---
+
+# 药物概述
+
+**Tarlatamab-dlle（[Amgen](../company/Amgen.qmd)；商品名：Imdelltra；development code: AMG 757）**是一种靶向**[delta-like ligand 3, DLL3](../target/DLL3.qmd)**和CD3的双特异性T细胞衔接药物，属于**bispecific T-cell engager, BiTE（双特异性T细胞衔接器）**。
+
+Tarlatamab一端结合SCLC细胞表面的DLL3，另一端结合T细胞表面的CD3，从而把T细胞带到肿瘤细胞附近并触发T细胞介导的杀伤。
+
+2024年5月16日，美国FDA授予tarlatamab accelerated approval，用于成人extensive-stage **[small cell lung cancer, ES-SCLC](../disease/SCLC.qmd#extensive-stage-sclc)**，适用于在platinum-based chemotherapy期间或之后发生疾病进展的患者。该批准基于DeLLphi-301的ORR和DOR，后续DeLLphi-304 Phase 3研究显示tarlatamab相比化疗改善OS。
+
+# Drug Profile（药物信息）
+
+| 项目 | 内容 |
+|---|---|
+| Generic name | Tarlatamab-dlle |
+| Brand name | Imdelltra |
+| Development code | AMG 757 |
+| Company | [Amgen](../company/Amgen.qmd) |
+| Drug class | DLL3 × CD3 bispecific T-cell engager |
+| Platform | BiTE |
+| Tumor target | [DLL3](../target/DLL3.qmd) |
+| Immune-cell target | CD3 |
+| Route | Intravenous infusion |
+| U.S. initial approval | 2024年5月16日 |
+| Approved indication | ES-SCLC after progression on or after platinum-based chemotherapy |
+| Approval type | Accelerated approval，后续Phase 3 OS结果支持临床获益 |
+
+# Mechanism of Action（作用机制）
+
+Tarlatamab的作用可概括为：
+
+```text
+DLL3-positive SCLC cell
+        |
+    tarlatamab
+        |
+CD3-positive T cell
+        |
+T-cell activation
+        |
+Tumor-cell killing
+```
+
+与PD-1或PD-L1抑制剂不同，tarlatamab并不是解除已有免疫抑制信号，而是主动把T细胞重新定向至DLL3阳性肿瘤细胞。
+
+其关键步骤包括：
+
+1. 结合DLL3-positive tumor cell；
+2. 同时结合CD3-positive T cell；
+3. 形成免疫突触样结构；
+4. 激活T细胞释放细胞毒颗粒和细胞因子；
+5. 诱导肿瘤细胞死亡。
+
+# 与ADC和免疫检查点抑制剂的区别
+
+| 特征 | Tarlatamab | ADC | PD-1/PD-L1 inhibitor |
+|---|---|---|---|
+| 药物类型 | T-cell engager | 抗体偶联药物 | 免疫检查点抑制剂 |
+| 是否携带payload | 否 | 是 | 否 |
+| 主要肿瘤靶点 | DLL3 | TROP2、B7-H3、HER2等 | PD-1或PD-L1 |
+| 主要机制 | 重定向T细胞杀伤 | 递送细胞毒payload | 解除T细胞抑制 |
+| 代表毒性 | CRS、ICANS | 骨髓抑制、ILD、GI毒性 | 免疫相关不良反应 |
+
+# Approved Indication（获批适应证）
+
+## Extensive-Stage SCLC
+
+美国FDA批准tarlatamab用于：
+
+- adult patients；
+- extensive-stage SCLC；
+- disease progression on or after platinum-based chemotherapy。
+
+该适应证不要求常规DLL3检测作为伴随诊断。
+
+## 给药框架
+
+FDA标签推荐采用step-up dosing，以降低CRS风险：
+
+| 时间 | 剂量 |
+|---|---:|
+| Cycle 1 Day 1 | 1 mg |
+| Cycle 1 Day 8 | 10 mg |
+| Cycle 1 Day 15 | 10 mg |
+| 此后 | 10 mg every 2 weeks |
+
+实际给药需要结合标签中的预处理、监测、住院或观察要求、CRS/ICANS管理和机构流程。
+
+# Key Clinical Studies（关键临床研究）
+
+## DeLLphi-301
+
+DeLLphi-301是一项open-label、multicenter、多队列研究，纳入既往接受platinum-based chemotherapy后进展的relapsed/refractory ES-SCLC患者。
+
+FDA accelerated approval主要基于99例接受10 mg Q2W方案患者的结果：
+
+| Endpoint | 结果 |
+|---|---|
+| ORR by blinded independent central review | 40% |
+| Median DOR | 9.7 months |
+
+该研究显示DLL3 T-cell engager在SCLC中具有临床活性，但单臂研究无法完整排除选择偏倚，因此需要随机对照研究验证临床获益。
+
+## DeLLphi-304
+
+DeLLphi-304是一项Phase 3、open-label、randomized trial，比较tarlatamab与化疗，用于platinum-based chemotherapy后进展的SCLC。
+
+研究显示tarlatamab相比化疗改善OS：
+
+| Endpoint | Tarlatamab | Chemotherapy |
+|---|---:|---:|
+| Median OS | 13.6 months | 8.3 months |
+| HR for death | 0.60 |  |
+| Median PFS | 4.2 months | 3.2 months |
+
+对照治疗包括topotecan、lurbinectedin或amrubicin。该研究使tarlatamab从基于反应率的加速批准，进一步获得随机OS证据支持。
+
+## CNS Activity（中枢神经系统活性）
+
+SCLC患者脑转移常见。DeLLphi-304后续分析显示，在基线存在脑转移且可评价的患者中，tarlatamab相比化疗显示更长CNS PFS和更高CNS病灶缩小比例。该结果支持在稳定、无症状或经过处理的脑转移患者中继续研究tarlatamab价值。
+
+# Safety Profile（安全性）
+
+Tarlatamab的核心安全性风险来自T细胞激活。
+
+## Boxed Warning
+
+美国处方信息包含boxed warning：
+
+- **cytokine release syndrome, CRS（细胞因子释放综合征）**；
+- neurologic toxicity，包括**immune effector cell-associated neurotoxicity syndrome, ICANS（免疫效应细胞相关神经毒性综合征）**。
+
+## 常见不良反应
+
+常见不良反应包括：
+
+| 不良反应 | 说明 |
+|---|---|
+| CRS | 多发生在早期给药周期，需step-up dosing和监测 |
+| Fatigue | 疲劳 |
+| Pyrexia | 发热 |
+| Dysgeusia | 味觉异常 |
+| Decreased appetite | 食欲下降 |
+| Musculoskeletal pain | 肌肉骨骼疼痛 |
+| Constipation | 便秘 |
+| Anemia | 贫血 |
+| Nausea | 恶心 |
+
+实验室异常可包括淋巴细胞减少、钠降低、尿酸升高、中性粒细胞减少、血红蛋白降低等。
+
+## CRS管理
+
+CRS可能表现为：
+
+- fever；
+- hypotension；
+- hypoxia；
+- chills；
+- tachycardia；
+- organ dysfunction。
+
+管理通常包括：
+
+1. 识别CRS级别；
+2. 暂停或延迟tarlatamab；
+3. 支持治疗和补液；
+4. 必要时使用tocilizumab；
+5. 中重度CRS时使用corticosteroid；
+6. 按标签决定是否重新给药或永久停药。
+
+## ICANS和神经毒性
+
+ICANS可能表现为：
+
+- confusion；
+- aphasia；
+- tremor；
+- somnolence；
+- seizure；
+- encephalopathy。
+
+治疗期间需要监测神经系统症状，尤其是在早期给药和CRS发生后。
+
+# Clinical Development（临床开发）
+
+除已获批ES-SCLC外，tarlatamab还在探索：
+
+- earlier-line SCLC；
+- limited-stage SCLC；
+- brain metastasis亚组；
+- pulmonary carcinoid和其他DLL3阳性神经内分泌肿瘤；
+- 与B7-H3 ADC [Tam-Peli](Tam_Peli.qmd)及PD-L1 inhibitor联合。
+
+其中DeLLphi-310研究评估tarlatamab联合YL201（Tam-Peli）并可联合durvalumab，用于ES-SCLC。
+
+# Biostatistical Considerations（生物统计学考虑）
+
+## Accelerated Approval
+
+DeLLphi-301基于ORR和DOR支持加速批准。统计解释应注意：
+
+- 单臂研究没有随机对照；
+- ORR受患者选择和评价标准影响；
+- DOR可支持反应持久性，但不能替代OS；
+- 需要随机确认性研究验证临床获益。
+
+## Phase 3 OS Evidence
+
+DeLLphi-304以OS为主要终点，属于更强证据层级。分析中需要关注：
+
+- prior PD-L1 exposure；
+- chemotherapy-free interval；
+- brain metastasis；
+- intended chemotherapy；
+- treatment discontinuation和后续治疗；
+- PRO终点的multiplicity控制。
+
+## Safety Analysis
+
+T-cell engager安全性分析应重点呈现：
+
+- CRS和ICANS incidence；
+- time to onset；
+- grade distribution；
+- tocilizumab和steroid use；
+- hospitalization或监测资源；
+- treatment interruption和discontinuation；
+- recurrent CRS。
+
+# Common Pitfalls（常见误区）
+
+1. **Tarlatamab不是化疗，也不是ADC。**  
+   它是DLL3 × CD3 T-cell engager。
+
+2. **FDA accelerated approval不等于传统完全批准。**  
+   初始批准基于ORR和DOR，后续DeLLphi-304提供了随机OS证据。
+
+3. **CRS不是感染性发热。**  
+   CRS可以表现为发热、低血压和低氧，需要按免疫效应细胞毒性流程处理。
+
+4. **不应把PD-L1状态当作tarlatamab疗效的核心筛选条件。**  
+   Tarlatamab的肿瘤靶点是DLL3。
+
+# Key Takeaways（关键总结）
+
+1. Tarlatamab是Amgen开发的DLL3 × CD3 BiTE，商品名Imdelltra。
+2. 它通过重定向T细胞杀伤DLL3阳性SCLC细胞发挥作用。
+3. 美国FDA于2024年5月16日批准其用于platinum-based chemotherapy后进展的成人ES-SCLC。
+4. DeLLphi-304显示tarlatamab相比化疗改善OS，是SCLC二线治疗的重要进展。
+5. 安全性重点是CRS和ICANS，需要step-up dosing、早期监测和规范管理。
+
+# References（参考资料）
+
+1. U.S. Food and Drug Administration. *FDA grants accelerated approval to tarlatamab-dlle for extensive stage small cell lung cancer*. May 16, 2024.  
+   <https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer>
+
+2. Amgen. *FDA approves Imdelltra (tarlatamab-dlle), the first and only T-cell engager therapy for ES-SCLC*. May 16, 2024.  
+   <https://www.amgen.com/newsroom/press-releases/2024/05/fda-approves-imdelltra-tarlatamabdlle-the-first-and-only-tcell-engager-therapy-for-the-treatment-of-extensivestage-small-cell-lung-cancer>
+
+3. DailyMed. *IMDELLTRA (tarlatamab-dlle) prescribing information*.  
+   <https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e7b6163-5d83-42ea-82c9-cf7620cdc782>
+
+4. Rudin CM, et al. *Tarlatamab in Small-Cell Lung Cancer after Platinum-Based Chemotherapy*. *New England Journal of Medicine*. 2025.  
+   <https://www.nejm.org/doi/10.1056/NEJMoa2502099>
+
+5. ClinicalTrials.gov. *Study of Tarlatamab in Combination With YL201 With or Without Anti-PD-L1 in ES-SCLC*. NCT06898957.  
+   <https://clinicaltrials.gov/study/NCT06898957>
+
